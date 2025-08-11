@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<!-- Include common head fragment -->
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+            rel="stylesheet"
+            as="style"
+            onload="this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design - Latest News (Page 7)</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="theme-bg-primary">
+<div
+        class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
+        style='font-family: Newsreader, "Noto Sans", sans-serif;'
+>
+    <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+        <div>
+            <!-- Include common header and navigation fragment -->
+            <div>
+    <!-- Header section containing title and icons -->
+    <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">
+            <span>Најнови Вести</span>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>20:09, 11.08.2025</span></p>
+        </h2>
+        <div class="flex w-12 items-center justify-end">
+            <!-- Weather Link Icon (Thermometer) -->
+            <a href="/prognoza.html" aria-label="Weather Forecast"
+               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
+                </svg>
+            </a>
+            <!-- Day/Night Mode Toggle Button -->
+            <button id="theme-toggle"
+                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+                    aria-label="Toggle dark mode"
+            >
+                <!-- Sun Icon (Light Mode) -->
+                <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <!-- Moon Icon (Dark Mode) -->
+                <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- "обновено" time now correctly positioned below the header, within the main content wrapper -->
+
+
+    <div class="pb-3 pt-4">
+        <!-- Main Navigation Tabs (split into left and right) -->
+        <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <!-- Left Navigation Items -->
+            <div class="flex gap-8">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/index.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Вести</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/sports.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/magazine.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
+                </a>
+            </div>
+            <!-- Right Navigation Items -->
+            <div class="flex gap-8">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="/latest-news-page-1.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">Најнови Вести</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/prognoza.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/radio.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/youtube.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">YouTube</p>
+                </a>
+            </div>
+        </div>
+        <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
+        
+        
+    </div>
+</div>
+
+            <!-- Main Content Area for Latest News List -->
+            <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Left Column: Main Articles -->
+                <div class="lg:col-span-2 flex flex-col gap-6">
+                    <h1 class="theme-text-primary text-2xl font-bold mb-6">Stitch Design - Latest News (Page 7)</h1>
+
+                    <!-- Pagination Controls (Moved to Top) -->
+                    <div class="flex justify-center items-center gap-4 mb-8">
+                        <!-- Previous Page Link -->
+                        <a href="latest-news-page-6.html"
+                           class="theme-bg-secondary theme-text-primary py-2 px-4 rounded-lg border theme-border-color hover:theme-bg-hover">
+                            Previous
+                        </a>
+
+                        <!-- Page Numbers -->
+                        
+                            <a href="latest-news-page-1.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>1</span>
+                            </a>
+                        
+                            <a href="latest-news-page-2.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>2</span>
+                            </a>
+                        
+                            <a href="latest-news-page-3.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>3</span>
+                            </a>
+                        
+                            <a href="latest-news-page-4.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>4</span>
+                            </a>
+                        
+                            <a href="latest-news-page-5.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>5</span>
+                            </a>
+                        
+                            <a href="latest-news-page-6.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>6</span>
+                            </a>
+                        
+                            <a href="latest-news-page-7.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-active theme-text-primary-active border theme-active-border">
+                                <span>7</span>
+                            </a>
+                        
+                            <a href="latest-news-page-8.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>8</span>
+                            </a>
+                        
+                            <a href="latest-news-page-9.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>9</span>
+                            </a>
+                        
+
+                        <!-- Next Page Link -->
+                        <a href="latest-news-page-8.html"
+                           class="theme-bg-secondary theme-text-primary py-2 px-4 rounded-lg border theme-border-color hover:theme-bg-hover">
+                            Next
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col divide-y theme-border-color">
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712202.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1947062792.html" class="hover:underline">Рекордни 190 милиони евра потрошиле лани општините за јавни набавки</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Во 2023 година вредноста на договорите за јавни набавки на Град Скопје изнесуваше близу 19 милиони евра, па така во 2024 година Скопје има пад од околу 11,5 милиони евра.  Најголемо зголемување на вредноста на јавните набавки во 2024 година има к...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>7</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712213.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-911518642.html" class="hover:underline">ВМРО-ДПМНЕ: Визијата на ДУИ за Македонија е побратимување со измеќарите од СДС и продавање на македонскиот идентитет</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Ја видовме визијата на ДУИ за Македонија, побратимување со своите измеќари од СДС, продавање на македонскиот идентитет, рушење на институциите и пљачка на државниот имот.  ОД ОВЧАРИ СТАНАА МИЛИОНЕРИ Визијата на ДУИ за Македонија е продавање на ид...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://denesen.mk/wp-content/uploads/2023/11/zelenski-700x400.png&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--8235920.html" class="hover:underline">ЗЕЛЕНСКИ: Ја разбирам намерата на Русите да се обидат да ги измамат Американците за Украина, но Киев нема да го дозволи тоа</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Американскиот амбасадор во НАТО, Метју Витакер, изјави доцна во неделата дека украинскиот претседател Володимир Зеленски би можел да присуствува на самитот меѓу Доналд Трамп и Владимир Путин во Алјаска во петок.  Украинскиот претседател Володимир...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>7</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2025/08/GyCT_5oXIAABHaW-300x300.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-962357068.html" class="hover:underline">📽 ИЗРАЕЛСКАТА ВОЈСКА УБИ ЕДЕН ОД НАЈПОЗНАТИТЕ РЕПОРТЕРИ НА „АЛ ЏАЗИРА“ ВО ГАЗА Во истиот напад загинаа и четворица други новинари</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Пет новинари на Ал Џезира, меѓу кои и Анас ал Шариф, биле убиени во израелски напад во близина на болницата Ал Шифа во градот Газа, објави телевизиската мрежа.  Новинарот на Ал Џезира, Анас ал Шариф, беше убиен во она што се чини дека е целен изр...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>10</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2025/08/13247879-300x200.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1266874836.html" class="hover:underline">Славески: Прерано е да се почувствуваат ефектите од американските царини за Македонија</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Македонија под ист режим како ЕУ – 15% царина3 823 1255Одлуката на САД стапува во сила денес, а за македонските производи предвидува дополнителна царина од 15 проценти, исто како и за Европската Унија, со која САД потпишаа трговски договор на 27 ...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://tera.mk/wp-content/uploads/2025/08/Screenshot_5-5-150x150.png&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--1644995191.html" class="hover:underline">(ВИДЕО) Илиевски: За владините функционери сè да има ново, луксузно, отмено, а за граѓаните – трошки леб и сол</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> СДСМ повторно ќе го поднесе Законот за минималната плата од 500 евра.  СДСМ повторно ќе го поднесе Законот за минимална плата од 500 евра, најави потпретседателот на СДСМ, Методија Илиевски.  Затоа, СДСМ јавно ја изразува својата целосна поддршка...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>4</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://libertas.mk/wp-content/uploads/2025/07/srpska-policija-300x192.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1205262196.html" class="hover:underline">МВР: Три лица уапсени за вчерашната престрелка во Тетово, пронајдени и предмети кои се од интерес на истрагата</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> МВР: Три лица уапсени за вчерашната престрелка во Тетово, пронајдени и предмети кои се од интерес на истрагата :.  При претрес на повеќе локации во с. Гајре, тетовско пронајдени се предмети кои се од интерес на истрагата.  Министерството за внатр...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>5</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/07/dojran-pozar-infomaks-300x175.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1682610234.html" class="hover:underline">ЦУК: Два активни пожари, во НП „Јасен“ и во струмичко Сарај</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Активни пожари има во Националниот парк „Јасен“, каде гори мешана шума, на територија на општина Македонски Брод и во струмичкото село Сарај, каде гори отпад.  Како што информира Центарот за управување со кризи (ЦУК), под контрола е пожарот во ре...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>9</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2020/04/brza-pomosh-300x225.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--674092745.html" class="hover:underline">Со возило излетал од автопатот Скопје – Велес и удрил во сообраќаен знак: тешко повреден 67-годишник</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Вчера во 17:40 часот во СВР Скопје е пријавено дека на автопатот Скопје Велес, после клучка Хиподром, 67 годишниот Б. Г. Во несреќата со тешки телесни повреди се здобил возачот Б. Г. Извршен е увид од увидна екипа на СВР Скопје.  ИЗЛЕТАЛ ОД ПАТОТ...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2023/08/motor-soobrakajka-300x191.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-970528036.html" class="hover:underline">Во сообраќајна несреќа во Скопје тешко повреден 19-годишен мотоциклист од Тетово</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Вчера околу 23:00 часот во СВР Скопје е пријавено дека на улицата „Хасан Приштина“ во Скопје се случила сообраќајна несреќа помеѓу патничко возило „мерцедес“ со скопски регистарски ознаки, управувано од .  С. Скопје и мотоцикл „априлија“ со тетов...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Ads -->
+                <div class="lg:col-span-1 flex flex-col gap-6">
+                    <!-- Large Ad (like Neptun) -->
+                    <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
+                        <a href="article-detail-adlatestnewsmain.html" class="w-full aspect-[16/9] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden"
+                           style="background-image: url(&#39;https://placehold.co/150x300/0000FF/FFFFFF?text=Latest+News+Main+Ad&#39;);">
+                        </a>
+                        <div class="flex w-full grow flex-col items-stretch justify-center gap-1 py-4 px-4">
+                            <p class="theme-text-primary text-base font-bold leading-tight tracking-[-0.015em]">Special Offer for Readers!</p>
+                            <div class="flex items-end gap-3 justify-between">
+                                <div class="flex flex-col gap-1">
+                                    <p class="theme-text-secondary text-sm font-normal leading-normal">Check out our exclusive deals.</p>
+                                    <a href="article-detail-adlatestnewsmain.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smaller Secondary Ad -->
+                    <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
+                        <a href="article-detail-adlatestnewssmall.html" class="w-full aspect-[16/4.5] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden"
+                           style="background-image: url(&#39;https://placehold.co/150x300/FF4500/FFFFFF?text=Latest+News+Small+Ad&#39;);">
+                        </a>
+                        <div class="flex w-full grow flex-col items-stretch justify-center gap-1 py-4 px-4">
+                            <p class="theme-text-primary text-base font-bold leading-tight tracking-[-0.015em]">New Arrivals!</p>
+                            <div class="flex items-end gap-3 justify-between">
+                                <div class="flex flex-col gap-1">
+                                    <p class="theme-text-secondary text-sm font-normal leading-normal">Browse our fresh collection.</p>
+                                    <a href="article-detail-adlatestnewssmall.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include common theme toggle script fragment -->
+<script>
+    /*<![CDATA[*/
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement; // This refers to the <html> tag
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+
+    // Function to set the theme
+    function setTheme(theme) {
+        if (theme === 'dark') {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            if (moonIcon) moonIcon.style.display = 'block';
+            if (sunIcon) sunIcon.style.display = 'none';
+        } else {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            if (sunIcon) sunIcon.style.display = 'block';
+            if (moonIcon) moonIcon.style.display = 'none';
+        }
+    }
+
+    // Check for saved theme preference or system preference on load
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark'); // Default to dark if system prefers it
+    } else {
+        setTheme('light'); // Default to light
+    }
+
+    // Toggle theme on button click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        });
+    }
+
+
+    // Listen for system theme changes (if no preference is saved)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (!localStorage.getItem('theme')) { // Only react to system changes if no user preference is set
+            setTheme(event.matches ? 'dark' : 'light');
+        }
+    });
+    /*]]>*/
+</script>
+    <footer class="theme-bg-secondary py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
+        <!-- Disclaimer Text -->
+        <p class="text-sm leading-relaxed mb-6">
+            Изборот и позициите на вестите на <span class="font-bold">Stitch Design</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Stitch Design</span>.
+            <span class="font-bold">Stitch Design</span> не презема никаква одговорност за веродостојноста на преземените информации.
+        </p>
+
+        <!-- Static Links -->
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
+            <a href="/sources.html" class="hover:underline theme-text-primary">Извори</a>
+            <a href="/indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
+            <a href="/how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
+            <a href="/marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
+            <a href="/blog.html" class="hover:underline theme-text-primary">Блог</a>
+            <a href="/contact.html" class="hover:underline theme-text-primary">Контакт</a>
+            <a href="/privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
+            <a href="/terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

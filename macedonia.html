@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<!-- Include common head fragment -->
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+            rel="stylesheet"
+            as="style"
+            onload="this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design - Македонија</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="theme-bg-primary">
+<div
+        class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
+        style='font-family: Newsreader, "Noto Sans", sans-serif;'
+>
+    <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+        <div>
+            <!-- Include common header and navigation fragment -->
+            <div>
+    <!-- Header section containing title and icons -->
+    <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">
+            <span>Македонија</span>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>20:09, 11.08.2025</span></p>
+        </h2>
+        <div class="flex w-12 items-center justify-end">
+            <!-- Weather Link Icon (Thermometer) -->
+            <a href="/prognoza.html" aria-label="Weather Forecast"
+               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
+                </svg>
+            </a>
+            <!-- Day/Night Mode Toggle Button -->
+            <button id="theme-toggle"
+                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+                    aria-label="Toggle dark mode"
+            >
+                <!-- Sun Icon (Light Mode) -->
+                <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <!-- Moon Icon (Dark Mode) -->
+                <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- "обновено" time now correctly positioned below the header, within the main content wrapper -->
+
+
+    <div class="pb-3 pt-4">
+        <!-- Main Navigation Tabs (split into left and right) -->
+        <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <!-- Left Navigation Items -->
+            <div class="flex gap-8">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="/index.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">Вести</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/sports.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/magazine.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
+                </a>
+            </div>
+            <!-- Right Navigation Items -->
+            <div class="flex gap-8">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/latest-news-page-1.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Најнови Вести</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/prognoza.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/radio.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/youtube.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">YouTube</p>
+                </a>
+            </div>
+        </div>
+        <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
+        
+            <div class="flex border-b theme-border-color px-4 gap-4 overflow-x-auto whitespace-nowrap scrollbar-hide pt-2">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-[3px] theme-active-border theme-nav-text-active" href="/macedonia.html">
+                    <p>Македонија</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/economy.html">
+                    <p>Економија</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/balkan.html">
+                    <p>Балкан</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/world.html">
+                    <p>Свет</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/skopje.html">
+                    <p>Скопје</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/bitola.html">
+                    <p>Битола</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/hronika.html">
+                    <p>Хроника</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/republika.html">
+                    <p>Република</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/culture.html">
+                    <p>Култура</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/technology.html">
+                    <p>Технологија</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/scene.html">
+                    <p>Сцена</p>
+                </a>
+            </div>
+        
+        
+    </div>
+</div>
+
+            <!-- Main Content Area: Two Columns -->
+            <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Left Column: Main Category Articles -->
+                <div class="lg:col-span-2 flex flex-col gap-8">
+                    <h2 class="theme-text-primary text-2xl font-bold mb-6">Македонија</h2>
+                    <div class="flex flex-col divide-y theme-border-color">
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://denesen.mk/wp-content/uploads/2025/08/Screenshot-2025-08-11-193751.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-2014069566.html" class="hover:underline">Мицкоски: Ова е првата Влада што директно вложува во општините за граѓаните над 300 милиони евра</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Според Мицкоски, јавниот и државниот долг прв пат е намален за неколку проценти во последните десет години.  Мицкоски: Ова е првата Влада што директно вложува во општините за граѓаните над 300 милиони евра :.  Тоа е факт, а се останато се констру...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 21:48</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/07/pozari-helikopter-e1752151054223-300x268.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1783725243.html" class="hover:underline">Голем пожар во кичевско, на терен три хеликоптери, војници и пожарникари од Скопје!</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Голем пожар во кичевско, на терен три хеликоптери!  На терен интервенираат 35 војници на АРМ со три пинц гауери, како и воздушна поддршка од два хеликоптери на МВР и еден хеликоптер на АРМ.  Денес, околу 14:00 часот, избувна голем пожар помеѓу се...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 21:08</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://gostivarpress.mk/wp-content/uploads/2024/02/writing-933262_1280-300x200.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1420215139.html" class="hover:underline">Следната седмица августовски рок за полагање на државната матура</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> На 12 и 14 август полагање на екстерните испити од државната матура во августовската сесија » :.  Двата екстерни испита во августовската испитна сесија од државната матура, за матурантите кои во јуни не ги положиле или не во целост, ќе се полагаа...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://faktor.mk/media/main/2024/06/20240623162708.JPG&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-799354754.html" class="hover:underline">Отпочнуваат градежните работи на обиколницата Крива Паланка, воведен времен режим на сообраќај</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Отпочнуваат градежните работи на обиколницата Крива Паланка, воведен времен режим на сообраќај » :.  ГД „Гранит“ АД Скопје информира дека од денеска започнува со градежни активности кои се однесуваат на Рехабилитација на државен пат А2, обиколниц...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://emagazin.mk/wp-content/uploads/2025/08/529897559_1163191179173462_1609948050712354119_n-300x166.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--181169960.html" class="hover:underline">24 години од смртта на бранителите кај Љуботенски Бачила и Карпалак</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> На 10 август 2001 година кај месноста Љуботенски Бачила од нагазна мина поставена на патот животот го загубија Томе Бадаровски, Марјанчо Бошковски, Томе Димовски, Ивица Златевски, Бранко Јанев, Раде Јанковски, Томислав Настевски и Гоце Чанкуловск...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-645682824.html" class="hover:underline">Мобилен кабинет во Гостивар: Министерот Азир Алиу ќе ја посети Општата болница</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Министерот за здравство, Азир Алиу, во среда (13 август) ќе ја продолжи иницијативата „Мобилен кабинет“ со посета на Општа болница Гостивар, каде е предвидена изјава за медиуми во 13:30 часот (во холот на влезот на болницата) Во периодот од 14:15...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--492848344.html" class="hover:underline">Да се овозможи поголема искористеност на ЕУ фондовите во насока на подобрување на животот на граѓаните</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Како што соопшти МЕП, на средбата се дискутирало за степенот на искористеност на ЕУ фондовите во општината, како и можностите за мотивирање на граѓаните и компаниите за зголемување на интересот за поголема реализација на овие фондови во општината...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712199.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1560795108.html" class="hover:underline">Изборниот законик блокиран во Собранието поради барање, еден член на ДИК да може да стави вето?</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Државната изборна комисија на седница усвои заклучок вон сила да се стави Упатството на ДИК од 2024 за регулирање на постапката за собирање потписи и начинот на определување на нотарите согласно Изборниот законик.  Ставањето вон сила Упатството н...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>7</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1754893623/yxdb40u3nlixd2xt0asj.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-761105756.html" class="hover:underline">Сончево и многу топло време цела седмица</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Во Скопје, сончево и многу топло со слаб до умерен ветер од североисточен правец.  Минималната температура ќе биде во интервал од 11 до 19, а максималната ќе достигне од 33 до 39 степени.  Минималната температура ќе се спушти до 18, а максималнат...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>5</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712181.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-740847096.html" class="hover:underline">Мицкоски: Ќе бидеме апсолутен победник на изборите, ДУИ нѐ враќа 30 години назад</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> На овие избори, граѓаните бираат помеѓу концептот што 20 години ја опустошуваше Македонија и оние кои сакаат заеднички да градиме иднина“, посочи Мицкоски.  На локалните избори очекувам кампања што ќе се однесува на проекти, но очигледно дека има...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>5</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712175.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-2014355571.html" class="hover:underline">СДСМ: Обвинителство да поведе кривична постапка за началникот на Тошковски и да ја прошири истрагата</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Прес конференција, Јовица Јанковиќ, потпретседател на СДММ СДСМ: Обвинителство да поведе кривична постапка за началникот на Тошковски и да ја прошири истрагата Почитувани, Пред Основното јавно обвинителство, СДСМ бара отворање на кривична постапк...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712182.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-327819050.html" class="hover:underline">Ѓорѓиевски ја врати бистата на Цветан Димов на видно место во Кисела Вода</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Со новата биста на Цветан Димов, поставена на ова видно место, и соодветно оддаваме почит кон неговата жртва, но и создававме услови многу повеќе луѓе, особено младите, да ја запознаат неговата приказна.  Како што соопшти Општина Кисела Вода, пре...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712193.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1749009710.html" class="hover:underline">Нова спортска сала во Огњанци ќе ги пречека учениците во септември</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Учениците од Огњанци новата учебна година ќе ја започнат во нова, современа спортска сала.  Овој проект ќе им овозможи на учениците да ја започнат новата учебна година во современи услови за физичка активност и спорт.  Нова спортска сала во Огњан...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712202.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1947062792.html" class="hover:underline">Рекордни 190 милиони евра потрошиле лани општините за јавни набавки</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Во 2023 година вредноста на договорите за јавни набавки на Град Скопје изнесуваше близу 19 милиони евра, па така во 2024 година Скопје има пад од околу 11,5 милиони евра.  Најголемо зголемување на вредноста на јавните набавки во 2024 година има к...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>7</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712213.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-911518642.html" class="hover:underline">ВМРО-ДПМНЕ: Визијата на ДУИ за Македонија е побратимување со измеќарите од СДС и продавање на македонскиот идентитет</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Ја видовме визијата на ДУИ за Македонија, побратимување со своите измеќари од СДС, продавање на македонскиот идентитет, рушење на институциите и пљачка на државниот имот.  ОД ОВЧАРИ СТАНАА МИЛИОНЕРИ Визијата на ДУИ за Македонија е продавање на ид...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://libertas.mk/wp-content/uploads/2025/07/srpska-policija-300x192.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1205262196.html" class="hover:underline">МВР: Три лица уапсени за вчерашната престрелка во Тетово, пронајдени и предмети кои се од интерес на истрагата</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> МВР: Три лица уапсени за вчерашната престрелка во Тетово, пронајдени и предмети кои се од интерес на истрагата :.  При претрес на повеќе локации во с. Гајре, тетовско пронајдени се предмети кои се од интерес на истрагата.  Министерството за внатр...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>5</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/07/dojran-pozar-infomaks-300x175.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1682610234.html" class="hover:underline">ЦУК: Два активни пожари, во НП „Јасен“ и во струмичко Сарај</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Активни пожари има во Националниот парк „Јасен“, каде гори мешана шума, на територија на општина Македонски Брод и во струмичкото село Сарај, каде гори отпад.  Како што информира Центарот за управување со кризи (ЦУК), под контрола е пожарот во ре...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>9</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712177.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--1454243437.html" class="hover:underline">МАНАСИЕВСКИ: Началникот веднаш е разрешен за разлика од времето на Заев, Спасовски и Ахмети и „мерцедесот“ гребан од мачки</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Правдата ќе биде задоволена!“, изјави Валентин Манасиевски, член на ЦК на ВМРО ДПМНЕ.  Кога секој еден кој не беше член на СДС и ДУИ, беше политички прогонуван.  Овој пристап не беше во времето на Заев, Спасовски и Ахмети.</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/08/mickoski-petrovec-2-300x200.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--157432530.html" class="hover:underline">МИЦКОСКИ ЗА ИЗЈАВАТА НА МЕЏИТИ: Не може да биде разумна и праведна војна, а од заседа да се убиваат припадници на МВР и МО</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Ова се теми кои се затворени и јас апелирам до сите разумни политичари да не играат на картата на ДУИ и на оние кои сакаат да не вратат 25 години назад“, одговори Мицкоски.  Затоа апелирам до сите да се воздржиме од било какви теми коишто не враќ...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>8</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2017/04/DUI-mala-rechica-623x330-300x159.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--329330519.html" class="hover:underline">ДУИ: Потсетувањето на 2001 година не е „стара тема“, туку потсетување на цената што граѓаните ја платија за еднаквоста и за Охридскиот договор</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Парадоксално е што премиерот зборува за „невраќање во 2001 година“, додека секојдневното практикување на владеењето на неговата влада е враќање назад во времето: кон дискриминацијата, мајоризацијата, исклучувањето и кршењето на правата на Албанци...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/08/lefkov4-300x169.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1566698080.html" class="hover:underline">Додека во СДСМ штанцаат соопштенија за минимална плата, Филипче со Заев уживаат на јахта</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Сега кога му треба друштво на Заев за одмор тука е Венко Филипче.  Додека Венко Филипче и СДС имаат лажно душегрижништво за правата на работниците, велат дека има ниска минимална плата и притоа велат дека знаат како му е на народот, го гледаме Ве...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>6</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/08/denkovski-i-aliu-300x165.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--1623457953.html" class="hover:underline">МЗ: Министерството имаше формирано две комисии за надзор над законитоста на работата на Стоматолошката комора, констатирани се неправилности</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Тој се обрати на прес конференција откако министерот за здравство, Азир Алиу во саботата информираше дека Министерството за здравство ги презема надлежностите за лиценцирање на Стоматолошката комора.  Министерството за здравство го презема лиценц...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>17</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/07/turisti-300x200.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-238148129.html" class="hover:underline">Во јуни најмногу странски туристи од Турција</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Од ноќевањата 26,7 отсто се реализирани од домашните, а 73,3 отсто од странските туристи.  Во јуни годинава во земјава престојувале 126 415 туристи, од кои 20,1 отсто се домашни, а 79,9 отсто странски, кои оствариле вкупно 243 157 ноќевања.  Згол...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>7</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/08/Screenshot-2025-08-11-142047-300x200.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--604523947.html" class="hover:underline">Почувствуван земјотрес во Битола и околината</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> ЗЕМЈОТРЕС ЈА СТРЕСЕ БИТОЛА Епицентарот бил на границата помеѓу Грција и Албанија.  Земјотрес со интензитет од 3,8 степени според Рихтеровата скала е регистриран денес во 13:07 часот на границата помеѓу Грција и Албанија.  Интензитет од степени во...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>13</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712192.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--1432554148.html" class="hover:underline">Јаневска: Едносменската настава не е лесен процес, но добро се одвива</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Министерката за образование и наука Весна Јаневска денеска соопшти дека едносменска настава има веќе во 150 училишта во коишто немало или имало малку градежни интервенции за да може да биде воведена.  Очекува овој процес да продолжи во 25 училишт...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>8</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/08/janevg-300x200.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--774662893.html" class="hover:underline">Директорот на БЈБ од СВР Тетово: Нема да дозволиме насилството на поединци да ги нарушат сигурноста и мирот во заедницата</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Само заедно можеме да се спротивставиме на поединците и групите кои не споделуваат исти вредности со нас чесните – истакна Јанев заклучувајќи дека Македонија и сите граѓани заслужуваат мир и спокој, а полицијата е тука за да го испорача.  Сакам г...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>9</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2022/07/асфалтирање-во-бутел-300x200.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-82953561.html" class="hover:underline">ДКСК со укажувања за законските одредби поврзани со Локалните избори 2025</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Исто така не може имотот во сопственост на: Република Северна Македонија или на единиците на локалната самоуправа или буџетски средства или средства од јавни фондови, јавни претпријатија, јавни установи или други правни лица што располагаат со др...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>9</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Right Column: Sidebar (Ads) -->
+                <div class="lg:col-span-1 flex flex-col gap-6">
+                    <!-- Category Spotlight Ad (Rotating) -->
+                    <div id="rotating-ad-container-category" class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
+                        <a id="rotating-ad-link-category" href="#" class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden">
+                        </a>
+                        <!-- Title and description elements removed for photo-only ad -->
+                    </div>
+
+                    <!-- Secondary Category Ad (Static, but could be made rotating too) -->
+                    <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
+                        <a href="article-detail-adsmallcategory.html" class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden"
+                           style="background-image: url(&#39;https://placehold.co/150x300/800000/ffffff?text=Small+Ad+for+Category&#39;);">
+                        </a>
+                        <!-- Title and description elements removed for photo-only ad -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include common theme toggle script fragment -->
+<script>
+    /*<![CDATA[*/
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement; // This refers to the <html> tag
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+
+    // Function to set the theme
+    function setTheme(theme) {
+        if (theme === 'dark') {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            if (moonIcon) moonIcon.style.display = 'block';
+            if (sunIcon) sunIcon.style.display = 'none';
+        } else {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            if (sunIcon) sunIcon.style.display = 'block';
+            if (moonIcon) moonIcon.style.display = 'none';
+        }
+    }
+
+    // Check for saved theme preference or system preference on load
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark'); // Default to dark if system prefers it
+    } else {
+        setTheme('light'); // Default to light
+    }
+
+    // Toggle theme on button click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        });
+    }
+
+
+    // Listen for system theme changes (if no preference is saved)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (!localStorage.getItem('theme')) { // Only react to system changes if no user preference is set
+            setTheme(event.matches ? 'dark' : 'light');
+        }
+    });
+    /*]]>*/
+</script>
+
+<!-- Google Analytics 4 (GA4) Tracking Script -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_GA4_MEASUREMENT_ID"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YOUR_GA4_MEASUREMENT_ID'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
+</script>
+
+<!-- Pass ad data to JavaScript and include the ad rotation script -->
+<script>
+    /*<![CDATA[*/
+    // Make the categorySpotlightAds data available globally for ad-rotation.js
+    window.categorySpotlightAdsData = [{"id":"categorySpotlightAd1","imageUrl":"https:\/\/placehold.co\/800x450\/4B0082\/ffffff?text=Category+Ad+1","title":"Explore More!","description":"Find in-depth analysis.","url":"article-detail-adcategory1.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"category_spotlight"},{"id":"categorySpotlightAd2","imageUrl":"https:\/\/placehold.co\/800x450\/8A2BE2\/FFFFFF?text=Category+Ad+2","title":"Deep Dive!","description":"Comprehensive coverage.","url":"article-detail-adcategory2.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"category_spotlight"},{"id":"categorySpotlightAd3","imageUrl":"https:\/\/placehold.co\/800x450\/DA70D6\/000000?text=Category+Ad+3","title":"Latest Updates!","description":"Stay informed.","url":"article-detail-adcategory3.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"category_spotlight"}];
+    /*]]>*/
+</script>
+<script src="js/ad-rotation.js"></script>
+<footer class="theme-bg-secondary py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
+        <!-- Disclaimer Text -->
+        <p class="text-sm leading-relaxed mb-6">
+            Изборот и позициите на вестите на <span class="font-bold">Stitch Design</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Stitch Design</span>.
+            <span class="font-bold">Stitch Design</span> не презема никаква одговорност за веродостојноста на преземените информации.
+        </p>
+
+        <!-- Static Links -->
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
+            <a href="/sources.html" class="hover:underline theme-text-primary">Извори</a>
+            <a href="/indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
+            <a href="/how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
+            <a href="/marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
+            <a href="/blog.html" class="hover:underline theme-text-primary">Блог</a>
+            <a href="/contact.html" class="hover:underline theme-text-primary">Контакт</a>
+            <a href="/privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
+            <a href="/terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

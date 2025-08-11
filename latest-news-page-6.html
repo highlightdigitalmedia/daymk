@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<!-- Include common head fragment -->
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+            rel="stylesheet"
+            as="style"
+            onload="this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design - Latest News (Page 6)</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="theme-bg-primary">
+<div
+        class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
+        style='font-family: Newsreader, "Noto Sans", sans-serif;'
+>
+    <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+        <div>
+            <!-- Include common header and navigation fragment -->
+            <div>
+    <!-- Header section containing title and icons -->
+    <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">
+            <span>Најнови Вести</span>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>20:09, 11.08.2025</span></p>
+        </h2>
+        <div class="flex w-12 items-center justify-end">
+            <!-- Weather Link Icon (Thermometer) -->
+            <a href="/prognoza.html" aria-label="Weather Forecast"
+               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
+                </svg>
+            </a>
+            <!-- Day/Night Mode Toggle Button -->
+            <button id="theme-toggle"
+                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+                    aria-label="Toggle dark mode"
+            >
+                <!-- Sun Icon (Light Mode) -->
+                <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <!-- Moon Icon (Dark Mode) -->
+                <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- "обновено" time now correctly positioned below the header, within the main content wrapper -->
+
+
+    <div class="pb-3 pt-4">
+        <!-- Main Navigation Tabs (split into left and right) -->
+        <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <!-- Left Navigation Items -->
+            <div class="flex gap-8">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/index.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Вести</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/sports.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/magazine.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
+                </a>
+            </div>
+            <!-- Right Navigation Items -->
+            <div class="flex gap-8">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="/latest-news-page-1.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">Најнови Вести</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/prognoza.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/radio.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/youtube.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">YouTube</p>
+                </a>
+            </div>
+        </div>
+        <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
+        
+        
+    </div>
+</div>
+
+            <!-- Main Content Area for Latest News List -->
+            <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Left Column: Main Articles -->
+                <div class="lg:col-span-2 flex flex-col gap-6">
+                    <h1 class="theme-text-primary text-2xl font-bold mb-6">Stitch Design - Latest News (Page 6)</h1>
+
+                    <!-- Pagination Controls (Moved to Top) -->
+                    <div class="flex justify-center items-center gap-4 mb-8">
+                        <!-- Previous Page Link -->
+                        <a href="latest-news-page-5.html"
+                           class="theme-bg-secondary theme-text-primary py-2 px-4 rounded-lg border theme-border-color hover:theme-bg-hover">
+                            Previous
+                        </a>
+
+                        <!-- Page Numbers -->
+                        
+                            <a href="latest-news-page-1.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>1</span>
+                            </a>
+                        
+                            <a href="latest-news-page-2.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>2</span>
+                            </a>
+                        
+                            <a href="latest-news-page-3.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>3</span>
+                            </a>
+                        
+                            <a href="latest-news-page-4.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>4</span>
+                            </a>
+                        
+                            <a href="latest-news-page-5.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>5</span>
+                            </a>
+                        
+                            <a href="latest-news-page-6.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-active theme-text-primary-active border theme-active-border">
+                                <span>6</span>
+                            </a>
+                        
+                            <a href="latest-news-page-7.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>7</span>
+                            </a>
+                        
+                            <a href="latest-news-page-8.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>8</span>
+                            </a>
+                        
+                            <a href="latest-news-page-9.html"
+                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
+                                <span>9</span>
+                            </a>
+                        
+
+                        <!-- Next Page Link -->
+                        <a href="latest-news-page-7.html"
+                           class="theme-bg-secondary theme-text-primary py-2 px-4 rounded-lg border theme-border-color hover:theme-bg-hover">
+                            Next
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col divide-y theme-border-color">
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/698751.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-240155041.html" class="hover:underline">Во германскиот буџет се отвораат големи празнини без никаков разговор за зголемување на даноците, изјави Вероника Грим</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Фридрих Мерц, кој стана федерален канцелар со ветувања за оживување на најголемата економија во Европа по двегодишен пад, ќе одбележи 100 дена на функцијата в среда.  Германија конечно мора да си ја заврши домашната задача и да започне длабоки ре...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/711586.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1074470511.html" class="hover:underline">ДЕПОРТАЦИЈА НА БЕЗДОМНИЦИ: Трамп сака да ги пресели „далеку од главниот град“</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Американскиот претседател Доналд Трамп најави дека ќе ги исели бездомниците од главниот град на земјата и ќе ги стави криминалците во затвор, дури и кога градоначалникот на Вашингтон рече дека во моментов нема пораст на криминалот во главниот гра...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/697028.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--255558664.html" class="hover:underline">Руте: Украинската територија веројатно ќе биде тема на претстојните мировни преговори</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Генералниот секретар нагласи дека откако ќе се договори прекин на огнот, дискусиите ќе се фокусираат на територијалните прашања и можните гаранции за безбедноста на Украина.  Во исто време, Руте нагласи дека Украина е суверена и има право сама да...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712165.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--1876402421.html" class="hover:underline">Повеќе од 200 последователни потреси ја погодија северозападна Турција</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Повеќе од 200 последователни потреси ја погодија северозападна Турција денеска, по вчерашниот земјотрес со јачина од 6,1 степени.  Турската агенција за управување со катастрофи АФАД соопшти дека регистрирала 237 последователни потреси, од кои 10 ...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>7</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712208.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--1162456284.html" class="hover:underline">Руски војници пристигнаа во Белорусија, тврдат Украинците</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Во исто време, гледаме дека Белорусија испратила и одредени единици и сили во Русија, каде што има и полигони за обука за овие вежби, рече Демченко во програмата на националниот информативен маратон.  Според него, во моментов, со оглед на присуст...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712232.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1028510000.html" class="hover:underline">ВО ОРГАНИЗАЦИЈА НА ГЕРМАНСКИОТ КАНЦЕЛАР: Трамп ќе има итен видео состанок со европските лидери пред средбата со Путин</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Распоредот потоа содржи едночасовна дискусија од 15 часот, меѓу европските лидери и Зеленски, со Трамп и неговиот потпретседател Џ. Д. Конечно, таканаречената коалиција на воените поддржувачи на Украина ќе се собере на заеднички повик од 16:30 ча...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712181.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-740847096.html" class="hover:underline">Мицкоски: Ќе бидеме апсолутен победник на изборите, ДУИ нѐ враќа 30 години назад</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> На овие избори, граѓаните бираат помеѓу концептот што 20 години ја опустошуваше Македонија и оние кои сакаат заеднички да градиме иднина“, посочи Мицкоски.  На локалните избори очекувам кампања што ќе се однесува на проекти, но очигледно дека има...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>5</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712175.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-2014355571.html" class="hover:underline">СДСМ: Обвинителство да поведе кривична постапка за началникот на Тошковски и да ја прошири истрагата</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Прес конференција, Јовица Јанковиќ, потпретседател на СДММ СДСМ: Обвинителство да поведе кривична постапка за началникот на Тошковски и да ја прошири истрагата Почитувани, Пред Основното јавно обвинителство, СДСМ бара отворање на кривична постапк...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712182.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-327819050.html" class="hover:underline">Ѓорѓиевски ја врати бистата на Цветан Димов на видно место во Кисела Вода</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Со новата биста на Цветан Димов, поставена на ова видно место, и соодветно оддаваме почит кон неговата жртва, но и создававме услови многу повеќе луѓе, особено младите, да ја запознаат неговата приказна.  Како што соопшти Општина Кисела Вода, пре...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712193.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1749009710.html" class="hover:underline">Нова спортска сала во Огњанци ќе ги пречека учениците во септември</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2"> Учениците од Огњанци новата учебна година ќе ја започнат во нова, современа спортска сала.  Овој проект ќе им овозможи на учениците да ја започнат новата учебна година во современи услови за физичка активност и спорт.  Нова спортска сала во Огњан...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Ads -->
+                <div class="lg:col-span-1 flex flex-col gap-6">
+                    <!-- Large Ad (like Neptun) -->
+                    <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
+                        <a href="article-detail-adlatestnewsmain.html" class="w-full aspect-[16/9] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden"
+                           style="background-image: url(&#39;https://placehold.co/150x300/0000FF/FFFFFF?text=Latest+News+Main+Ad&#39;);">
+                        </a>
+                        <div class="flex w-full grow flex-col items-stretch justify-center gap-1 py-4 px-4">
+                            <p class="theme-text-primary text-base font-bold leading-tight tracking-[-0.015em]">Special Offer for Readers!</p>
+                            <div class="flex items-end gap-3 justify-between">
+                                <div class="flex flex-col gap-1">
+                                    <p class="theme-text-secondary text-sm font-normal leading-normal">Check out our exclusive deals.</p>
+                                    <a href="article-detail-adlatestnewsmain.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smaller Secondary Ad -->
+                    <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
+                        <a href="article-detail-adlatestnewssmall.html" class="w-full aspect-[16/4.5] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden"
+                           style="background-image: url(&#39;https://placehold.co/150x300/FF4500/FFFFFF?text=Latest+News+Small+Ad&#39;);">
+                        </a>
+                        <div class="flex w-full grow flex-col items-stretch justify-center gap-1 py-4 px-4">
+                            <p class="theme-text-primary text-base font-bold leading-tight tracking-[-0.015em]">New Arrivals!</p>
+                            <div class="flex items-end gap-3 justify-between">
+                                <div class="flex flex-col gap-1">
+                                    <p class="theme-text-secondary text-sm font-normal leading-normal">Browse our fresh collection.</p>
+                                    <a href="article-detail-adlatestnewssmall.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include common theme toggle script fragment -->
+<script>
+    /*<![CDATA[*/
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement; // This refers to the <html> tag
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+
+    // Function to set the theme
+    function setTheme(theme) {
+        if (theme === 'dark') {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            if (moonIcon) moonIcon.style.display = 'block';
+            if (sunIcon) sunIcon.style.display = 'none';
+        } else {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            if (sunIcon) sunIcon.style.display = 'block';
+            if (moonIcon) moonIcon.style.display = 'none';
+        }
+    }
+
+    // Check for saved theme preference or system preference on load
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark'); // Default to dark if system prefers it
+    } else {
+        setTheme('light'); // Default to light
+    }
+
+    // Toggle theme on button click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        });
+    }
+
+
+    // Listen for system theme changes (if no preference is saved)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (!localStorage.getItem('theme')) { // Only react to system changes if no user preference is set
+            setTheme(event.matches ? 'dark' : 'light');
+        }
+    });
+    /*]]>*/
+</script>
+    <footer class="theme-bg-secondary py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
+        <!-- Disclaimer Text -->
+        <p class="text-sm leading-relaxed mb-6">
+            Изборот и позициите на вестите на <span class="font-bold">Stitch Design</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Stitch Design</span>.
+            <span class="font-bold">Stitch Design</span> не презема никаква одговорност за веродостојноста на преземените информации.
+        </p>
+
+        <!-- Static Links -->
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
+            <a href="/sources.html" class="hover:underline theme-text-primary">Извори</a>
+            <a href="/indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
+            <a href="/how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
+            <a href="/marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
+            <a href="/blog.html" class="hover:underline theme-text-primary">Блог</a>
+            <a href="/contact.html" class="hover:underline theme-text-primary">Контакт</a>
+            <a href="/privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
+            <a href="/terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
