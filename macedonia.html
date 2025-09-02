@@ -28,13 +28,20 @@
             <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
-        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Македонија</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>18:08, 13.08.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>21:00, 02.09.2025</span></p>
         </h2>
-        <div class="flex w-12 items-center justify-end">
+        <div class="flex w-24 items-center justify-end">
+            <!-- NEW: Device Switcher Icon -->
+            <button id="device-switcher-button" aria-label="Switch to mobile/desktop view"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+                </svg>
+            </button>
             <!-- Weather Link Icon (Thermometer) -->
-            <a href="/prognoza.html" aria-label="Weather Forecast"
+            <a href="prognoza.html" aria-label="Weather Forecast"
                class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
                 <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
@@ -64,23 +71,23 @@
         <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
             <!-- Left Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="/index.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="index.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/sports.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="sports.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/magazine.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="magazine.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
                 </a>
             </div>
             <!-- Right Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/latest-news-page-1.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="latest-news-page-1.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Најнови Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/prognoza.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="prognoza.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/radio.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="radio.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/youtube.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="youtube.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">YouTube</p>
                 </a>
             </div>
@@ -88,27 +95,27 @@
         <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
         
             <div class="flex border-b theme-border-color px-4 gap-4 overflow-x-auto whitespace-nowrap scrollbar-hide pt-2">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-[3px] theme-active-border theme-nav-text-active" href="/macedonia.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-[3px] theme-active-border theme-nav-text-active" href="macedonia.html">
                     <p>Македонија</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/economy.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="economy.html">
                     <p>Економија</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/balkan.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="balkan.html">
                     <p>Балкан</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/world.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="world.html">
                     <p>Свет</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/skopje.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="skopje.html">
                     <p>Скопје</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/bitola.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="bitola.html">
                     <p>Битола</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/hronika.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="hronika.html">
                     <p>Хроника</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/republika.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="republika.html">
                     <p>Република</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/culture.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="culture.html">
                     <p>Култура</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/technology.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="technology.html">
                     <p>Технологија</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/scene.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="scene.html">
                     <p>Сцена</p>
                 </a>
             </div>
@@ -125,106 +132,76 @@
                     <div class="flex flex-col divide-y theme-border-color">
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
+                                 style="background-image: url(&#39;https://libertas.mk/wp-content/uploads/2025/09/screenshot_20250902-202044_messenger-300x167.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1011416204.html" class="hover:underline">Има проблем со слободата на медиумите во Македонија: Извештај на Стејт департментот</a>
+                                    <a href="article-detail-api--183693875.html" class="hover:underline">Семејството на смртно прегазената Теодора револтирано: „Како може тепање и убиство да имаат иста казна – две години затвор?“</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Во извештајот на Стејт департментот за состојбата на човековите права во 2024 во делот за Македонија се вели дека немало значајни промени во состојбата во текот на годината, но дека има проблеми со слободата на изразувањето и слободата на медиуми...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Ева Ристовска, сестрата на трагично загинатата Теодора од Тетово, остро реагираше по денешната судска пресуда, каде што лицето кое ја нападна скопската градоначалничка Данела Арсовска, доби идентична казна – две години затвор, исто како и Менсур ...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
                                     <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:49</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 22:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://denesen.mk/wp-content/uploads/2025/08/vesna-janevska-1-700x446.jpg&#39;);">
+                                 style="background-image: url(&#39;https://plusinfo.mk/wp-content/uploads/2025/04/georg-georgiev-montaza.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--685914324.html" class="hover:underline">Јаневска: МОН не може и не треба да ги преземе надлежностите на Општина Струга</a>
+                                    <a href="article-detail-api-1001098010.html" class="hover:underline">Георгиев до министрите за надворешни работи на ЕУ: Не е можна промена на договорениот европски консензус, очекуваме РСМ да ги исполнува своите обврски</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Поради недомаќинско работење на градоначалникот Рамис Мерко и целото раководство во Општина Струга не им стигнуваат блок дотациите за основните училишта, смета министерката за образование и наука Весна Јаневска.  Прашана за коментар по вчерашната...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:49</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/541569.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--193568812.html" class="hover:underline">Нема зафатено објекти при вчерашниот пожар на Транзитниот центар Табановце</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Од ТППЕ Куманово информираат дека нема зафатени објекти и на пожарот интервенирале три возила со деветмина пожарникари.  На пожарот интервенираа три екипи и девет пожарникари с до 00:15 часот, изјави командирот на ТППЕ Куманово, Дејан Илиевски.  ...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Георгиев до министрите за надворешни работи на ЕУ: Не е можна промена на договорениот европски консензус, очекуваме РСМ да ги исполнува своите обврски.  Бугарија изразува растечка загриженост за континуираниот неуспех на Република Северна Македон...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
                                     <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:49</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 22:02</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712504.jpg&#39;);">
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/715339.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-2059752892.html" class="hover:underline">Комунална хигиена-Скопје почна со замена на дотраените пластични контејнери</a>
+                                    <a href="article-detail-api-809833910.html" class="hover:underline">Сајкоски: На Карпош му треба градоначалник како Лукровски, човек кој може да испорача</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Комунална хигиена Скопје почна со замена на дотраените пластични контејнери » :.  На локациите каде што досега се употребуваа стари и дотраени садови, се поставуваат сосема нови садови наменети за одлагање на комуналниот отпад.  ЈП Комунална хиги...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Генералниот секретар на ВМРО ДПМНЕ Ѓорѓија Сајкоски денеска беше во Карпош заедно со кандидатот за градоначалник Сотир Лукровски каде партијат има штандови за акцијата Излези.  Можам да кажам дека од она што го видов имаме одлични идеи и предлози...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 21:18</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/09/jurop-haus-kocani-300x273.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-2082712246.html" class="hover:underline">До крајот на годината повеќе активности за младите во Кочани со поддршка од Јуроп хаус</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> До крајот на годината повеќе активности за младите во Кочани со поддршка од Јуроп хаус » :.  Почнувајќи од септември, па се до крајот на годината, во Кочани, „Јуроп хаус“ ќе реализира низа активности кои ќе бидат посветени на учениците од основни...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
                                     <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:49</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 21:18</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2022/02/stejt-department-300x169.jpg&#39;);">
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/715358.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1747517469.html" class="hover:underline">Стејт департментот: Нема значителни промени во состојбата со човековите права во Северна Македонија</a>
+                                    <a href="article-detail-api--1841360421.html" class="hover:underline">Евробарометар: 70 отсто од македонските граѓани подржуваат членство во ЕУ</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Во најновиот извештај на Стејт департментот на САД за човековите права за 2024 година се наведува дека во Северна Македонија не се забележани значителни промени во состојбата со човековите права.  Стејт департментот: Нема значителни промени во со...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Според истражувањето, 51 отсто од македонските државјани сметаат дека поддршка за економскиот развој на државата би придонел за понаклонет став на граѓаните кон ЕУ, а по 45 проценти оценуваат дека најголем придонес за тоа би имале поддршката за п...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:49</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2024/09/ustaven-sud-300x199.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--977065182.html" class="hover:underline">Уставниот суд оформи предмет во кој е оспорен Протоколот од вториот состанок на Заедничката меѓувладина комисија со Бугарија</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Уставниот суд оформи предмет по иницијатива на Лилјана Поповска, со која се оспорува Протоколот од вториот состанок на Заедничката меѓувладина комисија со Бугарија, потпишан на 17 јули 2022 година во Софија.  Протоколот беше потпишан од страна на...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>7</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:49</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/03/policija-mvr-vozilo-300x161.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-820493303.html" class="hover:underline">Охриѓанец грабнал 60-годишна жена, насила ја ставил во автомобил</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Полицијата синоќа го приведе 59 годишниот З. Ј. Тој, според претходна пријава, со употреба на сила ставил 60 годишна жена од Охрид во своето возило „Југо“ со охридски регистарски ознаки и ја однел во неговиот дом.  Во вторникот вечерта околу 22 ч...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:35</span></span>
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 20:17</span></span>
                                 </div>
                             </div>
                         </div>
@@ -234,552 +211,357 @@
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--255868900.html" class="hover:underline">Два инцидента со параглајдеристи во Крушево – еден во безсознание е итно пренесен во Скопје, другиот бил заглавен на дрво</a>
+                                    <a href="article-detail-api-31502177.html" class="hover:underline">Родители протестираат за бесплатен превоз за средношколците наместо поскапо сместување во дом, МОН смета дека решениeто е во интерес на учениците</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Два одделни инцидента со параглајдеристи денеска кај Мечкин Камен во Крушево го активираа Центарот за управување со кризи и итните медицински служби – едниот спортист заврши заглавен на дрво, а другиот со тешки повреди и бесознание беше итно евак...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Законското решение кое го регулира превозот на учениците е ново, заеднички изработено со сите засегнати чинители и претставува одговор на детектираните предизвици во минатото, велат од Министерството за образование и наука, по протестот на родите...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
                                     <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:21</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 19:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2021/05/zena-silueta-senka-300x200.jpg&#39;);">
+                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2025/08/bujar-osmani-2-300x187.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1784403198.html" class="hover:underline">МАЈКА ГО НАПАДНАЛА И ГО ПОВРЕДИЛА 4-ГОДИШНОТО ДЕТЕ Ќе одговара за насилство</a>
+                                    <a href="article-detail-api-979622339.html" class="hover:underline">Османи: Јасно и гласно кажав дека не сум се сретнал со Груевски, ВЛЕН манипулира</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Мајка од Гостиварско го повредила своето четиригодишно дете откако физички го нападнала, соопшти полицијата.  Мајка од Гостиварско го повредила своето 4 годишно дете, МВР поднесе кривична е превземен од :.  МАЈКА ГО НАПАДНАЛА И ГО ПОВРЕДИЛА 4 ГОД...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:21</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://gostivarpress.mk/wp-content/uploads/2018/01/ujp-300x152.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-265087502.html" class="hover:underline">УЈП со засилени активности за подобрување на даночната усогласеност во градежниот сектор</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> УЈП со засилени активности за подобрување на даночната усогласеност во градежниот сектор » :.  Управата за јавни приходи (УЈП) започна со спроведување засилени активности кон даночните обврзници од градежниот сектор, во рамки на „Планот за подобр...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:52</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2020/10/rudari1-300x198.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1984028486.html" class="hover:underline">Македонското рударство ќе ги запазува ЕУ стандардите – со нови закони се нагласува и факторот геополитика за обезбедување ресурси</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Од Листата на критични минерални суровини која ја изготви Европската Унија, според геолошките истражувања, Македонија најмногу може да се пофали со бакар, но инвестициите најчесто се соочуваат со низа бариери.  Засега е неизвесно дали и каков имп...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:52</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2023/02/vmro-dpmne-zgrada-300x177.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1426849135.html" class="hover:underline">ВМРО-ДПМНЕ: Ако имало нешто противзаконско во „Еразмус +“ како што зборува СДС, бомбастично ќе ги затвореа луѓето додека беа власт</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> ВМРО ДПМНЕ: Ако имало нешто противзаконско во Еразмус + како што зборува СДС, бомбастично ќе ги затвореа луѓето додека беа власт.  СДС имаше можност 7 години да провери и да расчисти доколку имало некаков криминал.  Да потсетиме, СДС беше на влас...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:52</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/08/sajkoski-300x202.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--74523272.html" class="hover:underline">Претседател на ДКСК ќе се бира по локалните избори</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Претседател на ДКСК ќе се бира по локалните избори » :.  Откако Државната комисија за спречување на корупција соопшти дека нема надлежност да дава мислење дали е итно или не да се избере нов претседател на ДКСК, по истрагата и оставката на Татјан...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:36</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/08/vestacka-inteligencija-mk-ilustracija.png&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1155611863.html" class="hover:underline">ДЗР: Кога вештачката интелигенција останува само идеја – 48 проекти без имплементација во јавниот сектор</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> ДЗР: Кога вештачката интелигенција останува само идеја – 48 проекти без имплементација во јавниот сектор » :.  Државниот завод за ревизија изврши ревизија на информациски системи како ревизија на успешност на тема „Можности за употреба на Вештачк...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/07/DZS-i-CUK-press-Stojance-Angelov-3a-bg.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1587643492.html" class="hover:underline">Ангелов: Борбата со пожарот во ловиштето Јасен продолжува, успешно изгасната една линија, теренот останува критичен</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Ангелов: Борбата со пожарот во ловиштето Јасен продолжува – изгасната една линија, теренот останува критичен » :.  Борбата против огнот во ловиштето Јасен продолжува.  Од земја дејствуваат припадници на специјалните единици на армијата и полиција...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://emagazin.mk/wp-content/uploads/2025/07/pozar-300x200.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--452939184.html" class="hover:underline">ЗАРАДИ ПОЖАРОТ ЗАТВОРЕН ПАТНИОТ ПРАВЕЦ ПРЕКУ „ЈАСЕН“ ДО МАКЕДОНСКИ БРОД</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> ЗАРАДИ ПОЖАРОТ ЗАТВОРЕН ПАТНИОТ ПРАВЕЦ ПРЕКУ „ЈАСЕН“ ДО МАКЕДОНСКИ БРОД :.  Пожарот кај Националниот парк Јасен се уште е активен, информираа од Центарот за управување со кризи и поради тоа целосно е затворен за сообраќај патниот правец од Брезни...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://gostivarpress.mk/wp-content/uploads/2025/06/azir-aliu-3-300x200.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1916891063.html" class="hover:underline">Онколошка амбулантска терапија наскоро во Тетово, Битола, Штип и воена болница, најави Алиу</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Онколошка амбулантска терапија наскоро во Тетово, Битола, Штип и ГОБ „8 Септември“ » :.  Министерот за здравство Азир Алиу денеска изјави дека онколошките амбулантски терапии веќе се дисперзирани и наскоро ќе се почне со нивна примена во Тетово, ...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/08/vesna-janevska-300x197.png&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1854840526.html" class="hover:underline">Стејт департмент: Нема значителни промени во состојбата со човековите права, Владата презеде чекори против службени лица кои нарушиле човекови права</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Во однос на слободата на медиумите, во Извештајот се наведува дека Уставот предвидува слобода на изразување, вклучително на новинари и други медиуми и оти Владата генерално го почитувала ова право.  Владата презеде значајни чекори за идентификува...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>15</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/08/mz-transplantacija.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1857466516.html" class="hover:underline">Извршена уште една трансплантација на органи од починат донор</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Уште една трансплантација на органи од починат донор е извршена на 9 август.  По повод Светскиот ден на органодонорството – 13 август, Министерството за здравство соопшти дека на 9 август е извршена нова трансплантација на органи од починат донор...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712489.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1956593374.html" class="hover:underline">ЗАЕВ И ДИМОВА ЈА ПРАЗНЕЛЕ АГЕНЦИЈАТА ЗА ЕВРОПСКИ ОБРАЗОВНИ ПРОГРАМИ И МОБИЛНОСТ КАКО ДА Е НИВНА ФИРМА Не постои институција во која СДСМ нема направено криминал, обвини Манасиевски</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> ЗАЕВ И ДИМОВА ЈА ПРАЗНЕЛЕ АГЕНЦИЈАТА ЗА ЕВРОПСКИ ОБРАЗОВНИ ПРОГРАМИ И МОБИЛНОСТ КАКО ДА Е НИВНА ФИРМА Не постои институција во која СДСМ нема направено криминал, обвини Манасиевски.  Исто така, да ја потсетиме јавноста, дека тогашниот премиер Зае...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>3</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/08/klinika-za-urologija-5.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-927884982.html" class="hover:underline">Комплетно реновирана Клиниката за урологија, зголемен и медицинскиот тим</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Целосно е реновирана Клиниката за урологија, подостојни услови за пациентите и за вработените » :.  Универзитетската клиника за урологија денеска ја промовираше новата, целосно реновирана болничка инфраструктура, како дел од широк инвестициски и ...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1754991965/eafqzf08imqvrdlbm3gi.webp&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1283150828.html" class="hover:underline">Мицкоски: Ќе има одговорност за секој што ќе се огреши пред законот</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Секој оној којшто ќе се огреши пред законот и нема да работи совесно ќе има одговорност, без разлика од која политичка партија, доаѓа дали е тоа од ВМРО ДПМНЕ, дали е тоа од коалицијата ВРЕДИ од политичката партија ЗНАМ или некој којшто во минато...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1754992778/hh7bspkai8xmtjvc8fy3.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1849383350.html" class="hover:underline">Се уште не е одобрено обвинението за пожарот во Кочани</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> За трагедијата во Кочани обвинети се 34 лица и три правни лица.  Обвинението за пожарот во дискотека во Кочани, во кој загинаа 62 лица, а 203 беа повредени, иако поднесено на 13 јуни, с уште не е одобрено од Основниот кривичен суд Скопје.  Според...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1755066771/b2uhhiez8tlfldwph9yl.webp&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1405001581.html" class="hover:underline">Свечена владина седница по повод 24 години од Охридскиот рамковен договор</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Договорот беше потпишан на 13 август 2001 година во претседателската резиденција на Водно во Скопје од страна на тогашниот претседател на државата Борис Трајковски, тогашниот премиер и лидер на ВМРО ДПМНЕ, Љубчо Георгиевски, како и тогашните лиде...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>3</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2024/02/antikorupciska-nova-300x194.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-613884868.html" class="hover:underline">Собраниската Комисија за изборите и именувањата ќе формира Комисија за селекција на кандидати за претседател на ДКСК</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Комисијата за прашања на изборите и именувањата на Собранието во рок од десет дена од објавувањето на огласот формира Комисија за селекција на кандидати за претседател и за членови на ДКСК.  Врз основа на членот 12 став 2 од Законот, во случај на...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/704400.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1505148738.html" class="hover:underline">Учениците во општина Центар ќе добијат бесплатни униформи и ранчиња со прибор</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Учениците во општина Центар ќе добијат бесплатни униформи и ранчиња со прибор » :.  Учениците во сите општински основни училишта на територија на општина Центар, учебната 2025 2026 година ќе ја почнат во училишни униформи коишто за првпат се вове...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/465991.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-940875124.html" class="hover:underline">Тече рокот за евидентирање на службените возила во Регистарот на ДКСК пред локалните избори</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> До денеска напладне во Регистарот на возила на државни органи, органи на локалната самоуправа, јавни претпријатија или други правни лица што располагат со државен капитал во Државната комисија за спречување на корупцијата се евидентирани повеќе о...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1755066733/yiusalmpwwgpflfit6rb.webp&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1602600933.html" class="hover:underline">Продолжува топлото време – температури до 39 степени</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Во Скопје, сончево и многу топло со слаб до умерен ветер од југоисточен правец.  Сончево и многу топло со мала локална облачност: Максималната температура до 39 степени.  Ќе дува слаб до умерен ветер од југоисточен правец.</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>10</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-484228701.html" class="hover:underline">ДУИ: Чаир не смее да се врати во рацете на човекот кој за 20 години ја претвори општината во приватна фирма за лично богатење</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Граѓаните на Чаир заслужуваат да живеат во општина без хаос, без корупција и без луѓе кои ја гледаат општината само како банкомат за лични интереси.  Соопштение на ДУИ: Граѓаните на Чаир добро знаат кој е Изет Меџити и неговиот послушник Висар Га...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>3</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://libertas.mk/wp-content/uploads/2021/07/apis-i-sakam-da-rabotam-baraat-avna-rasprava-za-izmenite-na-zakonot-za-igri-na-sre-a-300x169.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1432220126.html" class="hover:underline">Отворено писмо на „Сакам да работам“ до македонските политичари: Застанете во наша одбрана, не дозволувајте да не избркаат од Македонија!</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Доставувањето на предизборен Закон за игри на среќа до пратениците во Собранието, само три дена после распишувањето на локалните избори, ги потврдува нашите грижи.  Игрите на среќа се омилена предизборна тема преку која одредени етнички партии се...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/03/policija-mvr-300x241.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1319114449.html" class="hover:underline">Кривична пријава за четири лица за престрелката во Тетово, одреден 30-дневен притвор, по две лица се трага</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> На 10 август, на улицата „Благоја Тоска“ во Тетово, првиот осомничен и детето во судир со законот родено во 2010 година, со умисла, како соизвршители и со употреба на огнено оружје – автоматски пушки кои на граѓаните им се забранети, лишиле од жи...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>8</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/08/viber_image_2025-08-12_19-18-43-397-300x169.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1869915205.html" class="hover:underline">ФРЛАЛ КАМЕЊА КОН ПОЛИЦИСКИ ХЕЛИКОПТЕР ШТО ГАСИ ПОЖАРИ: Скопјанец приведен поради загрозување на безбедност</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> На 6 јули околу 18 часот додека полициски хеликоптер приоѓал на кон реката Лепенец каде се влива во реката Вардар со цел да наполни вода за гаснење на пожарот во реонот на Блаце, 55 годишниот почнал да мафта со рацете и фрлал камења кон хеликопте...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>7</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2022/11/512677-vo-policiska-akcija-vo-skopje-zapleneti-25-kilogrami-marihuana-300x178.png&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--45380970.html" class="hover:underline">Скопјанец под истрага за илегално држење и продавање марихуана</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> На 27 јуни осомничениот се доближил до автомобилот и бидејќи не можел да си ги пронајде клучевите, насилно го скршил задното стакло, по што извлекол црна најлонска вреќа со повеќе пакувања марихуана и дигитална вага.  Осомничениот 23 годишник, во...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1755076287/t1uhf2kdj3x7qicnys8q.webp&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1743906721.html" class="hover:underline">Во матичните амбуланти во Велес зголемен бројот на болни од стомачен вирус</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Иако има зголемување на бројот на пациенти деца и возрасни со стомачен вирус во Велес, сепак лекарите од матичните амбуланти за МИА, информираат дека ситуацијата не е алармантна.  Матичните лекари посочуваат дека ова заболување е во текот на цела...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/08/limani-300x225.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--446752259.html" class="hover:underline">Лиценците за работа во градинките повторно активни по двегодишната блокада</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Околу 350 кандидати денеска полагаат за лиценца за работа како воспитувачи, негуватели, стручни работници, соработници и директори – задолжителен предуслов за вработување во детските градинки.  Конечно го одблокиравме процесот на полагање стручни...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>12</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://denesen.mk/wp-content/uploads/2025/08/ahmeti-alija-ali-700x484.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-2137501255.html" class="hover:underline">(ВИДЕО) Ахмети: Четврт векот од Охридскиот договор да не најде горди како вчера, а не омаловажени и потценети, како денес</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Рамковниот договор после 24 години донесе мир, стабилност и обезбеди зачувана унитарност на Македонија, рече премиерот Христијан Мицкоски на Свечена седница по повод 24 години од потпишувањето на Охридскиот рамковен договор.  Рамковниот договор е...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>23</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/08/1000043383-300x225.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-2071739326.html" class="hover:underline">На Ќафасан откриени 21 килограм пастрмка скриени во автомобил</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Последен случај е откриен деновиве на граничен премин Ќафасан, кога државјанин на Албанија се обидел нелегално да внесе 21 килограм свежа пастрмка скриена во просторот за резервна гума.  Од почетокот на годинава Царинската управа во повеќе случаи...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Во недостаток на идеи и очекуван пораз на изборите, манипулациите на ВЛЕН продолжуваат во однос за наводна моја средба со Груевски со цел обезбедување на пратеници за подршка на утавни измени.  Османи: Продолжуваат манипулациите на ВЛЕН за наводн...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
                                     <span>Sources: <span>6</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 19:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/08/DSC_9954-300x162.jpg&#39;);">
+                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1620459927.html" class="hover:underline">Меџити: Охридскиот договор е жив темел на правична и инклузивна држава</a>
+                                    <a href="article-detail-api-1771573912.html" class="hover:underline">Од утре се затвораат улици во Кавадарци - почуваат подготовките за „Тиквешки гроздобер“</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Меџити Охридскиот договор го гледа како визија за соживот и инклузивност2 84 715Вицепремиерот и министер за животна средина Изет Меџити, на свечената седница по повод 24 години од потпишувањето на Охридскиот рамковен договор, истакна дека вистинс...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Поради подготовки за „Тиквешки гроздобер“, од утре улици околу централното подрачје нема да бидат проодни за возила, информираат денеска од Општина Кавадарци.  Дел од настаните се предвидени да траат и до еден часот по полноќ, а поради подготовки...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>9</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 19:02</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://gostivarpress.mk/wp-content/uploads/2025/08/socz-300x187.jpg&#39;);">
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2023/01/sdsm-zgrada-1-366121-300x185.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1359663422.html" class="hover:underline">Во тек е исплатата на правата од социјална и детска заштита</a>
+                                    <a href="article-detail-api--103072070.html" class="hover:underline">Нови тројца кандидати за градоначалници од СДСМ, досега објавени вкупно 60 кандидатури</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Министерството за труд и социјална политика (МТСП) информира дека денеска започна исплатата на правата од социјална, детска и цивилна заштита за месец јули 2025 година.  Во тек е исплатата на правата од социјална и детска заштита.  Корисниците на...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Со ова, СДСМ веќе има објавено 60 кандидати за градоначалници од СДСМ во 60 општини ширум државата.  Сите кандидати на СДСМ се чесни, одговорни и посветени луѓе, кои ќе го дадат својот максимум во интерес на граѓаните.  Драган Атанасов, кандидат ...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                    <span>Sources: <span>7</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 18:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://gostivarpress.mk/wp-content/uploads/2024/04/pari-denari-300x225.jpg&#39;);">
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/715317.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1967579653.html" class="hover:underline">Добри вести: Се зголемуваат платите на вработените во јавните установи за социјална заштита</a>
+                                    <a href="article-detail-api-31094398.html" class="hover:underline">(Видео) Лукаревска: Владата се задолжи 15 милиони евра за проект кој е 94,3% реализиран</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Министерството за социјална политика, демографија и млади и синдикатите на УПОЗ и СОНК потпишаа нов колективен договор со кој ќе се овозможи зголемување на платите на вработените во јавните установи за социјална заштита за 20 проценти, информира ...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://tera.mk/wp-content/uploads/2025/08/Screenshot_5-5-150x150.png&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1644995191.html" class="hover:underline">(ВИДЕО) Илиевски: За владините функционери сè да има ново, луксузно, отмено, а за граѓаните – трошки леб и сол</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> СДСМ повторно ќе го поднесе Законот за минималната плата од 500 евра.  СДСМ повторно ќе го поднесе Законот за минимална плата од 500 евра, најави потпретседателот на СДСМ, Методија Илиевски.  Затоа, СДСМ јавно ја изразува својата целосна поддршка...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Лукаревска: Нов ден ново задолжување на ВМРО ДПМНЕ од 15 милиони евра 0 Таа потенцираше дека овој проект, вреден 21,5 милиони евра, беше донесен уште во декември 2020, со поддршка од мнозинството предводено од СДСМ.  Денес пред целата јавност, зб...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
                                     <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 18:32</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1755066989/xvv5ssxygy9p2zk8ezlu.jpg&#39;);">
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2021/07/кораб-букови-шуми-300x146.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--540449157.html" class="hover:underline">Пожарот кај Јасен сè уште е активен, поради тоа патот Македонски Брод-Скопје е затворен за сообраќај</a>
+                                    <a href="article-detail-api--1325491553.html" class="hover:underline">Забраната за движење во шумите се продолжува до 30 септември</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Активни пожари има во Националниот парк „Јасен“, каде гори мешана шума, на територија на општина Македонски Брод и во струмичкото село Сарај, каде гори отпад.  Како што информира Центарот за управување со кризи (ЦУК), под контрола е пожарот во ре...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Министерството за земјоделство, шумарство и водостопанство ја известува јавноста дека забраната за движење во шумите и шумското земјиште се продолжува до 30 септември 2025 година и ги повикува граѓаните на посебна претпазливост со цел спречување ...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>10</span></span>
-                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                    <span>Sources: <span>13</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 18:32</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2021/04/benzin-3--300x188.jpg&#39;);">
+                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-438735942.html" class="hover:underline">Поевтинуваат горивата</a>
+                                    <a href="article-detail-api-1077524933.html" class="hover:underline">Полицијата предупредува за измами: Лажни службеници бараат пари преку телефон</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Малопродажните цени на бензините ЕУРОСУПЕР БС 95 и ЕУРОСУПЕР БС 98 од полноќ се намалуваат за половина денар, а ЕУРОДИЗЕЛ (Д Е ) се намалува за еден денар по литар.  Со одлука на Регулаторната комисија за енергетика – РКЕ, малопродажните цени на ...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Во изминатиот период во СВР Велес добиени се пријави од граѓани, најчесто од повозрасни лица, дека се измамени на начин што непознати лица телефонски им се јавуваат претставувајќи се како службени лица и се обидуваат да им измамат поголеми суми н...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>16</span></span>
-                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 18:17</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://emagazin.mk/wp-content/uploads/2025/08/stomatolog-300x225.jpg&#39;);">
+                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1756825909/zmiqmmcbzewhmsbyfyyv.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1623457953.html" class="hover:underline">Имавме неколку контроли, не беа констатирани неправилности, велат од Стоматолошката комора, откако Министерството за здравство го презеде лиценцирањето на стоматолози</a>
+                                    <a href="article-detail-api-1206044371.html" class="hover:underline">Субвенциониран студентски оброк, студентите бараат + 10 денари, министерката ќе чека ребаланс </a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Тој се обрати на прес конференција откако министерот за здравство, Азир Алиу во саботата информираше дека Министерството за здравство ги презема надлежностите за лиценцирање на Стоматолошката комора.  Министерството за здравство го презема лиценц...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Зголемување на субвенциите за студентски оброк од 140 на 150 денари, бараат од Студентското тело » :.  Да се зголеми сумата на субвенционираниот студентски оброк бараат од Националното студентско тело, а за тоа во прилог имаат и пресметка во скла...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>17</span></span>
-                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                    <span>Sources: <span>5</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 18:17</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2020/02/elektricen-trotinet-300x198.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--1617637054.html" class="hover:underline">Малолетник со електричен тротинет удрил во пешак на „Партизанска“, со тешки повреди пренесен во болница</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Тешко повреден пешак на велосипедска патека во Скопје, во него удрил електричен тротинет.  Партизански одреди“ во Скопје, на велосипедската патека, електричен тротинет управуван од малолетник удрил во Р. Т. Во несреќата со тешки телесни повреди с...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 18:17</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2025/09/aditiv-1-300x192.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-474878366.html" class="hover:underline">Ново рочиште на 15 септември: Одбиен предлогот за спојување на постапките во „Адитив“</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Судечкиот совет во Кривичниот суд денеска го одби предлогот на обвинителството за спојување на постапките во случајот „Адитив“, кој се однесува на злоупотреби во државната компанија ЕСМ и фиктивни тендери вредни милиони евра.  Судењето за предмет...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>8</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 18:02</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2024/06/aleksandar-nikoloski-300x165.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--1542192778.html" class="hover:underline">НИКОЛОСКИ: Антидемократски структури се уште се борат против демократска Македонија и се уште сакаат да владеат со земјата</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Николоски: Четврти пат се злоупотребува Тајната служба и секогаш жртва е ВМРО ДПМНЕ :.  Време е за одговорност, време е Обвинителите и судиите да го положат испитот и да донесат разрешници бидејќи граѓаните тоа го очекуваат, истакна потпретседате...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>6</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 17:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/08/izbori-listi-300x200.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-81698190.html" class="hover:underline">ДИК: Поднесени 69 предлози за независни кандидати за градоначалници</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Потписи за независни кандидати за градоначалници се собраа за општините Пробиштип, Македонска Каменица, Куманово, Крива Паланка, Охрид, Дебарца, Прилеп, Долнени Струга, Дебар Струмица, Радовиш, Брвеница, Свети Николе, Гевгелија, Демир Капија, Кич...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>12</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 17:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2024/05/obvinitelstvo-300x165.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-514805485.html" class="hover:underline">Обвинителство: Детално ќе ги испитаме наводите за нелегално прислушување</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Обвинителството нема никаква можност за незаконско следење на комуникациите, велат од обвинителството.  Јавното обвинителство нема никаква можност за незаконско следење на комуникациите.  Воедно, велат од Обвинителството, и наводите во последните...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>11</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 17:02</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2024/10/orhan-murtezani-pres-300x168.png&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-202256760.html" class="hover:underline">Муртезани: Копенхашките критериуми мора да останат водилка на процесот на проширување</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Муртезани нагласи дека Копенхашките критериуми мора да останат водилка на процесот и дека Северна Македонија е целосно посветена на нивната примена.  Сесијата беше посветена на значењето на Копенхашките критериуми и на постепената интеграција как...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>5</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 16:33</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/715295.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--413551800.html" class="hover:underline">ЗНМ и ССНМ: Потребно е целосно расветлување на сомнежите за прислушување на новинари</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Здружението на новинари на Македонија (ЗНМ) и Самостојниот синдикат на новинарите и медиумските работници (ССНМ) со сериозна загриженост ги следат информациите поврзани со можни случаи на незаконско следење на новинари и медиумски работници во пе...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>9</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 16:21</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://gostivarpress.mk/wp-content/uploads/2018/05/ucionica-razred-ucenici-skola-nastava-c5f881a99de1ccfcea23b433ef8a5553_view_article_new-300x150.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-879165396.html" class="hover:underline">Неделков: Изминатите 5 години платите на просветните работници се зголемени за 70%</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Од 2020 до 2025 година СОНК кумулативно ги има зголемено платите за околу 70 проценти.  Од јануари месец 2020 година, кога почнавме со 10 проценти зголемување, до оваа година во март месец кога имавме зголемување од седум проценти, кумулативно си...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://denesen.mk/wp-content/uploads/2025/09/filipce-1-1024x588-1-960x551-700x402.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--1983094402.html" class="hover:underline">Ја разбирам грижата на граѓаните, но барањата од Бугарија се внесени и во документ од ЕУ – вели Филипче</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Јас ја разбирам грижата на граѓаните а тоа меѓу другото тие на некој начин и го изразија за време на минатогодишните избори кога во тој контекст така гласаа кога станува збор за СДСМ наспроти ВМРО–ДПМНЕ и сметам дека таа грижа на граѓаните не тре...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>7</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1756797436/hrmiep9htpa0yarjag7s.webp&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-853818900.html" class="hover:underline">Сѐ уште активни пожарите во Илинден, Долнени и Липково, пожарите на Кожуф, Јасен и Вардариште ставени под контрола</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Центарот за управување со кризи соопшти дека денеска на територија на државата регистрирани се вкупно 17 пожари на отворен простор, од кои три се активни, три под контрола и 11 пожари се изгаснати.  Активни се пожарите во Општина Долнени во селат...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>8</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1756807963/bcxmvipuogjudci0dhv0.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-249202703.html" class="hover:underline">Јаневска: Доставата на учебници треба да биде завршена оваа недела</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Доставата на учебници треба да биде завршена оваа недела, нема никакви проблеми со почетокот на учебната година, изјави министерката за образование и наука Весна Јаневска.  Доставата на учебници треба да биде завршена во текот на оваа недела спор...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2020/02/gorivo-benzin1-300x203.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-166514428.html" class="hover:underline">Дизелот поскапува, бензините со иста цена</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Малопродажните цени на ЕУРОДИЗЕЛ (Д Е ) и на Екстра лесното масло за домаќинство на (ЕЛ 1) од полноќ се зголемуваат за 0,50 денари по литар.  Цените на бензините ЕУРОСУПЕР БС 95 и ЕУРОСУПЕР БС 98 не се менуваат, соопшти Регулаторната комисија за ...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>5</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1756795452/tfa8gh3dm4bzvculehab.webp&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--1016270452.html" class="hover:underline">Сончево со мала до умерена локална облачност, максималната температура до 37 степени</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Во Скопје, времето ќе биде сончево со мала до умерена облачност и со слаб ветер од променлив правец.  Сончево со мала до умерена локална облачност, максималната температура до 37 степени » :.  Времето утре ќе биде сончево со мала до умерена локал...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>5</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/715294.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1667677702.html" class="hover:underline">Поранешниот директор на АНБ, Димовски тврди дека Мицкоски не бил таргет на Агенцијата, бара да се декласифицираат документите </a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Со оглед на тоа што во претходен брифинг за медиуми во АНБ бил споменат периодот од 2019 до 2024 година во дел од кој и јас ја извршував должноста директор на АНБ, одговорно тврдам дека тој како лидер на тогашна опозициона партија во периодот од ...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>9</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2022/09/danela-arsovska-3-300x200.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-866657081.html" class="hover:underline">Арсовска за пресудата: Ова е победа за жртвите на насилство, за секоја жена и мајка</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Основниот кривичен суд во Скопје денеска донесе пресуда со која Сулејман Љамалари е осуден на две години затвор за грубо насилство врз градоначалничката на Скопје, Данела Арсовска.  Во текот на судскиот процес, обвинетиот тврдеше дека не е напаѓа...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>12</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1756808152/x9dmb2d1zzznq14t0vic.webp&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--496417605.html" class="hover:underline">Од утре попладне до петок нестабилно време со пороен дожд, грмежи и ветер</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Наместа процесите ќе бидат поинтензивни во форма на невреме со пообилен пороен дожд за кратко време (над 20 лм2), засилен ветер (над 60 кмч) и услови за изолирана појава на град, соопшти УХМР.  Под влијание на влажна и нестабилна воздушна маса, у...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>4</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
@@ -884,9 +666,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
         <p class="text-sm leading-relaxed mb-6">
-            Изборот и позициите на вестите на <span class="font-bold">Stitch Design</span> се одредуваат автоматски со компјутерска програма.
-            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Stitch Design</span>.
-            <span class="font-bold">Stitch Design</span> не презема никаква одговорност за веродостојноста на преземените информации.
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
         </p>
 
         <!-- Static Links -->

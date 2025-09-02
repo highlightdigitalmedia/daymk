@@ -28,13 +28,20 @@
             <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
-        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Хроника</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>18:08, 13.08.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>21:00, 02.09.2025</span></p>
         </h2>
-        <div class="flex w-12 items-center justify-end">
+        <div class="flex w-24 items-center justify-end">
+            <!-- NEW: Device Switcher Icon -->
+            <button id="device-switcher-button" aria-label="Switch to mobile/desktop view"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+                </svg>
+            </button>
             <!-- Weather Link Icon (Thermometer) -->
-            <a href="/prognoza.html" aria-label="Weather Forecast"
+            <a href="prognoza.html" aria-label="Weather Forecast"
                class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
                 <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
@@ -64,23 +71,23 @@
         <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
             <!-- Left Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="/index.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="index.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/sports.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="sports.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/magazine.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="magazine.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
                 </a>
             </div>
             <!-- Right Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/latest-news-page-1.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="latest-news-page-1.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Најнови Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/prognoza.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="prognoza.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/radio.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="radio.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/youtube.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="youtube.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">YouTube</p>
                 </a>
             </div>
@@ -88,27 +95,27 @@
         <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
         
             <div class="flex border-b theme-border-color px-4 gap-4 overflow-x-auto whitespace-nowrap scrollbar-hide pt-2">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/macedonia.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="macedonia.html">
                     <p>Македонија</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/economy.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="economy.html">
                     <p>Економија</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/balkan.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="balkan.html">
                     <p>Балкан</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/world.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="world.html">
                     <p>Свет</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/skopje.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="skopje.html">
                     <p>Скопје</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/bitola.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="bitola.html">
                     <p>Битола</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-[3px] theme-active-border theme-nav-text-active" href="/hronika.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-[3px] theme-active-border theme-nav-text-active" href="hronika.html">
                     <p>Хроника</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/republika.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="republika.html">
                     <p>Република</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/culture.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="culture.html">
                     <p>Култура</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/technology.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="technology.html">
                     <p>Технологија</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/scene.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="scene.html">
                     <p>Сцена</p>
                 </a>
             </div>
@@ -125,16 +132,46 @@
                     <div class="flex flex-col divide-y theme-border-color">
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2023/03/policija-1-300x196.jpg&#39;);">
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/09/542758258_1079194587724401_4538048671921826599_n-300x225.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1617224151.html" class="hover:underline">Возел пијан, удрил во малолетничка и побегнал</a>
+                                    <a href="article-detail-api-145191254.html" class="hover:underline">Уапсен дилер во Скопје, запленети 100 кесички со марихуана</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Каменичка“ во Македонска Каменица, полициски службеници го уапсија Г. А. Македонска Каменица.  Како што соопшти МВР, тој се сомничи дека околу 23.  Малолетничката се здобила со тешки телесни повреди и била пренесена во Клиничка болница Штип за ук...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Вчера околу 19 часот на улицата „Анкарска“ во Скопје полициски службеници од Единицата за интервентна полиција при СВР Скопје го лишиле од слобода Р. Ѓ. Откако му бил даден знак да застане, Р. Ѓ. Ѓ. По документирање на случајот, против Р. Ѓ. МАКФ...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>6</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2017/10/licni_karti-300x237.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1286619176.html" class="hover:underline">Полицаец подигнал 11 лични карти за лица што живеат во Чучер Сандево, но ниту ги доставил ниту пријавил дека недостигаат</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Одделот за внатрешна контрола, криминалистички истраги и професионални стандарди при МВР до надлежното Основно јавно обвинителство за гонење на организиран криминал и корупција – Скопје поднесе кривична пријава против Д. С. ПС – Чаир при СВР – Ск...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2021/06/cetiricikl-300x172.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--891565599.html" class="hover:underline">Четирицикл се преврте од патот, две лица се повредени</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> СВР Тетово било пријавено дека во с. Синичане, општина Боговиње, четирицикл со кумановски регистарски ознаки, управуван од П. К. Тетово, се превртел на патот.  Во несреќата со тешки телесни повреди се здобил сопатникот Н. С. Скопје, а со телесни ...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
@@ -239,9 +276,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
         <p class="text-sm leading-relaxed mb-6">
-            Изборот и позициите на вестите на <span class="font-bold">Stitch Design</span> се одредуваат автоматски со компјутерска програма.
-            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Stitch Design</span>.
-            <span class="font-bold">Stitch Design</span> не презема никаква одговорност за веродостојноста на преземените информации.
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
         </p>
 
         <!-- Static Links -->

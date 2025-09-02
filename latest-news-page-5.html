@@ -28,13 +28,20 @@
             <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
-        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Најнови Вести</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>18:08, 13.08.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>21:00, 02.09.2025</span></p>
         </h2>
-        <div class="flex w-12 items-center justify-end">
+        <div class="flex w-24 items-center justify-end">
+            <!-- NEW: Device Switcher Icon -->
+            <button id="device-switcher-button" aria-label="Switch to mobile/desktop view"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+                </svg>
+            </button>
             <!-- Weather Link Icon (Thermometer) -->
-            <a href="/prognoza.html" aria-label="Weather Forecast"
+            <a href="prognoza.html" aria-label="Weather Forecast"
                class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
                 <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
@@ -64,23 +71,23 @@
         <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
             <!-- Left Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/index.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="index.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/sports.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="sports.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/magazine.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="magazine.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
                 </a>
             </div>
             <!-- Right Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="/latest-news-page-1.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="latest-news-page-1.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">Најнови Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/prognoza.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="prognoza.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/radio.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="radio.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/youtube.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="youtube.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">YouTube</p>
                 </a>
             </div>
@@ -102,7 +109,7 @@
                         <!-- Previous Page Link -->
                         <a href="latest-news-page-4.html"
                            class="theme-bg-secondary theme-text-primary py-2 px-4 rounded-lg border theme-border-color hover:theme-bg-hover">
-                            Previous
+                            <
                         </a>
 
                         <!-- Page Numbers -->
@@ -152,167 +159,162 @@
                                 <span>9</span>
                             </a>
                         
-                            <a href="latest-news-page-10.html"
-                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
-                                <span>10</span>
-                            </a>
-                        
 
                         <!-- Next Page Link -->
                         <a href="latest-news-page-6.html"
                            class="theme-bg-secondary theme-text-primary py-2 px-4 rounded-lg border theme-border-color hover:theme-bg-hover">
-                            Next
+                           >
                         </a>
                     </div>
 
                     <div class="flex flex-col divide-y theme-border-color">
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1754991965/eafqzf08imqvrdlbm3gi.webp&#39;);">
+                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/07/bushava-azbuka-mural-1-1-1.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1283150828.html" class="hover:underline">Мицкоски: Ќе има одговорност за секој што ќе се огреши пред законот</a>
+                                    <a href="article-detail-api--383125655.html" class="hover:underline">Одбележување 40 години „Бушава азбука“</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Секој оној којшто ќе се огреши пред законот и нема да работи совесно ќе има одговорност, без разлика од која политичка партија, доаѓа дали е тоа од ВМРО ДПМНЕ, дали е тоа од коалицијата ВРЕДИ од политичката партија ЗНАМ или некој којшто во минато...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Во чест на 40 години од првото емитување на култната детска серија „Бушава азбука“, денеска во Дебар Маало ќе биде откриен мурал посветен на овој симбол на македонската детска култура.  Бушава азбука“: со откривање на мурал во Дебар Маало започну...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>3</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1754992778/hh7bspkai8xmtjvc8fy3.jpg&#39;);">
+                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/08/pozar-vardariste.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1849383350.html" class="hover:underline">Се уште не е одобрено обвинението за пожарот во Кочани</a>
+                                    <a href="article-detail-api-28317120.html" class="hover:underline">Пожар во Вардариште, цела Општина Аеродром без струја</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> За трагедијата во Кочани обвинети се 34 лица и три правни лица.  Обвинението за пожарот во дискотека во Кочани, во кој загинаа 62 лица, а 203 беа повредени, иако поднесено на 13 јуни, с уште не е одобрено од Основниот кривичен суд Скопје.  Според...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Поради пожар на дивата депонија Вардариште каде што е зафатен поголем простор и постар објект исклучена е струјата за корисниците на Аеродром и Лисиче, соопштија од Центарот за управување со кризи (ЦУК.  Пожар во Вардариште, цела Општина Аеродром...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1755068078/aycpllmlqeekcwr3hkna.webp&#39;);">
+                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/09/H0G4602_copy_984x615.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1131234560.html" class="hover:underline">Притворена и поранешната прва дама на Јужна Кореја поради сомнение за корупција</a>
+                                    <a href="article-detail-api-357803416.html" class="hover:underline">Учениците од Центар ќе одат на бесплатна екскурзија „Ја сакаме Македонија“</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Поранешната прва дама на Јужна Кореја, Ким Кеон хи, е сместена во самица во притворски центар во Сеул откако судот издаде налог за нејзино апсење како дел од истрагата за повеќе случаи на корупција, изјави денеска функционер на затворската админи...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Градоначалникот на Општина Центар Горан Герасимовски, утрово го посети општинското основно училиште „Киро Глигоров“ за да им посака успешен старт на првачињата и сите ученици по повод првиот ден од новата учебна година.  Учениците од Центар ќе од...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>3</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1755068150/yumvp6zusks3bjfkd2u8.webp&#39;);">
+                                 style="background-image: url(&#39;https://apla.mk/media/k2/items/cache/d9e6fd8ce7974a15d8bbc52e3504faf2_L.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1825267560.html" class="hover:underline">Припадници на Националната гарда распоредени долж Националната алеја во Вашингтон</a>
+                                    <a href="article-detail-api--34798313.html" class="hover:underline">БИТОЛА ЈА ОДБЕЛЕЖА 120 ГОДИШНИНАТА ОД ПОГИБИЈАТА НА АЛЕКСАНДАР ТУРУНЏЕВ</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Припадници на Националната гарда, чие распоредување беше активирано по наредба на американскиот претседател Доналд Трамп, пристигнаа пред споменикот на Вашингтон како дел од неговиот план за решавање, како што изјави, на проблемот со криминалот к...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Токму на денот на погибието пред 120 години, на овој 30 август, Битола ја исправи својата вечна должност и му подари споменик на Александар Турунџев“, порача градоначалникот Коњановски.  Свечено откриен споменикот на војводата Александар Турунџев...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1755077166/lalagebsodktd8rtlcwy.png&#39;);">
+                                 style="background-image: url(&#39;https://apla.mk/media/k2/items/cache/9c2084bb4cf42e6edfd98dc26db12abd_L.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1414891176.html" class="hover:underline">ПСЖ и Тотенхем ќе играат за трофејот во Супекупот на УЕФА</a>
+                                    <a href="article-detail-api--1064597464.html" class="hover:underline">„ПРЕДЛОЖИ ИДЕЈА“, КОЊАНОВСКИ И ПАРТИЈАТА НА СРЕДБИ СО ГРАЃАНИТЕ</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Еднаш да се победи е одлично, но сакаме да се бориме за трофеи одново и одново.  Натпреварот ПСЖ – Тотенхем ќе се игра вечер од 21 часот на стадионот „Фриули“ во италијанскиот град Удине.  Актуелниот европски фудбалски шампион ПСЖ и освојувачот н...</p>
+                                <p class="theme-text-secondary text-base mb-2"> ПРЕДЛОЖИ ИДЕЈА“, КОЊАНОВСКИ И ПАРТИЈАТА НА СРЕДБИ СО ГРАЃАНИТЕ :.  Преку кампањата „Предложи идеја“, жителите имаат можност директно да ги изнесат своите предлози и иницијативи за подобра иднина на Битола.  Коњановски објави дека денес одржал пов...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1755068189/q0mv8el09aoo8w8c6cvb.webp&#39;);">
+                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1793723547.html" class="hover:underline">Кремљ: Путин го информираше Ким Џонг-ун за средбата со Трамп</a>
+                                    <a href="article-detail-api-1212198646.html" class="hover:underline">Медведев стави крај на осумгодишната соработка со тренерот Сервара</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Ким Џонг ун во контекст на претстојните разговори со американскиот претседател Доналд Трамп, објави Кремљ по средбата на лидерите.  Рускиот претседател Владимир Путин телефонски го информираше севернокорејскиот лидер Ким Џонг ун за претстојниот с...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Крај на својата осумгодишна соработка, објавија денеска Данил Медведев и неговиот тренер Жил Сервара, само неколку денови по инцидентот што рускиот тенисер го предизвика во првото коло на УС Опен.  Сервара, кој беше прогласен за тренер на годинат...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>3</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/711363.jpg&#39;);">
+                                 style="background-image: url(&#39;https://sportstation.mk/wp-content/uploads/2025/08/541928125_18397198771189535_2502277897975826181_n-300x217.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1490314693.html" class="hover:underline">Мексико им испорача на САД 26 припадници на нарко-картели кои ги бараше Вашингтон</a>
+                                    <a href="article-detail-api--1182596551.html" class="hover:underline">Е.Пелистер повторно со победа над Вардар го освоија турнирот во Скопје</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Администрацијата на американскиот претседател Доналд Трамп ги засилува напорите за сузбивање на одредени нарко картели во Мексико.  Минатата недела, Министерството за финансии на САД објави дека воведува санкции врз средствата на четири лица повр...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Во среда во Кавадарци овие два тима ќе одиграат повторно, овој пат на Супер Купот на Македонија, со што и официјално ќе започне новата сезона.  Една недела после победата на пријателскиот меч на турнирот во Охрид, сега и на првиот Регионален рако...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712442.jpg&#39;);">
+                                 style="background-image: url(&#39;https://topsport.mk/wp-content/uploads/2025/09/13088301.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--816395945.html" class="hover:underline">Деветмина загинати и седуммина повредени во експлозија во фабрика за експлозиви во Бразил</a>
+                                    <a href="article-detail-api--2110382235.html" class="hover:underline">Николас Џексон е играч на Баерн</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Според соопштението на Енаекс, објавено доцна синоќа по локално време, меѓу загинатите се шест мажи и три жени.  Даниел Оливеира, индустриски директор на Енаекс Бразил, рече дека фабриката организирала тим психолози за да им пружи поддршка на сем...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Фудбалерот на Челзи, Николас Џексон, ќе игра на позајмица во Баерн Минхен до крајот на сезоната, објави германскиот клуб.  Експретот за трансфери, Фабрицио Романо објави дека Баерн има опција да го откупи договорот на 24 годишниот сенегалски напа...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712456.jpg&#39;);">
+                                 style="background-image: url(&#39;https://gostivarpress.mk/wp-content/uploads/2018/05/ucionica-razred-ucenici-skola-nastava-c5f881a99de1ccfcea23b433ef8a5553_view_article_new-300x150.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--529226064.html" class="hover:underline">Пожари беснеат низ Европа, силни ветрови го отежнуваат гасењето</a>
+                                    <a href="article-detail-api-879165396.html" class="hover:underline">Неделков: Изминатите 5 години платите на просветните работници се зголемени за 70%</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Голем број пожари се уште се активни во Црна Гора.  Материјалната штета е голема, но опасноста не е помината ниту за Пипери, каде што се појавија нови пожари, ниту за другите делови на Црна Гора.  Во овој случај, не можеме да кажеме дека сè е чов...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Од 2020 до 2025 година СОНК кумулативно ги има зголемено платите за околу 70 проценти.  Од јануари месец 2020 година, кога почнавме со 10 проценти зголемување, до оваа година во март месец кога имавме зголемување од седум проценти, кумулативно си...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>3</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/613310.jpg&#39;);">
+                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1799440882.html" class="hover:underline">КИНА ПРОТЕРА ВОЕН БРОД НА САД: Војската го протерала УСС Хигинс од спорниот гребен во Јужното Кинеско Море, каде бил без дозвола</a>
+                                    <a href="article-detail-api--2122665767.html" class="hover:underline">Шукова: Орце Георѓиевски ветува „парк“ на локацијата Вардариште, најзагадената точка во главниот град</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Американскиот воен брод влегол во областа без дозвола од кинеската влада, соопшти Кинеската јужна команда на борбениот терен.  Кина тврди дека речиси целото Јужнокинеско Море е нејзино, и покрај тврдењата на Брунеи, Индонезија, Малезија, Филипини...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Кандидатот на ВМРО ДПМНЕ за градоначалник на Скопје, Орце Георѓиевски, ветува „парк“ на локацијата Вардариште – најзагадената и технички најкомплицирана точка во главниот град.  Тоа е локација со висок ризик по здравјето и животната средина“, изј...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>3</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
@@ -331,7 +333,7 @@
                             <div class="flex items-end gap-3 justify-between">
                                 <div class="flex flex-col gap-1">
                                     <p class="theme-text-secondary text-sm font-normal leading-normal">Check out our exclusive deals.</p>
-                                    <a href="article-detail-adlatestnewsmain.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
+                                    <a href="article-detail-adlatestnewsmain.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Повеќе</a>
                                 </div>
                             </div>
                         </div>
@@ -347,7 +349,7 @@
                             <div class="flex items-end gap-3 justify-between">
                                 <div class="flex flex-col gap-1">
                                     <p class="theme-text-secondary text-sm font-normal leading-normal">Browse our fresh collection.</p>
-                                    <a href="article-detail-adlatestnewssmall.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
+                                    <a href="article-detail-adlatestnewssmall.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Повеќе</a>
                                 </div>
                             </div>
                         </div>
@@ -415,9 +417,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
         <p class="text-sm leading-relaxed mb-6">
-            Изборот и позициите на вестите на <span class="font-bold">Stitch Design</span> се одредуваат автоматски со компјутерска програма.
-            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Stitch Design</span>.
-            <span class="font-bold">Stitch Design</span> не презема никаква одговорност за веродостојноста на преземените информации.
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
         </p>
 
         <!-- Static Links -->

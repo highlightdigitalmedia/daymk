@@ -28,13 +28,20 @@
             <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
-        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Скопје</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>18:08, 13.08.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>21:00, 02.09.2025</span></p>
         </h2>
-        <div class="flex w-12 items-center justify-end">
+        <div class="flex w-24 items-center justify-end">
+            <!-- NEW: Device Switcher Icon -->
+            <button id="device-switcher-button" aria-label="Switch to mobile/desktop view"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+                </svg>
+            </button>
             <!-- Weather Link Icon (Thermometer) -->
-            <a href="/prognoza.html" aria-label="Weather Forecast"
+            <a href="prognoza.html" aria-label="Weather Forecast"
                class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
                 <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
@@ -64,23 +71,23 @@
         <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
             <!-- Left Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="/index.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="index.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/sports.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="sports.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/magazine.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="magazine.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
                 </a>
             </div>
             <!-- Right Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/latest-news-page-1.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="latest-news-page-1.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Најнови Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/prognoza.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="prognoza.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/radio.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="radio.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/youtube.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="youtube.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">YouTube</p>
                 </a>
             </div>
@@ -88,27 +95,27 @@
         <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
         
             <div class="flex border-b theme-border-color px-4 gap-4 overflow-x-auto whitespace-nowrap scrollbar-hide pt-2">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/macedonia.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="macedonia.html">
                     <p>Македонија</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/economy.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="economy.html">
                     <p>Економија</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/balkan.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="balkan.html">
                     <p>Балкан</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/world.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="world.html">
                     <p>Свет</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-[3px] theme-active-border theme-nav-text-active" href="/skopje.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-[3px] theme-active-border theme-nav-text-active" href="skopje.html">
                     <p>Скопје</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/bitola.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="bitola.html">
                     <p>Битола</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/hronika.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="hronika.html">
                     <p>Хроника</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/republika.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="republika.html">
                     <p>Република</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/culture.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="culture.html">
                     <p>Култура</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/technology.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="technology.html">
                     <p>Технологија</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/scene.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="scene.html">
                     <p>Сцена</p>
                 </a>
             </div>
@@ -125,46 +132,136 @@
                     <div class="flex flex-col divide-y theme-border-color">
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/07/Rabotnik-na-bandera-struja-telekomunikacii-3-bg.jpg&#39;);">
+                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/01/Voda-cesma-slavina-kapki-2-bg.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-606479521.html" class="hover:underline">Без струја неколку улици во општините Илинден и Зелениково</a>
+                                    <a href="article-detail-api-1343772643.html" class="hover:underline">Дел од Скопје утре без вода поради дефект на цевка</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Без струја денеска од 8 до 15 часот ќе останат корисниците на улица 27 Илинден (пат за Јурумлери) во општина Илинден и од 9 до 10 дел од потрошувачите на улица 103 од новата населба Јака во Марино.  Без струја неколку улици во општините Илинден и...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Дел од Скопје утре без вода поради дефект на цевка :.  ЈП „Водовод и канализација“ – Скопје известува дека утре од 9:00 часот без вода ќе останат дел од корисниците на улиците „Охридска“ и „Петричка“ во населбата Водно.  Прекинот во водоснабдувањ...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 22:18</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://faktor.mk/media/main/2025/09/20250902144034.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--2062390590.html" class="hover:underline">Кривична пријава за полицаец кој нападна советничка и инспектори на град Скопје, кои утврдиле дека на диво се приклучил на канализциска мрежа</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Одделот за внатрешна контрола, криминалистички истраги и професионални стандарди против полицискиот службеник Б. М. Видеото од дивиот приклучок за вода на социјалните мрежи го сподели градоначалничката на град Скопје, Данела Арсовска.  Министерст...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>4</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 17:02</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/09/каја-2-1024x960.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--1753319286.html" class="hover:underline">Шукова: Орце Ѓорѓиевски кажува бајки за парк во Вардариште, или манипулира или е некомпетентен</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Шукова: Орце Ѓорѓиевски кажува бајки за парк во Вардариште, или манипулира или е некомпетентен » :.  Орце Ѓорѓиевски, кандидатот на ВМРО ДПМНЕ, ветува парк во Вардариште.  Со ова ветување докажува или дека манипулира или дека е целосно некомпетен...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/09/Kaja-Sukova1-1024x779.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1233813086.html" class="hover:underline">Шукова: За две до три години ќе биде пуштена првата линија на БРТ</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Шукова вели дека првата фаза од БТР системот во Скопје ќе биде пуштена за три години » :.  Кандидатката за градоначалник на Град Скопје од СДСМ, Каја Шукова, вели дека проектот БРТ е единственото функционално и одржливо решение за решавање на дец...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/07/bushava-azbuka-mural-1-1-1.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--383125655.html" class="hover:underline">Одбележување 40 години „Бушава азбука“</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Во чест на 40 години од првото емитување на култната детска серија „Бушава азбука“, денеска во Дебар Маало ќе биде откриен мурал посветен на овој симбол на македонската детска култура.  Бушава азбука“: со откривање на мурал во Дебар Маало започну...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
                                     <span>Sources: <span>3</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://skopje1.mk/wp-content/uploads/2020/10/bujar-osmani-300x195.png&#39;);">
+                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/08/pozar-vardariste.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1025373756.html" class="hover:underline">ВРЕДИ ГО ОБВИНУВА ОСМАНИ: 20 години е на функција и никогаш немал проект за Чаир</a>
+                                    <a href="article-detail-api-28317120.html" class="hover:underline">Пожар во Вардариште, цела Општина Аеродром без струја</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> ДУИ и Бујар Османи се во паника, знаат дека во Чаир доаѓа неизбежен пораз и дека граѓаните нема да наседнат на нивните лажни приказни, соопшти коалицијата Вреди.  ВРЕДИ објавува факти за кои вели дека Чаир ги знае: Османи е осомничен во предметот...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Поради пожар на дивата депонија Вардариште каде што е зафатен поголем простор и постар објект исклучена е струјата за корисниците на Аеродром и Лисиче, соопштија од Центарот за управување со кризи (ЦУК.  Пожар во Вардариште, цела Општина Аеродром...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://faktor.mk/media/main/2025/08/20250813135921.jpg&#39;);">
+                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/09/H0G4602_copy_984x615.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-2011855547.html" class="hover:underline">Водовод: Користете ја водата разумно - ќе имаме намален притисок во Скопје</a>
+                                    <a href="article-detail-api-357803416.html" class="hover:underline">Учениците од Центар ќе одат на бесплатна екскурзија „Ја сакаме Македонија“</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> ЈП Водовод и канализација Скопје апелира граѓаните рационално да ја користат и употребуваат водата за пиење, односно да се избегнува полевање поголеми површини, разладување на дворни површини, улици и непотребно трошење на водата за време на топл...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Градоначалникот на Општина Центар Горан Герасимовски, утрово го посети општинското основно училиште „Киро Глигоров“ за да им посака успешен старт на првачињата и сите ученици по повод првиот ден од новата учебна година.  Учениците од Центар ќе од...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--2122665767.html" class="hover:underline">Шукова: Орце Георѓиевски ветува „парк“ на локацијата Вардариште, најзагадената точка во главниот град</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Кандидатот на ВМРО ДПМНЕ за градоначалник на Скопје, Орце Георѓиевски, ветува „парк“ на локацијата Вардариште – најзагадената и технички најкомплицирана точка во главниот град.  Тоа е локација со висок ризик по здравјето и животната средина“, изј...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1756807820/bbcnkl71khakqgxmjor3.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--550622372.html" class="hover:underline">Ахмети: Во Чаир потпишан „Актот на Чаир“ – најголемо национално обединување по 2001 година</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Лидерот на ДУИ, Али Ахмети, на својот Фејсбук профил објави дека заедно со кандидатот за градоначалник на Чаир, Бујар Османи и пратеникот Скендер Реџепи Зејди го потпишале Актот на Чаир, кој, како што истакна, претставува најголемо национално обе...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
@@ -269,9 +366,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
         <p class="text-sm leading-relaxed mb-6">
-            Изборот и позициите на вестите на <span class="font-bold">Stitch Design</span> се одредуваат автоматски со компјутерска програма.
-            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Stitch Design</span>.
-            <span class="font-bold">Stitch Design</span> не презема никаква одговорност за веродостојноста на преземените информации.
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
         </p>
 
         <!-- Static Links -->

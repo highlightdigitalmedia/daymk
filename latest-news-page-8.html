@@ -28,13 +28,20 @@
             <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
-        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Најнови Вести</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>18:08, 13.08.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>21:00, 02.09.2025</span></p>
         </h2>
-        <div class="flex w-12 items-center justify-end">
+        <div class="flex w-24 items-center justify-end">
+            <!-- NEW: Device Switcher Icon -->
+            <button id="device-switcher-button" aria-label="Switch to mobile/desktop view"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+                </svg>
+            </button>
             <!-- Weather Link Icon (Thermometer) -->
-            <a href="/prognoza.html" aria-label="Weather Forecast"
+            <a href="prognoza.html" aria-label="Weather Forecast"
                class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
                 <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
@@ -64,23 +71,23 @@
         <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
             <!-- Left Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/index.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="index.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/sports.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="sports.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/magazine.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="magazine.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
                 </a>
             </div>
             <!-- Right Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="/latest-news-page-1.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="latest-news-page-1.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">Најнови Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/prognoza.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="prognoza.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/radio.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="radio.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/youtube.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="youtube.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">YouTube</p>
                 </a>
             </div>
@@ -102,7 +109,7 @@
                         <!-- Previous Page Link -->
                         <a href="latest-news-page-7.html"
                            class="theme-bg-secondary theme-text-primary py-2 px-4 rounded-lg border theme-border-color hover:theme-bg-hover">
-                            Previous
+                            <
                         </a>
 
                         <!-- Page Numbers -->
@@ -152,167 +159,162 @@
                                 <span>9</span>
                             </a>
                         
-                            <a href="latest-news-page-10.html"
-                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
-                                <span>10</span>
-                            </a>
-                        
 
                         <!-- Next Page Link -->
                         <a href="latest-news-page-9.html"
                            class="theme-bg-secondary theme-text-primary py-2 px-4 rounded-lg border theme-border-color hover:theme-bg-hover">
-                            Next
+                           >
                         </a>
                     </div>
 
                     <div class="flex flex-col divide-y theme-border-color">
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2019/12/pari-denari-300x183.jpg&#39;);">
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/715294.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1851154324.html" class="hover:underline">Исплатите од државната каса во изборен период ќе се објaвуваат во посебна база за буџетски трошоци</a>
+                                    <a href="article-detail-api-1667677702.html" class="hover:underline">Поранешниот директор на АНБ, Димовски тврди дека Мицкоски не бил таргет на Агенцијата, бара да се декласифицираат документите </a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Министерството за финансии согласно одредбите од Изборниот законик од денеска на својата веб страница ќе ги објавува буџетските исплати во посебна база за буџетски трошоци во изборен период.  Имено, согласно Изборниот законик Министерството за фи...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Со оглед на тоа што во претходен брифинг за медиуми во АНБ бил споменат периодот од 2019 до 2024 година во дел од кој и јас ја извршував должноста директор на АНБ, одговорно тврдам дека тој како лидер на тогашна опозициона партија во периодот од ...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>9</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2022/11/512677-vo-policiska-akcija-vo-skopje-zapleneti-25-kilogrami-marihuana-300x178.png&#39;);">
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2022/09/danela-arsovska-3-300x200.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--45380970.html" class="hover:underline">Скопјанец под истрага за илегално држење и продавање марихуана</a>
+                                    <a href="article-detail-api-866657081.html" class="hover:underline">Арсовска за пресудата: Ова е победа за жртвите на насилство, за секоја жена и мајка</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> На 27 јуни осомничениот се доближил до автомобилот и бидејќи не можел да си ги пронајде клучевите, насилно го скршил задното стакло, по што извлекол црна најлонска вреќа со повеќе пакувања марихуана и дигитална вага.  Осомничениот 23 годишник, во...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Основниот кривичен суд во Скопје денеска донесе пресуда со која Сулејман Љамалари е осуден на две години затвор за грубо насилство врз градоначалничката на Скопје, Данела Арсовска.  Во текот на судскиот процес, обвинетиот тврдеше дека не е напаѓа...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>12</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2021/01/nonsap-visuals-g88j9kt5u4g-unsplash-200x300.jpg&#39;);">
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/09/542758258_1079194587724401_4538048671921826599_n-300x225.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--891586568.html" class="hover:underline">Цените на кафето паднаа прв пат по 18 месеци</a>
+                                    <a href="article-detail-api-145191254.html" class="hover:underline">Уапсен дилер во Скопје, запленети 100 кесички со марихуана</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Потрошувачките цени на кафето во Бразил паднаа за 1,01 процент во јули во однос на претходниот месец, што е прв пад за година и пол, соопшти денес Бразилскиот институт за географија и статистика.  Падот на малопродажните цени во најголемата земја...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Вчера околу 19 часот на улицата „Анкарска“ во Скопје полициски службеници од Единицата за интервентна полиција при СВР Скопје го лишиле од слобода Р. Ѓ. Откако му бил даден знак да застане, Р. Ѓ. Ѓ. По документирање на случајот, против Р. Ѓ. МАКФ...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://plusinfo.mk/wp-content/uploads/2025/02/alis-vajdl-afd.jpg&#39;);">
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2017/10/licni_karti-300x237.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--961597754.html" class="hover:underline">Крајнодесничарската АфД за првпат стана најпопуларна партија во Германија</a>
+                                    <a href="article-detail-api-1286619176.html" class="hover:underline">Полицаец подигнал 11 лични карти за лица што живеат во Чучер Сандево, но ниту ги доставил ниту пријавил дека недостигаат</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Крајнодесничарската Алтернатива за Германија (АфД) во моментов е најпопуларна партија во земјата, покажува најновата анкета објавена вчера.  Доколку парламентарните избори се одржат сега, 26 проценти од Германците би гласале за АфД, покажува анке...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Одделот за внатрешна контрола, криминалистички истраги и професионални стандарди при МВР до надлежното Основно јавно обвинителство за гонење на организиран криминал и корупција – Скопје поднесе кривична пријава против Д. С. ПС – Чаир при СВР – Ск...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>3</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/06/12332155-1-300x202.jpg&#39;);">
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2021/06/cetiricikl-300x172.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--459288386.html" class="hover:underline">Франција, Германија и Велика Британија се подготвени повторно да воведат санкции против Иран</a>
+                                    <a href="article-detail-api--891565599.html" class="hover:underline">Четирицикл се преврте од патот, две лица се повредени</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Министрите за надворешни работи на таканаречената група Е3, односно Франција, Велика Британија и Германија, во вторник им пишаа на ОН за можноста за „брзо враќање“ на санкциите врз Иран, според , повикувајќи се на писмото до кое имале пристап.  Ј...</p>
+                                <p class="theme-text-secondary text-base mb-2"> СВР Тетово било пријавено дека во с. Синичане, општина Боговиње, четирицикл со кумановски регистарски ознаки, управуван од П. К. Тетово, се превртел на патот.  Во несреќата со тешки телесни повреди се здобил сопатникот Н. С. Скопје, а со телесни ...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>3</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1755076287/t1uhf2kdj3x7qicnys8q.webp&#39;);">
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2022/10/kina-zastava-300x214.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1743906721.html" class="hover:underline">Во матичните амбуланти во Велес зголемен бројот на болни од стомачен вирус</a>
+                                    <a href="article-detail-api--1964382650.html" class="hover:underline">Кина воведува безвизен режим за Русите до 30 дена</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Иако има зголемување на бројот на пациенти деца и возрасни со стомачен вирус во Велес, сепак лекарите од матичните амбуланти за МИА, информираат дека ситуацијата не е алармантна.  Матичните лекари посочуваат дека ова заболување е во текот на цела...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Кинеските власти ќе воведат безвизен режим за руските граѓани до 30 дена од 15 септември, објави денес портпаролот на кинеското Министерство за надворешни работи, Гуо Џиакун.  Според него, Русите може да ја посетуваат Кина без виза за бизнис, тур...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/08/limani-300x225.jpg&#39;);">
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/09/ПРИХОДИ-АВГУСТ-1-300x300.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--446752259.html" class="hover:underline">Лиценците за работа во градинките повторно активни по двегодишната блокада</a>
+                                    <a href="article-detail-api--798154020.html" class="hover:underline">Царината: За 14,5 милиони евра зголемена наплатата на приходи во август</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Околу 350 кандидати денеска полагаат за лиценца за работа како воспитувачи, негуватели, стручни работници, соработници и директори – задолжителен предуслов за вработување во детските градинки.  Конечно го одблокиравме процесот на полагање стручни...</p>
+                                <p class="theme-text-secondary text-base mb-2"> За 14,5 милиони евра е зголемена наплатата на приходи во август во споредба со истиот месец минатата година, што претставува рекорден раст на приходите од 8,9 проценти остварени на месечно ниво годинава, соопшти Царинската управа.  РЕКОРДНИ ПРИХО...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>12</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>8</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://denesen.mk/wp-content/uploads/2025/08/ahmeti-alija-ali-700x484.jpg&#39;);">
+                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1756808152/x9dmb2d1zzznq14t0vic.webp&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-2137501255.html" class="hover:underline">(ВИДЕО) Ахмети: Четврт векот од Охридскиот договор да не најде горди како вчера, а не омаловажени и потценети, како денес</a>
+                                    <a href="article-detail-api--496417605.html" class="hover:underline">Од утре попладне до петок нестабилно време со пороен дожд, грмежи и ветер</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Рамковниот договор после 24 години донесе мир, стабилност и обезбеди зачувана унитарност на Македонија, рече премиерот Христијан Мицкоски на Свечена седница по повод 24 години од потпишувањето на Охридскиот рамковен договор.  Рамковниот договор е...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Наместа процесите ќе бидат поинтензивни во форма на невреме со пообилен пороен дожд за кратко време (над 20 лм2), засилен ветер (над 60 кмч) и услови за изолирана појава на град, соопшти УХМР.  Под влијание на влажна и нестабилна воздушна маса, у...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>23</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>4</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/08/1000043383-300x225.jpg&#39;);">
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/09/13195697-300x200.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-2071739326.html" class="hover:underline">На Ќафасан откриени 21 килограм пастрмка скриени во автомобил</a>
+                                    <a href="article-detail-api--1278723621.html" class="hover:underline">Рутe: НАТО сериозно го сфаќа попречувањето на ГПС-сигналите, работиме на тоа да го спречиме</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Последен случај е откриен деновиве на граничен премин Ќафасан, кога државјанин на Албанија се обидел нелегално да внесе 21 килограм свежа пастрмка скриена во просторот за резервна гума.  Од почетокот на годинава Царинската управа во повеќе случаи...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Бугарската влада соопшти дека ГПС сигналот бил изгубен додека авионот на Фон дер Лајен се приближувал кон Пловдив во јужна Бугарија, што ги натерало контролорите на воздушниот сообраќај да се префрлат на системи за навигација на земја за да обезб...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>6</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>3</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/08/DSC_9954-300x162.jpg&#39;);">
+                                 style="background-image: url(&#39;https://plusinfo.mk/wp-content/uploads/2025/08/ohrid.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1620459927.html" class="hover:underline">Меџити: Охридскиот договор е жив темел на правична и инклузивна држава</a>
+                                    <a href="article-detail-api-577064966.html" class="hover:underline">Невремето го прекина 38. Охридски пливачки маратон – тројца прогласени за победници</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Меџити Охридскиот договор го гледа како визија за соживот и инклузивност2 84 715Вицепремиерот и министер за животна средина Изет Меџити, на свечената седница по повод 24 години од потпишувањето на Охридскиот рамковен договор, истакна дека вистинс...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Италијанците Матео Фурлан и Федерико Тамборино и Матијас Диас Хернандес од Аргентина во машка, како и Аргентинката Мајте Ајлен Пука во женска конкуренција се прогласени за победници на 38 миот Охридски пливачки маратон што денеска се одржа во вод...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>9</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>3</span></span>
+                                    <span>• Индексирано: <span>Aug 30, 2025 23:02</span></span>
                                 </div>
                             </div>
                         </div>
@@ -331,7 +333,7 @@
                             <div class="flex items-end gap-3 justify-between">
                                 <div class="flex flex-col gap-1">
                                     <p class="theme-text-secondary text-sm font-normal leading-normal">Check out our exclusive deals.</p>
-                                    <a href="article-detail-adlatestnewsmain.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
+                                    <a href="article-detail-adlatestnewsmain.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Повеќе</a>
                                 </div>
                             </div>
                         </div>
@@ -347,7 +349,7 @@
                             <div class="flex items-end gap-3 justify-between">
                                 <div class="flex flex-col gap-1">
                                     <p class="theme-text-secondary text-sm font-normal leading-normal">Browse our fresh collection.</p>
-                                    <a href="article-detail-adlatestnewssmall.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
+                                    <a href="article-detail-adlatestnewssmall.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Повеќе</a>
                                 </div>
                             </div>
                         </div>
@@ -415,9 +417,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
         <p class="text-sm leading-relaxed mb-6">
-            Изборот и позициите на вестите на <span class="font-bold">Stitch Design</span> се одредуваат автоматски со компјутерска програма.
-            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Stitch Design</span>.
-            <span class="font-bold">Stitch Design</span> не презема никаква одговорност за веродостојноста на преземените информации.
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
         </p>
 
         <!-- Static Links -->

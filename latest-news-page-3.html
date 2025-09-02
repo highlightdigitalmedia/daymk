@@ -28,13 +28,20 @@
             <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
-        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Најнови Вести</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>18:08, 13.08.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>21:00, 02.09.2025</span></p>
         </h2>
-        <div class="flex w-12 items-center justify-end">
+        <div class="flex w-24 items-center justify-end">
+            <!-- NEW: Device Switcher Icon -->
+            <button id="device-switcher-button" aria-label="Switch to mobile/desktop view"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+                </svg>
+            </button>
             <!-- Weather Link Icon (Thermometer) -->
-            <a href="/prognoza.html" aria-label="Weather Forecast"
+            <a href="prognoza.html" aria-label="Weather Forecast"
                class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
                 <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
@@ -64,23 +71,23 @@
         <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
             <!-- Left Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/index.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="index.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/sports.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="sports.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/magazine.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="magazine.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
                 </a>
             </div>
             <!-- Right Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="/latest-news-page-1.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="latest-news-page-1.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">Најнови Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/prognoza.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="prognoza.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/radio.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="radio.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/youtube.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="youtube.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">YouTube</p>
                 </a>
             </div>
@@ -102,7 +109,7 @@
                         <!-- Previous Page Link -->
                         <a href="latest-news-page-2.html"
                            class="theme-bg-secondary theme-text-primary py-2 px-4 rounded-lg border theme-border-color hover:theme-bg-hover">
-                            Previous
+                            <
                         </a>
 
                         <!-- Page Numbers -->
@@ -152,167 +159,162 @@
                                 <span>9</span>
                             </a>
                         
-                            <a href="latest-news-page-10.html"
-                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
-                                <span>10</span>
-                            </a>
-                        
 
                         <!-- Next Page Link -->
                         <a href="latest-news-page-4.html"
                            class="theme-bg-secondary theme-text-primary py-2 px-4 rounded-lg border theme-border-color hover:theme-bg-hover">
-                            Next
+                           >
                         </a>
                     </div>
 
                     <div class="flex flex-col divide-y theme-border-color">
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/07/DZS-i-CUK-press-Stojance-Angelov-3a-bg.jpg&#39;);">
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2023/01/sdsm-zgrada-1-366121-300x185.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1587643492.html" class="hover:underline">Ангелов: Борбата со пожарот во ловиштето Јасен продолжува, успешно изгасната една линија, теренот останува критичен</a>
+                                    <a href="article-detail-api--103072070.html" class="hover:underline">Нови тројца кандидати за градоначалници од СДСМ, досега објавени вкупно 60 кандидатури</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Ангелов: Борбата со пожарот во ловиштето Јасен продолжува – изгасната една линија, теренот останува критичен » :.  Борбата против огнот во ловиштето Јасен продолжува.  Од земја дејствуваат припадници на специјалните единици на армијата и полиција...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Со ова, СДСМ веќе има објавено 60 кандидати за градоначалници од СДСМ во 60 општини ширум државата.  Сите кандидати на СДСМ се чесни, одговорни и посветени луѓе, кои ќе го дадат својот максимум во интерес на граѓаните.  Драган Атанасов, кандидат ...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>7</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 18:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://topsport.mk/wp-content/uploads/2025/08/SI202307230186.jpg&#39;);">
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/715317.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1284967890.html" class="hover:underline">Двајца искусни возачи се поврзуваат со Кадилак Ф1</a>
+                                    <a href="article-detail-api-31094398.html" class="hover:underline">(Видео) Лукаревска: Владата се задолжи 15 милиони евра за проект кој е 94,3% реализиран</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Новиот тим на „Кадилак Ф1“ сè уште не го потврдил составот на возачи за својата дебитантска сезона.  Во 2026 година, „Џенерал моторс“ ќе влезе во Формула 1 како 11 ти тим под луксузниот бренд „Кадилак“.  Исто така со новиот тим се поврзуваат Мик ...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Лукаревска: Нов ден ново задолжување на ВМРО ДПМНЕ од 15 милиони евра 0 Таа потенцираше дека овој проект, вреден 21,5 милиони евра, беше донесен уште во декември 2020, со поддршка од мнозинството предводено од СДСМ.  Денес пред целата јавност, зб...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>4</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 18:32</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://sportstation.mk/wp-content/uploads/2025/08/gylvnbnx0aeqdkt-300x200.jpg&#39;);">
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2021/07/кораб-букови-шуми-300x146.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1193690557.html" class="hover:underline">Алкараз до 50-та победа сезонава на Синсинати Опен!</a>
+                                    <a href="article-detail-api--1325491553.html" class="hover:underline">Забраната за движење во шумите се продолжува до 30 септември</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Незапирливиот шпански тениски ас, Карлос Алкараз, со вечерашната победа над Хамад Меџедовиќ успеа да дојде до извонредната бројка од 50 победи годинава.  Тој го совлада Меџедовиќ со 2 0 или 6 4, 6 4 во сетови на турнирот во Синсинати, со што успе...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Министерството за земјоделство, шумарство и водостопанство ја известува јавноста дека забраната за движење во шумите и шумското земјиште се продолжува до 30 септември 2025 година и ги повикува граѓаните на посебна претпазливост со цел спречување ...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>13</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 18:32</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://topsport.mk/wp-content/uploads/2025/08/Supercupeuropa2k25.jpg&#39;);">
+                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-635011065.html" class="hover:underline">ПСЖ и Тотенхем во борба за Суперкупот на УЕФА</a>
+                                    <a href="article-detail-api-1077524933.html" class="hover:underline">Полицијата предупредува за измами: Лажни службеници бараат пари преку телефон</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Марсеј, од друга страна, ја освои Лигата на шампионите во 1993 година, но поради скандал со наместени натпревари, не можеше да учествува во Суперкупот.  Актуелниот победник на Лигата на шампионите, ПСЖ, и актуелниот победник на Лига Европа, Тотен...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Во изминатиот период во СВР Велес добиени се пријави од граѓани, најчесто од повозрасни лица, дека се измамени на начин што непознати лица телефонски им се јавуваат претставувајќи се како службени лица и се обидуваат да им измамат поголеми суми н...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>3</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 18:17</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://topsport.mk/wp-content/uploads/2025/08/ND-AMISTOSO-WSG-TIROL-RM-MBAPPE-VINICIUS-ARDA_AV22197.jpg&#39;);">
+                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1756825909/zmiqmmcbzewhmsbyfyyv.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--816408711.html" class="hover:underline">Тројца се недопирливи во системот на Чаби Алонсо, меѓу нив не е Винисиус</a>
+                                    <a href="article-detail-api-1206044371.html" class="hover:underline">Субвенциониран студентски оброк, студентите бараат + 10 денари, министерката ќе чека ребаланс </a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Со два гола, една асистенција, четири удари во голот и четири клучни додавања, Мбапе го покажа патот за да стане апсолутен лидер на тимот, што Алонсо го очекува од него.  За време на бројните измени, Алонсо остави тројца играчи на теренот кои го ...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Зголемување на субвенциите за студентски оброк од 140 на 150 денари, бараат од Студентското тело » :.  Да се зголеми сумата на субвенционираниот студентски оброк бараат од Националното студентско тело, а за тоа во прилог имаат и пресметка во скла...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>5</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 18:17</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://topsport.mk/wp-content/uploads/2025/08/1751530894-11834261a.jpg&#39;);">
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2020/02/elektricen-trotinet-300x198.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--504758724.html" class="hover:underline">Едноминутно молчење пред натпреварите од првото коло на Премиер лигата во спомен на Жота</a>
+                                    <a href="article-detail-api--1617637054.html" class="hover:underline">Малолетник со електричен тротинет удрил во пешак на „Партизанска“, со тешки повреди пренесен во болница</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Едноминутно молчење ќе биде одржано пред натпреварите од првото коло во Премиер лигата, во спомен на фудбалерот на Ливерпул, Диого Жота, и неговиот брат Андре Силва, кои загинаа во сообраќајна несреќа.  Раководството на Премиер лигата денес објав...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Тешко повреден пешак на велосипедска патека во Скопје, во него удрил електричен тротинет.  Партизански одреди“ во Скопје, на велосипедската патека, електричен тротинет управуван од малолетник удрил во Р. Т. Во несреќата со тешки телесни повреди с...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 18:17</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://topsport.mk/wp-content/uploads/2025/08/Spanish-FA-Backs-Historic-Move-To-Stage-Villarreal-v-Barcelona-Clash-In-Miami.jpg&#39;);">
+                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2025/09/aditiv-1-300x192.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-147927269.html" class="hover:underline">Реал се противи на одлуката Барса и Виљареал да играат во Америка</a>
+                                    <a href="article-detail-api-474878366.html" class="hover:underline">Ново рочиште на 15 септември: Одбиен предлогот за спојување на постапките во „Адитив“</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Реал Мадрид официјално се спротивстави на планот натпреварот од Ла Лига меѓу Барселона и Виљареал да се одигра во Мајами, САД, и побара од ФИФА да не дозволи ваква промена.  Фудбалскиот клуб Реал Мадрид објави дека се противи на одлуката на ла Ли...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Судечкиот совет во Кривичниот суд денеска го одби предлогот на обвинителството за спојување на постапките во случајот „Адитив“, кој се однесува на злоупотреби во државната компанија ЕСМ и фиктивни тендери вредни милиони евра.  Судењето за предмет...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>3</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>8</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 18:02</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://emagazin.mk/wp-content/uploads/2025/07/pozar-300x200.jpg&#39;);">
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/03/Ministerstvo-za-energetika-tabla-1-300x200.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--452939184.html" class="hover:underline">ЗАРАДИ ПОЖАРОТ ЗАТВОРЕН ПАТНИОТ ПРАВЕЦ ПРЕКУ „ЈАСЕН“ ДО МАКЕДОНСКИ БРОД</a>
+                                    <a href="article-detail-api--808556485.html" class="hover:underline">Божиновска: Отворена власт во пракса – Министерството за енергетика ги објавува сите договори</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> ЗАРАДИ ПОЖАРОТ ЗАТВОРЕН ПАТНИОТ ПРАВЕЦ ПРЕКУ „ЈАСЕН“ ДО МАКЕДОНСКИ БРОД :.  Пожарот кај Националниот парк Јасен се уште е активен, информираа од Центарот за управување со кризи и поради тоа целосно е затворен за сообраќај патниот правец од Брезни...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Министерството веќе има формирано работна група задолжена да ги објави сите склучени договори за концесии за експлоатација на минерални суровини и за детални геолошки истражувања.  Министерството за енергетика, рударство и минерални суровини (МЕР...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>6</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 18:02</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://gostivarpress.mk/wp-content/uploads/2025/06/azir-aliu-3-300x200.jpg&#39;);">
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2024/06/aleksandar-nikoloski-300x165.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1916891063.html" class="hover:underline">Онколошка амбулантска терапија наскоро во Тетово, Битола, Штип и воена болница, најави Алиу</a>
+                                    <a href="article-detail-api--1542192778.html" class="hover:underline">НИКОЛОСКИ: Антидемократски структури се уште се борат против демократска Македонија и се уште сакаат да владеат со земјата</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Онколошка амбулантска терапија наскоро во Тетово, Битола, Штип и ГОБ „8 Септември“ » :.  Министерот за здравство Азир Алиу денеска изјави дека онколошките амбулантски терапии веќе се дисперзирани и наскоро ќе се почне со нивна примена во Тетово, ...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Николоски: Четврти пат се злоупотребува Тајната служба и секогаш жртва е ВМРО ДПМНЕ :.  Време е за одговорност, време е Обвинителите и судиите да го положат испитот и да донесат разрешници бидејќи граѓаните тоа го очекуваат, истакна потпретседате...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>6</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 17:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://tera.mk/wp-content/uploads/2025/08/Screenshot_3-4-150x150.jpg&#39;);">
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/08/izbori-listi-300x200.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--749071527.html" class="hover:underline">ПОЖАРИ НА ЗАКИНТОС И КЕФАЛОНИЈА</a>
+                                    <a href="article-detail-api-81698190.html" class="hover:underline">ДИК: Поднесени 69 предлози за независни кандидати за градоначалници</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Пожарот на Кефалонија избувна во текот на ноќта во југозападниот дел на островот, каде што се ангажирани 60 пожарникари со три пешадиски тима, 17 возила, четири авиони и еден хеликоптер, а помагаат и цистерни од општината.  Порака за евакуација и...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Потписи за независни кандидати за градоначалници се собраа за општините Пробиштип, Македонска Каменица, Куманово, Крива Паланка, Охрид, Дебарца, Прилеп, Долнени Струга, Дебар Струмица, Радовиш, Брвеница, Свети Николе, Гевгелија, Демир Капија, Кич...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>3</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>12</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 17:47</span></span>
                                 </div>
                             </div>
                         </div>
@@ -331,7 +333,7 @@
                             <div class="flex items-end gap-3 justify-between">
                                 <div class="flex flex-col gap-1">
                                     <p class="theme-text-secondary text-sm font-normal leading-normal">Check out our exclusive deals.</p>
-                                    <a href="article-detail-adlatestnewsmain.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
+                                    <a href="article-detail-adlatestnewsmain.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Повеќе</a>
                                 </div>
                             </div>
                         </div>
@@ -347,7 +349,7 @@
                             <div class="flex items-end gap-3 justify-between">
                                 <div class="flex flex-col gap-1">
                                     <p class="theme-text-secondary text-sm font-normal leading-normal">Browse our fresh collection.</p>
-                                    <a href="article-detail-adlatestnewssmall.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
+                                    <a href="article-detail-adlatestnewssmall.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Повеќе</a>
                                 </div>
                             </div>
                         </div>
@@ -415,9 +417,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
         <p class="text-sm leading-relaxed mb-6">
-            Изборот и позициите на вестите на <span class="font-bold">Stitch Design</span> се одредуваат автоматски со компјутерска програма.
-            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Stitch Design</span>.
-            <span class="font-bold">Stitch Design</span> не презема никаква одговорност за веродостојноста на преземените информации.
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
         </p>
 
         <!-- Static Links -->

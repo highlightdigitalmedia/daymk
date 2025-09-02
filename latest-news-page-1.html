@@ -28,13 +28,20 @@
             <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
-        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Најнови Вести</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>18:08, 13.08.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>21:00, 02.09.2025</span></p>
         </h2>
-        <div class="flex w-12 items-center justify-end">
+        <div class="flex w-24 items-center justify-end">
+            <!-- NEW: Device Switcher Icon -->
+            <button id="device-switcher-button" aria-label="Switch to mobile/desktop view"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+                </svg>
+            </button>
             <!-- Weather Link Icon (Thermometer) -->
-            <a href="/prognoza.html" aria-label="Weather Forecast"
+            <a href="prognoza.html" aria-label="Weather Forecast"
                class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
                 <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
@@ -64,23 +71,23 @@
         <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
             <!-- Left Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/index.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="index.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/sports.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="sports.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/magazine.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="magazine.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
                 </a>
             </div>
             <!-- Right Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="/latest-news-page-1.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="latest-news-page-1.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">Најнови Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/prognoza.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="prognoza.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/radio.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="radio.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/youtube.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="youtube.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">YouTube</p>
                 </a>
             </div>
@@ -149,167 +156,162 @@
                                 <span>9</span>
                             </a>
                         
-                            <a href="latest-news-page-10.html"
-                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
-                                <span>10</span>
-                            </a>
-                        
 
                         <!-- Next Page Link -->
                         <a href="latest-news-page-2.html"
                            class="theme-bg-secondary theme-text-primary py-2 px-4 rounded-lg border theme-border-color hover:theme-bg-hover">
-                            Next
+                           >
                         </a>
                     </div>
 
                     <div class="flex flex-col divide-y theme-border-color">
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
+                                 style="background-image: url(&#39;https://libertas.mk/wp-content/uploads/2025/09/screenshot_20250902-202044_messenger-300x167.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1011416204.html" class="hover:underline">Има проблем со слободата на медиумите во Македонија: Извештај на Стејт департментот</a>
+                                    <a href="article-detail-api--183693875.html" class="hover:underline">Семејството на смртно прегазената Теодора револтирано: „Како може тепање и убиство да имаат иста казна – две години затвор?“</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Во извештајот на Стејт департментот за состојбата на човековите права во 2024 во делот за Македонија се вели дека немало значајни промени во состојбата во текот на годината, но дека има проблеми со слободата на изразувањето и слободата на медиуми...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Ева Ристовска, сестрата на трагично загинатата Теодора од Тетово, остро реагираше по денешната судска пресуда, каде што лицето кое ја нападна скопската градоначалничка Данела Арсовска, доби идентична казна – две години затвор, исто како и Менсур ...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:49</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 22:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://denesen.mk/wp-content/uploads/2025/08/vesna-janevska-1-700x446.jpg&#39;);">
+                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2024/07/policija-francija-300x200.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--685914324.html" class="hover:underline">Јаневска: МОН не може и не треба да ги преземе надлежностите на Општина Струга</a>
+                                    <a href="article-detail-api-1913574868.html" class="hover:underline">Напад со нож во Марсеј: Полицијата уби маж, кој вика „Алаху акбар“ и напаѓа минувачи (ВИДЕО)</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Поради недомаќинско работење на градоначалникот Рамис Мерко и целото раководство во Општина Струга не им стигнуваат блок дотациите за основните училишта, смета министерката за образование и наука Весна Јаневска.  Прашана за коментар по вчерашната...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Осомничениот, туниски државјанин под судски надзор со забрана за носење оружје, според извор близок до истрагата, нападнал четири лица, вклучувајќи го менаџерот на хотелот, како и еден клиент, пред да излезе на улица и да им се заканува на полица...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:49</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 22:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/541569.jpg&#39;);">
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2021/09/w_57196220-300x204.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--193568812.html" class="hover:underline">Нема зафатено објекти при вчерашниот пожар на Транзитниот центар Табановце</a>
+                                    <a href="article-detail-api-753096097.html" class="hover:underline">Шестмина кандидати на AfD починаа пред изборите во Германија – теории на заговор на социјалните мрежи</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Од ТППЕ Куманово информираат дека нема зафатени објекти и на пожарот интервенирале три возила со деветмина пожарникари.  На пожарот интервенираа три екипи и девет пожарникари с до 00:15 часот, изјави командирот на ТППЕ Куманово, Дејан Илиевски.  ...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Шестмина кандидати на германската екстремнодесничарска партија Алтернатива за Германија (АФД) починаа во последните недели пред локалните избори во Северна Рајна Вестфалија, најнаселената германска покраина со 18 милиони жители.  Полицијата соопш...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:49</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 22:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/712504.jpg&#39;);">
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/715348.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-2059752892.html" class="hover:underline">Комунална хигиена-Скопје почна со замена на дотраените пластични контејнери</a>
+                                    <a href="article-detail-api-716381840.html" class="hover:underline">Зошто Франција издаде налог за апсење на Башар ал Асад?</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Комунална хигиена Скопје почна со замена на дотраените пластични контејнери » :.  На локациите каде што досега се употребуваа стари и дотраени садови, се поставуваат сосема нови садови наменети за одлагање на комуналниот отпад.  ЈП Комунална хиги...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Француски суд издаде налози за апсење на поранешниот сириски претседателБашар ал Асад, заедно со уште шест други високи поранешни сириски функционери, поради убиството на двајца новинари за време на бомбардирањето на град под контрола на бунтовни...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:49</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 22:33</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2022/02/stejt-department-300x169.jpg&#39;);">
+                                 style="background-image: url(&#39;https://nezavisen.mk/wp-content/uploads/2025/01/Voda-cesma-slavina-kapki-2-bg.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1747517469.html" class="hover:underline">Стејт департментот: Нема значителни промени во состојбата со човековите права во Северна Македонија</a>
+                                    <a href="article-detail-api-1343772643.html" class="hover:underline">Дел од Скопје утре без вода поради дефект на цевка</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Во најновиот извештај на Стејт департментот на САД за човековите права за 2024 година се наведува дека во Северна Македонија не се забележани значителни промени во состојбата со човековите права.  Стејт департментот: Нема значителни промени во со...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Дел од Скопје утре без вода поради дефект на цевка :.  ЈП „Водовод и канализација“ – Скопје известува дека утре од 9:00 часот без вода ќе останат дел од корисниците на улиците „Охридска“ и „Петричка“ во населбата Водно.  Прекинот во водоснабдувањ...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:49</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 22:18</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2024/09/ustaven-sud-300x199.jpg&#39;);">
+                                 style="background-image: url(&#39;https://libertas.mk/wp-content/uploads/2025/09/screenshot_20250902-194506_messenger-300x198.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--977065182.html" class="hover:underline">Уставниот суд оформи предмет во кој е оспорен Протоколот од вториот состанок на Заедничката меѓувладина комисија со Бугарија</a>
+                                    <a href="article-detail-api-359443599.html" class="hover:underline">ВИДЕО I Mаж избоде 5 пет лица во хотел во Марсеј</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Уставниот суд оформи предмет по иницијатива на Лилјана Поповска, со која се оспорува Протоколот од вториот состанок на Заедничката меѓувладина комисија со Бугарија, потпишан на 17 јули 2022 година во Софија.  Протоколот беше потпишан од страна на...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Француската полиција денеска во центарот на Марсеј уби маж, кој претходно со нож избоде пет лица.  Инцидентот се случил во хотел, а помеѓу повредените се и менаџерот на хотелот и неговиот син.  ВИДЕО: Напад во хотел во Марсеј, маж со нож избоде 5...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>7</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:49</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 22:18</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/03/policija-mvr-vozilo-300x161.jpg&#39;);">
+                                 style="background-image: url(&#39;https://plusinfo.mk/wp-content/uploads/2025/04/georg-georgiev-montaza.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-820493303.html" class="hover:underline">Охриѓанец грабнал 60-годишна жена, насила ја ставил во автомобил</a>
+                                    <a href="article-detail-api-1001098010.html" class="hover:underline">Георгиев до министрите за надворешни работи на ЕУ: Не е можна промена на договорениот европски консензус, очекуваме РСМ да ги исполнува своите обврски</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Полицијата синоќа го приведе 59 годишниот З. Ј. Тој, според претходна пријава, со употреба на сила ставил 60 годишна жена од Охрид во своето возило „Југо“ со охридски регистарски ознаки и ја однел во неговиот дом.  Во вторникот вечерта околу 22 ч...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Георгиев до министрите за надворешни работи на ЕУ: Не е можна промена на договорениот европски консензус, очекуваме РСМ да ги исполнува своите обврски.  Бугарија изразува растечка загриженост за континуираниот неуспех на Република Северна Македон...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:35</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 22:02</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
+                                 style="background-image: url(&#39;https://faktor.mk/media/main/2025/09/20250902193220.png&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--255868900.html" class="hover:underline">Два инцидента со параглајдеристи во Крушево – еден во безсознание е итно пренесен во Скопје, другиот бил заглавен на дрво</a>
+                                    <a href="article-detail-api--269805446.html" class="hover:underline">Што ќе работи Вучиќ откако ќе си замине од власт?</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Два одделни инцидента со параглајдеристи денеска кај Мечкин Камен во Крушево го активираа Центарот за управување со кризи и итните медицински служби – едниот спортист заврши заглавен на дрво, а другиот со тешки повреди и бесознание беше итно евак...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Пред таа изјава, Вучиќ ги коментираше најновите наоди на агенцијата Ипсос, нагласувајќи дека резултатите од истражувањето претставуваат само слика од она што сте го правеле и дека тие не се причина ниту за посебна радост ниту за посебна загрижено...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:21</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 21:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/611486.jpg&#39;);">
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/715339.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-851095594.html" class="hover:underline">Сијарто: Унгарија три ипол години повикува на преговори и мир, ќе бише добро и Зеленски да го стореше истото</a>
+                                    <a href="article-detail-api-809833910.html" class="hover:underline">Сајкоски: На Карпош му треба градоначалник како Лукровски, човек кој може да испорача</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Сијарто: Унгарија три ипол години повикува на преговори и мир, ќе бише добро и Зеленски да го стореше истото.  Унгарија повикува на прекин на огнот и мировни преговори во последните три ипол години.  На Украина ќе ѝ беше подобро доколку Зеленски ...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Генералниот секретар на ВМРО ДПМНЕ Ѓорѓија Сајкоски денеска беше во Карпош заедно со кандидатот за градоначалник Сотир Лукровски каде партијат има штандови за акцијата Излези.  Можам да кажам дека од она што го видов имаме одлични идеи и предлози...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:21</span></span>
+                                    <span>Извори: <span>3</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 21:18</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2021/05/zena-silueta-senka-300x200.jpg&#39;);">
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/09/jurop-haus-kocani-300x273.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1784403198.html" class="hover:underline">МАЈКА ГО НАПАДНАЛА И ГО ПОВРЕДИЛА 4-ГОДИШНОТО ДЕТЕ Ќе одговара за насилство</a>
+                                    <a href="article-detail-api-2082712246.html" class="hover:underline">До крајот на годината повеќе активности за младите во Кочани со поддршка од Јуроп хаус</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Мајка од Гостиварско го повредила своето четиригодишно дете откако физички го нападнала, соопшти полицијата.  Мајка од Гостиварско го повредила своето 4 годишно дете, МВР поднесе кривична е превземен од :.  МАЈКА ГО НАПАДНАЛА И ГО ПОВРЕДИЛА 4 ГОД...</p>
+                                <p class="theme-text-secondary text-base mb-2"> До крајот на годината повеќе активности за младите во Кочани со поддршка од Јуроп хаус » :.  Почнувајќи од септември, па се до крајот на годината, во Кочани, „Јуроп хаус“ ќе реализира низа активности кои ќе бидат посветени на учениците од основни...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 16:21</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 21:18</span></span>
                                 </div>
                             </div>
                         </div>
@@ -328,7 +330,7 @@
                             <div class="flex items-end gap-3 justify-between">
                                 <div class="flex flex-col gap-1">
                                     <p class="theme-text-secondary text-sm font-normal leading-normal">Check out our exclusive deals.</p>
-                                    <a href="article-detail-adlatestnewsmain.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
+                                    <a href="article-detail-adlatestnewsmain.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Повеќе</a>
                                 </div>
                             </div>
                         </div>
@@ -344,7 +346,7 @@
                             <div class="flex items-end gap-3 justify-between">
                                 <div class="flex flex-col gap-1">
                                     <p class="theme-text-secondary text-sm font-normal leading-normal">Browse our fresh collection.</p>
-                                    <a href="article-detail-adlatestnewssmall.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
+                                    <a href="article-detail-adlatestnewssmall.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Повеќе</a>
                                 </div>
                             </div>
                         </div>
@@ -412,9 +414,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
         <p class="text-sm leading-relaxed mb-6">
-            Изборот и позициите на вестите на <span class="font-bold">Stitch Design</span> се одредуваат автоматски со компјутерска програма.
-            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Stitch Design</span>.
-            <span class="font-bold">Stitch Design</span> не презема никаква одговорност за веродостојноста на преземените информации.
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
         </p>
 
         <!-- Static Links -->

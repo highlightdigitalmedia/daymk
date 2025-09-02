@@ -43,18 +43,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
                     // --- GA4 Event Tracking ---
-                    // Send an ad_impression event to Google Analytics 4
-                    // The 'viewLimit' parameter is passed for reporting purposes in GA4,
-                    // but it cannot be enforced client-side for a global count.
                     if (typeof gtag === 'function') {
                         gtag('event', 'ad_impression', {
-                            'ad_unit_name': adLinkElementId, // e.g., 'rotating-ad-link-small-1'
-                            'ad_creative_name': selectedAd.title, // Still useful for GA4 reports
-                            'ad_creative_id': selectedAd.url, // Using URL as a unique ID for the creative
+                            'ad_unit_name': adLinkElementId,
+                            'ad_creative_name': selectedAd.title,
+                            'ad_creative_id': selectedAd.url,
                             'ad_placement': 'sidebar',
                             'campaign_start_date': selectedAd.startDate,
                             'campaign_end_date': selectedAd.endDate,
-                            'campaign_view_limit': selectedAd.viewLimit // For reporting in GA4
+                            'campaign_view_limit': selectedAd.viewLimit
                         });
                         console.log("GA4 ad_impression event sent.");
                     } else {
@@ -65,10 +62,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             } else {
                 // If no eligible ads, hide the ad container
-                const adContainer = document.getElementById(adLinkElementId).closest('.flex-col');
-                if (adContainer) {
-                    adContainer.style.display = 'none';
-                    console.log(`No eligible ads for ${adLinkElementId}. Hiding container.`);
+                const adContainer = document.getElementById(adLinkElementId);
+                if(adContainer){
+                    const parentContainer = adContainer.parentElement;
+                    if(parentContainer){
+                        parentContainer.style.display = 'none';
+                         console.log(`No eligible ads for ${adLinkElementId}. Hiding container.`);
+                    }
                 } else {
                     console.error(`No eligible ads for ${adLinkElementId}, and its container could not be found.`);
                 }
@@ -78,25 +78,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Rotate the first small sidebar ad (on index.html)
-    rotateAd(
-        window.sidebarSmallRotatingAdsData1,
-        'rotating-ad-link-small-1'
-    );
+    // --- Desktop Ads ---
+    if (window.sidebarSmallRotatingAdsData1) {
+        rotateAd(window.sidebarSmallRotatingAdsData1, 'rotating-ad-link-small-1');
+    }
+    if (window.sidebarSmallRotatingAdsData2) {
+        rotateAd(window.sidebarSmallRotatingAdsData2, 'rotating-ad-link-small-2');
+    }
+    if (window.categorySpotlightAdsData && !window.location.pathname.endsWith('index.html')) {
+        rotateAd(window.categorySpotlightAdsData, 'rotating-ad-link-category');
+    }
 
-    // Rotate the second small sidebar ad (on index.html)
-    rotateAd(
-        window.sidebarSmallRotatingAdsData2,
-        'rotating-ad-link-small-2'
-    );
-
-    // Activate rotation for the category page ad (on category-detail.html)
-    // This block is now active and will attempt to rotate the ad on category pages.
-     // Activate rotation on all pages except index.html
-     if (!window.location.pathname.endsWith('index.html')) {
-         rotateAd(
-             window.categorySpotlightAdsData,
-             'rotating-ad-link-category'
-         );
-     }
+    // --- Mobile Ads ---
+    if (window.mobileTopAdsData) {
+        rotateAd(window.mobileTopAdsData, 'mobile-ad-link-top');
+    }
+    if (window.mobileMidAdsData) {
+        rotateAd(window.mobileMidAdsData, 'mobile-ad-link-mid');
+    }
 });

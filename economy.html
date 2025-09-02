@@ -28,13 +28,20 @@
             <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
-        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Економија</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>18:08, 13.08.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>21:00, 02.09.2025</span></p>
         </h2>
-        <div class="flex w-12 items-center justify-end">
+        <div class="flex w-24 items-center justify-end">
+            <!-- NEW: Device Switcher Icon -->
+            <button id="device-switcher-button" aria-label="Switch to mobile/desktop view"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+                </svg>
+            </button>
             <!-- Weather Link Icon (Thermometer) -->
-            <a href="/prognoza.html" aria-label="Weather Forecast"
+            <a href="prognoza.html" aria-label="Weather Forecast"
                class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
                 <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
@@ -64,23 +71,23 @@
         <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
             <!-- Left Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="/index.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="index.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/sports.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="sports.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/magazine.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="magazine.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
                 </a>
             </div>
             <!-- Right Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/latest-news-page-1.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="latest-news-page-1.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Најнови Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/prognoza.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="prognoza.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/radio.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="radio.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/youtube.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="youtube.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">YouTube</p>
                 </a>
             </div>
@@ -88,27 +95,27 @@
         <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
         
             <div class="flex border-b theme-border-color px-4 gap-4 overflow-x-auto whitespace-nowrap scrollbar-hide pt-2">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/macedonia.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="macedonia.html">
                     <p>Македонија</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-[3px] theme-active-border theme-nav-text-active" href="/economy.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-[3px] theme-active-border theme-nav-text-active" href="economy.html">
                     <p>Економија</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/balkan.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="balkan.html">
                     <p>Балкан</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/world.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="world.html">
                     <p>Свет</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/skopje.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="skopje.html">
                     <p>Скопје</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/bitola.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="bitola.html">
                     <p>Битола</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/hronika.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="hronika.html">
                     <p>Хроника</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/republika.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="republika.html">
                     <p>Република</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/culture.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="culture.html">
                     <p>Култура</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/technology.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="technology.html">
                     <p>Технологија</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="/scene.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="scene.html">
                     <p>Сцена</p>
                 </a>
             </div>
@@ -125,151 +132,121 @@
                     <div class="flex flex-col divide-y theme-border-color">
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1754991812/ijfxl9jjyrbygnvvgjax.webp&#39;);">
+                                 style="background-image: url(&#39;https://faktor.mk/media/main/2025/09/20250902193220.png&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1658567746.html" class="hover:underline">МИЦКОСКИ: Наместо популистички мерки подобро на краток рок да платиме политичка цена, отколку граѓаните да плаќаат на долг рок</a>
+                                    <a href="article-detail-api--269805446.html" class="hover:underline">Што ќе работи Вучиќ откако ќе си замине од власт?</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Свесни сме дека тоа можеби ќе има и политичка цена, но подобро на краток рок да ја платиме политичката цена, отколку граѓаните да ја плаќаат во континуитет, на долг рок, рече денеска премиерот Христијан Мицкоски, одговорајќи на новинарско прашање...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Пред таа изјава, Вучиќ ги коментираше најновите наоди на агенцијата Ипсос, нагласувајќи дека резултатите од истражувањето претставуваат само слика од она што сте го правеле и дека тие не се причина ниту за посебна радост ниту за посебна загрижено...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>3</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Sources: <span>2</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 21:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2022/03/ministerstvo-za-finasii-300x199.jpg&#39;);">
+                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/03/Ministerstvo-za-energetika-tabla-1-300x200.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1654847924.html" class="hover:underline">Министерството за финансии исплати нова транша од 11,3 милиони евра за поддршка на домашните компании</a>
+                                    <a href="article-detail-api--808556485.html" class="hover:underline">Божиновска: Отворена власт во пракса – Министерството за енергетика ги објавува сите договори</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Министерството за финансии исплати нова петта транша во износ од 700,9 милиони денари или 11,3 милиони евра кон Развојната банка, средства кои се наменети за поддршка на домашните компании.  Исплатена нова транша кон Развојната банка од 11,3 мили...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Министерството веќе има формирано работна група задолжена да ги објави сите склучени договори за концесии за експлоатација на минерални суровини и за детални геолошки истражувања.  Министерството за енергетика, рударство и минерални суровини (МЕР...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>6</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 18:02</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://denesen.mk/wp-content/uploads/2024/04/slaveski.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--876398041.html" class="hover:underline">Славески најавува намалување на учеството при купување прв стан за граѓаните</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Народната банка најавува мерки со кои ќе се олесни купувањето прв стан за граѓаните.  Согласно изјавата на гувернерот Трајко Славески, дадена во интервју за „Радио Слободна Европа“, новите мерки предвидуваат дека лицата кои за првпат купуваат ста...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://denesen.mk/wp-content/uploads/2024/12/grozje2-700x525.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--442172059.html" class="hover:underline">ДЕЗИНФОРМАЦИИТЕ НА ФИЛИПЧЕ: Тазе вратен од крстарење се бори за лозарите, а со СДСМ се истураше камиони грозје и се дозволи винариите да кратат до 8% од цената со закон</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Филипче дали воопшто знае кои закони ги имаат донесено како влада и која штета ја имаат направено врз земјоделците?“, праша Трипуновски.  Да го потсетам Филипче дека одредбата од Законот за вино, која дозволува кратење од 8% од цената на грозјето...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2023/10/avtomobili-uvoz-300x132.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api--1686371233.html" class="hover:underline">НОВ ПРАВИЛНИК: По 17 години од донесувањето на Законот за возила од денеска тој конечно ќе почне да се применува во Македонија</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Нов Правилник стапува во сила денеска со којшто се воведуваат новини и европски стандарди за одобрување на типот на возилото, единечното одобрување на возило, идентификацијата, оцената на техничката состојба и издавање на потврди за исполнетост н...</p>
+                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
+                                    <span>Sources: <span>3</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
+                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
+                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2020/04/w_55997176-300x200.jpg&#39;);">
+                            </div>
+                            <div class="flex-grow flex flex-col h-full">
+                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
+                                    <a href="article-detail-api-1565487326.html" class="hover:underline">Најмногу работници се бараат во услужните дејности и продажбата</a>
+                                </h3>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Бројот на работниците во индустријата во периодот јануари – јули 2025 година, во однос на периодот јануари – јули 2024 година, се намалил за 4 отсто.  Бројот на работниците во индустријата е намален за 3,8 отсто во јули 2025 во однос на јули 2024...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
                                     <span>Sources: <span>8</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2019/12/pari-denari-300x183.jpg&#39;);">
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/09/ПРИХОДИ-АВГУСТ-1-300x300.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1851154324.html" class="hover:underline">Исплатите од државната каса во изборен период ќе се објaвуваат во посебна база за буџетски трошоци</a>
+                                    <a href="article-detail-api--798154020.html" class="hover:underline">Царината: За 14,5 милиони евра зголемена наплатата на приходи во август</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Министерството за финансии согласно одредбите од Изборниот законик од денеска на својата веб страница ќе ги објавува буџетските исплати во посебна база за буџетски трошоци во изборен период.  Имено, согласно Изборниот законик Министерството за фи...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> За 14,5 милиони евра е зголемена наплатата на приходи во август во споредба со истиот месец минатата година, што претставува рекорден раст на приходите од 8,9 проценти остварени на месечно ниво годинава, соопшти Царинската управа.  РЕКОРДНИ ПРИХО...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Sources: <span>8</span></span>
+                                    <span>• Published: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2021/01/nonsap-visuals-g88j9kt5u4g-unsplash-200x300.jpg&#39;);">
+                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/08/stojanoski12-300x169.jpg&#39;);">
                             </div>
                             <div class="flex-grow flex flex-col h-full">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--891586568.html" class="hover:underline">Цените на кафето паднаа прв пат по 18 месеци</a>
+                                    <a href="article-detail-api-708674542.html" class="hover:underline">Реалната просечна плата во време на ВМРО-ДПМНЕ ПОРАСНА ДВОЈНО ПОВЕЌЕ од времето кога СДСМ беше на власт</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Потрошувачките цени на кафето во Бразил паднаа за 1,01 процент во јули во однос на претходниот месец, што е прв пад за година и пол, соопшти денес Бразилскиот институт за географија и статистика.  Падот на малопродажните цени во најголемата земја...</p>
+                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Со ВМРО ДПМНЕ на власт граѓаните имаат повеќе пари, платите растат, а инфлацијата е стабилизирана, пишува во денешното соопштение на партијата.  За разлика од времето на СДСМ, кога добро живееја само тендерашите и нивната политичка елита, денес р...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://denesen.mk/wp-content/uploads/2025/06/MICKOSKI2-1-700x467.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1492486686.html" class="hover:underline">Мицкоски: Би сакал сите работници да земаат 1 000 евра минимална плата, но потребен е договор на ЕСС, ова не е тема за политички поени</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Јас би сакал сите работници да земаат не 500, туку 1 000 евра минимална плата, но теренот на кој тоа треба да се договори е Економско социјалниот совет (ЕСС).  Упатувам порака до вистинските синдкалци, да излезат од политичката реторика зашто пол...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>3</span></span>
-                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1720401865.html" class="hover:underline">Трипуновски од струмичко: Пиперката се откупува непречено, имаме зголемување на субвенциите за 2025 година</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Сега сум во струмичко за да извршам увид во текот и откупот на пиперката.  Првичните информации од Државниот земјоделски инспекторат се дека откупот оди во нормален тек, имаме добар род на пиперка, а квалитетот е солиден”, рече министерот за земј...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://denesen.mk/wp-content/uploads/2025/01/market-700x450.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1971410208.html" class="hover:underline">МИЦКОСКИ ЗА ЦЕНИТЕ: Правиме детални анализи, не сакаме популистички мерки, туку трајно решение</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Не сакаме популистички мерки, туку сакаме трајно решение.  Ги следиме случувањата во регионот и отприлика инфлацијата во јули секаде е околу 4 – 5 отсто, поради услугите.  Премиерот е дециден дека причина за растот на инфлацијата се услугите.</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-2057542675.html" class="hover:underline">Растот на извозот е поголем од увозот во првите шест месеци, вели Мицкоски</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Во првите шест месеци после долго време извозот повеќе расте во однос на увозот.  Премиерот Христијан Мицкоски најави дека растот на извозот ќе придонесе за намалување на трговскиот дефицит и економски напредок2 607 854„Во првите шест месеци, пос...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>3</span></span>
-                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2025/08/13247879-300x200.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1266874836.html" class="hover:underline">Првите ефекти од американските царини по пет-шест месеци, вели гувернерот</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Македонија под ист режим како ЕУ – 15% царина3 823 1255Одлуката на САД стапува во сила денес, а за македонските производи предвидува дополнителна царина од 15 проценти, исто како и за Европската Унија, со која САД потпишаа трговски договор на 27 ...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="py-6 flex flex-col md:flex-row gap-4 items-start min-h-[250px]">
-                            <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/08/mickoski-petrovec-3-300x200.jpg&#39;);">
-                            </div>
-                            <div class="flex-grow flex flex-col h-full">
-                                <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1154738532.html" class="hover:underline">Мицкоски: Опозицијата се служи со лаги, земјоделските производи се откупуваат</a>
-                                </h3>
-                                <p class="theme-text-secondary text-base mb-2 h-[72px] overflow-hidden"> Опозицијата се обидува да напаѓа и да манипулира со изнесување лаги и конструкции, но граѓаните да бидат спокојни, зашто Владата мисли на се, рече денеска премиерот Христијан Мицкоски.  А тоа што го гледаме од страна на опозицијата е само обид да...</p>
-                                <div class="theme-text-secondary text-sm flex items-center gap-2 mt-auto">
-                                    <span>Sources: <span>3</span></span>
-                                    <span>• Published: <span>Aug 11, 2025 20:53</span></span>
+                                    <span>Sources: <span>7</span></span>
+                                    <span>• Published: <span>Aug 30, 2025 18:02</span></span>
                                 </div>
                             </div>
                         </div>
@@ -374,9 +351,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
         <p class="text-sm leading-relaxed mb-6">
-            Изборот и позициите на вестите на <span class="font-bold">Stitch Design</span> се одредуваат автоматски со компјутерска програма.
-            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Stitch Design</span>.
-            <span class="font-bold">Stitch Design</span> не презема никаква одговорност за веродостојноста на преземените информации.
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
         </p>
 
         <!-- Static Links -->

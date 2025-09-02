@@ -28,13 +28,20 @@
             <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
-        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Најнови Вести</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>18:08, 13.08.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>21:00, 02.09.2025</span></p>
         </h2>
-        <div class="flex w-12 items-center justify-end">
+        <div class="flex w-24 items-center justify-end">
+            <!-- NEW: Device Switcher Icon -->
+            <button id="device-switcher-button" aria-label="Switch to mobile/desktop view"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+                </svg>
+            </button>
             <!-- Weather Link Icon (Thermometer) -->
-            <a href="/prognoza.html" aria-label="Weather Forecast"
+            <a href="prognoza.html" aria-label="Weather Forecast"
                class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
                 <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
@@ -64,23 +71,23 @@
         <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
             <!-- Left Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/index.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="index.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/sports.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="sports.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/magazine.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="magazine.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
                 </a>
             </div>
             <!-- Right Navigation Items -->
             <div class="flex gap-8">
-                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="/latest-news-page-1.html">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="latest-news-page-1.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">Најнови Вести</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/prognoza.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="prognoza.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/radio.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="radio.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
-                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="/youtube.html">
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="youtube.html">
                     <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">YouTube</p>
                 </a>
             </div>
@@ -102,7 +109,7 @@
                         <!-- Previous Page Link -->
                         <a href="latest-news-page-6.html"
                            class="theme-bg-secondary theme-text-primary py-2 px-4 rounded-lg border theme-border-color hover:theme-bg-hover">
-                            Previous
+                            <
                         </a>
 
                         <!-- Page Numbers -->
@@ -152,167 +159,162 @@
                                 <span>9</span>
                             </a>
                         
-                            <a href="latest-news-page-10.html"
-                               class="py-2 px-4 rounded-lg hover:theme-bg-hover font-bold theme-bg-secondary theme-text-primary border theme-border-color">
-                                <span>10</span>
-                            </a>
-                        
 
                         <!-- Next Page Link -->
                         <a href="latest-news-page-8.html"
                            class="theme-bg-secondary theme-text-primary py-2 px-4 rounded-lg border theme-border-color hover:theme-bg-hover">
-                            Next
+                           >
                         </a>
                     </div>
 
                     <div class="flex flex-col divide-y theme-border-color">
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://skopje1.mk/wp-content/uploads/2020/10/bujar-osmani-300x195.png&#39;);">
+                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1756807820/bbcnkl71khakqgxmjor3.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1025373756.html" class="hover:underline">ВРЕДИ ГО ОБВИНУВА ОСМАНИ: 20 години е на функција и никогаш немал проект за Чаир</a>
+                                    <a href="article-detail-api--550622372.html" class="hover:underline">Ахмети: Во Чаир потпишан „Актот на Чаир“ – најголемо национално обединување по 2001 година</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> ДУИ и Бујар Османи се во паника, знаат дека во Чаир доаѓа неизбежен пораз и дека граѓаните нема да наседнат на нивните лажни приказни, соопшти коалицијата Вреди.  ВРЕДИ објавува факти за кои вели дека Чаир ги знае: Османи е осомничен во предметот...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Лидерот на ДУИ, Али Ахмети, на својот Фејсбук профил објави дека заедно со кандидатот за градоначалник на Чаир, Бујар Османи и пратеникот Скендер Реџепи Зејди го потпишале Актот на Чаир, кој, како што истакна, претставува најголемо национално обе...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>4</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/03/policija-mvr-300x241.jpg&#39;);">
+                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1756807963/bcxmvipuogjudci0dhv0.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1319114449.html" class="hover:underline">Кривична пријава за четири лица за престрелката во Тетово, одреден 30-дневен притвор, по две лица се трага</a>
+                                    <a href="article-detail-api-249202703.html" class="hover:underline">Јаневска: Доставата на учебници треба да биде завршена оваа недела</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> На 10 август, на улицата „Благоја Тоска“ во Тетово, првиот осомничен и детето во судир со законот родено во 2010 година, со умисла, како соизвршители и со употреба на огнено оружје – автоматски пушки кои на граѓаните им се забранети, лишиле од жи...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Доставата на учебници треба да биде завршена оваа недела, нема никакви проблеми со почетокот на учебната година, изјави министерката за образование и наука Весна Јаневска.  Доставата на учебници треба да биде завршена во текот на оваа недела спор...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>8</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>2</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/08/viber_image_2025-08-12_19-18-43-397-300x169.jpg&#39;);">
+                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1756797520/d5wivli5pxaeaod9ueda.webp&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1869915205.html" class="hover:underline">ФРЛАЛ КАМЕЊА КОН ПОЛИЦИСКИ ХЕЛИКОПТЕР ШТО ГАСИ ПОЖАРИ: Скопјанец приведен поради загрозување на безбедност</a>
+                                    <a href="article-detail-api--228085001.html" class="hover:underline">Продолжуваат спасувачки операции во Авганистан, бројот на жртви од земјотресот се искачи над илјада</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> На 6 јули околу 18 часот додека полициски хеликоптер приоѓал на кон реката Лепенец каде се влива во реката Вардар со цел да наполни вода за гаснење на пожарот во реонот на Блаце, 55 годишниот почнал да мафта со рацете и фрлал камења кон хеликопте...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Според локалното население, многу луѓе сè уште се заробени под урнатините.  Се стравува дека многу луѓе се заробени под урнатините.  Талибанската влада апелираше за меѓународна помош.</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>7</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>8</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2023/03/policija-1-300x196.jpg&#39;);">
+                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1756797979/wuxjoafvjjt81rksfumz.webp&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1617224151.html" class="hover:underline">Возел пијан, удрил во малолетничка и побегнал</a>
+                                    <a href="article-detail-api--1546676710.html" class="hover:underline">ФИЦО: Се создава нов светски поредок, нови правила на мултиполарниот свет, а ЕУ се однесува како навредено дете</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Каменичка“ во Македонска Каменица, полициски службеници го уапсија Г. А. Македонска Каменица.  Како што соопшти МВР, тој се сомничи дека околу 23.  Малолетничката се здобила со тешки телесни повреди и била пренесена во Клиничка болница Штип за ук...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Фицо изрази жалење што токму Словачка ќе биде единствената држава членка на ЕУ која ќе има свои претставници во Пекинг.  Оваа недела Кина е домаќин на самитот на Шангајската организација за соработка (ШОС), на кој, покрај Путин и Си, учествуваат ...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>6</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>4</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/05/13019944-300x211.jpg&#39;);">
+                                 style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/534056.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-44022155.html" class="hover:underline">ЕУ воведува нови санкции кон Русија</a>
+                                    <a href="article-detail-api--658170715.html" class="hover:underline">ГАСОВОДИ НА ИСТОКОТ: Русија, Монголија и Кина потпишаа договор за изградба на двата гасовода „Силата на Сибир 2“ и „Сојуз на Истокот“</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Европската Унија подготвува 19 ти пакет санкции против Русија, бидејќи Москва продолжува да ги отфрла повиците за прекин на огнот во Украина, изјави високата претставничка на ЕУ за надворешни работи, Каја Калас, според .  Лидерите на ЕУ и украинс...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Врз основа на јавната изјава дадена од лидерите на трите земји, Русија, Кина и Монголија, денеска е потпишан правно обврзувачки меморандум за изградба на гасоводот Силата на Сибир 2 и транзитниот гасовод Сојуз на Истокот преку Монголија, рече тој...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>3</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>4</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://placehold.co/300x200/cccccc/000000?text=No+Image&#39;);">
+                                 style="background-image: url(&#39;https://denesen.mk/wp-content/uploads/2024/12/grozje2-700x525.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1656301217.html" class="hover:underline">Зеленски ги укинува ограничувањата за патување во странство на мажите меѓу 18 и 21 година</a>
+                                    <a href="article-detail-api--442172059.html" class="hover:underline">ДЕЗИНФОРМАЦИИТЕ НА ФИЛИПЧЕ: Тазе вратен од крстарење се бори за лозарите, а со СДСМ се истураше камиони грозје и се дозволи винариите да кратат до 8% од цената со закон</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Зеленски ги укинува ограничувањата за патување во странство на мажите меѓу 18 и 21 година.  Претседателот на Украина, Володимир Зеленски, денес изјави дека побарал од владата да ги укине ограничувањата за патување во странство за украинските мажи...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Филипче дали воопшто знае кои закони ги имаат донесено како влада и која штета ја имаат направено врз земјоделците?“, праша Трипуновски.  Да го потсетам Филипче дека одредбата од Законот за вино, која дозволува кратење од 8% од цената на грозјето...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>3</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2021/01/nacionalna-garda-vashington-300x201.png&#39;);">
+                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2023/10/avtomobili-uvoz-300x132.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--1998095867.html" class="hover:underline">Националната гарда пристигна во Вашингтон</a>
+                                    <a href="article-detail-api--1686371233.html" class="hover:underline">НОВ ПРАВИЛНИК: По 17 години од донесувањето на Законот за возила од денеска тој конечно ќе почне да се применува во Македонија</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Градоначалничката на Вашингтон, Муриел Баузер, изјави дека ќе работи „рамо до рамо“ со федералните власти додека војниците пристигнуваат во седиштето на Националната гарда во главниот град.  Трамп вчера изјави дека „постојат и други градови кои с...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Нов Правилник стапува во сила денеска со којшто се воведуваат новини и европски стандарди за одобрување на типот на возилото, единечното одобрување на возило, идентификацијата, оцената на техничката состојба и издавање на потврди за исполнетост н...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>3</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/08/Screenshot-2025-08-12-165006-300x159.jpg&#39;);">
+                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2020/02/gorivo-benzin1-300x203.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-1420745326.html" class="hover:underline">Објавен идентитетот на војникот кој загина во Црна Гора кога се преврте цистерна за гаснење пожар</a>
+                                    <a href="article-detail-api-166514428.html" class="hover:underline">Дизелот поскапува, бензините со иста цена</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Помладиот водник Дејан Божовиќ од Даниловград загина, а водникот Марко Иковиќ се здоби со тешки повреди при гаснење пожар во областа Кучи, во Црна Гора, објави Министерството за одбрана на Црна Гора.  Војската на Црна Гора, во соработка со надлеж...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Малопродажните цени на ЕУРОДИЗЕЛ (Д Е ) и на Екстра лесното масло за домаќинство на (ЕЛ 1) од полноќ се зголемуваат за 0,50 денари по литар.  Цените на бензините ЕУРОСУПЕР БС 95 и ЕУРОСУПЕР БС 98 не се менуваат, соопшти Регулаторната комисија за ...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>2</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>5</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://makfax.com.mk/wp-content/uploads/2025/08/13255315-300x200.jpg&#39;);">
+                                 style="background-image: url(&#39;https://a1on.mk/wp-content/uploads/2020/04/w_55997176-300x200.jpg&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api--92749352.html" class="hover:underline">Си-Ен-Ен: Трамп и Путин ќе се сретнат во воздухопловната база Елмендорф-Ричардсон во Енкориџ</a>
+                                    <a href="article-detail-api-1565487326.html" class="hover:underline">Најмногу работници се бараат во услужните дејности и продажбата</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Ливит додаде дека средбата ќе биде „вежба за слушање“ за претседателот Трамп.  Белата куќа синоќа објави дека средбата меѓу претседателот Трамп, и претседателот Путин, ќе се одржи во петок во Енкориџ, Алјаска.  Средбата меѓу американскиот и руски...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Бројот на работниците во индустријата во периодот јануари – јули 2025 година, во однос на периодот јануари – јули 2024 година, се намалил за 4 отсто.  Бројот на работниците во индустријата е намален за 3,8 отсто во јули 2025 во однос на јули 2024...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>5</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>8</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
                         <div class="py-6 flex flex-col md:flex-row gap-4 items-start">
                             <div class="flex-shrink-0 w-full md:w-48 h-32 rounded-lg bg-center bg-no-repeat bg-cover overflow-hidden"
-                                 style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/07/Screenshot-2025-07-27-121025-300x161.png&#39;);">
+                                 style="background-image: url(&#39;https://res.cloudinary.com/keystone-demo/image/upload/v1756795452/tfa8gh3dm4bzvculehab.webp&#39;);">
                             </div>
                             <div class="flex-grow">
                                 <h3 class="theme-text-primary text-xl font-bold leading-tight mb-2">
-                                    <a href="article-detail-api-845684969.html" class="hover:underline">Трамп денеска ќе има виртуелен состанок со европските лидери</a>
+                                    <a href="article-detail-api--1016270452.html" class="hover:underline">Сончево со мала до умерена локална облачност, максималната температура до 37 степени</a>
                                 </h3>
-                                <p class="theme-text-secondary text-base mb-2"> Трамп ќе одржи виртуелен состанок со европските лидери и Зеленски.  Британските медиуми наведуваат дека европските лидери прво ќе одржат меѓусебен видео состанок за да ги координираат своите позиции пред да разговараат со Трамп за неговите претст...</p>
+                                <p class="theme-text-secondary text-base mb-2"> Во Скопје, времето ќе биде сончево со мала до умерена облачност и со слаб ветер од променлив правец.  Сончево со мала до умерена локална облачност, максималната температура до 37 степени » :.  Времето утре ќе биде сончево со мала до умерена локал...</p>
                                 <div class="theme-text-secondary text-sm flex items-center gap-2">
-                                    <span>Sources: <span>6</span></span>
-                                    <span>• Published: <span>Aug 13, 2025 15:09</span></span>
+                                    <span>Извори: <span>5</span></span>
+                                    <span>• Индексирано: <span>Sep 02, 2025 15:47</span></span>
                                 </div>
                             </div>
                         </div>
@@ -331,7 +333,7 @@
                             <div class="flex items-end gap-3 justify-between">
                                 <div class="flex flex-col gap-1">
                                     <p class="theme-text-secondary text-sm font-normal leading-normal">Check out our exclusive deals.</p>
-                                    <a href="article-detail-adlatestnewsmain.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
+                                    <a href="article-detail-adlatestnewsmain.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Повеќе</a>
                                 </div>
                             </div>
                         </div>
@@ -347,7 +349,7 @@
                             <div class="flex items-end gap-3 justify-between">
                                 <div class="flex flex-col gap-1">
                                     <p class="theme-text-secondary text-sm font-normal leading-normal">Browse our fresh collection.</p>
-                                    <a href="article-detail-adlatestnewssmall.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
+                                    <a href="article-detail-adlatestnewssmall.html" class="text-xs font-bold text-blue-600 hover:underline mt-1">Повеќе</a>
                                 </div>
                             </div>
                         </div>
@@ -415,9 +417,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
         <p class="text-sm leading-relaxed mb-6">
-            Изборот и позициите на вестите на <span class="font-bold">Stitch Design</span> се одредуваат автоматски со компјутерска програма.
-            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Stitch Design</span>.
-            <span class="font-bold">Stitch Design</span> не презема никаква одговорност за веродостојноста на преземените информации.
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
         </p>
 
         <!-- Static Links -->
