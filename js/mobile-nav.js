@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const themeToggleTextMobile = document.getElementById('theme-toggle-mobile-text');
     const htmlElement = document.documentElement;
 
+
     function updateThemeToggleText() {
         if (themeToggleTextMobile) {
             themeToggleTextMobile.textContent = htmlElement.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
@@ -54,5 +55,11 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('theme', htmlElement.classList.contains('dark') ? 'dark' : 'light');
         }
     });
+
+        switchToDesktopButton?.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent the link from navigating immediately
+            localStorage.setItem('view_preference', 'desktop');
+            window.location.href = 'index.html';
+        });
 });
 
