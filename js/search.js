@@ -1,0 +1,150 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const searchButtonDesktop = document.getElementById('search-button-desktop');
+    const searchButtonMobile = document.getElementById('search-button-mobile');
+    const searchModal = document.getElementById('search-modal');
+    const closeModalButton = document.getElementById('close-search-modal');
+    const searchInput = document.getElementById('search-input');
+    const searchResultsContainer = document.getElementById('search-results');
+
+    let idx; // Lunr index
+    let articles = {}; // Use an object for quick lookups by ID
+
+    // --- UI Update Functions ---
+    function showLoadingState() {
+        if (searchResultsContainer) searchResultsContainer.innerHTML = '<p class="theme-text-secondary">Loading search index...</p>';
+    }
+
+    function showSearchError() {
+        if (searchResultsContainer) searchResultsContainer.innerHTML = '<p class="theme-text-secondary">Error: Search index could not be loaded. Search is currently unavailable.</p>';
+    }
+
+    function showReadyState() {
+        if (searchResultsContainer) searchResultsContainer.innerHTML = '<p class="theme-text-secondary">Ready to search. Please enter a query.</p>';
+    }
+
+    // --- Modal Control ---
+    function openModal() {
+        if (searchModal) searchModal.classList.remove('hidden');
+        if (searchInput) {
+            // UPDATED: Force a light theme on the input field for consistent visibility.
+            searchInput.classList.remove('theme-bg-secondary', 'theme-text-primary');
+            searchInput.classList.add('bg-white', 'text-gray-900');
+            searchInput.focus();
+        }
+    }
+
+        function closeModal() {
+            if (searchModal) searchModal.classList.add('hidden');
+        }
+
+// In search.js
+        async function initializeSearch() {
+            showLoadingState();
+            try {
+                const response = await fetch('search-index.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const articleList = await response.json();
+
+                articles = articleList.reduce((map, article) => {
+                    map[article.id] = article;
+                    return map;
+                }, {});
+
+                idx = lunr(function () {
+                    // Remove the default English stemmer and trimmer
+                    this.pipeline.remove(lunr.trimmer);
+                    this.pipeline.remove(lunr.stemmer);
+
+                    // REMOVE the line that was causing the error
+                    // this.use(lunr.mk); // DELETE THIS LINE
+
+                    this.ref('id');
+                    this.field('title');
+                    this.field('description');
+
+                    articleList.forEach(function (doc) {
+                        this.add(doc);
+                    }, this);
+                });
+
+                console.log("Search index initialized successfully (without language pack).");
+                showReadyState();
+
+            } catch (error) {
+                console.error('Error initializing search:', error);
+                showSearchError();
+            }
+        }
+
+
+    // --- Search Logic ---
+    function performSearch() {
+    if (!idx) {
+        showSearchError();
+        return;
+    }
+    const query = searchInput.value.trim();
+    if (query.length < 2) {
+        searchResultsContainer.innerHTML = '<p class="theme-text-secondary">Please enter at least 2 characters.</p>';
+        return;
+    }
+
+    // --- START OF NEW FIX ---
+
+    // 1. Split the user's query into individual words.
+    const queryTerms = query.split(' ').filter(term => term.length > 0);
+
+    // 2. Build the query string. This version REMOVES the '+' operator
+    //    but keeps the trailing wildcard '*' for partial matching.
+    const lunrQuery = queryTerms.map(term => `${term}*`).join(' ');
+
+    // 3. Perform the search.
+    const searchResults = idx.search(lunrQuery);
+
+    // --- END OF NEW FIX ---
+
+    displayResults(searchResults);
+    }
+
+
+
+    function displayResults(results) {
+        searchResultsContainer.innerHTML = '';
+
+        if (results.length === 0) {
+            searchResultsContainer.innerHTML = '<p class="theme-text-secondary">No results found.</p>';
+            return;
+        }
+
+        results.forEach(result => {
+            const article = articles[result.ref];
+            if (article) {
+                const resultElement = document.createElement('a');
+                resultElement.href = article.url;
+                resultElement.className = 'block p-3 bg-white rounded-md hover:bg-gray-100 transition-colors';
+
+                resultElement.innerHTML = `
+                    <h4 class="font-bold text-gray-900">${article.title}</h4>
+                    <p class="text-sm text-gray-600">${article.description.substring(0, 100)}...</p>
+                `;
+                searchResultsContainer.appendChild(resultElement);
+            }
+        });
+    }
+
+    // --- Event Listeners ---
+    searchButtonDesktop?.addEventListener('click', openModal);
+    searchButtonMobile?.addEventListener('click', openModal);
+    closeModalButton?.addEventListener('click', closeModal);
+    searchModal?.addEventListener('click', (e) => {
+        if (e.target === searchModal) closeModal();
+    });
+
+    // Use 'input' for more responsive search-as-you-type
+    searchInput?.addEventListener('input', performSearch);
+
+    initializeSearch();
+});
+
