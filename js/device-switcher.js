@@ -1,128 +1,47 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const searchButtonDesktop = document.getElementById('search-button-desktop');
-    const searchButtonMobile = document.getElementById('search-button-mobile');
-    const searchModal = document.getElementById('search-modal');
-    const closeModalButton = document.getElementById('close-search-modal');
-    const searchInput = document.getElementById('search-input');
-    const searchResultsContainer = document.getElementById('search-results');
+function handleDeviceViewRedirect() {
+    const preference = localStorage.getItem('view_preference');
+    const isMobileScreen = window.innerWidth < 1024;
+    const onMobilePage = window.location.pathname.endsWith('index-mobile.html');
+    const onDesktopPage = window.location.pathname.endsWith('index.html');
 
-    let idx; // Lunr index
-    let articles = {}; // Use an object for quick lookups by ID
-
-    // --- UI Update Functions ---
-    function showLoadingState() {
-        if (searchResultsContainer) searchResultsContainer.innerHTML = '<p class="theme-text-secondary">Loading search index...</p>';
-    }
-
-    function showSearchError() {
-        if (searchResultsContainer) searchResultsContainer.innerHTML = '<p class="theme-text-secondary">Error: Search index could not be loaded. Search is currently unavailable.</p>';
-    }
-
-    function showReadyState() {
-        if (searchResultsContainer) searchResultsContainer.innerHTML = '<p class="theme-text-secondary">Ready to search. Please enter a query.</p>';
-    }
-
-    // --- Modal Control ---
-    function openModal() {
-        if (searchModal) searchModal.classList.remove('hidden');
-        if (searchInput) {
-            // UPDATED: Force a light theme on the input field for consistent visibility.
-            searchInput.classList.remove('theme-bg-secondary', 'theme-text-primary');
-            searchInput.classList.add('bg-white', 'text-gray-900');
-            searchInput.focus();
+    // If a preference is set, it has the highest priority.
+    if (preference) {
+        if (preference === 'desktop' && onMobilePage) {
+            // User wants desktop but is on mobile page -> redirect to desktop.
+            window.location.replace('index.html');
+        } else if (preference === 'mobile' && onDesktopPage) {
+            // User wants mobile but is on desktop page -> redirect to mobile.
+            window.location.replace('index-mobile.html');
         }
+        // If preference matches the current page, do nothing.
+        return;
     }
 
-    function closeModal() {
-        if (searchModal) searchModal.classList.add('hidden');
+    // If NO preference is set, then use screen size as a fallback.
+    if (isMobileScreen && onDesktopPage) {
+        window.location.replace('index-mobile.html');
     }
+}
 
-    // --- Search Initialization ---
-    async function initializeSearch() {
-        showLoadingState();
-        try {
-            const response = await fetch('search-index.json');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const articleList = await response.json();
+// Run the redirection check as soon as the script is loaded.
+handleDeviceViewRedirect();
 
-            // Convert array to object for fast lookups
-            articles = articleList.reduce((map, article) => {
-                map[article.id] = article;
-                return map;
-            }, {});
+// Set up the button click listeners after the page's HTML is ready.
+document.addEventListener('DOMContentLoaded', function() {
+    const switchToMobileButton = document.getElementById('device-switcher-button');
+    const switchToDesktopButton = document.getElementById('switch-to-desktop-button');
 
-            idx = lunr(function () {
-                this.ref('id');
-                this.field('title');
-                this.field('description');
-
-                articleList.forEach(function (doc) {
-                    this.add(doc);
-                }, this);
-            });
-
-            console.log("Search index initialized successfully.");
-            showReadyState();
-
-        } catch (error) {
-            console.error('Error initializing search:', error);
-            showSearchError();
-        }
-    }
-
-    // --- Search Logic ---
-    function performSearch() {
-        if (!idx) {
-            showSearchError();
-            return;
-        }
-        const query = searchInput.value.trim();
-        if (query.length < 2) {
-            searchResultsContainer.innerHTML = '<p class="theme-text-secondary">Please enter at least 2 characters.</p>';
-            return;
-        }
-
-        const searchResults = idx.search(`*${query}*`);
-        displayResults(searchResults);
-    }
-
-    function displayResults(results) {
-        searchResultsContainer.innerHTML = '';
-
-        if (results.length === 0) {
-            searchResultsContainer.innerHTML = '<p class="theme-text-secondary">No results found.</p>';
-            return;
-        }
-
-        results.forEach(result => {
-            const article = articles[result.ref];
-            if (article) {
-                const resultElement = document.createElement('a');
-                resultElement.href = article.url;
-                resultElement.className = 'block p-3 bg-white rounded-md hover:bg-gray-100 transition-colors';
-
-                resultElement.innerHTML = `
-                    <h4 class="font-bold text-gray-900">${article.title}</h4>
-                    <p class="text-sm text-gray-600">${article.description.substring(0, 100)}...</p>
-                `;
-                searchResultsContainer.appendChild(resultElement);
-            }
-        });
-    }
-
-    // --- Event Listeners ---
-    searchButtonDesktop?.addEventListener('click', openModal);
-    searchButtonMobile?.addEventListener('click', openModal);
-    closeModalButton?.addEventListener('click', closeModal);
-    searchModal?.addEventListener('click', (e) => {
-        if (e.target === searchModal) closeModal();
+    // Listener for the button on the DESKTOP page to switch to mobile
+    switchToMobileButton?.addEventListener('click', function(e) {
+        e.preventDefault();
+        localStorage.setItem('view_preference', 'mobile');
+        window.location.href = 'index-mobile.html';
     });
 
-    // Use 'input' for more responsive search-as-you-type
-    searchInput?.addEventListener('input', performSearch);
-
-    initializeSearch();
+    // Listener for the button on the MOBILE page to switch to desktop
+    switchToDesktopButton?.addEventListener('click', function(e) {
+        e.preventDefault();
+        localStorage.setItem('view_preference', 'desktop');
+        window.location.href = 'index.html';
+    });
 });
-

@@ -55,11 +55,5 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('theme', htmlElement.classList.contains('dark') ? 'dark' : 'light');
         }
     });
-
-        switchToDesktopButton?.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent the link from navigating immediately
-            localStorage.setItem('view_preference', 'desktop');
-            window.location.href = 'index.html';
-        });
 });
 

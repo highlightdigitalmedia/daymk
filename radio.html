@@ -33,7 +33,7 @@
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
         <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Radio</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>15:49, 05.09.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>22:03, 05.09.2025</span></p>
         </h2>
         <div class="flex w-24 items-center justify-end">
             <!-- NEW: Search Icon (Desktop) -->
@@ -154,97 +154,6 @@
     </div>
 </div>
 
-<!-- Include common theme toggle script fragment -->
-<script>
-    /*<![CDATA[*/
-    const themeToggle = document.getElementById('theme-toggle');
-    const htmlElement = document.documentElement; // This refers to the <html> tag
-    const sunIcon = document.getElementById('sun-icon');
-    const moonIcon = document.getElementById('moon-icon');
-
-    // Function to set the theme
-    function setTheme(theme) {
-        if (theme === 'dark') {
-            htmlElement.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
-            if (moonIcon) moonIcon.style.display = 'block';
-            if (sunIcon) sunIcon.style.display = 'none';
-        } else {
-            htmlElement.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
-            if (sunIcon) sunIcon.style.display = 'block';
-            if (moonIcon) moonIcon.style.display = 'none';
-        }
-    }
-
-    // Check for saved theme preference or system preference on load
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        setTheme(savedTheme);
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        setTheme('dark'); // Default to dark if system prefers it
-    } else {
-        setTheme('light'); // Default to light
-    }
-
-    // Toggle theme on button click
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            if (htmlElement.classList.contains('dark')) {
-                setTheme('light');
-            } else {
-                setTheme('dark');
-            }
-        });
-    }
-
-
-    // Listen for system theme changes (if no preference is saved)
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-        if (!localStorage.getItem('theme')) { // Only react to system changes if no user preference is set
-            setTheme(event.matches ? 'dark' : 'light');
-        }
-    });
-    /*]]>*/
-</script>
-<!-- Include the new radio player script fragment -->
-<script>
-    /*<![CDATA[*/
-    document.addEventListener('DOMContentLoaded', function() {
-        const radioPlayer = document.getElementById('radioPlayer');
-        const currentStationNameDisplay = document.getElementById('currentStationName');
-
-        /**
-         * Plays a radio station from the given stream URL and updates the display.
-         * @param {string} streamUrl - The URL of the audio stream.
-         * @param {string} [stationName="Unknown Station"] - The name of the station to display.
-         */
-        window.playStation = function(streamUrl, stationName = "Unknown Station") {
-            // Pause current playback and check if the stream is changing
-            if (radioPlayer.src !== streamUrl) {
-                radioPlayer.src = streamUrl;
-                radioPlayer.load(); // Load the new source
-            }
-
-            // Set volume to 50%
-            radioPlayer.volume = 0.5;
-
-            radioPlayer.play()
-                .then(() => {
-                    console.log(`Playing: ${stationName}`);
-                    currentStationNameDisplay.textContent = `Now Playing: ${stationName}`;
-                })
-                .catch(error => {
-                    console.error("Error playing audio:", error);
-                    currentStationNameDisplay.textContent = `Could not play ${stationName}. Error: ${error.message}. Please try another station.`;
-                });
-        };
-
-        // Optional: Play a default station on page load
-        // window.onload = () => playStation('http://antenna5stream.neotel.mk:8000/live128', 'Antenna 5');
-    });
-    /*]]>*/
-</script>
 <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
@@ -286,6 +195,20 @@
     </div>
 
     <!-- Add Lunr.js library and the search script -->
+
+
+
+</footer>
+</div>
+
+<script>
+    /*<![CDATA[*/
+    window.sidebarSmallRotatingAdsData1 = null;
+    window.sidebarSmallRotatingAdsData2 = null;
+    /*]]>*/
+</script>
+
+<div>
     <script>
     /*<![CDATA[*/
     const themeToggle = document.getElementById('theme-toggle');
@@ -338,14 +261,25 @@
     });
     /*]]>*/
 </script>
-    <script src="https://unpkg.com/lunr/lunr.min.js"></script>
-    <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
-    <script src="https://unpkg.com/lunr-languages/lunr.lang.all.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/device-switcher.js"></script>
-    <script src="js/mobile-nav.js"></script>
-    <script src="js/ad-rotation.js"></script>
 
-</footer>
+
+    <script src="js/device-switcher.js" defer></script>
+    <script src="js/mobile-nav.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.2/lunr.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js" defer></script>
+    <script src="js/search.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
+</script>
+    <script src="js/ad-rotation.js" defer></script>
+
+</div>
+
 </body>
 </html>

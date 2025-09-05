@@ -29,7 +29,7 @@
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
         <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Untitled</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>15:49, 05.09.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>22:03, 05.09.2025</span></p>
         </h2>
         <div class="flex w-24 items-center justify-end">
             <!-- NEW: Search Icon (Desktop) -->
@@ -154,65 +154,8 @@
     </div>
 
     <!-- Add Lunr.js library and the search script -->
-    <script>
-    /*<![CDATA[*/
-    const themeToggle = document.getElementById('theme-toggle');
-    const htmlElement = document.documentElement; // This refers to the <html> tag
-    const sunIcon = document.getElementById('sun-icon');
-    const moonIcon = document.getElementById('moon-icon');
-
-    // Function to set the theme
-    function setTheme(theme) {
-        if (theme === 'dark') {
-            htmlElement.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
-            if (moonIcon) moonIcon.style.display = 'block';
-            if (sunIcon) sunIcon.style.display = 'none';
-        } else {
-            htmlElement.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
-            if (sunIcon) sunIcon.style.display = 'block';
-            if (moonIcon) moonIcon.style.display = 'none';
-        }
-    }
-
-    // Check for saved theme preference or system preference on load
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        setTheme(savedTheme);
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        setTheme('dark'); // Default to dark if system prefers it
-    } else {
-        setTheme('light'); // Default to light
-    }
-
-    // Toggle theme on button click
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            if (htmlElement.classList.contains('dark')) {
-                setTheme('light');
-            } else {
-                setTheme('dark');
-            }
-        });
-    }
 
 
-    // Listen for system theme changes (if no preference is saved)
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-        if (!localStorage.getItem('theme')) { // Only react to system changes if no user preference is set
-            setTheme(event.matches ? 'dark' : 'light');
-        }
-    });
-    /*]]>*/
-</script>
-    <script src="https://unpkg.com/lunr/lunr.min.js"></script>
-    <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
-    <script src="https://unpkg.com/lunr-languages/lunr.lang.all.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/device-switcher.js"></script>
-    <script src="js/mobile-nav.js"></script>
-    <script src="js/ad-rotation.js"></script>
 
 </footer>
 </div>

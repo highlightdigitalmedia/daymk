@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!-- Include common head fragment -->
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
@@ -26,13 +25,12 @@
 >
     <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div>
-            <!-- Include common header and navigation fragment -->
             <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
         <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Магазин</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>15:49, 05.09.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>22:03, 05.09.2025</span></p>
         </h2>
         <div class="flex w-24 items-center justify-end">
             <!-- NEW: Search Icon (Desktop) -->
@@ -127,9 +125,7 @@
     </div>
 </div>
 
-            <!-- Main Content Area: Two Columns -->
             <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <!-- Left Column: Main Category Articles -->
                 <div class="lg:col-span-2 flex flex-col gap-8">
                     <h2 class="theme-text-primary text-2xl font-bold mb-6">Магазин</h2>
                     
@@ -138,99 +134,68 @@
                     </div>
                 </div>
 
-                <!-- Right Column: Sidebar (Ads) -->
                 <div class="lg:col-span-1 flex flex-col gap-6">
-                    <!-- Category Spotlight Ad (Rotating) -->
                     <div id="rotating-ad-container-category" class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
                         <a id="rotating-ad-link-category" href="#" class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden">
                         </a>
-                        <!-- Title and description elements removed for photo-only ad -->
                     </div>
 
-                    <!-- Secondary Category Ad (Static, but could be made rotating too) -->
                     <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
                         <a href="article-detail-adsmallcategory.html" class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden"
                            style="background-image: url(&#39;https://placehold.co/150x300/800000/ffffff?text=Small+Ad+for+Category&#39;);">
                         </a>
-                        <!-- Title and description elements removed for photo-only ad -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <footer class="theme-bg-secondary py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
+        <!-- Disclaimer Text -->
+        <p class="text-sm leading-relaxed mb-6">
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
+        </p>
+
+        <!-- Static Links with Thymeleaf relative URLs -->
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
+            <a href="sources.html" class="hover:underline theme-text-primary">Извори</a>
+            <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
+            <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
+            <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
+            <a href="blog.html" class="hover:underline theme-text-primary">Блог</a>
+            <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a>
+            <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
+            <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
+        </div>
+    </div>
+
+    <!-- NEW: Search Modal HTML Structure -->
+    <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-start justify-center min-h-screen pt-16">
+            <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2>
+                    <button id="close-search-modal" class="theme-text-primary" aria-label="Close search">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4">
+                <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto">
+                    <!-- Search results will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Lunr.js library and the search script -->
+
+
+
+</footer>
 </div>
 
-<!-- Include common theme toggle script fragment -->
-<script>
-    /*<![CDATA[*/
-    const themeToggle = document.getElementById('theme-toggle');
-    const htmlElement = document.documentElement; // This refers to the <html> tag
-    const sunIcon = document.getElementById('sun-icon');
-    const moonIcon = document.getElementById('moon-icon');
-
-    // Function to set the theme
-    function setTheme(theme) {
-        if (theme === 'dark') {
-            htmlElement.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
-            if (moonIcon) moonIcon.style.display = 'block';
-            if (sunIcon) sunIcon.style.display = 'none';
-        } else {
-            htmlElement.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
-            if (sunIcon) sunIcon.style.display = 'block';
-            if (moonIcon) moonIcon.style.display = 'none';
-        }
-    }
-
-    // Check for saved theme preference or system preference on load
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        setTheme(savedTheme);
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        setTheme('dark'); // Default to dark if system prefers it
-    } else {
-        setTheme('light'); // Default to light
-    }
-
-    // Toggle theme on button click
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            if (htmlElement.classList.contains('dark')) {
-                setTheme('light');
-            } else {
-                setTheme('dark');
-            }
-        });
-    }
-
-
-    // Listen for system theme changes (if no preference is saved)
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-        if (!localStorage.getItem('theme')) { // Only react to system changes if no user preference is set
-            setTheme(event.matches ? 'dark' : 'light');
-        }
-    });
-    /*]]>*/
-</script>
-
-<!-- Google Analytics 4 (GA4) Tracking Script -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
-</script>
-
-<!-- Pass ad data to JavaScript and include the ad rotation script -->
-<script>
-    /*<![CDATA[*/
-    // Make the categorySpotlightAds data available globally for ad-rotation.js
-    window.categorySpotlightAdsData = [{"id":"categorySpotlightAd1","imageUrl":"https:\/\/placehold.co\/800x450\/4B0082\/ffffff?text=Category+Ad+1","title":"Explore More!","description":"Find in-depth analysis.","url":"article-detail-adcategory1.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"category_spotlight"},{"id":"categorySpotlightAd2","imageUrl":"https:\/\/placehold.co\/800x450\/8A2BE2\/FFFFFF?text=Category+Ad+2","title":"Deep Dive!","description":"Comprehensive coverage.","url":"article-detail-adcategory2.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"category_spotlight"},{"id":"categorySpotlightAd3","imageUrl":"https:\/\/placehold.co\/800x450\/DA70D6\/000000?text=Category+Ad+3","title":"Latest Updates!","description":"Stay informed.","url":"article-detail-adcategory3.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"category_spotlight"}];
-    /*]]>*/
-</script>
-<script src="js/ad-rotation.js"></script>
 <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
@@ -272,6 +237,20 @@
     </div>
 
     <!-- Add Lunr.js library and the search script -->
+
+
+
+</footer>
+</div>
+
+<script>
+    /*<![CDATA[*/
+    window.sidebarSmallRotatingAdsData1 = null;
+    window.sidebarSmallRotatingAdsData2 = null;
+    /*]]>*/
+</script>
+
+<div>
     <script>
     /*<![CDATA[*/
     const themeToggle = document.getElementById('theme-toggle');
@@ -324,14 +303,24 @@
     });
     /*]]>*/
 </script>
-    <script src="https://unpkg.com/lunr/lunr.min.js"></script>
-    <script src="https://unpkg.com/lunr-languages/lunr.stemmer.support.js"></script>
-    <script src="https://unpkg.com/lunr-languages/lunr.lang.all.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/device-switcher.js"></script>
-    <script src="js/mobile-nav.js"></script>
-    <script src="js/ad-rotation.js"></script>
 
-</footer>
+
+    <script src="js/device-switcher.js" defer></script>
+    <script src="js/mobile-nav.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.2/lunr.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js" defer></script>
+    <script src="js/search.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
+</script>
+    <script src="js/ad-rotation.js" defer></script>
+
+</div>
 </body>
 </html>
