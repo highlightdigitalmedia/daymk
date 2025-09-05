@@ -10,9 +10,11 @@
             onload="this.rel='stylesheet'"
             href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
-
     <title>Седници на три собраниски комисии</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <!-- Default Meta Description -->
+    <meta name="description" content="Day.mk - агрегатор на вести од Македонија и светот." />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="stylesheet" href="css/style.css" />
@@ -30,7 +32,7 @@
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
         <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Седници на три собраниски комисии</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>11:47, 03.09.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>12:11, 05.09.2025</span></p>
         </h2>
         <div class="flex w-24 items-center justify-end">
             <!-- NEW: Device Switcher Icon -->
@@ -171,6 +173,16 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- Iterating over relatedArticles, which is now pre-filtered in Java -->
                         <div class="flex flex-col items-stretch justify-start rounded-lg border theme-border-color p-4 theme-bg-secondary shadow-sm">
+                            <a href="article-detail-api-1545871797.html" class="w-full h-[200px] max-w-[300px] bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden mx-auto"
+                               style="background-image: url(&#39;https://www.slobodenpecat.mk/wp-content/uploads/2025/08/izbori-listi-300x200.jpg&#39;);">
+                            </a>
+                            <div class="flex w-full grow flex-col items-stretch justify-center gap-1 py-4">
+                                <a href="article-detail-api-1545871797.html" class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] hover:underline">ДИК: ОДИХР со 14 набљудувачи од утре почнува со следењето на Локалните избори 2025</a>
+                                <p class="theme-text-secondary text-sm font-normal leading-normal">1 min read</p>
+                                <p class="theme-text-secondary text-sm font-normal leading-normal">Sources: <span>2</span></p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-stretch justify-start rounded-lg border theme-border-color p-4 theme-bg-secondary shadow-sm">
                             <a href="article-detail-api--238961799.html" class="w-full h-[200px] max-w-[300px] bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden mx-auto"
                                style="background-image: url(&#39;https://gostivarpress.mk/wp-content/uploads/2024/07/poz-2-300x225.jpg&#39;);">
                             </a>
@@ -188,16 +200,6 @@
                                 <a href="article-detail-api--1675090261.html" class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] hover:underline">Филипче од Неготино: Ги штитиме лозарите, Владата да го изгласа законот за дополнителни 3 денари по килограм грозје</a>
                                 <p class="theme-text-secondary text-sm font-normal leading-normal">1 min read</p>
                                 <p class="theme-text-secondary text-sm font-normal leading-normal">Sources: <span>2</span></p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col items-stretch justify-start rounded-lg border theme-border-color p-4 theme-bg-secondary shadow-sm">
-                            <a href="article-detail-api-1231784074.html" class="w-full h-[200px] max-w-[300px] bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden mx-auto"
-                               style="background-image: url(&#39;https://kanal5.com.mk/uploads/thumbs/445384.jpg&#39;);">
-                            </a>
-                            <div class="flex w-full grow flex-col items-stretch justify-center gap-1 py-4">
-                                <a href="article-detail-api-1231784074.html" class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] hover:underline">„СДС сака да ги спаси организаторите на прислушкувањето со лажни барања за декласификација“, реагира ВМРО-ДПМНЕ</a>
-                                <p class="theme-text-secondary text-sm font-normal leading-normal">2 min read</p>
-                                <p class="theme-text-secondary text-sm font-normal leading-normal">Sources: <span>5</span></p>
                             </div>
                         </div>
                     </div>
@@ -270,18 +272,52 @@
             <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
         </p>
 
-        <!-- Static Links -->
+        <!-- Static Links with Thymeleaf relative URLs -->
         <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
-            <a href="/sources.html" class="hover:underline theme-text-primary">Извори</a>
-            <a href="/indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
-            <a href="/how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
-            <a href="/marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
-            <a href="/blog.html" class="hover:underline theme-text-primary">Блог</a>
-            <a href="/contact.html" class="hover:underline theme-text-primary">Контакт</a>
-            <a href="/privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
-            <a href="/terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
+            <a href="sources.html" class="hover:underline theme-text-primary">Извори</a>
+            <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
+            <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
+            <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
+            <a href="blog.html" class="hover:underline theme-text-primary">Блог</a>
+            <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a>
+            <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
+            <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
         </div>
     </div>
 </footer>
+
+    <!-- Include the new Article Schema fragment -->
+    <script type="application/ld+json">
+    /*<![CDATA[*/
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": /*Седници на три собраниски комисии*/ "Article Headline Here",
+        "image": [
+            /*https://kanal5.com.mk/uploads/thumbs/447664.jpg*/ "https://example.com/image.jpg"
+        ],
+        "datePublished": /*2025-09-03T12:17:39.074+0200*/ "2025-09-04T22:01:00+02:00",
+        "dateModified": /*2025-09-03T12:17:39.074+0200*/ "2025-09-04T22:01:00+02:00",
+        "author": [{
+            "@type": "Organization",
+            "name": "Day.mk"
+        }],
+        "publisher": {
+            "@type": "Organization",
+            "name": "Day.mk",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://day.mk/assets/logo.png"
+            }
+        },
+        "description": /* Предлог законот за средно полициско училиште по скратена постапка е единствена точка на дневен ред на Комисијата за одбрана и безбедност.  Сите овие предлог закони ќе бидат на дневен ред и на Законодавно правната комисија.  Во Собранието денеска седници треба да одржат Комисијата за одбрана и безбедност, Комисијата за финансирање и буџет и Законодавно правната комисија.*/ "A summary of the article content.",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": /*article-detail-api-1374521655.html*/ "https://day.mk/article.html"
+        }
+    }
+    /*]]>*/
+</script>
 </body>
 </html>
+
