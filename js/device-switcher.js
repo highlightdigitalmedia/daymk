@@ -1,25 +1,37 @@
 function handleDeviceViewRedirect() {
     const preference = localStorage.getItem('view_preference');
-    const isMobileScreen = window.innerWidth < 1024;
-    const onMobilePage = window.location.pathname.endsWith('index-mobile.html');
-    const onDesktopPage = window.location.pathname.endsWith('index.html');
+    const isMobileScreen = window.innerWidth < 1024; // Tailwind's 'lg' breakpoint
+    const pathname = window.location.pathname;
 
-    // If a preference is set, it has the highest priority.
+    // Define page pairs for redirection
+    const onDesktopIndex = pathname.endsWith('/') || pathname.endsWith('index.html');
+    const onMobileIndex = pathname.endsWith('index-mobile.html');
+    const onDesktopSports = pathname.endsWith('sports.html');
+    const onMobileSports = pathname.endsWith('sports-mobile.html');
+
+    // --- 1. Handle User's Explicit Preference ---
+    // If a preference is set, it has the highest priority and overrides screen size.
     if (preference) {
-        if (preference === 'desktop' && onMobilePage) {
-            // User wants desktop but is on mobile page -> redirect to desktop.
-            window.location.replace('index.html');
-        } else if (preference === 'mobile' && onDesktopPage) {
-            // User wants mobile but is on desktop page -> redirect to mobile.
-            window.location.replace('index-mobile.html');
+        if (preference === 'desktop') {
+            if (onMobileIndex) window.location.replace('index.html');
+            if (onMobileSports) window.location.replace('sports.html');
+        } else if (preference === 'mobile') {
+            if (onDesktopIndex) window.location.replace('index-mobile.html');
+            if (onDesktopSports) window.location.replace('sports-mobile.html');
         }
-        // If preference matches the current page, do nothing.
-        return;
+        return; // Stop further checks if a preference was handled.
     }
 
-    // If NO preference is set, then use screen size as a fallback.
-    if (isMobileScreen && onDesktopPage) {
-        window.location.replace('index-mobile.html');
+    // --- 2. Handle First-Time Visitors (No Preference) Based on Screen Size ---
+    // This logic only runs if no 'view_preference' is set in localStorage.
+    if (isMobileScreen) {
+        // User is on a small screen, so default them to a mobile page.
+        if (onDesktopIndex) window.location.replace('index-mobile.html');
+        if (onDesktopSports) window.location.replace('sports-mobile.html');
+    } else {
+        // User is on a large screen, so default them to a desktop page.
+        if (onMobileIndex) window.location.replace('index.html');
+        if (onMobileSports) window.location.replace('sports.html');
     }
 }
 
@@ -31,17 +43,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const switchToMobileButton = document.getElementById('device-switcher-button');
     const switchToDesktopButton = document.getElementById('switch-to-desktop-button');
 
-    // Listener for the button on the DESKTOP page to switch to mobile
     switchToMobileButton?.addEventListener('click', function(e) {
         e.preventDefault();
         localStorage.setItem('view_preference', 'mobile');
-        window.location.href = 'index-mobile.html';
+        if (window.location.pathname.endsWith('sports.html')) {
+            window.location.href = 'sports-mobile.html';
+        } else {
+            window.location.href = 'index-mobile.html';
+        }
     });
 
-    // Listener for the button on the MOBILE page to switch to desktop
     switchToDesktopButton?.addEventListener('click', function(e) {
         e.preventDefault();
         localStorage.setItem('view_preference', 'desktop');
-        window.location.href = 'index.html';
+        if (window.location.pathname.endsWith('sports-mobile.html')) {
+            window.location.href = 'sports.html';
+        } else {
+            window.location.href = 'index.html';
+        }
     });
 });

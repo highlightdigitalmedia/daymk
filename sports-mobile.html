@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+            rel="stylesheet"
+            as="style"
+            onload="this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <title>Day.mk - Спорт (Mobile)</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <!-- Default Meta Description -->
+    <meta name="description" content="Day.mk - агрегатор на вести од Македонија и светот." />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="theme-bg-primary">
+<div class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
+     style='font-family: Newsreader, "Noto Sans", sans-serif;'>
+    <div class="max-w-7xl mx-auto w-full">
+        <div>
+            <!-- Use the mobile header -->
+            <div>
+    <!-- Mobile Header -->
+    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger-menu-button" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Centered Title/Logo -->
+        <div class="flex-1 text-center">
+            <h1 class="theme-text-primary text-2xl font-bold uppercase tracking-wider">Спорт</h1>
+        </div>
+
+        <!-- Search Icon -->
+        <button id="search-button-mobile" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Slide-out Menu -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
+        <div class="p-4">
+            <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
+            <nav class="flex flex-col gap-2">
+                <!-- Main Nav Links -->
+                <a href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Вести</a><a href="sports.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Спорт</a><a href="magazine.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Магазин</a>
+                <a href="latest-news-page-1.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a><a href="prognoza.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a><a href="radio.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a><a href="youtube.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+                <hr class="my-3 theme-border-color">
+                <!-- Other Utility Links -->
+                <button id="theme-toggle-mobile" class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
+                </button>
+                <a id="switch-to-desktop-button" href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Стандардна верзија</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hidden desktop theme toggle button to leverage existing script -->
+    <button id="theme-toggle" class="hidden"></button>
+</div>
+
+            <main class="p-2 sm:p-4">
+                <h1 class="theme-text-primary text-2xl font-bold mb-4 px-2">Спорт</h1>
+
+                <!-- Top Ad Banner -->
+                <div id="mobile-ad-container-top" class="mb-4">
+                    <a id="mobile-ad-link-top" href="#" class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                </div>
+
+                <!-- List of all sports articles -->
+                <div class="flex flex-col">
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1847738739.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/13331286.jpg" alt="Трипл-дабл на Шенгун, Турција се пласира во полуфиналето" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Трипл-дабл на Шенгун, Турција се пласира во полуфиналето</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Најдобар играч на Турција беше Алперен Шенгун, кој оствари „трипл дабл“ учинок со 19 поени, 12 скока и 10 асистенции.  Евробаскет: Турција во полу...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">6</span></span>
+                                <span> • <span>Sep 09, 20:21</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-1218835517.html" class="flex gap-3">
+                            <img src="https://res.cloudinary.com/keystone-demo/image/upload/v1757398496/qcz2dflcin9bwr6bwxg5.webp" alt="Во Битола по пауза од 31 година попладне ќе се игра меѓународен фудбалски натпревар" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Во Битола по пауза од 31 година попладне ќе се игра меѓународен фудбалски натпревар</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Попладне во Битола, по пауза од 31 година, повторно ќе се одигра меѓународен фудбалски натпревар на кој ќе настапат младинските репрезентации на М...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">5</span></span>
+                                <span> • <span>Sep 09, 13:24</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-702466285.html" class="flex gap-3">
+                            <img src="https://www.slobodenpecat.mk/wp-content/uploads/2025/08/kosarkarska-4-300x200.jpg" alt="Македонските кошаркари ги дознаа противниците во претквалификациите за ЕП 2029" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Македонските кошаркари ги дознаа противниците во претквалификациите за ЕП 2029</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Ривали во првата фаза од претквалификациите за Евробаскетот во 2029 година ни се репрезентациите на Ирска, Луксембург и Азербејџан.  Не нѐ чека ле...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">5</span></span>
+                                <span> • <span>Sep 08, 20:20</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--897806532.html" class="flex gap-3">
+                            <img src="https://www.slobodenpecat.mk/wp-content/uploads/2025/08/lina-gjorceska-3-300x215.jpg" alt="Ѓорческа со скок од 43 места на ВТА ранг-листата, на врвот нема промени" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Ѓорческа со скок од 43 места на ВТА ранг-листата, на врвот нема промени</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> На најновата ВТА ранг листа објавена во понеделник македонската тенисерка Лина Ѓорческа има голем скок од 43 позиции.  Ваквиот огромен напредок на...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">4</span></span>
+                                <span> • <span>Sep 08, 14:22</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--978332164.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/13326713.jpg" alt="ФИБА ги објави термините за четвртфиналните пресметки" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">ФИБА ги објави термините за четвртфиналните пресметки</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> ФИБА ги објави четвртфиналните натпревари на Евробаскетот, натпреварите ќе се играат во вторник и среда.  За разлика од натпреварите од осминафина...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 08, 14:05</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-1961545538.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/Untitled-34.jpg" alt="Фенербахче ќе го предводи Џовани Тедеско" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Фенербахче ќе го предводи Џовани Тедеско</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> После тоа, тој стана најмладиот тренер во историјата на Спартак Москва.  Стана најмладиот тренер во историјата на Шалке 04, со кого стигна до осми...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 09, 15:09</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1309732762.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/Untitled-33.jpg" alt="Заврши сезоната за Џек Дрејпер" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Заврши сезоната за Џек Дрејпер</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Британскиот тенисер Џек Дрејпер ја заврши сезоната поради повреда на левата рака.  Заедно со овогодинешниот Индијан Велс, Дрејпер славеше и во Вие...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 09, 13:34</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-1020198399.html" class="flex gap-3">
+                            <img src="https://novamakedonija.com.mk/wp-content/uploads/2021/07/judo-150x150.jpg" alt="На Европскиот џудо куп во Скопје доaѓа европската сениорска елита" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">На Европскиот џудо куп во Скопје доaѓа европската сениорска елита</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Џудо федерацијата на Македонија со гордост најавува уште еден врвен спортски настан во нејзина организација – Сениорскиот Европски куп во џудо, ко...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 09, 17:04</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1852153141.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/Untitled-32.jpg" alt="Скалони: Каква и да биде одлуката на Меси, ние ќе ја почитуваме" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Скалони: Каква и да биде одлуката на Меси, ние ќе ја почитуваме</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Кои се шансите Меси да игра на Светското првенство?  Лионел Меси, најголемиот фудбалски син на нацијата, по натпреварот со Венецуела пред некој де...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 09, 13:34</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1603836794.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/Untitled-35.jpg" alt="Реал Мадрид повторно ќе го бојкотира доделувањето на Златната топка" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Реал Мадрид повторно ќе го бојкотира доделувањето на Златната топка</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Фудбалскиот клуб Реал Мадрид и оваа година ќе ја бојкотира церемонијата на доделувањето на најпрестижната индивидуална награда во фудбалот, Златна...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 09, 16:05</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--972618700.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/11137151.jpg" alt="Постекоглу пред портите на „Сити Граунд“ во Нотингем" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Постекоглу пред портите на „Сити Граунд“ во Нотингем</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Новиот менаџер на Форест ќе биде Грк од Австралија, Ангелос Постекоглу, кој беше менаџер на Селтик две сезони, а потоа и на Тотенхем две сезони.  ...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">4</span></span>
+                                <span> • <span>Sep 09, 15:09</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1442623005.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/13321159.jpg" alt="Гатузо: Хаос, најлуд натпревар во кој некогаш сум учествувал" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Гатузо: Хаос, најлуд натпревар во кој некогаш сум учествувал</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Џенаро Гатузо, селекторот на Италија, се осврна на натпреварот по лудиот триумф на неговите избраници.  Аѕурите, во луд натпревар, во Дебрецен, сл...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 09, 16:05</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1418702016.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/13329283.jpg" alt="Исак за трансферот во Ливерпул: Не знате што сè се случуваше" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Исак за трансферот во Ливерпул: Не знате што сè се случуваше</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Фудбалерот на Ливерпул, Александар Исак, изјави дека е среќен што го засилил шампионот на Англија по долгата сага, но дека медиумите и навивачите ...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 09, 17:04</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-272348491.html" class="flex gap-3">
+                            <img src="https://placehold.co/300x200/cccccc/000000?text=No+Image" alt="Данев: Респект за Италија, но одлучни сме дека одиме на триумф" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Данев: Респект за Италија, но одлучни сме дека одиме на триумф</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Македонската фудбалска репрезентација до 21 година на стадионот „Билјанини извори“ во Охрид го одработи последниот тренинг пред утрешниот квалифик...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 08, 20:04</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--628386978.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/Untitled-30.jpg" alt="Сити и Премиер лигата постигнаа договор околу договорите за спонзорство" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Сити и Премиер лигата постигнаа договор околу договорите за спонзорство</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Манчестер Сити и Премиер лигата постигнаа договор во спорот околу правилата што ги регулираат договорите за спонзорство.  Сити покрена правна пост...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 08, 21:34</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-1831327684.html" class="flex gap-3">
+                            <img src="https://res.cloudinary.com/keystone-demo/image/upload/v1757311585/lc2dgppqh8hke1gks2bw.png" alt="Алкараз шампион на УС опен и нов број 1 на светот" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Алкараз шампион на УС опен и нов број 1 на светот</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Шпанецот Карлос Алкараз е победник на годинашниов УС опен откако во финалето го совлада Јаник Синер од Италија со 3:1 во сетови (6:2 3:6 6:1 и 6:4...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 08, 14:05</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--782191082.html" class="flex gap-3">
+                            <img src="https://www.slobodenpecat.mk/wp-content/uploads/2025/09/13023192-300x194.jpg" alt="Дефанзивецот на Атлетик Билбао, Јерај Алварез, суспендиран поради допинг" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Дефанзивецот на Атлетик Билбао, Јерај Алварез, суспендиран поради допинг</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Унијата на европските фудбалски асоцијации, УЕФА, објави дека го суспендирала играчот на шпанскиот клуб Атлетик Билбао, 30 годишниот Јерај Алварез...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 08, 20:04</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1748050483.html" class="flex gap-3">
+                            <img src="https://www.slobodenpecat.mk/wp-content/uploads/2025/09/stadion-petar-milosevski-300x225.jpg" alt="ОПШТИНАТА ИНФОРМИРА ДЕКА СТАДИОНОТ Е ПОДГОТВЕН ЗА ГОЛЕМ ДУЕЛ" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">ОПШТИНАТА ИНФОРМИРА ДЕКА СТАДИОНОТ Е ПОДГОТВЕН ЗА ГОЛЕМ ДУЕЛ</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Општина Битола и Фудбалската федерација на Македонија професионално и во потребните рокови го завршија процесот на реновирање и приспособување на ...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Aug 30, 18:02</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-1989571909.html" class="flex gap-3">
+                            <img src="https://placehold.co/300x200/cccccc/000000?text=No+Image" alt="Ѓоковиќ: Алкараз и Синер се предобри" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Ѓоковиќ: Алкараз и Синер се предобри</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Едноставно Карлос Алкараз и Јаник Синер се предобри во моментов.  Новак Ѓоковиќ синоќа го загуби полуфиналето од Карлос Алкараз со 3:0 во сетови, ...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 06, 18:14</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--610198896.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/Untitled-26.jpg" alt="Аканџи откри зошто си заминал од Манчестер сити" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Аканџи откри зошто си заминал од Манчестер сити</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Мануел Аканџи (30) одигра важна улога во тимот на Пеп Гвардиола минатата сезона, сепак во финишот на преодниот рок тој замина на позајмица во Инте...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 08, 14:05</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1783980567.html" class="flex gap-3">
+                            <img src="https://placehold.co/300x200/cccccc/000000?text=No+Image" alt="Милевски: За фудбалерите – секоја чест!" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Милевски: За фудбалерите – секоја чест!</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Следниот натпревар со Белгија е за нас најважен, подготовката кај нас секогаш е иста без оглед дали противник е Лихтенштајн, Белгија или Казахстан...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 08, 14:05</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--66451810.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/G0U2TL8XgAArRD8.jpg" alt="Поранешниот селектор на Данска го презеде Баер Леверкузен" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Поранешниот селектор на Данска го презеде Баер Леверкузен</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Каспер Хјулманд, поранешен селектор на Данска, кој ја напушти репрезентацијата во јули минатата година по Европското првенство дојде на местото на...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 09, 13:24</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-633833005.html" class="flex gap-3">
+                            <img src="https://placehold.co/300x200/cccccc/000000?text=No+Image" alt="Алкалоид го доби пехарот за триумфот во ЕХФ Европскиот куп" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Алкалоид го доби пехарот за триумфот во ЕХФ Европскиот куп</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Натпреварот меѓу Алкалоид и Хановер се игра во сабота од 19:30 часот во салата „Автокоманда“, а ќе биде посебен момент за македонскиот тим затоа ш...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 04, 22:49</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1048772448.html" class="flex gap-3">
+                            <img src="https://plusinfo.mk/wp-content/uploads/2025/09/finska-kosarka.jpg" alt="ФИБА: Испаѓањето на Србија е изненадување на векот" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">ФИБА: Испаѓањето на Србија е изненадување на векот</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Финска ги исфрли Србија и Никола Јокиќ од Евробаскетот!“ Сензацијата е главна тема во светот на кошарката.  ФИБА, светската кошаркарска федерација...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 08, 14:05</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-300048051.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/13076484.jpg" alt="Зиден е пред портите на Фенербахче" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Зиден е пред портите на Фенербахче</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Фудбалскиот клуб Фенербахче и легендарниот Зинедин Зидан преговараат за соработка откако Жозе Мурињо ја напушти клупата на турскиот гигант по отка...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">4</span></span>
+                                <span> • <span>Sep 06, 18:14</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-1182114962.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/5f9bc530-f9b7-4d68-8611-3b4aa8583b31.jpg" alt="Јувентус остана без важен играч за дербито против Интер" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Јувентус остана без важен играч за дербито против Интер</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Консеисао, фудбалер кој во кариерата одиграл 11 репрезентативни натпревари и постигнал два гола, веднаш заминал за Торино и ќе направи дополнителн...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 09, 13:24</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1608126269.html" class="flex gap-3">
+                            <img src="https://placehold.co/300x200/cccccc/000000?text=No+Image" alt="Мартинез: Роналдо дава сѐ од себе, но нема долгорочни цели" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Мартинез: Роналдо дава сѐ од себе, но нема долгорочни цели</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Мартинез: Роналдо дава сѐ од себе, но нема долгорочни цели :.  Селекторот на Португалија, Роберто Мартинез, одговори на прашање за шансите Кристиј...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 09, 13:24</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-1474651110.html" class="flex gap-3">
+                            <img src="https://mk.tv21.tv/wp-content/uploads/2025/06/alkaloid-rakometari-1024x563.jpg" alt="ЕХФ: Алкалоид службено го освои Европскиот куп, регистриран е неодиграниот реванш со 10-0" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">ЕХФ: Алкалоид службено го освои Европскиот куп, регистриран е неодиграниот реванш со 10-0</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Европската ракометна федерација (ЕХФ) денеска ја објави конечната и официјална одлука околу неодиграниот реванш натпревар од финалето на Европскио...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 04, 22:49</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1871905095.html" class="flex gap-3">
+                            <img src="https://www.slobodenpecat.mk/wp-content/uploads/2025/09/Screenshot-2025-09-09-150604-300x165.jpg" alt="Кузмановски: Среќен сум што Загреб ќе го пречекаме со најдобриот состав" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Кузмановски: Среќен сум што Загреб ќе го пречекаме со најдобриот состав</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Не треба да зборуваме за историјата на Загреб, мотивирани сме и сакаме со позитивен резултат да ја почнеме Лигата на шампионите.  Максимално се по...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 09, 17:49</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--635039033.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/13325357.jpg" alt="Ферстапен ја освои Монца пред возачите на Мекларен" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Ферстапен ја освои Монца пред возачите на Мекларен</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Подиумот го пополнија возачите на Мекларен, Британецот Ландо Норис ја помина целта втор, а Австралиецот Оскар Пјастри трет.  Холанѓанецот Макс Фер...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 08, 14:05</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1487282517.html" class="flex gap-3">
+                            <img src="https://faktor.mk/media/main/2025/08/20250801163745.png" alt="И Унгарија се откажува од рускиот гас" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">И Унгарија се откажува од рускиот гас</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Во Основниот суд во Струга денеска повторно беше одложено судското рочиште на кое требаше да биде презентиран извештајот од супервештачењето за сл...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 09, 17:49</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-1001201486.html" class="flex gap-3">
+                            <img src="https://kanal5.com.mk/uploads/thumbs/716317.jpg" alt="„2 Бона“, Елена Ристеска и Вера Јанковиќ, македонска музика и добра забава во сабота во Паркот на Франкофонија" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">„2 Бона“, Елена Ристеска и Вера Јанковиќ, македонска музика и добра забава во сабота во Паркот на Франкофонија</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Бона“, Елена Ристеска и Вера Јанковиќ , македонска музика и добра забава во сабота во Паркот на Франкофонија » :.  Водителката Вера Јанковиќ истак...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 09, 13:49</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-1644227255.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/12503165.jpg" alt="„Шумарите“ го отпуштија Нуно Еспирито Санто" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">„Шумарите“ го отпуштија Нуно Еспирито Санто</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Нуно Еспирито Санто повеќе не е менаџер на Нотингем Форест.  Хаос во Нотингем: Нуно Еспирито Санто доби отказ откако го однесе тимот во Европа.  В...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 09, 13:24</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-1371429647.html" class="flex gap-3">
+                            <img src="https://placehold.co/300x200/cccccc/000000?text=No+Image" alt="Одличниот Алкараз го победи Синер за триумф на Отворено првенство на САД:" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Одличниот Алкараз го победи Синер за триумф на Отворено првенство на САД:</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Алкараз ги освои Ролан Гарос и Отвореното првенство на САД, а Синер славеше на Отвореното првенство на Австралија и Вимблдон.  Карлос Алкараз е ша...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">5</span></span>
+                                <span> • <span>Sep 08, 14:05</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--835583037.html" class="flex gap-3">
+                            <img src="https://placehold.co/300x200/cccccc/000000?text=No+Image" alt="Евробаскет 2025: Стартуваат осминафиналните дуели" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Евробаскет 2025: Стартуваат осминафиналните дуели</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Утре (недела) во истите термини се играат другите осминафинални натпревари: Полска Босна и Херцеговина, Франција Грузија, Италија Словенија и Грци...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">4</span></span>
+                                <span> • <span>Sep 06, 18:14</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--89220582.html" class="flex gap-3">
+                            <img src="https://plusinfo.mk/wp-content/uploads/2025/09/nagrada-8-septemvri.jpg" alt="ОДБОЈКАРОТ ЈОШКО МИЛЕНКОСКИ ДОБИ „8 СЕПТЕМВРИ“ ЗА ЖИВОТНО ДЕЛО Признанија и за Хамид Бакија, Зоран Николовски, Виктор Тевчев и Кирил Манев" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">ОДБОЈКАРОТ ЈОШКО МИЛЕНКОСКИ ДОБИ „8 СЕПТЕМВРИ“ ЗА ЖИВОТНО ДЕЛО Признанија и за Хамид Бакија, Зоран Николовски, Виктор Тевчев и Кирил Манев</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> На 5 септември (петок), во Кристалната сала на Собранието, во 10 часот, Одборот за доделување на државната награда „8 Септември“ ќе врачи награди ...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">4</span></span>
+                                <span> • <span>Sep 04, 19:31</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1320690781.html" class="flex gap-3">
+                            <img src="https://placehold.co/300x200/cccccc/000000?text=No+Image" alt="Евробаскет 2025: Германија остана без селекторот" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Евробаскет 2025: Германија остана без селекторот</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Многу репрезентации за време на шампионатите најчесто имаат проблем со повреди на играчите, но германската кошаркарска репрезентација на Евробаске...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 08, 20:04</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--519281862.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/G0PhAsFW8AAi2sb.jpg" alt="Мбапе гласа за Дембеле: Јас лично би му ја врачи Златната топка" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Мбапе гласа за Дембеле: Јас лично би му ја врачи Златната топка</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Усман ја заслужува (Златната топка), го поддржував од самиот почеток.  Ако ме прашаше, јас лично би му ја однел дома“, изјави тој Мбапе за „Телефу...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 08, 14:05</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1764583278.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/G0UJnRvXAAAlnB6.jpg" alt="Удар за Билбао: Алварез суспендиран поради допинг" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Удар за Билбао: Алварез суспендиран поради допинг</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Поради допинг, Алварез доби девет месечна суспензија, што значи дека практично сезоната за него заврши.  Удар за Билбао: Алварез суспендиран порад...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">3</span></span>
+                                <span> • <span>Sep 08, 21:34</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-1567892348.html" class="flex gap-3">
+                            <img src="https://faktor.mk/media/main/2025/09/20250906125718.jpg" alt="Зеленски одговори на поканата на Путин: Не можам да дојдам во Москва, ти дојди во Киев" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Зеленски одговори на поканата на Путин: Не можам да дојдам во Москва, ти дојди во Киев</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> ТОЈ МОЖЕ ДА ДОЈДЕ ВО КИЕВ“ Зеленски ја отфрли идејата на Путин за средба во Москва.  НЕКА ДОЈДЕ ВО КИЕВ, ЈАС НЕ ОДАМ ВО МОСКВА: Зеленски го одби п...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">4</span></span>
+                                <span> • <span>Sep 06, 18:14</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-967513471.html" class="flex gap-3">
+                            <img src="https://www.slobodenpecat.mk/wp-content/uploads/2019/09/mechanic-16969141920-830x0-300x200.jpg" alt="Ова е најскапиот метал во светот: Чини 15 пати повеќе од златото" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Ова е најскапиот метал во светот: Чини 15 пати повеќе од златото</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Се користи и во изработката на накит и во автомобилската индустрија, а неговата цена постојано се зголемува.  Покрај тоа, наоѓалиштата на овој мет...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 09, 21:19</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--287327105.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/13322847.jpg" alt="Алекс падна, Марк најбрз во спринтот во Каталуња" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Алекс падна, Марк најбрз во спринтот во Каталуња</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> МотоГП: Алекс Маркез обезбеди пол позиција за Големата награда на Каталонија.  Возачот на Дукати, Марк Маркез ја освои Големата награда на Унгариј...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">6</span></span>
+                                <span> • <span>Sep 06, 18:14</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1269072726.html" class="flex gap-3">
+                            <img src="https://placehold.co/300x200/cccccc/000000?text=No+Image" alt="Германија среде Евробаскетот остана без селектор" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Германија среде Евробаскетот остана без селектор</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Германија ќе игра против Словенија во четвртфиналето на Евробаскетот во среда од 20 часот.  Во текот на изминатите неколку дена сфатив дека не сум...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">4</span></span>
+                                <span> • <span>Sep 08, 15:34</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-320048217.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/Untitled-27.jpg" alt="Алекс конечно го победи постариот брат во главна трка" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Алекс конечно го победи постариот брат во главна трка</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Третата позиција ја освои звонредниот Бастијанини, кој стартуваше од деветтото место, а на крајот заврши на подиумот.  Возачот на Гресини ја освои...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 08, 14:05</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1692486168.html" class="flex gap-3">
+                            <img src="https://libertas.mk/wp-content/uploads/2025/09/lina-gjorceska.jpg" alt="Лина Ѓорческа со голем пресврт до титула во Романија!" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Лина Ѓорческа со голем пресврт до титула во Романија!</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Лина Ѓорческа со голем пресврт до титула во Романија!  Во спектакуларно финале на силниот ИТФ турнир во Слобозија, Романија, таа со голем пресврт ...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 08, 14:05</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-915137530.html" class="flex gap-3">
+                            <img src="https://sportstation.mk/wp-content/uploads/2025/09/543619350_18526908298047219_5682404095534277263_n-300x250.jpg" alt="Милевски: Имаме максимален респект за Лихтенштајн" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Милевски: Имаме максимален респект за Лихтенштајн</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Македонската фудбалска репрезентација утре од 18 часот на Националната арена Тодор Проески во Скопје го игра квалификацискиот натпревар од групата...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">5</span></span>
+                                <span> • <span>Sep 08, 14:05</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--118048323.html" class="flex gap-3">
+                            <img src="https://placehold.co/300x200/cccccc/000000?text=No+Image" alt="КК Пелистер ги продолжи договорите со четири македонски играчи" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">КК Пелистер ги продолжи договорите со четири македонски играчи</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> За Крстевски ова ќе биде втора сезона во дресот на Пелистер, додека битолчанецот Најдовски како капитен е дел од самите почетоци на овој проект.  ...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 08, 23:34</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-818368961.html" class="flex gap-3">
+                            <img src="https://www.slobodenpecat.mk/wp-content/uploads/2024/07/12379650-300x200.jpg" alt="Каспер Хјулманд ќе го води Баер Леверкузен до 2027-та" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Каспер Хјулманд ќе го води Баер Леверкузен до 2027-та</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Данецот Каспер Хјулманд, поранешниот тренер на полуфиналистот на Данска на Евро 2021, е назначен за тренер на Баер Леверкузен, една седмица откако...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 08, 18:34</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-707577556.html" class="flex gap-3">
+                            <img src="https://sportstation.mk/wp-content/uploads/2025/09/gettyimages-2224263279-scaled-e1757350393806.jpg" alt="Крај на една ера: По 23 години, Даниел Леви повеќе не е прв човек на Тотенхем!" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Крај на една ера: По 23 години, Даниел Леви повеќе не е прв човек на Тотенхем!</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Даниел Леви човекот кој повеќе од две децении беше синоним за Тотенхем, повеќе не е на чело на клубот.  Крај на една ера: По 23 години, Даниел Лев...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 09, 14:50</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api--1327931875.html" class="flex gap-3">
+                            <img src="https://www.slobodenpecat.mk/wp-content/uploads/2025/08/kosarkarska-2-1-300x200.jpg" alt="Македонија против Ирска, Луксембург и Азербејџан во европските претквалификации" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">Македонија против Ирска, Луксембург и Азербејџан во европските претквалификации</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Од трите групи трите првопласирани селекции ќе се пласираат во следната фаза, заедно со најдобро второпласираната селекција од групите.  Македонск...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 08, 15:19</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                        <a href="article-detail-api-1604959461.html" class="flex gap-3">
+                            <img src="https://topsport.mk/wp-content/uploads/2025/09/G0MCPCvWYAAv3S4.jpg" alt="ПСЖ остана без Дембеле и Дуе" class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col">
+                                <h3 class="theme-text-primary text-base sm:text-lg font-bold leading-tight">ПСЖ остана без Дембеле и Дуе</h3>
+                            </div>
+                        </a>
+                        <div class="mt-2">
+                            <p class="theme-text-secondary text-sm sm:text-base"> Селекцијата предводена од клупата од Дидие Дешан нема да може да смета на Усман Дембеле и Дезире Дуе исто како и нивниот клуб ПСЖ.  Дембеле имаше ...</p>
+                            <div class="theme-text-secondary text-xs sm:text-sm mt-2 flex items-center gap-2">
+                                <span>Извори: <span class="font-semibold">2</span></span>
+                                <span> • <span>Sep 08, 14:05</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer class="theme-bg-secondary py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
+        <!-- Disclaimer Text -->
+        <p class="text-sm leading-relaxed mb-6">
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
+        </p>
+
+        <!-- Static Links with Thymeleaf relative URLs -->
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
+            <a href="sources.html" class="hover:underline theme-text-primary">Извори</a>
+            <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
+            <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
+            <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
+            <a href="blog.html" class="hover:underline theme-text-primary">Блог</a>
+            <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a>
+            <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
+            <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
+        </div>
+    </div>
+
+    <!-- NEW: Search Modal HTML Structure -->
+    <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-start justify-center min-h-screen pt-16">
+            <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2>
+                    <button id="close-search-modal" class="theme-text-primary" aria-label="Close search">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4">
+                <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto">
+                    <!-- Search results will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Lunr.js library and the search script -->
+
+
+
+</footer>
+</div>
+
+<!-- Pass mobile ad data to JavaScript -->
+<script>
+    /*<![CDATA[*/
+    window.mobileTopAdsData = [{"id":"mobileTopAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Mobile+Top+Ad+1","title":"Mobile Exclusive Offer","description":"Special deal for mobile users.","url":"#","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_top_banner"},{"id":"mobileTopAd2","imageUrl":"https:\/\/placehold.co\/600x75\/DAF7A6\/000000?text=Mobile+Top+Ad+2","title":"New Mobile Feature","description":"Check out our new mobile feature.","url":"#","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_top_banner"}];
+    window.mobileMidAdsData = [{"id":"mobileMidAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Mobile+Mid-Page+Ad+1","title":"Don't Miss This!","description":"Another great offer just for you.","url":"#","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_mid_banner"},{"id":"mobileMidAd2","imageUrl":"https:\/\/placehold.co\/600x75\/C70039\/FFFFFF?text=Mobile+Mid-Page+Ad+2","title":"Scroll-Stopping Savings","description":"Great savings await.","url":"#","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_mid_banner"}];
+    /*]]>*/
+</script>
+
+<!-- Include all common scripts -->
+<div>
+    <script>
+    /*<![CDATA[*/
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement; // This refers to the <html> tag
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+
+    // Function to set the theme
+    function setTheme(theme) {
+        if (theme === 'dark') {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            if (moonIcon) moonIcon.style.display = 'block';
+            if (sunIcon) sunIcon.style.display = 'none';
+        } else {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            if (sunIcon) sunIcon.style.display = 'block';
+            if (moonIcon) moonIcon.style.display = 'none';
+        }
+    }
+
+    // Check for saved theme preference or system preference on load
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark'); // Default to dark if system prefers it
+    } else {
+        setTheme('light'); // Default to light
+    }
+
+    // Toggle theme on button click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        });
+    }
+
+
+    // Listen for system theme changes (if no preference is saved)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (!localStorage.getItem('theme')) { // Only react to system changes if no user preference is set
+            setTheme(event.matches ? 'dark' : 'light');
+        }
+    });
+    /*]]>*/
+</script>
+
+
+    <script src="js/device-switcher.js" defer></script>
+    <script src="js/mobile-nav.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.2/lunr.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js" defer></script>
+    <script src="js/search.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
+</script>
+    <script src="js/ad-rotation.js" defer></script>
+
+</div>
+
+</body>
+</html>
