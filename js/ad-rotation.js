@@ -34,10 +34,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 const adLink = document.getElementById(adLinkElementId);
                 console.log("Ad link element found:", adLink);
 
-                if (adLink) { // Only check for adLink now
-                    // Set the background image for the link (which acts as the image container)
-                    adLink.style.backgroundImage = `url('${selectedAd.imageUrl}')`;
-                    adLink.href = selectedAd.url; // Set the hyperlink for the entire image
+                  if (adLink) { // Only check for adLink now
+                                    // Set the background image for the link (which acts as the image container)
+                                    adLink.style.backgroundImage = `url('${selectedAd.imageUrl}')`;
+
+                                    // --- START OF FIX ---
+                                    // Helper function to process the URL
+                                    function processAdUrl(url) {
+                                        if (!url || url.trim() === '' || url.startsWith('#')) {
+                                            return '#';
+                                        }
+                                        if (url.endsWith('.html')) {
+                                            return url;
+                                        }
+                                        if (url.startsWith('http://') || url.startsWith('https://')) {
+                                            return url;
+                                        }
+                                        return `https://${url}`;
+                                    }
+
+                                    // Use the processed URL
+                                    adLink.href = processAdUrl(selectedAd.url);
+
                     console.log(`Set background-image to: ${selectedAd.imageUrl} for ${adLinkElementId}`);
                     console.log(`Set href to: ${selectedAd.url} for ${adLinkElementId}`);
 
