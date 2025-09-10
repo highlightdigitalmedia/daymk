@@ -30,7 +30,7 @@
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
         <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Култура</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>09:22, 10.09.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>12:22, 10.09.2025</span></p>
         </h2>
         <div class="flex w-24 items-center justify-end">
             <!-- NEW: Search Icon (Desktop) -->
@@ -147,6 +147,7 @@
                     </div>
 
                     <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
+                        <!-- CHANGED: Use the new getProcessedUrl() method -->
                         <a href="marketing.html" class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden"
                            style="background-image: url(&#39;https://placehold.co/150x300/800000/ffffff?text=Your+Ad+Here&#39;);">
                         </a>
@@ -202,60 +203,11 @@
 </footer>
 </div>
 
-<footer class="theme-bg-secondary py-8 mt-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
-        <!-- Disclaimer Text -->
-        <p class="text-sm leading-relaxed mb-6">
-            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
-            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
-            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
-        </p>
-
-        <!-- Static Links with Thymeleaf relative URLs -->
-        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
-            <a href="sources.html" class="hover:underline theme-text-primary">Извори</a>
-            <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
-            <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
-            <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
-            <a href="blog.html" class="hover:underline theme-text-primary">Блог</a>
-            <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a>
-            <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
-            <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
-        </div>
-    </div>
-
-    <!-- NEW: Search Modal HTML Structure -->
-    <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true">
-        <div class="flex items-start justify-center min-h-screen pt-16">
-            <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2>
-                    <button id="close-search-modal" class="theme-text-primary" aria-label="Close search">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    </button>
-                </div>
-                <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4">
-                <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto">
-                    <!-- Search results will be dynamically inserted here -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add Lunr.js library and the search script -->
-
-
-
-</footer>
-</div>
-
 <script>
     /*<![CDATA[*/
-    window.sidebarSmallRotatingAdsData1 = null;
-    window.sidebarSmallRotatingAdsData2 = null;
+    window.categorySpotlightAdsData = [{"id":"categorySpotlightAd1","imageUrl":"https:\/\/placehold.co\/800x450\/4B0082\/ffffff?text=Your+Ad+Here+1","title":"Explore More!","description":"Find in-depth analysis.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"category_spotlight","processedUrl":"marketing.html"},{"id":"categorySpotlightAd2","imageUrl":"https:\/\/placehold.co\/800x450\/8A2BE2\/FFFFFF?text=Your+Ad+Here+2","title":"Deep Dive!","description":"Comprehensive coverage.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"category_spotlight","processedUrl":"marketing.html"},{"id":"categorySpotlightAd3","imageUrl":"https:\/\/placehold.co\/800x450\/DA70D6\/000000?text=Your+Ad+Here+3","title":"Latest Updates!","description":"Stay informed.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"category_spotlight","processedUrl":"marketing.html"}];
     /*]]>*/
 </script>
-
 <div>
     <script>
     /*<![CDATA[*/

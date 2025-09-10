@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!-- Include common head fragment -->
-
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
@@ -27,13 +25,12 @@
 >
     <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div>
-            <!-- Include common header and navigation fragment -->
             <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
         <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Radio</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>09:22, 10.09.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>12:22, 10.09.2025</span></p>
         </h2>
         <div class="flex w-24 items-center justify-end">
             <!-- NEW: Search Icon (Desktop) -->
@@ -107,11 +104,8 @@
         
     </div>
 </div>
-
-            <!-- Main content for Radio -->
             <div class="p-4 @container">
                 <h1 class="theme-text-primary text-2xl font-bold mb-6">Радио Станици </h1>
-
 
                 <div class="mb-6 flex flex-wrap gap-4">
                     <h3 class="theme-text-primary text-xl font-bold w-full">Избери Станица:</h3>
@@ -124,15 +118,13 @@
                             onclick="playStation(&#39;https://radiocnd.mms.mk/proxy/offnet/stream&#39;, &#39;Metropolis&#39;)">Metropolis</button><button class="theme-bg-secondary theme-text-primary py-2 px-4 rounded-lg border theme-border-color hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
                             onclick="playStation(&#39;http://176.9.117.123:9998/;*.mp3&#39;, &#39;City Radio&#39;)">City Radio</button>
                 </div>
-                <!-- Radio Player Controls -->
                 <div class="flex flex-col items-center justify-center p-4 mb-8 rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
                     <audio id="radioPlayer" controls class="w-full mb-4"></audio>
                     <p id="currentStationName" class="theme-text-primary text-lg font-bold">Select a station to play</p>
                 </div>
-
-                <!-- Secondary Ad Section (consistent with index.html) -->
                 <div class="p-4 @container">
                     <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
+                        <!-- CHANGED: Use the new getProcessedUrl() method -->
                         <a href="marketing.html"
                            class="w-full aspect-[16/1.125] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden"
                            style="background-image: url(&#39;https://placehold.co/800x112/800000/ffffff?text=Your+Ad+Here&#39;);">
@@ -142,6 +134,7 @@
                             <div class="flex items-end gap-3 justify-between">
                                 <div class="flex flex-col gap-1">
                                     <p class="theme-text-secondary text-sm font-normal leading-normal">Discover new music and shows.</p>
+                                    <!-- CHANGED: Use the new getProcessedUrl() method -->
                                     <a href="marketing.html"
                                        class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
                                 </div>
@@ -152,9 +145,7 @@
             </div>
         </div>
     </div>
-</div>
-
-<footer class="theme-bg-secondary py-8 mt-12">
+    <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
         <p class="text-sm leading-relaxed mb-6">
@@ -200,14 +191,6 @@
 
 </footer>
 </div>
-
-<script>
-    /*<![CDATA[*/
-    window.sidebarSmallRotatingAdsData1 = null;
-    window.sidebarSmallRotatingAdsData2 = null;
-    /*]]>*/
-</script>
-
 <div>
     <script>
     /*<![CDATA[*/
@@ -280,6 +263,42 @@
     <script src="js/ad-rotation.js" defer></script>
 
 </div>
+<script>
+    /*<![CDATA[*/
+    document.addEventListener('DOMContentLoaded', function() {
+        const radioPlayer = document.getElementById('radioPlayer');
+        const currentStationNameDisplay = document.getElementById('currentStationName');
 
+        /**
+         * Plays a radio station from the given stream URL and updates the display.
+         * @param {string} streamUrl - The URL of the audio stream.
+         * @param {string} [stationName="Unknown Station"] - The name of the station to display.
+         */
+        window.playStation = function(streamUrl, stationName = "Unknown Station") {
+            // Pause current playback and check if the stream is changing
+            if (radioPlayer.src !== streamUrl) {
+                radioPlayer.src = streamUrl;
+                radioPlayer.load(); // Load the new source
+            }
+
+            // Set volume to 50%
+            radioPlayer.volume = 0.5;
+
+            radioPlayer.play()
+                .then(() => {
+                    console.log(`Playing: ${stationName}`);
+                    currentStationNameDisplay.textContent = `Now Playing: ${stationName}`;
+                })
+                .catch(error => {
+                    console.error("Error playing audio:", error);
+                    currentStationNameDisplay.textContent = `Could not play ${stationName}. Error: ${error.message}. Please try another station.`;
+                });
+        };
+
+        // Optional: Play a default station on page load
+        // window.onload = () => playStation('http://antenna5stream.neotel.mk:8000/live128', 'Antenna 5');
+    });
+    /*]]>*/
+</script>
 </body>
 </html>

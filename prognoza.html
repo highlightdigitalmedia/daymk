@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!-- Include common head fragment -->
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
@@ -26,13 +25,12 @@
 >
     <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div>
-            <!-- Include common header and navigation fragment -->
             <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
         <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Временска Прогноза</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>09:22, 10.09.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>12:22, 10.09.2025</span></p>
         </h2>
         <div class="flex w-24 items-center justify-end">
             <!-- NEW: Search Icon (Desktop) -->
@@ -107,8 +105,6 @@
     </div>
 </div>
 
-
-            <!-- Main Content Area for Weather Forecast -->
             <div class="p-4 @container">
                 <h1 class="theme-text-primary text-2xl font-bold mb-6">Временска Прогноза за Градови</h1>
 
@@ -148,9 +144,9 @@
                     Податоци од <a href="https://www.meteoblue.com" target="_blank"
                                    class="text-blue-600 hover:underline">meteoblue</a>
                 </p>
-                <!-- Secondary Ad Section (Copied from index.html) -->
                 <div class="mt-8 p-4 @container">
                     <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
+                        <!-- CHANGED: Use the new getProcessedUrl() method -->
                         <a href="marketing.html"
                            class="w-full aspect-[16/1.125] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden"
                            style="background-image: url(&#39;https://placehold.co/800x112/800000/ffffff?text=Your+Ad+Here&#39;);">
@@ -160,6 +156,7 @@
                             <div class="flex items-end gap-3 justify-between">
                                 <div class="flex flex-col gap-1">
                                     <p class="theme-text-secondary text-sm font-normal leading-normal">Stay updated with the latest weather trends.</p>
+                                    <!-- CHANGED: Use the new getProcessedUrl() method -->
                                     <a href="marketing.html"
                                        class="text-xs font-bold text-blue-600 hover:underline mt-1">Learn More</a>
                                 </div>
@@ -170,9 +167,7 @@
             </div>
         </div>
     </div>
-</div>
-
-<footer class="theme-bg-secondary py-8 mt-12">
+    <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
         <p class="text-sm leading-relaxed mb-6">
@@ -218,14 +213,6 @@
 
 </footer>
 </div>
-
-<script>
-    /*<![CDATA[*/
-    window.sidebarSmallRotatingAdsData1 = null;
-    window.sidebarSmallRotatingAdsData2 = null;
-    /*]]>*/
-</script>
-
 <div>
     <script>
     /*<![CDATA[*/
@@ -298,6 +285,5 @@
     <script src="js/ad-rotation.js" defer></script>
 
 </div>
-
 </body>
 </html>
