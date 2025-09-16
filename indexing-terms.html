@@ -24,13 +24,13 @@
      style='font-family: Newsreader, "Noto Sans", sans-serif;'>
     <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div>
-            <!-- Use the standard header -->
+            <!-- ✅ Standard Header -->
             <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
         <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Основни услови за индексирање</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>22:00, 15.09.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>14:56, 16.09.2025</span></p>
         </h2>
         <div class="flex w-24 items-center justify-end">
             <!-- NEW: Search Icon (Desktop) -->
@@ -105,11 +105,14 @@
     </div>
 </div>
 
-            <main class="py-8">
-                <article class="prose lg:prose-xl max-w-none theme-text-primary">
+            <!-- ✅ Main Content -->
+            <main class="p-4 sm:p-6">
+                <article class="theme-text-primary max-w-none">
+                    <!-- Page Title -->
                     <h1 class="theme-text-primary text-3xl font-bold mb-6">Основни услови за индексирање</h1>
-                    <!-- Render the HTML content from the Markdown file -->
-                    <div><ol>
+
+                    <!-- Rendered Markdown Content -->
+                    <div class="prose dark:prose-invert max-w-none"><ol>
 <li>Веб страницата активно да работи минимум 6 месеци</li>
 <li>Во моментот на аплицирање да се достават Google Analytics извештаи за последните 3 месеци (3x .pdf)</li>
 <li>Да се објавуваат минимум 40 статии / вести месечно</li>
@@ -125,6 +128,8 @@
             </main>
         </div>
     </div>
+
+    <!-- ✅ Footer -->
     <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
@@ -172,7 +177,9 @@
 </footer>
 </div>
 
-<script>
+<!-- ✅ Common Scripts -->
+<div>
+    <script>
     /*<![CDATA[*/
     const themeToggle = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement; // This refers to the <html> tag
@@ -224,5 +231,24 @@
     });
     /*]]>*/
 </script>
+
+
+    <script src="js/device-switcher.js" defer></script>
+    <script src="js/mobile-nav.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.2/lunr.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js" defer></script>
+    <script src="js/search.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
+</script>
+    <script src="js/ad-rotation.js" defer></script>
+
+</div>
 </body>
 </html>
