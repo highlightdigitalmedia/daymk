@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+            rel="stylesheet"
+            as="style"
+            onload="this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <title>Day.mk - Најнови Вести (Mobile, Page 21)</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <!-- Default Meta Description -->
+    <meta name="description" content="Day.mk - агрегатор на вести од Македонија и светот." />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="theme-bg-primary">
+<div class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
+     style='font-family: Newsreader, "Noto Sans", sans-serif;'>
+    <div class="max-w-7xl mx-auto w-full">
+        <div>
+            <!-- ✅ Mobile Header -->
+            <div>
+    <!-- Mobile Header -->
+    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger-menu-button" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Centered Title/Logo -->
+        <div class="flex-1 text-center">
+            <h1 class="theme-text-primary text-2xl font-bold uppercase tracking-wider">Најнови Вести</h1>
+        </div>
+
+        <!-- Search Icon -->
+        <button id="search-button-mobile" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Slide-out Menu -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
+        <div class="p-4">
+            <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
+            <nav class="flex flex-col gap-2">
+                <!-- Main Nav Links -->
+                <a href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Вести</a><a href="sports.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Спорт</a><a href="magazine.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Магазин</a>
+                <a href="latest-news.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a><a href="prognoza.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a><a href="radio.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a><a href="youtube.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+                <hr class="my-3 theme-border-color">
+                <!-- Other Utility Links -->
+                <button id="theme-toggle-mobile" class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
+                </button>
+                <a id="switch-to-desktop-button" href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Стандардна верзија</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hidden desktop theme toggle button to leverage existing script -->
+    <button id="theme-toggle" class="hidden"></button>
+</div>
+
+            <main class="p-2 sm:p-4">
+                <!-- ✅ Page Title -->
+                <h1 class="theme-text-primary text-2xl font-bold mb-4 px-2">Најнови Вести</h1>
+
+                <!-- ✅ Top Ad Banner -->
+                <div id="mobile-ad-container-top" class="mb-4">
+                    <a id="mobile-ad-link-top"
+                       href="#"
+                       class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color">
+                    </a>
+                </div>
+
+                <!-- ✅ Latest News Articles List -->
+                <div class="flex flex-col gap-4">
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3">
+                        <a href="article-detail-summary--1614403430.html"
+                           class="flex gap-3">
+                            <!-- Thumbnail -->
+                            <img src="images/cache/summary--1614403430.webp"
+                                 alt="Се уште активни пожарите кај село Винче и на Кожуф"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1">
+                                <!-- Title -->
+                                <h3 class="theme-text-primary text-lg font-bold leading-snug mb-1">Се уште активни пожарите кај село Винче и на Кожуф</h3>
+
+                                <!-- Snippet -->
+                                <p class="theme-text-secondary text-sm"> Гори ридот над скопското село Моране, (општина Студеничани) информираше вечерва директорот на Дирекцијата за заштита и спасување (ДЗС), Стојанче А...</p>
+
+                                <!-- Meta info -->
+                                <div class="theme-text-secondary text-sm mt-2 flex items-center gap-2">
+                                    <span>Извори: <span class="font-semibold">4</span></span>
+                                    <span>
+                                        <span>пред 15 часа</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3">
+                        <a href="article-detail-summary--109801976.html"
+                           class="flex gap-3">
+                            <!-- Thumbnail -->
+                            <img src="images/cache/summary--109801976.jpg"
+                                 alt="Брзата реакција на Љутков за санација на МАКЕДОНИУМ „го потсети“ крушевскиот градоначалник дека споменикот се наоѓа во Крушево"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1">
+                                <!-- Title -->
+                                <h3 class="theme-text-primary text-lg font-bold leading-snug mb-1">Брзата реакција на Љутков за санација на МАКЕДОНИУМ „го потсети“ крушевскиот градоначалник дека споменикот се наоѓа во Крушево</h3>
+
+                                <!-- Snippet -->
+                                <p class="theme-text-secondary text-sm"> Министерот за култура и туризам, Зоран Љутков, заедно со стручните екипи од НУ Завод и Музеј – Прилеп,  оствари теренска посета на споменикот „Мак...</p>
+
+                                <!-- Meta info -->
+                                <div class="theme-text-secondary text-sm mt-2 flex items-center gap-2">
+                                    <span>Извори: <span class="font-semibold">3</span></span>
+                                    <span>
+                                        <span>пред 15 часа</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3">
+                        <a href="article-detail-summary--1399586186.html"
+                           class="flex gap-3">
+                            <!-- Thumbnail -->
+                            <img src="images/cache/summary--1399586186.jpg"
+                                 alt="Администрацијата на Трамп пoбара од Врховниот суд дозвола за отстранување на гувернерката на ФЕД, Лиза Кук"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1">
+                                <!-- Title -->
+                                <h3 class="theme-text-primary text-lg font-bold leading-snug mb-1">Администрацијата на Трамп пoбара од Врховниот суд дозвола за отстранување на гувернерката на ФЕД, Лиза Кук</h3>
+
+                                <!-- Snippet -->
+                                <p class="theme-text-secondary text-sm"> Администрацијата на американскиот претседател, Доналд Трамп, побара од Врховниот суд дозвола за разрешување на гувернерката на Федералните резерви...</p>
+
+                                <!-- Meta info -->
+                                <div class="theme-text-secondary text-sm mt-2 flex items-center gap-2">
+                                    <span>Извори: <span class="font-semibold">3</span></span>
+                                    <span>
+                                        <span>пред 15 часа</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3">
+                        <a href="article-detail-summary-1291163284.html"
+                           class="flex gap-3">
+                            <!-- Thumbnail -->
+                            <img src="images/cache/summary-1291163284.jpg"
+                                 alt="Алкалоид по два месеца го доби шампионскиот пехар за триумфот во ЕХФ Европскиот куп"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1">
+                                <!-- Title -->
+                                <h3 class="theme-text-primary text-lg font-bold leading-snug mb-1">Алкалоид по два месеца го доби шампионскиот пехар за триумфот во ЕХФ Европскиот куп</h3>
+
+                                <!-- Snippet -->
+                                <p class="theme-text-secondary text-sm"> Алкалоид имаше предност и победа од првиот финален дуел, а грчкиот тим во Скопје иако се загреваше одби да го игра натпреварот.  ЕХФ донесе одлука...</p>
+
+                                <!-- Meta info -->
+                                <div class="theme-text-secondary text-sm mt-2 flex items-center gap-2">
+                                    <span>Извори: <span class="font-semibold">2</span></span>
+                                    <span>
+                                        <span>пред 15 часа</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3">
+                        <a href="article-detail-summary--1719827959.html"
+                           class="flex gap-3">
+                            <!-- Thumbnail -->
+                            <img src="images/cache/summary--1719827959.jpg"
+                                 alt="Голманот Гогов го продолжи договорот со Вардар 1961"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1">
+                                <!-- Title -->
+                                <h3 class="theme-text-primary text-lg font-bold leading-snug mb-1">Голманот Гогов го продолжи договорот со Вардар 1961</h3>
+
+                                <!-- Snippet -->
+                                <p class="theme-text-secondary text-sm"> Гогов, кој од 2019 година е дел од Вардар веќе неколку сезони е дел од првиот тим, сериозно се наметна како важен дел од голманската линија на Вар...</p>
+
+                                <!-- Meta info -->
+                                <div class="theme-text-secondary text-sm mt-2 flex items-center gap-2">
+                                    <span>Извори: <span class="font-semibold">2</span></span>
+                                    <span>
+                                        <span>пред 15 часа</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3">
+                        <a href="article-detail-summary--1724638075.html"
+                           class="flex gap-3">
+                            <!-- Thumbnail -->
+                            <img src="images/cache/summary--1724638075.jpg"
+                                 alt="Дончиќ по поразот од Германија: Едноставно сум многу лут, можев да направам повеќе"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1">
+                                <!-- Title -->
+                                <h3 class="theme-text-primary text-lg font-bold leading-snug mb-1">Дончиќ по поразот од Германија: Едноставно сум многу лут, можев да направам повеќе</h3>
+
+                                <!-- Snippet -->
+                                <p class="theme-text-secondary text-sm"> Не сакам да зборувам за нив, но четири фаули до почетокот на третата четвртина – никогаш не сум видел нешто слично, изјави Дончиќ за „BasketNews“....</p>
+
+                                <!-- Meta info -->
+                                <div class="theme-text-secondary text-sm mt-2 flex items-center gap-2">
+                                    <span>Извори: <span class="font-semibold">2</span></span>
+                                    <span>
+                                        <span>пред 15 часа</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3">
+                        <a href="article-detail-summary--1606201444.html"
+                           class="flex gap-3">
+                            <!-- Thumbnail -->
+                            <img src="images/cache/summary--1606201444.jpg"
+                                 alt="Хуан Дејвис се врати во МЗТ Скопје"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1">
+                                <!-- Title -->
+                                <h3 class="theme-text-primary text-lg font-bold leading-snug mb-1">Хуан Дејвис се врати во МЗТ Скопје</h3>
+
+                                <!-- Snippet -->
+                                <p class="theme-text-secondary text-sm"> Дваесет и деветгодишниот Американецот Хуан Дејвис повторно ќе игра во сино-белиот дрес, кој повеќе од успешно го носеше во сезоната 2021/22.  Стан...</p>
+
+                                <!-- Meta info -->
+                                <div class="theme-text-secondary text-sm mt-2 flex items-center gap-2">
+                                    <span>Извори: <span class="font-semibold">2</span></span>
+                                    <span>
+                                        <span>пред 15 часа</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3">
+                        <a href="article-detail-summary--1761608431.html"
+                           class="flex gap-3">
+                            <!-- Thumbnail -->
+                            <img src="images/cache/summary--1761608431.jpg"
+                                 alt="Албанија прва во светот ќе има министерка креирана со вештачка интелигенција"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1">
+                                <!-- Title -->
+                                <h3 class="theme-text-primary text-lg font-bold leading-snug mb-1">Албанија прва во светот ќе има министерка креирана со вештачка интелигенција</h3>
+
+                                <!-- Snippet -->
+                                <p class="theme-text-secondary text-sm"> Албанија ја доби првата министерка од вештачка интелигенција: Диела ќе раководи со јавните набавки&lt;/a&gt; appeared first on &lt;a href=&quot;https://politika...</p>
+
+                                <!-- Meta info -->
+                                <div class="theme-text-secondary text-sm mt-2 flex items-center gap-2">
+                                    <span>Извори: <span class="font-semibold">4</span></span>
+                                    <span>
+                                        <span>пред 15 часа</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3">
+                        <a href="article-detail-summary-1169861794.html"
+                           class="flex gap-3">
+                            <!-- Thumbnail -->
+                            <img src="images/cache/summary-1169861794.jpg"
+                                 alt="Се ожени Кијану Ривс: Актерот и Александра се заколнале на вечна љубов во еден европски град"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1">
+                                <!-- Title -->
+                                <h3 class="theme-text-primary text-lg font-bold leading-snug mb-1">Се ожени Кијану Ривс: Актерот и Александра се заколнале на вечна љубов во еден европски град</h3>
+
+                                <!-- Snippet -->
+                                <p class="theme-text-secondary text-sm"> Љубов по загубата: Александра како светлина во темнината
+За Кијану Ривс, Александра донесе мир и стабилност што долго време ги бараше.  Во време к...</p>
+
+                                <!-- Meta info -->
+                                <div class="theme-text-secondary text-sm mt-2 flex items-center gap-2">
+                                    <span>Извори: <span class="font-semibold">3</span></span>
+                                    <span>
+                                        <span>пред 15 часа</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3">
+                        <a href="article-detail-summary-1607644877.html"
+                           class="flex gap-3">
+                            <!-- Thumbnail -->
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%94%D0%B8%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%3A+%D0%A1%D0%B0%D0%BA%D0%B0%D0%BC+%D0%B4%D0%B0+%D0%B3%D0%B8+%D0%B7%D0%B0%D0%B2%D1%80%D1%88%D0%B0%D0%BC+%D0%BE%D1%82%D0%BF%D0%BE%D1%87%D0%BD%D0%B0%D1%82%D0%B8%D1%82%D0%B5+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8+%D0%B2%D0%BE+%D0%9A%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE%2C+%D0%B7%D0%B0%D0%B4%D0%BE%D0%B2%D0%BE%D0%BB%D0%B5%D0%BD+%D1%81%D1%83%D0%BC+%D0%BE%D0%B4+%D0%BC%D0%BE%D0%B8%D1%82%D0%B5+%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8+%D0%B2%D0%BE+%D0%92%D0%BB%D0%B0%D0%B4%D0%B0%D1%82%D0%B0"
+                                 alt="Димитриевски: Сакам да ги завршам отпочнатите проекти во Куманово, задоволен сум од моите министри во Владата"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+
+                            <!-- Content -->
+                            <div class="flex flex-col flex-1">
+                                <!-- Title -->
+                                <h3 class="theme-text-primary text-lg font-bold leading-snug mb-1">Димитриевски: Сакам да ги завршам отпочнатите проекти во Куманово, задоволен сум од моите министри во Владата</h3>
+
+                                <!-- Snippet -->
+                                <p class="theme-text-secondary text-sm"> Првиот човек на ЗНАМ – За наша Македонија, Максим Димитриевски, во интервју за „Канал 5“ изјави дека владејачката партија ќе ја прифати „националн...</p>
+
+                                <!-- Meta info -->
+                                <div class="theme-text-secondary text-sm mt-2 flex items-center gap-2">
+                                    <span>Извори: <span class="font-semibold">2</span></span>
+                                    <span>
+                                        <span>пред 15 часа</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ✅ Mid Ad Banner -->
+                <div id="mobile-ad-container-mid" class="mt-6">
+                    <a id="mobile-ad-link-mid"
+                       href="#"
+                       class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color">
+                    </a>
+                </div>
+
+                <!-- ✅ Pagination -->
+                <div class="flex justify-center mt-6">
+    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
+
+        <!-- Previous -->
+        <a href="latest-news-mobile-page-20.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Previous">&laquo;</a>
+
+        <!-- Page numbers (max 10) -->
+        
+            
+                <a href="latest-news-mobile-page-17.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">17</a>
+            
+                <a href="latest-news-mobile-page-18.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">18</a>
+            
+                <a href="latest-news-mobile-page-19.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">19</a>
+            
+                <a href="latest-news-mobile-page-20.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">20</a>
+            
+                <a href="latest-news-mobile-page-21.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">21</a>
+            
+                <a href="latest-news-mobile-page-22.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">22</a>
+            
+                <a href="latest-news-mobile-page-23.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">23</a>
+            
+                <a href="latest-news-mobile-page-24.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">24</a>
+            
+                <a href="latest-news-mobile-page-25.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">25</a>
+            
+                <a href="latest-news-mobile-page-26.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">26</a>
+            
+        
+
+        <!-- Next -->
+        <a href="latest-news-mobile-page-22.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Next">&raquo;</a>
+    </nav>
+</div>
+            </main>
+        </div>
+    </div>
+
+    <!-- ✅ Footer -->
+    <footer class="theme-bg-secondary py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
+        <!-- Disclaimer Text -->
+        <p class="text-sm leading-relaxed mb-6">
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
+        </p>
+
+        <!-- Static Links with Thymeleaf relative URLs -->
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
+            <a href="sources.html" class="hover:underline theme-text-primary">Извори</a>
+            <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
+            <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
+            <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
+            <a href="blog.html" class="hover:underline theme-text-primary">Блог</a>
+            <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a>
+            <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
+            <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
+        </div>
+    </div>
+
+    <!-- NEW: Search Modal HTML Structure -->
+    <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-start justify-center min-h-screen pt-16">
+            <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2>
+                    <button id="close-search-modal" class="theme-text-primary" aria-label="Close search">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4">
+                <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto">
+                    <!-- Search results will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Lunr.js library and the search script -->
+
+
+
+</footer>
+</div>
+
+<!-- ✅ Pass mobile ad data to JavaScript -->
+<script>
+    /*<![CDATA[*/
+    window.mobileTopAdsData = [{"id":"mobileTopAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Your+Mobile+Ad+Here+1","title":"Mobile Exclusive Offer","description":"Special deal for mobile users.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"},{"id":"mobileTopAd2","imageUrl":"https:\/\/placehold.co\/600x75\/DAF7A6\/000000?text=Your+Mobile+Ad+Here+2","title":"New Mobile Feature","description":"Check out our new mobile feature.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"}];
+    window.mobileMidAdsData = [{"id":"mobileMidAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Your+Mobile+Ad+Here+1","title":"Don't Miss This!","description":"Another great offer just for you.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"},{"id":"mobileMidAd2","imageUrl":"https:\/\/placehold.co\/600x75\/C70039\/FFFFFF?text=Your+Mobile+Ad+Here+2","title":"Scroll-Stopping Savings","description":"Great savings await.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"}];
+    /*]]>*/
+</script>
+
+<!-- ✅ Common Scripts -->
+<div>
+    <script>
+    /*<![CDATA[*/
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement; // This refers to the <html> tag
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+
+    // Function to set the theme
+    function setTheme(theme) {
+        if (theme === 'dark') {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            if (moonIcon) moonIcon.style.display = 'block';
+            if (sunIcon) sunIcon.style.display = 'none';
+        } else {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            if (sunIcon) sunIcon.style.display = 'block';
+            if (moonIcon) moonIcon.style.display = 'none';
+        }
+    }
+
+    // Check for saved theme preference or system preference on load
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark'); // Default to dark if system prefers it
+    } else {
+        setTheme('light'); // Default to light
+    }
+
+    // Toggle theme on button click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        });
+    }
+
+
+    // Listen for system theme changes (if no preference is saved)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (!localStorage.getItem('theme')) { // Only react to system changes if no user preference is set
+            setTheme(event.matches ? 'dark' : 'light');
+        }
+    });
+    /*]]>*/
+</script>
+
+
+    <script src="js/device-switcher.js" defer></script>
+    <script src="js/mobile-nav.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.2/lunr.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js" defer></script>
+    <script src="js/search.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
+</script>
+    <script src="js/ad-rotation.js" defer></script>
+
+</div>
+
+</body>
+</html>

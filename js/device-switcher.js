@@ -8,30 +8,39 @@ function handleDeviceViewRedirect() {
     const onMobileIndex = pathname.endsWith('index-mobile.html');
     const onDesktopSports = pathname.endsWith('sports.html');
     const onMobileSports = pathname.endsWith('sports-mobile.html');
+    const onDesktopMagazine = pathname.endsWith('magazine.html');
+    const onMobileMagazine = pathname.endsWith('magazine-mobile.html');
+    const onDesktopLatestNews = pathname.endsWith('latest-news.html');
+    const onMobileLatestNews = pathname.endsWith('latest-news-mobile.html');
 
     // --- 1. Handle User's Explicit Preference ---
-    // If a preference is set, it has the highest priority and overrides screen size.
     if (preference) {
         if (preference === 'desktop') {
             if (onMobileIndex) window.location.replace('index.html');
             if (onMobileSports) window.location.replace('sports.html');
+            if (onMobileMagazine) window.location.replace('magazine.html');
+            if (onMobileLatestNews) window.location.replace('latest-news.html');
         } else if (preference === 'mobile') {
             if (onDesktopIndex) window.location.replace('index-mobile.html');
             if (onDesktopSports) window.location.replace('sports-mobile.html');
+            if (onDesktopMagazine) window.location.replace('magazine-mobile.html');
+            if (onDesktopLatestNews) window.location.replace('latest-news-mobile.html');
+
         }
-        return; // Stop further checks if a preference was handled.
+        return;
     }
 
-    // --- 2. Handle First-Time Visitors (No Preference) Based on Screen Size ---
-    // This logic only runs if no 'view_preference' is set in localStorage.
+    // --- 2. Handle First-Time Visitors (No Preference) ---
     if (isMobileScreen) {
-        // User is on a small screen, so default them to a mobile page.
         if (onDesktopIndex) window.location.replace('index-mobile.html');
         if (onDesktopSports) window.location.replace('sports-mobile.html');
+        if (onDesktopMagazine) window.location.replace('magazine-mobile.html');
+        if (onDesktopLatestNews) window.location.replace('latest-news-mobile.html');
     } else {
-        // User is on a large screen, so default them to a desktop page.
         if (onMobileIndex) window.location.replace('index.html');
         if (onMobileSports) window.location.replace('sports.html');
+        if (onMobileMagazine) window.location.replace('magazine.html');
+        if (onMobileLatestNews) window.location.replace('latest-news.html');
     }
 }
 
@@ -48,6 +57,10 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('view_preference', 'mobile');
         if (window.location.pathname.endsWith('sports.html')) {
             window.location.href = 'sports-mobile.html';
+        } else if (window.location.pathname.endsWith('magazine.html')) {
+            window.location.href = 'magazine-mobile.html';
+        } else if (window.location.pathname.endsWith('latest-news.html')) {
+                    window.location.href = 'latest-news-mobile.html';
         } else {
             window.location.href = 'index-mobile.html';
         }
@@ -58,6 +71,10 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('view_preference', 'desktop');
         if (window.location.pathname.endsWith('sports-mobile.html')) {
             window.location.href = 'sports.html';
+        } else if (window.location.pathname.endsWith('magazine-mobile.html')) {
+            window.location.href = 'magazine.html';
+        } else if (window.location.pathname.endsWith('latest-news-mobile.html')) {
+            window.location.href = 'latest-news.html';
         } else {
             window.location.href = 'index.html';
         }
