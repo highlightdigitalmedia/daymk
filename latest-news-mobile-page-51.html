@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+            rel="stylesheet"
+            as="style"
+            onload="this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <title>Day.mk - Најнови Вести (Mobile, Page 51)</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <!-- Default Meta Description -->
+    <meta name="description" content="Day.mk - агрегатор на вести од Македонија и светот." />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="theme-bg-primary">
+<div class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
+     style='font-family: Newsreader, "Noto Sans", sans-serif;'>
+
+    <div class="max-w-7xl mx-auto w-full">
+        <div>
+    <!-- Mobile Header -->
+    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger-menu-button" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Centered Title/Logo -->
+        <div class="flex-1 text-center">
+            <h1 class="theme-text-primary text-2xl font-bold uppercase tracking-wider">Најнови Вести</h1>
+        </div>
+
+        <!-- Search Icon -->
+        <button id="search-button-mobile" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Slide-out Menu -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
+        <div class="p-4">
+            <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
+            <nav class="flex flex-col gap-2">
+                <!-- Main Nav Links -->
+                <a href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Вести</a><a href="sports.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Спорт</a><a href="magazine.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Магазин</a>
+                <a href="latest-news.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a><a href="prognoza.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a><a href="radio.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a><a href="youtube.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+                <hr class="my-3 theme-border-color">
+                <!-- Other Utility Links -->
+                <button id="theme-toggle-mobile" class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
+                </button>
+                <a id="switch-to-desktop-button" href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Стандардна верзија</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hidden desktop theme toggle button to leverage existing script -->
+    <button id="theme-toggle" class="hidden"></button>
+</div>
+
+        <main class="p-2 sm:p-4">
+            <h1 class="theme-text-primary text-2xl font-bold mb-4 px-2">Најнови Вести</h1>
+
+            <div class="flex flex-col gap-4">
+                <div id="mobile-ad-container-top" class="mb-4">
+                    <a id="mobile-ad-link-top" href="#"
+                       class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                </div>
+
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="article-detail-summary-20396.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%A3%D0%95%D0%A4%D0%90+%D0%BF%D0%B0%D1%80%D0%B8%D1%87%D0%BD%D0%BE+%D1%98%D0%B0+%D0%BA%D0%B0%D0%B7%D0%BD%D0%B8+%D0%A8%D0%BA%D0%B5%D0%BD%D0%B4%D0%B8%D1%98%D0%B0+%D0%B7%D0%B0+%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%B0%D1%80%D0%B5%D0%BD%D1%82%D0%B8+%D1%81%D0%BE+%D0%BD%D0%B5%D1%81%D0%BF%D0%BE%D1%80%D1%82%D1%81%D0%BA%D0%B0+%D1%81%D0%BE%D0%B4%D1%80%D0%B6%D0%B8%D0%BD%D0%B0" alt="УЕФА парично ја казни Шкендија за транспаренти со неспортска содржина"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">УЕФА парично ја казни Шкендија за транспаренти со неспортска содржина</h3>
+                                <p class="theme-text-secondary text-sm"> европската фудбалска федерација (уефа) парично казни шкендија износ 20. скопје против шелбурн рамки второто коло главната фаза конференциската лиг...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 4 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="article-detail-summary-20395.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%98+%D0%A0%D0%BE%D0%BD%D0%B0%D0%BB%D0%B4%D0%BE+%D0%BD%D0%B5+%D0%B5+%D1%81%D0%B5%D0%BC%D0%BE%D1%9C%D0%B5%D0%BD%3A+%D0%90%D0%BB+%D0%9D%D0%B0%D1%81%D1%80+%D0%B8%D1%81%D0%BF%D0%B0%D0%B4%D0%BD%D0%B0+%D0%BE%D0%B4+%D0%BA%D1%83%D0%BF%D0%BE%D1%82" alt="И Роналдо не е семоќен: Ал Наср испадна од купот"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">И Роналдо не е семоќен: Ал Наср испадна од купот</h3>
+                                <p class="theme-text-secondary text-sm"> фудбалерот ал наср, кристијано роналдо, коментираше поразот тимот ал итихад 2:1 синоќа домашен терен осминафиналето кралскиот куп саудиска арабија...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 4 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="article-detail-summary-20394.html" class="flex gap-3">
+                            <img src="images/cache/summary-20394.webp" alt="Три малолетнички тепале 15-годишно девојче"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Три малолетнички тепале 15-годишно девојче</h3>
+                                <p class="theme-text-secondary text-sm"> наведува полицискиот билтен, вчера (31. с. скопје пријави 15:00 часот подрачјето општина аеродром скопје, нејзината 15 годишна ќерка била физички ...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 4 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="article-detail-summary-20393.html" class="flex gap-3">
+                            <img src="images/cache/summary-20393.webp" alt="Насилство врз деца: Малолетни брат и сестра нападнати во Центар"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Насилство врз деца: Малолетни брат и сестра нападнати во Центар</h3>
+                                <p class="theme-text-secondary text-sm"> скопјанка вчера пријавила подрачјето скопски центар, нејзиниот 15 годишен син 14 годишна ќерка биле физички нападнати машко лице.  с. скопје прија...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 4 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="article-detail-summary-20392.html" class="flex gap-3">
+                            <img src="images/cache/summary-20392.webp" alt="Службеници во Матично и МВР преку лажен упис на брак овозможиле жена да добие двоен идентитет и втор пасош"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Службеници во Матично и МВР преку лажен упис на брак овозможиле жена да добие двоен идентитет и втор пасош</h3>
+                                <p class="theme-text-secondary text-sm"> свр куманово поднесе кривична пријава против четири лица несовесно работење службата, откако откриено институциите лојане куманово создаден целосн...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 4 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="mobile-ad-container-mid" class="my-6">
+                        <a id="mobile-ad-link-mid" href="#"
+                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                    </div>
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="article-detail-summary-20391.html" class="flex gap-3">
+                            <img src="images/cache/summary-20391.webp" alt="Минималната плата во Косово ќе достигне 500 евра во 2026 година"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Минималната плата во Косово ќе достигне 500 евра во 2026 година</h3>
+                                <p class="theme-text-secondary text-sm"> според донесеното решение, сегашната минимална плата 350 евра зголемува фази – 1 јануари 2026 година изнесува 425 евра, 1 јули истата година дости...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 4 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="article-detail-summary-20390.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9C%D0%B0%D1%98%D0%BA%D0%B0+%D0%BD%D0%B0+%D0%B6%D1%80%D1%82%D0%B2%D0%B0+%D0%BE%D0%B4+%D0%9D%D0%BE%D0%B2%D0%B8+%D0%A1%D0%B0%D0%B4+%D0%BF%D0%BE%D1%87%D0%BD%D1%83%D0%B2%D0%B0+%D1%88%D1%82%D1%80%D0%B0%D1%98%D0%BA+%D1%81%D0%BE+%D0%B3%D0%BB%D0%B0%D0%B4%3A+%E2%80%9E%D0%9C%D0%BE%D1%80%D0%B0%D0%BC+%D0%B4%D0%B0+%D0%B7%D0%BD%D0%B0%D0%BC+%D0%BA%D0%BE%D1%98+%D0%B3%D0%BE+%D1%83%D0%B1%D0%B8+%D0%BC%D0%BE%D0%B5%D1%82%D0%BE+%D0%B4%D0%B5%D1%82%D0%B5%E2%80%9C" alt="Мајка на жртва од Нови Сад почнува штрајк со глад: „Морам да знам кој го уби моето дете“"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Мајка на жртва од Нови Сад почнува штрајк со глад: „Морам да знам кој го уби моето дете“</h3>
+                                <p class="theme-text-secondary text-sm"> дијана хрка, мајката стефан хрка, загина падот бетонската настрешница железничката станица нови сад точно година, најави започнува штрајк глад.  с...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 4 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="article-detail-summary-20389.html" class="flex gap-3">
+                            <img src="images/cache/summary-20389.webp" alt="За следење на вториот круг од локалните избори акредитирани 1598 набљудувачи, 933 домашни и 651 меѓународен"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">За следење на вториот круг од локалните избори акредитирани 1598 набљудувачи, 933 домашни и 651 меѓународен</h3>
+                                <p class="theme-text-secondary text-sm"> вториот круг локалните избори акредитирани 1598 набљудувачи 933 домашни, 651 меѓународен 14 странски новинари, соопшти седница петокот државната и...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 4 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="article-detail-summary-20388.html" class="flex gap-3">
+                            <img src="images/cache/summary-20388.webp" alt="Во Могила заврши гласањето на пријавените болни и немоќни лица"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Во Могила заврши гласањето на пријавените болни и немоќни лица</h3>
+                                <p class="theme-text-secondary text-sm"> оик могила избирачките одбори овозможија гласаат домашна адреса гласаа 37 болни немоќни лица претходно побараа гласаат дома искористат правото гла...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 4 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="article-detail-summary-20387.html" class="flex gap-3">
+                            <img src="images/cache/summary-20387.webp" alt="До 16 часот гласале 2762 болни и немоќни, соопшти ДИК"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">До 16 часот гласале 2762 болни и немоќни, соопшти ДИК</h3>
+                                <p class="theme-text-secondary text-sm"> 14 казнено поправни установи, своето право глас можат остварат 1256 лица издржување казна затвор притвор, 16:00 часот гласале 380 гласачи.  214 ли...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 4 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+            </div>
+
+
+
+            <!-- ✅ Pagination -->
+            <div class="flex justify-center mt-6">
+    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
+
+        <!-- Previous -->
+        <a href="latest-news-mobile-page-50.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Previous">&laquo;</a>
+
+        <!-- Page numbers (max 10) -->
+        
+            
+                <a href="latest-news-mobile-page-47.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">47</a>
+            
+                <a href="latest-news-mobile-page-48.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">48</a>
+            
+                <a href="latest-news-mobile-page-49.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">49</a>
+            
+                <a href="latest-news-mobile-page-50.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">50</a>
+            
+                <a href="latest-news-mobile-page-51.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">51</a>
+            
+                <a href="latest-news-mobile-page-52.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">52</a>
+            
+                <a href="latest-news-mobile-page-53.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">53</a>
+            
+                <a href="latest-news-mobile-page-54.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">54</a>
+            
+                <a href="latest-news-mobile-page-55.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">55</a>
+            
+                <a href="latest-news-mobile-page-56.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">56</a>
+            
+        
+
+        <!-- Next -->
+        <a href="latest-news-mobile-page-52.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Next">&raquo;</a>
+    </nav>
+</div>
+        </main>
+    </div>
+
+    <footer class="theme-bg-secondary py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
+        <!-- Disclaimer Text -->
+        <p class="text-sm leading-relaxed mb-6">
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
+        </p>
+
+        <!-- Static Links with Thymeleaf relative URLs -->
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
+            <a href="sources.html" class="hover:underline theme-text-primary">Извори</a>
+            <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
+            <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
+            <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
+            <a href="blog.html" class="hover:underline theme-text-primary">Блог</a>
+            <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a>
+            <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
+            <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
+        </div>
+    </div>
+
+    <!-- NEW: Search Modal HTML Structure -->
+    <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-start justify-center min-h-screen pt-16">
+            <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2>
+                    <button id="close-search-modal" class="theme-text-primary" aria-label="Close search">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4">
+                <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto">
+                    <!-- Search results will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Lunr.js library and the search script -->
+
+
+
+</footer>
+</div>
+
+<script>
+    window.mobileTopAdsData = [{"id":"mobileTopAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Your+Mobile+Ad+Here+1","title":"Mobile Exclusive Offer","description":"Special deal for mobile users.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"},{"id":"mobileTopAd2","imageUrl":"https:\/\/placehold.co\/600x75\/DAF7A6\/000000?text=Your+Mobile+Ad+Here+2","title":"New Mobile Feature","description":"Check out our new mobile feature.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"}];
+    window.mobileMidAdsData = [{"id":"mobileMidAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Your+Mobile+Ad+Here+1","title":"Don't Miss This!","description":"Another great offer just for you.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"},{"id":"mobileMidAd2","imageUrl":"https:\/\/placehold.co\/600x75\/C70039\/FFFFFF?text=Your+Mobile+Ad+Here+2","title":"Scroll-Stopping Savings","description":"Great savings await.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"}];
+</script>
+
+<div>
+    <script>
+    /*<![CDATA[*/
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement; // This refers to the <html> tag
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+
+    // Function to set the theme
+    function setTheme(theme) {
+        if (theme === 'dark') {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            if (moonIcon) moonIcon.style.display = 'block';
+            if (sunIcon) sunIcon.style.display = 'none';
+        } else {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            if (sunIcon) sunIcon.style.display = 'block';
+            if (moonIcon) moonIcon.style.display = 'none';
+        }
+    }
+
+    // Check for saved theme preference or system preference on load
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark'); // Default to dark if system prefers it
+    } else {
+        setTheme('light'); // Default to light
+    }
+
+    // Toggle theme on button click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        });
+    }
+
+
+    // Listen for system theme changes (if no preference is saved)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (!localStorage.getItem('theme')) { // Only react to system changes if no user preference is set
+            setTheme(event.matches ? 'dark' : 'light');
+        }
+    });
+    /*]]>*/
+</script>
+
+
+    <script src="js/device-switcher.js" defer></script>
+    <script src="js/mobile-nav.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.2/lunr.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js" defer></script>
+    <script src="js/search.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
+</script>
+    <script src="js/ad-rotation.js" defer></script>
+
+</div>
+</body>
+</html>
