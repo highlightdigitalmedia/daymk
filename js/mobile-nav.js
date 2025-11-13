@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerButton = document.getElementById('hamburger-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const overlay = document.getElementById('mobile-menu-overlay');
+document.addEventListener('DOMContentLoaded', function () {
+    var hamburgerButton = document.getElementById('hamburger-menu-button');
+    var mobileMenu = document.getElementById('mobile-menu');
+    var overlay = document.getElementById('mobile-menu-overlay');
 
     // -----------------------
     // Open / Close mobile nav
@@ -21,79 +21,97 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Open menu on hamburger click
-    hamburgerButton?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        openMenu();
-    });
+    if (hamburgerButton) {
+        hamburgerButton.addEventListener('click', function (e) {
+            e.stopPropagation();
+            openMenu();
+        });
+    }
 
     // Close menu when clicking on the dark overlay
-    overlay?.addEventListener('click', closeMenu);
+    if (overlay) {
+        overlay.addEventListener('click', function () {
+            closeMenu();
+        });
+    }
 
-    // Optional: close when pressing Escape
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
+    // (Optional) close when pressing Escape
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' || e.keyCode === 27) {
             closeMenu();
         }
     });
 
-    // --------------------------------
+    // -------------------------------
     // Theme toggle in mobile side nav
-    // --------------------------------
-    const themeToggleButtonMobile = document.getElementById('theme-toggle-mobile');
-    const themeToggleTextMobile = document.getElementById('theme-toggle-mobile-text');
-    const htmlElement = document.documentElement;
+    // -------------------------------
+    var themeToggleButtonMobile = document.getElementById('theme-toggle-mobile');
+    var themeToggleTextMobile = document.getElementById('theme-toggle-mobile-text');
+    var htmlElement = document.documentElement;
 
     function updateThemeToggleText() {
         if (themeToggleTextMobile) {
-            themeToggleTextMobile.textContent =
-                htmlElement.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
+            if (htmlElement.classList.contains('dark')) {
+                themeToggleTextMobile.textContent = 'Light Mode';
+            } else {
+                themeToggleTextMobile.textContent = 'Dark Mode';
+            }
         }
     }
 
     // Initialize text on load
     updateThemeToggleText();
 
-    // Keep text in sync if theme changes elsewhere (desktop toggle)
-    const observer = new MutationObserver(updateThemeToggleText);
-    observer.observe(htmlElement, { attributes: true, attributeFilter: ['class'] });
+    // Watch for changes to the <html> class (so desktop toggle & mobile stay in sync)
+    if (window.MutationObserver) {
+        var observer = new MutationObserver(function () {
+            updateThemeToggleText();
+        });
+        observer.observe(htmlElement, { attributes: true, attributeFilter: ['class'] });
+    }
 
-    themeToggleButtonMobile?.addEventListener('click', () => {
-        // Reuse the main theme-toggle button logic if present
-        const mainThemeToggle = document.getElementById('theme-toggle');
-        if (mainThemeToggle) {
-            mainThemeToggle.click();
-        } else {
-            // Fallback: toggle directly
-            htmlElement.classList.toggle('dark');
-            localStorage.setItem(
-                'theme',
-                htmlElement.classList.contains('dark') ? 'dark' : 'light'
-            );
-        }
-    });
-
-    // -------------------------------------------------
-    // Expandable subnavigation (Вести / Спорт / Магазин)
-    // -------------------------------------------------
-    const subnavToggleButtons = document.querySelectorAll('[data-subnav-toggle]');
-
-    subnavToggleButtons.forEach((button) => {
-        button.addEventListener('click', (e) => {
-            e.stopPropagation(); // don’t close the menu or trigger parent links
-
-            const id = button.getAttribute('data-subnav-toggle');
-            if (!id) return;
-
-            const target = document.querySelector('[data-subnav-id="' + id + '"]');
-            if (!target) return;
-
-            target.classList.toggle('hidden');
-
-            // Optional: rotate chevron icon
-            const icon = button.querySelector('svg');
-            if (icon) {
-                icon.classList.toggle('rotate-180');
+    if (themeToggleButtonMobile) {
+        themeToggleButtonMobile.addEventListener('click', function () {
+            // Reuse main theme-toggle logic if available
+            var mainThemeToggle = document.getElementById('theme-toggle');
+            if (mainThemeToggle) {
+                mainThemeToggle.click();
+            } else {
+                // Fallback: toggle directly
+                htmlElement.classList.toggle('dark');
+                localStorage.setItem(
+                    'theme',
+                    htmlElement.classList.contains('dark') ? 'dark' : 'light'
+                );
+                updateThemeToggleText();
             }
         });
-    });
+    }
+
+    // ---------------------------------------
+    // Expandable subnavigation (Вести / Спорт / Магазин)
+    // ---------------------------------------
+    var subnavToggleButtons = document.querySelectorAll('[data-subnav-toggle]');
+    for (var i = 0; i < subnavToggleButtons.length; i++) {
+        (function (button) {
+            button.addEventListener('click', function (e) {
+                e.stopPropagation(); // don’t close menu or trigger parent links
+
+                var id = button.getAttribute('data-subnav-toggle');
+                if (!id) return;
+
+                var selector = '[data-subnav-id="' + id + '"]';
+                var target = document.querySelector(selector);
+                if (!target) return;
+
+                target.classList.toggle('hidden');
+
+                // Optional: rotate chevron icon
+                var icon = button.querySelector('svg');
+                if (icon) {
+                    icon.classList.toggle('rotate-180');
+                }
+            });
+        })(subnavToggleButtons[i]);
+    }
 });
