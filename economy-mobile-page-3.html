@@ -40,10 +40,11 @@
 <body class="theme-bg-primary">
 <div class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
      style='font-family: Newsreader, "Noto Sans", sans-serif;'>
-
-    <div class="max-w-7xl mx-auto w-full">
-        <!-- ✅ Mobile header (shared) -->
+    <!-- ✅ same max width as index-mobile -->
+    <div class="max-w-3xl mx-auto w-full">
         <div>
+            <!-- ✅ Mobile Header (same component) -->
+            <div>
     <!-- Mobile Header -->
     <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
         <!-- Hamburger Menu Button -->
@@ -224,128 +225,167 @@
     <button id="theme-toggle" class="hidden"></button>
 </div>
 
-        <main class="p-2 sm:p-4">
-            <!-- Category title -->
-            <h1 class="theme-text-primary text-2xl font-bold mb-4 px-2">Економија</h1>
-
-            <div class="flex flex-col gap-4">
-                <!-- Top mobile ad -->
+            <main class="p-2 sm:p-4 flex flex-col gap-6">
+                <!-- Top Ad Banner (same as index-mobile) -->
                 <div id="mobile-ad-container-top" class="mb-4">
                     <a id="mobile-ad-link-top" href="#"
                        class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
                 </div>
 
-                <!-- Articles list -->
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-муцунски-еиб-ќе-отвори-претставништво-во-скопје-досега-summary-27665.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27665.webp" alt="МУЦУНСКИ: ЕИБ ќе отвори претставништво во Скопје, досега Банката инвестирала над 1,6 милијарди евра во клучни сектори во земјава"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                <!-- ✅ Category header styled like a section header -->
+                <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                    <div class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl">
+                        <span>Економија</span>
+                    </div>
+                </div>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">МУЦУНСКИ: ЕИБ ќе отвори претставништво во Скопје, досега Банката инвестирала над 1,6 милијарди евра во клучни сектори во земјава</h3>
+                <!-- ✅ Articles list – copied from index-mobile -->
+                <div class="flex flex-col divide-y theme-border-color mt-2">
+                    
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="economy-муцунски-еиб-ќе-отвори-претставништво-во-скопје-досега-summary-27665.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27665.webp"
+                                     alt="МУЦУНСКИ: ЕИБ ќе отвори претставништво во Скопје, досега Банката инвестирала над 1,6 милијарди евра во клучни сектори во земјава"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> мое големо задоволство, денес владата, заедно претседателот владата христијан мицкоски потпретседателот европската инвестициск...</p>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">МУЦУНСКИ: ЕИБ ќе отвори претставништво во Скопје, досега Банката инвестирала над 1,6 милијарди евра во клучни сектори во земјава</h3>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> мое големо задоволство, денес владата, заедно претседателот владата христијан мицкоски потпретсе...</p>
 
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 32 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-николоски-брза-пруга-до-солун-олеснување-на-постапката-за-summary-27689.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27689.webp" alt="Николоски: Брза пруга до Солун, олеснување на постапката за изградба на хотели"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="economy-николоски-брза-пруга-до-солун-олеснување-на-постапката-за-summary-27689.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27689.webp"
+                                     alt="Николоски: Брза пруга до Солун, олеснување на постапката за изградба на хотели"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Николоски: Брза пруга до Солун, олеснување на постапката за изградба на хотели</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Николоски: Брза пруга до Солун, олеснување на постапката за изградба на хотели</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> панел дискусијата обрати министерот култура туризам, зоран љутков истакна 75 поврзува северот југот, градовите малите заедници...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> панел дискусијата обрати министерот култура туризам, зоран љутков истакна 75 поврзува северот ју...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 31 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 32 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-турците-се-најбројни-туристи-во-земјава-по-нив-се-србите-summary-27557.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27557.webp" alt="Турците се најбројни туристи во земјава, по нив се Србите, Германците и Полјаците"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="economy-турците-се-најбројни-туристи-во-земјава-по-нив-се-србите-summary-27557.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27557.webp"
+                                     alt="Турците се најбројни туристи во земјава, по нив се Србите, Германците и Полјаците"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Турците се најбројни туристи во земјава, по нив се Србите, Германците и Полјаците</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Турците се најбројни туристи во земјава, по нив се Србите, Германците и Полјаците</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> домашните туристи намалување 3,8 проценти, странските зголемување 7 проценти.  септември годинава земјава евидентирани 132. вк...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> домашните туристи намалување 3,8 проценти, странските зголемување 7 проценти.  септември годинав...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 35 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 36 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-            </div>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="economy-кафеаните-станаа-луксуз-summary-28565.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-28565.webp"
+                                     alt="Кафеаните станаа луксуз"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-            <!-- ✅ Pagination (optional; safe even if you don’t use it yet) -->
-            <div class="flex justify-center mt-6">
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Кафеаните станаа луксуз</h3>
+
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> цените угостителските услуги октомври 2025 година, однос месец претходната година, с зголемени 3...</p>
+
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
+                    
+                </div>
+
+                <!-- Optional pagination (if you pass these vars) -->
+                <div class="flex justify-center mt-6">
     <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
 
         <!-- Previous -->
@@ -371,10 +411,11 @@
         
     </nav>
 </div>
-        </main>
+            </main>
+        </div>
     </div>
 
-    <!-- Footer -->
+    <!-- ✅ Footer like index-mobile -->
     <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->

@@ -40,10 +40,11 @@
 <body class="theme-bg-primary">
 <div class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
      style='font-family: Newsreader, "Noto Sans", sans-serif;'>
-
-    <div class="max-w-7xl mx-auto w-full">
-        <!-- ✅ Mobile header (shared) -->
+    <!-- ✅ same max width as index-mobile -->
+    <div class="max-w-3xl mx-auto w-full">
         <div>
+            <!-- ✅ Mobile Header (same component) -->
+            <div>
     <!-- Mobile Header -->
     <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
         <!-- Hamburger Menu Button -->
@@ -224,376 +225,380 @@
     <button id="theme-toggle" class="hidden"></button>
 </div>
 
-        <main class="p-2 sm:p-4">
-            <!-- Category title -->
-            <h1 class="theme-text-primary text-2xl font-bold mb-4 px-2">Спорт</h1>
-
-            <div class="flex flex-col gap-4">
-                <!-- Top mobile ad -->
+            <main class="p-2 sm:p-4 flex flex-col gap-6">
+                <!-- Top Ad Banner (same as index-mobile) -->
                 <div id="mobile-ad-container-top" class="mb-4">
                     <a id="mobile-ad-link-top" href="#"
                        class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
                 </div>
 
-                <!-- Articles list -->
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-поранешен-играч-на-јунајтед-го-тужи-клубот-за-небрежност-при-summary-27716.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27716.webp" alt="Поранешен играч на Јунајтед го тужи клубот за небрежност при лекување на повреда"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Поранешен играч на Јунајтед го тужи клубот за небрежност при лекување на повреда</h3>
-
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> проблемот, тврди, станал хроничен јули 2022 година, туанзебе претрпел истата повреда, десната страна долниот дел ‘рбетот.  пор...</p>
-
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 30 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                                        <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <!-- ✅ Category header styled like a section header -->
+                <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                    <div class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl">
+                        <span>Спорт</span>
                     </div>
+                </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                <!-- ✅ Articles list – copied from index-mobile -->
+                <div class="flex flex-col divide-y theme-border-color mt-2">
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-ф1-тото-волф-подготвен-да-продаде-дел-од-уделот-во-мерцедес-summary-27736.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27736.webp" alt="Ф1: Тото Волф подготвен да продаде дел од уделот во Мерцедес"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="sport-секој-фудбалер-на-др-конго-ќе-добие-милион-долари-ако-summary-27775.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27775.webp"
+                                     alt="Секој фудбалер на ДР Конго ќе добие милион долари ако репрезентацијата избори пласман на СП 2026"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Ф1: Тото Волф подготвен да продаде дел од уделот во Мерцедес</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Секој фудбалер на ДР Конго ќе добие милион долари ако репрезентацијата избори пласман на СП 2026</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> коментираме, изјави портпаролот тимот мерцедес ф1 пошта, додавајќи: раководството тимот остане непроменето три партнери (мерце...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> доколку победи, др конго соочи поуспешниот натпреварот нигерија габон место светското првенство ...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 29 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 28 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-анчелоти-му-реков-на-ендрик-да-си-замине-од-реал-мадрид-summary-27737.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27737.webp" alt="Анчелоти: Му реков на Ендрик да си замине од Реал Мадрид"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="sport-поранешен-играч-на-јунајтед-го-тужи-клубот-за-небрежност-при-summary-27716.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27716.webp"
+                                     alt="Поранешен играч на Јунајтед го тужи клубот за небрежност при лекување на повреда"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Анчелоти: Му реков на Ендрик да си замине од Реал Мадрид</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Поранешен играч на Јунајтед го тужи клубот за небрежност при лекување на повреда</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> новинарите заинтересирани влијае статусот ендрик националниот тим, особено знае летово игра светското првенство сад, канада ме...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> проблемот, тврди, станал хроничен јули 2022 година, туанзебе претрпел истата повреда, десната ст...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 29 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 31 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-лапорта-за-можното-враќање-на-меси-не-е-време-за-шпекулации-summary-27713.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27713.webp" alt="Лапорта за можното враќање на Меси: Не е време за шпекулации"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="sport-анчелоти-му-реков-на-ендрик-да-си-замине-од-реал-мадрид-summary-27737.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27737.webp"
+                                     alt="Анчелоти: Му реков на Ендрик да си замине од Реал Мадрид"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Лапорта за можното враќање на Меси: Не е време за шпекулации</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Анчелоти: Му реков на Ендрик да си замине од Реал Мадрид</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> почит меси, нашите играчи нашиот персонал, време шпекулира основа нереални сценарија, изјави лапорта шпанските медиуми.  дена ...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> новинарите заинтересирани влијае статусот ендрик националниот тим, особено знае летово игра свет...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 30 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 30 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-наполи-подготвен-да-потроши-50-милиони-евра-за-зимски-summary-27710.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27710.webp" alt="Наполи подготвен да потроши 50 милиони евра за зимски трансфери за да го задржи Конте"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="sport-ф1-тото-волф-подготвен-да-продаде-дел-од-уделот-во-мерцедес-summary-27736.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27736.webp"
+                                     alt="Ф1: Тото Волф подготвен да продаде дел од уделот во Мерцедес"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Наполи подготвен да потроши 50 милиони евра за зимски трансфери за да го задржи Конте</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Ф1: Тото Волф подготвен да продаде дел од уделот во Мерцедес</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> минатата недела, конте навести напушти клубот, предизвикувајќи медиумска возбуда.  10 ноември, новинарот матео морето извести ...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> коментираме, изјави портпаролот тимот мерцедес ф1 пошта, додавајќи: раководството тимот остане н...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 31 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 30 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
-                    <div id="mobile-ad-container-mid" class="my-6">
-                        <a id="mobile-ad-link-mid" href="#"
-                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                    </div>
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-милевски-летонија-е-убава-шанса-да-ја-видиме-и-пошироката-summary-27678.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27678.webp" alt="Милевски: Летонија е убава шанса да ја видиме и пошироката слика"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Милевски: Летонија е убава шанса да ја видиме и пошироката слика</h3>
-
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> фудбалската федерација македонија утрешниот пријателски натпревар летонија донесе одлука бесплатен влез трибините националната...</p>
-
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                                        <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-нигериската-репрезентација-ги-бојкотира-тренинзите-во-summary-27661.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27661.webp" alt="Нигериската репрезентација ги бојкотира тренинзите во пресрет на плејофот за пласман на СП 2026"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="sport-лапорта-за-можното-враќање-на-меси-не-е-време-за-шпекулации-summary-27713.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27713.webp"
+                                     alt="Лапорта за можното враќање на Меси: Не е време за шпекулации"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Нигериската репрезентација ги бојкотира тренинзите во пресрет на плејофот за пласман на СП 2026</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Лапорта за можното враќање на Меси: Не е време за шпекулации</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> победникот игра против поуспешниот натпреварот камерун др конго, место светското првенство 2026 година  нигерија игра против г...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> почит меси, нашите играчи нашиот персонал, време шпекулира основа нереални сценарија, изјави лап...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 31 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        <div id="mobile-ad-container-mid" class="mt-8">
+                            <a id="mobile-ad-link-mid" href="#"
+                               class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                        </div>
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-ѓоковиќ-откри-што-сака-да-му-пишува-на-надгробната-плоча-summary-27655.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27655.webp" alt="Ѓоковиќ откри што сака да му пишува на надгробната плоча"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="sport-наполи-подготвен-да-потроши-50-милиони-евра-за-зимски-summary-27710.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27710.webp"
+                                     alt="Наполи подготвен да потроши 50 милиони евра за зимски трансфери за да го задржи Конте"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Ѓоковиќ откри што сака да му пишува на надгробната плоча</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Наполи подготвен да потроши 50 милиони евра за зимски трансфери за да го задржи Конте</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> најпаметните прашања постави морган сакал напишано надгробната плоча.  допре срцата луѓето погреб, тенискиот клуб, мал настан ...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> минатата недела, конте навести напушти клубот, предизвикувајќи медиумска возбуда.  10 ноември, н...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 31 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-голема-победа-на-партизан-во-евролигата-summary-27650.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27650.webp" alt="Голема победа на Партизан во Евролигата"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="sport-милевски-летонија-е-убава-шанса-да-ја-видиме-и-пошироката-summary-27678.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27678.webp"
+                                     alt="Милевски: Летонија е убава шанса да ја видиме и пошироката слика"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Голема победа на Партизан во Евролигата</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Милевски: Летонија е убава шанса да ја видиме и пошироката слика</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> кошаркарите валенсија синоќа победија тимот реал мадрид натпревар 10. резултати средбите елитната кошаркарска лига одиграни вч...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> фудбалската федерација македонија утрешниот пријателски натпревар летонија донесе одлука бесплат...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 32 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-лапорта-не-жали-што-меси-ја-напушти-барселона-summary-27635.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27635.webp" alt="Лапорта не жали што Меси ја напушти Барселона"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="sport-нигериската-репрезентација-ги-бојкотира-тренинзите-во-summary-27661.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27661.webp"
+                                     alt="Нигериската репрезентација ги бојкотира тренинзите во пресрет на плејофот за пласман на СП 2026"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Лапорта не жали што Меси ја напушти Барселона</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Нигериската репрезентација ги бојкотира тренинзите во пресрет на плејофот за пласман на СП 2026</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> лапорта опиша доаѓањето меси спонтан чин посветеност клубот.  претседателот барселона, џоан лапорта, коментираше ненадејната п...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> победникот игра против поуспешниот натпреварот камерун др конго, место светското првенство 2026 ...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 33 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 33 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-            </div>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="sport-ѓоковиќ-откри-што-сака-да-му-пишува-на-надгробната-плоча-summary-27655.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27655.webp"
+                                     alt="Ѓоковиќ откри што сака да му пишува на надгробната плоча"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-            <!-- ✅ Pagination (optional; safe even if you don’t use it yet) -->
-            <div class="flex justify-center mt-6">
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Ѓоковиќ откри што сака да му пишува на надгробната плоча</h3>
+
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> најпаметните прашања постави морган сакал напишано надгробната плоча.  допре срцата луѓето погре...</p>
+
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 33 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
+                    
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="sport-голема-победа-на-партизан-во-евролигата-summary-27650.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27650.webp"
+                                     alt="Голема победа на Партизан во Евролигата"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Голема победа на Партизан во Евролигата</h3>
+
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> кошаркарите валенсија синоќа победија тимот реал мадрид натпревар 10. резултати средбите елитнат...</p>
+
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 33 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
+                    
+                </div>
+
+                <!-- Optional pagination (if you pass these vars) -->
+                <div class="flex justify-center mt-6">
     <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
 
         <!-- Previous -->
@@ -633,10 +638,11 @@
            aria-label="Next">&raquo;</a>
     </nav>
 </div>
-        </main>
+            </main>
+        </div>
     </div>
 
-    <!-- Footer -->
+    <!-- ✅ Footer like index-mobile -->
     <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->

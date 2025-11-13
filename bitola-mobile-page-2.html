@@ -40,10 +40,11 @@
 <body class="theme-bg-primary">
 <div class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
      style='font-family: Newsreader, "Noto Sans", sans-serif;'>
-
-    <div class="max-w-7xl mx-auto w-full">
-        <!-- ✅ Mobile header (shared) -->
+    <!-- ✅ same max width as index-mobile -->
+    <div class="max-w-3xl mx-auto w-full">
         <div>
+            <!-- ✅ Mobile Header (same component) -->
+            <div>
     <!-- Mobile Header -->
     <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
         <!-- Hamburger Menu Button -->
@@ -224,206 +225,240 @@
     <button id="theme-toggle" class="hidden"></button>
 </div>
 
-        <main class="p-2 sm:p-4">
-            <!-- Category title -->
-            <h1 class="theme-text-primary text-2xl font-bold mb-4 px-2">Битола</h1>
-
-            <div class="flex flex-col gap-4">
-                <!-- Top mobile ad -->
+            <main class="p-2 sm:p-4 flex flex-col gap-6">
+                <!-- Top Ad Banner (same as index-mobile) -->
                 <div id="mobile-ad-container-top" class="mb-4">
                     <a id="mobile-ad-link-top" href="#"
                        class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
                 </div>
 
-                <!-- Articles list -->
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="bitola-митко-јанчев-кавадарци-ќе-биде-регионален-туристички-центар-summary-27780.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27780.webp" alt="МИТКО ЈАНЧЕВ: КАВАДАРЦИ ЌЕ БИДЕ РЕГИОНАЛЕН ТУРИСТИЧКИ ЦЕНТАР"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">МИТКО ЈАНЧЕВ: КАВАДАРЦИ ЌЕ БИДЕ РЕГИОНАЛЕН ТУРИСТИЧКИ ЦЕНТАР</h3>
-
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> ски центарот функционира јавно претпријатие, формирано советот односно општината.  јавно претпријатие имаме спортска сала јасм...</p>
-
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 27 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
-                                </div>
-                            </div>
-                        </a>
+                <!-- ✅ Category header styled like a section header -->
+                <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                    <div class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl">
+                        <span>Битола</span>
                     </div>
+                </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                <!-- ✅ Articles list – copied from index-mobile -->
+                <div class="flex flex-col divide-y theme-border-color mt-2">
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="bitola-почина-поетесата-славица-свидерска-summary-27719.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27719.webp" alt="Почина поетесата Славица Свидерска"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="bitola-митко-јанчев-кавадарци-ќе-биде-регионален-туристички-центар-summary-27780.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27780.webp"
+                                     alt="МИТКО ЈАНЧЕВ: КАВАДАРЦИ ЌЕ БИДЕ РЕГИОНАЛЕН ТУРИСТИЧКИ ЦЕНТАР"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Почина поетесата Славица Свидерска</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">МИТКО ЈАНЧЕВ: КАВАДАРЦИ ЌЕ БИДЕ РЕГИОНАЛЕН ТУРИСТИЧКИ ЦЕНТАР</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> почина поетесата славица свидерска (1984, битола), соопштија утрово друштвото писателите.  спомен славица свидерска (1984 2025...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> ски центарот функционира јавно претпријатие, формирано советот односно општината.  јавно претпри...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 30 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 27 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="bitola-коњановски-домаќин-на-новоименуваната-амбасадорка-на-кина-во-summary-27712.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27712.webp" alt="Коњановски домаќин на новоименуваната амбасадорка на Кина во Македонија"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="bitola-почина-поетесата-славица-свидерска-summary-27719.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27719.webp"
+                                     alt="Почина поетесата Славица Свидерска"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Коњановски домаќин на новоименуваната амбасадорка на Кина во Македонија</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Почина поетесата Славица Свидерска</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> прва работна посета новоименуваната кинеска амбасадорка општина битола новоименуваната амбасадорка народна република кина репу...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> почина поетесата славица свидерска (1984, битола), соопштија утрово друштвото писателите.  споме...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 30 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 31 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="bitola-координативен-состанок-на-зимската-служба-во-битола-summary-27668.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27668.webp" alt="Координативен состанок на Зимската служба во Битола"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="bitola-коњановски-домаќин-на-новоименуваната-амбасадорка-на-кина-во-summary-27712.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27712.webp"
+                                     alt="Коњановски домаќин на новоименуваната амбасадорка на Кина во Македонија"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Координативен состанок на Зимската служба во Битола</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Коњановски домаќин на новоименуваната амбасадорка на Кина во Македонија</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> градоначалникот општина битола, тони коњановски, секретарот борче димитровски раководителката одделението комунални дејности м...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> прва работна посета новоименуваната кинеска амбасадорка општина битола новоименуваната амбасадор...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 31 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="bitola-почина-поетесата-и-универзитетска-професорка-славица-summary-27598.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27598.webp" alt="Почина поетесата и универзитетска професорка Славица Свидерска"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="bitola-координативен-состанок-на-зимската-служба-во-битола-summary-27668.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27668.webp"
+                                     alt="Координативен состанок на Зимската служба во Битола"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Почина поетесата и универзитетска професорка Славица Свидерска</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Координативен состанок на Зимската служба во Битола</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> друштвото писателите македонија длабока жал извести денес, 12 ноември 2025 година, почина истакнатата поетеса, научничка униве...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> градоначалникот општина битола, тони коњановски, секретарот борче димитровски раководителката од...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 34 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 32 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
-                    <div id="mobile-ad-container-mid" class="my-6">
-                        <a id="mobile-ad-link-mid" href="#"
-                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                    </div>
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="bitola-доделени-четвртоноемвриските-награди-наградата-за-животно-summary-27599.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27599.webp" alt="Доделени четвртоноемвриските награди – наградата за животно дело врачена на уметникот Панде Петровски"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Доделени четвртоноемвриските награди – наградата за животно дело врачена на уметникот Панде Петровски</h3>
-
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> градоначалникот општина битола тони коњановски врачи наградите најуспешните , своето обраќање истакна денес, поклонуваме споме...</p>
-
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 34 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-            </div>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="bitola-почина-поетесата-и-универзитетска-професорка-славица-summary-27598.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27598.webp"
+                                     alt="Почина поетесата и универзитетска професорка Славица Свидерска"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-            <!-- ✅ Pagination (optional; safe even if you don’t use it yet) -->
-            <div class="flex justify-center mt-6">
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Почина поетесата и универзитетска професорка Славица Свидерска</h3>
+
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> друштвото писателите македонија длабока жал извести денес, 12 ноември 2025 година, почина истакн...</p>
+
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 35 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        <div id="mobile-ad-container-mid" class="mt-8">
+                            <a id="mobile-ad-link-mid" href="#"
+                               class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                        </div>
+                    
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="bitola-доделени-четвртоноемвриските-награди-наградата-за-животно-summary-27599.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27599.webp"
+                                     alt="Доделени четвртоноемвриските награди – наградата за животно дело врачена на уметникот Панде Петровски"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Доделени четвртоноемвриските награди – наградата за животно дело врачена на уметникот Панде Петровски</h3>
+
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> градоначалникот општина битола тони коњановски врачи наградите најуспешните , своето обраќање ис...</p>
+
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 35 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
+                    
+                </div>
+
+                <!-- Optional pagination (if you pass these vars) -->
+                <div class="flex justify-center mt-6">
     <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
 
         <!-- Previous -->
@@ -446,10 +481,11 @@
         
     </nav>
 </div>
-        </main>
+            </main>
+        </div>
     </div>
 
-    <!-- Footer -->
+    <!-- ✅ Footer like index-mobile -->
     <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->

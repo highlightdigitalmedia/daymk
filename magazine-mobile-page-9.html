@@ -40,10 +40,11 @@
 <body class="theme-bg-primary">
 <div class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
      style='font-family: Newsreader, "Noto Sans", sans-serif;'>
-
-    <div class="max-w-7xl mx-auto w-full">
-        <!-- ✅ Mobile header (shared) -->
+    <!-- ✅ same max width as index-mobile -->
+    <div class="max-w-3xl mx-auto w-full">
         <div>
+            <!-- ✅ Mobile Header (same component) -->
+            <div>
     <!-- Mobile Header -->
     <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
         <!-- Hamburger Menu Button -->
@@ -224,326 +225,380 @@
     <button id="theme-toggle" class="hidden"></button>
 </div>
 
-        <main class="p-2 sm:p-4">
-            <!-- Category title -->
-            <h1 class="theme-text-primary text-2xl font-bold mb-4 px-2">Магазин</h1>
-
-            <div class="flex flex-col gap-4">
-                <!-- Top mobile ad -->
+            <main class="p-2 sm:p-4 flex flex-col gap-6">
+                <!-- Top Ad Banner (same as index-mobile) -->
                 <div id="mobile-ad-container-top" class="mb-4">
                     <a id="mobile-ad-link-top" href="#"
                        class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
                 </div>
 
-                <!-- Articles list -->
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-дали-сте-во-врска-со-нарцис-ако-забележите-дека-вашиот-summary-27701.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27701.webp" alt="ДАЛИ СТЕ ВО ВРСКА СО НАРЦИС? Ако забележите дека вашиот партнер се однесува вака, тоа значи дека е време да раскинете!"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">ДАЛИ СТЕ ВО ВРСКА СО НАРЦИС? Ако забележите дека вашиот партнер се однесува вака, тоа значи дека е време да раскинете!</h3>
-
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> доколку врска нарцис ве гледа дел иднина, продолжиле врската знаете крајот?  доколку вашиот сакан нарцис прави , голема вероја...</p>
-
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 31 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
-                                </div>
-                            </div>
-                        </a>
+                <!-- ✅ Category header styled like a section header -->
+                <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                    <div class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl">
+                        <span>Магазин</span>
                     </div>
+                </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                <!-- ✅ Articles list – copied from index-mobile -->
+                <div class="flex flex-col divide-y theme-border-color mt-2">
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-папата-ги-собира-холивудските-ѕвезди-во-ватикан-објави-кои-summary-27660.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27660.webp" alt="Папата ги собира холивудските ѕвезди во Ватикан: Објави кои се неговите четири омилени филмови (ВИДЕО)"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="magazine-ai-gemini-следи-се-на-gmail-tужба-за-следење-во-сад-summary-27714.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27714.webp"
+                                     alt="AI GEMINI следи се на GMAIL? Tужба за следење во САД"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Папата ги собира холивудските ѕвезди во Ватикан: Објави кои се неговите четири омилени филмови (ВИДЕО)</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">AI GEMINI следи се на GMAIL? Tужба за следење во САД</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> година јубилејот, папата лав изрази желба продлабочи дијалогот светот филмот, особено актерите режисерите, истражувајќи можнос...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> гугл соочува нова тужба обвинува користи асистент вештачка интелигенција нелегално следење прива...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 31 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-ејми-шумер-ослабе-па-ги-избриша-сите-стари-фотографии-од-summary-27693.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%95%D1%98%D0%BC%D0%B8+%D0%A8%D1%83%D0%BC%D0%B5%D1%80+%D0%BE%D1%81%D0%BB%D0%B0%D0%B1%D0%B5%2C+%D0%BF%D0%B0+%D0%B3%D0%B8+%D0%B8%D0%B7%D0%B1%D1%80%D0%B8%D1%88%D0%B0+%D1%81%D0%B8%D1%82%D0%B5+%D1%81%D1%82%D0%B0%D1%80%D0%B8+%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8+%D0%BE%D0%B4+%E2%80%9E%D0%98%D0%BD%D1%81%D1%82%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%E2%80%9C" alt="Ејми Шумер ослабе, па ги избриша сите стари фотографии од „Инстаграм“"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="magazine-македонската-игра-skopje-83-виртуелно-патување-низ-едно-summary-27711.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27711.webp"
+                                     alt="Македонската игра „Skopje ’83“ – виртуелно патување низ едно друго Скопје"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Ејми Шумер ослабе, па ги избриша сите стари фотографии од „Инстаграм“</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Македонската игра „Skopje ’83“ – виртуелно патување низ едно друго Скопје</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> избришав моите стари фотографии причина!, напиша .  откако јавно сподели дијагнозата кушингов синдром 2024 година, шумер сака ...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> играта достапна 7 ноември 2025 година платформите , стои тим предводен кристијан трајковски.  иа...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 31 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 31 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-актерката-што-регрутира-жени-во-култ-сега-учи-како-да-summary-27694.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%90%D0%BA%D1%82%D0%B5%D1%80%D0%BA%D0%B0%D1%82%D0%B0+%D1%88%D1%82%D0%BE+%D1%80%D0%B5%D0%B3%D1%80%D1%83%D1%82%D0%B8%D1%80%D0%B0+%D0%B6%D0%B5%D0%BD%D0%B8+%D0%B2%D0%BE+%D0%BA%D1%83%D0%BB%D1%82+%D1%81%D0%B5%D0%B3%D0%B0+%D1%83%D1%87%D0%B8+%D0%BA%D0%B0%D0%BA%D0%BE+%D0%B4%D0%B0+%D1%81%D0%BF%D0%B0%D1%81%D1%83%D0%B2%D0%B0+%D0%BB%D1%83%D1%93%D0%B5" alt="Актерката што регрутира жени во култ сега учи како да спасува луѓе"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="magazine-дали-сте-во-врска-со-нарцис-ако-забележите-дека-вашиот-summary-27701.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27701.webp"
+                                     alt="ДАЛИ СТЕ ВО ВРСКА СО НАРЦИС? Ако забележите дека вашиот партнер се однесува вака, тоа значи дека е време да раскинете!"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Актерката што регрутира жени во култ сега учи како да спасува луѓе</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">ДАЛИ СТЕ ВО ВРСКА СО НАРЦИС? Ако забележите дека вашиот партнер се однесува вака, тоа значи дека е време да раскинете!</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> уапсена 2018 година поради учество сектата нхивм, претставувала организација самопомош, всушност служела сексуално искористува...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> доколку врска нарцис ве гледа дел иднина, продолжиле врската знаете крајот?  доколку вашиот сака...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 31 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 31 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-џек-шлосберг-наследникот-на-кенеди-ќе-се-бори-за-местото-на-summary-27691.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27691.webp" alt="Џек Шлосберг, наследникот на Кенеди, ќе се бори за местото на Надлер од Њујорк во Конгресот"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="magazine-папата-ги-собира-холивудските-ѕвезди-во-ватикан-објави-кои-summary-27660.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27660.webp"
+                                     alt="Папата ги собира холивудските ѕвезди во Ватикан: Објави кои се неговите четири омилени филмови (ВИДЕО)"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Џек Шлосберг, наследникот на Кенеди, ќе се бори за местото на Надлер од Њујорк во Конгресот</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Папата ги собира холивудските ѕвезди во Ватикан: Објави кои се неговите четири омилени филмови (ВИДЕО)</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> њујорк тајмс џек шлосберг, внукот џон ф. кенеди, изјави кандидира местото конгресот ослободува пратеникот џеролд надлер, прикл...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> година јубилејот, папата лав изрази желба продлабочи дијалогот светот филмот, особено актерите р...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 31 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 33 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
-                    <div id="mobile-ad-container-mid" class="my-6">
-                        <a id="mobile-ad-link-mid" href="#"
-                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                    </div>
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-сидни-свини-не-секогаш-создаваме-уметност-само-за-бројки-summary-27686.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27686.webp" alt="Сидни Свини: Не секогаш создаваме уметност само за бројки, туку пред се за влијание"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Сидни Свини: Не секогаш создаваме уметност само за бројки, туку пред се за влијание</h3>
-
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> филмот кристи, свини глуми боксерката кристи мартин, преживеа обид убиство нејзиниот поранешен сопруг, џејмс мартин, нејзин тр...</p>
-
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-како-да-се-ослободи-синузитисот-5-основни-правила-кои-треба-summary-27679.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27679.webp" alt="Како да се ослободи синузитисот – 5 основни правила кои треба да се следат"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="magazine-ејми-шумер-ослабе-па-ги-избриша-сите-стари-фотографии-од-summary-27693.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%95%D1%98%D0%BC%D0%B8+%D0%A8%D1%83%D0%BC%D0%B5%D1%80+%D0%BE%D1%81%D0%BB%D0%B0%D0%B1%D0%B5%2C+%D0%BF%D0%B0+%D0%B3%D0%B8+%D0%B8%D0%B7%D0%B1%D1%80%D0%B8%D1%88%D0%B0+%D1%81%D0%B8%D1%82%D0%B5+%D1%81%D1%82%D0%B0%D1%80%D0%B8+%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8+%D0%BE%D0%B4+%E2%80%9E%D0%98%D0%BD%D1%81%D1%82%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%E2%80%9C"
+                                     alt="Ејми Шумер ослабе, па ги избриша сите стари фотографии од „Инстаграм“"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Како да се ослободи синузитисот – 5 основни правила кои треба да се следат</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Ејми Шумер ослабе, па ги избриша сите стари фотографии од „Инстаграм“</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> имаме течење носот запушен нос, пиеме вода густите секрети носот можат втечнат начин ослободат напнатоста предизвикуваат полес...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> избришав моите стари фотографии причина!, напиша .  откако јавно сподели дијагнозата кушингов си...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 32 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        <div id="mobile-ad-container-mid" class="mt-8">
+                            <a id="mobile-ad-link-mid" href="#"
+                               class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                        </div>
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-огромна-нова-железничка-станица-вредна-над-300-милиони-евра-summary-27673.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27673.webp" alt="Огромна нова железничка станица вредна над 300 милиони евра ги отвори своите врати во Европа и сега е меѓу најубавите во светот"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="magazine-актерката-што-регрутира-жени-во-култ-сега-учи-како-да-summary-27694.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%90%D0%BA%D1%82%D0%B5%D1%80%D0%BA%D0%B0%D1%82%D0%B0+%D1%88%D1%82%D0%BE+%D1%80%D0%B5%D0%B3%D1%80%D1%83%D1%82%D0%B8%D1%80%D0%B0+%D0%B6%D0%B5%D0%BD%D0%B8+%D0%B2%D0%BE+%D0%BA%D1%83%D0%BB%D1%82+%D1%81%D0%B5%D0%B3%D0%B0+%D1%83%D1%87%D0%B8+%D0%BA%D0%B0%D0%BA%D0%BE+%D0%B4%D0%B0+%D1%81%D0%BF%D0%B0%D1%81%D1%83%D0%B2%D0%B0+%D0%BB%D1%83%D1%93%D0%B5"
+                                     alt="Актерката што регрутира жени во култ сега учи како да спасува луѓе"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Огромна нова железничка станица вредна над 300 милиони евра ги отвори своите врати во Европа и сега е меѓу најубавите во светот</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Актерката што регрутира жени во култ сега учи како да спасува луѓе</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> жирито импресионирано етеричниот стил, чистите линии сјајните бели челични форми” издигнуваат небото, катедралниот изглед” цен...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> уапсена 2018 година поради учество сектата нхивм, претставувала организација самопомош, всушност...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 32 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-врвот-на-леонидите-доаѓа-наскоро-еве-кога-можеме-да-го-summary-27674.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27674.webp" alt="Врвот на Леонидите доаѓа наскоро – еве кога можеме да го набљудуваме"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="magazine-џек-шлосберг-наследникот-на-кенеди-ќе-се-бори-за-местото-на-summary-27691.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27691.webp"
+                                     alt="Џек Шлосберг, наследникот на Кенеди, ќе се бори за местото на Надлер од Њујорк во Конгресот"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Врвот на Леонидите доаѓа наскоро – еве кога можеме да го набљудуваме</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Џек Шлосберг, наследникот на Кенеди, ќе се бори за местото на Надлер од Њујорк во Конгресот</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> метеорскиот дожд леонид 1966 година опишан најсилен забележан историјата.  нивниот врв, земјата помине најгустиот дел метеорск...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> њујорк тајмс џек шлосберг, внукот џон ф. кенеди, изјави кандидира местото конгресот ослободува п...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 32 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-руска-академија-на-науките-силен-блесок-е-забележан-на-summary-27667.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27667.webp" alt="Руска академија на науките: Силен блесок е забележан на Сонцето насочен кон Земјата"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="magazine-сидни-свини-не-секогаш-создаваме-уметност-само-за-бројки-summary-27686.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27686.webp"
+                                     alt="Сидни Свини: Не секогаш создаваме уметност само за бројки, туку пред се за влијание"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Руска академија на науките: Силен блесок е забележан на Сонцето насочен кон Земјата</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Сидни Свини: Не секогаш создаваме уметност само за бројки, туку пред се за влијание</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> подоцна, лабораторијата руската академија науките изјави експлозијата достигнала највисокото ниво петстепена скала означена кл...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> филмот кристи, свини глуми боксерката кристи мартин, преживеа обид убиство нејзиниот поранешен с...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 32 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-            </div>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="magazine-како-да-се-ослободи-синузитисот-5-основни-правила-кои-треба-summary-27679.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27679.webp"
+                                     alt="Како да се ослободи синузитисот – 5 основни правила кои треба да се следат"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-            <!-- ✅ Pagination (optional; safe even if you don’t use it yet) -->
-            <div class="flex justify-center mt-6">
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Како да се ослободи синузитисот – 5 основни правила кои треба да се следат</h3>
+
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> имаме течење носот запушен нос, пиеме вода густите секрети носот можат втечнат начин ослободат н...</p>
+
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 32 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
+                    
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="magazine-огромна-нова-железничка-станица-вредна-над-300-милиони-евра-summary-27673.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27673.webp"
+                                     alt="Огромна нова железничка станица вредна над 300 милиони евра ги отвори своите врати во Европа и сега е меѓу најубавите во светот"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Огромна нова железничка станица вредна над 300 милиони евра ги отвори своите врати во Европа и сега е меѓу најубавите во светот</h3>
+
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> жирито импресионирано етеричниот стил, чистите линии сјајните бели челични форми” издигнуваат не...</p>
+
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 32 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">1</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
+                    
+                </div>
+
+                <!-- Optional pagination (if you pass these vars) -->
+                <div class="flex justify-center mt-6">
     <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
 
         <!-- Previous -->
@@ -592,10 +647,11 @@
            aria-label="Next">&raquo;</a>
     </nav>
 </div>
-        </main>
+            </main>
+        </div>
     </div>
 
-    <!-- Footer -->
+    <!-- ✅ Footer like index-mobile -->
     <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->

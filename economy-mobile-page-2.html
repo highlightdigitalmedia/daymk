@@ -40,10 +40,11 @@
 <body class="theme-bg-primary">
 <div class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
      style='font-family: Newsreader, "Noto Sans", sans-serif;'>
-
-    <div class="max-w-7xl mx-auto w-full">
-        <!-- ✅ Mobile header (shared) -->
+    <!-- ✅ same max width as index-mobile -->
+    <div class="max-w-3xl mx-auto w-full">
         <div>
+            <!-- ✅ Mobile Header (same component) -->
+            <div>
     <!-- Mobile Header -->
     <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
         <!-- Hamburger Menu Button -->
@@ -224,376 +225,380 @@
     <button id="theme-toggle" class="hidden"></button>
 </div>
 
-        <main class="p-2 sm:p-4">
-            <!-- Category title -->
-            <h1 class="theme-text-primary text-2xl font-bold mb-4 px-2">Економија</h1>
-
-            <div class="flex flex-col gap-4">
-                <!-- Top mobile ad -->
+            <main class="p-2 sm:p-4 flex flex-col gap-6">
+                <!-- Top Ad Banner (same as index-mobile) -->
                 <div id="mobile-ad-container-top" class="mb-4">
                     <a id="mobile-ad-link-top" href="#"
                        class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
                 </div>
 
-                <!-- Articles list -->
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-домашната-економија-укажува-на-солиден-економски-раст-summary-28203.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-28203.webp" alt="Домашната економија укажува на солиден економски раст"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Домашната економија укажува на солиден економски раст</h3>
-
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> макроекономската слика домашната економија укажува отпорност солиден економски раст, надолно приспособување инфлацијата претеж...</p>
-
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 5 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                                        <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <!-- ✅ Category header styled like a section header -->
+                <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                    <div class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl">
+                        <span>Економија</span>
                     </div>
+                </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                <!-- ✅ Articles list – copied from index-mobile -->
+                <div class="flex flex-col divide-y theme-border-color mt-2">
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-во-октомври-повторно-надмината-наплатата-на-приходи-од-summary-27916.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27916.webp" alt="Во октомври повторно надмината наплатата на приходи од царина, вели Николовски"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="economy-домашната-економија-укажува-на-солиден-економски-раст-summary-28203.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-28203.webp"
+                                     alt="Домашната економија укажува на солиден економски раст"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Во октомври повторно надмината наплатата на приходи од царина, вели Николовски</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Домашната економија укажува на солиден економски раст</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> царинската управа октомври надмина недостижната наплата приходи – буџетот слеани 12,05 милијарди денари (196 милиони евра), 11...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> макроекономската слика домашната економија укажува отпорност солиден економски раст, надолно при...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 8 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 6 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-стојановски-со-буџетот-за-идната-година-ќе-обезбедиме-summary-27917.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27917.webp" alt="СТОЈАНОВСКИ: Со Буџетот за идната година ќе обезбедиме повисоки плати и пензии, како и за капитални инвестиции и економски раст"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="economy-во-октомври-повторно-надмината-наплатата-на-приходи-од-summary-27916.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27916.webp"
+                                     alt="Во октомври повторно надмината наплатата на приходи од царина, вели Николовски"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">СТОЈАНОВСКИ: Со Буџетот за идната година ќе обезбедиме повисоки плати и пензии, како и за капитални инвестиции и економски раст</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Во октомври повторно надмината наплатата на приходи од царина, вели Николовски</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> коешто важно коешто граѓаните знаат, успеале обезбедиме средства повисоки плати, пензии сума којашто реална реализација капита...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> царинската управа октомври надмина недостижната наплата приходи – буџетот слеани 12,05 милијарди...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 8 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 9 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-љупчо-ти-текнува-кога-врвно-достигнување-ти-беше-броење-на-summary-27918.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27918.webp" alt="„ЉУПЧО, ТИ ТЕКНУВА КОГА ВРВНО ДОСТИГНУВАЊЕ ТИ БЕШЕ БРОЕЊЕ НА ИСПИЕНИ ЧАШИ ВОДА?“ Трипуновски му возврати на Николовски"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="economy-стојановски-со-буџетот-за-идната-година-ќе-обезбедиме-summary-27917.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27917.webp"
+                                     alt="СТОЈАНОВСКИ: Со Буџетот за идната година ќе обезбедиме повисоки плати и пензии, како и за капитални инвестиции и економски раст"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">„ЉУПЧО, ТИ ТЕКНУВА КОГА ВРВНО ДОСТИГНУВАЊЕ ТИ БЕШЕ БРОЕЊЕ НА ИСПИЕНИ ЧАШИ ВОДА?“ Трипуновски му возврати на Николовски</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">СТОЈАНОВСКИ: Со Буџетот за идната година ќе обезбедиме повисоки плати и пензии, како и за капитални инвестиции и економски раст</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> пратеникот сдсм поранешен министер земјоделство, љупчо николовски, реагираше интервјуто министерот цветан трипуновски иако при...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> коешто важно коешто граѓаните знаат, успеале обезбедиме средства повисоки плати, пензии сума кој...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 8 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">3</span>
-                                            вести
+                                            <span>пред 9 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-славески-водиме-претпазлива-монетарна-политика-и-подготвени-summary-27610.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27610.webp" alt="Славески: Водиме претпазлива монетарна политика и подготвени сме да им одговориме на сите потенцијални ризици"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="economy-љупчо-ти-текнува-кога-врвно-достигнување-ти-беше-броење-на-summary-27918.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27918.webp"
+                                     alt="„ЉУПЧО, ТИ ТЕКНУВА КОГА ВРВНО ДОСТИГНУВАЊЕ ТИ БЕШЕ БРОЕЊЕ НА ИСПИЕНИ ЧАШИ ВОДА?“ Трипуновски му возврати на Николовски"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Славески: Водиме претпазлива монетарна политика и подготвени сме да им одговориме на сите потенцијални ризици</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">„ЉУПЧО, ТИ ТЕКНУВА КОГА ВРВНО ДОСТИГНУВАЊЕ ТИ БЕШЕ БРОЕЊЕ НА ИСПИЕНИ ЧАШИ ВОДА?“ Трипуновски му возврати на Николовски</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> гувернерот посочи низата макропрудентни мерки народната банка презеде изминатиов период втора линија одбрана, коишто поддржа п...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> пратеникот сдсм поранешен министер земјоделство, љупчо николовски, реагираше интервјуто министер...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 34 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">5</span>
-                                            вести
+                                            <span>пред 9 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">3</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
-                    <div id="mobile-ad-container-mid" class="my-6">
-                        <a id="mobile-ad-link-mid" href="#"
-                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                    </div>
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-министерката-за-енергетика-во-посета-на-лабораторијата-за-summary-27723.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27723.webp" alt="Министерката за енергетика во посета на лабораторијата за проверка на броила на Електродистрибуција Скопје"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Министерката за енергетика во посета на лабораторијата за проверка на броила на Електродистрибуција Скопје</h3>
-
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> министерката енергетика, рударство минерални суровини, сања божиновска, посети акредитираната лабораторија проверка броила еле...</p>
-
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 30 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                                        <span>
-                                            <span class="font-semibold">4</span>
-                                            вести
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-рке-не-очекува-какви-било-поместувања-на-цената-на-струјата-summary-27644.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27644.webp" alt="РКЕ не очекува какви било поместувања на цената на струјата"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="economy-славески-водиме-претпазлива-монетарна-политика-и-подготвени-summary-27610.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27610.webp"
+                                     alt="Славески: Водиме претпазлива монетарна политика и подготвени сме да им одговориме на сите потенцијални ризици"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">РКЕ не очекува какви било поместувања на цената на струјата</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Славески: Водиме претпазлива монетарна политика и подготвени сме да им одговориме на сите потенцијални ризици</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> крајот месецов почетокот следниот месец, регулаторната комисија енергетика (рке) соопшти цените пренос дистрибуција електрична...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> гувернерот посочи низата макропрудентни мерки народната банка презеде изминатиов период втора ли...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 33 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">4</span>
-                                            вести
+                                            <span>пред 34 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">5</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        <div id="mobile-ad-container-mid" class="mt-8">
+                            <a id="mobile-ad-link-mid" href="#"
+                               class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                        </div>
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-до-домот-кој-го-посакуваш-со-само-10-учество-нов-поволен-summary-27731.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27731.webp" alt="До домот кој го посакуваш со само 10% учество – Нов поволен станбен кредит од УНИБанка"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="economy-министерката-за-енергетика-во-посета-на-лабораторијата-за-summary-27723.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27723.webp"
+                                     alt="Министерката за енергетика во посета на лабораторијата за проверка на броила на Електродистрибуција Скопје"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">До домот кој го посакуваш со само 10% учество – Нов поволен станбен кредит од УНИБанка</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Министерката за енергетика во посета на лабораторијата за проверка на броила на Електродистрибуција Скопје</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> унибанка создаде кредит согласност насоките народна банка, креираат кредитни решенија поволни, достапни прилагодени младите ге...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> министерката енергетика, рударство минерални суровини, сања божиновска, посети акредитираната ла...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 30 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 30 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">4</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-процесот-на-привлекување-странски-инвестиции-е-тимски-summary-27702.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27702.webp" alt="Процесот на привлекување странски инвестиции е тимски, истакна Муцунски"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="economy-рке-не-очекува-какви-било-поместувања-на-цената-на-струјата-summary-27644.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27644.webp"
+                                     alt="РКЕ не очекува какви било поместувања на цената на струјата"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Процесот на привлекување странски инвестиции е тимски, истакна Муцунски</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">РКЕ не очекува какви било поместувања на цената на струјата</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> значи, работиме координирано тим, истакна муцунски одговр новинарско прашање денешната прес конференција владата.  процесот пр...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> крајот месецов почетокот следниот месец, регулаторната комисија енергетика (рке) соопшти цените ...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 31 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 33 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">4</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-европската-инвестициска-банка-отвора-претставништво-во-summary-27692.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%95%D0%B2%D1%80%D0%BE%D0%BF%D1%81%D0%BA%D0%B0%D1%82%D0%B0+%D0%B8%D0%BD%D0%B2%D0%B5%D1%81%D1%82%D0%B8%D1%86%D0%B8%D1%81%D0%BA%D0%B0+%D0%B1%D0%B0%D0%BD%D0%BA%D0%B0+%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B0+%D0%BF%D1%80%D0%B5%D1%82%D1%81%D1%82%D0%B0%D0%B2%D0%BD%D0%B8%D1%88%D1%82%D0%B2%D0%BE+%D0%B2%D0%BE+%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5" alt="Европската инвестициска банка отвора претставништво во Скопје"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="economy-до-домот-кој-го-посакуваш-со-само-10-учество-нов-поволен-summary-27731.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27731.webp"
+                                     alt="До домот кој го посакуваш со само 10% учество – Нов поволен станбен кредит од УНИБанка"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Европската инвестициска банка отвора претставништво во Скопје</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">До домот кој го посакуваш со само 10% учество – Нов поволен станбен кредит од УНИБанка</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> договор зајакнува нашето партнерство потврдува заедничките цели – поддршка патот северна македонија интеграција европската уни...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> унибанка создаде кредит согласност насоките народна банка, креираат кредитни решенија поволни, д...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 31 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 30 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-            </div>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="economy-процесот-на-привлекување-странски-инвестиции-е-тимски-summary-27702.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27702.webp"
+                                     alt="Процесот на привлекување странски инвестиции е тимски, истакна Муцунски"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-            <!-- ✅ Pagination (optional; safe even if you don’t use it yet) -->
-            <div class="flex justify-center mt-6">
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Процесот на привлекување странски инвестиции е тимски, истакна Муцунски</h3>
+
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> значи, работиме координирано тим, истакна муцунски одговр новинарско прашање денешната прес конф...</p>
+
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 31 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
+                    
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="economy-европската-инвестициска-банка-отвора-претставништво-во-summary-27692.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%95%D0%B2%D1%80%D0%BE%D0%BF%D1%81%D0%BA%D0%B0%D1%82%D0%B0+%D0%B8%D0%BD%D0%B2%D0%B5%D1%81%D1%82%D0%B8%D1%86%D0%B8%D1%81%D0%BA%D0%B0+%D0%B1%D0%B0%D0%BD%D0%BA%D0%B0+%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B0+%D0%BF%D1%80%D0%B5%D1%82%D1%81%D1%82%D0%B0%D0%B2%D0%BD%D0%B8%D1%88%D1%82%D0%B2%D0%BE+%D0%B2%D0%BE+%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5"
+                                     alt="Европската инвестициска банка отвора претставништво во Скопје"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Европската инвестициска банка отвора претставништво во Скопје</h3>
+
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> договор зајакнува нашето партнерство потврдува заедничките цели – поддршка патот северна македон...</p>
+
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 32 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
+                    
+                </div>
+
+                <!-- Optional pagination (if you pass these vars) -->
+                <div class="flex justify-center mt-6">
     <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
 
         <!-- Previous -->
@@ -621,10 +626,11 @@
            aria-label="Next">&raquo;</a>
     </nav>
 </div>
-        </main>
+            </main>
+        </div>
     </div>
 
-    <!-- Footer -->
+    <!-- ✅ Footer like index-mobile -->
     <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->

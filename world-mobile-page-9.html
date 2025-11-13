@@ -40,10 +40,11 @@
 <body class="theme-bg-primary">
 <div class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
      style='font-family: Newsreader, "Noto Sans", sans-serif;'>
-
-    <div class="max-w-7xl mx-auto w-full">
-        <!-- ✅ Mobile header (shared) -->
+    <!-- ✅ same max width as index-mobile -->
+    <div class="max-w-3xl mx-auto w-full">
         <div>
+            <!-- ✅ Mobile Header (same component) -->
+            <div>
     <!-- Mobile Header -->
     <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
         <!-- Hamburger Menu Button -->
@@ -224,376 +225,380 @@
     <button id="theme-toggle" class="hidden"></button>
 </div>
 
-        <main class="p-2 sm:p-4">
-            <!-- Category title -->
-            <h1 class="theme-text-primary text-2xl font-bold mb-4 px-2">Свет</h1>
-
-            <div class="flex flex-col gap-4">
-                <!-- Top mobile ad -->
+            <main class="p-2 sm:p-4 flex flex-col gap-6">
+                <!-- Top Ad Banner (same as index-mobile) -->
                 <div id="mobile-ad-container-top" class="mb-4">
                     <a id="mobile-ad-link-top" href="#"
                        class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
                 </div>
 
-                <!-- Articles list -->
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-политико-ле-пен-нема-да-се-кандидира-за-претседател-ако-summary-27700.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27700.webp" alt="Политико: Ле Пен нема да се кандидира за претседател ако судот ја потврди забраната за избори"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Политико: Ле Пен нема да се кандидира за претседател ако судот ја потврди забраната за избори</h3>
-
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> откако прогласи виновна, судот веднаш ѝ изрече петгодишна забрана ле пен кандидира функција, апелацискиот суд поништи.  марин ...</p>
-
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 31 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                                        <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <!-- ✅ Category header styled like a section header -->
+                <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                    <div class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl">
+                        <span>Свет</span>
                     </div>
+                </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                <!-- ✅ Articles list – copied from index-mobile -->
+                <div class="flex flex-col divide-y theme-border-color mt-2">
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-единствениот-внук-на-џон-ф-кенеди-влегува-во-политиката-summary-27696.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27696.webp" alt="Единствениот внук на Џон Ф. Кенеди влегува во политиката"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="world-политико-ле-пен-нема-да-се-кандидира-за-претседател-ако-summary-27700.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27700.webp"
+                                     alt="Политико: Ле Пен нема да се кандидира за претседател ако судот ја потврди забраната за избори"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Единствениот внук на Џон Ф. Кенеди влегува во политиката</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Политико: Ле Пен нема да се кандидира за претседател ако судот ја потврди забраната за избори</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> џек бувие кенеди шлосберг, 32 годишниот внук поранешниот американски претседател џон фитцџералд кенеди, планира кандидира конг...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> откако прогласи виновна, судот веднаш ѝ изрече петгодишна забрана ле пен кандидира функција, апе...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 31 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 31 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-белгиското-министерство-за-одбрана-испраќа-покани-за-summary-27683.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27683.webp" alt="Белгиското Министерство за одбрана испраќа покани за доброволен воен рок: Ќе бидат избрани 500 млади"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="world-единствениот-внук-на-џон-ф-кенеди-влегува-во-политиката-summary-27696.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27696.webp"
+                                     alt="Единствениот внук на Џон Ф. Кенеди влегува во политиката"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Белгиското Министерство за одбрана испраќа покани за доброволен воен рок: Ќе бидат избрани 500 млади</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Единствениот внук на Џон Ф. Кенеди влегува во политиката</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> министерството одбрана нуди единствена можност: година доброволна воена служба, наведува поканата испратена речиси 130 илјади ...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> џек бувие кенеди шлосберг, 32 годишниот внук поранешниот американски претседател џон фитцџералд ...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 32 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-израел-уништи-повеќе-од-1-500-згради-во-газа-од-прекинот-на-summary-27684.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27684.webp" alt="Израел уништи повеќе од 1 500 згради во Газа од прекинот на огнот"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="world-белгиското-министерство-за-одбрана-испраќа-покани-за-summary-27683.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27683.webp"
+                                     alt="Белгиското Министерство за одбрана испраќа покани за доброволен воен рок: Ќе бидат избрани 500 млади"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Израел уништи повеќе од 1 500 згради во Газа од прекинот на огнот</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Белгиското Министерство за одбрана испраќа покани за доброволен воен рок: Ќе бидат избрани 500 млади</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> смета вистинскиот број уништени згради значително поголем, бидејќи достапни сателитските снимки некои области израел уништи 1 ...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> министерството одбрана нуди единствена можност: година доброволна воена служба, наведува поканат...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 32 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-силен-земјотрес-во-кипар-луѓето-истрчаа-на-улица-беше-summary-27676.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27676.webp" alt="Силен земјотрес во Кипар, луѓето истрчаа на улица: „Беше страшно!“"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="world-израел-уништи-повеќе-од-1-500-згради-во-газа-од-прекинот-на-summary-27684.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27684.webp"
+                                     alt="Израел уништи повеќе од 1 500 згради во Газа од прекинот на огнот"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Силен земјотрес во Кипар, луѓето истрчаа на улица: „Беше страшно!“</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Израел уништи повеќе од 1 500 згради во Газа од прекинот на огнот</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> кипар денес погоден земјотрес интензитет 5,3 степени според рихтеровата скала, соопшти европско медитеранскиот сеизмолошки цен...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> смета вистинскиот број уништени згради значително поголем, бидејќи достапни сателитските снимки ...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 32 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
-                    <div id="mobile-ad-container-mid" class="my-6">
-                        <a id="mobile-ad-link-mid" href="#"
-                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                    </div>
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-вознемирувачко-видео-скандал-во-турција-директор-на-училиште-summary-27677.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27677.webp" alt="ВОЗНЕМИРУВАЧКО ВИДЕО! Скандал во Турција: Директор на училиште турнал ученик со посебни потреби по скалите"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">ВОЗНЕМИРУВАЧКО ВИДЕО! Скандал во Турција: Директор на училиште турнал ученик со посебни потреби по скалите</h3>
-
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> осомничениот насилник приведен дел истрагата покрената инцидентот случи населбата тургутлу маниса.  голем скандал случи турциј...</p>
-
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                                        <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-анкара-потврди-20-турски-војници-загинаа-во-падoт-на-авионот-summary-27682.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27682.webp" alt="Анкара потврди: 20 турски војници загинаа во падoт на авионот, објавени имињата и фотографиите на жртвите, причините сè уште непознати"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="world-силен-земјотрес-во-кипар-луѓето-истрчаа-на-улица-беше-summary-27676.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27676.webp"
+                                     alt="Силен земјотрес во Кипар, луѓето истрчаа на улица: „Беше страшно!“"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Анкара потврди: 20 турски војници загинаа во падoт на авионот, објавени имињата и фотографиите на жртвите, причините сè уште непознати</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Силен земјотрес во Кипар, луѓето истрчаа на улица: „Беше страшно!“</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> турскиот воен транспортен авион ц 130 полетал азербејџан, моментот уривањето враќал турција, соопшти турското министерство одб...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> кипар денес погоден земјотрес интензитет 5,3 степени според рихтеровата скала, соопшти европско ...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 32 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 32 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        <div id="mobile-ad-container-mid" class="mt-8">
+                            <a id="mobile-ad-link-mid" href="#"
+                               class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                        </div>
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-извештај-на-еу-за-миграцијата-илегалните-преминувања-на-summary-27699.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27699.webp" alt="Извештај на ЕУ за миграцијата: Илегалните преминувања на надворешните граници намалени за 35 отсто "
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="world-вознемирувачко-видео-скандал-во-турција-директор-на-училиште-summary-27677.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27677.webp"
+                                     alt="ВОЗНЕМИРУВАЧКО ВИДЕО! Скандал во Турција: Директор на училиште турнал ученик со посебни потреби по скалите"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Извештај на ЕУ за миграцијата: Илегалните преминувања на надворешните граници намалени за 35 отсто </h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">ВОЗНЕМИРУВАЧКО ВИДЕО! Скандал во Турција: Директор на училиште турнал ученик со посебни потреби по скалите</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> извештајот, рамки пактот миграција азил, чија целосна имплементација почне јуни 2026 година, дава сеопфатен преглед состојбата...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> осомничениот насилник приведен дел истрагата покрената инцидентот случи населбата тургутлу манис...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 31 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 32 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-израел-повторно-го-отвори-преминот-зиким-во-северна-газа-за-summary-27645.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27645.webp" alt="Израел повторно го отвори преминот Зиким во северна Газа за влез на камиони со хуманитарна помош"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="world-анкара-потврди-20-турски-војници-загинаа-во-падoт-на-авионот-summary-27682.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27682.webp"
+                                     alt="Анкара потврди: 20 турски војници загинаа во падoт на авионот, објавени имињата и фотографиите на жртвите, причините сè уште непознати"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Израел повторно го отвори преминот Зиким во северна Газа за влез на камиони со хуманитарна помош</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Анкара потврди: 20 турски војници загинаа во падoт на авионот, објавени имињата и фотографиите на жртвите, причините сè уште непознати</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> агенциите помош обединетите нации побараа отворање преминот овозможи помош пристигне разурнатиот северен дел појасот газа, осо...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> турскиот воен транспортен авион ц 130 полетал азербејџан, моментот уривањето враќал турција, соо...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 33 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 32 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-на-аеродромот-во-атина-запленети-над-1-6-милиони-парчиња-summary-27640.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9D%D0%B0+%D0%B0%D0%B5%D1%80%D0%BE%D0%B4%D1%80%D0%BE%D0%BC%D0%BE%D1%82+%D0%B2%D0%BE+%D0%90%D1%82%D0%B8%D0%BD%D0%B0+%D0%B7%D0%B0%D0%BF%D0%BB%D0%B5%D0%BD%D0%B5%D1%82%D0%B8+%D0%BD%D0%B0%D0%B4+1%2C6+%D0%BC%D0%B8%D0%BB%D0%B8%D0%BE%D0%BD%D0%B8+%D0%BF%D0%B0%D1%80%D1%87%D0%B8%D1%9A%D0%B0+%D1%86%D0%B8%D0%B3%D0%B0%D1%80%D0%B8" alt="На аеродромот во Атина запленети над 1,6 милиони парчиња цигари"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="world-извештај-на-еу-за-миграцијата-илегалните-преминувања-на-summary-27699.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27699.webp"
+                                     alt="Извештај на ЕУ за миграцијата: Илегалните преминувања на надворешните граници намалени за 35 отсто "
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">На аеродромот во Атина запленети над 1,6 милиони парчиња цигари</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Извештај на ЕУ за миграцијата: Илегалните преминувања на надворешните граници намалени за 35 отсто </h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> дубаи откриена атинскиот аеродромот елефтериос венизелос, јави дописничката миа атина.  независната управа јавни приходи грциј...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> извештајот, рамки пактот миграција азил, чија целосна имплементација почне јуни 2026 година, дав...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 33 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 31 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-            </div>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="world-израел-повторно-го-отвори-преминот-зиким-во-северна-газа-за-summary-27645.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27645.webp"
+                                     alt="Израел повторно го отвори преминот Зиким во северна Газа за влез на камиони со хуманитарна помош"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-            <!-- ✅ Pagination (optional; safe even if you don’t use it yet) -->
-            <div class="flex justify-center mt-6">
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Израел повторно го отвори преминот Зиким во северна Газа за влез на камиони со хуманитарна помош</h3>
+
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> агенциите помош обединетите нации побараа отворање преминот овозможи помош пристигне разурнатиот...</p>
+
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 33 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
+                    
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="world-на-аеродромот-во-атина-запленети-над-1-6-милиони-парчиња-summary-27640.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9D%D0%B0+%D0%B0%D0%B5%D1%80%D0%BE%D0%B4%D1%80%D0%BE%D0%BC%D0%BE%D1%82+%D0%B2%D0%BE+%D0%90%D1%82%D0%B8%D0%BD%D0%B0+%D0%B7%D0%B0%D0%BF%D0%BB%D0%B5%D0%BD%D0%B5%D1%82%D0%B8+%D0%BD%D0%B0%D0%B4+1%2C6+%D0%BC%D0%B8%D0%BB%D0%B8%D0%BE%D0%BD%D0%B8+%D0%BF%D0%B0%D1%80%D1%87%D0%B8%D1%9A%D0%B0+%D1%86%D0%B8%D0%B3%D0%B0%D1%80%D0%B8"
+                                     alt="На аеродромот во Атина запленети над 1,6 милиони парчиња цигари"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">На аеродромот во Атина запленети над 1,6 милиони парчиња цигари</h3>
+
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> дубаи откриена атинскиот аеродромот елефтериос венизелос, јави дописничката миа атина.  независн...</p>
+
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 33 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
+                    
+                </div>
+
+                <!-- Optional pagination (if you pass these vars) -->
+                <div class="flex justify-center mt-6">
     <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
 
         <!-- Previous -->
@@ -636,10 +641,11 @@
            aria-label="Next">&raquo;</a>
     </nav>
 </div>
-        </main>
+            </main>
+        </div>
     </div>
 
-    <!-- Footer -->
+    <!-- ✅ Footer like index-mobile -->
     <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->

@@ -40,10 +40,11 @@
 <body class="theme-bg-primary">
 <div class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
      style='font-family: Newsreader, "Noto Sans", sans-serif;'>
-
-    <div class="max-w-7xl mx-auto w-full">
-        <!-- ✅ Mobile header (shared) -->
+    <!-- ✅ same max width as index-mobile -->
+    <div class="max-w-3xl mx-auto w-full">
         <div>
+            <!-- ✅ Mobile Header (same component) -->
+            <div>
     <!-- Mobile Header -->
     <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
         <!-- Hamburger Menu Button -->
@@ -224,376 +225,380 @@
     <button id="theme-toggle" class="hidden"></button>
 </div>
 
-        <main class="p-2 sm:p-4">
-            <!-- Category title -->
-            <h1 class="theme-text-primary text-2xl font-bold mb-4 px-2">Хроника</h1>
-
-            <div class="flex flex-col gap-4">
-                <!-- Top mobile ad -->
+            <main class="p-2 sm:p-4 flex flex-col gap-6">
+                <!-- Top Ad Banner (same as index-mobile) -->
                 <div id="mobile-ad-container-top" class="mb-4">
                     <a id="mobile-ad-link-top" href="#"
                        class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
                 </div>
 
-                <!-- Articles list -->
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="hronika-маж-сакал-да-ја-излаже-полицијата-пријавил-дека-возачката-summary-28063.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-28063.webp" alt="Маж сакал да ја излаже полицијата: Пријавил дека возачката дозвола му е изгубена, но ОВА е вистината"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Маж сакал да ја излаже полицијата: Пријавил дека возачката дозвола му е изгубена, но ОВА е вистината</h3>
-
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> пријавениот, управните служби овр дебар, поднел барање издавање нова возачка дозвола управна потапка, изјава изгубил возачката...</p>
-
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 6 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                                        <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <!-- ✅ Category header styled like a section header -->
+                <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                    <div class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl">
+                        <span>Хроника</span>
                     </div>
+                </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                <!-- ✅ Articles list – copied from index-mobile -->
+                <div class="flex flex-col divide-y theme-border-color mt-2">
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="hronika-мвр-во-петок-ќе-уништува-гранати-summary-28064.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9C%D0%92%D0%A0+%D0%B2%D0%BE+%D0%BF%D0%B5%D1%82%D0%BE%D0%BA+%D1%9C%D0%B5+%D1%83%D0%BD%D0%B8%D1%88%D1%82%D1%83%D0%B2%D0%B0+%D0%B3%D1%80%D0%B0%D0%BD%D0%B0%D1%82%D0%B8" alt="МВР во петок ќе уништува гранати"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="hronika-маж-сакал-да-ја-излаже-полицијата-пријавил-дека-возачката-summary-28063.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-28063.webp"
+                                     alt="Маж сакал да ја излаже полицијата: Пријавил дека возачката дозвола му е изгубена, но ОВА е вистината"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">МВР во петок ќе уништува гранати</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Маж сакал да ја излаже полицијата: Пријавил дека возачката дозвола му е изгубена, но ОВА е вистината</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> министерството внатрешни работи известува граѓаните 14. полицискиот центар ѓорче петров скопје бидат уништени гранати, според ...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> пријавениот, управните служби овр дебар, поднел барање издавање нова возачка дозвола управна пот...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 6 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 7 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="hronika-двајца-уапсени-во-валандово-за-управување-возило-под-дејство-summary-28062.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%94%D0%B2%D0%B0%D1%98%D1%86%D0%B0+%D1%83%D0%B0%D0%BF%D1%81%D0%B5%D0%BD%D0%B8+%D0%B2%D0%BE+%D0%92%D0%B0%D0%BB%D0%B0%D0%BD%D0%B4%D0%BE%D0%B2%D0%BE+%D0%B7%D0%B0+%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D1%83%D0%B2%D0%B0%D1%9A%D0%B5+%D0%B2%D0%BE%D0%B7%D0%B8%D0%BB%D0%BE+%D0%BF%D0%BE%D0%B4+%D0%B4%D0%B5%D1%98%D1%81%D1%82%D0%B2%D0%BE+%D0%BD%D0%B0+%D0%B0%D0%BB%D0%BA%D0%BE%D1%85%D0%BE%D0%BB+%D0%B8+%D0%B7%D0%B0+%D0%BF%D0%BE%D1%81%D0%B5%D0%B4%D1%83%D0%B2%D0%B0%D1%9A%D0%B5+%D0%B4%D1%80%D0%BE%D0%B3%D0%B0" alt="Двајца уапсени во Валандово за управување возило под дејство на алкохол и за поседување дрога"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="hronika-мвр-во-петок-ќе-уништува-гранати-summary-28064.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9C%D0%92%D0%A0+%D0%B2%D0%BE+%D0%BF%D0%B5%D1%82%D0%BE%D0%BA+%D1%9C%D0%B5+%D1%83%D0%BD%D0%B8%D1%88%D1%82%D1%83%D0%B2%D0%B0+%D0%B3%D1%80%D0%B0%D0%BD%D0%B0%D1%82%D0%B8"
+                                     alt="МВР во петок ќе уништува гранати"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Двајца уапсени во Валандово за управување возило под дејство на алкохол и за поседување дрога</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">МВР во петок ќе уништува гранати</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> контрола патниот сообраќај, полициските службеници сопреле патничко возило опел корса гевгелиски регистарски ознаки, управувал...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> министерството внатрешни работи известува граѓаните 14. полицискиот центар ѓорче петров скопје б...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 6 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 7 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="hronika-кривична-пријава-против-поранешни-функционери-и-службеници-summary-27941.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27941.webp" alt="Кривична пријава против поранешни функционери и службеници во Општина Сарај и Град Скопје"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="hronika-двајца-уапсени-во-валандово-за-управување-возило-под-дејство-summary-28062.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%94%D0%B2%D0%B0%D1%98%D1%86%D0%B0+%D1%83%D0%B0%D0%BF%D1%81%D0%B5%D0%BD%D0%B8+%D0%B2%D0%BE+%D0%92%D0%B0%D0%BB%D0%B0%D0%BD%D0%B4%D0%BE%D0%B2%D0%BE+%D0%B7%D0%B0+%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D1%83%D0%B2%D0%B0%D1%9A%D0%B5+%D0%B2%D0%BE%D0%B7%D0%B8%D0%BB%D0%BE+%D0%BF%D0%BE%D0%B4+%D0%B4%D0%B5%D1%98%D1%81%D1%82%D0%B2%D0%BE+%D0%BD%D0%B0+%D0%B0%D0%BB%D0%BA%D0%BE%D1%85%D0%BE%D0%BB+%D0%B8+%D0%B7%D0%B0+%D0%BF%D0%BE%D1%81%D0%B5%D0%B4%D1%83%D0%B2%D0%B0%D1%9A%D0%B5+%D0%B4%D1%80%D0%BE%D0%B3%D0%B0"
+                                     alt="Двајца уапсени во Валандово за управување возило под дејство на алкохол и за поседување дрога"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Кривична пријава против поранешни функционери и службеници во Општина Сарај и Град Скопје</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Двајца уапсени во Валандово за управување возило под дејство на алкохол и за поседување дрога</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> управата финансиска полиција поднесе кривична пријава основното јавно обвинителство – скопје против осум лица, поранешни функц...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> контрола патниот сообраќај, полициските службеници сопреле патничко возило опел корса гевгелиски...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 8 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">3</span>
-                                            вести
+                                            <span>пред 7 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="hronika-одложено-рочиштето-против-екс-директорите-на-амс-за-summary-28013.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-28013.webp" alt="Одложено рочиштето против екс директорите на АМС за злоупотреба на спортски ваучери"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="hronika-кривична-пријава-против-поранешни-функционери-и-службеници-summary-27941.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27941.webp"
+                                     alt="Кривична пријава против поранешни функционери и службеници во Општина Сарај и Град Скопје"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Одложено рочиштето против екс директорите на АМС за злоупотреба на спортски ваучери</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Кривична пријава против поранешни функционери и службеници во Општина Сарај и Град Скопје</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> информираа основниот кривичен суд, судската постапка продолжи редовна процедура, следното судско рочиште одржи според претходн...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> управата финансиска полиција поднесе кривична пријава основното јавно обвинителство – скопје про...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 7 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 9 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">3</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
-                    <div id="mobile-ad-container-mid" class="my-6">
-                        <a id="mobile-ad-link-mid" href="#"
-                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                    </div>
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="hronika-стружанец-нападнал-полицаец-откако-го-затекнале-при-summary-27840.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27840.webp" alt="Стружанец нападнал полицаец откако го затекнале при незаконит риболов на Црн Дрим"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Стружанец нападнал полицаец откако го затекнале при незаконит риболов на Црн Дрим</h3>
-
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> надворешната канцеларија криминалистички работи струга поднесе кривична пријава против б. б. струга поради постоење основи сом...</p>
-
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 21 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                                        <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="hronika-малолетник-физички-нападнат-со-остар-предмет-во-центар-му-го-summary-27793.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27793.webp" alt="Малолетник физички нападнат со остар предмет во Центар – му го оштетиле и велосипедот"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="hronika-одложено-рочиштето-против-екс-директорите-на-амс-за-summary-28013.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-28013.webp"
+                                     alt="Одложено рочиштето против екс директорите на АМС за злоупотреба на спортски ваучери"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Малолетник физички нападнат со остар предмет во Центар – му го оштетиле и велосипедот</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Одложено рочиштето против екс директорите на АМС за злоупотреба на спортски ваучери</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> м. скопје пријави 15:50 часот подрачјето центар, неговиот 12 годишен син физички нападнат б. љ. малолетникот пренесен комплекс...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> информираа основниот кривичен суд, судската постапка продолжи редовна процедура, следното судско...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 26 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 8 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        <div id="mobile-ad-container-mid" class="mt-8">
+                            <a id="mobile-ad-link-mid" href="#"
+                               class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                        </div>
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="hronika-нов-случај-на-семејно-насилство-ќерка-ја-претепала-својата-summary-27785.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27785.webp" alt="Нов случај на семејно насилство: Ќерка ја претепала својата 62-годишна мајка"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="hronika-стружанец-нападнал-полицаец-откако-го-затекнале-при-summary-27840.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27840.webp"
+                                     alt="Стружанец нападнал полицаец откако го затекнале при незаконит риболов на Црн Дрим"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Нов случај на семејно насилство: Ќерка ја претепала својата 62-годишна мајка</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Стружанец нападнал полицаец откако го затекнале при незаконит риболов на Црн Дрим</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> свр охрид лишиле 35 годишна жена, постапувајќи претходна пријава физички нападнала нејзината 62 годишна мајка, употребила тврд...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> надворешната канцеларија криминалистички работи струга поднесе кривична пријава против б. б. стр...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 26 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 22 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="hronika-одложено-рочиштето-за-прегазениот-пешак-кај-паркот-на-summary-27771.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27771.webp" alt="Одложено рочиштето за прегазениот пешак кај Паркот на франкофонијата"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="hronika-малолетник-физички-нападнат-со-остар-предмет-во-центар-му-го-summary-27793.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27793.webp"
+                                     alt="Малолетник физички нападнат со остар предмет во Центар – му го оштетиле и велосипедот"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Одложено рочиштето за прегазениот пешак кај Паркот на франкофонијата</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Малолетник физички нападнат со остар предмет во Центар – му го оштетиле и велосипедот</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> основниот кривичен суд скопје одложи денешното судско рочиште против 25 годишниот скопјанец фатон љури, обвинет 1 јули, година...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> м. скопје пријави 15:50 часот подрачјето центар, неговиот 12 годишен син физички нападнат б. љ. ...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 28 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">3</span>
-                                            вести
+                                            <span>пред 26 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="hronika-приведен-24-годишник-од-охрид-физички-ја-нападнал-својата-summary-27784.html" class="flex gap-3">
-                            <!-- Thumbnail -->
-                            <img src="images/cache/summary-27784.webp" alt="Приведен 24-годишник од Охрид, физички ја нападнал својата мајка"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="hronika-нов-случај-на-семејно-насилство-ќерка-ја-претепала-својата-summary-27785.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27785.webp"
+                                     alt="Нов случај на семејно насилство: Ќерка ја претепала својата 62-годишна мајка"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-                            <!-- Content -->
-                            <div class="flex flex-col flex-1">
-                                <!-- Title -->
-                                <h3 class="theme-text-primary text-base md:text-lg font-bold mb-1">Приведен 24-годишник од Охрид, физички ја нападнал својата мајка</h3>
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Нов случај на семејно насилство: Ќерка ја претепала својата 62-годишна мајка</h3>
 
-                                <!-- Description snippet -->
-                                <p class="theme-text-secondary text-xs md:text-sm"> јане сандански охрид, полициски службеници свр охрид лишија 24 годишник охрид, постапувајќи претходна пријава физички нападнал...</p>
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> свр охрид лишиле 35 годишна жена, постапувајќи претходна пријава физички нападнала нејзината 62 ...</p>
 
-                                <!-- Meta line -->
-                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2 flex-wrap">
-                                    <span>
-                                        <span>пред 26 часа</span>
-                                    </span>
-
-                                    <!-- Optional: source count badge (works nicely for Спорт and others) -->
-                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
                                         <span>
-                                            <span class="font-semibold">2</span>
-                                            вести
+                                            <span>пред 27 часа</span>
                                         </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <!-- Mid mobile ad after 5th item -->
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
                     
-                
-            </div>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="hronika-одложено-рочиштето-за-прегазениот-пешак-кај-паркот-на-summary-27771.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27771.webp"
+                                     alt="Одложено рочиштето за прегазениот пешак кај Паркот на франкофонијата"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-            <!-- ✅ Pagination (optional; safe even if you don’t use it yet) -->
-            <div class="flex justify-center mt-6">
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Одложено рочиштето за прегазениот пешак кај Паркот на франкофонијата</h3>
+
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> основниот кривичен суд скопје одложи денешното судско рочиште против 25 годишниот скопјанец фато...</p>
+
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 28 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">3</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
+                    
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="hronika-приведен-24-годишник-од-охрид-физички-ја-нападнал-својата-summary-27784.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-27784.webp"
+                                     alt="Приведен 24-годишник од Охрид, физички ја нападнал својата мајка"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Приведен 24-годишник од Охрид, физички ја нападнал својата мајка</h3>
+
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> јане сандански охрид, полициски службеници свр охрид лишија 24 годишник охрид, постапувајќи прет...</p>
+
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 27 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">2</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
+                    
+                </div>
+
+                <!-- Optional pagination (if you pass these vars) -->
+                <div class="flex justify-center mt-6">
     <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
 
         <!-- Previous -->
@@ -621,10 +626,11 @@
            aria-label="Next">&raquo;</a>
     </nav>
 </div>
-        </main>
+            </main>
+        </div>
     </div>
 
-    <!-- Footer -->
+    <!-- ✅ Footer like index-mobile -->
     <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
