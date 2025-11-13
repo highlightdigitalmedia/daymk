@@ -71,16 +71,159 @@
         <div class="p-4">
             <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
             <nav class="flex flex-col gap-2">
-                <!-- Main Nav Links -->
-                <a href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Вести</a><a href="sports.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Спорт</a><a href="magazine.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Магазин</a>
-                <a href="latest-news.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a><a href="prognoza.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a><a href="radio.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a><a href="youtube.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="intimate.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Intimate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="radio.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="youtube.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+
                 <hr class="my-3 theme-border-color">
-                <!-- Other Utility Links -->
-                <button id="theme-toggle-mobile" class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
                     <span id="theme-toggle-mobile-text">Toggle Theme</span>
                 </button>
-                <a id="switch-to-desktop-button" href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Стандардна верзија</a>
+                <a id="switch-to-desktop-button"
+                   href="index.html"
+                   class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">
+                    Стандардна верзија
+                </a>
             </nav>
+
         </div>
     </div>
 
@@ -99,14 +242,59 @@
 
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-марија-шерифовиќ-се-збогуваше-со-својот-татко-со-трогателен-summary-27964.html" class="flex gap-3">
-                            <img src="images/cache/summary-27964.webp" alt="Марија Шерифовиќ се збогуваше со својот татко со трогателен говор: „За ништо не ти забележувам“"
+                        <a href="magazine-дневен-хороскоп-овенот-ќе-оживее-стар-план-бикот-ќе-расчисти-summary-28071.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%94%D0%BD%D0%B5%D0%B2%D0%B5%D0%BD+%D1%85%D0%BE%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%3A+%D0%9E%D0%B2%D0%B5%D0%BD%D0%BE%D1%82+%D1%9C%D0%B5+%D0%BE%D0%B6%D0%B8%D0%B2%D0%B5%D0%B5+%D1%81%D1%82%D0%B0%D1%80+%D0%BF%D0%BB%D0%B0%D0%BD%2C+%D0%91%D0%B8%D0%BA%D0%BE%D1%82+%D1%9C%D0%B5+%D1%80%D0%B0%D1%81%D1%87%D0%B8%D1%81%D1%82%D0%B8+%D0%BD%D0%B5%D1%88%D1%82%D0%BE+%D1%88%D1%82%D0%BE+%D0%B3%D0%BE+%D0%BC%D0%B0%D1%87%D0%B8+%D0%B4%D0%BE%D0%BB%D0%B3%D0%BE+%D0%B2%D1%80%D0%B5%D0%BC%D0%B5" alt="Дневен хороскоп: Овенот ќе оживее стар план, Бикот ќе расчисти нешто што го мачи долго време"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Марија Шерифовиќ се збогуваше со својот татко со трогателен говор: „За ништо не ти забележувам“</h3>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Дневен хороскоп: Овенот ќе оживее стар план, Бикот ќе расчисти нешто што го мачи долго време</h3>
+                                <p class="theme-text-secondary text-sm"> конјункцијата меркур–марс ве поттикнува оживеете стара идеја била драга.  девиците одлично друштво бидејќи даваат структура, избегнувајте близнаци...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-љубовта-им-е-бонус-а-богатството-цел-хороскопот-открива-кои-summary-28068.html" class="flex gap-3">
+                            <img src="images/cache/summary-28068.webp" alt="Љубовта им е бонус, а богатството – цел: Хороскопот открива кои жени го одбираат второто!"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Љубовта им е бонус, а богатството – цел: Хороскопот открива кои жени го одбираат второто!</h3>
+                                <p class="theme-text-secondary text-sm"> сака финансиска сигурност бракот, жената бик бара сопруг меѓу вага, риби јарец.  сака финансиска сигурност, бара брачен партнер знакот овен, бик л...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-научниците-открија-зошто-птиците-пеат-толку-гласно-в-зори-summary-28069.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9D%D0%B0%D1%83%D1%87%D0%BD%D0%B8%D1%86%D0%B8%D1%82%D0%B5+%D0%BE%D1%82%D0%BA%D1%80%D0%B8%D1%98%D0%B0+%D0%B7%D0%BE%D1%88%D1%82%D0%BE+%D0%BF%D1%82%D0%B8%D1%86%D0%B8%D1%82%D0%B5+%D0%BF%D0%B5%D0%B0%D1%82+%D1%82%D0%BE%D0%BB%D0%BA%D1%83+%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%BE+%D0%B2+%D0%B7%D0%BE%D1%80%D0%B8" alt="Научниците открија зошто птиците пеат толку гласно в зори"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Научниците открија зошто птиците пеат толку гласно в зори</h3>
+                                <p class="theme-text-secondary text-sm"> ново истражување, чека рецензија, нуди можен одговор проучување однесувањето птиците .  интензитетот песни чини воден исчекувањето изгрејсонцето з...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-трогателен-говор-на-марија-шерифовиќ-на-погребот-на-татко-ѝ-summary-27964.html" class="flex gap-3">
+                            <img src="images/cache/summary-27964.webp" alt="Трогателен говор на Марија Шерифовиќ на погребот на татко ѝ "
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Трогателен говор на Марија Шерифовиќ на погребот на татко ѝ </h3>
                                 <p class="theme-text-secondary text-sm"> твојата ќерка сака марија, синот даниел, внукот марио твојата омилена пејачка верица, .  твојата омилена пејачка, твојата верица, ѝ недостигаш, иа...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -121,12 +309,15 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Дневен хороскоп за четврток, 13-ти ноември 2025 година</h3>
                                 <p class="theme-text-secondary text-sm"> девица трудите стигнете правите важно деловен план, почитувате пријателите, запоставувате саканата личност потреби.  доколку имате обврски, потешк...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    
+                    <div id="mobile-ad-container-mid" class="my-6">
+                        <a id="mobile-ad-link-mid" href="#"
+                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                    </div>
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
                         <a href="magazine-поларна-светлина-на-небото-над-северна-белгија-и-холандија-summary-27970.html" class="flex gap-3">
@@ -136,7 +327,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Поларна светлина на небото над северна Белгија и Холандија </h3>
                                 <p class="theme-text-secondary text-sm"> првите наелектризирани честички сонцето судриле земјината атмосфера вторникот вечерта, создавајќи поларната светлина.  социјалните мрежи појавија ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -151,7 +342,202 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Стисокот на раката открива многу повеќе одошто мислите</h3>
                                 <p class="theme-text-secondary text-sm"> жените забележан сличен тренд, поизразена физичка сила, често имаат поактивен љубовен живот, иако должината врски била поврзана јачината стисокот....</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-јадела-по-3-јајца-секој-ден-и-еве-што-ѝ-се-случи-по-само-7-summary-28206.html" class="flex gap-3">
+                            <img src="images/cache/summary-28206.webp" alt="Јадела по 3 јајца секој ден и еве што ѝ се случи по само 7 дена"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Јадела по 3 јајца секој ден и еве што ѝ се случи по само 7 дена</h3>
+                                <p class="theme-text-secondary text-sm"> имајќи предвид здравствени придобивки, новинарката џејми стејтис сајтот одлучила недела јаде јајца ден.  пример, наместо посегнам благ мафин хотел...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-еурактив-дали-белгија-станува-првата-нарко-држава-во-европа-summary-28205.html" class="flex gap-3">
+                            <img src="images/cache/summary-28205.webp" alt="„Еурактив“: Дали Белгија станува првата „нарко-држава“ во Европа? "
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">„Еурактив“: Дали Белгија станува првата „нарко-држава“ во Европа? </h3>
+                                <p class="theme-text-secondary text-sm"> белгија минатото центар дрогата европа, нејзината географска положба пристаништата антверпен зебриж, минуваат милиони тони товар, направија земјат...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-овие-3-хороскопски-знаци-не-трпат-критики-summary-28104.html" class="flex gap-3">
+                            <img src="images/cache/summary-28104.webp" alt="Овие 3 хороскопски знаци не трпат критики"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Овие 3 хороскопски знаци не трпат критики</h3>
+                                <p class="theme-text-secondary text-sm"> затоа внимателно постапува , бидејќи веднаш бидат навредени постои можност безопасната критика прерасне голем конфликт.  постои можност безопасна ...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-колку-кафе-може-да-се-пие-во-текот-на-денот-summary-28096.html" class="flex gap-3">
+                            <img src="images/cache/summary-28096.webp" alt="Колку кафе може да се пие во текот на денот?!"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Колку кафе може да се пие во текот на денот?!</h3>
+                                <p class="theme-text-secondary text-sm"> труењето кофеин случува телото акумулира опасно високи нивоа кофеин, сериозни последици, , ретки случаи, доведе смрт.  токсичните ефекти труењето ...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-днк-анализа-хитлер-имал-генетски-нарушувања-што-влијаеле-на-summary-28084.html" class="flex gap-3">
+                            <img src="images/cache/summary-28084.webp" alt="ДНК-анализа: Хитлер имал генетски нарушувања што влијаеле на неговите гениталии"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">ДНК-анализа: Хитлер имал генетски нарушувања што влијаеле на неговите гениталии</h3>
+                                <p class="theme-text-secondary text-sm"> наодите бидат образложени документарец наслов днк та хитлер, , , побива митот хитлер имал еврејско потекло с посочува оти веројатно имал невродиве...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-министре-каде-ја-скршивте-раката-summary-28070.html" class="flex gap-3">
+                            <img src="images/cache/summary-28070.webp" alt="Министре каде ја скршивте раката?"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Министре каде ја скршивте раката?</h3>
+                                <p class="theme-text-secondary text-sm"> министерот култура зоран љутков денешниот настан рамки конференцијата 75 основа развој креативен туризам негова одржливост, дел фестивалот развој ...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-како-кремљ-ја-крие-вистинската-локација-на-путин-трите-беж-summary-28072.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9A%D0%B0%D0%BA%D0%BE+%D0%9A%D1%80%D0%B5%D0%BC%D1%99+%D1%98%D0%B0+%D0%BA%D1%80%D0%B8%D0%B5+%D0%B2%D0%B8%D1%81%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%82%D0%B0+%D0%BB%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D1%98%D0%B0+%D0%BD%D0%B0+%D0%9F%D1%83%D1%82%D0%B8%D0%BD+%E2%80%93+%D1%82%D1%80%D0%B8%D1%82%D0%B5+%D0%B1%D0%B5%D0%B6+%D0%BA%D0%B0%D0%BD%D1%86%D0%B5%D0%BB%D0%B0%D1%80%D0%B8%D0%B8+%D0%BD%D0%B0+%D0%BF%D1%80%D0%B5%D1%82%D1%81%D0%B5%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D0%BE%D1%82" alt="Како Кремљ ја крие вистинската локација на Путин – трите беж канцеларии на претседателот"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Како Кремљ ја крие вистинската локација на Путин – трите беж канцеларии на претседателот</h3>
+                                <p class="theme-text-secondary text-sm"> според наодите, путин најмалку три речиси идентични канцеларии – ново огарјово , валдаи сочи .  почетокот војната украина зголемената опасност нап...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-една-честа-комбинација-на-додатоци-во-исхраната-може-да-ги-summary-28073.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%95%D0%B4%D0%BD%D0%B0+%D1%87%D0%B5%D1%81%D1%82%D0%B0+%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D1%98%D0%B0+%D0%BD%D0%B0+%D0%B4%D0%BE%D0%B4%D0%B0%D1%82%D0%BE%D1%86%D0%B8+%D0%B2%D0%BE+%D0%B8%D1%81%D1%85%D1%80%D0%B0%D0%BD%D0%B0%D1%82%D0%B0+%D0%BC%D0%BE%D0%B6%D0%B5+%D0%B4%D0%B0+%D0%B3%D0%B8+%D0%BE%D1%81%D0%BB%D0%B0%D0%B1%D0%BD%D0%B5+%D0%BA%D0%BE%D1%81%D0%BA%D0%B8%D1%82%D0%B5" alt="Една честа комбинација на додатоци во исхраната може да ги ослабне коските"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Една честа комбинација на додатоци во исхраната може да ги ослабне коските</h3>
+                                <p class="theme-text-secondary text-sm"> затоа, лекарите советуваат додатоците исхраната користат внимателно совет специјалист  премногу внесување збуни телото предизвика недостаток минер...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-хонда-официјално-го-враќа-познатиот-прелуд-summary-28067.html" class="flex gap-3">
+                            <img src="images/cache/summary-28067.webp" alt="Хонда официјално го враќа познатиот Прелуд"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Хонда официјално го враќа познатиот Прелуд</h3>
+                                <p class="theme-text-secondary text-sm"> погон предните тркала користи хибриден систем сличен цивик хибрид.  фокусиран патека тојота гр86 погон задни тркала субару брз, дели слични бројки...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-лекцијата-за-секој-кој-страда-од-несоница-треба-да-ја-знае-summary-27518.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%98%D0%B0%D1%82%D0%B0+%D0%B7%D0%B0+%D1%81%D0%B5%D0%BA%D0%BE%D1%98+%D0%BA%D0%BE%D1%98+%D1%81%D1%82%D1%80%D0%B0%D0%B4%D0%B0+%D0%BE%D0%B4+%D0%BD%D0%B5%D1%81%D0%BE%D0%BD%D0%B8%D1%86%D0%B0+%D1%82%D1%80%D0%B5%D0%B1%D0%B0+%D0%B4%D0%B0+%D1%98%D0%B0+%D0%B7%D0%BD%D0%B0%D0%B5%3A+%D0%9D%D0%B5+%D0%BF%D1%80%D0%B0%D0%B2%D0%B5%D1%82%D0%B5+%D0%B3%D0%B8+%D0%BE%D0%B2%D0%B8%D0%B5+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B8" alt="Лекцијата за секој кој страда од несоница треба да ја знае: Не правете ги овие работи"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Лекцијата за секој кој страда од несоница треба да ја знае: Не правете ги овие работи</h3>
+                                <p class="theme-text-secondary text-sm"> совет здрав разум, луѓето несоница, некои практики можат имаат спротивен ефект – влошат несоницата наместо подобрат.  хигиената спиењето однесува ...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 38 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-сакате-да-заштедите-пари-пробајте-ги-овие-трикови-summary-27637.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%A1%D0%B0%D0%BA%D0%B0%D1%82%D0%B5+%D0%B4%D0%B0+%D0%B7%D0%B0%D1%88%D1%82%D0%B5%D0%B4%D0%B8%D1%82%D0%B5+%D0%BF%D0%B0%D1%80%D0%B8%3F+%D0%9F%D1%80%D0%BE%D0%B1%D0%B0%D1%98%D1%82%D0%B5+%D0%B3%D0%B8+%D0%BE%D0%B2%D0%B8%D0%B5+%D1%82%D1%80%D0%B8%D0%BA%D0%BE%D0%B2%D0%B8" alt="Сакате да заштедите пари? Пробајте ги овие трикови"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Сакате да заштедите пари? Пробајте ги овие трикови</h3>
+                                <p class="theme-text-secondary text-sm"> работи заштедуваат енергија пари обрнете внимание користите штедливи светилки вашите кујнски апарати поради причина трошат електрична енергија зар...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 26 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-ноември-е-месец-посветен-на-подигнување-на-свеста-за-summary-28022.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9D%D0%BE%D0%B5%D0%BC%D0%B2%D1%80%D0%B8+%D0%B5+%D0%BC%D0%B5%D1%81%D0%B5%D1%86+%D0%BF%D0%BE%D1%81%D0%B2%D0%B5%D1%82%D0%B5%D0%BD+%D0%BD%D0%B0+%D0%BF%D0%BE%D0%B4%D0%B8%D0%B3%D0%BD%D1%83%D0%B2%D0%B0%D1%9A%D0%B5+%D0%BD%D0%B0+%D1%81%D0%B2%D0%B5%D1%81%D1%82%D0%B0+%D0%B7%D0%B0+%D0%BF%D1%80%D0%B8%D0%BC%D0%B0%D1%80%D0%BD%D0%B0+%D1%85%D0%B8%D0%BF%D0%B5%D0%BF%D0%B5%D1%80%D0%BE%D0%BA%D1%81%D0%B0%D0%BB%D1%83%D1%80%D0%B8%D1%98%D0%B0%2C+%D0%B7%D0%B0%D0%B3%D1%80%D0%B8%D0%B6%D1%83%D0%B2%D0%B0+%D0%BD%D0%B0%D1%98%D0%B0%D0%B2%D0%B0%D1%82%D0%B0+%D0%B7%D0%B0+%D0%BA%D1%80%D0%B0%D1%82%D0%B5%D1%9A%D0%B5+%D0%BD%D0%B0+%D0%B1%D1%83%D1%9F%D0%B5%D1%82%D0%BE%D1%82+%D0%B7%D0%B0+%D1%80%D0%B5%D1%82%D0%BA%D0%B8+%D0%B1%D0%BE%D0%BB%D0%B5%D1%81%D1%82%D0%B8%2C+%D0%B2%D0%B5%D0%BB%D0%B0%D1%82+%D0%BB%D0%B5%D0%BA%D0%B0%D1%80%D0%B8%D1%82%D0%B5" alt="Ноември е месец посветен на подигнување на свеста за примарна хипепероксалурија, загрижува најавата за кратење на буџетот за ретки болести, велат лекарите"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Ноември е месец посветен на подигнување на свеста за примарна хипепероксалурија, загрижува најавата за кратење на буџетот за ретки болести, велат лекарите</h3>
+                                <p class="theme-text-secondary text-sm"> пациентите пх1, акумулираниот оксалат таложи бубрезите уринарниот тракт, врзува калциум формира нерастворливо соединение наречено калциум оксалат....</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 19 минути</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-еп-ја-поддржа-климатската-цел-за-намалување-на-емисиите-на-summary-28020.html" class="flex gap-3">
+                            <img src="images/cache/summary-28020.webp" alt="ЕП ја поддржа климатската цел за намалување на емисиите на штетни гасови за 90 отсто до 2040 година"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">ЕП ја поддржа климатската цел за намалување на емисиите на штетни гасови за 90 отсто до 2040 година</h3>
+                                <p class="theme-text-secondary text-sm"> основа овие проценки комисијата остава можност предложи измени законот климата, вклучително климатските цел 2040 година преземе дополнителни мерки...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 26 минути</span>
                                 </div>
                             </div>
                         </a>
@@ -166,15 +552,12 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">ЕП одобри европратеничките да можат да гласаат преку полномошник за време на породилно отсуство</h3>
                                 <p class="theme-text-secondary text-sm"> усвојување измените изборниот законик еу потребна поддршка мнозинството вкупниот број европратеници, нивно одобрување секоја земјите членки соглас...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                    <span>пред 55 минути</span>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div id="mobile-ad-container-mid" class="my-6">
-                        <a id="mobile-ad-link-mid" href="#"
-                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                    </div>
+                    
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
                         <a href="magazine-радио-сигнал-од-непознат-објект-пристигна-до-земјата-знаеме-summary-28006.html" class="flex gap-3">
@@ -184,7 +567,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Радио сигнал од непознат објект пристигна до Земјата: „Знаеме што ни се приближува“</h3>
                                 <p class="theme-text-secondary text-sm"> научниците потврдија меѓуѕвездениот објект 3 природна комета, откако радио сигнал детектиран телескопот .  сепак, лоеб признава: забележано никако...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -199,7 +582,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Витаминот кој го намалува ризикот од повторлив срцев удар</h3>
                                 <p class="theme-text-secondary text-sm"> според нова студија, луѓето имале срцев удар можат намалат ризикот срцев удар половина земање додатоци витамин 3. истражувањето биле вклучени 600 ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -214,7 +597,22 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Домашен еликсир на младоста – еве како да го подготвите</h3>
                                 <p class="theme-text-secondary text-sm"> секаде преплавени реклами производи гарантираат убавина долговечност.  добрата вест можеме потпираме природни производи докажани предности, можеме...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                    <span>пред 1 час</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-подгответе-тирамису-за-совршена-вечер-summary-27646.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%B5+%D1%82%D0%B8%D1%80%D0%B0%D0%BC%D0%B8%D1%81%D1%83+%D0%B7%D0%B0+%D1%81%D0%BE%D0%B2%D1%80%D1%88%D0%B5%D0%BD%D0%B0+%D0%B2%D0%B5%D1%87%D0%B5%D1%80" alt="Подгответе тирамису за совршена вечер"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Подгответе тирамису за совршена вечер</h3>
+                                <p class="theme-text-secondary text-sm"> состојки: 150 мл црно кафе 1 лажица шеќер 200 грама пишкоти крем: 150 грама маскарпоне сирење 100 мл слатка павлака матење (ладна) 40 грама шеќер ...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 26 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -229,7 +627,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Не чекајте да се појави проблемот, разговарајте со урологот без срам и вложете време во своето здравје</h3>
                                 <p class="theme-text-secondary text-sm"> д р јанчулев: редовните уролошки прегледи важни затоа заболувања, рак простата воспаленија, можат откријат рано успешно лекуваат вашиот најважен с...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 16 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -244,7 +642,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Оваа недела нов обид за лансирање ракета со сателити кон Марс</h3>
                                 <p class="theme-text-secondary text-sm"> марс недела, поради одложувања предизвикани облачност соларни бури компанијата соопшти недела обиде лансира ракета , носи сателити наменети проучу...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 23 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -259,7 +657,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Принцот Вилијам и Кејт воведоа правило кое нивните деца мора да го почитуваат</h3>
                                 <p class="theme-text-secondary text-sm"> идниот британски крал неодамна посети бразил, интервју локалниот водител лучијано хок откри сопруга, принцезата кејт мидлтон, обидуваат поминат мо...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 30 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -274,7 +672,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Никогаш не ги правете овие работи во кревет, бидејќи тие ја уништуваат секоја врска!</h3>
                                 <p class="theme-text-secondary text-sm"> разлика имате нов партнер имате долгогодишна врска, интимноста имате дел секоја врска.  имате најневеројатна духовна врска меѓусебно, возбудливи и...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 30 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -289,7 +687,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Видео) Објавен трејлерот за „Ѓаволот носи Прада 2“, познат е и датумот на премиерата</h3>
                                 <p class="theme-text-secondary text-sm"> првиот краток трејлер ѓаволот носи прада 2, долгоочекуваното продолжение култниот филм 2006 година, конечно пристигна.  новиот филм следи главната...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -304,7 +702,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Видео) Кајли Џенер за теоријата за рамна Земја: „Сè е можно“</h3>
                                 <p class="theme-text-secondary text-sm"> прашањето сестра , основачката кајли козметикс одговори: мислам застапничка теоријата тркалезна земја.  клои додаде: застапничка теоријата тркалез...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -319,7 +717,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Како е ослободено Скопје - сведоштва на Михајло Апостолски</h3>
                                 <p class="theme-text-secondary text-sm"> дивизија бригада 42. дивизија настапуваат левиот брег долината вардар, задача нападнат источната страна скопје, , содејство македонска ударна бриг...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -334,7 +732,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Тие го менуваат целиот свој живот за секунда: овие хороскопски знаци излегуваат како победници од секој предизвик</h3>
                                 <p class="theme-text-secondary text-sm"> близнаци близнаците одлични комуникатори, нивната најголема сила лежи нивната неверојатна прилагодливост.  близнаците двоумат побараат помош инфор...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -349,7 +747,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Фото) Скромниот милионер ги насмеа сите: „Се чувствувам ужасно, не можам да поднесам панталони и глупави кошули“</h3>
                                 <p class="theme-text-secondary text-sm"> сандлер познат лежерни модни изданија, широки фармерки маички, сепак мораше позира поформални изданија.  познатиот актер адам сандлер (59) години ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -364,7 +762,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Фото) Едно парче облека е задолжително за зимава: како да го носите</h3>
                                 <p class="theme-text-secondary text-sm"> станува збор светот модата, постои парче враќа веднаш штом намалат температурите, , погодивте, зимски плетени елеци.  накратко, прашувате зимските...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -379,7 +777,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Фото: Деколтето на Дилета!!</h3>
                                 <p class="theme-text-secondary text-sm"> време фотосесијата, вратите лифтот неочекувано затворија, нејзините големи гради искочија преден план.  дефинитовно дилета лесно задржи градите ис...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -394,7 +792,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Зошто односот со нашата мајка станува уште поважен како што растеме?</h3>
                                 <p class="theme-text-secondary text-sm"> времето поминато станува приоритет оглед растојанието обврските, времето вашата мајка станува драгоцено.  врската помеѓу мајка ќерка нераскинлива ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -409,7 +807,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Принцот Вилијам откри како решиле да им кажат на своите деца дека Кејт има рак</h3>
                                 <p class="theme-text-secondary text-sm"> принцот вилијам отворено зборуваше кејт разговарале деца тешките семејни моменти вклучувајќи дијагнозите рак кејт кралот чарлс.  разговор бразилск...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -424,7 +822,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Видео) Познатиот комичар има десет деца со пет жени: „Секогаш сум се сакал себеси“</h3>
                                 <p class="theme-text-secondary text-sm"> раѓањето најмлади деца, еди деца возраст 6 36 години, вели, најважно добри луѓе.  неверојатната кариера, еди неверојатно семејство, неговиот најго...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -439,7 +837,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Експертите откриваат: Исфрлете ја оваа боја од вашата спална соба, никогаш нема да спиете мирно</h3>
                                 <p class="theme-text-secondary text-sm"> препорачани бои меѓу боите најчесто препорачуваат спалната соба издвојуваат нежните нијанси сина боја, смируваат умот поврзуваат чувство сигурност...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -454,7 +852,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Руската салата е „кралица“ на празничната трпеза, но кинеската брзо ќе стане нов фаворит – еве како да ја подготвите</h3>
                                 <p class="theme-text-secondary text-sm"> салата одличен избор сака лесни прилози брзо подготвуваат оставаат впечаток вложен труд .  служи, обично првата исчезнува трпезата, бидејќи комбин...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -469,7 +867,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Три работи кои укажуваат дека не сте го преболеле вашиот поранешен партнер</h3>
                                 <p class="theme-text-secondary text-sm"> одржувањето блиска врска вашиот бивш партнер црвено светло постои голема разлика помеѓу цивилизирана комуникација активно одржување блиска врска в...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -484,7 +882,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Се празнуваат светите апостоли Стахиј, Амплиј, Урван, Наркис, Апелиј и Аристовул</h3>
                                 <p class="theme-text-secondary text-sm"> тропар оче свети духовен, ревносен слуго бога живиот, епимах свет испосниче, прими господ молбата твоја, маченички венец украсувајќи , исповедник ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -499,7 +897,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">„Блу ориџин“ повторно ќе се обиде да ја лансира ракетата „Њу Глен“</h3>
                                 <p class="theme-text-secondary text-sm"> американската компанија блу ориџин соопшти денеска обиде лансира ракета њу глен, којашто носи сателити наса проучување временските услови марс, от...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -514,7 +912,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Тортиљи со зеленчук и сардини</h3>
                                 <p class="theme-text-secondary text-sm"> состојки: 4 средни пченични тортиљи 1 зрел, мек авокадо 2 лажици кисела павлака 1 чешне лук сок ½ лимон сол вкус 1 лажица маслиново масло 1 свежа ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -529,7 +927,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Брош со дијаманти изгубен од Наполеон – продаден за скоро 3,8 милиони евра</h3>
                                 <p class="theme-text-secondary text-sm"> брош дијаманти францускиот освојувач наполеон бонапарта изгубил бегал битката ватерло почетокот 19 век, продаден 3,5 милиони швајцарски франци (3,...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -544,7 +942,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Пита со праз и шунка за појадок или вечера: Се подготвува брзо и лесно</h3>
                                 <p class="theme-text-secondary text-sm"> состојки: 200 мл јогурт 1 лажица кисела павлака 2 јајца 1 лажичка прашок пециво 1 праз 100 гр шунка масло зачини тенки кори подготовка</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -552,12 +950,267 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-подгответе-тирамису-за-совршена-вечер-summary-27646.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%B5+%D1%82%D0%B8%D1%80%D0%B0%D0%BC%D0%B8%D1%81%D1%83+%D0%B7%D0%B0+%D1%81%D0%BE%D0%B2%D1%80%D1%88%D0%B5%D0%BD%D0%B0+%D0%B2%D0%B5%D1%87%D0%B5%D1%80" alt="Подгответе тирамису за совршена вечер"
+                        <a href="magazine-дневен-хороскоп-за-среда-12-ти-ноември-2025-година-summary-27548.html" class="flex gap-3">
+                            <img src="images/cache/summary-27548.webp" alt="Дневен хороскоп за среда, 12-ти ноември 2025 година"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Подгответе тирамису за совршена вечер</h3>
-                                <p class="theme-text-secondary text-sm"> состојки: 150 мл црно кафе 1 лажица шеќер 200 грама пишкоти крем: 150 грама маскарпоне сирење 100 мл слатка павлака матење (ладна) 40 грама шеќер ...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Дневен хороскоп за среда, 12-ти ноември 2025 година</h3>
+                                <p class="theme-text-secondary text-sm"> јарец дневниот хороскоп ве советува преземете контролата љубовниот живот, бидејќи време големи одлуки!  риби дневниот хороскоп ве советува наметне...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 29 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-девојката-родена-без-мозок-наполни-20-години-докторите-во-summary-27852.html" class="flex gap-3">
+                            <img src="images/cache/summary-27852.webp" alt="Девојката родена без мозок наполни 20 години, докторите во чудо: Таа е голем борец (ВИДЕО)"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Девојката родена без мозок наполни 20 години, докторите во чудо: Таа е голем борец (ВИДЕО)</h3>
+                                <p class="theme-text-secondary text-sm"> шон додаде ѝ припишува верата помошта семејството преброди првичната дијагноза алекс с следеше.  иако алекс гледа слуша, нејзините родители велат ...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 13 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-бизнисмен-откри-какво-е-чувството-да-дадеш-над-10-милиони-summary-27848.html" class="flex gap-3">
+                            <img src="images/cache/summary-27848.webp" alt="Бизнисмен откри какво е чувството да дадеш над 10 милиони долари за стара чанта: Ми се превртуваше желудникот (ВИДЕО)"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Бизнисмен откри какво е чувството да дадеш над 10 милиони долари за стара чанта: Ми се превртуваше желудникот (ВИДЕО)</h3>
+                                <p class="theme-text-secondary text-sm"> роди модната легенда рекордна продажба, најскапата чанта некогаш продадена аукција хималајската крокодилска биркин, достигна цена 450. самата џејн...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 14 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-хаос-на-траект-екипажот-направил-грешка-децата-врескаат-summary-27843.html" class="flex gap-3">
+                            <img src="images/cache/summary-27843.webp" alt="Хаос на траект: Екипажот направил грешка, децата врескаат"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Хаос на траект: Екипажот направил грешка, децата врескаат</h3>
+                                <p class="theme-text-secondary text-sm"> информирани, каналот веднаш променет, соопшти , извинувајќи нарече разбирлива вознемиреност гнев патниците.  побарано гледаат формула 1 патниците ...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 14 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-американка-родила-син-од-шест-килограми-мислев-дека-нема-да-summary-27837.html" class="flex gap-3">
+                            <img src="images/cache/summary-27837.webp" alt="Американка родила син од шест килограми: Мислев дека нема да преживеам (ВИДЕО)"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Американка родила син од шест килограми: Мислев дека нема да преживеам (ВИДЕО)</h3>
+                                <p class="theme-text-secondary text-sm"> нејзиниот син касијан голем лекарите акушерките породилната сала останале зборови.  касијан роден истиот ден мајка, особено трогна шелби.  видеото...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 15 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-апсења-на-тајлан-пред-почетокот-на-мис-универзум-видео-summary-27832.html" class="flex gap-3">
+                            <img src="images/cache/summary-27832.webp" alt="Апсења на Тајлан пред почетокот на Мис Универзум (ВИДЕО)"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Апсења на Тајлан пред почетокот на Мис Универзум (ВИДЕО)</h3>
+                                <p class="theme-text-secondary text-sm"> тензиите меѓу мексиканските тајландските организации кулминираа апсењето хорхе фигеира, директорот мис универзум мексико, откако пријавен локалнит...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 15 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-лојалноста-се-наградува-газда-на-познат-скопски-фаст-фуд-summary-27830.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9B%D0%BE%D1%98%D0%B0%D0%BB%D0%BD%D0%BE%D1%81%D1%82%D0%B0+%D1%81%D0%B5+%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B4%D1%83%D0%B2%D0%B0%3A+%D0%93%D0%B0%D0%B7%D0%B4%D0%B0+%D0%BD%D0%B0+%D0%BF%D0%BE%D0%B7%D0%BD%D0%B0%D1%82+%D1%81%D0%BA%D0%BE%D0%BF%D1%81%D0%BA%D0%B8+%D1%84%D0%B0%D1%81%D1%82+%D1%84%D1%83%D0%B4+%D0%BB%D0%B0%D0%BD%D0%B5%D1%86+%D0%BC%D1%83+%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%B8+%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB+%D0%BD%D0%B0+%D1%81%D0%B2%D0%BE%D1%98%D0%BE%D1%82+%D0%B2%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5%D0%BD" alt="Лојалноста се наградува: Газда на познат скопски фаст фуд ланец му подари автомобил на својот вработен"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Лојалноста се наградува: Газда на познат скопски фаст фуд ланец му подари автомобил на својот вработен</h3>
+                                <p class="theme-text-secondary text-sm"> одби, ‘’ побара, даваше фирмата, изјави мише цвејевски.  мише цвејевски, сопственикот познатиот фаст фуд ланец , направи несекојдневен потег наши ...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 16 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-научниците-открија-зошто-птиците-пеат-толку-гласно-в-зори-summary-27826.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9D%D0%B0%D1%83%D1%87%D0%BD%D0%B8%D1%86%D0%B8%D1%82%D0%B5+%D0%BE%D1%82%D0%BA%D1%80%D0%B8%D1%98%D0%B0+%D0%B7%D0%BE%D1%88%D1%82%D0%BE+%D0%BF%D1%82%D0%B8%D1%86%D0%B8%D1%82%D0%B5+%D0%BF%D0%B5%D0%B0%D1%82+%D1%82%D0%BE%D0%BB%D0%BA%D1%83+%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%BE+%D0%B2+%D0%B7%D0%BE%D1%80%D0%B8" alt="Научниците открија зошто птиците пеат толку гласно в зори"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Научниците открија зошто птиците пеат толку гласно в зори</h3>
+                                <p class="theme-text-secondary text-sm"> целиот свет, првите зраци сонцето најавуваат мелодичната песна птиците, научниците обидуваат откријат птиците чувствуваат потреба гласен утрински ...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 16 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-сидни-свини-повторно-во-центарот-на-скандал-колегите-јавно-summary-27823.html" class="flex gap-3">
+                            <img src="images/cache/summary-27823.webp" alt="Сидни Свини повторно во центарот на скандал- колегите јавно се откажувааат од неа "
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Сидни Свини повторно во центарот на скандал- колегите јавно се откажувааат од неа </h3>
+                                <p class="theme-text-secondary text-sm"> чини низа лоши одлуки негативни реакции конечно земаат данок кариерата сидни свини, бидејќи кристи можела стане нејзиниот трет кинематографски неу...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 16 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-купил-напуштен-магацин-па-дошол-до-неверојатно-откритие-summary-27817.html" class="flex gap-3">
+                            <img src="images/cache/summary-27817.webp" alt="Купил напуштен магацин, па дошол до неверојатно откритие- заработил 900.000 евра (ВИДЕО)"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Купил напуштен магацин, па дошол до неверојатно откритие- заработил 900.000 евра (ВИДЕО)</h3>
+                                <p class="theme-text-secondary text-sm"> отворил уста видам 6,7 милиони евра, напиша лице, додаде: платил избрише името исчезнам  иако повеќето луѓе задржале сума, приказната интересен пр...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 17 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-сабаленка-во-танга-ги-запали-мрежите-ужива-на-малдивите-summary-27811.html" class="flex gap-3">
+                            <img src="images/cache/summary-27811.webp" alt="Сабаленка во танга ги запали мрежите- ужива на Малдивите (ВИДЕО)"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Сабаленка во танга ги запали мрежите- ужива на Малдивите (ВИДЕО)</h3>
+                                <p class="theme-text-secondary text-sm"> задоволство нејзиниот голем број следбеници инстаграм, надвор , објави серија слики натпис: време уживање.  подолу погледнете нејзините фотографии...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 17 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-трогателен-говор-на-марија-шерифовиќ-на-погребот-на-татко-ѝ-summary-27795.html" class="flex gap-3">
+                            <img src="images/cache/summary-27795.webp" alt="Трогателен говор на Марија Шерифовиќ на погребот на татко ѝ "
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Трогателен говор на Марија Шерифовиќ на погребот на татко ѝ </h3>
+                                <p class="theme-text-secondary text-sm"> твојата ќерка сака марија, синот даниел, внукот марио твојата омилена пејачка верица, .  неодамна, пејачката нејзиниот татко имале лоши односи, , ...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 19 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-документарецот-за-еди-марфи-излегува-денеска-видео-summary-27787.html" class="flex gap-3">
+                            <img src="images/cache/summary-27787.webp" alt="Документарецот за Еди Марфи излегува денеска (ВИДЕО)"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Документарецот за Еди Марфи излегува денеска (ВИДЕО)</h3>
+                                <p class="theme-text-secondary text-sm"> занимлив детаљ присуството постариот брат еди чарли марфи, почина леукемија 57 годишна возраст, 2017 година.  марфи, ентертејнмент викли ( ), поја...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 19 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-ова-се-неработните-денови-во-2026-година-summary-27621.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9E%D0%B2%D0%B0+%D1%81%D0%B5+%D0%BD%D0%B5%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BD%D0%B8%D1%82%D0%B5+%D0%B4%D0%B5%D0%BD%D0%BE%D0%B2%D0%B8+%D0%B2%D0%BE+2026+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0" alt="Ова се неработните денови во 2026 година"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Ова се неработните денови во 2026 година</h3>
+                                <p class="theme-text-secondary text-sm"> граѓаните католичка вероисповед 6 прил (понеделник), велигден, вториот ден велигден, 1 ноември (недела), празникот светци, 25 декември (петок), пр...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 27 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-дијамантот-мелон-блу-продаден-за-21-милион-евра-на-аукција-summary-27726.html" class="flex gap-3">
+                            <img src="images/cache/summary-27726.webp" alt="Дијамантот „Мелон блу“ продаден за 21 милион евра на аукција"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Дијамантот „Мелон блу“ продаден за 21 милион евра на аукција</h3>
+                                <p class="theme-text-secondary text-sm"> луксузна уметност природата десетлетија ѝ припаѓала рејчел ламберт мелон (1910 2014) позната бани, американска хортикултурна инженерка, филантроп ...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 23 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-ai-gemini-следи-се-на-gmail-tужба-за-следење-во-сад-summary-27714.html" class="flex gap-3">
+                            <img src="images/cache/summary-27714.webp" alt="AI GEMINI следи се на GMAIL? Tужба за следење во САД"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">AI GEMINI следи се на GMAIL? Tужба за следење во САД</h3>
+                                <p class="theme-text-secondary text-sm"> гугл соочува нова тужба обвинува користи асистент вештачка интелигенција нелегално следење приватните комуникации корисниците , .  корисниците пре...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 24 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-македонската-игра-skopje-83-виртуелно-патување-низ-едно-summary-27711.html" class="flex gap-3">
+                            <img src="images/cache/summary-27711.webp" alt="Македонската игра „Skopje ’83“ – виртуелно патување низ едно друго Скопје"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Македонската игра „Skopje ’83“ – виртуелно патување низ едно друго Скопје</h3>
+                                <p class="theme-text-secondary text-sm"> играта достапна 7 ноември 2025 година платформите , стои тим предводен кристијан трајковски.  иако точна копија скопје, играта длабоко инспирирана...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 24 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-дали-сте-во-врска-со-нарцис-ако-забележите-дека-вашиот-summary-27701.html" class="flex gap-3">
+                            <img src="images/cache/summary-27701.webp" alt="ДАЛИ СТЕ ВО ВРСКА СО НАРЦИС? Ако забележите дека вашиот партнер се однесува вака, тоа значи дека е време да раскинете!"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">ДАЛИ СТЕ ВО ВРСКА СО НАРЦИС? Ако забележите дека вашиот партнер се однесува вака, тоа значи дека е време да раскинете!</h3>
+                                <p class="theme-text-secondary text-sm"> доколку врска нарцис ве гледа дел иднина, продолжиле врската знаете крајот?  доколку вашиот сакан нарцис прави , голема веројатноста сака самиот с...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
                                     <span>пред 24 часа</span>
                                 </div>
@@ -574,277 +1227,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Папата ги собира холивудските ѕвезди во Ватикан: Објави кои се неговите четири омилени филмови (ВИДЕО)</h3>
                                 <p class="theme-text-secondary text-sm"> година јубилејот, папата лав изрази желба продлабочи дијалогот светот филмот, особено актерите режисерите, истражувајќи можностите уметничката кре...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-дневен-хороскоп-за-среда-12-ти-ноември-2025-година-summary-27548.html" class="flex gap-3">
-                            <img src="images/cache/summary-27548.webp" alt="Дневен хороскоп за среда, 12-ти ноември 2025 година"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Дневен хороскоп за среда, 12-ти ноември 2025 година</h3>
-                                <p class="theme-text-secondary text-sm"> јарец дневниот хороскоп ве советува преземете контролата љубовниот живот, бидејќи време големи одлуки!  риби дневниот хороскоп ве советува наметне...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 28 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-девојката-родена-без-мозок-наполни-20-години-докторите-во-summary-27852.html" class="flex gap-3">
-                            <img src="images/cache/summary-27852.webp" alt="Девојката родена без мозок наполни 20 години, докторите во чудо: Таа е голем борец (ВИДЕО)"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Девојката родена без мозок наполни 20 години, докторите во чудо: Таа е голем борец (ВИДЕО)</h3>
-                                <p class="theme-text-secondary text-sm"> шон додаде ѝ припишува верата помошта семејството преброди првичната дијагноза алекс с следеше.  иако алекс гледа слуша, нејзините родители велат ...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 12 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-бизнисмен-откри-какво-е-чувството-да-дадеш-над-10-милиони-summary-27848.html" class="flex gap-3">
-                            <img src="images/cache/summary-27848.webp" alt="Бизнисмен откри какво е чувството да дадеш над 10 милиони долари за стара чанта: Ми се превртуваше желудникот (ВИДЕО)"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Бизнисмен откри какво е чувството да дадеш над 10 милиони долари за стара чанта: Ми се превртуваше желудникот (ВИДЕО)</h3>
-                                <p class="theme-text-secondary text-sm"> роди модната легенда рекордна продажба, најскапата чанта некогаш продадена аукција хималајската крокодилска биркин, достигна цена 450. самата џејн...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 12 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-хаос-на-траект-екипажот-направил-грешка-децата-врескаат-summary-27843.html" class="flex gap-3">
-                            <img src="images/cache/summary-27843.webp" alt="Хаос на траект: Екипажот направил грешка, децата врескаат"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Хаос на траект: Екипажот направил грешка, децата врескаат</h3>
-                                <p class="theme-text-secondary text-sm"> информирани, каналот веднаш променет, соопшти , извинувајќи нарече разбирлива вознемиреност гнев патниците.  побарано гледаат формула 1 патниците ...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 13 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-американка-родила-син-од-шест-килограми-мислев-дека-нема-да-summary-27837.html" class="flex gap-3">
-                            <img src="images/cache/summary-27837.webp" alt="Американка родила син од шест килограми: Мислев дека нема да преживеам (ВИДЕО)"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Американка родила син од шест килограми: Мислев дека нема да преживеам (ВИДЕО)</h3>
-                                <p class="theme-text-secondary text-sm"> нејзиниот син касијан голем лекарите акушерките породилната сала останале зборови.  касијан роден истиот ден мајка, особено трогна шелби.  видеото...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 13 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-апсења-на-тајлан-пред-почетокот-на-мис-универзум-видео-summary-27832.html" class="flex gap-3">
-                            <img src="images/cache/summary-27832.webp" alt="Апсења на Тајлан пред почетокот на Мис Универзум (ВИДЕО)"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Апсења на Тајлан пред почетокот на Мис Универзум (ВИДЕО)</h3>
-                                <p class="theme-text-secondary text-sm"> тензиите меѓу мексиканските тајландските организации кулминираа апсењето хорхе фигеира, директорот мис универзум мексико, откако пријавен локалнит...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 14 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-лојалноста-се-наградува-газда-на-познат-скопски-фаст-фуд-summary-27830.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9B%D0%BE%D1%98%D0%B0%D0%BB%D0%BD%D0%BE%D1%81%D1%82%D0%B0+%D1%81%D0%B5+%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B4%D1%83%D0%B2%D0%B0%3A+%D0%93%D0%B0%D0%B7%D0%B4%D0%B0+%D0%BD%D0%B0+%D0%BF%D0%BE%D0%B7%D0%BD%D0%B0%D1%82+%D1%81%D0%BA%D0%BE%D0%BF%D1%81%D0%BA%D0%B8+%D1%84%D0%B0%D1%81%D1%82+%D1%84%D1%83%D0%B4+%D0%BB%D0%B0%D0%BD%D0%B5%D1%86+%D0%BC%D1%83+%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%B8+%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB+%D0%BD%D0%B0+%D1%81%D0%B2%D0%BE%D1%98%D0%BE%D1%82+%D0%B2%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5%D0%BD" alt="Лојалноста се наградува: Газда на познат скопски фаст фуд ланец му подари автомобил на својот вработен"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Лојалноста се наградува: Газда на познат скопски фаст фуд ланец му подари автомобил на својот вработен</h3>
-                                <p class="theme-text-secondary text-sm"> одби, ‘’ побара, даваше фирмата, изјави мише цвејевски.  мише цвејевски, сопственикот познатиот фаст фуд ланец , направи несекојдневен потег наши ...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 14 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-научниците-открија-зошто-птиците-пеат-толку-гласно-в-зори-summary-27826.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9D%D0%B0%D1%83%D1%87%D0%BD%D0%B8%D1%86%D0%B8%D1%82%D0%B5+%D0%BE%D1%82%D0%BA%D1%80%D0%B8%D1%98%D0%B0+%D0%B7%D0%BE%D1%88%D1%82%D0%BE+%D0%BF%D1%82%D0%B8%D1%86%D0%B8%D1%82%D0%B5+%D0%BF%D0%B5%D0%B0%D1%82+%D1%82%D0%BE%D0%BB%D0%BA%D1%83+%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%BE+%D0%B2+%D0%B7%D0%BE%D1%80%D0%B8" alt="Научниците открија зошто птиците пеат толку гласно в зори"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Научниците открија зошто птиците пеат толку гласно в зори</h3>
-                                <p class="theme-text-secondary text-sm"> целиот свет, првите зраци сонцето најавуваат мелодичната песна птиците, научниците обидуваат откријат птиците чувствуваат потреба гласен утрински ...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 15 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-сидни-свини-повторно-во-центарот-на-скандал-колегите-јавно-summary-27823.html" class="flex gap-3">
-                            <img src="images/cache/summary-27823.webp" alt="Сидни Свини повторно во центарот на скандал- колегите јавно се откажувааат од неа "
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Сидни Свини повторно во центарот на скандал- колегите јавно се откажувааат од неа </h3>
-                                <p class="theme-text-secondary text-sm"> чини низа лоши одлуки негативни реакции конечно земаат данок кариерата сидни свини, бидејќи кристи можела стане нејзиниот трет кинематографски неу...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 15 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-купил-напуштен-магацин-па-дошол-до-неверојатно-откритие-summary-27817.html" class="flex gap-3">
-                            <img src="images/cache/summary-27817.webp" alt="Купил напуштен магацин, па дошол до неверојатно откритие- заработил 900.000 евра (ВИДЕО)"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Купил напуштен магацин, па дошол до неверојатно откритие- заработил 900.000 евра (ВИДЕО)</h3>
-                                <p class="theme-text-secondary text-sm"> отворил уста видам 6,7 милиони евра, напиша лице, додаде: платил избрише името исчезнам  иако повеќето луѓе задржале сума, приказната интересен пр...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 15 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-сабаленка-во-танга-ги-запали-мрежите-ужива-на-малдивите-summary-27811.html" class="flex gap-3">
-                            <img src="images/cache/summary-27811.webp" alt="Сабаленка во танга ги запали мрежите- ужива на Малдивите (ВИДЕО)"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Сабаленка во танга ги запали мрежите- ужива на Малдивите (ВИДЕО)</h3>
-                                <p class="theme-text-secondary text-sm"> задоволство нејзиниот голем број следбеници инстаграм, надвор , објави серија слики натпис: време уживање.  подолу погледнете нејзините фотографии...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 16 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-трогателен-говор-на-марија-шерифовиќ-на-погребот-на-татко-ѝ-summary-27795.html" class="flex gap-3">
-                            <img src="images/cache/summary-27795.webp" alt="Трогателен говор на Марија Шерифовиќ на погребот на татко ѝ "
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Трогателен говор на Марија Шерифовиќ на погребот на татко ѝ </h3>
-                                <p class="theme-text-secondary text-sm"> твојата ќерка сака марија, синот даниел, внукот марио твојата омилена пејачка верица, .  неодамна, пејачката нејзиниот татко имале лоши односи, , ...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 17 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-документарецот-за-еди-марфи-излегува-денеска-видео-summary-27787.html" class="flex gap-3">
-                            <img src="images/cache/summary-27787.webp" alt="Документарецот за Еди Марфи излегува денеска (ВИДЕО)"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Документарецот за Еди Марфи излегува денеска (ВИДЕО)</h3>
-                                <p class="theme-text-secondary text-sm"> занимлив детаљ присуството постариот брат еди чарли марфи, почина леукемија 57 годишна возраст, 2017 година.  марфи, ентертејнмент викли ( ), поја...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 18 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-ова-се-неработните-денови-во-2026-година-summary-27621.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9E%D0%B2%D0%B0+%D1%81%D0%B5+%D0%BD%D0%B5%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BD%D0%B8%D1%82%D0%B5+%D0%B4%D0%B5%D0%BD%D0%BE%D0%B2%D0%B8+%D0%B2%D0%BE+2026+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0" alt="Ова се неработните денови во 2026 година"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Ова се неработните денови во 2026 година</h3>
-                                <p class="theme-text-secondary text-sm"> граѓаните католичка вероисповед 6 прил (понеделник), велигден, вториот ден велигден, 1 ноември (недела), празникот светци, 25 декември (петок), пр...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
                                     <span>пред 25 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-дијамантот-мелон-блу-продаден-за-21-милион-евра-на-аукција-summary-27726.html" class="flex gap-3">
-                            <img src="images/cache/summary-27726.webp" alt="Дијамантот „Мелон блу“ продаден за 21 милион евра на аукција"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Дијамантот „Мелон блу“ продаден за 21 милион евра на аукција</h3>
-                                <p class="theme-text-secondary text-sm"> луксузна уметност природата десетлетија ѝ припаѓала рејчел ламберт мелон (1910 2014) позната бани, американска хортикултурна инженерка, филантроп ...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 22 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-ai-gemini-следи-се-на-gmail-tужба-за-следење-во-сад-summary-27714.html" class="flex gap-3">
-                            <img src="images/cache/summary-27714.webp" alt="AI GEMINI следи се на GMAIL? Tужба за следење во САД"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">AI GEMINI следи се на GMAIL? Tужба за следење во САД</h3>
-                                <p class="theme-text-secondary text-sm"> гугл соочува нова тужба обвинува користи асистент вештачка интелигенција нелегално следење приватните комуникации корисниците , .  корисниците пре...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 22 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-македонската-игра-skopje-83-виртуелно-патување-низ-едно-summary-27711.html" class="flex gap-3">
-                            <img src="images/cache/summary-27711.webp" alt="Македонската игра „Skopje ’83“ – виртуелно патување низ едно друго Скопје"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Македонската игра „Skopje ’83“ – виртуелно патување низ едно друго Скопје</h3>
-                                <p class="theme-text-secondary text-sm"> играта достапна 7 ноември 2025 година платформите , стои тим предводен кристијан трајковски.  иако точна копија скопје, играта длабоко инспирирана...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 22 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-дали-сте-во-врска-со-нарцис-ако-забележите-дека-вашиот-summary-27701.html" class="flex gap-3">
-                            <img src="images/cache/summary-27701.webp" alt="ДАЛИ СТЕ ВО ВРСКА СО НАРЦИС? Ако забележите дека вашиот партнер се однесува вака, тоа значи дека е време да раскинете!"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">ДАЛИ СТЕ ВО ВРСКА СО НАРЦИС? Ако забележите дека вашиот партнер се однесува вака, тоа значи дека е време да раскинете!</h3>
-                                <p class="theme-text-secondary text-sm"> доколку врска нарцис ве гледа дел иднина, продолжиле врската знаете крајот?  доколку вашиот сакан нарцис прави , голема веројатноста сака самиот с...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 23 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -859,7 +1242,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Ејми Шумер ослабе, па ги избриша сите стари фотографии од „Инстаграм“</h3>
                                 <p class="theme-text-secondary text-sm"> избришав моите стари фотографии причина!, напиша .  откако јавно сподели дијагнозата кушингов синдром 2024 година, шумер сака стане застапник женс...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 23 часа</span>
+                                    <span>пред 25 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -874,7 +1257,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Актерката што регрутира жени во култ сега учи како да спасува луѓе</h3>
                                 <p class="theme-text-secondary text-sm"> уапсена 2018 година поради учество сектата нхивм, претставувала организација самопомош, всушност служела сексуално искористување жени.  2021 годин...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 23 часа</span>
+                                    <span>пред 25 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -889,7 +1272,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Џек Шлосберг, наследникот на Кенеди, ќе се бори за местото на Надлер од Њујорк во Конгресот</h3>
                                 <p class="theme-text-secondary text-sm"> њујорк тајмс џек шлосберг, внукот џон ф. кенеди, изјави кандидира местото конгресот ослободува пратеникот џеролд надлер, приклучувајќи преполните ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 23 часа</span>
+                                    <span>пред 25 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -904,7 +1287,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Сидни Свини: Не секогаш создаваме уметност само за бројки, туку пред се за влијание</h3>
                                 <p class="theme-text-secondary text-sm"> филмот кристи, свини глуми боксерката кристи мартин, преживеа обид убиство нејзиниот поранешен сопруг, џејмс мартин, нејзин тренер, светот откри х...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 23 часа</span>
+                                    <span>пред 25 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -919,7 +1302,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Како да се ослободи синузитисот – 5 основни правила кои треба да се следат</h3>
                                 <p class="theme-text-secondary text-sm"> имаме течење носот запушен нос, пиеме вода густите секрети носот можат втечнат начин ослободат напнатоста предизвикуваат полесно.  употребата физи...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 23 часа</span>
+                                    <span>пред 25 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -934,7 +1317,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Огромна нова железничка станица вредна над 300 милиони евра ги отвори своите врати во Европа и сега е меѓу најубавите во светот</h3>
                                 <p class="theme-text-secondary text-sm"> жирито импресионирано етеричниот стил, чистите линии сјајните бели челични форми” издигнуваат небото, катедралниот изглед” централниот мост домини...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 25 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -949,7 +1332,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Врвот на Леонидите доаѓа наскоро – еве кога можеме да го набљудуваме</h3>
                                 <p class="theme-text-secondary text-sm"> метеорскиот дожд леонид 1966 година опишан најсилен забележан историјата.  нивниот врв, земјата помине најгустиот дел метеорскиот дожд, случи поме...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 25 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -964,7 +1347,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Руска академија на науките: Силен блесок е забележан на Сонцето насочен кон Земјата</h3>
                                 <p class="theme-text-secondary text-sm"> подоцна, лабораторијата руската академија науките изјави експлозијата достигнала највисокото ниво петстепена скала означена класа 1. наведено, пос...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 25 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -979,7 +1362,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Фото: Актерка во мини фустан, никој не би и дал 56 години!!</h3>
                                 <p class="theme-text-secondary text-sm"> фустанот направен проѕирна чипка, постава овозможува види мал дел голата кожа, јасно покажува следи трендот гол фустан  нејзиното провокативно изд...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 25 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -994,7 +1377,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Концерт на Божо Вреќо на 21 ноември во Скопје</h3>
                                 <p class="theme-text-secondary text-sm"> вреќо лирски тенор ангелски глас испева најдлабоките емоции.  стих божо исповед признание љубовта, оттаму магијата концерти.  споменатите медиуми ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 25 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1009,7 +1392,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Како мала невеста од Авганистан стана европска шампионка во бодибилдинг</h3>
                                 <p class="theme-text-secondary text-sm"> бегање авганистан нов свет години талибанците вратат власт, роха одлучи сакам таков живот.  сепак, социјалните мрежи роја извор негативни коментар...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 26 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1024,7 +1407,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Прогласен најдобриот европски град за одмор без автомобил</h3>
                                 <p class="theme-text-secondary text-sm"> минхен лисабон веднаш атина минхен најде второто место резултат 97,7. посетителите пристигнуваат авион лесно можат стигнат историскиот центар град...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 26 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1039,7 +1422,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Откријте го POLYGON концепт автомобилот во “POLYGON CITY”</h3>
                                 <p class="theme-text-secondary text-sm"> влегувањето универзумот , претставуваме концепт автомобил покануваме фановите гејмерите доживеат нашата визија идниот дизајн бројните можности кон...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 26 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1054,22 +1437,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Нова лабораторија за работа во дрво на Факултетот за ликовни уметности – Скопје</h3>
                                 <p class="theme-text-secondary text-sm"> факултетот ликовни уметности изрази голема благодарност маквелд доо нивната доверба, визија посветеност зајакнувањето креативниот потенцијал студе...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-сакате-да-заштедите-пари-пробајте-ги-овие-трикови-веројатно-summary-27637.html" class="flex gap-3">
-                            <img src="images/cache/summary-27637.webp" alt="Сакате да заштедите пари? Пробајте ги овие трикови, веројатно сѐ уште не сте размислувале за ова"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Сакате да заштедите пари? Пробајте ги овие трикови, веројатно сѐ уште не сте размислувале за ова</h3>
-                                <p class="theme-text-secondary text-sm"> работи заштедуваат енергија пари обрнете внимание користите штедливи светилки вашите кујнски апарати поради причина трошат електрична енергија зар...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 25 часа</span>
+                                    <span>пред 26 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1084,7 +1452,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">ВИДЕО: Солени руски капи</h3>
                                 <p class="theme-text-secondary text-sm"> страна премачкајте павлака мајонез, извалкајте потпечен сусам.  измешајте состојки чувајте фрижидер дојде ред склопите руските капи.  потребни сос...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 25 часа</span>
+                                    <span>пред 26 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1099,7 +1467,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Еден знак ќе оживее стар план, друг ќе расчисти нешто што го мачи долго време: Дневен хороскоп (12.11.2025)</h3>
                                 <p class="theme-text-secondary text-sm"> девиците одлично друштво бидејќи даваат структура, избегнувајте близнаци, денес премногу хаотични вашата енергија.  овните друштво бидејќи ве потт...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 25 часа</span>
+                                    <span>пред 26 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1114,7 +1482,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">ИЕА: Глобалната побарувачка за нафта и гас може да расте до 2050 година</h3>
                                 <p class="theme-text-secondary text-sm"> време администрацијата џо бајден, иеа предвиде глобалната побарувачка нафта достигне врвот деценија потребни понатамошни инвестиции нафта гас свет...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 25 часа</span>
+                                    <span>пред 27 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1129,7 +1497,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Видео) Пет закони во Дубаи кои може скапо да ве чинат</h3>
                                 <p class="theme-text-secondary text-sm"> спиење јавни места тетијана конечно предупреди правило звучи чудно многумина – забраната спиење јавни места.  некои правила, забраната пиење алкох...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 26 часа</span>
+                                    <span>пред 27 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1144,7 +1512,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Дневен хороскоп за 12 ноември – Ќе бидете оптоварени со различни обврски</h3>
                                 <p class="theme-text-secondary text-sm"> партнерот обрнува внимание вашите коментари, имате впечаток ве држи настрана ве вклучува некои тајни планови.  имате романтично расположение, парт...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 26 часа</span>
+                                    <span>пред 27 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1159,7 +1527,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Осомничениот за саботажата на „Северен тек“ го прекина штрајкот со глад во италијански затвор</h3>
                                 <p class="theme-text-secondary text-sm"> украинецот наоѓа затвор италија обвинет вмешаност бомбашкиот напад гасоводите северен тек балтичкото море 2022 година, прекина штрајкот глад почна...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 26 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1174,7 +1542,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Ставете кора од портокал во машината за садови: овој трик е генијален и ќе го обожавате</h3>
                                 <p class="theme-text-secondary text-sm"> еве користите кори портокал вашата машина миење садови.  резултатот свежа, миризлива машина миење садови, едноставна ефикасна.  освежувањето вашат...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 26 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1189,7 +1557,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Милијардер вели дека луѓето трошат пари на овие 12 работи и затоа се сиромашни</h3>
                                 <p class="theme-text-secondary text-sm"> бафет советува луѓето редовно прегледуваат плаќаат откажат имаат корист .  опционирање кредитни картички кредитните картички можат бидат корисни, ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 26 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1204,7 +1572,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Фото) Најпосакуваната чанта оваа зима доаѓа во нијанса каква што никој не очекуваше</h3>
                                 <p class="theme-text-secondary text-sm"> модниот свет диктира женските чанти претстојната зима, модел боја видиме насекаде наредните месеци.  според , двете трендсетерки видени опуштен мо...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 27 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1219,7 +1587,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Трамп во интервју за „Фокс Њуз“ за тужбата против Би-Би-Си: Мислам дека имам обврска да го направам тоа</h3>
                                 <p class="theme-text-secondary text-sm"> американскиот претседател доналд трамп дена изјави обврска тужи британската погрешно претставување коментари нападот американскиот капитол 6 јануа...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 27 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1234,7 +1602,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Познат фризер открива која нијанса на руса коса додава 10 години</h3>
                                 <p class="theme-text-secondary text-sm"> платинестата ледено русата коса можат направат тенот изгледа исцрпен, цртите лицето поостри.  жени сметаат посветлата коса освежува нивниот изглед...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 27 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1249,7 +1617,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Ким Кардашјан и Крис Џенер ги избришаа фотографиите од роденденот со Меган и Хари</h3>
                                 <p class="theme-text-secondary text-sm"> крис џенер првично објави серија фотографии нејзината забава полна ѕвезди, вклучувајќи позира војводата војвотката сасекс, фотографија исчезна.  к...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 27 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1264,7 +1632,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Кога се сакаат, горат и небото и земјата: тие се најдраматичните љубовни парови во хороскопот</h3>
                                 <p class="theme-text-secondary text-sm"> потребата лавот драма постојано докажување исцрпи трпеливиот бик, отпорот бикот промените фрустрира динамичниот лав.  нивната привлечност лежи ови...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 27 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1279,7 +1647,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Колку повеќе расте, толку повеќе пари носи: додајте две состојки и ќе напредува како лудо</h3>
                                 <p class="theme-text-secondary text-sm"> тајната луд раст: лушпи јајца шеќер најдобрите избори органско хранење красулата лушпите јајца, исклучително богати калциум.  мелете лушпите јајца...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 27 часа</span>
+                                    <span>пред 29 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1294,7 +1662,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Мал трик: со една состојка секој сос ќе биде совршено кремаст и богат со вкус</h3>
                                 <p class="theme-text-secondary text-sm"> подготовката кремаст сос едноставна, постои мал трик прави совршено мазен богат вкус.  имено, додавањето путер крајот готвењето прави сосот кремас...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 27 часа</span>
+                                    <span>пред 29 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1309,7 +1677,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Фото) Ги покажа своите неверојатни нозе во мини фустанче: кој би помислил дека има 56 години?</h3>
                                 <p class="theme-text-secondary text-sm"> нејзиното провокативно издание привлече големо внимание, појави чипкана кратка облека истакнуваше нејзината зачудувачка, витка фигура нејзините 50...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 27 часа</span>
+                                    <span>пред 29 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1324,7 +1692,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Од вчера почна да делува ретрограден Јупитер: Што му носи на вашиот хороскопски знак?</h3>
                                 <p class="theme-text-secondary text-sm"> ретроградниот јупитер носи шанса решат неодговорените прашања, особено долговите вложувањата.  период добар ослободување стари емоционални товар р...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 27 часа</span>
+                                    <span>пред 29 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1339,7 +1707,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Кои хороскопски знаци ќе иницираат развод до крајот на 2025 година?</h3>
                                 <p class="theme-text-secondary text-sm"> ноември декември 2025, ретроградната венера аспекти раху нивната 7 ма куќа (куќата партнерство) создадат конфликти, недоразбирања чувство емоциона...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 27 часа</span>
+                                    <span>пред 29 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1354,7 +1722,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Фото) Бон Џови стана дедо по втор пат: уште едно бебе по само неколку недели</h3>
                                 <p class="theme-text-secondary text-sm"> синот бон џови, џеси, постариот брат џејк неодамна стана татко сопруга мили боби браун посвоија дете, објави сопруга добија девојче крстија блер л...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 28 часа</span>
+                                    <span>пред 29 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1369,7 +1737,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Денес е светиот свештеномаченик Зиновиј и сестра му Зиновија</h3>
                                 <p class="theme-text-secondary text-sm"> свети зиновиј одговори: животот христа живот смрт, смртта заради христа смрт живот.  светите апостоли клеопа, терциј, марко, јуст артем седумдесет...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 28 часа</span>
+                                    <span>пред 29 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1384,7 +1752,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Фото) Хејли Бибер ги засени сите со фустанот и деколтето</h3>
                                 <p class="theme-text-secondary text-sm"> хејли носеше блескав црн фустан наликува парчето версаче краси најпознатите девојки бонд, актерката ева грин.  иако криеше лицето фотографите след...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 28 часа</span>
+                                    <span>пред 29 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1399,7 +1767,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Видео) Чизмите на Дакота Џонсон предизвикаа хаос на интернет: распродадени се</h3>
                                 <p class="theme-text-secondary text-sm"> дакота џонсон, неодамна направи спектакл фустан модната куќа валентино, привлече големо внимание стајлинг филмскиот фестивал цирих, видеото стана ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 28 часа</span>
+                                    <span>пред 30 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1414,7 +1782,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Дневен хороскоп за среда, 12-ти ноември 2025 година</h3>
                                 <p class="theme-text-secondary text-sm"> риби дневниот хороскоп ве советува наметнете работа, иако вашата природа, единствениот пат подобро работно место.  јарец дневниот хороскоп ве сове...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 28 часа</span>
+                                    <span>пред 30 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1429,7 +1797,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Фото) Се породи 13 дена по модната ревија: „Ангелот на Викторија“ стана мајка по втор пат</h3>
                                 <p class="theme-text-secondary text-sm"> матео ира бореро, 28. појавувањето популарната манекенка модната ревија викторија сикрет знак прашање, бидејќи претпоставуваше прошета ангел годин...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 28 часа</span>
+                                    <span>пред 30 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1444,7 +1812,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Пет историски лаги во кои луѓето веруваат и ден-денес</h3>
                                 <p class="theme-text-secondary text-sm"> иако носел комплети протези, биле направени различни материјали слонова коска, злато, олово, човечки заби дрво.  второ, првиот европеец всушност с...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 28 часа</span>
+                                    <span>пред 30 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1459,7 +1827,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Принцот Џорџ сака мобилен телефон, но неговиот татко не му дозволува</h3>
                                 <p class="theme-text-secondary text-sm"> принцот вилијам призна одлуката забрани неговиот 12 годишен син, принцот џорџ, мобилен телефон станува напнато прашање семејството.  принцот џорџ ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 29 часа</span>
+                                    <span>пред 30 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1474,7 +1842,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Фото) По неуспешните љубовни врски, таа бакнува некој 10 години постар: фатени на дело</h3>
                                 <p class="theme-text-secondary text-sm"> врска францускиот режисер ромен гаврас, 10 години постар , неодамна превземен</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 29 часа</span>
+                                    <span>пред 30 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1489,7 +1857,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Седум трикови за жените со облини: Есенски комбинации кои визуелно ја издолжуваат фигурата</h3>
                                 <p class="theme-text-secondary text-sm"> монохроматскиот изглед брише преодот помеѓу горниот долниот дел телото прави изгледате послаби.  таквите модели создаваат вертикални линии визуелн...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 29 часа</span>
+                                    <span>пред 30 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1504,7 +1872,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Најздравиот појадок на светот: топи масти, слабее и го зајакнува телото</h3>
                                 <p class="theme-text-secondary text-sm"> сомнение, најздравиот појадок светот идеален носење работа.  каша идеална носење работа, можете јадете фантастични начина: – солен вкус: додадете ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 29 часа</span>
+                                    <span>пред 31 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1519,7 +1887,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Фото) Ким Кардашијан во бело ги откри своите прекрасни облини</h3>
                                 <p class="theme-text-secondary text-sm"> ким реши покаже целиот свој сјај снежно бел фустан.  појави црвениот тепих фустан , открива отколку покрива.  ким собра косата уредно залижана пун...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 29 часа</span>
+                                    <span>пред 31 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1534,7 +1902,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Конечно ќе наплатат за сè: 4 знака нема да знаат што да прават со парите во 2026 година</h3>
                                 <p class="theme-text-secondary text-sm"> ѕвездите предвидуваат 2026 година година бескрајни пари некои знаци – бајка, астролошки потенцијал бара акција.  ѕвездите предвидуваат четири хоро...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 30 часа</span>
+                                    <span>пред 31 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1549,7 +1917,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Голман не знаел дека мечот е прекинат поради магла, 15 минути сам на теренот!</h3>
                                 <p class="theme-text-secondary text-sm"> најнеобичните сцени историјата фудбалот случила англија 1937 година, голманот сем бартрам тимот чарлтон атлетик останал сам теренот цели 15 минути...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 35 часа</span>
+                                    <span>пред 37 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1564,7 +1932,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Ужас на излет: Потона катамаран, преполн со туристи (ВИДЕО)</h3>
                                 <p class="theme-text-secondary text-sm"> јахтата наполни вода, фотографиите местото настанот покажаа десетици туристи пловат морето облечени елеци спасување.  морнарицата, цивилната зашти...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 36 часа</span>
+                                    <span>пред 38 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1579,22 +1947,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Двегодишно дете пропадна во лифт, шокираниот татко скокна по него (Вознемирувачко видео) </h3>
                                 <p class="theme-text-secondary text-sm"> соседите слушнале повици помош, запреле лифтот третиот кат, таткото извлекол синот.  соседите слушнале повици помош момчето потпрело лифтот, попуш...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 36 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-лекцијата-за-секој-кој-страда-од-несоница-треба-да-ја-знае-summary-27518.html" class="flex gap-3">
-                            <img src="images/cache/summary-27518.webp" alt="Лекцијата за секој кој страда од несоница треба да ја знае: Не правете ги овие работи!"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Лекцијата за секој кој страда од несоница треба да ја знае: Не правете ги овие работи!</h3>
-                                <p class="theme-text-secondary text-sm"> совет здрав разум, луѓето несоница, некои практики можат имаат спротивен ефект – влошат несоницата наместо подобрат.  хигиената спиењето однесува ...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 часа</span>
+                                    <span>пред 38 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1609,7 +1962,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Љубовта им е бонус, а богатството – цел: Хороскопот открива кои жени го одбираат второто!</h3>
                                 <p class="theme-text-secondary text-sm"> сака финансиска сигурност бракот, жената бик бара сопруг меѓу вага, риби јарец.  сака финансиска сигурност, бара брачен партнер знакот овен, бик л...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 часа</span>
+                                    <span>пред 39 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1624,7 +1977,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Осудена е организаторка на најголемата измама со криптовалути, вредна 5,5 милијарди фунти</h3>
                                 <p class="theme-text-secondary text-sm"> жимин ќијанг (47) осудена 11 години осум месеци затвор откако осмислила извршила најголемата заплена криптовалути историјата британската полиција,...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 38 часа</span>
+                                    <span>пред 39 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1639,7 +1992,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Хороскопски знаци кои во ноември ќе се смират со своите љубови</h3>
                                 <p class="theme-text-secondary text-sm"> венера шкорпија текот ноември носи интензивни емоции потреба длабока поврзаност.  , ноември станува месец замрзнати емоции излегуваат површина, па...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 38 часа</span>
+                                    <span>пред 40 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1654,7 +2007,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(ВИДЕО) Прв трејлер за филмот за Путин: Не ме интересира Нобелова награда за мир – сакам војна</h3>
                                 <p class="theme-text-secondary text-sm"> трејлерот, путин изговара реплика одекнува целиот филм: интересира… моќта.  исечокот публиката можност види премиерата венеција, драмата волшебник...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 38 часа</span>
+                                    <span>пред 40 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1669,7 +2022,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">„Уживав во тоа“- Џорџ Клуни му подметнал шега на Бред Пит (ВИДЕО)</h3>
                                 <p class="theme-text-secondary text-sm"> разговор џими кимел, клуни осврна с рани актерски денови нискобуџетни хорор филмови филмски соработки лора дерн адам сандлер, особено урнебесна пр...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 38 часа</span>
+                                    <span>пред 40 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1684,7 +2037,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Овие три хороскопски знаци во ноември се најсклони кон неверства!</h3>
                                 <p class="theme-text-secondary text-sm"> доколку чувствуваат партнерот зема здраво готово, обидат вратат сјајот тајни средби флерт.  текот ноември, некои хороскопски знаци почувствуваат з...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 39 часа</span>
+                                    <span>пред 40 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1699,7 +2052,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Момче и девојка снимале романтична фотографија, кога во кадарот им влегол- Лионел Меси (ВИДЕО)</h3>
                                 <p class="theme-text-secondary text-sm"> облечен фармерки дуксерка качулка опкружен телохранители, меси помина , несвесен претворил нивниот состанок сеќавање цел живот.  виралното видео п...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 39 часа</span>
+                                    <span>пред 40 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1714,7 +2067,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Данска забрани деца помали од 15 години да користат социјални мрежи</h3>
                                 <p class="theme-text-secondary text-sm"> австралиските власти лани воведоа забрана користење социјални мрежи деца 16 години, данска најави забрани деца 15 години прават истото, пренесува ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 39 часа</span>
+                                    <span>пред 41 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1729,7 +2082,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">(Видео) Трамп ја бакна вдовицата на Кирк во образ, јавноста реагира</h3>
                                 <p class="theme-text-secondary text-sm"> говор, ерика кирк заблагодари новиот амбасадор емоции присети сопругот: чарли сакаше, сигурно прв јавил дознал позиција.  доналд трамп предизвика ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 40 часа</span>
+                                    <span>пред 42 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1744,7 +2097,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Преубавата мисица од Чиле низ солзи проговори за големиот скандал (ВИДЕО)</h3>
                                 <p class="theme-text-secondary text-sm"> сепак, многумина поврзаа видеото дрога прогласија целосно несоодветно учесничка мис универзум, некои коментатори побараа нејзина дисквалификација....</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 41 часа</span>
+                                    <span>пред 42 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1759,7 +2112,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Манекенка роди син само 13 дена, откако прошета по пистата на ревијата на „Викоторија сикрет“ </h3>
                                 <p class="theme-text-secondary text-sm"> матео ира бореро, 28. бремена модната писта недели, јасмин дозволи нејзината одмината бременост спречи отвори модната ревија викторија сикрет 2025...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 41 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1774,7 +2127,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Совети кои се пренесуваат од колено на колено</h3>
                                 <p class="theme-text-secondary text-sm"> бидете потивки владее тишина вашата душа, вашиот дух мирен.  копај кладенец птиците гнездат горешниците сигурно вода.  погледни небото почесто тво...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 41 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1789,7 +2142,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Ким Кардашијан ги обвини гатачите дека ѝ дале лажна надеж оти ќе го положи правосудниот испит</h3>
                                 <p class="theme-text-secondary text-sm"> сонот ким кардашијан адвокатска кариера останува чекање.  иако разочарана, ким нагласи откажува продолжи подготовките положи испитот.  верувајте !...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 41 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1804,22 +2157,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Почина актерка номинирана за Оскар за улогата во филмот „Ана“</h3>
                                 <p class="theme-text-secondary text-sm"> киркланд глумеше денови нашите животи долина куклите, нејзините камео улоги вклучуваат серии коџак, старски хач.  телевизиската филмска ѕвезда, но...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 41 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-алиу-за-ретките-болести-годинава-се-обезбедени-58-лека-за-summary-27369.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%90%D0%BB%D0%B8%D1%83%3A+%D0%97%D0%B0+%D1%80%D0%B5%D1%82%D0%BA%D0%B8%D1%82%D0%B5+%D0%B1%D0%BE%D0%BB%D0%B5%D1%81%D1%82%D0%B8+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0%D0%B2%D0%B0+%D1%81%D0%B5+%D0%BE%D0%B1%D0%B5%D0%B7%D0%B1%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8+58+%D0%BB%D0%B5%D0%BA%D0%B0+%D0%B7%D0%B0+430+%D0%BF%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B8" alt="Алиу: За ретките болести годинава се обезбедени 58 лека за 430 пациенти"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Алиу: За ретките болести годинава се обезбедени 58 лека за 430 пациенти</h3>
-                                <p class="theme-text-secondary text-sm"> министерот здравство, азир алиу, заедно здружението ретки болести живот предизвици одржаа прес конференција повод симпозиумот рамки кампањата редо...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 46 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1833,66 +2171,6 @@
                             <div class="flex flex-col flex-1">
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Европскиот суд поништи делови од директивата за минимални плати по жалба на Данска</h3>
                                 <p class="theme-text-secondary text-sm"> есј оцени претставува директно нарушување правото слобода здружување, бидејќи државите обврзани присилуваат работниците зачленуваат синдикати  суд...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 45 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-лекувањето-не-е-единствено-нешто-што-им-е-потребно-на-summary-27394.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9B%D0%B5%D0%BA%D1%83%D0%B2%D0%B0%D1%9A%D0%B5%D1%82%D0%BE+%D0%BD%D0%B5+%D0%B5+%D0%B5%D0%B4%D0%B8%D0%BD%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BE+%D0%BD%D0%B5%D1%88%D1%82%D0%BE+%D1%88%D1%82%D0%BE+%D0%B8%D0%BC+%D0%B5+%D0%BF%D0%BE%D1%82%D1%80%D0%B5%D0%B1%D0%BD%D0%BE+%D0%BD%D0%B0+%D0%BF%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%82%D0%B5%2C+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B8%D0%BC%D0%B5+%D0%BD%D0%B0+%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D0%B8%D1%98%D0%B0+%D0%B7%D0%B0+%D1%80%D0%B5%D1%82%D0%BA%D0%B8+%D0%B1%D0%BE%D0%BB%D0%B5%D1%81%D1%82%D0%B8+%D1%88%D1%82%D0%BE+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0%D0%B2%D0%B0+%D1%82%D1%80%D0%B5%D0%B1%D0%B0+%D0%B4%D0%B0+%D1%81%D0%B5+%D1%83%D1%81%D0%B2%D0%BE%D0%B8%2C+%D0%B2%D0%B5%D0%BB%D0%B8+%D0%92%D0%B5%D1%81%D0%BD%D0%B0+%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B0+%D0%BE%D0%B4+%E2%80%9E%D0%96%D0%B8%D0%B2%D0%BE%D1%82+%D1%81%D0%BE+%D0%BF%D1%80%D0%B5%D0%B4%D0%B8%D0%B7%D0%B2%D0%B8%D1%86%D0%B8%E2%80%9C" alt="Лекувањето не е единствено нешто што им е потребно на пациентите, работиме на стратегија за ретки болести што годинава треба да се усвои, вели Весна Алексовска од „Живот со предизвици“"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Лекувањето не е единствено нешто што им е потребно на пациентите, работиме на стратегија за ретки болести што годинава треба да се усвои, вели Весна Алексовска од „Живот со предизвици“</h3>
-                                <p class="theme-text-secondary text-sm"> намален буџетот програмата ретки болести изненадува, бидејќи имаме нови пациенти, нови болести, нови лекови, програмата зголемува претходните годи...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 45 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-реченици-кои-мажите-не-можат-да-ги-поднесат-неколку-работи-summary-27389.html" class="flex gap-3">
-                            <img src="images/cache/summary-27389.webp" alt="РЕЧЕНИЦИ КОИ МАЖИТЕ НЕ МОЖАТ ДА ГИ ПОДНЕСАТ: Неколку работи од кои им се „крева косата“"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">РЕЧЕНИЦИ КОИ МАЖИТЕ НЕ МОЖАТ ДА ГИ ПОДНЕСАТ: Неколку работи од кои им се „крева косата“</h3>
-                                <p class="theme-text-secondary text-sm"> мажите сакаат жените директни, наместо користат драматични воведи.  коментари љубовни вештини жените, мажите, разговараат пријатели сексот.  мисли...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 45 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-што-ќе-означува-четвртото-светло-на-семафорите-summary-27384.html" class="flex gap-3">
-                            <img src="images/cache/summary-27384.webp" alt="Што ќе означува четвртото светло на семафорите?"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Што ќе означува четвртото светло на семафорите?</h3>
-                                <p class="theme-text-secondary text-sm"> научниците универзитетот северна каролина предложија револуција сообраќајот воведување четврто, бело светло семафорите.  новото бело светло вклучу...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 46 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-драгица-стевковска-дракче-за-канал-5-добив-порака-колку-ве-summary-27378.html" class="flex gap-3">
-                            <img src="images/cache/summary-27378.webp" alt="Драгица Стевковска Дракче за Канал 5: „Добив порака: ‘Колку ве плаќаат за да бидете болни?’ Тоа беше многу грозно“"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Драгица Стевковска Дракче за Канал 5: „Добив порака: ‘Колку ве плаќаат за да бидете болни?’ Тоа беше многу грозно“</h3>
-                                <p class="theme-text-secondary text-sm"> толкувавте соништа, затоа болни, раскажа дракче коментарите добила.  , жал, читате коментарите , верче, александра јавна личност илјадници комента...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
                                     <span>пред 46 часа</span>
                                 </div>
@@ -1909,7 +2187,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Сопругата на Метју Мекконахи покажа како изгледа тој на 56 години без маичка</h3>
                                 <p class="theme-text-secondary text-sm"> двојката прослави 13 годишнина бракот јуни, прилика признаа секоја година имаат проблеми помнењето точниот датум.  шега случила пати претходно сак...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 23 часа</span>
+                                    <span>пред 25 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1924,7 +2202,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Втор саем на еколошки бизниси во рамки на Неделата на дизајн во Скопје од 8 до 16 ноември</h3>
                                 <p class="theme-text-secondary text-sm"> рамки второто издание саемот, посетителите имаат можност запознаат поддржат 24 македонски иновативни еколошки бизниси, производи докажуваат малите...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1939,7 +2217,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Во ноември овие хороскопски знаци ги чека луда среќа</h3>
                                 <p class="theme-text-secondary text-sm"> овие 2 хороскопски знаци бидат најуспешни полиња ноември: стрелец ноември месец нови деловни задачи стрелците успешно завршат.  според астролозите...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 41 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1954,7 +2232,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Дневен хороскоп за 4 ноември 2025</h3>
                                 <p class="theme-text-secondary text-sm"> вторник, вашиот ум особено бистар приемчив нови идеи.  риби вашата интуиција исклучително силна вторник .  слушајте вашиот внатрешен глас, особено...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 45 часа</span>
+                                    <span>пред 46 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1969,7 +2247,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Дневен хороскоп за 3 ноември 2025 година</h3>
                                 <p class="theme-text-secondary text-sm"> љубовта, бидете внимателни потребите вашиот партнер.  понеделник бара рамнотежа помеѓу желбата блеснете потребата бидете практични.  овен почетоко...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 45 часа</span>
+                                    <span>пред 46 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1984,7 +2262,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Солена пита со спанаќ и сирење</h3>
                                 <p class="theme-text-secondary text-sm"> спанаќот замрзнат, исцедете измешајте маслиново масло, јогурт, сирење, јајца, брашно прашок пециво.  потребни состојки: 3 чаши брашно посипување 1...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 45 часа</span>
+                                    <span>пред 46 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -1999,7 +2277,7 @@
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Ретроградниот Меркур во ноември носи компликации: Пет знаци на удар!</h3>
                                 <p class="theme-text-secondary text-sm"> знаци најмногу почувствуваат ретроградниот меркур: стрелец најпогодениот знак циклус.  ретроградниот меркур носи одредена количина конфузија, недо...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 45 часа</span>
+                                    <span>пред 46 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -2013,21 +2291,6 @@
                             <div class="flex flex-col flex-1">
                                 <h3 class="theme-text-primary text-lg font-bold mb-1">Утринскиот секс е тајната за покачување на платата и унапредување на работа</h3>
                                 <p class="theme-text-secondary text-sm"> чини утринскиот секс подига расположението подобро кафето.  припадниците генерацијата најсклони доцнење, 25% признале работа пристигнале утринскат...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 45 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-нискиот-крвен-притисок-може-сериозно-да-го-загрози-здравјето-summary-27370.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9D%D0%B8%D1%81%D0%BA%D0%B8%D0%BE%D1%82+%D0%BA%D1%80%D0%B2%D0%B5%D0%BD+%D0%BF%D1%80%D0%B8%D1%82%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B6%D0%B5+%D1%81%D0%B5%D1%80%D0%B8%D0%BE%D0%B7%D0%BD%D0%BE+%D0%B4%D0%B0+%D0%B3%D0%BE+%D0%B7%D0%B0%D0%B3%D1%80%D0%BE%D0%B7%D0%B8+%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D1%98%D0%B5%D1%82%D0%BE" alt="Нискиот крвен притисок може сериозно да го загрози здравјето"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Нискиот крвен притисок може сериозно да го загрози здравјето</h3>
-                                <p class="theme-text-secondary text-sm"> разлика луѓето висок притисок, низок притисок требало одбегнуваат сол, бидејќи качува притисокот.  течноста најважна мачи низок притисок честопати...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
                                     <span>пред 46 часа</span>
                                 </div>

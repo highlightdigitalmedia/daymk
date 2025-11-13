@@ -71,16 +71,159 @@
         <div class="p-4">
             <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
             <nav class="flex flex-col gap-2">
-                <!-- Main Nav Links -->
-                <a href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Вести</a><a href="sports.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Спорт</a><a href="magazine.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Магазин</a>
-                <a href="latest-news.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a><a href="prognoza.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a><a href="radio.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a><a href="youtube.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="intimate.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Intimate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="radio.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="youtube.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+
                 <hr class="my-3 theme-border-color">
-                <!-- Other Utility Links -->
-                <button id="theme-toggle-mobile" class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
                     <span id="theme-toggle-mobile-text">Toggle Theme</span>
                 </button>
-                <a id="switch-to-desktop-button" href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Стандардна верзија</a>
+                <a id="switch-to-desktop-button"
+                   href="index.html"
+                   class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">
+                    Стандардна верзија
+                </a>
             </nav>
+
         </div>
     </div>
 
@@ -99,14 +242,14 @@
 
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-лапорта-не-жали-што-меси-ја-напушти-барселона-summary-27635.html" class="flex gap-3">
-                            <img src="images/cache/summary-27635.webp" alt="Лапорта не жали што Меси ја напушти Барселона"
+                        <a href="world-политико-ле-пен-нема-да-се-кандидира-за-претседател-ако-summary-27700.html" class="flex gap-3">
+                            <img src="images/cache/summary-27700.webp" alt="Политико: Ле Пен нема да се кандидира за претседател ако судот ја потврди забраната за избори"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Лапорта не жали што Меси ја напушти Барселона</h3>
-                                <p class="theme-text-secondary text-sm"> лапорта опиша доаѓањето меси спонтан чин посветеност клубот.  претседателот барселона, џоан лапорта, коментираше ненадејната посета лео меси камп ...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Политико: Ле Пен нема да се кандидира за претседател ако судот ја потврди забраната за избори</h3>
+                                <p class="theme-text-secondary text-sm"> откако прогласи виновна, судот веднаш ѝ изрече петгодишна забрана ле пен кандидира функција, апелацискиот суд поништи.  марин ле пен, лидерката фр...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 25 часа</span>
+                                    <span>пред 24 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -114,14 +257,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="balkan-казната-ќе-ве-чека-на-граница-нема-да-може-да-ја-напуштите-summary-27634.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9A%D0%B0%D0%B7%D0%BD%D0%B0%D1%82%D0%B0+%D1%9C%D0%B5+%D0%B2%D0%B5+%D1%87%D0%B5%D0%BA%D0%B0+%D0%BD%D0%B0+%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0%3A+%D0%9D%D0%B5%D0%BC%D0%B0+%D0%B4%D0%B0+%D0%BC%D0%BE%D0%B6%D0%B5+%D0%B4%D0%B0+%D1%98%D0%B0+%D0%BD%D0%B0%D0%BF%D1%83%D1%88%D1%82%D0%B8%D1%82%D0%B5+%D0%93%D1%80%D1%86%D0%B8%D1%98%D0%B0+%D0%B0%D0%BA%D0%BE+%D0%B8%D0%BC%D0%B0%D1%82%D0%B5+%D0%BD%D0%B5%D0%BF%D0%BB%D0%B0%D1%82%D0%B5%D0%BD%D0%B0+%D0%B3%D0%BB%D0%BE%D0%B1%D0%B0" alt="Казната ќе ве чека на граница: Нема да може да ја напуштите Грција ако имате неплатена глоба"
+                        <a href="world-извештај-на-еу-за-миграцијата-илегалните-преминувања-на-summary-27699.html" class="flex gap-3">
+                            <img src="images/cache/summary-27699.webp" alt="Извештај на ЕУ за миграцијата: Илегалните преминувања на надворешните граници намалени за 35 отсто "
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Казната ќе ве чека на граница: Нема да може да ја напуштите Грција ако имате неплатена глоба</h3>
-                                <p class="theme-text-secondary text-sm"> грција најави нов, автоматизиран систем контрола сообраќајни прекршоци, оневозможи странските државјани напуштат земјата доколку имаат неплатена к...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Извештај на ЕУ за миграцијата: Илегалните преминувања на надворешните граници намалени за 35 отсто </h3>
+                                <p class="theme-text-secondary text-sm"> извештајот, рамки пактот миграција азил, чија целосна имплементација почне јуни 2026 година, дава сеопфатен преглед состојбата азилот миграцијата ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 25 часа</span>
+                                    <span>пред 24 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -129,14 +272,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-тајани-италија-ќе-игра-водечка-улога-во-обновата-на-газа-summary-27633.html" class="flex gap-3">
-                            <img src="images/cache/summary-27633.webp" alt="Тајани: Италија ќе игра водечка улога во обновата на Газа"
+                        <a href="kultura-варвари-на-горки-првпат-на-македонската-сцена-премиера-во-summary-27698.html" class="flex gap-3">
+                            <img src="images/cache/summary-27698.webp" alt="„Варвари“ на Горки првпат на македонската сцена: премиера во МНТ во режија на Владимир Милчин"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Тајани: Италија ќе игра водечка улога во обновата на Газа</h3>
-                                <p class="theme-text-secondary text-sm"> италија игра важна конструктивна улога процесот обнова газа стабилизирање прекинот огнот меѓу израел палестинците, изјави италијанскиот министер н...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">„Варвари“ на Горки првпат на македонската сцена: премиера во МНТ во режија на Владимир Милчин</h3>
+                                <p class="theme-text-secondary text-sm"> делото варвари првпат поставува театарска сцена македонија.  креативниот тим претставата сочинуваат: сценограф – беди ибрахим костимограф – марија...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 25 часа</span>
+                                    <span>пред 24 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -144,14 +287,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-хамес-родригез-ќе-стане-слободен-агент-за-да-си-најде-нов-summary-27632.html" class="flex gap-3">
-                            <img src="images/cache/summary-27632.webp" alt="Хамес Родригез ќе стане слободен агент за да си најде нов клуб и да игра на СП 2026"
+                        <a href="sport-милевски-летонија-е-убава-шанса-да-ја-видиме-и-пошироката-summary-27697.html" class="flex gap-3">
+                            <img src="images/cache/summary-27697.webp" alt="Милевски: Летонија е убава шанса да ја видиме и пошироката слика"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Хамес Родригез ќе стане слободен агент за да си најде нов клуб и да игра на СП 2026</h3>
-                                <p class="theme-text-secondary text-sm"> светското првенство 2026 година можело третото учество џејмс светското првенство  триесет четиригодишниот колумбиец минатото настапуваше реал мадр...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Милевски: Летонија е убава шанса да ја видиме и пошироката слика</h3>
+                                <p class="theme-text-secondary text-sm"> фудбалската репрезентација македонија утре (18 часот) игра пријателски натпревар против летонија, пресрет завршницата квалификациски циклус, госту...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 25 часа</span>
+                                    <span>пред 24 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -159,14 +302,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-тоа-би-сакал-да-ми-пишува-на-гробот-откри-асот-ѓоковиќ-си-ја-summary-27631.html" class="flex gap-3">
-                            <img src="images/cache/summary-27631.webp" alt="📽️ ТОА БИ САКАЛ ДА МИ ПИШУВА НА ГРОБОТ, ОТКРИ АСОТ Ѓоковиќ си ја отвори душата пред познатиот Пирс Морган"
+                        <a href="world-единствениот-внук-на-џон-ф-кенеди-влегува-во-политиката-summary-27696.html" class="flex gap-3">
+                            <img src="images/cache/summary-27696.webp" alt="Единствениот внук на Џон Ф. Кенеди влегува во политиката"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">📽️ ТОА БИ САКАЛ ДА МИ ПИШУВА НА ГРОБОТ, ОТКРИ АСОТ Ѓоковиќ си ја отвори душата пред познатиот Пирс Морган</h3>
-                                <p class="theme-text-secondary text-sm"> мислам сфатив сакам кажам мојот надгробен споменик.  разговор британскиот новинар пирс морган, ѓоковиќ изјави конечно сфатил суштината човечката п...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Единствениот внук на Џон Ф. Кенеди влегува во политиката</h3>
+                                <p class="theme-text-secondary text-sm"> џек бувие кенеди шлосберг, 32 годишниот внук поранешниот американски претседател џон фитцџералд кенеди, планира кандидира конгресот следната годин...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 25 часа</span>
+                                    <span>пред 24 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -177,12 +320,27 @@
                     </div>
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-нба-го-претстави-новиот-формат-на-ол-стар-натпреварот-summary-27630.html" class="flex gap-3">
-                            <img src="images/cache/summary-27630.webp" alt="НБА го претстави новиот формат на Ол-стар натпреварот"
+                        <a href="macedonia-судењето-за-пулс-почнува-на-19-ноември-во-новата-судница-во-summary-27695.html" class="flex gap-3">
+                            <img src="images/cache/summary-27695.webp" alt="Судењето за „Пулс“ почнува на 19 ноември во новата судница во Идризово"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">НБА го претстави новиот формат на Ол-стар натпреварот</h3>
-                                <p class="theme-text-secondary text-sm"> првите три четвртини ол стар натпреварот закажани кружен турнир помеѓу три екипи, тим игра двапати.  најслабата екипа отпадне, останатите соочат п...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Судењето за „Пулс“ почнува на 19 ноември во новата судница во Идризово</h3>
+                                <p class="theme-text-secondary text-sm"> надлежните упатија апел медиумите јавноста достоинствено одговорно известување, сензационализам, почит жртвите страни постапката.  постапката опфа...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 24 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="magazine-актерката-што-регрутира-жени-во-култ-сега-учи-како-да-summary-27694.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%90%D0%BA%D1%82%D0%B5%D1%80%D0%BA%D0%B0%D1%82%D0%B0+%D1%88%D1%82%D0%BE+%D1%80%D0%B5%D0%B3%D1%80%D1%83%D1%82%D0%B8%D1%80%D0%B0+%D0%B6%D0%B5%D0%BD%D0%B8+%D0%B2%D0%BE+%D0%BA%D1%83%D0%BB%D1%82+%D1%81%D0%B5%D0%B3%D0%B0+%D1%83%D1%87%D0%B8+%D0%BA%D0%B0%D0%BA%D0%BE+%D0%B4%D0%B0+%D1%81%D0%BF%D0%B0%D1%81%D1%83%D0%B2%D0%B0+%D0%BB%D1%83%D1%93%D0%B5" alt="Актерката што регрутира жени во култ сега учи како да спасува луѓе"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Актерката што регрутира жени во култ сега учи како да спасува луѓе</h3>
+                                <p class="theme-text-secondary text-sm"> уапсена 2018 година поради учество сектата нхивм, претставувала организација самопомош, всушност служела сексуално искористување жени.  2021 годин...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
                                     <span>пред 25 часа</span>
                                 </div>
@@ -192,12 +350,12 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-сабаленка-постави-рекорд-во-женскиот-тенис-за-награден-фонд-summary-27629.html" class="flex gap-3">
-                            <img src="images/cache/summary-27629.webp" alt="Сабаленка постави рекорд во женскиот тенис за награден фонд во една сезона"
+                        <a href="magazine-ејми-шумер-ослабе-па-ги-избриша-сите-стари-фотографии-од-summary-27693.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%95%D1%98%D0%BC%D0%B8+%D0%A8%D1%83%D0%BC%D0%B5%D1%80+%D0%BE%D1%81%D0%BB%D0%B0%D0%B1%D0%B5%2C+%D0%BF%D0%B0+%D0%B3%D0%B8+%D0%B8%D0%B7%D0%B1%D1%80%D0%B8%D1%88%D0%B0+%D1%81%D0%B8%D1%82%D0%B5+%D1%81%D1%82%D0%B0%D1%80%D0%B8+%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8+%D0%BE%D0%B4+%E2%80%9E%D0%98%D0%BD%D1%81%D1%82%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%E2%80%9C" alt="Ејми Шумер ослабе, па ги избриша сите стари фотографии од „Инстаграм“"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Сабаленка постави рекорд во женскиот тенис за награден фонд во една сезона</h3>
-                                <p class="theme-text-secondary text-sm"> минатиот викенд сабаленка финалето завршниот вта турнир, сабаленка загуби казахстанката елена рибакина  белорусинката заработила 15 милиони 8. пре...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Ејми Шумер ослабе, па ги избриша сите стари фотографии од „Инстаграм“</h3>
+                                <p class="theme-text-secondary text-sm"> избришав моите стари фотографии причина!, напиша .  откако јавно сподели дијагнозата кушингов синдром 2024 година, шумер сака стане застапник женс...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
                                     <span>пред 25 часа</span>
                                 </div>
@@ -207,12 +365,12 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="balkan-монструм-од-грција-затворил-и-мачел-58-мачки-казнет-е-со-1-7-summary-27628.html" class="flex gap-3">
-                            <img src="images/cache/summary-27628.webp" alt="Монструм од Грција затворил и мачел 58 мачки, казнет е со 1,7 милиони евра"
+                        <a href="economy-европската-инвестициска-банка-отвора-претставништво-во-summary-27692.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%95%D0%B2%D1%80%D0%BE%D0%BF%D1%81%D0%BA%D0%B0%D1%82%D0%B0+%D0%B8%D0%BD%D0%B2%D0%B5%D1%81%D1%82%D0%B8%D1%86%D0%B8%D1%81%D0%BA%D0%B0+%D0%B1%D0%B0%D0%BD%D0%BA%D0%B0+%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B0+%D0%BF%D1%80%D0%B5%D1%82%D1%81%D1%82%D0%B0%D0%B2%D0%BD%D0%B8%D1%88%D1%82%D0%B2%D0%BE+%D0%B2%D0%BE+%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5" alt="Европската инвестициска банка отвора претставништво во Скопје"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Монструм од Грција затворил и мачел 58 мачки, казнет е со 1,7 милиони евра</h3>
-                                <p class="theme-text-secondary text-sm"> шеесет тригодишен маж островот донуса, грција, казнет 1,7 милиони евра суровост животните, соопштија властите, објави грчкиот медиум превземен  ше...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Европската инвестициска банка отвора претставништво во Скопје</h3>
+                                <p class="theme-text-secondary text-sm"> договор зајакнува нашето партнерство потврдува заедничките цели – поддршка патот северна македонија интеграција европската унија, подобрена регион...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
                                     <span>пред 25 часа</span>
                                 </div>
@@ -222,27 +380,12 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="macedonia-сиљановска-давкова-имаме-обврска-природата-да-ја-третираме-summary-27627.html" class="flex gap-3">
-                            <img src="images/cache/summary-27627.webp" alt="Сиљановска-Давкова: Имаме обврска природата да ја третираме како партнер, штитејќи ја неа, се штитиме себеси"
+                        <a href="magazine-џек-шлосберг-наследникот-на-кенеди-ќе-се-бори-за-местото-на-summary-27691.html" class="flex gap-3">
+                            <img src="images/cache/summary-27691.webp" alt="Џек Шлосберг, наследникот на Кенеди, ќе се бори за местото на Надлер од Њујорк во Конгресот"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Сиљановска-Давкова: Имаме обврска природата да ја третираме како партнер, штитејќи ја неа, се штитиме себеси</h3>
-                                <p class="theme-text-secondary text-sm"> водена желбата заштита преспанското езеро, претседателката гордана сиљановска давкова, вчера општината ресен започна серијата посети македонските ...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 25 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="kultura-поетската-книга-географија-на-слободата-на-наташа-сарџоска-summary-27626.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9F%D0%BE%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%82%D0%B0+%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0+%E2%80%9E%D0%93%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%98%D0%B0+%D0%BD%D0%B0+%D1%81%D0%BB%D0%BE%D0%B1%D0%BE%D0%B4%D0%B0%D1%82%D0%B0%E2%80%9C+%D0%BD%D0%B0+%D0%9D%D0%B0%D1%82%D0%B0%D1%88%D0%B0+%D0%A1%D0%B0%D1%80%D1%9F%D0%BE%D1%81%D0%BA%D0%B0+%D0%BE%D0%B1%D1%98%D0%B0%D0%B2%D0%B5%D0%BD%D0%B0+%D0%B2%D0%BE+%D0%A0%D0%B8%D0%B5%D0%BA%D0%B0%2C+%D0%A5%D1%80%D0%B2%D0%B0%D1%82%D1%81%D0%BA%D0%B0" alt="Поетската книга „Географија на слободата“ на Наташа Сарџоска објавена во Риека, Хрватска"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Поетската книга „Географија на слободата“ на Наташа Сарџоска објавена во Риека, Хрватска</h3>
-                                <p class="theme-text-secondary text-sm"> сарџоска книга одржа промоции хрватска: првата рамки денови македонската култура риека авторката книгата говореше ивона дуноски, претседателка мак...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Џек Шлосберг, наследникот на Кенеди, ќе се бори за местото на Надлер од Њујорк во Конгресот</h3>
+                                <p class="theme-text-secondary text-sm"> њујорк тајмс џек шлосберг, внукот џон ф. кенеди, изјави кандидира местото конгресот ослободува пратеникот џеролд надлер, приклучувајќи преполните ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
                                     <span>пред 25 часа</span>
                                 </div>

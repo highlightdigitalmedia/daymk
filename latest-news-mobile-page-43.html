@@ -71,16 +71,159 @@
         <div class="p-4">
             <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
             <nav class="flex flex-col gap-2">
-                <!-- Main Nav Links -->
-                <a href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Вести</a><a href="sports.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Спорт</a><a href="magazine.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Магазин</a>
-                <a href="latest-news.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a><a href="prognoza.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a><a href="radio.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a><a href="youtube.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="intimate.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Intimate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="radio.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="youtube.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+
                 <hr class="my-3 theme-border-color">
-                <!-- Other Utility Links -->
-                <button id="theme-toggle-mobile" class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
                     <span id="theme-toggle-mobile-text">Toggle Theme</span>
                 </button>
-                <a id="switch-to-desktop-button" href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Стандардна верзија</a>
+                <a id="switch-to-desktop-button"
+                   href="index.html"
+                   class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">
+                    Стандардна верзија
+                </a>
             </nav>
+
         </div>
     </div>
 
@@ -99,12 +242,27 @@
 
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-пет-историски-лаги-во-кои-луѓето-веруваат-и-ден-денес-summary-27535.html" class="flex gap-3">
-                            <img src="images/cache/summary-27535.webp" alt="Пет историски лаги во кои луѓето веруваат и ден-денес"
+                        <a href="world-лидерот-на-хезболах-го-осуди-притисокот-на-сад-врз-либан-summary-27600.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9B%D0%B8%D0%B4%D0%B5%D1%80%D0%BE%D1%82+%D0%BD%D0%B0+%D0%A5%D0%B5%D0%B7%D0%B1%D0%BE%D0%BB%D0%B0%D1%85+%D0%B3%D0%BE+%D0%BE%D1%81%D1%83%D0%B4%D0%B8+%D0%BF%D1%80%D0%B8%D1%82%D0%B8%D1%81%D0%BE%D0%BA%D0%BE%D1%82+%D0%BD%D0%B0+%D0%A1%D0%90%D0%94+%D0%B2%D1%80%D0%B7+%D0%9B%D0%B8%D0%B1%D0%B0%D0%BD" alt="Лидерот на Хезболах го осуди притисокот на САД врз Либан"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Пет историски лаги во кои луѓето веруваат и ден-денес</h3>
-                                <p class="theme-text-secondary text-sm"> иако носел комплети протези, биле направени различни материјали слонова коска, злато, олово, човечки заби дрво.  второ, првиот европеец всушност с...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Лидерот на Хезболах го осуди притисокот на САД врз Либан</h3>
+                                <p class="theme-text-secondary text-sm"> лидерот проиранското либанско движење хезболах, наим касем, денеска осуди притисокот вршат сад, , според , обидуваат принудат либан направи отстап...</p>
+                                <div class="theme-text-secondary text-xs mt-2">
+                                    <span>пред 27 часа</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                
+                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                        <a href="bitola-доделени-четвртоноемвриските-награди-наградата-за-животно-summary-27599.html" class="flex gap-3">
+                            <img src="images/cache/summary-27599.webp" alt="Доделени четвртоноемвриските награди – наградата за животно дело врачена на уметникот Панде Петровски"
+                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
+                            <div class="flex flex-col flex-1">
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Доделени четвртоноемвриските награди – наградата за животно дело врачена на уметникот Панде Петровски</h3>
+                                <p class="theme-text-secondary text-sm"> градоначалникот општина битола тони коњановски врачи наградите најуспешните , своето обраќање истакна денес, поклонуваме спомените минатото, забор...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
                                     <span>пред 28 часа</span>
                                 </div>
@@ -114,12 +272,12 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-фото-се-породи-13-дена-по-модната-ревија-ангелот-на-summary-27534.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%28%D0%A4%D0%BE%D1%82%D0%BE%29+%D0%A1%D0%B5+%D0%BF%D0%BE%D1%80%D0%BE%D0%B4%D0%B8+13+%D0%B4%D0%B5%D0%BD%D0%B0+%D0%BF%D0%BE+%D0%BC%D0%BE%D0%B4%D0%BD%D0%B0%D1%82%D0%B0+%D1%80%D0%B5%D0%B2%D0%B8%D1%98%D0%B0%3A+%E2%80%9E%D0%90%D0%BD%D0%B3%D0%B5%D0%BB%D0%BE%D1%82+%D0%BD%D0%B0+%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%98%D0%B0%E2%80%9C+%D1%81%D1%82%D0%B0%D0%BD%D0%B0+%D0%BC%D0%B0%D1%98%D0%BA%D0%B0+%D0%BF%D0%BE+%D0%B2%D1%82%D0%BE%D1%80+%D0%BF%D0%B0%D1%82" alt="(Фото) Се породи 13 дена по модната ревија: „Ангелот на Викторија“ стана мајка по втор пат"
+                        <a href="bitola-почина-поетесата-и-универзитетска-професорка-славица-summary-27598.html" class="flex gap-3">
+                            <img src="images/cache/summary-27598.webp" alt="Почина поетесата и универзитетска професорка Славица Свидерска"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">(Фото) Се породи 13 дена по модната ревија: „Ангелот на Викторија“ стана мајка по втор пат</h3>
-                                <p class="theme-text-secondary text-sm"> матео ира бореро, 28. појавувањето популарната манекенка модната ревија викторија сикрет знак прашање, бидејќи претпоставуваше прошета ангел годин...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Почина поетесата и универзитетска професорка Славица Свидерска</h3>
+                                <p class="theme-text-secondary text-sm"> друштвото писателите македонија длабока жал извести денес, 12 ноември 2025 година, почина истакнатата поетеса, научничка универзитетска професорка...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
                                     <span>пред 28 часа</span>
                                 </div>
@@ -129,14 +287,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-принцот-џорџ-сака-мобилен-телефон-но-неговиот-татко-не-му-summary-27533.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%BE%D1%82+%D0%8F%D0%BE%D1%80%D1%9F+%D1%81%D0%B0%D0%BA%D0%B0+%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D0%B5%D0%BD+%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%2C+%D0%BD%D0%BE+%D0%BD%D0%B5%D0%B3%D0%BE%D0%B2%D0%B8%D0%BE%D1%82+%D1%82%D0%B0%D1%82%D0%BA%D0%BE+%D0%BD%D0%B5+%D0%BC%D1%83+%D0%B4%D0%BE%D0%B7%D0%B2%D0%BE%D0%BB%D1%83%D0%B2%D0%B0" alt="Принцот Џорџ сака мобилен телефон, но неговиот татко не му дозволува"
+                        <a href="magazine-осомничениот-за-саботажата-на-северен-тек-го-прекина-summary-27597.html" class="flex gap-3">
+                            <img src="images/cache/summary-27597.webp" alt="Осомничениот за саботажата на „Северен тек“ го прекина штрајкот со глад во италијански затвор"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Принцот Џорџ сака мобилен телефон, но неговиот татко не му дозволува</h3>
-                                <p class="theme-text-secondary text-sm"> принцот вилијам призна одлуката забрани неговиот 12 годишен син, принцот џорџ, мобилен телефон станува напнато прашање семејството.  принцот џорџ ...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Осомничениот за саботажата на „Северен тек“ го прекина штрајкот со глад во италијански затвор</h3>
+                                <p class="theme-text-secondary text-sm"> украинецот наоѓа затвор италија обвинет вмешаност бомбашкиот напад гасоводите северен тек балтичкото море 2022 година, прекина штрајкот глад почна...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 29 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -144,29 +302,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-лавров-до-трамп-наместо-во-венецуела-треба-да-се-реагира-во-summary-27532.html" class="flex gap-3">
-                            <img src="images/cache/summary-27532.webp" alt="Лавров до Трамп: Наместо во Венецуела, треба да се реагира во Белгија, таму е поопасно"
+                        <a href="sport-еурофарм-пелистер-го-пречекува-пик-сегед-во-лигата-на-summary-27596.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%95%D1%83%D1%80%D0%BE%D1%84%D0%B0%D1%80%D0%BC+%D0%9F%D0%B5%D0%BB%D0%B8%D1%81%D1%82%D0%B5%D1%80+%D0%B3%D0%BE+%D0%BF%D1%80%D0%B5%D1%87%D0%B5%D0%BA%D1%83%D0%B2%D0%B0+%D0%9F%D0%98%D0%9A+%D0%A1%D0%B5%D0%B3%D0%B5%D0%B4+%D0%B2%D0%BE+%D0%9B%D0%B8%D0%B3%D0%B0%D1%82%D0%B0+%D0%BD%D0%B0+%D1%88%D0%B0%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B8%D1%82%D0%B5" alt="Еурофарм Пелистер го пречекува ПИК Сегед во Лигата на шампионите"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Лавров до Трамп: Наместо во Венецуела, треба да се реагира во Белгија, таму е поопасно</h3>
-                                <p class="theme-text-secondary text-sm"> кажа американскиот претседател доналд трамп наводното продолжување тестовите русија кина одразува реалноста зборуваме тестирање нуклеарно оружје, ...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Еурофарм Пелистер го пречекува ПИК Сегед во Лигата на шампионите</h3>
+                                <p class="theme-text-secondary text-sm"> ракометарите еурофарм пелистер, 12 ноември 2025 година, одиграат натпревар седмото коло ехф лигата шампионите.  европската ракометна федерација (е...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 29 часа</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-седум-трикови-за-жените-со-облини-есенски-комбинации-кои-summary-27531.html" class="flex gap-3">
-                            <img src="images/cache/summary-27531.webp" alt="Седум трикови за жените со облини: Есенски комбинации кои визуелно ја издолжуваат фигурата"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Седум трикови за жените со облини: Есенски комбинации кои визуелно ја издолжуваат фигурата</h3>
-                                <p class="theme-text-secondary text-sm"> монохроматскиот изглед брише преодот помеѓу горниот долниот дел телото прави изгледате послаби.  таквите модели создаваат вертикални линии визуелн...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 29 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -177,14 +320,14 @@
                     </div>
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-фото-по-неуспешните-љубовни-врски-таа-бакнува-некој-10-summary-27530.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%28%D0%A4%D0%BE%D1%82%D0%BE%29+%D0%9F%D0%BE+%D0%BD%D0%B5%D1%83%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D0%B8%D1%82%D0%B5+%D1%99%D1%83%D0%B1%D0%BE%D0%B2%D0%BD%D0%B8+%D0%B2%D1%80%D1%81%D0%BA%D0%B8%2C+%D1%82%D0%B0%D0%B0+%D0%B1%D0%B0%D0%BA%D0%BD%D1%83%D0%B2%D0%B0+%D0%BD%D0%B5%D0%BA%D0%BE%D1%98+10+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B8+%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D1%80%3A+%D1%84%D0%B0%D1%82%D0%B5%D0%BD%D0%B8+%D0%BD%D0%B0+%D0%B4%D0%B5%D0%BB%D0%BE" alt="(Фото) По неуспешните љубовни врски, таа бакнува некој 10 години постар: фатени на дело"
+                        <a href="kultura-почина-поетесата-д-р-славица-свидерска-summary-27595.html" class="flex gap-3">
+                            <img src="images/cache/summary-27595.webp" alt="Почина поетесата д-р Славица Свидерска"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">(Фото) По неуспешните љубовни врски, таа бакнува некој 10 години постар: фатени на дело</h3>
-                                <p class="theme-text-secondary text-sm"> врска францускиот режисер ромен гаврас, 10 години постар , неодамна превземен</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Почина поетесата д-р Славица Свидерска</h3>
+                                <p class="theme-text-secondary text-sm"> доктор филолошки науки, лекторка македонски јазик универзитетот св.  друштвото писателите македонија длабока тага информира денеска, 12. славица с...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 29 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -192,14 +335,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="macedonia-сончево-претпладне-со-услови-за-магла-по-одделни-котлини-summary-27529.html" class="flex gap-3">
-                            <img src="images/cache/summary-27529.webp" alt="Сончево, претпладне со услови за магла по одделни котлини"
+                        <a href="world-видео-турскиот-министер-за-одбрана-потврди-сите-20-лица-summary-27594.html" class="flex gap-3">
+                            <img src="images/cache/summary-27594.webp" alt="ВИДЕО| Турскиот министер за одбрана потврди- сите 20 лица загинале во уривањето на авионот „Супер Херкулес“"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Сончево, претпладне со услови за магла по одделни котлини</h3>
-                                <p class="theme-text-secondary text-sm"> претпладне одделни котлини услови појава магла, денот времето сончево мала умерена локална облачност.  текот денот преовладува сончево време мала ...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">ВИДЕО| Турскиот министер за одбрана потврди- сите 20 лица загинале во уривањето на авионот „Супер Херкулес“</h3>
+                                <p class="theme-text-secondary text-sm"> турскиот министер одбрана јашар гулер објава социјалната мрежа икс соопшти херојските соборци загинале 11 ноември 2025 година, воениот транспортен...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 29 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -207,14 +350,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-најздравиот-појадок-на-светот-топи-масти-слабее-и-го-summary-27528.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9D%D0%B0%D1%98%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D0%B8%D0%BE%D1%82+%D0%BF%D0%BE%D1%98%D0%B0%D0%B4%D0%BE%D0%BA+%D0%BD%D0%B0+%D1%81%D0%B2%D0%B5%D1%82%D0%BE%D1%82%3A+%D1%82%D0%BE%D0%BF%D0%B8+%D0%BC%D0%B0%D1%81%D1%82%D0%B8%2C+%D1%81%D0%BB%D0%B0%D0%B1%D0%B5%D0%B5+%D0%B8+%D0%B3%D0%BE+%D0%B7%D0%B0%D1%98%D0%B0%D0%BA%D0%BD%D1%83%D0%B2%D0%B0+%D1%82%D0%B5%D0%BB%D0%BE%D1%82%D0%BE" alt="Најздравиот појадок на светот: топи масти, слабее и го зајакнува телото"
+                        <a href="kultura-матица-македонска-ја-објави-книгата-стилски-синтези-на-summary-27593.html" class="flex gap-3">
+                            <img src="images/cache/summary-27593.webp" alt="„Матица македонска“ ја објави книгата „Стилски синтези“ на Димитар Пандев"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Најздравиот појадок на светот: топи масти, слабее и го зајакнува телото</h3>
-                                <p class="theme-text-secondary text-sm"> сомнение, најздравиот појадок светот идеален носење работа.  каша идеална носење работа, можете јадете фантастични начина: – солен вкус: додадете ...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">„Матица македонска“ ја објави книгата „Стилски синтези“ на Димитар Пандев</h3>
+                                <p class="theme-text-secondary text-sm"> соопштуваат издавачката куќа, објавени книги областа стилистиката општата лингвистика, книга пандев претставува обемен труд областа македонската с...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 29 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -222,14 +365,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-фото-ким-кардашијан-во-бело-ги-откри-своите-прекрасни-облини-summary-27527.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%28%D0%A4%D0%BE%D1%82%D0%BE%29+%D0%9A%D0%B8%D0%BC+%D0%9A%D0%B0%D1%80%D0%B4%D0%B0%D1%88%D0%B8%D1%98%D0%B0%D0%BD+%D0%B2%D0%BE+%D0%B1%D0%B5%D0%BB%D0%BE+%D0%B3%D0%B8+%D0%BE%D1%82%D0%BA%D1%80%D0%B8+%D1%81%D0%B2%D0%BE%D0%B8%D1%82%D0%B5+%D0%BF%D1%80%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%B8+%D0%BE%D0%B1%D0%BB%D0%B8%D0%BD%D0%B8" alt="(Фото) Ким Кардашијан во бело ги откри своите прекрасни облини"
+                        <a href="magazine-ставете-кора-од-портокал-во-машината-за-садови-овој-трик-е-summary-27592.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%A1%D1%82%D0%B0%D0%B2%D0%B5%D1%82%D0%B5+%D0%BA%D0%BE%D1%80%D0%B0+%D0%BE%D0%B4+%D0%BF%D0%BE%D1%80%D1%82%D0%BE%D0%BA%D0%B0%D0%BB+%D0%B2%D0%BE+%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%D1%82%D0%B0+%D0%B7%D0%B0+%D1%81%D0%B0%D0%B4%D0%BE%D0%B2%D0%B8%3A+%D0%BE%D0%B2%D0%BE%D1%98+%D1%82%D1%80%D0%B8%D0%BA+%D0%B5+%D0%B3%D0%B5%D0%BD%D0%B8%D1%98%D0%B0%D0%BB%D0%B5%D0%BD+%D0%B8+%D1%9C%D0%B5+%D0%B3%D0%BE+%D0%BE%D0%B1%D0%BE%D0%B6%D0%B0%D0%B2%D0%B0%D1%82%D0%B5" alt="Ставете кора од портокал во машината за садови: овој трик е генијален и ќе го обожавате"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">(Фото) Ким Кардашијан во бело ги откри своите прекрасни облини</h3>
-                                <p class="theme-text-secondary text-sm"> ким реши покаже целиот свој сјај снежно бел фустан.  појави црвениот тепих фустан , открива отколку покрива.  ким собра косата уредно залижана пун...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Ставете кора од портокал во машината за садови: овој трик е генијален и ќе го обожавате</h3>
+                                <p class="theme-text-secondary text-sm"> еве користите кори портокал вашата машина миење садови.  резултатот свежа, миризлива машина миење садови, едноставна ефикасна.  освежувањето вашат...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 29 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -237,14 +380,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-конечно-ќе-наплатат-за-сè-4-знака-нема-да-знаат-што-да-summary-27526.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9A%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE+%D1%9C%D0%B5+%D0%BD%D0%B0%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%D1%82+%D0%B7%D0%B0+%D1%81%C3%A8%3A+4+%D0%B7%D0%BD%D0%B0%D0%BA%D0%B0+%D0%BD%D0%B5%D0%BC%D0%B0+%D0%B4%D0%B0+%D0%B7%D0%BD%D0%B0%D0%B0%D1%82+%D1%88%D1%82%D0%BE+%D0%B4%D0%B0+%D0%BF%D1%80%D0%B0%D0%B2%D0%B0%D1%82+%D1%81%D0%BE+%D0%BF%D0%B0%D1%80%D0%B8%D1%82%D0%B5+%D0%B2%D0%BE+2026+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0" alt="Конечно ќе наплатат за сè: 4 знака нема да знаат што да прават со парите во 2026 година"
+                        <a href="kultura-љутков-и-николоски-на-панел-за-креативен-туризам-во-рамки-на-summary-27591.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%89%D1%83%D1%82%D0%BA%D0%BE%D0%B2+%D0%B8+%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%BE%D1%81%D0%BA%D0%B8+%D0%BD%D0%B0+%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB+%D0%B7%D0%B0+%D0%BA%D1%80%D0%B5%D0%B0%D1%82%D0%B8%D0%B2%D0%B5%D0%BD+%D1%82%D1%83%D1%80%D0%B8%D0%B7%D0%B0%D0%BC+%D0%B2%D0%BE+%D1%80%D0%B0%D0%BC%D0%BA%D0%B8+%D0%BD%D0%B0+%E2%80%9E%D0%9D%D0%B5%D0%B4%D0%B5%D0%BB%D0%B0+%D0%BD%D0%B0+%D0%B4%D0%B8%D0%B7%D0%B0%D1%98%D0%BD+%E2%80%93+%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5+2025%E2%80%9C" alt="Љутков и Николоски на панел за креативен туризам во рамки на „Недела на дизајн – Скопје 2025“"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Конечно ќе наплатат за сè: 4 знака нема да знаат што да прават со парите во 2026 година</h3>
-                                <p class="theme-text-secondary text-sm"> ѕвездите предвидуваат 2026 година година бескрајни пари некои знаци – бајка, астролошки потенцијал бара акција.  ѕвездите предвидуваат четири хоро...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Љутков и Николоски на панел за креативен туризам во рамки на „Недела на дизајн – Скопје 2025“</h3>
+                                <p class="theme-text-secondary text-sm"> министерот култура туризам зоран љутков заменик претседателот владата министер транспорт александар николоски денеска обратат првиот панел конфере...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 30 часа</span>
+                                    <span>пред 28 часа</span>
                                 </div>
                             </div>
                         </a>

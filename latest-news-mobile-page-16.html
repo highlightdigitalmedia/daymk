@@ -71,16 +71,159 @@
         <div class="p-4">
             <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
             <nav class="flex flex-col gap-2">
-                <!-- Main Nav Links -->
-                <a href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Вести</a><a href="sports.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Спорт</a><a href="magazine.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Магазин</a>
-                <a href="latest-news.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a><a href="prognoza.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a><a href="radio.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a><a href="youtube.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="intimate.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Intimate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="radio.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="youtube.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+
                 <hr class="my-3 theme-border-color">
-                <!-- Other Utility Links -->
-                <button id="theme-toggle-mobile" class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
                     <span id="theme-toggle-mobile-text">Toggle Theme</span>
                 </button>
-                <a id="switch-to-desktop-button" href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Стандардна верзија</a>
+                <a id="switch-to-desktop-button"
+                   href="index.html"
+                   class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">
+                    Стандардна верзија
+                </a>
             </nav>
+
         </div>
     </div>
 
@@ -99,14 +242,14 @@
 
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="macedonia-трипуновски-брисел-ја-поздрави-одлуката-на-владата-за-summary-27818.html" class="flex gap-3">
-                            <img src="images/cache/summary-27818.webp" alt="Трипуновски: Брисел ја поздрави одлуката на Владата за расчистување на случајот со Платежната агенција"
+                        <a href="world-г7-ќе-ја-продолжи-поддршката-за-украина-summary-27932.html" class="flex gap-3">
+                            <img src="images/cache/summary-27932.webp" alt="Г7 ќе ја продолжи поддршката за Украина"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Трипуновски: Брисел ја поздрави одлуката на Владата за расчистување на случајот со Платежната агенција</h3>
-                                <p class="theme-text-secondary text-sm"> опозицијата шпекулира, 50 тина договори фаза реализација, стопирани стопирањето процедурите наша страна, проверката целиот процес агенцијата ипард...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Г7 ќе ја продолжи поддршката за Украина</h3>
+                                <p class="theme-text-secondary text-sm"> денешниот состанок присуствуваше шефот украинската дипломатија андриј сибиха, повика г7 продолжи вложува производство ракети дронови против воздуш...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 15 часа</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -114,14 +257,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-купил-напуштен-магацин-па-дошол-до-неверојатно-откритие-summary-27817.html" class="flex gap-3">
-                            <img src="images/cache/summary-27817.webp" alt="Купил напуштен магацин, па дошол до неверојатно откритие- заработил 900.000 евра (ВИДЕО)"
+                        <a href="world-во-рим-денеска-прва-заедничка-седница-на-албанската-и-summary-27931.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%92%D0%BE+%D0%A0%D0%B8%D0%BC+%D0%B4%D0%B5%D0%BD%D0%B5%D1%81%D0%BA%D0%B0+%D0%BF%D1%80%D0%B2%D0%B0+%D0%B7%D0%B0%D0%B5%D0%B4%D0%BD%D0%B8%D1%87%D0%BA%D0%B0+%D1%81%D0%B5%D0%B4%D0%BD%D0%B8%D1%86%D0%B0+%D0%BD%D0%B0+%D0%B0%D0%BB%D0%B1%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%82%D0%B0+%D0%B8+%D0%B8%D1%82%D0%B0%D0%BB%D0%B8%D1%98%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%82%D0%B0+%D0%92%D0%BB%D0%B0%D0%B4%D0%B0" alt="Во Рим денеска прва заедничка седница на албанската и италијанската Влада"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Купил напуштен магацин, па дошол до неверојатно откритие- заработил 900.000 евра (ВИДЕО)</h3>
-                                <p class="theme-text-secondary text-sm"> отворил уста видам 6,7 милиони евра, напиша лице, додаде: платил избрише името исчезнам  иако повеќето луѓе задржале сума, приказната интересен пр...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Во Рим денеска прва заедничка седница на албанската и италијанската Влада</h3>
+                                <p class="theme-text-secondary text-sm"> енергетскиот сектор, тек работи проширување соработката основа трилатералниот договор меѓу италија, обединетите арапски емирати албанија потпишан ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 15 часа</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -129,14 +272,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="balkan-дијана-хрка-вели-дека-не-се-откажува-од-штрајкот-со-глад-summary-27816.html" class="flex gap-3">
-                            <img src="images/cache/summary-27816.webp" alt="Дијана Хрка вели дека не се откажува од штрајкот со глад пред српското Народно собрание"
+                        <a href="world-ветераните-вајерс-и-бума-ќе-се-обидат-да-избоксуваат-договор-summary-27930.html" class="flex gap-3">
+                            <img src="images/cache/summary-27930.webp" alt="Ветераните Вајерс и Бума ќе се обидат да „избоксуваат“ договор за формирање нова Влада на Холандија"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Дијана Хрка вели дека не се откажува од штрајкот со глад пред српското Народно собрание</h3>
-                                <p class="theme-text-secondary text-sm"> крајот, свесна ризикот сопствениот живот, промени одлука: фатално , подобар утре поради .  дијана хрка почна штрајкот глад 2 ноември, денот големи...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Ветераните Вајерс и Бума ќе се обидат да „избоксуваат“ договор за формирање нова Влада на Холандија</h3>
+                                <p class="theme-text-secondary text-sm"> именувањето вајерс бума следи откако ваутер кулмис, договор меѓу парламентарните партии именуван посредник задача испита можностите формирање мноз...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 15 часа</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -144,14 +287,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-демократите-објавија-три-е-пораки-на-епштајн-во-кои-се-summary-27815.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%94%D0%B5%D0%BC%D0%BE%D0%BA%D1%80%D0%B0%D1%82%D0%B8%D1%82%D0%B5+%D0%BE%D0%B1%D1%98%D0%B0%D0%B2%D0%B8%D1%98%D0%B0+%D1%82%D1%80%D0%B8+%D0%B5-%D0%BF%D0%BE%D1%80%D0%B0%D0%BA%D0%B8+%D0%BD%D0%B0+%D0%95%D0%BF%D1%88%D1%82%D0%B0%D1%98%D0%BD+%D0%B2%D0%BE+%D0%BA%D0%BE%D0%B8+%D1%81%D0%B5+%D1%81%D0%BF%D0%BE%D0%BC%D0%BD%D1%83%D0%B2%D0%B0+%D0%A2%D1%80%D0%B0%D0%BC%D0%BF" alt="Демократите објавија три е-пораки на Епштајн во кои се спомнува Трамп"
+                        <a href="world-махмуд-али-јусуф-од-комисија-на-африканската-унија-го-summary-27929.html" class="flex gap-3">
+                            <img src="images/cache/summary-27929.webp" alt="Махмуд Али Јусуф од Комисија на Африканската унија го демантира Трамп: Нема геноцид во северна Нигерија"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Демократите објавија три е-пораки на Епштајн во кои се спомнува Трамп</h3>
-                                <p class="theme-text-secondary text-sm"> поштата вклучува писмо 2019 година волф, епштајн напишал трамп знаел девојките, затоа замолил гилејн престане.  мејл 2011 година максвел, епштајн ...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Махмуд Али Јусуф од Комисија на Африканската унија го демантира Трамп: Нема геноцид во северна Нигерија</h3>
+                                <p class="theme-text-secondary text-sm"> најголемите жртви боко харам муслимани, христијани.  геноцид северна нигерија, изјави синоќа шефот дипломатијата џибути претседател комисија африк...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 15 часа</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -159,14 +302,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-трагедија-во-перу-автобус-падна-во-провалија-најмалку-37-summary-27814.html" class="flex gap-3">
-                            <img src="images/cache/summary-27814.webp" alt="Трагедија во Перу: Автобус падна во провалија, најмалку 37 загинати"
+                        <a href="world-сзо-од-туберкулоза-минатата-година-починале-1-23-милиони-summary-27928.html" class="flex gap-3">
+                            <img src="images/cache/summary-27928.webp" alt="СЗО: Од туберкулоза минатата година починале 1,23 милиони лица"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Трагедија во Перу: Автобус падна во провалија, најмалку 37 загинати</h3>
-                                <p class="theme-text-secondary text-sm"> полицијата спасувачките екипи веднаш пристигнале местото несреќата, локалните власти преземаат мерки извлекување телата жртвите транспорт повреден...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">СЗО: Од туберкулоза минатата година починале 1,23 милиони лица</h3>
+                                <p class="theme-text-secondary text-sm"> проценува 10,7 милиони луѓе светот заболеа туберкулоза 2024 година, 5,8 милиони мажи, 3,7 милиони жени 1,2 милиони деца.  бројот смртни случаи туб...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 16 часа</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -177,14 +320,14 @@
                     </div>
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="bitola-координативен-состанок-на-зимската-служба-во-битола-summary-27813.html" class="flex gap-3">
-                            <img src="images/cache/summary-27813.webp" alt="Координативен состанок на Зимската служба во Битола"
+                        <a href="world-шојгу-русија-чека-одговор-од-сад-на-предлогот-за-summary-27927.html" class="flex gap-3">
+                            <img src="images/cache/summary-27927.webp" alt="Шојгу: Русија чека одговор од САД на предлогот за продолжување на новиот договор СТАРТ"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Координативен состанок на Зимската служба во Битола</h3>
-                                <p class="theme-text-secondary text-sm"> градоначалникот општина битола, тони коњановски, секретарот борче димитровски раководителката одделението комунални дејности марјана спасевска, за...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Шојгу: Русија чека одговор од САД на предлогот за продолжување на новиот договор СТАРТ</h3>
+                                <p class="theme-text-secondary text-sm"> русија чека одговор сад нивниот предлог продолжување новиот договор намалување стратешкото оружје (старт), изјави секретарот рускиот совет безбедн...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 16 часа</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -192,14 +335,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-николоски-проблемот-со-бугарија-за-железницата-беше-summary-27812.html" class="flex gap-3">
-                            <img src="images/cache/summary-27812.webp" alt="Николоски: Проблемот со Бугарија за железницата беше инженерски, а не политички, договараме и нови автопати и експресни патишта"
+                        <a href="world-рубио-русија-јасно-стави-до-знаење-дека-не-сака-мир-се-summary-27926.html" class="flex gap-3">
+                            <img src="images/cache/summary-27926.webp" alt="РУБИО: Русија јасно стави до знаење дека не сака мир, се обидува да ја деморализира Украина додека неделно Москва губи по 7.000 војници"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Николоски: Проблемот со Бугарија за железницата беше инженерски, а не политички, договараме и нови автопати и експресни патишта</h3>
-                                <p class="theme-text-secondary text-sm"> друга страна, бугарскиот вицепремиер презеде обврска, вложат 1 милијарда 200 милиони евра, најголем дел реконструкција постоечката железничка инфр...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">РУБИО: Русија јасно стави до знаење дека не сака мир, се обидува да ја деморализира Украина додека неделно Москва губи по 7.000 војници</h3>
+                                <p class="theme-text-secondary text-sm"> , , потврди напредок формулирањето меѓународна резолуција стабилизациските сили газа, нагласувајќи неборбена мисија насочена обезбедување безбедно...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 16 часа</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -207,14 +350,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-сабаленка-во-танга-ги-запали-мрежите-ужива-на-малдивите-summary-27811.html" class="flex gap-3">
-                            <img src="images/cache/summary-27811.webp" alt="Сабаленка во танга ги запали мрежите- ужива на Малдивите (ВИДЕО)"
+                        <a href="world-распад-на-златната-илузија-на-украина-унгарија-нема-да-ја-summary-27925.html" class="flex gap-3">
+                            <img src="images/cache/summary-27925.webp" alt="Распад на златната илузија на Украина, Унгарија нема да ја финансира воената мафијашка мрежа, порача Орбан"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Сабаленка во танга ги запали мрежите- ужива на Малдивите (ВИДЕО)</h3>
-                                <p class="theme-text-secondary text-sm"> задоволство нејзиниот голем број следбеници инстаграм, надвор , објави серија слики натпис: време уживање.  подолу погледнете нејзините фотографии...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Распад на златната илузија на Украина, Унгарија нема да ја финансира воената мафијашка мрежа, порача Орбан</h3>
+                                <p class="theme-text-secondary text-sm"> унгарскиот премиер виктор орбан истакна распаѓа златната илузија украина унгарија финансира мрежата воената мафија, случајот корупција енергетскио...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 16 часа</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -222,14 +365,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="macedonia-беше-разгледан-напредокот-и-следните-чекори-средба-на-гаши-summary-27810.html" class="flex gap-3">
-                            <img src="images/cache/summary-27810.webp" alt="БЕШЕ РАЗГЛЕДАН НАПРЕДОКОТ И СЛЕДНИТЕ ЧЕКОРИ: Средба на Гаши со Сојузот на синдикати во високото образование"
+                        <a href="world-трамп-го-потпиша-законот-за-финансирање-со-што-заврши-summary-27924.html" class="flex gap-3">
+                            <img src="images/cache/summary-27924.webp" alt="Трамп го потпиша Законот за финансирање, со што заврши рекордната блокада на работата на американската Влада"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">БЕШЕ РАЗГЛЕДАН НАПРЕДОКОТ И СЛЕДНИТЕ ЧЕКОРИ: Средба на Гаши со Сојузот на синдикати во високото образование</h3>
-                                <p class="theme-text-secondary text-sm"> гаши истакна собранието целосно посветено постапува приоритетно завршување процес: потпишувањето колективниот договор висока цел лично, суштинско ...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Трамп го потпиша Законот за финансирање, со што заврши рекордната блокада на работата на американската Влада</h3>
+                                <p class="theme-text-secondary text-sm"> речиси републиканци демократи гласаа мерката, јави дпа.  републиканците имаат тесно мнозинство претставничкиот дом.  претходно вчера, 222 члена пр...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 16 часа</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -237,14 +380,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-кијив-двајца-украински-министри-поднесоа-оставки-поради-summary-27809.html" class="flex gap-3">
-                            <img src="images/cache/summary-27809.webp" alt="Кијив: Двајца украински министри поднесоа оставки поради корупциски скандал"
+                        <a href="world-компанијата-боинг-мора-да-му-исплати-28-милиони-долари-на-summary-27923.html" class="flex gap-3">
+                            <img src="images/cache/summary-27923.webp" alt="Компанијата „Боинг“ мора да му исплати 28 милиони долари на семејството на жртва во несреќата на „Боинг 737 MAX“ во Етиопија во 2019 година"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Кијив: Двајца украински министри поднесоа оставки поради корупциски скандал</h3>
-                                <p class="theme-text-secondary text-sm"> министерот правда херман халушченко министерката енергетика свитлана гринчук поднесоа оставки.  зеленски коментира случајот истражителите набу пре...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Компанијата „Боинг“ мора да му исплати 28 милиони долари на семејството на жртва во несреќата на „Боинг 737 MAX“ во Етиопија во 2019 година</h3>
+                                <p class="theme-text-secondary text-sm"> поротата федералниот суд чикаго вчера наложи компанијата боинг исплати 28 милиони долари семејството вработена обединетите нации одделот животна с...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 16 часа</span>
+                                    <span>пред 2 часа</span>
                                 </div>
                             </div>
                         </a>

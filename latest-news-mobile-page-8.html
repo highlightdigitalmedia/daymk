@@ -71,16 +71,159 @@
         <div class="p-4">
             <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
             <nav class="flex flex-col gap-2">
-                <!-- Main Nav Links -->
-                <a href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Вести</a><a href="sports.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Спорт</a><a href="magazine.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Магазин</a>
-                <a href="latest-news.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a><a href="prognoza.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a><a href="radio.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a><a href="youtube.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="intimate.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Intimate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="radio.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="youtube.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+
                 <hr class="my-3 theme-border-color">
-                <!-- Other Utility Links -->
-                <button id="theme-toggle-mobile" class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
                     <span id="theme-toggle-mobile-text">Toggle Theme</span>
                 </button>
-                <a id="switch-to-desktop-button" href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Стандардна верзија</a>
+                <a id="switch-to-desktop-button"
+                   href="index.html"
+                   class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">
+                    Стандардна верзија
+                </a>
             </nav>
+
         </div>
     </div>
 
@@ -99,14 +242,14 @@
 
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-видео-јокиќ-со-55-поени-го-растури-ла-клиперс-summary-27948.html" class="flex gap-3">
-                            <img src="images/cache/summary-27948.webp" alt="(Видео) Јокиќ со 55 поени го растури ЛА Клиперс"
+                        <a href="hronika-одложено-рочиштето-против-екс-директорите-на-амс-за-summary-28013.html" class="flex gap-3">
+                            <img src="images/cache/summary-28013.webp" alt="Одложено рочиштето против екс директорите на АМС за злоупотреба на спортски ваучери"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">(Видео) Јокиќ со 55 поени го растури ЛА Клиперс</h3>
-                                <p class="theme-text-secondary text-sm"> јокиќ четвртиот играч историјата нба постигнал 55 поени најмалку 78 реализација.  постигна 33 поени полувреме, крајот мечот заврши 55 поени, 78 от...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Одложено рочиштето против екс директорите на АМС за злоупотреба на спортски ваучери</h3>
+                                <p class="theme-text-secondary text-sm"> информираа основниот кривичен суд, судската постапка продолжи редовна процедура, следното судско рочиште одржи според претходно утврдените датуми....</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -114,14 +257,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-тухел-белингем-и-фоден-нема-да-играат-заедно-summary-27947.html" class="flex gap-3">
-                            <img src="images/cache/summary-27947.webp" alt="Тухел: Белингем и Фоден нема да играат заедно"
+                        <a href="world-германија-воведува-промени-во-воената-служба-summary-28012.html" class="flex gap-3">
+                            <img src="images/cache/summary-28012.webp" alt="Германија воведува промени во воената служба"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Тухел: Белингем и Фоден нема да играат заедно</h3>
-                                <p class="theme-text-secondary text-sm"> додаде бега тешки одлуки светското првенство, бидејќи работа играат бидат среќни, англија победува.  натпреварот вембли, селекторот томас тухел ѝ ...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Германија воведува промени во воената служба</h3>
+                                <p class="theme-text-secondary text-sm"> германската влада постигна договор идниот концепт воена служба, вклучувал задолжителен преглед регрутите, самата служба останала доброволна основа...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -129,14 +272,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-видео-шампионска-лекција-за-лејкерси-вориорс-победи-во-сан-summary-27946.html" class="flex gap-3">
-                            <img src="images/cache/summary-27946.webp" alt="(Видео) Шампионска лекција за Лејкерси, Вориорс победи во Сан Антонио"
+                        <a href="sport-наполи-по-поразот-од-болоња-тренира-без-конте-summary-28011.html" class="flex gap-3">
+                            <img src="images/cache/summary-28011.webp" alt="Наполи по поразот од Болоња тренира без Конте"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">(Видео) Шампионска лекција за Лејкерси, Вориорс победи во Сан Антонио</h3>
-                                <p class="theme-text-secondary text-sm"> вембањама станаа првите играчи сан антонио имаа трипл дабл ист натпревар.  двајцата заедно паркетот, односот тимот натпревар 4 1. дончиќ, тандер з...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Наполи по поразот од Болоња тренира без Конте</h3>
+                                <p class="theme-text-secondary text-sm"> наполи врати тренинзите поразот (0:2) болоња 11. антонио конте, објави скај спортс.  тренерот договор раководството клубот, зел дена одмор, помине...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -144,14 +287,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-вулверхемптон-назначи-нов-тренер-summary-27945.html" class="flex gap-3">
-                            <img src="images/cache/summary-27945.webp" alt="Вулверхемптон назначи нов тренер"
+                        <a href="world-зеленски-русија-планира-да-покрене-голема-агресија-врз-summary-28010.html" class="flex gap-3">
+                            <img src="images/cache/summary-28010.webp" alt="Зеленски: Русија планира да покрене голема агресија врз Европа во 2029 или 2030 година"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Вулверхемптон назначи нов тренер</h3>
-                                <p class="theme-text-secondary text-sm"> вулверхемптон назначи роб едвардс менаџер првиот тим.  едвардс минатото работел вулверхемптон помошник тренер сениорскиот тим, тренер младинските ...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Зеленски: Русија планира да покрене голема агресија врз Европа во 2029 или 2030 година</h3>
+                                <p class="theme-text-secondary text-sm"> зеленски објави телеграм зголеменото производство оружје покажува русија, изјави, подготвена заврши војната против украина.  зеленски тврди загуби...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -159,14 +302,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-два-клуба-сериозно-се-заинтересирани-за-левандовски-summary-27944.html" class="flex gap-3">
-                            <img src="images/cache/summary-27944.webp" alt="Два клуба сериозно се заинтересирани за Левандовски"
+                        <a href="sport-левица-буџетот-наместо-развој-нуди-нов-циклус-на-задолжувања-summary-28009.html" class="flex gap-3">
+                            <img src="images/cache/summary-28009.webp" alt="Левица: Буџетот наместо развој нуди нов циклус на задолжувања и безнадежност"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Два клуба сериозно се заинтересирани за Левандовски</h3>
-                                <p class="theme-text-secondary text-sm"> полскиот напаѓач роберт левандовски (37) изјави брза продолжи договорот барселона, истекува јуни 2026 година.  италијанскиот клуб размислува леван...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Левица: Буџетот наместо развој нуди нов циклус на задолжувања и безнадежност</h3>
+                                <p class="theme-text-secondary text-sm"> наместо инвестиции здравство, образование, социјална сигурност квалитет живот, владата одлучи штеди сектори држат државата исправена.  значи држав...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -177,14 +320,14 @@
                     </div>
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-среде-сезона-рафа-силва-реши-да-се-пензионира-summary-27943.html" class="flex gap-3">
-                            <img src="images/cache/summary-27943.webp" alt="Среде сезона Рафа Силва реши да се пензионира"
+                        <a href="magazine-домашен-еликсир-на-младоста-еве-како-да-го-подготвите-summary-28008.html" class="flex gap-3">
+                            <img src="images/cache/summary-28008.webp" alt="Домашен еликсир на младоста – еве како да го подготвите"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Среде сезона Рафа Силва реши да се пензионира</h3>
-                                <p class="theme-text-secondary text-sm"> португалскиот репрезентативец, играч бешикташ, рафа силва, реши среде сезоната стави крај кариерата.  клубот откажува , апоред турските медиуми оч...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Домашен еликсир на младоста – еве како да го подготвите</h3>
+                                <p class="theme-text-secondary text-sm"> секаде преплавени реклами производи гарантираат убавина долговечност.  добрата вест можеме потпираме природни производи докажани предности, можеме...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -192,14 +335,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-манчестер-јунајтед-ја-следи-ситуацијата-со-карем-адејеми-summary-27942.html" class="flex gap-3">
-                            <img src="images/cache/summary-27942.webp" alt="Манчестер јунајтед ја следи ситуацијата со Карем Адејеми"
+                        <a href="magazine-витаминот-кој-го-намалува-ризикот-од-повторлив-срцев-удар-summary-28007.html" class="flex gap-3">
+                            <img src="images/cache/summary-28007.webp" alt="Витаминот кој го намалува ризикот од повторлив срцев удар"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Манчестер јунајтед ја следи ситуацијата со Карем Адејеми</h3>
-                                <p class="theme-text-secondary text-sm"> иднината германскиот напаѓач карим адејеми борусија дортмунд знак прашалник, според германските медиуми, манчестер јунајтед внимателно следи ситуа...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Витаминот кој го намалува ризикот од повторлив срцев удар</h3>
+                                <p class="theme-text-secondary text-sm"> според нова студија, луѓето имале срцев удар можат намалат ризикот срцев удар половина земање додатоци витамин 3. истражувањето биле вклучени 600 ...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -207,14 +350,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="hronika-кривична-пријава-против-поранешни-функционери-и-службеници-summary-27941.html" class="flex gap-3">
-                            <img src="images/cache/summary-27941.webp" alt="Кривична пријава против поранешни функционери и службеници во Општина Сарај и Град Скопје"
+                        <a href="magazine-радио-сигнал-од-непознат-објект-пристигна-до-земјата-знаеме-summary-28006.html" class="flex gap-3">
+                            <img src="images/cache/summary-28006.webp" alt="Радио сигнал од непознат објект пристигна до Земјата: „Знаеме што ни се приближува“"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Кривична пријава против поранешни функционери и службеници во Општина Сарај и Град Скопје</h3>
-                                <p class="theme-text-secondary text-sm"> управата финансиска полиција поднесе кривична пријава основното јавно обвинителство – скопје против осум лица, поранешни функционери службеници оп...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Радио сигнал од непознат објект пристигна до Земјата: „Знаеме што ни се приближува“</h3>
+                                <p class="theme-text-secondary text-sm"> научниците потврдија меѓуѕвездениот објект 3 природна комета, откако радио сигнал детектиран телескопот .  сепак, лоеб признава: забележано никако...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -222,14 +365,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-лажни-дипломи-во-црна-гора-поднесени-66-обвиненија-summary-27940.html" class="flex gap-3">
-                            <img src="images/cache/summary-27940.webp" alt="Лажни дипломи во Црна Гора: Поднесени 66 обвиненија, експертите предупредуваат на „селективна правда“"
+                        <a href="macedonia-крводарителска-акција-на-тав-аеродроми-вработените-на-summary-28005.html" class="flex gap-3">
+                            <img src="images/cache/summary-28005.webp" alt="Крводарителска акција на ТАВ Аеродроми: Вработените на Меѓународниот Аеродром Скопје даруваа крв"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Лажни дипломи во Црна Гора: Поднесени 66 обвиненија, експертите предупредуваат на „селективна правда“</h3>
-                                <p class="theme-text-secondary text-sm"> моментов, црна гора постои официјална статистика бројот фалсификувани дипломи, според податоците алтернатива црна гора, нивниот број надминува  цр...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Крводарителска акција на ТАВ Аеродроми: Вработените на Меѓународниот Аеродром Скопје даруваа крв</h3>
+                                <p class="theme-text-secondary text-sm"> благодарам колегите доброволци меѓународниот аеородром скопје, пријавија даруваат крв”, изјави неџат курт, генерален директор тав македонија.  ген...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -237,14 +380,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="balkan-на-17-ноември-меѓувладина-конференција-албанија-и-еу-summary-27939.html" class="flex gap-3">
-                            <img src="images/cache/summary-27939.webp" alt="На 17 ноември меѓувладина конференција Албанија и ЕУ"
+                        <a href="kultura-месец-на-театарот-во-домот-на-културата-иван-мазов-климе-summary-28004.html" class="flex gap-3">
+                            <img src="images/cache/summary-28004.webp" alt="„Месец на театарот“ во Домот на културата „Иван Мазов-Климе“ – Кавадарци"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">На 17 ноември меѓувладина конференција Албанија и ЕУ</h3>
-                                <p class="theme-text-secondary text-sm"> 17 ноември одржи заедничка конференција албанија еу отворање последната група поглавја преговорите европската унија, објави премиерот еди рама.  п...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">„Месец на театарот“ во Домот на културата „Иван Мазов-Климе“ – Кавадарци</h3>
+                                <p class="theme-text-secondary text-sm"> домот културата иван мазов – климе кавадарци организатор манифестацијата месец театарот годинава оддржува петти пат.  првата едночинка играат: але...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>

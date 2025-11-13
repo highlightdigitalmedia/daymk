@@ -71,16 +71,159 @@
         <div class="p-4">
             <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
             <nav class="flex flex-col gap-2">
-                <!-- Main Nav Links -->
-                <a href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Вести</a><a href="sports.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Спорт</a><a href="magazine.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Магазин</a>
-                <a href="latest-news.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a><a href="prognoza.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a><a href="radio.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a><a href="youtube.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="intimate.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Intimate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="radio.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="youtube.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+
                 <hr class="my-3 theme-border-color">
-                <!-- Other Utility Links -->
-                <button id="theme-toggle-mobile" class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
                     <span id="theme-toggle-mobile-text">Toggle Theme</span>
                 </button>
-                <a id="switch-to-desktop-button" href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Стандардна верзија</a>
+                <a id="switch-to-desktop-button"
+                   href="index.html"
+                   class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">
+                    Стандардна верзија
+                </a>
             </nav>
+
         </div>
     </div>
 
@@ -99,14 +242,14 @@
 
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-драгица-стевковска-дракче-за-канал-5-добив-порака-колку-ве-summary-27378.html" class="flex gap-3">
-                            <img src="images/cache/summary-27378.webp" alt="Драгица Стевковска Дракче за Канал 5: „Добив порака: ‘Колку ве плаќаат за да бидете болни?’ Тоа беше многу грозно“"
+                        <a href="sport-отказ-за-човекот-што-го-размени-лука-дончиќ-summary-27470.html" class="flex gap-3">
+                            <img src="images/cache/summary-27470.webp" alt="Отказ за човекот што го размени Лука Дончиќ!"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Драгица Стевковска Дракче за Канал 5: „Добив порака: ‘Колку ве плаќаат за да бидете болни?’ Тоа беше многу грозно“</h3>
-                                <p class="theme-text-secondary text-sm"> толкувавте соништа, затоа болни, раскажа дракче коментарите добила.  , жал, читате коментарите , верче, александра јавна личност илјадници комента...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Отказ за човекот што го размени Лука Дончиќ!</h3>
+                                <p class="theme-text-secondary text-sm"> навивачите далас израдуваа информација, херисон човекот решида размени лука дончиќ.  февруари 2025 година, шокантни информации проширија целиот св...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 46 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -114,14 +257,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="macedonia-сиљановска-давкова-за-извештајот-на-ек-во-извештаите-summary-27377.html" class="flex gap-3">
-                            <img src="images/cache/summary-27377.webp" alt="Сиљановска Давкова за извештајот на ЕК: Во извештаите техничката оценка понекогаш се презентира низ политичка призма"
+                        <a href="hronika-почината-жена-пронајдена-во-куќа-во-струга-summary-27469.html" class="flex gap-3">
+                            <img src="images/cache/summary-27469.webp" alt="Почината жена пронајдена во куќа во Струга"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Сиљановска Давкова за извештајот на ЕК: Во извештаите техничката оценка понекогаш се презентира низ политичка призма</h3>
-                                <p class="theme-text-secondary text-sm"> претседателката гордана сиљановска давкова денеска истакна извештаите европската комисија, државата евалуира технички напредува, политички блокира...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Почината жена пронајдена во куќа во Струга</h3>
+                                <p class="theme-text-secondary text-sm"> извршен увид јавен обвинител увидна екипа овр струга  корпус струга, сопственост р. м. струга, пронајдена почината б. .  овр струга, итната медици...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 46 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -129,14 +272,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="sport-јамал-ќе-ги-пропушти-натпреварите-на-шпанија-против-грузија-summary-27376.html" class="flex gap-3">
-                            <img src="images/cache/summary-27376.webp" alt="Јамал ќе ги пропушти натпреварите на Шпанија против Грузија и Турција"
+                        <a href="balkan-косово-потроши-речиси-18-милиони-евра-за-избори-цик-нема-summary-27468.html" class="flex gap-3">
+                            <img src="images/cache/summary-27468.webp" alt="Косово потроши речиси 18 милиони евра за избори, ЦИК нема буџет за евентуални предвремени парламентарни избори"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Јамал ќе ги пропушти натпреварите на Шпанија против Грузија и Турција</h3>
-                                <p class="theme-text-secondary text-sm"> медицинскиот персонал шпанската репрезентација изразува изненадување загриженост 10 ноември, денот официјалниот почеток тренинг кампот репрезентац...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Косово потроши речиси 18 милиони евра за избори, ЦИК нема буџет за евентуални предвремени парламентарни избори</h3>
+                                <p class="theme-text-secondary text-sm"> косовската централна изборна комисија (цик) соопшти буџет организирање евентуални предвремени парламентарни избори поради парламентарните локалнит...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 46 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -144,14 +287,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-џихадистите-во-мали-убија-тиктокер-на-плоштад-summary-27375.html" class="flex gap-3">
-                            <img src="images/cache/summary-27375.webp" alt="Џихадистите во Мали убија тиктокер на плоштад"
+                        <a href="world-бројот-на-жртвите-од-тајфунот-фунон-на-филипини-се-искачи-на-summary-27467.html" class="flex gap-3">
+                            <img src="images/cache/summary-27467.webp" alt="Бројот на жртвите од тајфунот Фунон на Филипини се искачи на 25"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Џихадистите во Мали убија тиктокер на плоштад</h3>
-                                <p class="theme-text-secondary text-sm"> популарната тиктокерка мали, маријам сисе, позната објави поддршка војската, заробена погубена џихадисти, предизвикувајќи шок земјата бори против ...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Бројот на жртвите од тајфунот Фунон на Филипини се искачи на 25</h3>
+                                <p class="theme-text-secondary text-sm"> филипини бројот жртвите тајфунот фунон искачи 25, 29 повредени, двајца водат исчезнати, соопшти националната служба цивилна заштита.  најголем бро...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 46 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -159,14 +302,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-обвинетиот-за-нападот-на-божиќниот-пазар-во-магдебург-summary-27374.html" class="flex gap-3">
-                            <img src="images/cache/summary-27374.webp" alt="Обвинетиот за нападот на божиќниот пазар во Магдебург започна штрајк со глад"
+                        <a href="world-бугарија-има-резерви-на-гориво-за-месец-и-половина-се-summary-27466.html" class="flex gap-3">
+                            <img src="images/cache/summary-27466.webp" alt="Бугарија има резерви на гориво за месец и половина, се подготвува за санкциите против „Лукоил“"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Обвинетиот за нападот на божиќниот пазар во Магдебург започна штрајк со глад</h3>
-                                <p class="theme-text-secondary text-sm"> обвинетиот убиството шест лица напад автомобил божиќниот пазар германскиот град магдебург соопшти започнал штрајк глад вториот ден судење, спровед...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Бугарија има резерви на гориво за месец и половина, се подготвува за санкциите против „Лукоил“</h3>
+                                <p class="theme-text-secondary text-sm"> американските британските санкции против руската нафтена компанија лукоил стапат сила 21 ноември, бугарија усвои измени законот овозможуваат поста...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 46 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -177,14 +320,14 @@
                     </div>
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-германија-ја-зголемува-поддршката-за-украина-11-5-милијарди-summary-27373.html" class="flex gap-3">
-                            <img src="images/cache/summary-27373.webp" alt="ГЕРМАНИЈА ЈА ЗГОЛЕМУВА ПОДДРШКАТА ЗА УКРАИНА: 11,5 милијарди евра за артилерија, дронови, оклопни возила и ракетни системи"
+                        <a href="world-лавров-русија-ќе-тестира-нуклеарно-оружје-ако-и-другите-сили-summary-27465.html" class="flex gap-3">
+                            <img src="images/cache/summary-27465.webp" alt="Лавров: Русија ќе тестира нуклеарно оружје, ако и другите сили го прават тоа"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">ГЕРМАНИЈА ЈА ЗГОЛЕМУВА ПОДДРШКАТА ЗА УКРАИНА: 11,5 милијарди евра за артилерија, дронови, оклопни возила и ракетни системи</h3>
-                                <p class="theme-text-secondary text-sm"> германија зголеми помошта украина 2026 година три милијарди евра, вкупната поддршка достигне 11,5 милијарди евра,покажува најновиот нацрт буџет по...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Лавров: Русија ќе тестира нуклеарно оружје, ако и другите сили го прават тоа</h3>
+                                <p class="theme-text-secondary text-sm"> москва подготвена разговара загриженоста сад вашингтон нарекува сомнителни подземни активности, наведе лавров.  потребни понатамошни консултации с...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 46 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -192,14 +335,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-нов-инвестициски-циклус-во-костал-во-2026-ќе-се-инвестираат-summary-27372.html" class="flex gap-3">
-                            <img src="images/cache/summary-27372.webp" alt="Нов инвестициски циклус во „Костал“ во 2026, ќе се инвестираат 30 милиони евра и ќе бидат отворени дополнителни 200 работни места"
+                        <a href="world-во-масачусетс-приведени-56-осомничени-педофили-summary-27464.html" class="flex gap-3">
+                            <img src="images/cache/summary-27464.webp" alt="Во Масачусетс приведени 56 осомничени педофили"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Нов инвестициски циклус во „Костал“ во 2026, ќе се инвестираат 30 милиони евра и ќе бидат отворени дополнителни 200 работни места</h3>
-                                <p class="theme-text-secondary text-sm"> компанијата костал 2026 година продолжи инвестицискиот циклус фабриката охрид нови 30 милиони евра бидат отворени нови 200 работни места.  средба ...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Во Масачусетс приведени 56 осомничени педофили</h3>
+                                <p class="theme-text-secondary text-sm"> дваесет пет лица обвинети поседување детска порнографија, 19 подведување деца – уапсивме успешни бизнисмени, сопружници родители.  ширум американс...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 46 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -207,14 +350,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="macedonia-кузеска-власта-да-ги-објави-бројките-и-да-го-разреши-summary-27371.html" class="flex gap-3">
-                            <img src="images/cache/summary-27371.webp" alt="Кузеска: Власта да ги објави бројките и да го разреши Трипуновски"
+                        <a href="world-турски-воен-авион-се-урна-во-грузија-загинати-20-војници-summary-27463.html" class="flex gap-3">
+                            <img src="images/cache/summary-27463.webp" alt="Турски воен авион се урна во Грузија – загинати 20 војници"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Кузеска: Власта да ги објави бројките и да го разреши Трипуновски</h3>
-                                <p class="theme-text-secondary text-sm"> сдсм бара итно објавување документи извештаи поврзани програмата , бројот корисници извештај ризикот настанат резултат корупцијата итна оставка тр...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Турски воен авион се урна во Грузија – загинати 20 војници</h3>
+                                <p class="theme-text-secondary text-sm"> турскиот претседател реџеп тајип ердоган изјави длабоко растажен изрази сочувство загинатите несреќата.  авионот ц 130 полетал азербејџан пат наза...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 46 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -222,14 +365,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-нискиот-крвен-притисок-може-сериозно-да-го-загрози-здравјето-summary-27370.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9D%D0%B8%D1%81%D0%BA%D0%B8%D0%BE%D1%82+%D0%BA%D1%80%D0%B2%D0%B5%D0%BD+%D0%BF%D1%80%D0%B8%D1%82%D0%B8%D1%81%D0%BE%D0%BA+%D0%BC%D0%BE%D0%B6%D0%B5+%D1%81%D0%B5%D1%80%D0%B8%D0%BE%D0%B7%D0%BD%D0%BE+%D0%B4%D0%B0+%D0%B3%D0%BE+%D0%B7%D0%B0%D0%B3%D1%80%D0%BE%D0%B7%D0%B8+%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D1%98%D0%B5%D1%82%D0%BE" alt="Нискиот крвен притисок може сериозно да го загрози здравјето"
+                        <a href="world-сад-планираат-да-изградат-голема-воена-база-на-границата-summary-27462.html" class="flex gap-3">
+                            <img src="images/cache/summary-27462.webp" alt="САД планираат да изградат голема воена база на границата помеѓу Израел и Појасот Газа"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Нискиот крвен притисок може сериозно да го загрози здравјето</h3>
-                                <p class="theme-text-secondary text-sm"> разлика луѓето висок притисок, низок притисок требало одбегнуваат сол, бидејќи качува притисокот.  течноста најважна мачи низок притисок честопати...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">САД планираат да изградат голема воена база на границата помеѓу Израел и Појасот Газа</h3>
+                                <p class="theme-text-secondary text-sm"> базата можела подобри способноста сад директно контролира настаните терен појасот газа.  израелскиот весник шомрим објави сад разгледуваат можност...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 46 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -237,14 +380,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-алиу-за-ретките-болести-годинава-се-обезбедени-58-лека-за-summary-27369.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%90%D0%BB%D0%B8%D1%83%3A+%D0%97%D0%B0+%D1%80%D0%B5%D1%82%D0%BA%D0%B8%D1%82%D0%B5+%D0%B1%D0%BE%D0%BB%D0%B5%D1%81%D1%82%D0%B8+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0%D0%B2%D0%B0+%D1%81%D0%B5+%D0%BE%D0%B1%D0%B5%D0%B7%D0%B1%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8+58+%D0%BB%D0%B5%D0%BA%D0%B0+%D0%B7%D0%B0+430+%D0%BF%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B8" alt="Алиу: За ретките болести годинава се обезбедени 58 лека за 430 пациенти"
+                        <a href="world-г7-во-канада-украина-арктикот-и-мирот-на-блискиот-исток-во-summary-27461.html" class="flex gap-3">
+                            <img src="images/cache/summary-27461.webp" alt="Г7 во Канада: Украина, Арктикот и мирот на Блискиот Исток во фокусот"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Алиу: За ретките болести годинава се обезбедени 58 лека за 430 пациенти</h3>
-                                <p class="theme-text-secondary text-sm"> министерот здравство, азир алиу, заедно здружението ретки болести живот предизвици одржаа прес конференција повод симпозиумот рамки кампањата редо...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Г7 во Канада: Украина, Арктикот и мирот на Блискиот Исток во фокусот</h3>
+                                <p class="theme-text-secondary text-sm"> ананд нагласи сегашниот период геополитичка нестабилност, американскиот државен секретар марко рубио конструктивен член г7 пофали улогата сад напо...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 46 часа</span>
+                                    <span>пред 43 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -284,6 +427,15 @@
             
                 <a href="latest-news-mobile-page-57.html"
                    class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">57</a>
+            
+                <a href="latest-news-mobile-page-58.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">58</a>
+            
+                <a href="latest-news-mobile-page-59.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">59</a>
+            
+                <a href="latest-news-mobile-page-60.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">60</a>
             
         
 

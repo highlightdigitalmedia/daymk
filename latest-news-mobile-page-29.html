@@ -71,16 +71,159 @@
         <div class="p-4">
             <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
             <nav class="flex flex-col gap-2">
-                <!-- Main Nav Links -->
-                <a href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Вести</a><a href="sports.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Спорт</a><a href="magazine.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Магазин</a>
-                <a href="latest-news.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a><a href="prognoza.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a><a href="radio.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a><a href="youtube.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="intimate.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Intimate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="radio.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="youtube.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+
                 <hr class="my-3 theme-border-color">
-                <!-- Other Utility Links -->
-                <button id="theme-toggle-mobile" class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
                     <span id="theme-toggle-mobile-text">Toggle Theme</span>
                 </button>
-                <a id="switch-to-desktop-button" href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Стандардна верзија</a>
+                <a id="switch-to-desktop-button"
+                   href="index.html"
+                   class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">
+                    Стандардна верзија
+                </a>
             </nav>
+
         </div>
     </div>
 
@@ -99,14 +242,14 @@
 
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="macedonia-брза-пруга-скопје-солун-како-нова-туристичка-и-економска-summary-27675.html" class="flex gap-3">
-                            <img src="images/cache/summary-27675.webp" alt="Брза пруга Скопје–Солун како нова туристичка и економска шанса, вели Николовски"
+                        <a href="macedonia-илинден-тирана-упати-телеграма-со-сочувство-до-семејството-summary-27753.html" class="flex gap-3">
+                            <img src="images/cache/summary-27753.webp" alt="„Илинден“ – Тирана упати телеграма со сочувство до семејството на проф. Свидерска"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Брза пруга Скопје–Солун како нова туристичка и економска шанса, вели Николовски</h3>
-                                <p class="theme-text-secondary text-sm"> вистинската моќ 75 – поврзе луѓето отвори нови можности – љутков.  панел дискусијата обрати министерот култура туризам, зоран љутков истакна 75 по...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">„Илинден“ – Тирана упати телеграма со сочувство до семејството на проф. Свидерска</h3>
+                                <p class="theme-text-secondary text-sm"> смртта славица свидерска, професорка македонски факултетот странски јазици универзитетот тирана, телеграма сочувство семејството испрати македонск...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 22 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -114,14 +257,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-врвот-на-леонидите-доаѓа-наскоро-еве-кога-можеме-да-го-summary-27674.html" class="flex gap-3">
-                            <img src="images/cache/summary-27674.webp" alt="Врвот на Леонидите доаѓа наскоро – еве кога можеме да го набљудуваме"
+                        <a href="hronika-маж-од-австрија-приведен-во-македонија-ова-е-причината-summary-27752.html" class="flex gap-3">
+                            <img src="images/cache/summary-27752.webp" alt="Маж од Австрија приведен во Македонија, ова е причината"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Врвот на Леонидите доаѓа наскоро – еве кога можеме да го набљудуваме</h3>
-                                <p class="theme-text-secondary text-sm"> метеорскиот дожд леонид 1966 година опишан најсилен забележан историјата.  нивниот врв, земјата помине најгустиот дел метеорскиот дожд, случи поме...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Маж од Австрија приведен во Македонија, ова е причината</h3>
+                                <p class="theme-text-secondary text-sm"> граничен премин табановце, влез државата, полициски службеници лишија слобода .  предаден полициски службеници свр куманово понатамошна постапка ц...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 22 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -129,14 +272,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-огромна-нова-железничка-станица-вредна-над-300-милиони-евра-summary-27673.html" class="flex gap-3">
-                            <img src="images/cache/summary-27673.webp" alt="Огромна нова железничка станица вредна над 300 милиони евра ги отвори своите врати во Европа и сега е меѓу најубавите во светот"
+                        <a href="scena-тандемот-на-хуморот-атанас-атанасовски-и-тино-костадиновски-summary-27738.html" class="flex gap-3">
+                            <img src="images/cache/summary-27738.webp" alt="Тандемот на хуморот: Атанас Атанасовски и Тино Костадиновски"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Огромна нова железничка станица вредна над 300 милиони евра ги отвори своите врати во Европа и сега е меѓу најубавите во светот</h3>
-                                <p class="theme-text-secondary text-sm"> жирито импресионирано етеричниот стил, чистите линии сјајните бели челични форми” издигнуваат небото, катедралниот изглед” централниот мост домини...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Тандемот на хуморот: Атанас Атанасовски и Тино Костадиновски</h3>
+                                <p class="theme-text-secondary text-sm"> минатата година , нивното шоу (нат)просечен македонец” тино атанас успеаја кренат стандар­дот.  откако години гледаме омилени актери сцената малит...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 22 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -144,14 +287,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-русија-подготвени-сме-за-преговори-со-украина-summary-27672.html" class="flex gap-3">
-                            <img src="images/cache/summary-27672.webp" alt="Русија: Подготвени сме за преговори со Украина"
+                        <a href="sport-анчелоти-му-реков-на-ендрик-да-си-замине-од-реал-мадрид-summary-27737.html" class="flex gap-3">
+                            <img src="images/cache/summary-27737.webp" alt="Анчелоти: Му реков на Ендрик да си замине од Реал Мадрид"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Русија: Подготвени сме за преговори со Украина</h3>
-                                <p class="theme-text-secondary text-sm"> кремљ објави путин подготвен таков состанок, москва, киев отфрли.  русија подготвена продолжи мировните преговори украина истанбул, објави руската...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Анчелоти: Му реков на Ендрик да си замине од Реал Мадрид</h3>
+                                <p class="theme-text-secondary text-sm"> новинарите заинтересирани влијае статусот ендрик националниот тим, особено знае летово игра светското првенство сад, канада мексико.  селекторот ф...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 22 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -159,14 +302,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="macedonia-дрисла-во-исклучително-лоша-состојба-ѓорѓиевски-најавува-summary-27671.html" class="flex gap-3">
-                            <img src="images/cache/summary-27671.webp" alt="Дрисла во исклучително лоша состојба, Ѓорѓиевски најавува соработка со експерти од Австрија за нејзина трансформација"
+                        <a href="sport-ф1-тото-волф-подготвен-да-продаде-дел-од-уделот-во-мерцедес-summary-27736.html" class="flex gap-3">
+                            <img src="images/cache/summary-27736.webp" alt="Ф1: Тото Волф подготвен да продаде дел од уделот во Мерцедес"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Дрисла во исклучително лоша состојба, Ѓорѓиевски најавува соработка со експерти од Австрија за нејзина трансформација</h3>
-                                <p class="theme-text-secondary text-sm"> истакна значењето неколкуте невладини организации работат насока, селектирање отпад негово собирање, третман.  интересно искуството поставување ма...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Ф1: Тото Волф подготвен да продаде дел од уделот во Мерцедес</h3>
+                                <p class="theme-text-secondary text-sm"> коментираме, изјави портпаролот тимот мерцедес ф1 пошта, додавајќи: раководството тимот остане непроменето три партнери (мерцедес бенц, тото ) цел...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 22 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -177,14 +320,14 @@
                     </div>
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="macedonia-муцунски-ако-коментирам-што-рекол-димитров-за-македонско-summary-27670.html" class="flex gap-3">
-                            <img src="images/cache/summary-27670.webp" alt="МУЦУНСКИ: Ако коментирам што рекол Димитров за Македонско-бугарската историска комисија веројатно ќе ја исполнам неговата цел"
+                        <a href="hronika-тешко-повредена-скопјанка-со-возило-ја-удрил-млад-сограѓанин-summary-27735.html" class="flex gap-3">
+                            <img src="images/cache/summary-27735.webp" alt="Тешко повредена скопјанка, со возило ја удрил млад сограѓанин"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">МУЦУНСКИ: Ако коментирам што рекол Димитров за Македонско-бугарската историска комисија веројатно ќе ја исполнам неговата цел</h3>
-                                <p class="theme-text-secondary text-sm"> министерот надворешни работи надворешна трговија тимчо муцунски денеска врска работата македонско бугарската експертска комисија историски образов...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Тешко повредена скопјанка, со возило ја удрил млад сограѓанин</h3>
+                                <p class="theme-text-secondary text-sm"> јани лукровски сервисна улица скопје, патничко возило мицубиши скопски регистарски ознаки, управувано ј. п. скопје, удрило 65 годишната с. т. неср...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 22 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -192,14 +335,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="macedonia-кој-е-докторот-поранешен-градоначаник-што-не-сакал-да-влезе-summary-27669.html" class="flex gap-3">
-                            <img src="images/cache/summary-27669.webp" alt="Кој е докторот, поранешен градоначаник што не сакал да влезе во раководството на СДСМ затоа што го смета Филипче за нерелевантен?"
+                        <a href="macedonia-министерката-за-енергетика-во-посета-на-лабораторијата-за-summary-27734.html" class="flex gap-3">
+                            <img src="images/cache/summary-27734.webp" alt="Министерката за енергетика во посета на лабораторијата за проверка на броила на Електродистрибуција"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Кој е докторот, поранешен градоначаник што не сакал да влезе во раководството на СДСМ затоа што го смета Филипче за нерелевантен?</h3>
-                                <p class="theme-text-secondary text-sm"> информации бихачка стигнаа ,велат познат доктор поранешен градоначалник, одбил функција раководството сдс, затоа смета филипче релевантен политича...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Министерката за енергетика во посета на лабораторијата за проверка на броила на Електродистрибуција</h3>
+                                <p class="theme-text-secondary text-sm"> посетата следи реализираната 13 та редовна надзорна оценка институтот акредитација бирото метрологија министерството енергетика, годинава потврдиј...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 22 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -207,14 +350,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="bitola-координативен-состанок-на-зимската-служба-во-битола-summary-27668.html" class="flex gap-3">
-                            <img src="images/cache/summary-27668.webp" alt="Координативен состанок на Зимската служба во Битола"
+                        <a href="sport-доделени-наградите-13-ноември-поп-ацев-најдобар-спортист-summary-27733.html" class="flex gap-3">
+                            <img src="images/cache/summary-27733.webp" alt="Доделени наградите „13 Ноември“, Поп Ацев најдобар спортист, Лазаров најуспешен тренер во 2025 година"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Координативен состанок на Зимската служба во Битола</h3>
-                                <p class="theme-text-secondary text-sm"> градоначалникот општина битола, тони коњановски, секретарот борче димитровски раководителката одделението комунални дејности марјана спасевска, за...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Доделени наградите „13 Ноември“, Поп Ацев најдобар спортист, Лазаров најуспешен тренер во 2025 година</h3>
+                                <p class="theme-text-secondary text-sm"> сојузот спортови скопје, денеска повод ослободувањето градот скопје, организираше свеченост доделување наградите 13 ноември спортисти, тренери, сп...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 23 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -222,14 +365,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="magazine-руска-академија-на-науките-силен-блесок-е-забележан-на-summary-27667.html" class="flex gap-3">
-                            <img src="images/cache/summary-27667.webp" alt="Руска академија на науките: Силен блесок е забележан на Сонцето насочен кон Земјата"
+                        <a href="sport-претседателот-на-барселона-нереални-се-очекувањата-за-summary-27732.html" class="flex gap-3">
+                            <img src="images/cache/summary-27732.webp" alt="Претседателот на Барселона: Нереални се очекувањата за враќање на Меси"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Руска академија на науките: Силен блесок е забележан на Сонцето насочен кон Земјата</h3>
-                                <p class="theme-text-secondary text-sm"> подоцна, лабораторијата руската академија науките изјави експлозијата достигнала највисокото ниво петстепена скала означена класа 1. наведено, пос...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Претседателот на Барселона: Нереални се очекувањата за враќање на Меси</h3>
+                                <p class="theme-text-secondary text-sm"> претседателот фудбалскиот клуб барселона, жоан лапорта истакна шпекулациите враќање аргентинската ѕвезда лионел меси ноу камп нереални.  , огромно...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 23 часа</span>
                                 </div>
                             </div>
                         </a>
@@ -237,14 +380,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-иеа-глобалната-побарувачка-за-нафта-и-гас-може-да-расте-до-summary-27666.html" class="flex gap-3">
-                            <img src="images/cache/summary-27666.webp" alt="ИЕА: Глобалната побарувачка за нафта и гас може да расте до 2050 година"
+                        <a href="economy-до-домот-кој-го-посакуваш-со-само-10-учество-нов-поволен-summary-27731.html" class="flex gap-3">
+                            <img src="images/cache/summary-27731.webp" alt="До домот кој го посакуваш со само 10% учество – Нов поволен станбен кредит од УНИБанка"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">ИЕА: Глобалната побарувачка за нафта и гас може да расте до 2050 година</h3>
-                                <p class="theme-text-secondary text-sm"> време администрацијата џо бајден, иеа предвиде глобалната побарувачка нафта достигне врвот деценија потребни понатамошни инвестиции нафта гас свет...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">До домот кој го посакуваш со само 10% учество – Нов поволен станбен кредит од УНИБанка</h3>
+                                <p class="theme-text-secondary text-sm"> унибанка создаде кредит согласност насоките народна банка, креираат кредитни решенија поволни, достапни прилагодени младите генерации.  достапност...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 24 часа</span>
+                                    <span>пред 23 часа</span>
                                 </div>
                             </div>
                         </a>

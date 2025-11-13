@@ -71,16 +71,159 @@
         <div class="p-4">
             <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
             <nav class="flex flex-col gap-2">
-                <!-- Main Nav Links -->
-                <a href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Вести</a><a href="sports.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Спорт</a><a href="magazine.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Магазин</a>
-                <a href="latest-news.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a><a href="prognoza.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a><a href="radio.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a><a href="youtube.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="intimate.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Intimate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="radio.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="youtube.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+
                 <hr class="my-3 theme-border-color">
-                <!-- Other Utility Links -->
-                <button id="theme-toggle-mobile" class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
                     <span id="theme-toggle-mobile-text">Toggle Theme</span>
                 </button>
-                <a id="switch-to-desktop-button" href="index.html" class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Стандардна верзија</a>
+                <a id="switch-to-desktop-button"
+                   href="index.html"
+                   class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">
+                    Стандардна верзија
+                </a>
             </nav>
+
         </div>
     </div>
 
@@ -99,14 +242,14 @@
 
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="balkan-хрка-вчера-заврши-во-болница-по-медицинската-нега-се-врати-summary-27938.html" class="flex gap-3">
-                            <img src="images/cache/summary-27938.webp" alt="Хрка вчера заврши во болница, по медицинската нега се врати пред српското Собрание"
+                        <a href="macedonia-манасиевски-поранешни-блиски-соработници-на-филипче-поради-summary-28003.html" class="flex gap-3">
+                            <img src="images/cache/summary-28003.webp" alt="Манасиевски: Поранешни блиски соработници на Филипче поради него му го свртеа грбот на СДС"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Хрка вчера заврши во болница, по медицинската нега се врати пред српското Собрание</h3>
-                                <p class="theme-text-secondary text-sm"> медигруп доцна синоќа објави дијана хрка примена општата болница приватен здравствен систем поради влошување нејзината здравствена состојба , дија...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Манасиевски: Поранешни блиски соработници на Филипче поради него му го свртеа грбот на СДС</h3>
+                                <p class="theme-text-secondary text-sm"> филипче, заев ковачевски направија сдсм, доведе трета партија македонија, петта скопје – манасиевски  венко филипче доведе сдсм тотален распад пор...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -114,14 +257,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-собранието-на-загреб-го-забрани-поздравот-за-дом-спремни-на-summary-27936.html" class="flex gap-3">
-                            <img src="images/cache/summary-27936.webp" alt="Собранието на Загреб го забрани поздравот „За дом спремни“ на концертите и јавните настани во градот"
+                        <a href="sport-дончиќ-фокусиран-сум-на-лејкерс-далас-останува-во-моето-срце-summary-28002.html" class="flex gap-3">
+                            <img src="images/cache/summary-28002.webp" alt="Дончиќ: Фокусиран сум на Лејкерс, Далас останува во моето срце"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Собранието на Загреб го забрани поздравот „За дом спремни“ на концертите и јавните настани во градот</h3>
-                                <p class="theme-text-secondary text-sm"> хрватска: изгласана резолуција спречување контроверзниот поздрав дом спремни јавни настани резолуцијата повикува градоначалникот загреб преземе ме...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Дончиќ: Фокусиран сум на Лејкерс, Далас останува во моето срце</h3>
+                                <p class="theme-text-secondary text-sm"> моментов фокусиран лејкерси обидувам продолжам понатаму.  февруари 2025 година, негово водство, маверикс трејдуваа дончиќ лос анџелес лејкерс енто...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -129,14 +272,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="balkan-еу-и-препорачува-ригорозни-безбедносни-проверки-на-србија-summary-27935.html" class="flex gap-3">
-                            <img src="images/cache/summary-27935.webp" alt="ЕУ и препорачува ригорозни безбедносни проверки на Србија при доделување државјанство на странци"
+                        <a href="world-европол-уапси-платеници-кои-требало-да-киднапираат-водач-на-summary-28001.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%95%D0%B2%D1%80%D0%BE%D0%BF%D0%BE%D0%BB+%D1%83%D0%B0%D0%BF%D1%81%D0%B8+%D0%BF%D0%BB%D0%B0%D1%82%D0%B5%D0%BD%D0%B8%D1%86%D0%B8+%D0%BA%D0%BE%D0%B8+%D1%82%D1%80%D0%B5%D0%B1%D0%B0%D0%BB%D0%BE+%D0%B4%D0%B0+%D0%BA%D0%B8%D0%B4%D0%BD%D0%B0%D0%BF%D0%B8%D1%80%D0%B0%D0%B0%D1%82+%D0%B2%D0%BE%D0%B4%D0%B0%D1%87+%D0%BD%D0%B0+%D0%B0%D0%BB%D0%B1%D0%B0%D0%BD%D1%81%D0%BA%D0%B0+%D0%BD%D0%B0%D1%80%D0%BA%D0%BE+%D0%B1%D0%B0%D0%BD%D0%B4%D0%B0" alt="Европол уапси платеници кои требало да киднапираат водач на албанска нарко банда"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">ЕУ и препорачува ригорозни безбедносни проверки на Србија при доделување државјанство на странци</h3>
-                                <p class="theme-text-secondary text-sm"> прашањето рсе зголемување приемот руски државјани српско државјанство, прес службата европската комисија изјави целта еу продолжи дијалогот србија...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Европол уапси платеници кои требало да киднапираат водач на албанска нарко банда</h3>
+                                <p class="theme-text-secondary text-sm"> операцијата, спроведе вчера, предводеше германија поддршка европол полициите данска, франција, латвија обединетото кралство, објави европол.  опер...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -144,14 +287,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-розова-поларна-светлина-на-небото-над-северна-белгија-и-summary-27934.html" class="flex gap-3">
-                            <img src="images/cache/summary-27934.webp" alt="Розова поларна светлина на небото над северна Белгија и Холандија"
+                        <a href="scena-витраж-со-тоше-проески-со-мотиви-од-полско-цвеќе-поставен-на-summary-28000.html" class="flex gap-3">
+                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%92%D0%B8%D1%82%D1%80%D0%B0%D0%B6+%D1%81%D0%BE+%D0%A2%D0%BE%D1%88%D0%B5+%D0%9F%D1%80%D0%BE%D0%B5%D1%81%D0%BA%D0%B8+%D1%81%D0%BE+%D0%BC%D0%BE%D1%82%D0%B8%D0%B2%D0%B8+%D0%BE%D0%B4+%E2%80%9E%D0%9F%D0%BE%D0%BB%D1%81%D0%BA%D0%BE+%D1%86%D0%B2%D0%B5%D1%9C%D0%B5%E2%80%9C+%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%B5%D0%BD+%D0%BD%D0%B0+%D0%93%D1%83%D0%BC%D0%B5%D1%9A%D0%B5" alt="Витраж со Тоше Проески со мотиви од „Полско цвеќе“ поставен на Гумење"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Розова поларна светлина на небото над северна Белгија и Холандија</h3>
-                                <p class="theme-text-secondary text-sm"> првите наелектризирани честички сонцето судриле земјината атмосфера вторникот вечерта, создавајќи поларната светлина.  небото северна белгија хола...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Витраж со Тоше Проески со мотиви од „Полско цвеќе“ поставен на Гумење</h3>
+                                <p class="theme-text-secondary text-sm"> размислиме другите витражи, раскажува витражистот ѓањиќ, пријателка сон споменот тоше претворил своја мисија добрите луѓе почитуваат делото тоше п...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -159,14 +302,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-дијана-хрка-се-врати-од-болница-го-продолжува-штрајкот-со-summary-27933.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%94%D0%B8%D1%98%D0%B0%D0%BD%D0%B0+%D0%A5%D1%80%D0%BA%D0%B0+%D1%81%D0%B5+%D0%B2%D1%80%D0%B0%D1%82%D0%B8+%D0%BE%D0%B4+%D0%B1%D0%BE%D0%BB%D0%BD%D0%B8%D1%86%D0%B0%2C+%D0%B3%D0%BE+%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D1%83%D0%B2%D0%B0+%D1%88%D1%82%D1%80%D0%B0%D1%98%D0%BA%D0%BE%D1%82+%D1%81%D0%BE+%D0%B3%D0%BB%D0%B0%D0%B4+%D0%B2%D0%BE+%D0%B1%D0%BB%D0%B8%D0%B7%D0%B8%D0%BD%D0%B0+%D0%BD%D0%B0+%D0%A1%D0%BE%D0%B1%D1%80%D0%B0%D0%BD%D0%B8%D0%B5%D1%82%D0%BE+%D0%BD%D0%B0+%D0%A1%D1%80%D0%B1%D0%B8%D1%98%D0%B0" alt="Дијана Хрка се врати од болница, го продолжува штрајкот со глад во близина на Собранието на Србија"
+                        <a href="kultura-промоција-на-чувари-на-малите-нешта-на-ана-пејчинова-summary-27999.html" class="flex gap-3">
+                            <img src="images/cache/summary-27999.webp" alt="Промоција на „Чувари на малите нешта“ на Ана Пејчинова"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Дијана Хрка се врати од болница, го продолжува штрајкот со глад во близина на Собранието на Србија</h3>
-                                <p class="theme-text-secondary text-sm"> медигруп доцна синоќа објави дијана хрка примена општата болница приватен здравствен систем поради влошување нејзината здравствена состојба , дија...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Промоција на „Чувари на малите нешта“ на Ана Пејчинова</h3>
+                                <p class="theme-text-secondary text-sm"> објавено четири збирки поезија македонски јазик: деогае (1995), ѕверот проѕирот (1997), златните раце демонот (1999) чувари малите нешта (2025), з...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -177,14 +320,14 @@
                     </div>
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-г7-ќе-ја-продолжи-поддршката-за-украина-summary-27932.html" class="flex gap-3">
-                            <img src="images/cache/summary-27932.webp" alt="Г7 ќе ја продолжи поддршката за Украина"
+                        <a href="magazine-не-чекајте-да-се-појави-проблемот-разговарајте-со-урологот-summary-27998.html" class="flex gap-3">
+                            <img src="images/cache/summary-27998.webp" alt="Не чекајте да се појави проблемот, разговарајте со урологот без срам и вложете време во своето здравје"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Г7 ќе ја продолжи поддршката за Украина</h3>
-                                <p class="theme-text-secondary text-sm"> денешниот состанок присуствуваше шефот украинската дипломатија андриј сибиха, повика г7 продолжи вложува производство ракети дронови против воздуш...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Не чекајте да се појави проблемот, разговарајте со урологот без срам и вложете време во своето здравје</h3>
+                                <p class="theme-text-secondary text-sm"> д р јанчулев: редовните уролошки прегледи важни затоа заболувања, рак простата воспаленија, можат откријат рано успешно лекуваат вашиот најважен с...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -192,14 +335,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-во-рим-денеска-прва-заедничка-седница-на-албанската-и-summary-27931.html" class="flex gap-3">
-                            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%92%D0%BE+%D0%A0%D0%B8%D0%BC+%D0%B4%D0%B5%D0%BD%D0%B5%D1%81%D0%BA%D0%B0+%D0%BF%D1%80%D0%B2%D0%B0+%D0%B7%D0%B0%D0%B5%D0%B4%D0%BD%D0%B8%D1%87%D0%BA%D0%B0+%D1%81%D0%B5%D0%B4%D0%BD%D0%B8%D1%86%D0%B0+%D0%BD%D0%B0+%D0%B0%D0%BB%D0%B1%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%82%D0%B0+%D0%B8+%D0%B8%D1%82%D0%B0%D0%BB%D0%B8%D1%98%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%82%D0%B0+%D0%92%D0%BB%D0%B0%D0%B4%D0%B0" alt="Во Рим денеска прва заедничка седница на албанската и италијанската Влада"
+                        <a href="kultura-премиера-на-сина-сенка-во-режија-на-тамара-стојаноска-на-13-summary-27997.html" class="flex gap-3">
+                            <img src="images/cache/summary-27997.webp" alt="Премиера на „Сина сенка“ во режија на Тамара Стојаноска, на 13 ноември во МКЦ"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Во Рим денеска прва заедничка седница на албанската и италијанската Влада</h3>
-                                <p class="theme-text-secondary text-sm"> енергетскиот сектор, тек работи проширување соработката основа трилатералниот договор меѓу италија, обединетите арапски емирати албанија потпишан ...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Премиера на „Сина сенка“ во режија на Тамара Стојаноска, на 13 ноември во МКЦ</h3>
+                                <p class="theme-text-secondary text-sm"> делото навлегува длабоко реалноста денешното општество, времето опстануваме, системот живееме начинот систем создава насилство.  младинскиот култу...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -207,14 +350,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-ветераните-вајерс-и-бума-ќе-се-обидат-да-избоксуваат-договор-summary-27930.html" class="flex gap-3">
-                            <img src="images/cache/summary-27930.webp" alt="Ветераните Вајерс и Бума ќе се обидат да „избоксуваат“ договор за формирање нова Влада на Холандија"
+                        <a href="magazine-оваа-недела-нов-обид-за-лансирање-ракета-со-сателити-кон-summary-27996.html" class="flex gap-3">
+                            <img src="images/cache/summary-27996.webp" alt="Оваа недела нов обид за лансирање ракета со сателити кон Марс"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Ветераните Вајерс и Бума ќе се обидат да „избоксуваат“ договор за формирање нова Влада на Холандија</h3>
-                                <p class="theme-text-secondary text-sm"> именувањето вајерс бума следи откако ваутер кулмис, договор меѓу парламентарните партии именуван посредник задача испита можностите формирање мноз...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Оваа недела нов обид за лансирање ракета со сателити кон Марс</h3>
+                                <p class="theme-text-secondary text-sm"> марс недела, поради одложувања предизвикани облачност соларни бури компанијата соопшти недела обиде лансира ракета , носи сателити наменети проучу...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -222,14 +365,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-махмуд-али-јусуф-од-комисија-на-африканската-унија-го-summary-27929.html" class="flex gap-3">
-                            <img src="images/cache/summary-27929.webp" alt="Махмуд Али Јусуф од Комисија на Африканската унија го демантира Трамп: Нема геноцид во северна Нигерија"
+                        <a href="magazine-никогаш-не-ги-правете-овие-работи-во-кревет-бидејќи-тие-ја-summary-27995.html" class="flex gap-3">
+                            <img src="images/cache/summary-27995.webp" alt="Никогаш не ги правете овие работи во кревет, бидејќи тие ја уништуваат секоја врска!"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Махмуд Али Јусуф од Комисија на Африканската унија го демантира Трамп: Нема геноцид во северна Нигерија</h3>
-                                <p class="theme-text-secondary text-sm"> најголемите жртви боко харам муслимани, христијани.  геноцид северна нигерија, изјави синоќа шефот дипломатијата џибути претседател комисија африк...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Никогаш не ги правете овие работи во кревет, бидејќи тие ја уништуваат секоја врска!</h3>
+                                <p class="theme-text-secondary text-sm"> разлика имате нов партнер имате долгогодишна врска, интимноста имате дел секоја врска.  имате најневеројатна духовна врска меѓусебно, возбудливи и...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
@@ -237,14 +380,14 @@
                     
                 
                     <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="world-сзо-туберкулозата-останува-водечка-причина-за-смрт-од-summary-27928.html" class="flex gap-3">
-                            <img src="images/cache/summary-27928.webp" alt="СЗО: Туберкулозата останува водечка причина за смрт од заразни болести во светот"
+                        <a href="magazine-принцот-вилијам-и-кејт-воведоа-правило-кое-нивните-деца-мора-summary-27994.html" class="flex gap-3">
+                            <img src="images/cache/summary-27994.webp" alt="Принцот Вилијам и Кејт воведоа правило кое нивните деца мора да го почитуваат"
                                  class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
                             <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">СЗО: Туберкулозата останува водечка причина за смрт од заразни болести во светот</h3>
-                                <p class="theme-text-secondary text-sm"> проценува 10,7 милиони луѓе светот заболеа туберкулоза 2024 година, 5,8 милиони мажи, 3,7 милиони жени 1,2 милиони деца.  бројот смртни случаи туб...</p>
+                                <h3 class="theme-text-primary text-lg font-bold mb-1">Принцот Вилијам и Кејт воведоа правило кое нивните деца мора да го почитуваат</h3>
+                                <p class="theme-text-secondary text-sm"> идниот британски крал неодамна посети бразил, интервју локалниот водител лучијано хок откри сопруга, принцезата кејт мидлтон, обидуваат поминат мо...</p>
                                 <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 37 минути</span>
+                                    <span>пред 1 час</span>
                                 </div>
                             </div>
                         </a>
