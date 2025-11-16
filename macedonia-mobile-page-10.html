@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Day.mk - Најнови Вести (Mobile, Page 49)</title>
+    <title>Day.mk - Македонија (Mobile, Page 10)</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <!-- Meta Description: use pageDescription if provided, otherwise default -->
     <meta name="description"
-          content="Browse the latest news on mobile, page 49."/>
+          content="Mobile listing for Македонија - page 10."/>
 
     <!-- Canonical URL (optional) -->
-    
+    <link rel="canonical" href="https://day.mk/macedonia.html" />
 
     <!-- Robots directives (optional, e.g. noindex for 404) -->
     
@@ -20,18 +20,18 @@
     <!-- Basic Open Graph for non-article pages -->
     <meta property="og:site_name" content="Day.mk" />
     <meta property="og:locale" content="mk_MK" />
-    <meta property="og:title" content="Day.mk - Најнови Вести (Mobile, Page 49)" />
+    <meta property="og:title" content="Day.mk - Македонија (Mobile, Page 10)" />
     <meta property="og:description"
-          content="Browse the latest news on mobile, page 49."/>
+          content="Mobile listing for Македонија - page 10."/>
     <meta property="og:type" content="website" />
-    
+    <meta property="og:url" content="https://day.mk/macedonia.html" />
     <meta property="og:image" content="https://day.mk/assets/logo.png" />
 
     <!-- Basic Twitter card for non-article pages -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Day.mk - Најнови Вести (Mobile, Page 49)" />
+    <meta name="twitter:title" content="Day.mk - Македонија (Mobile, Page 10)" />
     <meta name="twitter:description"
-          content="Browse the latest news on mobile, page 49."/>
+          content="Mobile listing for Македонија - page 10."/>
     <meta name="twitter:image" content="https://day.mk/assets/logo.png" />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -40,9 +40,11 @@
 <body class="theme-bg-primary">
 <div class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
      style='font-family: Newsreader, "Noto Sans", sans-serif;'>
-
-    <div class="max-w-7xl mx-auto w-full">
+    <!-- ✅ same max width as index-mobile -->
+    <div class="max-w-3xl mx-auto w-full">
         <div>
+            <!-- ✅ Mobile Header (same component) -->
+            <div>
     <!-- Mobile Header -->
     <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
         <!-- Hamburger Menu Button -->
@@ -54,7 +56,7 @@
 
         <!-- Centered Title/Logo -->
         <div class="flex-1 text-center">
-            <h1 class="theme-text-primary text-2xl font-bold uppercase tracking-wider">Најнови Вести</h1>
+            <h1 class="theme-text-primary text-2xl font-bold uppercase tracking-wider">Македонија</h1>
         </div>
 
         <!-- Search Icon -->
@@ -223,61 +225,131 @@
     <button id="theme-toggle" class="hidden"></button>
 </div>
 
-        <main class="p-2 sm:p-4">
-            <h1 class="theme-text-primary text-2xl font-bold mb-4 px-2">Најнови Вести</h1>
-
-            <div class="flex flex-col gap-4">
+            <main class="p-2 sm:p-4 flex flex-col gap-6">
+                <!-- Top Ad Banner (same as index-mobile) -->
                 <div id="mobile-ad-container-top" class="mb-4">
                     <a id="mobile-ad-link-top" href="#"
                        class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
                 </div>
 
-                
-                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                        <a href="economy-просечната-цена-на-струјата-на-hupx-берзата-за-14-ноември-summary-29062.html" class="flex gap-3">
-                            <img src="images/cache/summary-29062.webp" alt="Просечната цена на струјата на HUPX берзата за 14 ноември изнесува 132,01 евра за мегават час, на МЕМО 130,29 евра за мегават час"
-                                 class="w-24 h-24 object-cover rounded-md flex-shrink-0"/>
-                            <div class="flex flex-col flex-1">
-                                <h3 class="theme-text-primary text-lg font-bold mb-1">Просечната цена на струјата на HUPX берзата за 14 ноември изнесува 132,01 евра за мегават час, на МЕМО 130,29 евра за мегават час</h3>
-                                <p class="theme-text-secondary text-sm"> согласно податоците движењето цените берзата унгарија 14 ноември просечната часовна цена мегават час електрична енергија () изнесува 132,01 евра, ...</p>
-                                <div class="theme-text-secondary text-xs mt-2">
-                                    <span>пред 46 часа</span>
-                                </div>
-                            </div>
-                        </a>
+                <!-- ✅ Category header styled like a section header -->
+                <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                    <div class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl">
+                        <span>Македонија</span>
                     </div>
+                </div>
+
+                <!-- ✅ Articles list – copied from index-mobile -->
+                <div class="flex flex-col divide-y theme-border-color mt-2">
                     
-                
-            </div>
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="macedonia-телефонски-разговор-на-министерот-муцунски-со-заменик-summary-29153.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-29153.webp"
+                                     alt="Телефонски разговор на министерот Муцунски со заменик-државниот секретар на САД, Кристофер Ландау"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Телефонски разговор на министерот Муцунски со заменик-државниот секретар на САД, Кристофер Ландау</h3>
 
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> министерот надворешни работи надворешна трговија тимчо муцински денеска телефонски разговарал за...</p>
 
-            <!-- ✅ Pagination -->
-            <div class="flex justify-center mt-6">
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 42 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">3</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                        <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                   <span> <span class="font-semibold"></span>
+                                                       сумирано
+                                                       </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
+                    
+                        <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                            <a href="macedonia-дипломатска-посета-во-битола-коњановски-се-сретна-со-summary-29162.html"
+                               class="flex gap-3">
+                                <!-- Thumbnail -->
+                                <img src="images/cache/summary-29162.webp"
+                                     alt="Дипломатска посета во Битола: Коњановски се сретна со амбасадорите на Германија и Франција"
+                                     class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                <!-- Content -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- Title -->
+                                    <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Дипломатска посета во Битола: Коњановски се сретна со амбасадорите на Германија и Франција</h3>
+
+                                    <!-- Snippet -->
+                                    <p class="theme-text-secondary text-xs"> амбасадорката сојузна република германија, петра дрекслер, амбасадорот република франција, крист...</p>
+
+                                    <!-- Meta -->
+                                    <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                        <span>
+                                            <span>пред 42 часа</span>
+                                        </span>
+                                        <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                            <span>
+                                                <span class="font-semibold">3</span>
+                                                вести
+                                            </span>
+                                        </div>
+                                        <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                   <span> <span class="font-semibold"></span>
+                                                       сумирано
+                                                       </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Mid Ad Banner after 5th item, same style as index-mobile -->
+                        
+                    
+                </div>
+
+                <!-- Optional pagination (if you pass these vars) -->
+                <div class="flex justify-center mt-6">
     <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
 
         <!-- Previous -->
-        <a href="latest-news-mobile-page-48.html"
+        <a href="macedonia-mobile-page-9.html"
            class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
            aria-label="Previous">&laquo;</a>
 
         <!-- Page numbers (max 10) -->
         
             
-                <a href="latest-news-mobile-page-45.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">45</a>
+                <a href="macedonia-mobile-page-6.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">6</a>
             
-                <a href="latest-news-mobile-page-46.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">46</a>
+                <a href="macedonia-mobile-page-7.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">7</a>
             
-                <a href="latest-news-mobile-page-47.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">47</a>
+                <a href="macedonia-mobile-page-8.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">8</a>
             
-                <a href="latest-news-mobile-page-48.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">48</a>
+                <a href="macedonia-mobile-page-9.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">9</a>
             
-                <a href="latest-news-mobile-page-49.html"
-                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">49</a>
+                <a href="macedonia-mobile-page-10.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">10</a>
             
         
 
@@ -285,9 +357,11 @@
         
     </nav>
 </div>
-        </main>
+            </main>
+        </div>
     </div>
 
+    <!-- ✅ Footer like index-mobile -->
     <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
@@ -336,8 +410,10 @@
 </div>
 
 <script>
+    /*<![CDATA[*/
     window.mobileTopAdsData = [{"id":"mobileTopAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Your+Mobile+Ad+Here+1","title":"Mobile Exclusive Offer","description":"Special deal for mobile users.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"},{"id":"mobileTopAd2","imageUrl":"https:\/\/placehold.co\/600x75\/DAF7A6\/000000?text=Your+Mobile+Ad+Here+2","title":"New Mobile Feature","description":"Check out our new mobile feature.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"}];
     window.mobileMidAdsData = [{"id":"mobileMidAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Your+Mobile+Ad+Here+1","title":"Don't Miss This!","description":"Another great offer just for you.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"},{"id":"mobileMidAd2","imageUrl":"https:\/\/placehold.co\/600x75\/C70039\/FFFFFF?text=Your+Mobile+Ad+Here+2","title":"Scroll-Stopping Savings","description":"Great savings await.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"}];
+    /*]]>*/
 </script>
 
 <div>
