@@ -40,15 +40,18 @@
 <body class="theme-bg-primary">
 <div class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
      style='font-family: Newsreader, "Noto Sans", sans-serif;'>
-    <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-        <div>
-            <!-- Header -->
+
+    <!-- ======================= -->
+    <!-- DESKTOP HEADER (lg up)  -->
+    <!-- ======================= -->
+    <div class="hidden lg:block">
+        <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
             <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
         <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Вести</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>14:52, 24.11.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>20:26, 24.11.2025</span></p>
         </h2>
         <div class="flex w-24 items-center justify-end">
             <!-- NEW: Search Icon (Desktop) -->
@@ -58,13 +61,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                 </svg>
             </button>
-            <!-- NEW: Device Switcher Icon -->
-            <button id="device-switcher-button" aria-label="Switch to mobile/desktop view"
-                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
-                </svg>
-            </button>
+
             <!-- Weather Link Icon (Thermometer) -->
             <a href="prognoza.html" aria-label="Weather Forecast"
                class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
@@ -146,345 +143,225 @@
         
     </div>
 </div>
-
-            <!-- Main Grid -->
-            <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <!-- Left/Main Column -->
-                <div class="lg:col-span-2 flex flex-col gap-8">
-                    <div class="flex items-center justify-between border-b pb-1 theme-border-color">
-                        <a href="latest-news.html"
-                           class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-2xl hover:underline hover:bg-gray-100">
-                            Најнови Вести
-                            <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
-                        </a>
-                    </div>
-                    <div class="flex flex-col divide-y theme-border-color mt-2">
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="macedonia-бебе-почина-во-кичевската-болница-и-покрај-обидите-за-summary-32780.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32780.webp"
-                 alt="Бебе почина во кичевската болница и покрај обидите за реанимација" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="macedonia-бебе-почина-во-кичевската-болница-и-покрај-обидите-за-summary-32780.html"
-               class="hover:underline">Бебе почина во кичевската болница и покрај обидите за реанимација</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> медицинските лица констатирале смрт траги насилство, наредба јавен обвинител телото дадено обдукција, соопшти свр охрид  детското одделение општата болница кичево тешка здравст...</p>
-
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 2 часа</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="macedonia-бебе-почина-во-кичевската-болница-и-покрај-обидите-за-summary-32780.html"
-                       class="hover:underline">
-                       <span>8</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="macedonia-бебе-почина-во-кичевската-болница-и-покрај-обидите-за-summary-32780.html"
-                       class="hover:underline">сумирано</a>
-                </span>
-            </div>
         </div>
     </div>
-</div>
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
-    <!-- Thumbnail -->
-    <a href="macedonia-јаневска-постигнавме-широк-консензус-во-кој-правец-ќе-summary-32750.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32750.webp"
-                 alt="Јаневска: Постигнавме широк консензус во кој правец ќе делуваме за развој на македонското образование во иднина" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
+    <!-- ======================= -->
+    <!-- MOBILE HEADER (< lg)    -->
+    <!-- ======================= -->
+    <div class="block lg:hidden">
+        <div class="max-w-3xl mx-auto w-full">
+            <!-- Use same header fragment as index-mobile, but with headerTitle -->
+            <div>
+    <!-- Mobile Header -->
+    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger-menu-button" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
 
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="macedonia-јаневска-постигнавме-широк-консензус-во-кој-правец-ќе-summary-32750.html"
-               class="hover:underline">Јаневска: Постигнавме широк консензус во кој правец ќе делуваме за развој на македонското образование во иднина</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> имаме нова стратегија образование рок имплементација 2026 година 2032 година, истакна министерката образование наука весна јаневска обраќањето владата претставува новата страте...</p>
-
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 2 часа</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="macedonia-јаневска-постигнавме-широк-консензус-во-кој-правец-ќе-summary-32750.html"
-                       class="hover:underline">
-                       <span>7</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="macedonia-јаневска-постигнавме-широк-консензус-во-кој-правец-ќе-summary-32750.html"
-                       class="hover:underline">сумирано</a>
-                </span>
-            </div>
+        <!-- Centered Title/Logo -->
+        <div class="flex-1 text-center">
+            <h1 class="theme-text-primary text-2xl font-bold uppercase tracking-wider">Вести</h1>
         </div>
-    </div>
-</div>
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
-    <!-- Thumbnail -->
-    <a href="macedonia-бензините-поевтини-за-половина-денар-дизелот-поскап-за-исто-summary-32827.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32827.webp"
-                 alt="Бензините поевтини за половина денар, дизелот поскап за исто толку" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
+        <!-- Search Icon -->
+        <button id="search-button-mobile" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </button>
+    </header>
 
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="macedonia-бензините-поевтини-за-половина-денар-дизелот-поскап-за-исто-summary-32827.html"
-               class="hover:underline">Бензините поевтини за половина денар, дизелот поскап за исто толку</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> според новата одлука, малопродажните цени изнесуваат: еуросупер бс 95: 75 денари литар еуросупер бс 98: 77 денари литар еуродизел бс (д ): 73 денари литар екстра лесното масло ...</p>
-
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 33 минути</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="macedonia-бензините-поевтини-за-половина-денар-дизелот-поскап-за-исто-summary-32827.html"
-                       class="hover:underline">
-                       <span>7</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="macedonia-бензините-поевтини-за-половина-денар-дизелот-поскап-за-исто-summary-32827.html"
-                       class="hover:underline">сумирано</a>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
-                        
-                    </div>
-                </div>
-
-                <!-- Right/Ads Column -->
-                <div class="lg:col-span-1 flex flex-col gap-6">
-                    <div class="flex flex-col sm:flex-row lg:flex-col gap-4 justify-between items-center w-full">
-                        <div id="rotating-ad-container-small-1"
-                             class="flex-1 w-full sm:w-1/2 lg:w-full flex flex-col items-stretch rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
-                            <a id="rotating-ad-link-small-1" href="#"
-                               class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden"></a>
-                        </div>
-
-                        <div id="rotating-ad-container-small-2"
-                             class="flex-1 w-full sm:w-1/2 lg:w-full flex flex-col items-stretch rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
-                            <a id="rotating-ad-link-small-2" href="#"
-                               class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Secondary Grid -->
-            <div class="p-4 @container grid grid-cols-1 md:grid-cols-2 gap-8 lg:col-span-3 items-start">
-                <div class="flex flex-col gap-8">
+    <!-- Mobile Slide-out Menu -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
+        <div class="p-4">
+            <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
+            <nav class="flex flex-col gap-2">
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
                     
-                        <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-0">
                             <a href="macedonia.html"
-                               class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-2xl hover:underline hover:bg-gray-100">
-                                Македонија
-                                <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
-                            </a>
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
                         </div>
-                        <div class="flex flex-col divide-y theme-border-color mt-2">
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="macedonia-бебе-почина-во-кичевската-болница-и-покрај-обидите-за-summary-32780.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32780.webp"
-                 alt="Бебе почина во кичевската болница и покрај обидите за реанимација" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="macedonia-бебе-почина-во-кичевската-болница-и-покрај-обидите-за-summary-32780.html"
-               class="hover:underline">Бебе почина во кичевската болница и покрај обидите за реанимација</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> медицинските лица констатирале смрт траги насилство, наредба јавен обвинител телото дадено обдукција, соопшти свр охрид  детското одделение општата болница кичево тешка здравст...</p>
-
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 2 часа</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="macedonia-бебе-почина-во-кичевската-болница-и-покрај-обидите-за-summary-32780.html"
-                       class="hover:underline">
-                       <span>8</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="macedonia-бебе-почина-во-кичевската-болница-и-покрај-обидите-за-summary-32780.html"
-                       class="hover:underline">сумирано</a>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="macedonia-јаневска-постигнавме-широк-консензус-во-кој-правец-ќе-summary-32750.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32750.webp"
-                 alt="Јаневска: Постигнавме широк консензус во кој правец ќе делуваме за развој на македонското образование во иднина" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="macedonia-јаневска-постигнавме-широк-консензус-во-кој-правец-ќе-summary-32750.html"
-               class="hover:underline">Јаневска: Постигнавме широк консензус во кој правец ќе делуваме за развој на македонското образование во иднина</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> имаме нова стратегија образование рок имплементација 2026 година 2032 година, истакна министерката образование наука весна јаневска обраќањето владата претставува новата страте...</p>
-
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 2 часа</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="macedonia-јаневска-постигнавме-широк-консензус-во-кој-правец-ќе-summary-32750.html"
-                       class="hover:underline">
-                       <span>7</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="macedonia-јаневска-постигнавме-широк-консензус-во-кој-правец-ќе-summary-32750.html"
-                       class="hover:underline">сумирано</a>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="macedonia-бензините-поевтини-за-половина-денар-дизелот-поскап-за-исто-summary-32827.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32827.webp"
-                 alt="Бензините поевтини за половина денар, дизелот поскап за исто толку" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="macedonia-бензините-поевтини-за-половина-денар-дизелот-поскап-за-исто-summary-32827.html"
-               class="hover:underline">Бензините поевтини за половина денар, дизелот поскап за исто толку</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> според новата одлука, малопродажните цени изнесуваат: еуросупер бс 95: 75 денари литар еуросупер бс 98: 77 денари литар еуродизел бс (д ): 73 денари литар екстра лесното масло ...</p>
-
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 33 минути</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="macedonia-бензините-поевтини-за-половина-денар-дизелот-поскап-за-исто-summary-32827.html"
-                       class="hover:underline">
-                       <span>7</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="macedonia-бензините-поевтини-за-половина-денар-дизелот-поскап-за-исто-summary-32827.html"
-                       class="hover:underline">сумирано</a>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
-                            
-                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
                     
 
-                    
-                        <div class="flex items-center justify-between border-b pb-1 theme-border-color">
-                            <a href="hronika.html"
-                               class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-2xl hover:underline hover:bg-gray-100">
-                                Хроника
-                                <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
-                            </a>
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
                         </div>
-                        <div class="flex flex-col divide-y theme-border-color mt-2">
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="magazine-intimacy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Интима</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="youtube.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+
+                <hr class="my-3 theme-border-color">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
+                </button>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- Hidden desktop theme toggle button to leverage existing script -->
+    <button id="theme-toggle" class="hidden"></button>
+</div>
+        </div>
+    </div>
+
+    <!-- ======================= -->
+    <!-- MAIN CONTENT            -->
+    <!-- ======================= -->
+    <main class="w-full">
+
+        <!-- ======================= -->
+        <!-- DESKTOP LAYOUT (lg up)  -->
+        <!-- ======================= -->
+        <div class="hidden lg:block">
+            <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+                <div>
+                    <!-- Main Grid (from original index.html) -->
+                    <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <!-- Left/Main Column -->
+                        <div class="lg:col-span-2 flex flex-col gap-8">
+                            <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                                <a href="latest-news.html"
+                                   class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-2xl hover:underline hover:bg-gray-100">
+                                    Најнови Вести
+                                    <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
+                                </a>
+                            </div>
+                            <div class="flex flex-col divide-y theme-border-color mt-2">
+                                
+                                    <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="hronika-нападнала-ученичка-во-основно-училиште-тетовка-осомничена-за-summary-32856.html"
+    <a href="world-фајненшл-тајмс-американскиот-мировен-план-за-украина-е-summary-32934.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32856.webp"
-                 alt="Нападнала ученичка во основно училиште: тетовка осомничена за насилство врз дете" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-32934.webp"
+                 alt="Фајненшл тајмс: Американскиот мировен план за Украина е намален од 28 на 19 точки" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -492,12 +369,12 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="hronika-нападнала-ученичка-во-основно-училиште-тетовка-осомничена-за-summary-32856.html"
-               class="hover:underline">Нападнала ученичка во основно училиште: тетовка осомничена за насилство врз дете</a>
+            <a href="world-фајненшл-тајмс-американскиот-мировен-план-за-украина-е-summary-32934.html"
+               class="hover:underline">Фајненшл тајмс: Американскиот мировен план за Украина е намален од 28 на 19 точки</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> службена просторија основно училиште тетово, пријавената физички нападнала ученичка.  свр тетово поднесе кривична пријава против љ. м. тетово поради постоење основи сомнение ст...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> откако американските украинските делегации вчера состанаа женева, двете страни објавија напредок напорите завршување војната русија, дадоа детали решат некои длабоки разлики ме...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
@@ -506,30 +383,30 @@
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
                 <span>
-                    <a href="hronika-нападнала-ученичка-во-основно-училиште-тетовка-осомничена-за-summary-32856.html"
+                    <a href="world-фајненшл-тајмс-американскиот-мировен-план-за-украина-е-summary-32934.html"
                        class="hover:underline">
-                       <span>3</span> вести
+                       <span>10</span> вести
                     </a>
                 </span>
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
                 <span>
-                    <a href="hronika-нападнала-ученичка-во-основно-училиште-тетовка-осомничена-за-summary-32856.html"
+                    <a href="world-фајненшл-тајмс-американскиот-мировен-план-за-украина-е-summary-32934.html"
                        class="hover:underline">сумирано</a>
                 </span>
             </div>
         </div>
     </div>
 </div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                                
+                                    <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="hronika-трагедија-во-кичево-почина-бебе-summary-32775.html"
+    <a href="economy-од-полноќ-нови-цени-на-горивата-summary-32960.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32775.webp"
-                 alt="Трагедија во Кичево: Почина бебе" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-32960.webp"
+                 alt="Од полноќ нови цени на горивата" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -537,21 +414,190 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="hronika-трагедија-во-кичево-почина-бебе-summary-32775.html"
-               class="hover:underline">Трагедија во Кичево: Почина бебе</a>
+            <a href="economy-од-полноќ-нови-цени-на-горивата-summary-32960.html"
+               class="hover:underline">Од полноќ нови цени на горивата</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> медицинските лица констатирале смрт траги насилство, наредба јавен обвинител телото дадено обдукција.  вчера 22:10 часот овр кичево пријавено детското одделение општата болница...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> рке посочуваат референтните цени нафтените деривати светскиот пазар споредба претходната пресметка бележат намалување бензините просек 1,335 отсто, дизелот зголемување 1,379, е...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
             <span>
-                <span>пред 2 часа</span>
+                <span><span style='color:#e27564;'>тукушто објавено</span></span>
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
                 <span>
-                    <a href="hronika-трагедија-во-кичево-почина-бебе-summary-32775.html"
+                    <a href="economy-од-полноќ-нови-цени-на-горивата-summary-32960.html"
+                       class="hover:underline">
+                       <span>8</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="economy-од-полноќ-нови-цени-на-горивата-summary-32960.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                                
+                                    <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="world-зеленски-мировните-преговори-мора-да-донесат-траен-мир-summary-32931.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32931.webp"
+                 alt="Зеленски: Мировните преговори мора да донесат траен мир" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="world-зеленски-мировните-преговори-мора-да-донесат-траен-мир-summary-32931.html"
+               class="hover:underline">Зеленски: Мировните преговори мора да донесат траен мир</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> чекор мировниот процес предводен сад украина внимателно разгледа обезбеди траен мир безбедност, изјави денеска украинскиот претседател володимир зеленски, цитиран дпа.  зеленск...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span><span style='color:#e27564;'>тукушто објавено</span></span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="world-зеленски-мировните-преговори-мора-да-донесат-траен-мир-summary-32931.html"
+                       class="hover:underline">
+                       <span>8</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="world-зеленски-мировните-преговори-мора-да-донесат-траен-мир-summary-32931.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                                
+                            </div>
+                        </div>
+
+                        <!-- Right/Ads Column -->
+                        <div class="lg:col-span-1 flex flex-col gap-6">
+                            <div class="flex flex-col sm:flex-row lg:flex-col gap-4 justify-between items-center w-full">
+                                <div id="rotating-ad-container-small-1"
+                                     class="flex-1 w-full sm:w-1/2 lg:w-full flex flex-col items-stretch rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
+                                    <a id="rotating-ad-link-small-1" href="#"
+                                       class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden"></a>
+                                </div>
+
+                                <div id="rotating-ad-container-small-2"
+                                     class="flex-1 w-full sm:w-1/2 lg:w-full flex flex-col items-stretch rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
+                                    <a id="rotating-ad-link-small-2" href="#"
+                                       class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Secondary Grid (from original index.html) -->
+                    <div class="p-4 @container grid grid-cols-1 md:grid-cols-2 gap-8 lg:col-span-3 items-start">
+                        <div class="flex flex-col gap-8">
+                            
+                                <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                                    <a href="macedonia.html"
+                                       class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-2xl hover:underline hover:bg-gray-100">
+                                        Македонија
+                                        <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
+                                    </a>
+                                </div>
+                                <div class="flex flex-col divide-y theme-border-color mt-2">
+                                    
+                                        <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="macedonia-вмро-дпмне-вреди-и-знам-поднесоа-иницијатива-за-формирање-summary-32949.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32949.webp"
+                 alt="ВМРО-ДПМНЕ, Вреди и ЗНАМ поднесоа иницијатива за формирање Анкетна комисија за „Пулс“, „Модуларна болница“, „Дурмо турс“ и „Беса транс“" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="macedonia-вмро-дпмне-вреди-и-знам-поднесоа-иницијатива-за-формирање-summary-32949.html"
+               class="hover:underline">ВМРО-ДПМНЕ, Вреди и ЗНАМ поднесоа иницијатива за формирање Анкетна комисија за „Пулс“, „Модуларна болница“, „Дурмо турс“ и „Беса транс“</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> однос временски одвивале активностите комисијата, пратеникот вмро дпмне кажа уредено деловникот собранието, случај приоритетен договорено координацијата бидат дел анкетната ком...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span><span style='color:#e27564;'>тукушто објавено</span></span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="macedonia-вмро-дпмне-вреди-и-знам-поднесоа-иницијатива-за-формирање-summary-32949.html"
+                       class="hover:underline">
+                       <span>7</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="macedonia-вмро-дпмне-вреди-и-знам-поднесоа-иницијатива-за-формирање-summary-32949.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                                    
+                                        <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="macedonia-лажни-дојави-за-бомби-во-две-училишта-и-музеј-summary-32950.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32950.webp"
+                 alt="Лажни дојави за бомби во две училишта и Музеј" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="macedonia-лажни-дојави-за-бомби-во-две-училишта-и-музеј-summary-32950.html"
+               class="hover:underline">Лажни дојави за бомби во две училишта и Музеј</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> откако утрово 9 часот пријавено електронски адреси приватни училишта музеј скопје пристигнати пораки наводно поставени експлозивни направи, веднаш преземени соодветни мерки акт...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span><span style='color:#e27564;'>тукушто објавено</span></span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="macedonia-лажни-дојави-за-бомби-во-две-училишта-и-музеј-summary-32950.html"
                        class="hover:underline">
                        <span>6</span> вести
                     </a>
@@ -559,22 +605,22 @@
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
                 <span>
-                    <a href="hronika-трагедија-во-кичево-почина-бебе-summary-32775.html"
+                    <a href="macedonia-лажни-дојави-за-бомби-во-две-училишта-и-музеј-summary-32950.html"
                        class="hover:underline">сумирано</a>
                 </span>
             </div>
         </div>
     </div>
 </div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                                    
+                                        <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="hronika-марихуана-и-таблети-пронајдени-кај-осуденик-во-идризово-по-summary-32823.html"
+    <a href="macedonia-кореја-донираше-осум-електрични-возила-за-министерството-за-summary-32957.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32823.webp"
-                 alt="Марихуана и таблети пронајдени кај осуденик во Идризово по враќање од викенд" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-32957.webp"
+                 alt="Кореја донираше осум електрични возила за Министерството за здравство" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -582,59 +628,57 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="hronika-марихуана-и-таблети-пронајдени-кај-осуденик-во-идризово-по-summary-32823.html"
-               class="hover:underline">Марихуана и таблети пронајдени кај осуденик во Идризово по враќање од викенд</a>
+            <a href="macedonia-кореја-донираше-осум-електрични-возила-за-министерството-за-summary-32957.html"
+               class="hover:underline">Кореја донираше осум електрични возила за Министерството за здравство</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> 13:00 часот свр скопје, казнено поправната установа затвор идризово пријавено претрес осуденикот м. к. вратил викенд отсуство, пронајдени одземени марихуана таблети.  целосно д...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> министерството здравство, поддршка владата република кореја, грант помош обезбеди осум современи електрични возила, инсталација станици електрично полнење.  заедно амбасадорот ...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
             <span>
-                <span>пред 49 минути</span>
+                <span><span style='color:#e27564;'>тукушто објавено</span></span>
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
                 <span>
-                    <a href="hronika-марихуана-и-таблети-пронајдени-кај-осуденик-во-идризово-по-summary-32823.html"
+                    <a href="macedonia-кореја-донираше-осум-електрични-возила-за-министерството-за-summary-32957.html"
                        class="hover:underline">
-                       <span>2</span> вести
+                       <span>6</span> вести
                     </a>
                 </span>
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
                 <span>
-                    <a href="hronika-марихуана-и-таблети-пронајдени-кај-осуденик-во-идризово-по-summary-32823.html"
+                    <a href="macedonia-кореја-донираше-осум-електрични-возила-за-министерството-за-summary-32957.html"
                        class="hover:underline">сумирано</a>
                 </span>
             </div>
         </div>
     </div>
 </div>
+                                    
+                                </div>
                             
-                        </div>
-                    
-                </div>
 
-                <div class="flex flex-col gap-8">
-                    
-                        <div class="flex items-center justify-between border-b pb-1 theme-border-color">
-                            <a href="world.html"
-                               class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-2xl hover:underline hover:bg-gray-100">
-                                Свет
-                                <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
-                            </a>
-                        </div>
-                        <div class="flex flex-col divide-y theme-border-color mt-2">
                             
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                                <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                                    <a href="hronika.html"
+                                       class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-2xl hover:underline hover:bg-gray-100">
+                                        Хроника
+                                        <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
+                                    </a>
+                                </div>
+                                <div class="flex flex-col divide-y theme-border-color mt-2">
+                                    
+                                        <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="world-вулкан-во-етиопија-еруптира-по-повеќе-од-10-000-години-summary-32769.html"
+    <a href="hronika-претепал-лекар-и-полициски-службеник-кривична-за-29-годишник-summary-32832.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32769.webp"
-                 alt="Вулкан во Етиопија еруптира по повеќе од 10.000 години" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-32832.webp"
+                 alt="Претепал лекар и полициски службеник: кривична за 29-годишник од Тетовско" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -642,21 +686,21 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="world-вулкан-во-етиопија-еруптира-по-повеќе-од-10-000-години-summary-32769.html"
-               class="hover:underline">Вулкан во Етиопија еруптира по повеќе од 10.000 години</a>
+            <a href="hronika-претепал-лекар-и-полициски-службеник-кривична-за-29-годишник-summary-32832.html"
+               class="hover:underline">Претепал лекар и полициски службеник: кривична за 29-годишник од Тетовско</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> значителна нова ерупција започна саботата помалку познатите вулкани планинскиот венец ерта але регионот данакил етиопија, вулканот хаиле губи, 15 километри југоисточно континуи...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> свр тетово поднесе кривична пријава против м. м. според полицијата, сомничи сторени кривични дела: спречување службено лице вршење службено дејствие’’ напад службено лице вршењ...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
             <span>
-                <span>пред 2 часа</span>
+                <span>пред 5 часа</span>
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
                 <span>
-                    <a href="world-вулкан-во-етиопија-еруптира-по-повеќе-од-10-000-години-summary-32769.html"
+                    <a href="hronika-претепал-лекар-и-полициски-службеник-кривична-за-29-годишник-summary-32832.html"
                        class="hover:underline">
                        <span>5</span> вести
                     </a>
@@ -664,22 +708,22 @@
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
                 <span>
-                    <a href="world-вулкан-во-етиопија-еруптира-по-повеќе-од-10-000-години-summary-32769.html"
+                    <a href="hronika-претепал-лекар-и-полициски-службеник-кривична-за-29-годишник-summary-32832.html"
                        class="hover:underline">сумирано</a>
                 </span>
             </div>
         </div>
     </div>
 </div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                                    
+                                        <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="world-трамп-противниците-на-царините-им-служат-на-непријателски-summary-32715.html"
+    <a href="hronika-безживотно-тело-на-42-годишник-од-тетово-најдено-во-близина-summary-32967.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32715.webp"
-                 alt="Трамп: Противниците на царините им служат на непријателски странски интереси" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-32967.webp"
+                 alt="Безживотно тело на 42-годишник од Тетово најдено во близина на селото Нераште" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -687,44 +731,44 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="world-трамп-противниците-на-царините-им-служат-на-непријателски-summary-32715.html"
-               class="hover:underline">Трамп: Противниците на царините им служат на непријателски странски интереси</a>
+            <a href="hronika-безживотно-тело-на-42-годишник-од-тетово-најдено-во-близина-summary-32967.html"
+               class="hover:underline">Безживотно тело на 42-годишник од Тетово најдено во близина на селото Нераште</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> соединетите американски држави немаат пресметано целосните придобивки воведувањето царините, изјави американскиот претседател доналд трамп, напоменувајќи противниците тарифите ...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> соопштението свр тетово наведува стакло возилото најден 42 годишник дупка испукан куршум постои првично сомневање застрелан.  тетовската полиција информира попладнево 16 часот ...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
             <span>
-                <span>пред 4 часа</span>
+                <span><span style='color:#e27564;'>тукушто објавено</span></span>
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
                 <span>
-                    <a href="world-трамп-противниците-на-царините-им-служат-на-непријателски-summary-32715.html"
+                    <a href="hronika-безживотно-тело-на-42-годишник-од-тетово-најдено-во-близина-summary-32967.html"
                        class="hover:underline">
-                       <span>7</span> вести
+                       <span>4</span> вести
                     </a>
                 </span>
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
                 <span>
-                    <a href="world-трамп-противниците-на-царините-им-служат-на-непријателски-summary-32715.html"
+                    <a href="hronika-безживотно-тело-на-42-годишник-од-тетово-најдено-во-близина-summary-32967.html"
                        class="hover:underline">сумирано</a>
                 </span>
             </div>
         </div>
     </div>
 </div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                                    
+                                        <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="world-нетанјаху-по-нападот-во-бејрут-и-атентатот-врз-командантот-summary-32801.html"
+    <a href="hronika-лажни-дојави-за-бомби-во-две-училишта-и-музеј-summary-32969.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32801.webp"
-                 alt="Нетанјаху по нападот во Бејрут и атентатот врз командантот на Хезболах: Неговите раце се извалкани со крвта на Израелците" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-32969.webp"
+                 alt="Лажни дојави за бомби во две училишта и Музеј" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -732,21 +776,21 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="world-нетанјаху-по-нападот-во-бејрут-и-атентатот-врз-командантот-summary-32801.html"
-               class="hover:underline">Нетанјаху по нападот во Бејрут и атентатот врз командантот на Хезболах: Неговите раце се извалкани со крвта на Израелците</a>
+            <a href="hronika-лажни-дојави-за-бомби-во-две-училишта-и-музеј-summary-32969.html"
+               class="hover:underline">Лажни дојави за бомби во две училишта и Музеј</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> часа, идф елиминираше али табатабаи, началник штабот хезболах.  своето обраќање израелците, нетанјаху потврди израелската армија елиминирала командантот хезболах, али табатабаи...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> откако утрово 9 часот пријавено електронски адреси приватни училишта музеј скопје пристигнати пораки наводно поставени експлозивни направи, веднаш преземени соодветни мерки акт...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
             <span>
-                <span>пред 1 час</span>
+                <span><span style='color:#e27564;'>тукушто објавено</span></span>
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
                 <span>
-                    <a href="world-нетанјаху-по-нападот-во-бејрут-и-атентатот-врз-командантот-summary-32801.html"
+                    <a href="hronika-лажни-дојави-за-бомби-во-две-училишта-и-музеј-summary-32969.html"
                        class="hover:underline">
                        <span>3</span> вести
                     </a>
@@ -754,35 +798,37 @@
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
                 <span>
-                    <a href="world-нетанјаху-по-нападот-во-бејрут-и-атентатот-врз-командантот-summary-32801.html"
+                    <a href="hronika-лажни-дојави-за-бомби-во-две-училишта-и-музеј-summary-32969.html"
                        class="hover:underline">сумирано</a>
                 </span>
             </div>
         </div>
     </div>
 </div>
+                                    
+                                </div>
                             
                         </div>
-                    
 
-                    
-                        <div class="flex items-center justify-between border-b pb-1 theme-border-color">
-                            <a href="sport.html"
-                               class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-2xl hover:underline hover:bg-gray-100">
-                                Спорт
-                                <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
-                            </a>
-                        </div>
-                        <div class="flex flex-col divide-y theme-border-color mt-2">
+                        <div class="flex flex-col gap-8">
                             
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                                <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                                    <a href="world.html"
+                                       class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-2xl hover:underline hover:bg-gray-100">
+                                        Свет
+                                        <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
+                                    </a>
+                                </div>
+                                <div class="flex flex-col divide-y theme-border-color mt-2">
+                                    
+                                        <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="sport-винисиус-може-да-го-напушти-реал-на-зима-клубови-од-премиер-summary-32831.html"
+    <a href="world-фајненшл-тајмс-американскиот-мировен-план-за-украина-е-summary-32934.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32831.webp"
-                 alt="Винисиус може да го напушти Реал на зима, клубови од Премиер лигата се заинтересирани за Бразилецот" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-32934.webp"
+                 alt="Фајненшл тајмс: Американскиот мировен план за Украина е намален од 28 на 19 точки" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -790,57 +836,12 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-винисиус-може-да-го-напушти-реал-на-зима-клубови-од-премиер-summary-32831.html"
-               class="hover:underline">Винисиус може да го напушти Реал на зима, клубови од Премиер лигата се заинтересирани за Бразилецот</a>
+            <a href="world-фајненшл-тајмс-американскиот-мировен-план-за-украина-е-summary-32934.html"
+               class="hover:underline">Фајненшл тајмс: Американскиот мировен план за Украина е намален од 28 на 19 точки</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> реал мадрид, винисиус освои три титули шпанското првенство, куп кралот, три суперкупа шпанија лиги шампиони, суперкуп уефа светско клупско првенство фифа.  сезоната 202526, бра...</p>
-
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 25 минути</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="sport-винисиус-може-да-го-напушти-реал-на-зима-клубови-од-премиер-summary-32831.html"
-                       class="hover:underline">
-                       <span>2</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="sport-винисиус-може-да-го-напушти-реал-на-зима-клубови-од-премиер-summary-32831.html"
-                       class="hover:underline">сумирано</a>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="sport-илиевски-пред-почетокот-на-подготовките-сега-сме-поискусни-summary-32857.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32857.webp"
-                 alt="Илиевски пред почетокот на подготовките: „Сега сме поискусни, но нема да менуваме многу работи“" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-илиевски-пред-почетокот-на-подготовките-сега-сме-поискусни-summary-32857.html"
-               class="hover:underline">Илиевски пред почетокот на подготовките: „Сега сме поискусни, но нема да менуваме многу работи“</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> надополнети играчи поискусни, значи работи менуваат, значи играчите имаат носено поинакви мечеви присутни сигурно бидат значење, потценувајќи никого време летото, бидејќи нивно...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> откако американските украинските делегации вчера состанаа женева, двете страни објавија напредок напорите завршување војната русија, дадоа детали решат некои длабоки разлики ме...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
@@ -849,30 +850,30 @@
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
                 <span>
-                    <a href="sport-илиевски-пред-почетокот-на-подготовките-сега-сме-поискусни-summary-32857.html"
+                    <a href="world-фајненшл-тајмс-американскиот-мировен-план-за-украина-е-summary-32934.html"
                        class="hover:underline">
-                       <span>2</span> вести
+                       <span>10</span> вести
                     </a>
                 </span>
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
                 <span>
-                    <a href="sport-илиевски-пред-почетокот-на-подготовките-сега-сме-поискусни-summary-32857.html"
+                    <a href="world-фајненшл-тајмс-американскиот-мировен-план-за-украина-е-summary-32934.html"
                        class="hover:underline">сумирано</a>
                 </span>
             </div>
         </div>
     </div>
 </div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                                    
+                                        <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="sport-фрчат-откази-во-глазгов-ренџерс-summary-32845.html"
+    <a href="world-зеленски-мировните-преговори-мора-да-донесат-траен-мир-summary-32931.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32845.webp"
-                 alt="Фрчат откази во Глазгов Ренџерс" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-32931.webp"
+                 alt="Зеленски: Мировните преговори мора да донесат траен мир" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -880,12 +881,12 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-фрчат-откази-во-глазгов-ренџерс-summary-32845.html"
-               class="hover:underline">Фрчат откази во Глазгов Ренџерс</a>
+            <a href="world-зеленски-мировните-преговори-мора-да-донесат-траен-мир-summary-32931.html"
+               class="hover:underline">Зеленски: Мировните преговори мора да донесат траен мир</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> глазгов ренџерс, притисок навивачите, отпушти извршниот директор патрик стјуарт спортскиот директор кевин телвел.  стјуарт телвел клубот година, оттогаш клубот презеде американ...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> чекор мировниот процес предводен сад украина внимателно разгледа обезбеди траен мир безбедност, изјави денеска украинскиот претседател володимир зеленски, цитиран дпа.  зеленск...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
@@ -894,28 +895,1486 @@
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
                 <span>
-                    <a href="sport-фрчат-откази-во-глазгов-ренџерс-summary-32845.html"
+                    <a href="world-зеленски-мировните-преговори-мора-да-донесат-траен-мир-summary-32931.html"
                        class="hover:underline">
-                       <span>2</span> вести
+                       <span>8</span> вести
                     </a>
                 </span>
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
                 <span>
-                    <a href="sport-фрчат-откази-во-глазгов-ренџерс-summary-32845.html"
+                    <a href="world-зеленски-мировните-преговори-мора-да-донесат-траен-мир-summary-32931.html"
                        class="hover:underline">сумирано</a>
                 </span>
             </div>
         </div>
     </div>
 </div>
+                                    
+                                        <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="world-ушаков-делови-од-американскиот-план-се-прифатливи-европскиот-summary-32930.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32930.webp"
+                 alt="Ушаков: Делови од американскиот план се прифатливи, европскиот план не ни одговара" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="world-ушаков-делови-од-американскиот-план-се-прифатливи-европскиот-summary-32930.html"
+               class="hover:underline">Ушаков: Делови од американскиот план се прифатливи, европскиот план не ни одговара</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> одредби американскиот план украина видовме, изгледаат прифатливи, ушаков, пренесен руските медиуми.  одредби американскиот план украина изгледаат прифатливи, европскиот план не...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span><span style='color:#e27564;'>тукушто објавено</span></span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="world-ушаков-делови-од-американскиот-план-се-прифатливи-европскиот-summary-32930.html"
+                       class="hover:underline">
+                       <span>7</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="world-ушаков-делови-од-американскиот-план-се-прифатливи-европскиот-summary-32930.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                                    
+                                </div>
                             
+
+                            
+                                <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                                    <a href="sport.html"
+                                       class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-2xl hover:underline hover:bg-gray-100">
+                                        Спорт
+                                        <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
+                                    </a>
+                                </div>
+                                <div class="flex flex-col divide-y theme-border-color mt-2">
+                                    
+                                        <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="sport-илиевски-сега-сме-поискусни-но-нема-да-менуваме-многу-работи-summary-32987.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32987.webp"
+                 alt="Илиевски: Сега сме поискусни, но нема да менуваме многу работи" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="sport-илиевски-сега-сме-поискусни-но-нема-да-менуваме-многу-работи-summary-32987.html"
+               class="hover:underline">Илиевски: Сега сме поискусни, но нема да менуваме многу работи</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> говори противниците првиот кваалификациски циклус пласман евробаскетот 2029 година, прво азербејџан, 27. ноември, скопје, 30. ноември, ирска даблин… азербејџан ирска… постојат ...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span><span style='color:#e27564;'>тукушто објавено</span></span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="sport-илиевски-сега-сме-поискусни-но-нема-да-менуваме-многу-работи-summary-32987.html"
+                       class="hover:underline">
+                       <span>6</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="sport-илиевски-сега-сме-поискусни-но-нема-да-менуваме-многу-работи-summary-32987.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                                    
+                                        <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="sport-пмфл-струга-го-совлада-работнички-summary-32985.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32985.webp"
+                 alt="ПМФЛ: Струга го совлада Работнички" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="sport-пмфл-струга-го-совлада-работнички-summary-32985.html"
+               class="hover:underline">ПМФЛ: Струга го совлада Работнички</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> табела: вардар 35, струга 34, шкендија 30, силекс 28, башкими 22, арсими 18, ап брера 16, тиквеш 15, македонија ѓп 14, пелистер 11, работнички 7, шкупи  денешниот триумф струга...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span><span style='color:#e27564;'>тукушто објавено</span></span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="sport-пмфл-струга-го-совлада-работнички-summary-32985.html"
+                       class="hover:underline">
+                       <span>4</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="sport-пмфл-струга-го-совлада-работнички-summary-32985.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                                    
+                                        <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="sport-меси-прв-фудбалер-во-историјата-на-фудбалот-со-1-300-голови-summary-32699.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32699.webp"
+                 alt="Меси прв фудбалер во историјата на фудбалот со 1.300 голови+асистенции" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="sport-меси-прв-фудбалер-во-историјата-на-фудбалот-со-1-300-голови-summary-32699.html"
+               class="hover:underline">Меси прв фудбалер во историјата на фудбалот со 1.300 голови+асистенции</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> меси 941 поени барселона, 117 интер мајами, 66 псж 176 репрезентацијата аргентина.  фудбалерот интер мајами, лионел меси, постави историски рекорд.  меси синоќа гостувањето син...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 10 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="sport-меси-прв-фудбалер-во-историјата-на-фудбалот-со-1-300-голови-summary-32699.html"
+                       class="hover:underline">
+                       <span>4</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="sport-меси-прв-фудбалер-во-историјата-на-фудбалот-со-1-300-голови-summary-32699.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================= -->
+        <!-- MOBILE LAYOUT (< lg)    -->
+        <!-- ======================= -->
+        <div class="block lg:hidden">
+            <div class="max-w-3xl mx-auto w-full">
+                <div class="p-2 sm:p-4 flex flex-col gap-6">
+                    <!-- Top Ad Banner (from index-mobile.html) -->
+                    <div id="mobile-ad-container-top" class="mb-4">
+                        <a id="mobile-ad-link-top" href="#"
+                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                    </div>
+
+                    <!-- Category Sections (from index-mobile.html) -->
+                    
+                        <div>
+                            <!-- Clickable Section Header -->
+                            <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                                <!-- NOTE: we now link to DESKTOP pages, since we want one URL per view -->
+                                <a href="latest-news.html"
+                                   class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl hover:underline hover:bg-gray-100">
+                                    <span>Најнови Вести</span>
+                                    <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
+                                </a>
+                            </div>
+
+                            <!-- Articles -->
+                            <div class="flex flex-col divide-y theme-border-color mt-2">
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="world-фајненшл-тајмс-американскиот-мировен-план-за-украина-е-summary-32934.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32934.webp"
+                                                 alt="Фајненшл тајмс: Американскиот мировен план за Украина е намален од 28 на 19 точки"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Фајненшл тајмс: Американскиот мировен план за Украина е намален од 28 на 19 точки</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> откако американските украинските делегации вчера состанаа женева, двете страни објавија напредок...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">10</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="economy-од-полноќ-нови-цени-на-горивата-summary-32960.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32960.webp"
+                                                 alt="Од полноќ нови цени на горивата"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Од полноќ нови цени на горивата</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> рке посочуваат референтните цени нафтените деривати светскиот пазар споредба претходната пресмет...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">8</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="world-зеленски-мировните-преговори-мора-да-донесат-траен-мир-summary-32931.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32931.webp"
+                                                 alt="Зеленски: Мировните преговори мора да донесат траен мир"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Зеленски: Мировните преговори мора да донесат траен мир</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> чекор мировниот процес предводен сад украина внимателно разгледа обезбеди траен мир безбедност, ...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">8</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="macedonia-вмро-дпмне-вреди-и-знам-поднесоа-иницијатива-за-формирање-summary-32949.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32949.webp"
+                                                 alt="ВМРО-ДПМНЕ, Вреди и ЗНАМ поднесоа иницијатива за формирање Анкетна комисија за „Пулс“, „Модуларна болница“, „Дурмо турс“ и „Беса транс“"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">ВМРО-ДПМНЕ, Вреди и ЗНАМ поднесоа иницијатива за формирање Анкетна комисија за „Пулс“, „Модуларна болница“, „Дурмо турс“ и „Беса транс“</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> однос временски одвивале активностите комисијата, пратеникот вмро дпмне кажа уредено деловникот ...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">7</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="world-ушаков-делови-од-американскиот-план-се-прифатливи-европскиот-summary-32930.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32930.webp"
+                                                 alt="Ушаков: Делови од американскиот план се прифатливи, европскиот план не ни одговара"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Ушаков: Делови од американскиот план се прифатливи, европскиот план не ни одговара</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> одредби американскиот план украина видовме, изгледаат прифатливи, ушаков, пренесен руските медиу...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">7</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                            </div>
+                        </div>
+                    
+                        <div>
+                            <!-- Clickable Section Header -->
+                            <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                                <!-- NOTE: we now link to DESKTOP pages, since we want one URL per view -->
+                                <a href="macedonia.html"
+                                   class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl hover:underline hover:bg-gray-100">
+                                    <span>Македонија</span>
+                                    <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
+                                </a>
+                            </div>
+
+                            <!-- Articles -->
+                            <div class="flex flex-col divide-y theme-border-color mt-2">
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="macedonia-вмро-дпмне-вреди-и-знам-поднесоа-иницијатива-за-формирање-summary-32949.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32949.webp"
+                                                 alt="ВМРО-ДПМНЕ, Вреди и ЗНАМ поднесоа иницијатива за формирање Анкетна комисија за „Пулс“, „Модуларна болница“, „Дурмо турс“ и „Беса транс“"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">ВМРО-ДПМНЕ, Вреди и ЗНАМ поднесоа иницијатива за формирање Анкетна комисија за „Пулс“, „Модуларна болница“, „Дурмо турс“ и „Беса транс“</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> однос временски одвивале активностите комисијата, пратеникот вмро дпмне кажа уредено деловникот ...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">7</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="macedonia-лажни-дојави-за-бомби-во-две-училишта-и-музеј-summary-32950.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32950.webp"
+                                                 alt="Лажни дојави за бомби во две училишта и Музеј"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Лажни дојави за бомби во две училишта и Музеј</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> откако утрово 9 часот пријавено електронски адреси приватни училишта музеј скопје пристигнати по...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">6</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="macedonia-кореја-донираше-осум-електрични-возила-за-министерството-за-summary-32957.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32957.webp"
+                                                 alt="Кореја донираше осум електрични возила за Министерството за здравство"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Кореја донираше осум електрични возила за Министерството за здравство</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> министерството здравство, поддршка владата република кореја, грант помош обезбеди осум современи...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">6</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="macedonia-безживотно-тело-на-42-годишник-од-тетово-најдено-во-близина-summary-32955.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32955.webp"
+                                                 alt="Безживотно тело на 42-годишник од Тетово најдено во близина на селото Нераште"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Безживотно тело на 42-годишник од Тетово најдено во близина на селото Нераште</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> веднаш постапено однос пријавата денеска 16. часот ниви атар с. нераште полициски службеници теа...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">5</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="macedonia-продолжен-притворот-за-шесте-лица-за-злоупотреби-во-summary-32947.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32947.webp"
+                                                 alt="Продолжен притворот за шесте лица за злоупотреби во прилепската болница"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Продолжен притворот за шесте лица за злоупотреби во прилепската болница</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> според информациите јавното обвинителство македонија, прилепското основно обвинителство продолжу...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">5</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    <div id="mobile-ad-container-mid" class="mt-8">
+                                        <a id="mobile-ad-link-mid" href="#"
+                                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div>
+                            <!-- Clickable Section Header -->
+                            <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                                <!-- NOTE: we now link to DESKTOP pages, since we want one URL per view -->
+                                <a href="world.html"
+                                   class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl hover:underline hover:bg-gray-100">
+                                    <span>Свет</span>
+                                    <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
+                                </a>
+                            </div>
+
+                            <!-- Articles -->
+                            <div class="flex flex-col divide-y theme-border-color mt-2">
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="world-фајненшл-тајмс-американскиот-мировен-план-за-украина-е-summary-32934.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32934.webp"
+                                                 alt="Фајненшл тајмс: Американскиот мировен план за Украина е намален од 28 на 19 точки"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Фајненшл тајмс: Американскиот мировен план за Украина е намален од 28 на 19 точки</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> откако американските украинските делегации вчера состанаа женева, двете страни објавија напредок...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">10</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="world-зеленски-мировните-преговори-мора-да-донесат-траен-мир-summary-32931.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32931.webp"
+                                                 alt="Зеленски: Мировните преговори мора да донесат траен мир"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Зеленски: Мировните преговори мора да донесат траен мир</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> чекор мировниот процес предводен сад украина внимателно разгледа обезбеди траен мир безбедност, ...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">8</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="world-ушаков-делови-од-американскиот-план-се-прифатливи-европскиот-summary-32930.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32930.webp"
+                                                 alt="Ушаков: Делови од американскиот план се прифатливи, европскиот план не ни одговара"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Ушаков: Делови од американскиот план се прифатливи, европскиот план не ни одговара</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> одредби американскиот план украина видовме, изгледаат прифатливи, ушаков, пренесен руските медиу...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">7</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="world-сијарто-и-брисел-и-киев-мора-без-двоумење-да-го-прифатат-summary-32933.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32933.webp"
+                                                 alt="Сијарто: И Брисел и Киев мора без двоумење да го прифатат американскиот мировен план за Украина"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Сијарто: И Брисел и Киев мора без двоумење да го прифатат американскиот мировен план за Украина</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> унгарскиот министер надворешни работи, петер сијарто, порача брисел киев двоумење прифатат амери...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">7</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="world-си-му-порача-на-трамп-враќањето-на-тајван-е-клучно-за-summary-32929.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32929.webp"
+                                                 alt="Си му порача на Трамп: Враќањето на Тајван е клучно за повоениот поредок"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Си му порача на Трамп: Враќањето на Тајван е клучно за повоениот поредок</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> кинескиот претседател џинпинг телефонски разговор американски колега доналд трамп изјави враќање...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">5</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                            </div>
+                        </div>
+                    
+                        <div>
+                            <!-- Clickable Section Header -->
+                            <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                                <!-- NOTE: we now link to DESKTOP pages, since we want one URL per view -->
+                                <a href="economy.html"
+                                   class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl hover:underline hover:bg-gray-100">
+                                    <span>Економија</span>
+                                    <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
+                                </a>
+                            </div>
+
+                            <!-- Articles -->
+                            <div class="flex flex-col divide-y theme-border-color mt-2">
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="economy-од-полноќ-нови-цени-на-горивата-summary-32960.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32960.webp"
+                                                 alt="Од полноќ нови цени на горивата"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Од полноќ нови цени на горивата</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> рке посочуваат референтните цени нафтените деривати светскиот пазар споредба претходната пресмет...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">8</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="economy-аек-до-12-јануари-2026-година-продолжен-рокот-за-конечна-summary-32791.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32791.webp"
+                                                 alt="АЕК: До 12 јануари 2026 година продолжен рокот за конечна одлука за најповолен понудувач за трет мобилен оператор"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">АЕК: До 12 јануари 2026 година продолжен рокот за конечна одлука за најповолен понудувач за трет мобилен оператор</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> појаснува аек, имајќи предвид член 44 став 3 законот општата управна постапка, согласно барањето...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span>пред 7 часа</span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">5</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="economy-повластената-стапка-од-5-ддв-за-првиот-промет-на-summary-32961.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32961.webp"
+                                                 alt="Повластената стапка од 5% ДДВ за првиот промет на новоизградени станови останува непроменета и по 1 јануари"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Повластената стапка од 5% ДДВ за првиот промет на новоизградени станови останува непроменета и по 1 јануари</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> министерката финансии, гордана димитриеска кочоска, информира повластената стапка 5% ддв првиот ...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">3</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="economy-откупот-на-тутунот-не-е-интензивиран-компаниите-тактизираат-summary-32959.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32959.webp"
+                                                 alt="Откупот на тутунот не е интензивиран, компаниите тактизираат"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Откупот на тутунот не е интензивиран, компаниите тактизираат</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> министерството земјоделство потврдуваат утре министерството закажан состанок компаниите откупот ...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">2</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="economy-оваа-недела-ќе-легнат-парите-од-мој-ддв-summary-32962.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32962.webp"
+                                                 alt="Оваа недела ќе легнат парите од Мој ДДВ"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Оваа недела ќе легнат парите од Мој ДДВ</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> третиот квартал (јули–септември), законскиот рок изврши исплатата 30 ноември 2025 година.  крајо...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">2</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                            </div>
+                        </div>
+                    
+                        <div>
+                            <!-- Clickable Section Header -->
+                            <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                                <!-- NOTE: we now link to DESKTOP pages, since we want one URL per view -->
+                                <a href="hronika.html"
+                                   class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl hover:underline hover:bg-gray-100">
+                                    <span>Хроника</span>
+                                    <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
+                                </a>
+                            </div>
+
+                            <!-- Articles -->
+                            <div class="flex flex-col divide-y theme-border-color mt-2">
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="hronika-претепал-лекар-и-полициски-службеник-кривична-за-29-годишник-summary-32832.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32832.webp"
+                                                 alt="Претепал лекар и полициски службеник: кривична за 29-годишник од Тетовско"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Претепал лекар и полициски службеник: кривична за 29-годишник од Тетовско</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> свр тетово поднесе кривична пријава против м. м. според полицијата, сомничи сторени кривични дел...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span>пред 5 часа</span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">5</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="hronika-безживотно-тело-на-42-годишник-од-тетово-најдено-во-близина-summary-32967.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32967.webp"
+                                                 alt="Безживотно тело на 42-годишник од Тетово најдено во близина на селото Нераште"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Безживотно тело на 42-годишник од Тетово најдено во близина на селото Нераште</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> соопштението свр тетово наведува стакло возилото најден 42 годишник дупка испукан куршум постои ...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">4</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="hronika-лажни-дојави-за-бомби-во-две-училишта-и-музеј-summary-32969.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32969.webp"
+                                                 alt="Лажни дојави за бомби во две училишта и Музеј"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Лажни дојави за бомби во две училишта и Музеј</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> откако утрово 9 часот пријавено електронски адреси приватни училишта музеј скопје пристигнати по...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">3</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="hronika-замавнувал-со-нож-пред-маркет-млад-виничанец-заработи-summary-32970.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32970.webp"
+                                                 alt="Замавнувал со нож пред маркет: Млад виничанец заработи кривична пријава"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Замавнувал со нож пред маркет: Млад виничанец заработи кривична пријава</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> пријавениот маркет виница упатил закани нож замавнал .  надворешната канцеларија криминалистички...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">2</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="hronika-пожар-избувна-во-подрум-од-куќа-во-гази-баба-summary-32971.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32971.webp"
+                                                 alt="Пожар избувна во подрум од куќа во Гази Баба"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Пожар избувна во подрум од куќа во Гази Баба</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> пожарот изгаснат екипа бригадата противпожарна заштита скопје, повредени лица  вчера 14:40 часот...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">2</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                            </div>
+                        </div>
+                    
+                        <div>
+                            <!-- Clickable Section Header -->
+                            <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                                <!-- NOTE: we now link to DESKTOP pages, since we want one URL per view -->
+                                <a href="sports.html"
+                                   class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl hover:underline hover:bg-gray-100">
+                                    <span>Спорт</span>
+                                    <span class="text-blue-600 text-sm font-normal ml-2">→ Повеќе</span>
+                                </a>
+                            </div>
+
+                            <!-- Articles -->
+                            <div class="flex flex-col divide-y theme-border-color mt-2">
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="sport-илиевски-сега-сме-поискусни-но-нема-да-менуваме-многу-работи-summary-32987.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32987.webp"
+                                                 alt="Илиевски: Сега сме поискусни, но нема да менуваме многу работи"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Илиевски: Сега сме поискусни, но нема да менуваме многу работи</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> говори противниците првиот кваалификациски циклус пласман евробаскетот 2029 година, прво азербеј...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">6</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="sport-пмфл-струга-го-совлада-работнички-summary-32985.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32985.webp"
+                                                 alt="ПМФЛ: Струга го совлада Работнички"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">ПМФЛ: Струга го совлада Работнички</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> табела: вардар 35, струга 34, шкендија 30, силекс 28, башкими 22, арсими 18, ап брера 16, тиквеш...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">4</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="sport-меси-прв-фудбалер-во-историјата-на-фудбалот-со-1-300-голови-summary-32699.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32699.webp"
+                                                 alt="Меси прв фудбалер во историјата на фудбалот со 1.300 голови+асистенции"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Меси прв фудбалер во историјата на фудбалот со 1.300 голови+асистенции</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> меси 941 поени барселона, 117 интер мајами, 66 псж 176 репрезентацијата аргентина.  фудбалерот и...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span>пред 10 часа</span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">4</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="sport-фудбалерите-на-англиски-клуб-им-ги-вратија-парите-на-summary-32984.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32984.webp"
+                                                 alt="Фудбалерите на англиски клуб им ги вратија парите на навивачите по поразот од 0-7"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Фудбалерите на англиски клуб им ги вратија парите на навивачите по поразот од 0-7</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> неприфатлив резултат, играчите истбурн боро самоиницијативно одлучија надоместат трошоците билет...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">3</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                                    <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                        <a href="sport-мнозинството-жители-на-берлин-против-олимписка-кандидатура-summary-32986.html"
+                                           class="flex gap-3">
+                                            <!-- Thumbnail -->
+                                            <img src="images/cache/summary-32986.webp"
+                                                 alt="Мнозинството жители на Берлин против олимписка кандидатура"
+                                                 class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                            <!-- Content -->
+                                            <div class="flex flex-col flex-1">
+                                                <!-- Title -->
+                                                <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Мнозинството жители на Берлин против олимписка кандидатура</h3>
+
+                                                <!-- Snippet -->
+                                                <p class="theme-text-secondary text-xs"> разгледуваат понуди олимписките игри 2036, 2040 2044 година, намера вклучат кандидатурата изрази...</p>
+
+                                                <!-- Meta -->
+                                                <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                                     <span>
+                                                        <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                                     </span>
+                                                    <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                       <span>
+                                                           <span class="font-semibold">3</span>
+                                                           вести
+                                                       </span>
+                                                    </div>
+                                                    <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                        <span>сумирано</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Mid Ad Banner -->
+                                    
+                                
+                            </div>
                         </div>
                     
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class="theme-bg-secondary py-8 mt-12">
@@ -965,10 +2424,13 @@
 </footer>
 </div>
 
+<!-- Ads + scripts for BOTH desktop and mobile -->
 <script>
     /*<![CDATA[*/
     window.sidebarSmallRotatingAdsData1 = [{"id":"sidebarSmallRotatingAd1_A","imageUrl":"https:\/\/placehold.co\/150x300\/FF0000\/FFFFFF?text=Your+Ad+Here+1A","title":"Special Offer A1","description":"Don't miss out on this amazing deal!","url":"www.google.com","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":5000,"placement":"sidebar_small_rotating_1","processedUrl":"https:\/\/www.google.com"},{"id":"sidebarSmallRotatingAd1_B","imageUrl":"https:\/\/placehold.co\/150x300\/00FF00\/000000?text=Your+Ad+Here+1","title":"New Arrivals A2","description":"Check out our latest products!","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-11-15","viewLimit":7500,"placement":"sidebar_small_rotating_1","processedUrl":"marketing.html"}];
     window.sidebarSmallRotatingAdsData2 = [{"id":"sidebarSmallRotatingAd2_A","imageUrl":"https:\/\/placehold.co\/150x300\/0000FF\/FFFFFF?text=Your+Ad+Here+2A","title":"Exclusive Deal B1","description":"Limited time offer, act now!","url":"marketing.html","startDate":"2025-02-01","endDate":"2025-10-31","viewLimit":6000,"placement":"sidebar_small_rotating_2","processedUrl":"marketing.html"},{"id":"sidebarSmallRotatingAd2_B","imageUrl":"https:\/\/placehold.co\/150x300\/FFFF00\/000000?text=Your+Ad+Here+2BC","title":"Summer Sale B2","description":"Big discounts on summer essentials!","url":"marketing.html","startDate":"2025-03-01","endDate":"2025-09-30","viewLimit":8000,"placement":"sidebar_small_rotating_2","processedUrl":"marketing.html"}];
+    window.mobileTopAdsData = [{"id":"mobileTopAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Your+Mobile+Ad+Here+1","title":"Mobile Exclusive Offer","description":"Special deal for mobile users.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"},{"id":"mobileTopAd2","imageUrl":"https:\/\/placehold.co\/600x75\/DAF7A6\/000000?text=Your+Mobile+Ad+Here+2","title":"New Mobile Feature","description":"Check out our new mobile feature.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"}];
+    window.mobileMidAdsData = [{"id":"mobileMidAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Your+Mobile+Ad+Here+1","title":"Don't Miss This!","description":"Another great offer just for you.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"},{"id":"mobileMidAd2","imageUrl":"https:\/\/placehold.co\/600x75\/C70039\/FFFFFF?text=Your+Mobile+Ad+Here+2","title":"Scroll-Stopping Savings","description":"Great savings await.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"}];
     /*]]>*/
 </script>
 
@@ -1027,7 +2489,6 @@
 </script>
 
 
-    <script src="js/device-switcher.js" defer></script>
     <script src="js/mobile-nav.js" defer></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.2/lunr.min.js" defer></script>

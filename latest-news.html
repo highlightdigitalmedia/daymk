@@ -37,20 +37,21 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body class="theme-bg-primary">
-<div
-        class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
-        style='font-family: Newsreader, "Noto Sans", sans-serif;'
->
-    <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+<div class="relative flex min-h-screen flex-col theme-bg-primary overflow-x-hidden"
+     style='font-family: Newsreader, "Noto Sans", sans-serif;'>
+
+    <!-- ======================= -->
+    <!-- DESKTOP HEADER (lg+)    -->
+    <!-- ======================= -->
+    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div>
-            <!-- ✅ Consistent header -->
-            <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
         <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Најнови Вести</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>14:52, 24.11.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>20:26, 24.11.2025</span></p>
         </h2>
         <div class="flex w-24 items-center justify-end">
             <!-- NEW: Search Icon (Desktop) -->
@@ -60,13 +61,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                 </svg>
             </button>
-            <!-- NEW: Device Switcher Icon -->
-            <button id="device-switcher-button" aria-label="Switch to mobile/desktop view"
-                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
-                </svg>
-            </button>
+
             <!-- Weather Link Icon (Thermometer) -->
             <a href="prognoza.html" aria-label="Weather Forecast"
                class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
@@ -122,61 +117,216 @@
         
     </div>
 </div>
+    </div>
 
-            <!-- ✅ Unified grid layout -->
-            <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <!-- MAIN CONTENT -->
-                <div class="lg:col-span-2 flex flex-col gap-6">
-                    <h1 class="theme-text-primary text-2xl font-bold mb-6">Day.mk - Најнови Вести (Page 1)</h1>
+    <!-- ======================= -->
+    <!-- MOBILE HEADER (< lg)    -->
+    <!-- ======================= -->
+    <div class="block lg:hidden max-w-3xl mx-auto w-full">
+        <div>
+    <!-- Mobile Header -->
+    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger-menu-button" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
 
-                    <!-- Articles List -->
-                    <div class="flex flex-col divide-y theme-border-color">
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+        <!-- Centered Title/Logo -->
+        <div class="flex-1 text-center">
+            <h1 class="theme-text-primary text-2xl font-bold uppercase tracking-wider">Најнови Вести</h1>
+        </div>
 
-    <!-- Thumbnail -->
-    <a href="kultura-историјата-на-сите-клубови-од-премиер-лигата-тотенхем-summary-32861.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32861.webp"
-                 alt="Историјата на сите клубови од Премиер Лигата: Тотенхем Хотспур" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
+        <!-- Search Icon -->
+        <button id="search-button-mobile" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </button>
+    </header>
 
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="kultura-историјата-на-сите-клубови-од-премиер-лигата-тотенхем-summary-32861.html"
-               class="hover:underline">Историјата на сите клубови од Премиер Лигата: Тотенхем Хотспур</a>
-        </h3>
+    <!-- Mobile Slide-out Menu -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
+        <div class="p-4">
+            <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
+            <nav class="flex flex-col gap-2">
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
 
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> крикет фудбал, хотспур тотенхем хотсупр првичниот клуб викал хотспур крикет клуб, чест славната фамилија перси, чиишто најпознат член сер хенри перси хери хотспур, човек познат...</p>
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
 
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span><span style='color:#e27564;'>тукушто објавено</span></span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                
-            </div>
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="magazine-intimacy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Интима</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="youtube.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+
+                <hr class="my-3 theme-border-color">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
+                </button>
+            </nav>
+
         </div>
     </div>
+
+    <!-- Hidden desktop theme toggle button to leverage existing script -->
+    <button id="theme-toggle" class="hidden"></button>
 </div>
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+    </div>
+
+    <!-- ======================= -->
+    <!-- MAIN CONTENT            -->
+    <!-- ======================= -->
+    <main class="w-full">
+
+        <!-- ====================================================== -->
+        <!-- DESKTOP VERSION (from real latest-news.html)          -->
+        <!-- ====================================================== -->
+        <div class="hidden lg:block">
+            <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+                <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                    <!-- Main Column -->
+                    <div class="lg:col-span-2 flex flex-col gap-6">
+                        <h1 class="theme-text-primary text-2xl font-bold mb-6">Day.mk - Најнови Вести (Page 1)</h1>
+
+                        <!-- Article List -->
+                        <div class="flex flex-col divide-y theme-border-color">
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="balkan-додик-ја-прослави-победата-со-песна-само-тако-само-тако-summary-32860.html"
+    <a href="sport-гвардиола-се-извини-по-инцидентот-со-телевизиски-снимател-по-summary-33002.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32860.webp"
-                 alt="Додик ја прослави победата со песна: „Само тако, само тако…“" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-33002.webp"
+                 alt="Гвардиола се извини по инцидентот со телевизиски снимател по поразот од Њукасл" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -184,12 +334,12 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="balkan-додик-ја-прослави-победата-со-песна-само-тако-само-тако-summary-32860.html"
-               class="hover:underline">Додик ја прослави победата со песна: „Само тако, само тако…“</a>
+            <a href="sport-гвардиола-се-извини-по-инцидентот-со-телевизиски-снимател-по-summary-33002.html"
+               class="hover:underline">Гвардиола се извини по инцидентот со телевизиски снимател по поразот од Њукасл</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> лидерот снсд, милорад додик, прослави победата партискиот кандидат синиша каран предвремените избори претседател република српска.  прославата снсд траеше доцна ноќта, улиците ...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> поразот остави сити седум бодови лидерот арсенал премиер лигата, тимот среда очекува пресметка баер леверкузен 100 от натпревар гвардиола лигата шампиони тренер англискиот клуб...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
@@ -198,7 +348,7 @@
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
                 <span>
-                    <a href="balkan-додик-ја-прослави-победата-со-песна-само-тако-само-тако-summary-32860.html"
+                    <a href="sport-гвардиола-се-извини-по-инцидентот-со-телевизиски-снимател-по-summary-33002.html"
                        class="hover:underline">
                        <span>2</span> вести
                     </a>
@@ -206,22 +356,22 @@
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
                 <span>
-                    <a href="balkan-додик-ја-прослави-победата-со-песна-само-тако-само-тако-summary-32860.html"
+                    <a href="sport-гвардиола-се-извини-по-инцидентот-со-телевизиски-снимател-по-summary-33002.html"
                        class="hover:underline">сумирано</a>
                 </span>
             </div>
         </div>
     </div>
 </div>
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="magazine-првиот-пациент-од-србија-прима-руска-персонализирана-вакцина-summary-32859.html"
+    <a href="scena-агенцијата-за-филм-ќе-ја-поддржи-со-100-000-евра-кампањата-summary-33000.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32859.webp"
-                 alt="Првиот пациент од Србија прима руска персонализирана вакцина против рак: Пет месеци болнички третман во Москва" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%90%D0%B3%D0%B5%D0%BD%D1%86%D0%B8%D1%98%D0%B0%D1%82%D0%B0+%D0%B7%D0%B0+%D1%84%D0%B8%D0%BB%D0%BC+%D1%9C%D0%B5+%D1%98%D0%B0+%D0%BF%D0%BE%D0%B4%D0%B4%D1%80%D0%B6%D0%B8+%D1%81%D0%BE+100.000+%D0%B5%D0%B2%D1%80%D0%B0+%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D1%9A%D0%B0%D1%82%D0%B0+%D0%B7%D0%B0+%D0%9E%D1%81%D0%BA%D0%B0%D1%80+%D0%BD%D0%B0+%D0%BC%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%BE%D1%82+%D0%BA%D0%B0%D0%BD%D0%B4%D0%B8%D0%B4%D0%B0%D1%82+%E2%80%9E%D0%9F%D1%80%D0%B8%D0%BA%D0%B0%D0%B7%D0%BD%D0%B0%D1%82%D0%B0+%D0%B7%D0%B0+%D0%A1%D0%B8%D0%BB%D1%98%D0%B0%D0%BD%E2%80%9C"
+                 alt="Агенцијата за филм ќе ја поддржи со 100.000 евра кампањата за Оскар на македонскиот кандидат „Приказната за Силјан“" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -229,12 +379,12 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-првиот-пациент-од-србија-прима-руска-персонализирана-вакцина-summary-32859.html"
-               class="hover:underline">Првиот пациент од Србија прима руска персонализирана вакцина против рак: Пет месеци болнички третман во Москва</a>
+            <a href="scena-агенцијата-за-филм-ќе-ја-поддржи-со-100-000-евра-кампањата-summary-33000.html"
+               class="hover:underline">Агенцијата за филм ќе ја поддржи со 100.000 евра кампањата за Оскар на македонскиот кандидат „Приказната за Силјан“</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> професорот појаснува руските здравствени институции одобриле примена к вакцината пациенти малиген меланом, употреба пептидна вакцина развиена истражувачки тим работи рамките се...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> агенцијата филм македонија 100. евра поддржи кампањата оскар документарниот филм приказната силјан тамара котевска бидејќи смета исклучителен национален интерес.  предлог буџет...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
@@ -250,15 +400,15 @@
         </div>
     </div>
 </div>
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="magazine-хороскоп-за-декември-на-најпознатиот-руски-астролог-summary-32858.html"
+    <a href="scena-македонскиот-продуцент-матеј-џајковски-номиниран-за-греми-summary-32999.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32858.webp"
-                 alt="Хороскоп за декември на најпознатиот руски астролог" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%BE%D1%82+%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D1%86%D0%B5%D0%BD%D1%82+%D0%9C%D0%B0%D1%82%D0%B5%D1%98+%D0%8F%D0%B0%D1%98%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8+%D0%BD%D0%BE%D0%BC%D0%B8%D0%BD%D0%B8%D1%80%D0%B0%D0%BD+%D0%B7%D0%B0+%D0%93%D1%80%D0%B5%D0%BC%D0%B8"
+                 alt="Македонскиот продуцент Матеј Џајковски номиниран за Греми" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -266,12 +416,12 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-хороскоп-за-декември-на-најпознатиот-руски-астролог-summary-32858.html"
-               class="hover:underline">Хороскоп за декември на најпознатиот руски астролог</a>
+            <a href="scena-македонскиот-продуцент-матеј-џајковски-номиниран-за-греми-summary-32999.html"
+               class="hover:underline">Македонскиот продуцент Матеј Џајковски номиниран за Греми</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> заедничките соништа планови важни љубовта слободните запознаваат некого патуваат.  рак декември 2025 година, месецот носи семејни теми важни разговори менуваат односите.  здрав...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> прва номинација матеј џајковски подолго време работи музички продуцент лос анџелес.  албумот групата работеше македонскиот музички продуцент матеј џајковски, познат , номиниран...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
@@ -287,15 +437,15 @@
         </div>
     </div>
 </div>
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="sport-илиевски-пред-почетокот-на-подготовките-сега-сме-поискусни-summary-32857.html"
+    <a href="bitola-битолски-тим-влезе-во-полуфинале-на-средношколец-милионер-summary-32998.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32857.webp"
-                 alt="Илиевски пред почетокот на подготовките: „Сега сме поискусни, но нема да менуваме многу работи“" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-32998.webp"
+                 alt="БИТОЛСКИ ТИМ ВЛЕЗЕ ВО ПОЛУФИНАЛЕ НА „СРЕДНОШКОЛЕЦ МИЛИОНЕР“" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -303,12 +453,12 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-илиевски-пред-почетокот-на-подготовките-сега-сме-поискусни-summary-32857.html"
-               class="hover:underline">Илиевски пред почетокот на подготовките: „Сега сме поискусни, но нема да менуваме многу работи“</a>
+            <a href="bitola-битолски-тим-влезе-во-полуфинале-на-средношколец-милионер-summary-32998.html"
+               class="hover:underline">БИТОЛСКИ ТИМ ВЛЕЗЕ ВО ПОЛУФИНАЛЕ НА „СРЕДНОШКОЛЕЦ МИЛИОНЕР“</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> надополнети играчи поискусни, значи работи менуваат, значи играчите имаат носено поинакви мечеви присутни сигурно бидат значење, потценувајќи никого време летото, бидејќи нивно...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> нивната бизнис идеја примена вештачка интелегенција решаваат практични проблеми туристичкиот сектор продолжува третата фаза напреварот.  следната фаза 90 секунди презентираат б...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
@@ -316,31 +466,23 @@
                 <span><span style='color:#e27564;'>тукушто објавено</span></span>
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="sport-илиевски-пред-почетокот-на-подготовките-сега-сме-поискусни-summary-32857.html"
-                       class="hover:underline">
-                       <span>2</span> вести
-                    </a>
-                </span>
+                
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="sport-илиевски-пред-почетокот-на-подготовките-сега-сме-поискусни-summary-32857.html"
-                       class="hover:underline">сумирано</a>
-                </span>
+                
             </div>
         </div>
     </div>
 </div>
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="hronika-нападнала-ученичка-во-основно-училиште-тетовка-осомничена-за-summary-32856.html"
+    <a href="bitola-жители-на-трново-и-магарево-се-жалат-на-прекини-на-струја-од-summary-32997.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32856.webp"
-                 alt="Нападнала ученичка во основно училиште: тетовка осомничена за насилство врз дете" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-32997.webp"
+                 alt="ЖИТЕЛИ НА ТРНОВО И МАГАРЕВО СЕ ЖАЛАТ НА ПРЕКИНИ НА СТРУЈА, ОД ЕВН ВЕЛАТ НЕ Е ПОРАДИ ДЕФЕКТИ" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -348,12 +490,12 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="hronika-нападнала-ученичка-во-основно-училиште-тетовка-осомничена-за-summary-32856.html"
-               class="hover:underline">Нападнала ученичка во основно училиште: тетовка осомничена за насилство врз дете</a>
+            <a href="bitola-жители-на-трново-и-магарево-се-жалат-на-прекини-на-струја-од-summary-32997.html"
+               class="hover:underline">ЖИТЕЛИ НА ТРНОВО И МАГАРЕВО СЕ ЖАЛАТ НА ПРЕКИНИ НА СТРУЈА, ОД ЕВН ВЕЛАТ НЕ Е ПОРАДИ ДЕФЕКТИ</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> службена просторија основно училиште тетово, пријавената физички нападнала ученичка.  свр тетово поднесе кривична пријава против љ. м. тетово поради постоење основи сомнение ст...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> , тв тера упати прашање минималните стандарди квалитет снабдување електрична енергија, случајот трново магарево стандарди исполнети?  одговор тв тера евн тврдат селата трново м...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
@@ -361,31 +503,23 @@
                 <span><span style='color:#e27564;'>тукушто објавено</span></span>
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="hronika-нападнала-ученичка-во-основно-училиште-тетовка-осомничена-за-summary-32856.html"
-                       class="hover:underline">
-                       <span>3</span> вести
-                    </a>
-                </span>
+                
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="hronika-нападнала-ученичка-во-основно-училиште-тетовка-осомничена-за-summary-32856.html"
-                       class="hover:underline">сумирано</a>
-                </span>
+                
             </div>
         </div>
     </div>
 </div>
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="world-австралиска-сенаторка-влезе-во-парламентот-со-бурка-во-знак-summary-32855.html"
+    <a href="bitola-укло-колорс-студентски-хакатон-манифестација-на-европското-summary-32996.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32855.webp"
-                 alt="Австралиска сенаторка влезе во Парламентот со бурка во знак на протест поради одбивањето на нејзиниот предлог за забрана на бурките" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-32996.webp"
+                 alt="УКЛО КОЛОРС СТУДЕНТСКИ ХАКАТОН-МАНИФЕСТАЦИЈА НА ЕВРОПСКОТО ОБРАЗОВАНИЕ" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -393,12 +527,12 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="world-австралиска-сенаторка-влезе-во-парламентот-со-бурка-во-знак-summary-32855.html"
-               class="hover:underline">Австралиска сенаторка влезе во Парламентот со бурка во знак на протест поради одбивањето на нејзиниот предлог за забрана на бурките</a>
+            <a href="bitola-укло-колорс-студентски-хакатон-манифестација-на-европското-summary-32996.html"
+               class="hover:underline">УКЛО КОЛОРС СТУДЕНТСКИ ХАКАТОН-МАНИФЕСТАЦИЈА НА ЕВРОПСКОТО ОБРАЗОВАНИЕ</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> вторпат хансон користи бурка парламентот протест поттикне забраната нивното јавно носење.  сакаат носам – нека забранат бурката, изјави хансон.  австралиската сенаторка полин х...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> нашите студенти натпревар заедно студентите членките алијансата креираат креативни, иновативни софтверски решенија поврзани тројната транзиција регионот, битола околината.  ден...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
@@ -406,31 +540,23 @@
                 <span><span style='color:#e27564;'>тукушто објавено</span></span>
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="world-австралиска-сенаторка-влезе-во-парламентот-со-бурка-во-знак-summary-32855.html"
-                       class="hover:underline">
-                       <span>2</span> вести
-                    </a>
-                </span>
+                
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="world-австралиска-сенаторка-влезе-во-парламентот-со-бурка-во-знак-summary-32855.html"
-                       class="hover:underline">сумирано</a>
-                </span>
+                
             </div>
         </div>
     </div>
 </div>
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="macedonia-стразбур-бара-дообјаснувања-од-владата-за-судењето-на-summary-32854.html"
+    <a href="bitola-бимилк-со-отворени-врати-за-граѓаните-по-повод-светскиот-ден-summary-32995.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32854.webp"
-                 alt="Стразбур бара дообјаснувања од владата за судењето на Јанкуловска" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%91%D0%B8%D0%BC%D0%B8%D0%BB%D0%BA+%D1%81%D0%BE+%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%B8+%D0%B2%D1%80%D0%B0%D1%82%D0%B8+%D0%B7%D0%B0+%D0%B3%D1%80%D0%B0%D1%93%D0%B0%D0%BD%D0%B8%D1%82%D0%B5+%D0%BF%D0%BE+%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4+%D0%A1%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%BE%D1%82+%D0%B4%D0%B5%D0%BD+%D0%BD%D0%B0+%D0%BA%D0%B2%D0%B0%D0%BB%D0%B8%D1%82%D0%B5%D1%82"
+                 alt="Бимилк со отворени врати за граѓаните по повод Светскиот ден на квалитет" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -438,12 +564,12 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="macedonia-стразбур-бара-дообјаснувања-од-владата-за-судењето-на-summary-32854.html"
-               class="hover:underline">Стразбур бара дообјаснувања од владата за судењето на Јанкуловска</a>
+            <a href="bitola-бимилк-со-отворени-врати-за-граѓаните-по-повод-светскиот-ден-summary-32995.html"
+               class="hover:underline">Бимилк со отворени врати за граѓаните по повод Светскиот ден на квалитет</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> европскиот суд човекови права стразбур отворил постапка жалбата поранешната министерка гордана јанкулоска случајот тенк, оцени предметот постојат сериозни индиции можни прекршу...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> бимилк одбележа светскиот ден квалитет традиционален отворен ден, голем број граѓани, студенти долгогодишни потрошувачи добија ретка можност одблизу следат целиот процес произв...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
@@ -451,31 +577,23 @@
                 <span><span style='color:#e27564;'>тукушто објавено</span></span>
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="macedonia-стразбур-бара-дообјаснувања-од-владата-за-судењето-на-summary-32854.html"
-                       class="hover:underline">
-                       <span>3</span> вести
-                    </a>
-                </span>
+                
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="macedonia-стразбур-бара-дообјаснувања-од-владата-за-судењето-на-summary-32854.html"
-                       class="hover:underline">сумирано</a>
-                </span>
+                
             </div>
         </div>
     </div>
 </div>
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="skopje-малолетник-извршил-обљуба-врз-малолетно-девојче-во-скопје-summary-32853.html"
+    <a href="bitola-ученичката-јана-китановска-од-битола-се-закити-со-државна-summary-32994.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32853.webp"
-                 alt="Малолетник извршил обљуба врз малолетно девојче во Скопје" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-32994.webp"
+                 alt="Ученичката Јана Китановска од Битола се закити со државна награда на литературниот конкурс на тема ,,Да ја доближеме правдата поблиску до граѓаните&quot;" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -483,12 +601,12 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="skopje-малолетник-извршил-обљуба-врз-малолетно-девојче-во-скопје-summary-32853.html"
-               class="hover:underline">Малолетник извршил обљуба врз малолетно девојче во Скопје</a>
+            <a href="bitola-ученичката-јана-китановска-од-битола-се-закити-со-државна-summary-32994.html"
+               class="hover:underline">Ученичката Јана Китановска од Битола се закити со државна награда на литературниот конкурс на тема ,,Да ја доближеме правдата поблиску до граѓаните&quot;</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> според информациите полицијата, вчера 16:30 часот свр скопје, 44 годишна жена скопје пријавила 04. скопје, малолетник извршил обљуба нејзината малолетна ќерка.  мајка пријавила...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> ученичката јана китановска битола закити државна награда литературниот конкурс тема ,, доближеме правдата поблиску граѓаните :.  ученичката јана китановска гимназија ,,јосип бр...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
@@ -496,31 +614,23 @@
                 <span><span style='color:#e27564;'>тукушто објавено</span></span>
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="skopje-малолетник-извршил-обљуба-врз-малолетно-девојче-во-скопје-summary-32853.html"
-                       class="hover:underline">
-                       <span>2</span> вести
-                    </a>
-                </span>
+                
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="skopje-малолетник-извршил-обљуба-врз-малолетно-девојче-во-скопје-summary-32853.html"
-                       class="hover:underline">сумирано</a>
-                </span>
+                
             </div>
         </div>
     </div>
 </div>
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="macedonia-стојаноски-вмро-знам-и-вреди-поднесоа-анкетна-комисија-за-summary-32852.html"
+    <a href="bitola-соопштение-од-општина-битола-јавен-повик-за-стручна-расправа-summary-32993.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32852.webp"
-                 alt="Стојаноски: ВМРО, ЗНАМ и ВРЕДИ поднесоа анкетна комисија за Пулс, Ласкарци, Тетово и Беса Транс" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-32993.webp"
+                 alt="Соопштение од Општина Битола - јавен повик за стручна расправа и јавна презентација со јавна расправа" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -528,12 +638,12 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="macedonia-стојаноски-вмро-знам-и-вреди-поднесоа-анкетна-комисија-за-summary-32852.html"
-               class="hover:underline">Стојаноски: ВМРО, ЗНАМ и ВРЕДИ поднесоа анкетна комисија за Пулс, Ласкарци, Тетово и Беса Транс</a>
+            <a href="bitola-соопштение-од-општина-битола-јавен-повик-за-стручна-расправа-summary-32993.html"
+               class="hover:underline">Соопштение од Општина Битола - јавен повик за стручна расправа и јавна презентација со јавна расправа</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> ве известуваме пратеничките групи вмро дпмне, вреди , денес поднесовме иницијатива формирање анкетна комисија утврдување околностите постапувањето институциите трагедиите несре...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> соопштение организирање општ јавен повик стручна расправа јавна презентација јавна расправа п о нацрт план измени дополнувања дел гуп четврт 02, блок .  обединета постапка), ко...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
@@ -541,25 +651,337 @@
                 <span><span style='color:#e27564;'>тукушто објавено</span></span>
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="macedonia-стојаноски-вмро-знам-и-вреди-поднесоа-анкетна-комисија-за-summary-32852.html"
-                       class="hover:underline">
-                       <span>4</span> вести
-                    </a>
-                </span>
+                
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="macedonia-стојаноски-вмро-знам-и-вреди-поднесоа-анкетна-комисија-за-summary-32852.html"
-                       class="hover:underline">сумирано</a>
-                </span>
+                
             </div>
         </div>
     </div>
 </div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="bitola-на-пелистер-ќе-се-маркира-велосипедска-и-пешачка-патека-од-summary-32992.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32992.webp"
+                 alt="На Пелистер ќе се маркира велосипедска и пешачка патека од Цапарска Пресека преку кањонот до селото Цапари" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="bitola-на-пелистер-ќе-се-маркира-велосипедска-и-пешачка-патека-од-summary-32992.html"
+               class="hover:underline">На Пелистер ќе се маркира велосипедска и пешачка патека од Цапарска Пресека преку кањонот до селото Цапари</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> пелистер маркира велосипедска пешачка патека цапарска пресека кањонот селото цапари :.  пелистер пробива велосипедска пешачка патека цапарска пресека село цапари, информира нац...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span><span style='color:#e27564;'>тукушто објавено</span></span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                
+            </div>
+        </div>
+    </div>
+</div>
+                            
+                        </div>
+
+                        
+
+                        <!-- Pagination -->
+                        <div class="flex justify-center mt-6">
+    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
+
+        <!-- Previous -->
+        
+
+        <!-- Page numbers (max 10) -->
+        
+            
+                <a href="latest-news.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">1</a>
+            
+                <a href="latest-news-page-2.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">2</a>
+            
+                <a href="latest-news-page-3.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">3</a>
+            
+                <a href="latest-news-page-4.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">4</a>
+            
+                <a href="latest-news-page-5.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">5</a>
+            
+                <a href="latest-news-page-6.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">6</a>
+            
+                <a href="latest-news-page-7.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">7</a>
+            
+                <a href="latest-news-page-8.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">8</a>
+            
+                <a href="latest-news-page-9.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">9</a>
+            
+                <a href="latest-news-page-10.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">10</a>
+            
+        
+
+        <!-- Next -->
+        <a href="latest-news-page-2.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Next">&raquo;</a>
+    </nav>
+</div>
+                    </div>
+
+                    <!-- Right Sidebar / Ads -->
+                    <div class="lg:col-span-1 flex flex-col gap-6">
+
+                        <!-- Spotlight Ad -->
+                        <div class="flex flex-col rounded-lg theme-bg-secondary border theme-border-color shadow-lg overflow-hidden">
+                            <a href="https://google.com"
+                               class="w-full aspect-[16/9] bg-center bg-no-repeat bg-cover rounded-t-lg"
+                               style="background-image: url(&#39;https://placehold.co/150x300/0000FF/FFFFFF?text=Your+Ad+Here&#39;)">
+                            </a>
+                            <div class="p-4 flex flex-col gap-1">
+                                <p class="theme-text-primary text-base font-bold">Special Offer for Readers!</p>
+                                <p class="theme-text-secondary text-sm">Check out our exclusive deals.</p>
+                                <a href="https://google.com"
+                                   class="text-xs font-bold text-blue-600 hover:underline mt-2">Повеќе</a>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Spotlight Ad -->
+                        <div class="flex flex-col rounded-lg theme-bg-secondary border theme-border-color shadow-lg overflow-hidden">
+                            <a href="marketing.html"
+                               class="w-full aspect-[16/4.5] bg-center bg-no-repeat bg-cover rounded-t-lg"
+                               style="background-image: url(&#39;https://placehold.co/150x300/FF4500/FFFFFF?text=Your+Ad+Here&#39;)">
+                            </a>
+                            </a>
+                            <div class="p-4 flex flex-col gap-1">
+                                <p class="theme-text-primary text-base font-bold">New Arrivals!</p>
+                                <p class="theme-text-secondary text-sm">Browse our fresh collection.</p>
+                                <a href="marketing.html"
+                                   class="text-xs font-bold text-blue-600 hover:underline mt-2">Повеќе</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- MOBILE VERSION (from real latest-news-mobile.html)     -->
+        <!-- ====================================================== -->
+        <div class="block lg:hidden">
+            <div class="max-w-3xl mx-auto w-full">
+                <main class="p-2 sm:p-4">
+
+                    <h1 class="theme-text-primary text-2xl font-bold mb-4 px-2">Најнови Вести</h1>
+
+                    <!-- Top Mobile Ad -->
+                    <div id="mobile-ad-container-top" class="mb-4">
+                        <a id="mobile-ad-link-top"
+                           class="block w-full aspect-[8/1] bg-center bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                    </div>
+
+                    <!-- Article Cards -->
+                    <div class="flex flex-col gap-4">
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="sport-гвардиола-се-извини-по-инцидентот-со-телевизиски-снимател-по-summary-33002.html" class="flex gap-3">
+                                    <img src="images/cache/summary-33002.webp" alt="Гвардиола се извини по инцидентот со телевизиски снимател по поразот од Њукасл"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Гвардиола се извини по инцидентот со телевизиски снимател по поразот од Њукасл</h3>
+                                        <p class="theme-text-secondary text-sm"> поразот остави сити седум бодови лидерот арсенал премиер лигата, тимот среда очекува пресметка баер леверкузен 100 от натпревар гвардиола лигата ш...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="scena-агенцијата-за-филм-ќе-ја-поддржи-со-100-000-евра-кампањата-summary-33000.html" class="flex gap-3">
+                                    <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%90%D0%B3%D0%B5%D0%BD%D1%86%D0%B8%D1%98%D0%B0%D1%82%D0%B0+%D0%B7%D0%B0+%D1%84%D0%B8%D0%BB%D0%BC+%D1%9C%D0%B5+%D1%98%D0%B0+%D0%BF%D0%BE%D0%B4%D0%B4%D1%80%D0%B6%D0%B8+%D1%81%D0%BE+100.000+%D0%B5%D0%B2%D1%80%D0%B0+%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D1%9A%D0%B0%D1%82%D0%B0+%D0%B7%D0%B0+%D0%9E%D1%81%D0%BA%D0%B0%D1%80+%D0%BD%D0%B0+%D0%BC%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%BE%D1%82+%D0%BA%D0%B0%D0%BD%D0%B4%D0%B8%D0%B4%D0%B0%D1%82+%E2%80%9E%D0%9F%D1%80%D0%B8%D0%BA%D0%B0%D0%B7%D0%BD%D0%B0%D1%82%D0%B0+%D0%B7%D0%B0+%D0%A1%D0%B8%D0%BB%D1%98%D0%B0%D0%BD%E2%80%9C" alt="Агенцијата за филм ќе ја поддржи со 100.000 евра кампањата за Оскар на македонскиот кандидат „Приказната за Силјан“"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Агенцијата за филм ќе ја поддржи со 100.000 евра кампањата за Оскар на македонскиот кандидат „Приказната за Силјан“</h3>
+                                        <p class="theme-text-secondary text-sm"> агенцијата филм македонија 100. евра поддржи кампањата оскар документарниот филм приказната силјан тамара котевска бидејќи смета исклучителен наци...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="scena-македонскиот-продуцент-матеј-џајковски-номиниран-за-греми-summary-32999.html" class="flex gap-3">
+                                    <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%BE%D1%82+%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D1%86%D0%B5%D0%BD%D1%82+%D0%9C%D0%B0%D1%82%D0%B5%D1%98+%D0%8F%D0%B0%D1%98%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8+%D0%BD%D0%BE%D0%BC%D0%B8%D0%BD%D0%B8%D1%80%D0%B0%D0%BD+%D0%B7%D0%B0+%D0%93%D1%80%D0%B5%D0%BC%D0%B8" alt="Македонскиот продуцент Матеј Џајковски номиниран за Греми"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Македонскиот продуцент Матеј Џајковски номиниран за Греми</h3>
+                                        <p class="theme-text-secondary text-sm"> прва номинација матеј џајковски подолго време работи музички продуцент лос анџелес.  албумот групата работеше македонскиот музички продуцент матеј...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="bitola-битолски-тим-влезе-во-полуфинале-на-средношколец-милионер-summary-32998.html" class="flex gap-3">
+                                    <img src="images/cache/summary-32998.webp" alt="БИТОЛСКИ ТИМ ВЛЕЗЕ ВО ПОЛУФИНАЛЕ НА „СРЕДНОШКОЛЕЦ МИЛИОНЕР“"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">БИТОЛСКИ ТИМ ВЛЕЗЕ ВО ПОЛУФИНАЛЕ НА „СРЕДНОШКОЛЕЦ МИЛИОНЕР“</h3>
+                                        <p class="theme-text-secondary text-sm"> нивната бизнис идеја примена вештачка интелегенција решаваат практични проблеми туристичкиот сектор продолжува третата фаза напреварот.  следната ...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="bitola-жители-на-трново-и-магарево-се-жалат-на-прекини-на-струја-од-summary-32997.html" class="flex gap-3">
+                                    <img src="images/cache/summary-32997.webp" alt="ЖИТЕЛИ НА ТРНОВО И МАГАРЕВО СЕ ЖАЛАТ НА ПРЕКИНИ НА СТРУЈА, ОД ЕВН ВЕЛАТ НЕ Е ПОРАДИ ДЕФЕКТИ"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">ЖИТЕЛИ НА ТРНОВО И МАГАРЕВО СЕ ЖАЛАТ НА ПРЕКИНИ НА СТРУЈА, ОД ЕВН ВЕЛАТ НЕ Е ПОРАДИ ДЕФЕКТИ</h3>
+                                        <p class="theme-text-secondary text-sm"> , тв тера упати прашање минималните стандарди квалитет снабдување електрична енергија, случајот трново магарево стандарди исполнети?  одговор тв т...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            <div id="mobile-ad-container-mid" class="my-6">
+                                <a id="mobile-ad-link-mid"
+                                   class="block w-full aspect-[8/1] bg-center bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                            </div>
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="bitola-укло-колорс-студентски-хакатон-манифестација-на-европското-summary-32996.html" class="flex gap-3">
+                                    <img src="images/cache/summary-32996.webp" alt="УКЛО КОЛОРС СТУДЕНТСКИ ХАКАТОН-МАНИФЕСТАЦИЈА НА ЕВРОПСКОТО ОБРАЗОВАНИЕ"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">УКЛО КОЛОРС СТУДЕНТСКИ ХАКАТОН-МАНИФЕСТАЦИЈА НА ЕВРОПСКОТО ОБРАЗОВАНИЕ</h3>
+                                        <p class="theme-text-secondary text-sm"> нашите студенти натпревар заедно студентите членките алијансата креираат креативни, иновативни софтверски решенија поврзани тројната транзиција ре...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="bitola-бимилк-со-отворени-врати-за-граѓаните-по-повод-светскиот-ден-summary-32995.html" class="flex gap-3">
+                                    <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%91%D0%B8%D0%BC%D0%B8%D0%BB%D0%BA+%D1%81%D0%BE+%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%B8+%D0%B2%D1%80%D0%B0%D1%82%D0%B8+%D0%B7%D0%B0+%D0%B3%D1%80%D0%B0%D1%93%D0%B0%D0%BD%D0%B8%D1%82%D0%B5+%D0%BF%D0%BE+%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4+%D0%A1%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%BE%D1%82+%D0%B4%D0%B5%D0%BD+%D0%BD%D0%B0+%D0%BA%D0%B2%D0%B0%D0%BB%D0%B8%D1%82%D0%B5%D1%82" alt="Бимилк со отворени врати за граѓаните по повод Светскиот ден на квалитет"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Бимилк со отворени врати за граѓаните по повод Светскиот ден на квалитет</h3>
+                                        <p class="theme-text-secondary text-sm"> бимилк одбележа светскиот ден квалитет традиционален отворен ден, голем број граѓани, студенти долгогодишни потрошувачи добија ретка можност одбли...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="bitola-ученичката-јана-китановска-од-битола-се-закити-со-државна-summary-32994.html" class="flex gap-3">
+                                    <img src="images/cache/summary-32994.webp" alt="Ученичката Јана Китановска од Битола се закити со државна награда на литературниот конкурс на тема ,,Да ја доближеме правдата поблиску до граѓаните&quot;"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Ученичката Јана Китановска од Битола се закити со државна награда на литературниот конкурс на тема ,,Да ја доближеме правдата поблиску до граѓаните&quot;</h3>
+                                        <p class="theme-text-secondary text-sm"> ученичката јана китановска битола закити државна награда литературниот конкурс тема ,, доближеме правдата поблиску граѓаните :.  ученичката јана к...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="bitola-соопштение-од-општина-битола-јавен-повик-за-стручна-расправа-summary-32993.html" class="flex gap-3">
+                                    <img src="images/cache/summary-32993.webp" alt="Соопштение од Општина Битола - јавен повик за стручна расправа и јавна презентација со јавна расправа"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Соопштение од Општина Битола - јавен повик за стручна расправа и јавна презентација со јавна расправа</h3>
+                                        <p class="theme-text-secondary text-sm"> соопштение организирање општ јавен повик стручна расправа јавна презентација јавна расправа п о нацрт план измени дополнувања дел гуп четврт 02, б...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="bitola-на-пелистер-ќе-се-маркира-велосипедска-и-пешачка-патека-од-summary-32992.html" class="flex gap-3">
+                                    <img src="images/cache/summary-32992.webp" alt="На Пелистер ќе се маркира велосипедска и пешачка патека од Цапарска Пресека преку кањонот до селото Цапари"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">На Пелистер ќе се маркира велосипедска и пешачка патека од Цапарска Пресека преку кањонот до селото Цапари</h3>
+                                        <p class="theme-text-secondary text-sm"> пелистер маркира велосипедска пешачка патека цапарска пресека кањонот селото цапари :.  пелистер пробива велосипедска пешачка патека цапарска прес...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
                         
                     </div>
-                    
+
+                    <!-- Pagination -->
                     <div class="flex justify-center mt-6">
     <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
 
@@ -607,41 +1029,14 @@
            aria-label="Next">&raquo;</a>
     </nav>
 </div>
-                </div>
 
-                <!-- SIDEBAR -->
-                <div class="lg:col-span-1 flex flex-col gap-6">
-                    <!-- Spotlight Ad -->
-                    <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
-                        <a href="https://google.com"
-                           class="w-full aspect-[16/9] bg-center bg-no-repeat bg-cover rounded-t-lg overflow-hidden"
-                           style="background-image: url(&#39;https://placehold.co/150x300/0000FF/FFFFFF?text=Your+Ad+Here&#39;);">
-                        </a>
-                        <div class="flex w-full grow flex-col gap-1 py-4 px-4">
-                            <p class="theme-text-primary text-base font-bold leading-tight tracking-[-0.015em]">Special Offer for Readers!</p>
-                            <p class="theme-text-secondary text-sm font-normal leading-normal">Check out our exclusive deals.</p>
-                            <a href="https://google.com"
-                               class="text-xs font-bold text-blue-600 hover:underline mt-2">Повеќе</a>
-                        </div>
-                    </div>
-
-                    <!-- Secondary Spotlight Ad -->
-                    <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
-                        <a href="marketing.html"
-                           class="w-full aspect-[16/4.5] bg-center bg-no-repeat bg-cover rounded-t-lg overflow-hidden"
-                           style="background-image: url(&#39;https://placehold.co/150x300/FF4500/FFFFFF?text=Your+Ad+Here&#39;);">
-                        </a>
-                        <div class="flex w-full grow flex-col gap-1 py-4 px-4">
-                            <p class="theme-text-primary text-base font-bold leading-tight tracking-[-0.015em]">New Arrivals!</p>
-                            <p class="theme-text-secondary text-sm font-normal leading-normal">Browse our fresh collection.</p>
-                            <a href="marketing.html"
-                               class="text-xs font-bold text-blue-600 hover:underline mt-2">Повеќе</a>
-                        </div>
-                    </div>
-                </div>
+                </main>
             </div>
         </div>
-    </div>
+
+    </main>
+
+    <!-- Footer -->
     <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
@@ -687,9 +1082,15 @@
 
 
 </footer>
+
 </div>
 
-<!-- ✅ Unified scripts loader -->
+<!-- Mobile ads data -->
+<script>
+    window.mobileTopAdsData = [{"id":"mobileTopAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Your+Mobile+Ad+Here+1","title":"Mobile Exclusive Offer","description":"Special deal for mobile users.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"},{"id":"mobileTopAd2","imageUrl":"https:\/\/placehold.co\/600x75\/DAF7A6\/000000?text=Your+Mobile+Ad+Here+2","title":"New Mobile Feature","description":"Check out our new mobile feature.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"}];
+    window.mobileMidAdsData = [{"id":"mobileMidAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Your+Mobile+Ad+Here+1","title":"Don't Miss This!","description":"Another great offer just for you.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"},{"id":"mobileMidAd2","imageUrl":"https:\/\/placehold.co\/600x75\/C70039\/FFFFFF?text=Your+Mobile+Ad+Here+2","title":"Scroll-Stopping Savings","description":"Great savings await.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"}];
+</script>
+
 <div>
     <script>
     /*<![CDATA[*/
@@ -745,7 +1146,6 @@
 </script>
 
 
-    <script src="js/device-switcher.js" defer></script>
     <script src="js/mobile-nav.js" defer></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.2/lunr.min.js" defer></script>

@@ -42,14 +42,16 @@
         class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
         style='font-family: Newsreader, "Noto Sans", sans-serif;'
 >
-    <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+    <!-- ======================= -->
+    <!-- DESKTOP HEADER (lg+)    -->
+    <!-- ======================= -->
+    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div>
-            <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
         <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>Спорт</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>14:52, 24.11.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>20:26, 24.11.2025</span></p>
         </h2>
         <div class="flex w-24 items-center justify-end">
             <!-- NEW: Search Icon (Desktop) -->
@@ -59,13 +61,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                 </svg>
             </button>
-            <!-- NEW: Device Switcher Icon -->
-            <button id="device-switcher-button" aria-label="Switch to mobile/desktop view"
-                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
-                </svg>
-            </button>
+
             <!-- Weather Link Icon (Thermometer) -->
             <a href="prognoza.html" aria-label="Weather Forecast"
                class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
@@ -137,15 +133,567 @@
         
     </div>
 </div>
+    </div>
 
-            <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <!-- MAIN CONTENT -->
-                <div class="lg:col-span-2 flex flex-col gap-8">
-                    <h1 class="theme-text-primary text-2xl font-bold mb-6">Спорт</h1>
+    <!-- ======================= -->
+    <!-- MOBILE HEADER (< lg)    -->
+    <!-- ======================= -->
+    <div class="block lg:hidden max-w-3xl mx-auto w-full">
+        <div>
+    <!-- Mobile Header -->
+    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger-menu-button" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
 
-                    <div class="flex flex-col divide-y theme-border-color">
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+        <!-- Centered Title/Logo -->
+        <div class="flex-1 text-center">
+            <h1 class="theme-text-primary text-2xl font-bold uppercase tracking-wider">Спорт</h1>
+        </div>
+
+        <!-- Search Icon -->
+        <button id="search-button-mobile" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Slide-out Menu -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
+        <div class="p-4">
+            <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
+            <nav class="flex flex-col gap-2">
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="magazine-intimacy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Интима</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="youtube.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+
+                <hr class="my-3 theme-border-color">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
+                </button>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- Hidden desktop theme toggle button to leverage existing script -->
+    <button id="theme-toggle" class="hidden"></button>
+</div>
+    </div>
+
+    <!-- ======================= -->
+    <!-- MAIN CONTENT            -->
+    <!-- ======================= -->
+    <main class="w-full">
+
+        <!-- ======================= -->
+        <!-- DESKTOP LAYOUT (lg+)    -->
+        <!-- ======================= -->
+        <div class="hidden lg:block">
+            <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+                <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <!-- MAIN CONTENT -->
+                    <div class="lg:col-span-2 flex flex-col gap-8">
+                        <h1 class="theme-text-primary text-2xl font-bold mb-6">Спорт</h1>
+
+                        <div class="flex flex-col divide-y theme-border-color">
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="sport-илиевски-пред-почетокот-на-подготовките-сега-сме-поискусни-summary-32857.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32857.webp"
+                 alt="Илиевски пред почетокот на подготовките: „Сега сме поискусни, но нема да менуваме многу работи“" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="sport-илиевски-пред-почетокот-на-подготовките-сега-сме-поискусни-summary-32857.html"
+               class="hover:underline">Илиевски пред почетокот на подготовките: „Сега сме поискусни, но нема да менуваме многу работи“</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> надополнети играчи поискусни, значи работи менуваат, значи играчите имаат носено поинакви мечеви присутни сигурно бидат значење, потценувајќи никого време летото, бидејќи нивно...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 5 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="sport-илиевски-пред-почетокот-на-подготовките-сега-сме-поискусни-summary-32857.html"
+                       class="hover:underline">
+                       <span>2</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="sport-илиевски-пред-почетокот-на-подготовките-сега-сме-поискусни-summary-32857.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="sport-винисиус-може-да-го-напушти-реал-на-зима-клубови-од-премиер-summary-32831.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32831.webp"
+                 alt="Винисиус може да го напушти Реал на зима, клубови од Премиер лигата се заинтересирани за Бразилецот" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="sport-винисиус-може-да-го-напушти-реал-на-зима-клубови-од-премиер-summary-32831.html"
+               class="hover:underline">Винисиус може да го напушти Реал на зима, клубови од Премиер лигата се заинтересирани за Бразилецот</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> реал мадрид, винисиус освои три титули шпанското првенство, куп кралот, три суперкупа шпанија лиги шампиони, суперкуп уефа светско клупско првенство фифа.  сезоната 202526, бра...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 5 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="sport-винисиус-може-да-го-напушти-реал-на-зима-клубови-од-премиер-summary-32831.html"
+                       class="hover:underline">
+                       <span>2</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="sport-винисиус-може-да-го-напушти-реал-на-зима-клубови-од-премиер-summary-32831.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="sport-киву-четири-порази-во-12-натпревари-се-премногу-summary-32819.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32819.webp"
+                 alt="Киву: Четири порази во 12 натпревари се премногу" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="sport-киву-четири-порази-во-12-натпревари-се-премногу-summary-32819.html"
+               class="hover:underline">Киву: Четири порази во 12 натпревари се премногу</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> тренерот интер, кристијан киву, изјави задоволен пристапот ангажманот неговиот тим натпреварот против милан, додаде нероаѕурите подобрат игра остатокот сезоната, пренесоа итали...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 6 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="sport-киву-четири-порази-во-12-натпревари-се-премногу-summary-32819.html"
+                       class="hover:underline">
+                       <span>2</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="sport-киву-четири-порази-во-12-натпревари-се-премногу-summary-32819.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="sport-артета-арсенал-доминираше-над-тотенхем-езе-можеше-да-summary-32816.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32816.webp"
+                 alt="Артета: Арсенал доминираше над Тотенхем, Езе можеше да постигне четири или пет гола" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="sport-артета-арсенал-доминираше-над-тотенхем-езе-можеше-да-summary-32816.html"
+               class="hover:underline">Артета: Арсенал доминираше над Тотенхем, Езе можеше да постигне четири или пет гола</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> следниот натпревар арсенал челзи гостински терен 30 ноември 13. коло, тотенхем домаќин фулам 29 ноември.  тренерот арсенал, микел артета, верува топчиите можеа постигнат голови...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 6 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="sport-артета-арсенал-доминираше-над-тотенхем-езе-можеше-да-summary-32816.html"
+                       class="hover:underline">
+                       <span>2</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="sport-артета-арсенал-доминираше-над-тотенхем-езе-можеше-да-summary-32816.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="sport-ливерпул-на-слот-урива-негативни-рекорди-summary-32808.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32808.webp"
+                 alt="Ливерпул на Слот урива негативни рекорди" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="sport-ливерпул-на-слот-урива-негативни-рекорди-summary-32808.html"
+               class="hover:underline">Ливерпул на Слот урива негативни рекорди</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> ливерпул сезонава шанси лигата шампионите, бидејќи премиер лигата, клуб одбранил титулата 18 акумулирани бодови фаза сезоната, односно 12 одиграни лигашки натпревари.  меѓу пре...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 6 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="sport-ливерпул-на-слот-урива-негативни-рекорди-summary-32808.html"
+                       class="hover:underline">
+                       <span>2</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="sport-ливерпул-на-слот-урива-негативни-рекорди-summary-32808.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="sport-видео-шпански-медиуми-судиите-го-спасија-реал-од-шокантен-summary-32719.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32719.webp"
+                 alt="(Видео) Шпански медиуми: Судиите го спасија Реал од шокантен пораз" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="sport-видео-шпански-медиуми-судиите-го-спасија-реал-од-шокантен-summary-32719.html"
+               class="hover:underline">(Видео) Шпански медиуми: Судиите го спасија Реал од шокантен пораз</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> елче поведе 84 та минута родригес, 87 та минута уше контраверзна судиска одлука.  прво, реал стигна израмнување 78 та минута хаусен, контроверзен начин.  елче поведе 52 та мину...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 9 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="sport-видео-шпански-медиуми-судиите-го-спасија-реал-од-шокантен-summary-32719.html"
+                       class="hover:underline">
+                       <span>3</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="sport-видео-шпански-медиуми-судиите-го-спасија-реал-од-шокантен-summary-32719.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="sport-ујп-бара-трпение-од-граѓаните-ќе-доцни-исплатата-на-мој-ддв-summary-32964.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32964.webp"
+                 alt="УЈП бара трпение од граѓаните, ќе доцни исплатата на Мој ДДВ" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="sport-ујп-бара-трпение-од-граѓаните-ќе-доцни-исплатата-на-мој-ддв-summary-32964.html"
+               class="hover:underline">УЈП бара трпение од граѓаните, ќе доцни исплатата на Мој ДДВ</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> граѓаните редовно скенираат фискалните сметки апликацијата мој ддв добијат повратните износи директно трансакциски сметки наредните денови, стои соопштението ујп, реакциите исп...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span><span style='color:#e27564;'>тукушто објавено</span></span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="sport-ујп-бара-трпение-од-граѓаните-ќе-доцни-исплатата-на-мој-ддв-summary-32964.html"
+                       class="hover:underline">
+                       <span>2</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="sport-ујп-бара-трпение-од-граѓаните-ќе-доцни-исплатата-на-мој-ддв-summary-32964.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="sport-реал-мадрид-се-извини-за-користењето-на-комеморативно-видео-summary-32773.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-32773.webp"
+                 alt="Реал Мадрид се извини за користењето на комеморативно видео со Силва од Елче наместо братот на Диого Жота" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="sport-реал-мадрид-се-извини-за-користењето-на-комеморативно-видео-summary-32773.html"
+               class="hover:underline">Реал Мадрид се извини за користењето на комеморативно видео со Силва од Елче наместо братот на Диого Жота</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> генералното собрание мадридскиот клуб недела, 23 ноември, наместо фотографија андре тешеира силва искористена фотографија португалскиот напаѓач елче, андре силва.  извинуваме, ...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 7 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="sport-реал-мадрид-се-извини-за-користењето-на-комеморативно-видео-summary-32773.html"
+                       class="hover:underline">
+                       <span>2</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="sport-реал-мадрид-се-извини-за-користењето-на-комеморативно-видео-summary-32773.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
     <a href="sport-видео-дончиќ-доминираше-против-јута-торонто-ја-продолжи-summary-32690.html"
@@ -170,7 +718,7 @@
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
             <span>
-                <span>пред 4 часа</span>
+                <span>пред 10 часа</span>
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
                 <span>
@@ -189,15 +737,15 @@
         </div>
     </div>
 </div>
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
     <!-- Thumbnail -->
-    <a href="sport-алонсо-за-ремито-со-елче-незадоволни-сме-реал-секогаш-сака-summary-32667.html"
+    <a href="sport-френк-по-поразот-од-арсенал-вреди-да-се-размисли-од-каде-summary-32758.html"
        class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
         <picture>
-            <img src="images/cache/summary-32667.webp"
-                 alt="Алонсо за ремито со Елче: Незадоволни сме, Реал секогаш сака да победува" class="w-24 h-16 object-cover rounded-lg"/>
+            <img src="images/cache/summary-32758.webp"
+                 alt="Френк по поразот од Арсенал: Вреди да се размисли од каде почнавме, минатата година завршивме на 17. место" class="w-24 h-16 object-cover rounded-lg"/>
         </picture>
     </a>
 
@@ -205,111 +753,21 @@
     <div class="flex flex-col flex-grow">
         <!-- Title -->
         <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-алонсо-за-ремито-со-елче-незадоволни-сме-реал-секогаш-сака-summary-32667.html"
-               class="hover:underline">Алонсо за ремито со Елче: Незадоволни сме, Реал секогаш сака да победува</a>
+            <a href="sport-френк-по-поразот-од-арсенал-вреди-да-се-размисли-од-каде-summary-32758.html"
+               class="hover:underline">Френк по поразот од Арсенал: Вреди да се размисли од каде почнавме, минатата година завршивме на 17. место</a>
         </h3>
 
         <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> тренерот реал мадрид, чаби алонсо, изрази незадоволство ремито синоќа елче 13. коло шпанското фудбалско првенство.  незадоволни бидејќи сакаме победуваме, натпревари .  реал ма...</p>
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> место табелата англиската премиер лига, 18 бода 12 натпревари.  мислам фер каже разочарани незадоволни денешниот настап.  минатата година завршивме 17. обидовме изградиме игра,...</p>
 
         <!-- Meta info -->
         <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
             <span>
-                <span>пред 5 часа</span>
+                <span>пред 8 часа</span>
             </span>
             <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
                 <span>
-                    <a href="sport-алонсо-за-ремито-со-елче-незадоволни-сме-реал-секогаш-сака-summary-32667.html"
-                       class="hover:underline">
-                       <span>4</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="sport-алонсо-за-ремито-со-елче-незадоволни-сме-реал-секогаш-сака-summary-32667.html"
-                       class="hover:underline">сумирано</a>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="sport-алегри-по-дербито-со-интер-величествена-победа-во-summary-32697.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32697.webp"
-                 alt="Алегри по дербито со Интер: Величествена победа во спектакуларен натпревар" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-алегри-по-дербито-со-интер-величествена-победа-во-summary-32697.html"
-               class="hover:underline">Алегри по дербито со Интер: Величествена победа во спектакуларен натпревар</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> тренерот милан, масимилијано алегри, искажа впечатоците синоќешното дерби градскиот ривал интер.  милан втор табелата италијанското првенство 25 бода 12 натпревари, интер наоѓа...</p>
-
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 4 часа</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="sport-алегри-по-дербито-со-интер-величествена-победа-во-summary-32697.html"
-                       class="hover:underline">
-                       <span>4</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="sport-алегри-по-дербито-со-интер-величествена-победа-во-summary-32697.html"
-                       class="hover:underline">сумирано</a>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
-                        
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="sport-манифестацијата-за-палење-на-олимпискиот-оган-во-античка-summary-32724.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32724.webp"
-                 alt="Манифестацијата за палење на олимпискиот оган во античка Олимпија за ЗОИ „Милано Кортина 2026“, поради временските услови ќе се одржи во затворен простор" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-манифестацијата-за-палење-на-олимпискиот-оган-во-античка-summary-32724.html"
-               class="hover:underline">Манифестацијата за палење на олимпискиот оган во античка Олимпија за ЗОИ „Милано Кортина 2026“, поради временските услови ќе се одржи во затворен простор</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> затворен простор, археолошкиот музеј античка олимпија наместо храмот божицата хера, поради лошите временски услови одржи среда церемонијата палење олимпискиот оган зои милано к...</p>
-
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 3 часа</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="sport-манифестацијата-за-палење-на-олимпискиот-оган-во-античка-summary-32724.html"
+                    <a href="sport-френк-по-поразот-од-арсенал-вреди-да-се-размисли-од-каде-summary-32758.html"
                        class="hover:underline">
                        <span>2</span> вести
                     </a>
@@ -317,288 +775,504 @@
             </div>
             <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
                 <span>
-                    <a href="sport-манифестацијата-за-палење-на-олимпискиот-оган-во-античка-summary-32724.html"
+                    <a href="sport-френк-по-поразот-од-арсенал-вреди-да-се-размисли-од-каде-summary-32758.html"
                        class="hover:underline">сумирано</a>
                 </span>
             </div>
         </div>
     </div>
 </div>
+                            
+                        </div>
                         
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
 
-    <!-- Thumbnail -->
-    <a href="sport-среќни-влт-вести-супер-милионер-во-драчево-освоени-5-765-210-summary-32704.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32704.webp"
-                 alt="СРЕЌНИ ВЛТ ВЕСТИ: СУПЕР МИЛИОНЕР ВО ДРАЧЕВО, ОСВОЕНИ 5.765.210 ДЕНАРИ" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
+                        <!-- PAGINATION (only at bottom) -->
+                        <div class="flex justify-center mt-6">
+    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
 
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-среќни-влт-вести-супер-милионер-во-драчево-освоени-5-765-210-summary-32704.html"
-               class="hover:underline">СРЕЌНИ ВЛТ ВЕСТИ: СУПЕР МИЛИОНЕР ВО ДРАЧЕВО, ОСВОЕНИ 5.765.210 ДЕНАРИ</a>
-        </h3>
+        <!-- Previous -->
+        <a href="sports.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Previous">&laquo;</a>
 
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> видеолотарија касинос австрија исплати 13. денари играчите влт терминалите ширум македонија : 1 супер милионер џекпот исплатени 6. денари, 4 милионер џекпот добивки вкупен изно...</p>
+        <!-- Page numbers (max 10) -->
+        
+            
+                <a href="sports.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">1</a>
+            
+                <a href="sports-page-2.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">2</a>
+            
+                <a href="sports-page-3.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">3</a>
+            
+                <a href="sports-page-4.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">4</a>
+            
+                <a href="sports-page-5.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">5</a>
+            
+                <a href="sports-page-6.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">6</a>
+            
+                <a href="sports-page-7.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">7</a>
+            
+                <a href="sports-page-8.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">8</a>
+            
+                <a href="sports-page-9.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">9</a>
+            
+                <a href="sports-page-10.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">10</a>
+            
+        
 
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 4 часа</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="sport-среќни-влт-вести-супер-милионер-во-драчево-освоени-5-765-210-summary-32704.html"
-                       class="hover:underline">
-                       <span>2</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="sport-среќни-влт-вести-супер-милионер-во-драчево-освоени-5-765-210-summary-32704.html"
-                       class="hover:underline">сумирано</a>
-                </span>
+        <!-- Next -->
+        <a href="sports-page-3.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Next">&raquo;</a>
+    </nav>
+</div>
+                    </div>
+
+                    <!-- SIDEBAR -->
+                    <div class="lg:col-span-1 flex flex-col gap-6">
+                        <!-- Rotating Category Ad -->
+                        <div id="rotating-ad-container-category"
+                             class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
+                            <a id="rotating-ad-link-category"
+                               href="#"
+                               class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden">
+                            </a>
+                        </div>
+
+                        <!-- Secondary Spotlight Ad -->
+                        <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg overflow-hidden">
+                            <a href="marketing.html"
+                               class="block w-full"
+                               target="_blank"
+                               rel="noopener">
+                                <img src="https://placehold.co/150x300/800000/ffffff?text=Your+Ad+Here"
+                                     class="w-full h-auto object-cover"/>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+
+        <!-- ======================= -->
+        <!-- MOBILE LAYOUT (< lg)    -->
+        <!-- ======================= -->
+        <div class="block lg:hidden">
+            <div class="max-w-3xl mx-auto w-full">
+                <main class="p-2 sm:p-4 flex flex-col gap-6">
+                    <!-- Top Ad Banner -->
+                    <div id="mobile-ad-container-top" class="mb-4">
+                        <a id="mobile-ad-link-top" href="#"
+                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                    </div>
+
+                    <!-- Category header -->
+                    <div class="flex items-center justify-between border-b pb-1 theme-border-color">
+                        <div class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl">
+                            <span>Спорт</span>
+                        </div>
+                    </div>
+
+                    <!-- Articles list -->
+                    <div class="flex flex-col divide-y theme-border-color mt-2">
                         
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                <a href="sport-илиевски-пред-почетокот-на-подготовките-сега-сме-поискусни-summary-32857.html"
+                                   class="flex gap-3">
+                                    <!-- Thumbnail -->
+                                    <img src="images/cache/summary-32857.webp"
+                                         alt="Илиевски пред почетокот на подготовките: „Сега сме поискусни, но нема да менуваме многу работи“"
+                                         class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-    <!-- Thumbnail -->
-    <a href="sport-видео-меси-со-гол-и-хет-трик-асистенции-го-однесе-интер-во-summary-32705.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32705.webp"
-                 alt="(Видео) Меси со гол и хет-трик асистенции го однесе Интер во финалето на Истокот" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
+                                    <!-- Content -->
+                                    <div class="flex flex-col flex-1">
+                                        <!-- Title -->
+                                        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Илиевски пред почетокот на подготовките: „Сега сме поискусни, но нема да менуваме многу работи“</h3>
 
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-видео-меси-со-гол-и-хет-трик-асистенции-го-однесе-интер-во-summary-32705.html"
-               class="hover:underline">(Видео) Меси со гол и хет-трик асистенции го однесе Интер во финалето на Истокот</a>
-        </h3>
+                                        <!-- Snippet -->
+                                        <p class="theme-text-secondary text-xs"> надополнети играчи поискусни, значи работи менуваат, значи играчите имаат носено поинакви мечеви...</p>
 
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> искусниот фудбалер донесе водство интер 19 тата минута додавање силвети.  мрежата затресоа силвети двапати аљенде акциите започнати меси.  ванкувер вајткепс пласираа финалето з...</p>
+                                        <!-- Meta -->
+                                        <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                            <span>
+                                                <span>пред 5 часа</span>
+                                            </span>
+                                            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                <span>
+                                                    <span class="font-semibold">2</span>
+                                                    вести
+                                                </span>
+                                            </div>
+                                            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                <span>сумирано</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
 
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 4 часа</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="sport-видео-меси-со-гол-и-хет-трик-асистенции-го-однесе-интер-во-summary-32705.html"
-                       class="hover:underline">
-                       <span>2</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="sport-видео-меси-со-гол-и-хет-трик-асистенции-го-однесе-интер-во-summary-32705.html"
-                       class="hover:underline">сумирано</a>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
+                            <!-- Mid Ad Banner after 5th item -->
+                            
                         
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                <a href="sport-винисиус-може-да-го-напушти-реал-на-зима-клубови-од-премиер-summary-32831.html"
+                                   class="flex gap-3">
+                                    <!-- Thumbnail -->
+                                    <img src="images/cache/summary-32831.webp"
+                                         alt="Винисиус може да го напушти Реал на зима, клубови од Премиер лигата се заинтересирани за Бразилецот"
+                                         class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-    <!-- Thumbnail -->
-    <a href="sport-од-еден-играч-и-неговиот-менаџер-на-мурињо-му-побелела-summary-32706.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32706.webp"
-                 alt="Од еден играч и неговиот менаџер на Мурињо му побелела косата" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
+                                    <!-- Content -->
+                                    <div class="flex flex-col flex-1">
+                                        <!-- Title -->
+                                        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Винисиус може да го напушти Реал на зима, клубови од Премиер лигата се заинтересирани за Бразилецот</h3>
 
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-од-еден-играч-и-неговиот-менаџер-на-мурињо-му-побелела-summary-32706.html"
-               class="hover:underline">Од еден играч и неговиот менаџер на Мурињо му побелела косата</a>
-        </h3>
+                                        <!-- Snippet -->
+                                        <p class="theme-text-secondary text-xs"> реал мадрид, винисиус освои три титули шпанското првенство, куп кралот, три суперкупа шпанија ли...</p>
 
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> дијара одигра 96 натпревари водство жозе мурињо време неговиот престој челзи, реал мадрид.  португалскиот тренер зборуваше проблемите имал менаџерот ласана диара време неговиот...</p>
+                                        <!-- Meta -->
+                                        <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                            <span>
+                                                <span>пред 5 часа</span>
+                                            </span>
+                                            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                <span>
+                                                    <span class="font-semibold">2</span>
+                                                    вести
+                                                </span>
+                                            </div>
+                                            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                <span>сумирано</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
 
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 4 часа</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="sport-од-еден-играч-и-неговиот-менаџер-на-мурињо-му-побелела-summary-32706.html"
-                       class="hover:underline">
-                       <span>2</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="sport-од-еден-играч-и-неговиот-менаџер-на-мурињо-му-побелела-summary-32706.html"
-                       class="hover:underline">сумирано</a>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
+                            <!-- Mid Ad Banner after 5th item -->
+                            
                         
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                <a href="sport-киву-четири-порази-во-12-натпревари-се-премногу-summary-32819.html"
+                                   class="flex gap-3">
+                                    <!-- Thumbnail -->
+                                    <img src="images/cache/summary-32819.webp"
+                                         alt="Киву: Четири порази во 12 натпревари се премногу"
+                                         class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-    <!-- Thumbnail -->
-    <a href="sport-крос-ги-избра-најдобрите-11-на-сите-времиња-summary-32689.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32689.webp"
-                 alt="Крос ги избра најдобрите 11 на сите времиња" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
+                                    <!-- Content -->
+                                    <div class="flex flex-col flex-1">
+                                        <!-- Title -->
+                                        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Киву: Четири порази во 12 натпревари се премногу</h3>
 
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-крос-ги-избра-најдобрите-11-на-сите-времиња-summary-32689.html"
-               class="hover:underline">Крос ги избра најдобрите 11 на сите времиња</a>
-        </h3>
+                                        <!-- Snippet -->
+                                        <p class="theme-text-secondary text-xs"> тренерот интер, кристијан киву, изјави задоволен пристапот ангажманот неговиот тим натпреварот п...</p>
 
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> кроос, започна кариера баерн, пресели реал мадрид 2014 година формираше најсилните тандеми средниот ред лука модриќ, збогува фудбалот минатата година.  дресот германија, крос с...</p>
+                                        <!-- Meta -->
+                                        <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                            <span>
+                                                <span>пред 6 часа</span>
+                                            </span>
+                                            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                <span>
+                                                    <span class="font-semibold">2</span>
+                                                    вести
+                                                </span>
+                                            </div>
+                                            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                <span>сумирано</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
 
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 4 часа</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="sport-крос-ги-избра-најдобрите-11-на-сите-времиња-summary-32689.html"
-                       class="hover:underline">
-                       <span>2</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="sport-крос-ги-избра-најдобрите-11-на-сите-времиња-summary-32689.html"
-                       class="hover:underline">сумирано</a>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
+                            <!-- Mid Ad Banner after 5th item -->
+                            
                         
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                <a href="sport-артета-арсенал-доминираше-над-тотенхем-езе-можеше-да-summary-32816.html"
+                                   class="flex gap-3">
+                                    <!-- Thumbnail -->
+                                    <img src="images/cache/summary-32816.webp"
+                                         alt="Артета: Арсенал доминираше над Тотенхем, Езе можеше да постигне четири или пет гола"
+                                         class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-    <!-- Thumbnail -->
-    <a href="sport-харден-првиот-нба-играч-кој-постави-рекорд-во-постигнување-summary-32619.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32619.webp"
-                 alt="Харден првиот НБА играч кој постави рекорд во постигнување поени со два различни тима" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
+                                    <!-- Content -->
+                                    <div class="flex flex-col flex-1">
+                                        <!-- Title -->
+                                        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Артета: Арсенал доминираше над Тотенхем, Езе можеше да постигне четири или пет гола</h3>
 
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-харден-првиот-нба-играч-кој-постави-рекорд-во-постигнување-summary-32619.html"
-               class="hover:underline">Харден првиот НБА играч кој постави рекорд во постигнување поени со два различни тима</a>
-        </h3>
+                                        <!-- Snippet -->
+                                        <p class="theme-text-secondary text-xs"> следниот натпревар арсенал челзи гостински терен 30 ноември 13. коло, тотенхем домаќин фулам 29 ...</p>
 
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> победата 131:116 шарлот хорнетс, харден синоќа постигна 55 поени, најмногу натпревар историјата клиперс.  ѕвездата лос анџелес клиперс, џејмс харден, стана првиот кошаркар нба ...</p>
+                                        <!-- Meta -->
+                                        <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                            <span>
+                                                <span>пред 6 часа</span>
+                                            </span>
+                                            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                <span>
+                                                    <span class="font-semibold">2</span>
+                                                    вести
+                                                </span>
+                                            </div>
+                                            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                <span>сумирано</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
 
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 14 часа</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="sport-харден-првиот-нба-играч-кој-постави-рекорд-во-постигнување-summary-32619.html"
-                       class="hover:underline">
-                       <span>3</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="sport-харден-првиот-нба-играч-кој-постави-рекорд-во-постигнување-summary-32619.html"
-                       class="hover:underline">сумирано</a>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
+                            <!-- Mid Ad Banner after 5th item -->
+                            
                         
-                            <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                <a href="sport-ливерпул-на-слот-урива-негативни-рекорди-summary-32808.html"
+                                   class="flex gap-3">
+                                    <!-- Thumbnail -->
+                                    <img src="images/cache/summary-32808.webp"
+                                         alt="Ливерпул на Слот урива негативни рекорди"
+                                         class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
 
-    <!-- Thumbnail -->
-    <a href="sport-видео-реал-се-спаси-од-пораз-во-елче-за-судењето-повторно-ќе-summary-32636.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-32636.webp"
-                 alt="(Видео) Реал се спаси од пораз во Елче, за судењето повторно ќе има жестоки дебати" class="w-24 h-16 object-cover rounded-lg"/>
-        </picture>
-    </a>
+                                    <!-- Content -->
+                                    <div class="flex flex-col flex-1">
+                                        <!-- Title -->
+                                        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Ливерпул на Слот урива негативни рекорди</h3>
 
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-видео-реал-се-спаси-од-пораз-во-елче-за-судењето-повторно-ќе-summary-32636.html"
-               class="hover:underline">(Видео) Реал се спаси од пораз во Елче, за судењето повторно ќе има жестоки дебати</a>
-        </h3>
+                                        <!-- Snippet -->
+                                        <p class="theme-text-secondary text-xs"> ливерпул сезонава шанси лигата шампионите, бидејќи премиер лигата, клуб одбранил титулата 18 аку...</p>
 
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> реал изедначи 87 та минута, голот претходеше очигледен прекршок голманот елче, ињаки пења.  алеш фебас доведе тим водство 53 та минута, имаа предноста 78 та минута изедначи дин...</p>
+                                        <!-- Meta -->
+                                        <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                            <span>
+                                                <span>пред 6 часа</span>
+                                            </span>
+                                            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                <span>
+                                                    <span class="font-semibold">2</span>
+                                                    вести
+                                                </span>
+                                            </div>
+                                            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                <span>сумирано</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
 
-        <!-- Meta info -->
-        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
-            <span>
-                <span>пред 13 часа</span>
-            </span>
-            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
-                <span>
-                    <a href="sport-видео-реал-се-спаси-од-пораз-во-елче-за-судењето-повторно-ќе-summary-32636.html"
-                       class="hover:underline">
-                       <span>3</span> вести
-                    </a>
-                </span>
-            </div>
-            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
-                <span>
-                    <a href="sport-видео-реал-се-спаси-од-пораз-во-елче-за-судењето-повторно-ќе-summary-32636.html"
-                       class="hover:underline">сумирано</a>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
+                            <!-- Mid Ad Banner after 5th item -->
+                            <div id="mobile-ad-container-mid" class="mt-8">
+                                <a id="mobile-ad-link-mid" href="#"
+                                   class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                            </div>
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                <a href="sport-видео-шпански-медиуми-судиите-го-спасија-реал-од-шокантен-summary-32719.html"
+                                   class="flex gap-3">
+                                    <!-- Thumbnail -->
+                                    <img src="images/cache/summary-32719.webp"
+                                         alt="(Видео) Шпански медиуми: Судиите го спасија Реал од шокантен пораз"
+                                         class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                    <!-- Content -->
+                                    <div class="flex flex-col flex-1">
+                                        <!-- Title -->
+                                        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">(Видео) Шпански медиуми: Судиите го спасија Реал од шокантен пораз</h3>
+
+                                        <!-- Snippet -->
+                                        <p class="theme-text-secondary text-xs"> елче поведе 84 та минута родригес, 87 та минута уше контраверзна судиска одлука.  прво, реал сти...</p>
+
+                                        <!-- Meta -->
+                                        <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                            <span>
+                                                <span>пред 9 часа</span>
+                                            </span>
+                                            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                <span>
+                                                    <span class="font-semibold">3</span>
+                                                    вести
+                                                </span>
+                                            </div>
+                                            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                <span>сумирано</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad Banner after 5th item -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                <a href="sport-ујп-бара-трпение-од-граѓаните-ќе-доцни-исплатата-на-мој-ддв-summary-32964.html"
+                                   class="flex gap-3">
+                                    <!-- Thumbnail -->
+                                    <img src="images/cache/summary-32964.webp"
+                                         alt="УЈП бара трпение од граѓаните, ќе доцни исплатата на Мој ДДВ"
+                                         class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                    <!-- Content -->
+                                    <div class="flex flex-col flex-1">
+                                        <!-- Title -->
+                                        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">УЈП бара трпение од граѓаните, ќе доцни исплатата на Мој ДДВ</h3>
+
+                                        <!-- Snippet -->
+                                        <p class="theme-text-secondary text-xs"> граѓаните редовно скенираат фискалните сметки апликацијата мој ддв добијат повратните износи дир...</p>
+
+                                        <!-- Meta -->
+                                        <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                            <span>
+                                                <span><span style='color:#e27564;'>тукушто објавено</span></span>
+                                            </span>
+                                            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                <span>
+                                                    <span class="font-semibold">2</span>
+                                                    вести
+                                                </span>
+                                            </div>
+                                            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                <span>сумирано</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad Banner after 5th item -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                <a href="sport-реал-мадрид-се-извини-за-користењето-на-комеморативно-видео-summary-32773.html"
+                                   class="flex gap-3">
+                                    <!-- Thumbnail -->
+                                    <img src="images/cache/summary-32773.webp"
+                                         alt="Реал Мадрид се извини за користењето на комеморативно видео со Силва од Елче наместо братот на Диого Жота"
+                                         class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                    <!-- Content -->
+                                    <div class="flex flex-col flex-1">
+                                        <!-- Title -->
+                                        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Реал Мадрид се извини за користењето на комеморативно видео со Силва од Елче наместо братот на Диого Жота</h3>
+
+                                        <!-- Snippet -->
+                                        <p class="theme-text-secondary text-xs"> генералното собрание мадридскиот клуб недела, 23 ноември, наместо фотографија андре тешеира силв...</p>
+
+                                        <!-- Meta -->
+                                        <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                            <span>
+                                                <span>пред 7 часа</span>
+                                            </span>
+                                            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                <span>
+                                                    <span class="font-semibold">2</span>
+                                                    вести
+                                                </span>
+                                            </div>
+                                            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                <span>сумирано</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad Banner after 5th item -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                <a href="sport-видео-дончиќ-доминираше-против-јута-торонто-ја-продолжи-summary-32690.html"
+                                   class="flex gap-3">
+                                    <!-- Thumbnail -->
+                                    <img src="images/cache/summary-32690.webp"
+                                         alt="(Видео) Дончиќ доминираше против Јута, Торонто ја продолжи победничката серија"
+                                         class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                    <!-- Content -->
+                                    <div class="flex flex-col flex-1">
+                                        <!-- Title -->
+                                        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">(Видео) Дончиќ доминираше против Јута, Торонто ја продолжи победничката серија</h3>
+
+                                        <!-- Snippet -->
+                                        <p class="theme-text-secondary text-xs"> словенечкиот ас најефикасен 33 поени 11 скока, ривс 22 поени 10 скока, леброн џејмс додаде 17 ос...</p>
+
+                                        <!-- Meta -->
+                                        <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                            <span>
+                                                <span>пред 10 часа</span>
+                                            </span>
+                                            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                <span>
+                                                    <span class="font-semibold">3</span>
+                                                    вести
+                                                </span>
+                                            </div>
+                                            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                <span>сумирано</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad Banner after 5th item -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
+                                <a href="sport-френк-по-поразот-од-арсенал-вреди-да-се-размисли-од-каде-summary-32758.html"
+                                   class="flex gap-3">
+                                    <!-- Thumbnail -->
+                                    <img src="images/cache/summary-32758.webp"
+                                         alt="Френк по поразот од Арсенал: Вреди да се размисли од каде почнавме, минатата година завршивме на 17. место"
+                                         class="w-20 h-20 object-cover rounded-md flex-shrink-0"/>
+
+                                    <!-- Content -->
+                                    <div class="flex flex-col flex-1">
+                                        <!-- Title -->
+                                        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Френк по поразот од Арсенал: Вреди да се размисли од каде почнавме, минатата година завршивме на 17. место</h3>
+
+                                        <!-- Snippet -->
+                                        <p class="theme-text-secondary text-xs"> место табелата англиската премиер лига, 18 бода 12 натпревари.  мислам фер каже разочарани незад...</p>
+
+                                        <!-- Meta -->
+                                        <div class="theme-text-secondary text-xs mt-2 flex items-center gap-2">
+                                            <span>
+                                                <span>пред 8 часа</span>
+                                            </span>
+                                            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                                                <span>
+                                                    <span class="font-semibold">2</span>
+                                                    вести
+                                                </span>
+                                            </div>
+                                            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                                                <span>сумирано</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad Banner after 5th item -->
+                            
                         
                     </div>
-                    
 
-                    <!-- PAGINATION (only at bottom) -->
+                    <!-- Pagination -->
                     <div class="flex justify-center mt-6">
     <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
 
@@ -648,31 +1322,13 @@
            aria-label="Next">&raquo;</a>
     </nav>
 </div>
-
-                </div>
-
-                    <!-- SIDEBAR -->
-                <div class="lg:col-span-1 flex flex-col gap-6">
-                    <!-- Rotating Ad -->
-                    <div id="rotating-ad-container-category"
-                         class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
-                        <a id="rotating-ad-link-category"
-                           href="#"
-                           class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden">
-                        </a>
-                    </div>
-
-                    <!-- Secondary Spotlight Ad -->
-                    <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
-                        <a href="marketing.html"
-                           class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden"
-                           style="background-image: url(&#39;https://placehold.co/150x300/800000/ffffff?text=Your+Ad+Here&#39;);">
-                        </a>
-                    </div>
-                </div>
+                </main>
             </div>
         </div>
-    </div>
+
+    </main>
+
+    <!-- Footer -->
     <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
@@ -723,6 +1379,8 @@
 <script>
     /*<![CDATA[*/
     window.categorySpotlightAdsData = [{"id":"categorySpotlightAd1","imageUrl":"https:\/\/placehold.co\/800x450\/4B0082\/ffffff?text=Your+Ad+Here+1","title":"Explore More!","description":"Find in-depth analysis.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"category_spotlight","processedUrl":"marketing.html"},{"id":"categorySpotlightAd2","imageUrl":"https:\/\/placehold.co\/800x450\/8A2BE2\/FFFFFF?text=Your+Ad+Here+2","title":"Deep Dive!","description":"Comprehensive coverage.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"category_spotlight","processedUrl":"marketing.html"},{"id":"categorySpotlightAd3","imageUrl":"https:\/\/placehold.co\/800x450\/DA70D6\/000000?text=Your+Ad+Here+3","title":"Latest Updates!","description":"Stay informed.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"category_spotlight","processedUrl":"marketing.html"}];
+    window.mobileTopAdsData = [{"id":"mobileTopAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Your+Mobile+Ad+Here+1","title":"Mobile Exclusive Offer","description":"Special deal for mobile users.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"},{"id":"mobileTopAd2","imageUrl":"https:\/\/placehold.co\/600x75\/DAF7A6\/000000?text=Your+Mobile+Ad+Here+2","title":"New Mobile Feature","description":"Check out our new mobile feature.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"}];
+    window.mobileMidAdsData = [{"id":"mobileMidAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Your+Mobile+Ad+Here+1","title":"Don't Miss This!","description":"Another great offer just for you.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"},{"id":"mobileMidAd2","imageUrl":"https:\/\/placehold.co\/600x75\/C70039\/FFFFFF?text=Your+Mobile+Ad+Here+2","title":"Scroll-Stopping Savings","description":"Great savings await.","url":"marketing.html","startDate":"2025-01-01","endDate":"2025-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"}];
     /*]]>*/
 </script>
 
@@ -781,7 +1439,6 @@
 </script>
 
 
-    <script src="js/device-switcher.js" defer></script>
     <script src="js/mobile-nav.js" defer></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.2/lunr.min.js" defer></script>

@@ -44,15 +44,16 @@
         class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
         style='font-family: Newsreader, "Noto Sans", sans-serif;'
 >
-    <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+    <!-- ======================= -->
+    <!-- DESKTOP HEADER (lg+)    -->
+    <!-- ======================= -->
+    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div>
-            <!-- Include common header and navigation fragment -->
-            <div>
     <!-- Header section containing title and icons -->
     <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
         <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <span>БЕЛАТА КУЌА: Јужна Африка одбива да го пренесе претседателството на Г20 на САД поради бојкотот на самитот</span>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>14:53, 24.11.2025</span></p>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">обновено <span>20:26, 24.11.2025</span></p>
         </h2>
         <div class="flex w-24 items-center justify-end">
             <!-- NEW: Search Icon (Desktop) -->
@@ -62,13 +63,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                 </svg>
             </button>
-            <!-- NEW: Device Switcher Icon -->
-            <button id="device-switcher-button" aria-label="Switch to mobile/desktop view"
-                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
-                </svg>
-            </button>
+
             <!-- Weather Link Icon (Thermometer) -->
             <a href="prognoza.html" aria-label="Weather Forecast"
                class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
@@ -150,121 +145,329 @@
         
     </div>
 </div>
+    </div>
 
-            <!-- Article Detail Content -->
-            <div class="py-8">
-                <!-- Article Title -->
-                <h1 class="theme-text-primary text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-8">БЕЛАТА КУЌА: Јужна Африка одбива да го пренесе претседателството на Г20 на САД поради бојкотот на самитот</h1>
+    <!-- ======================= -->
+    <!-- MOBILE HEADER (< lg)    -->
+    <!-- ======================= -->
+    <div class="block lg:hidden max-w-3xl mx-auto w-full">
+        <div>
+    <!-- Mobile Header -->
+    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger-menu-button" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
 
-                <!-- Main Content Block: Two Columns on Medium+ Screens -->
-                <div class="flex flex-col md:flex-row md:gap-8 mb-8">
+        <!-- Centered Title/Logo -->
+        <div class="flex-1 text-center">
+            <h1 class="theme-text-primary text-2xl font-bold uppercase tracking-wider">БЕЛАТА КУЌА: Јужна Африка одбива да го пренесе претседателството на Г20 на САД поради бојкотот на самитот</h1>
+        </div>
 
-                    <!-- Left Column: Image -->
-                    <div class="w-full md:w-2/5 flex-shrink-0 mb-6 md:mb-0">
-                        <picture>
-                        <img src="images/cache/summary-32307.webp" alt="БЕЛАТА КУЌА: Јужна Африка одбива да го пренесе претседателството на Г20 на САД поради бојкотот на самитот"
-                             class="w-full h-auto object-cover rounded-lg shadow-md"/>
-                        </picture>
+        <!-- Search Icon -->
+        <button id="search-button-mobile" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Slide-out Menu -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
+        <div class="p-4">
+            <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
+            <nav class="flex flex-col gap-2">
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
                     </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
 
-                    <!-- Right Column: Summary and Metadata -->
-                    <div class="w-full md:w-3/5">
-                        <div class="prose max-w-none theme-text-secondary text-base leading-relaxed">
-                            <ul class="list-disc pl-5 space-y-2">
-                                <li> состанокот јоханесбург првиот самит г20 одржува африка</li>
-                                <li> првиот ден самитот г20 наведено јужна африка предаде претседателството групата сад, поради бојкот учествуваат дискусиите.</li>
-                                <li> декларацијата усвоена спротивставувањето сад, бојкотираат самитот јужна африка поради несогласувањата помеѓу вашингтон јоханесбург.</li>
-                            </ul>
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="magazine-intimacy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Интима</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Sources Section (Full Width) -->
-                <div class="mt-12 p-4 rounded-lg theme-bg-secondary border theme-border-color shadow-sm">
-                    <h3 class="theme-text-primary text-xl font-bold mb-4">Извори</h3>
-                    <ul class="flex flex-col gap-2">
-                        <li class="pb-2 border-b theme-border-color last:border-b-0">
-                            <a href="https://kurir.mk/vesti/svet/g20-povikuva-na-praveden-seopfaten-i-traen-mir-vo-sudan-dr-kongo-ukraina-i-palestinskite-teritorii/" target="_blank" rel="noopener noreferrer"
-                               class="text-blue-600 hover:underline text-base font-bold leading-tight">Г20 повикува на праведен, сеопфатен и траен мир во Судан, ДР Конго, Украина и палестинските територии</a>
-                            <p class="theme-text-secondary text-sm">Извор: <span>kurir.mk</span>
-                            </p>
-                        </li>
-                        <li class="pb-2 border-b theme-border-color last:border-b-0">
-                            <a href="https://novamakedonija.com.mk/svet/g20-povikuva-na-praveden-seopfaten-i-traen-mir-vo-sudan-dr-kongo-ukraina-i-palestinskite-teritorii/" target="_blank" rel="noopener noreferrer"
-                               class="text-blue-600 hover:underline text-base font-bold leading-tight">Г20 повикува на праведен, сеопфатен и траен мир во Судан, ДР Конго, Украина и палестинските територии</a>
-                            <p class="theme-text-secondary text-sm">Извор: <span>novamakedonija.com.mk</span>
-                            </p>
-                        </li>
-                        <li class="pb-2 border-b theme-border-color last:border-b-0">
-                            <a href="https://kanal5.com.mk/belata-kukja-juzhna-afrika-gi-potkopuva-principite-na-g20-so-toa-shto-ne-go-predava-pretsedatelstvoto-na-sad/a728345" target="_blank" rel="noopener noreferrer"
-                               class="text-blue-600 hover:underline text-base font-bold leading-tight">Белата куќа: Јужна Африка ги поткопува принципите на Г20 со тоа што не го предава претседателството на САД</a>
-                            <p class="theme-text-secondary text-sm">Извор: <span>kanal5.com.mk</span>
-                            </p>
-                        </li>
-                        <li class="pb-2 border-b theme-border-color last:border-b-0">
-                            <a href="https://libertas.mk/belata-ku-a-uzhna-afrika-gi-potkopuva-principite-na-g20-so-toa-shto-ne-go-predava-pretsedatelstvoto-na-sad/" target="_blank" rel="noopener noreferrer"
-                               class="text-blue-600 hover:underline text-base font-bold leading-tight">Белата куќа: Јужна Африка ги поткопува принципите на Г20 со тоа што не го предава претседателството на САД</a>
-                            <p class="theme-text-secondary text-sm">Извор: <span>libertas.mk</span>
-                            </p>
-                        </li>
-                        <li class="pb-2 border-b theme-border-color last:border-b-0">
-                            <a href="https://www.brif.mk/belata-kukja-juzhna-afrika-gi-potkopuva-principite-na-g20-so-toa-shto-ne-go-predava-pretsedatelstvoto-na-sad/" target="_blank" rel="noopener noreferrer"
-                               class="text-blue-600 hover:underline text-base font-bold leading-tight">Белата куќа: Јужна Африка ги поткопува принципите на Г20 со тоа што не го предава претседателството на САД</a>
-                            <p class="theme-text-secondary text-sm">Извор: <span>brif.mk</span>
-                            </p>
-                        </li>
-                        <li class="pb-2 border-b theme-border-color last:border-b-0">
-                            <a href="https://denesen.mk/belata-kukja-juzna-afrika-odbiva-da-go-prenese-pretsedatelstvoto-na-g20-na-sad-poradi-bojkotot-na-samitot/" target="_blank" rel="noopener noreferrer"
-                               class="text-blue-600 hover:underline text-base font-bold leading-tight">БЕЛАТА КУЌА: Јужна Африка одбива да го пренесе претседателството на Г20 на САД поради бојкотот на самитот</a>
-                            <p class="theme-text-secondary text-sm">Извор: <span>denesen.mk</span>
-                            </p>
-                        </li>
-                    </ul>
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="youtube.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+
+                    <!-- Expandable item -->
+                    
                 </div>
 
-                <!-- Explore More Articles Section (Full Width) -->
-                <div class="mt-12">
-                    <h2 class="theme-text-primary text-xl font-bold mb-4">Повеќе статии</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div class="flex flex-col items-stretch justify-start rounded-lg border theme-border-color p-4 theme-bg-secondary shadow-sm">
-                            <a href="macedonia-бебе-почина-во-кичевската-болница-и-покрај-обидите-за-summary-32780.html"
-                               class="w-full h-[200px] max-w-[300px] bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden mx-auto"
-                               style="background-image: url(&#39;images/cache/summary-32780.webp&#39;);">
-                            </a>
-                            <div class="flex w-full grow flex-col items-stretch justify-center gap-1 py-4">
-                                <a href="macedonia-бебе-почина-во-кичевската-болница-и-покрај-обидите-за-summary-32780.html"
-                                   class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] hover:underline">Бебе почина во кичевската болница и покрај обидите за реанимација</a>
-                                <p class="theme-text-secondary text-sm font-normal leading-normal">Sources: <span>8</span></p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col items-stretch justify-start rounded-lg border theme-border-color p-4 theme-bg-secondary shadow-sm">
-                            <a href="macedonia-јаневска-постигнавме-широк-консензус-во-кој-правец-ќе-summary-32750.html"
-                               class="w-full h-[200px] max-w-[300px] bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden mx-auto"
-                               style="background-image: url(&#39;images/cache/summary-32750.webp&#39;);">
-                            </a>
-                            <div class="flex w-full grow flex-col items-stretch justify-center gap-1 py-4">
-                                <a href="macedonia-јаневска-постигнавме-широк-консензус-во-кој-правец-ќе-summary-32750.html"
-                                   class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] hover:underline">Јаневска: Постигнавме широк консензус во кој правец ќе делуваме за развој на македонското образование во иднина</a>
-                                <p class="theme-text-secondary text-sm font-normal leading-normal">Sources: <span>7</span></p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col items-stretch justify-start rounded-lg border theme-border-color p-4 theme-bg-secondary shadow-sm">
-                            <a href="macedonia-бензините-поевтини-за-половина-денар-дизелот-поскап-за-исто-summary-32827.html"
-                               class="w-full h-[200px] max-w-[300px] bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden mx-auto"
-                               style="background-image: url(&#39;images/cache/summary-32827.webp&#39;);">
-                            </a>
-                            <div class="flex w-full grow flex-col items-stretch justify-center gap-1 py-4">
-                                <a href="macedonia-бензините-поевтини-за-половина-денар-дизелот-поскап-за-исто-summary-32827.html"
-                                   class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] hover:underline">Бензините поевтини за половина денар, дизелот поскап за исто толку</a>
-                                <p class="theme-text-secondary text-sm font-normal leading-normal">Sources: <span>7</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <hr class="my-3 theme-border-color">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
+                </button>
+            </nav>
+
         </div>
     </div>
 
+    <!-- Hidden desktop theme toggle button to leverage existing script -->
+    <button id="theme-toggle" class="hidden"></button>
+</div>
+    </div>
+
+    <!-- ======================= -->
+    <!-- MAIN CONTENT            -->
+    <!-- ======================= -->
+    <main class="w-full">
+        <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+            <div>
+                <!-- Article Detail Content -->
+                <div class="py-8">
+                    <!-- Article Title -->
+                    <h1 class="theme-text-primary text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-8">БЕЛАТА КУЌА: Јужна Африка одбива да го пренесе претседателството на Г20 на САД поради бојкотот на самитот</h1>
+
+                    <!-- Main Content Block: Two Columns on Medium+ Screens -->
+                    <div class="flex flex-col md:flex-row md:gap-8 mb-8">
+
+                        <!-- Left Column: Image -->
+                        <div class="w-full md:w-2/5 flex-shrink-0 mb-6 md:mb-0">
+                            <picture>
+                                <img src="images/cache/summary-32307.webp" alt="БЕЛАТА КУЌА: Јужна Африка одбива да го пренесе претседателството на Г20 на САД поради бојкотот на самитот"
+                                     class="w-full h-auto object-cover rounded-lg shadow-md"/>
+                            </picture>
+                        </div>
+
+                        <!-- Right Column: Summary and Metadata -->
+                        <div class="w-full md:w-3/5">
+                            <div class="prose max-w-none theme-text-secondary text-base leading-relaxed">
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li> состанокот јоханесбург првиот самит г20 одржува африка</li>
+                                    <li> првиот ден самитот г20 наведено јужна африка предаде претседателството групата сад, поради бојкот учествуваат дискусиите.</li>
+                                    <li> декларацијата усвоена спротивставувањето сад, бојкотираат самитот јужна африка поради несогласувањата помеѓу вашингтон јоханесбург.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sources Section (Full Width) -->
+                    <div class="mt-12 p-4 rounded-lg theme-bg-secondary border theme-border-color shadow-sm">
+                        <h3 class="theme-text-primary text-xl font-bold mb-4">Извори</h3>
+                        <ul class="flex flex-col gap-2">
+                            <li class="pb-2 border-b theme-border-color last:border-b-0">
+                                <a href="https://kurir.mk/vesti/svet/g20-povikuva-na-praveden-seopfaten-i-traen-mir-vo-sudan-dr-kongo-ukraina-i-palestinskite-teritorii/" target="_blank" rel="noopener noreferrer"
+                                   class="text-blue-600 hover:underline text-base font-bold leading-tight">Г20 повикува на праведен, сеопфатен и траен мир во Судан, ДР Конго, Украина и палестинските територии</a>
+                                <p class="theme-text-secondary text-sm">
+                                    Извор: <span>kurir.mk</span>
+                                </p>
+                            </li>
+                            <li class="pb-2 border-b theme-border-color last:border-b-0">
+                                <a href="https://novamakedonija.com.mk/svet/g20-povikuva-na-praveden-seopfaten-i-traen-mir-vo-sudan-dr-kongo-ukraina-i-palestinskite-teritorii/" target="_blank" rel="noopener noreferrer"
+                                   class="text-blue-600 hover:underline text-base font-bold leading-tight">Г20 повикува на праведен, сеопфатен и траен мир во Судан, ДР Конго, Украина и палестинските територии</a>
+                                <p class="theme-text-secondary text-sm">
+                                    Извор: <span>novamakedonija.com.mk</span>
+                                </p>
+                            </li>
+                            <li class="pb-2 border-b theme-border-color last:border-b-0">
+                                <a href="https://kanal5.com.mk/belata-kukja-juzhna-afrika-gi-potkopuva-principite-na-g20-so-toa-shto-ne-go-predava-pretsedatelstvoto-na-sad/a728345" target="_blank" rel="noopener noreferrer"
+                                   class="text-blue-600 hover:underline text-base font-bold leading-tight">Белата куќа: Јужна Африка ги поткопува принципите на Г20 со тоа што не го предава претседателството на САД</a>
+                                <p class="theme-text-secondary text-sm">
+                                    Извор: <span>kanal5.com.mk</span>
+                                </p>
+                            </li>
+                            <li class="pb-2 border-b theme-border-color last:border-b-0">
+                                <a href="https://libertas.mk/belata-ku-a-uzhna-afrika-gi-potkopuva-principite-na-g20-so-toa-shto-ne-go-predava-pretsedatelstvoto-na-sad/" target="_blank" rel="noopener noreferrer"
+                                   class="text-blue-600 hover:underline text-base font-bold leading-tight">Белата куќа: Јужна Африка ги поткопува принципите на Г20 со тоа што не го предава претседателството на САД</a>
+                                <p class="theme-text-secondary text-sm">
+                                    Извор: <span>libertas.mk</span>
+                                </p>
+                            </li>
+                            <li class="pb-2 border-b theme-border-color last:border-b-0">
+                                <a href="https://www.brif.mk/belata-kukja-juzhna-afrika-gi-potkopuva-principite-na-g20-so-toa-shto-ne-go-predava-pretsedatelstvoto-na-sad/" target="_blank" rel="noopener noreferrer"
+                                   class="text-blue-600 hover:underline text-base font-bold leading-tight">Белата куќа: Јужна Африка ги поткопува принципите на Г20 со тоа што не го предава претседателството на САД</a>
+                                <p class="theme-text-secondary text-sm">
+                                    Извор: <span>brif.mk</span>
+                                </p>
+                            </li>
+                            <li class="pb-2 border-b theme-border-color last:border-b-0">
+                                <a href="https://denesen.mk/belata-kukja-juzna-afrika-odbiva-da-go-prenese-pretsedatelstvoto-na-g20-na-sad-poradi-bojkotot-na-samitot/" target="_blank" rel="noopener noreferrer"
+                                   class="text-blue-600 hover:underline text-base font-bold leading-tight">БЕЛАТА КУЌА: Јужна Африка одбива да го пренесе претседателството на Г20 на САД поради бојкотот на самитот</a>
+                                <p class="theme-text-secondary text-sm">
+                                    Извор: <span>denesen.mk</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Explore More Articles Section (Full Width) -->
+                    <div class="mt-12">
+                        <h2 class="theme-text-primary text-xl font-bold mb-4">Повеќе статии</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="flex flex-col items-stretch justify-start rounded-lg border theme-border-color p-4 theme-bg-secondary shadow-sm">
+                                <a href="world-фајненшл-тајмс-американскиот-мировен-план-за-украина-е-summary-32934.html"
+                                   class="w-full h-[200px] max-w-[300px] bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden mx-auto"
+                                   style="background-image: url(&#39;images/cache/summary-32934.webp&#39;)">
+                                </a>
+                                <div class="flex w-full grow flex-col items-stretch justify-center gap-1 py-4">
+                                    <a href="world-фајненшл-тајмс-американскиот-мировен-план-за-украина-е-summary-32934.html"
+                                       class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] hover:underline">Фајненшл тајмс: Американскиот мировен план за Украина е намален од 28 на 19 точки</a>
+                                    <p class="theme-text-secondary text-sm font-normal leading-normal">
+                                        Sources:
+                                        <span>10</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-stretch justify-start rounded-lg border theme-border-color p-4 theme-bg-secondary shadow-sm">
+                                <a href="economy-од-полноќ-нови-цени-на-горивата-summary-32960.html"
+                                   class="w-full h-[200px] max-w-[300px] bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden mx-auto"
+                                   style="background-image: url(&#39;images/cache/summary-32960.webp&#39;)">
+                                </a>
+                                <div class="flex w-full grow flex-col items-stretch justify-center gap-1 py-4">
+                                    <a href="economy-од-полноќ-нови-цени-на-горивата-summary-32960.html"
+                                       class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] hover:underline">Од полноќ нови цени на горивата</a>
+                                    <p class="theme-text-secondary text-sm font-normal leading-normal">
+                                        Sources:
+                                        <span>8</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-stretch justify-start rounded-lg border theme-border-color p-4 theme-bg-secondary shadow-sm">
+                                <a href="world-зеленски-мировните-преговори-мора-да-донесат-траен-мир-summary-32931.html"
+                                   class="w-full h-[200px] max-w-[300px] bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden mx-auto"
+                                   style="background-image: url(&#39;images/cache/summary-32931.webp&#39;)">
+                                </a>
+                                <div class="flex w-full grow flex-col items-stretch justify-center gap-1 py-4">
+                                    <a href="world-зеленски-мировните-преговори-мора-да-донесат-траен-мир-summary-32931.html"
+                                       class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] hover:underline">Зеленски: Мировните преговори мора да донесат траен мир</a>
+                                    <p class="theme-text-secondary text-sm font-normal leading-normal">
+                                        Sources:
+                                        <span>8</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Optional: simple fallback if article is null -->
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
     <footer class="theme-bg-secondary py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
         <!-- Disclaimer Text -->
@@ -377,7 +580,6 @@
 </script>
 
 
-    <script src="js/device-switcher.js" defer></script>
     <script src="js/mobile-nav.js" defer></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.2/lunr.min.js" defer></script>
