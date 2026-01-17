@@ -75,7 +75,7 @@
         <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
             <a href="index.html" class="hover:underline">DAY.MK</a>
             <p class="theme-text-secondary text-sm font-normal text-center pb-2">
-                обновено <span>23:08, 17.01.2026</span>
+                обновено <span>09:49, 29.01.2026</span>
             </p>
         </h2>
 
@@ -171,7 +171,7 @@
 
             <!-- Updated timestamp -->
             <p class="theme-text-secondary text-xs font-normal mt-0.5">
-                обновено <span>23:08, 17.01.2026</span>
+                обновено <span>09:49, 29.01.2026</span>
             </p>
         </div>
 
@@ -321,11 +321,29 @@
                 </div>
                 <div class="flex flex-col mt-1">
                     <!-- Simple item -->
-                    <a href="youtube.html"
-                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">YouTube</a>
+                    
 
                     <!-- Expandable item -->
-                    
+                    <div class="flex flex-col">
+                        <div class="flex items-center justify-between">
+                            <a href="youtube.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">YouTube</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="right-3">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="right-3">
+                            <a href="youtube-politics.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Политика</a><a href="youtube-podcast.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Подкаст</a>
+                        </div>
+                    </div>
                 </div>
 
                 <hr class="my-3 theme-border-color">
