@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="315">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pre-paint theme (prevents flash/blink) -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('theme');
+                var theme = saved ? saved :
+                    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                if (theme === 'dark') document.documentElement.classList.add('dark');
+                else document.documentElement.classList.remove('dark');
+            } catch (e) {}
+        })();
+    </script>
+
+    <!-- Title + favicon -->
+    <title>Day.mk - YouTube - СПорткаст - 🎙️СПорткаст EП18 | Булут: Кошарката ни беше замена за интернет и телевизија во 90-тите</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <!-- Fonts (for consistent menu sizing everywhere) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap" />
+
+    <!-- Meta Description -->
+    <meta name="description"
+          content="🎙️СПорткаст EП18 | Булут: Кошарката ни беше замена за интернет и телевизија во 90-тите"/>
+
+    <!-- Canonical URL (optional) -->
+    
+
+    <!-- Robots directives -->
+    <meta name="robots"
+          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+
+    <!-- Hreflang -->
+    
+
+    <!-- Basic Open Graph for non-article pages -->
+    <meta property="og:site_name" content="Day.mk" />
+    <meta property="og:locale" content="mk_MK" />
+    <meta property="og:title" content="Day.mk - YouTube - СПорткаст - 🎙️СПорткаст EП18 | Булут: Кошарката ни беше замена за интернет и телевизија во 90-тите" />
+    <meta property="og:description"
+          content="🎙️СПорткаст EП18 | Булут: Кошарката ни беше замена за интернет и телевизија во 90-тите"/>
+    <meta property="og:type" content="website" />
+    
+    <meta property="og:image" content="https://day.mk/assets/logo.png" />
+
+    <!-- Twitter card for non-article pages -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Day.mk - YouTube - СПорткаст - 🎙️СПорткаст EП18 | Булут: Кошарката ни беше замена за интернет и телевизија во 90-тите" />
+    <meta name="twitter:description"
+          content="🎙️СПорткаст EП18 | Булут: Кошарката ни беше замена за интернет и телевизија во 90-тите"/>
+    <meta name="twitter:image" content="https://day.mk/assets/logo.png" />
+
+    <!-- Tailwind + your CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="theme-bg-primary">
+<div
+        class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
+        style='font-family: Newsreader, "Noto Sans", sans-serif;'
+>
+    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+        <div>
+    <!-- Header section containing title and icons -->
+    <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
+            <a href="index.html" class="hover:underline">DAY.MK</a>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">
+                обновено <span>11:09, 22.02.2026</span>
+            </p>
+        </h2>
+
+        <div class="flex w-24 items-center justify-end">
+            <!-- NEW: Search Icon (Desktop) -->
+            <button id="search-button-desktop" aria-label="Open search"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </button>
+
+            <!-- Weather Link Icon (Thermometer) -->
+            <a href="prognoza.html" aria-label="Weather Forecast"
+               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
+                </svg>
+            </a>
+            <!-- Day/Night Mode Toggle Button -->
+            <button id="theme-toggle"
+                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+                    aria-label="Toggle dark mode"
+            >
+                <!-- Sun Icon (Light Mode) -->
+                <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <!-- Moon Icon (Dark Mode) -->
+                <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- "обновено" time now correctly positioned below the header, within the main content wrapper -->
+
+
+    <div class="pb-3 pt-4">
+        <!-- Main Navigation Tabs (split into left and right) -->
+        <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <!-- Left Navigation Items -->
+            <div class="flex gap-8">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="index.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Вести</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="sports.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="magazine.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
+                </a>
+            </div>
+            <!-- Right Navigation Items -->
+            <div class="flex gap-8">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="latest-news.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Најнови Вести</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="prognoza.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="radio.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="youtube.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">YouTube</p>
+                </a>
+            </div>
+        </div>
+        <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
+        
+        
+            <div class="flex border-b theme-border-color px-4 gap-4 overflow-x-auto whitespace-nowrap scrollbar-hide pt-2">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="youtube-politics.html">
+                    <p>Политика</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-[3px] theme-active-border theme-nav-text-active" href="youtube-podcast.html">
+                    <p>Подкаст</p>
+                </a>
+            </div>
+        
+    </div>
+</div>
+    </div>
+
+    <div class="block lg:hidden max-w-3xl mx-auto w-full">
+        <div>
+    <!-- Mobile Header -->
+    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger-menu-button" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Centered Title/Logo -->
+        <div class="flex-1 text-center leading-tight">
+            <a href="index.html" class="inline-block hover:underline">
+                <h1 class="theme-text-primary text-2xl font-bold uppercase tracking-wider">
+                    DAY.MK
+                </h1>
+            </a>
+
+            <!-- Updated timestamp -->
+            <p class="theme-text-secondary text-xs font-normal mt-0.5">
+                обновено <span>11:09, 22.02.2026</span>
+            </p>
+        </div>
+
+        <!-- Search Icon -->
+        <button id="search-button-mobile" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Slide-out Menu -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
+        <div class="p-4">
+            <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
+            <nav class="flex flex-col gap-2">
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="magazine-intimacy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Интима</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="radio.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    
+
+                    <!-- Expandable item -->
+                    <div class="flex flex-col">
+                        <div class="flex items-center justify-between">
+                            <a href="youtube.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">YouTube</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="right-3">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="right-3">
+                            <a href="youtube-politics.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Политика</a><a href="youtube-podcast.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Подкаст</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-3 theme-border-color">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
+                </button>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- Hidden desktop theme toggle button to leverage existing script -->
+    <button id="theme-toggle" class="hidden"></button>
+</div>
+    </div>
+
+    <main class="w-full">
+        <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+            <div class="p-4 @container">
+                <section class="flex flex-col gap-4">
+                    <h1 class="theme-text-primary text-xl lg:text-3xl font-bold leading-tight">🎙️СПорткаст EП18 | Булут: Кошарката ни беше замена за интернет и телевизија во 90-тите</h1>
+
+                    <div class="w-full aspect-video rounded-lg overflow-hidden border theme-border-color theme-bg-secondary shadow-sm">
+                        <iframe
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/4tEgzk__9l4"
+                                title="🎙️СПорткаст EП18 | Булут: Кошарката ни беше замена за интернет и телевизија во 90-тите"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="youtube-show-header">
+                        <span class="kategorija_naslov kategorija_naslov--sm cat-green">СПорткаст</span>
+                    </div>
+                </section>
+
+                <section class="mt-10">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+                        
+                            <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                <a href="youtube-show-402-88gt7_aEaOU.html"
+                                   class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                   style="background-image: url(&#39;https://i.ytimg.com/vi/88gt7_aEaOU/maxresdefault.jpg&#39;)">
+                                    <span class="sr-only">🎙 СПорткаст | Финале на првата сезона: Ретроспектива на сите 18 епизоди</span>
+                                </a>
+
+                                <div class="flex flex-col gap-1 py-3 px-3">
+                                    <a href="youtube-show-402-88gt7_aEaOU.html"
+                                       class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">🎙 СПорткаст | Финале на првата сезона: Ретроспектива на сите 18 епизоди</a>
+                                    <p class="theme-text-secondary text-xs">Jun 30, 2025</p>
+                                </div>
+                            </div>
+                        
+                            <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                <a href="youtube-show-402-4tEgzk__9l4.html"
+                                   class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                   style="background-image: url(&#39;https://i.ytimg.com/vi/4tEgzk__9l4/maxresdefault.jpg&#39;)">
+                                    <span class="sr-only">🎙️СПорткаст EП18 | Булут: Кошарката ни беше замена за интернет и телевизија во 90-тите</span>
+                                </a>
+
+                                <div class="flex flex-col gap-1 py-3 px-3">
+                                    <a href="youtube-show-402-4tEgzk__9l4.html"
+                                       class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">🎙️СПорткаст EП18 | Булут: Кошарката ни беше замена за интернет и телевизија во 90-тите</a>
+                                    <p class="theme-text-secondary text-xs">Jun 23, 2025</p>
+                                </div>
+                            </div>
+                        
+                            <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                <a href="youtube-show-402-7CE8LzNDKpM.html"
+                                   class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                   style="background-image: url(&#39;https://i.ytimg.com/vi/7CE8LzNDKpM/maxresdefault.jpg&#39;)">
+                                    <span class="sr-only">СПорткаст ЕП17| Христоски:Вардар ако ја освоеше титулата,Алонсо немаше да смее да се врати во Битола</span>
+                                </a>
+
+                                <div class="flex flex-col gap-1 py-3 px-3">
+                                    <a href="youtube-show-402-7CE8LzNDKpM.html"
+                                       class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">СПорткаст ЕП17| Христоски:Вардар ако ја освоеше титулата,Алонсо немаше да смее да се врати во Битола</a>
+                                    <p class="theme-text-secondary text-xs">Jun 16, 2025</p>
+                                </div>
+                            </div>
+                        
+                            <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                <a href="youtube-show-402-VSU18UNnMxw.html"
+                                   class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                   style="background-image: url(&#39;https://i.ytimg.com/vi/VSU18UNnMxw/maxresdefault.jpg&#39;)">
+                                    <span class="sr-only">🎙️СПорткаст ЕП16 | Со ентузијастички пристап до пиедесталите на џиу-џицу шампионатите</span>
+                                </a>
+
+                                <div class="flex flex-col gap-1 py-3 px-3">
+                                    <a href="youtube-show-402-VSU18UNnMxw.html"
+                                       class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">🎙️СПорткаст ЕП16 | Со ентузијастички пристап до пиедесталите на џиу-џицу шампионатите</a>
+                                    <p class="theme-text-secondary text-xs">Jun 09, 2025</p>
+                                </div>
+                            </div>
+                        
+                            <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                <a href="youtube-show-402-yFmFcoSUqJI.html"
+                                   class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                   style="background-image: url(&#39;https://i.ytimg.com/vi/yFmFcoSUqJI/maxresdefault.jpg&#39;)">
+                                    <span class="sr-only">СПорткаст ЕП15 | Дургутов: Вардар во 90-тите доживеа големи неправди, со Ѕинго стигнавме и до тужби</span>
+                                </a>
+
+                                <div class="flex flex-col gap-1 py-3 px-3">
+                                    <a href="youtube-show-402-yFmFcoSUqJI.html"
+                                       class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">СПорткаст ЕП15 | Дургутов: Вардар во 90-тите доживеа големи неправди, со Ѕинго стигнавме и до тужби</a>
+                                    <p class="theme-text-secondary text-xs">Jun 02, 2025</p>
+                                </div>
+                            </div>
+                        
+                            <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                <a href="youtube-show-402-HvrP7U4opjc.html"
+                                   class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                   style="background-image: url(&#39;https://i.ytimg.com/vi/HvrP7U4opjc/maxresdefault.jpg&#39;)">
+                                    <span class="sr-only">СПорткаст ЕП 14 | Фазлагиќ: Цела своја кариера се стремам да ја репрезентирам Македонија</span>
+                                </a>
+
+                                <div class="flex flex-col gap-1 py-3 px-3">
+                                    <a href="youtube-show-402-HvrP7U4opjc.html"
+                                       class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">СПорткаст ЕП 14 | Фазлагиќ: Цела своја кариера се стремам да ја репрезентирам Македонија</a>
+                                    <p class="theme-text-secondary text-xs">May 26, 2025</p>
+                                </div>
+                            </div>
+                        
+                            <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                <a href="youtube-show-402-aizXSx8-X3U.html"
+                                   class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                   style="background-image: url(&#39;https://i.ytimg.com/vi/aizXSx8-X3U/maxresdefault.jpg&#39;)">
+                                    <span class="sr-only">🎙️СПорткаст EП13 | Гечевски: Жал за медалот на Евробаскетот остана, но дочекот ја залечи раната</span>
+                                </a>
+
+                                <div class="flex flex-col gap-1 py-3 px-3">
+                                    <a href="youtube-show-402-aizXSx8-X3U.html"
+                                       class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">🎙️СПорткаст EП13 | Гечевски: Жал за медалот на Евробаскетот остана, но дочекот ја залечи раната</a>
+                                    <p class="theme-text-secondary text-xs">May 19, 2025</p>
+                                </div>
+                            </div>
+                        
+                            <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                <a href="youtube-show-402-2gVAMrd53D4.html"
+                                   class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                   style="background-image: url(&#39;https://i.ytimg.com/vi/2gVAMrd53D4/maxresdefault.jpg&#39;)">
+                                    <span class="sr-only">СПорткаст ЕП12 | Љубители на стоечкото веслање од над 20 земји ќе земат учество на Охрид СУП Кросинг</span>
+                                </a>
+
+                                <div class="flex flex-col gap-1 py-3 px-3">
+                                    <a href="youtube-show-402-2gVAMrd53D4.html"
+                                       class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">СПорткаст ЕП12 | Љубители на стоечкото веслање од над 20 земји ќе земат учество на Охрид СУП Кросинг</a>
+                                    <p class="theme-text-secondary text-xs">May 12, 2025</p>
+                                </div>
+                            </div>
+                        
+                            <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                <a href="youtube-show-402-WkZ63YFjc-U.html"
+                                   class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                   style="background-image: url(&#39;https://i.ytimg.com/vi/WkZ63YFjc-U/maxresdefault.jpg&#39;)">
+                                    <span class="sr-only">🎙️СПорткаст ЕП11 | Ефтимов: Со подготовки вредни само 1.600 евра Мила Рељиќ настапи на ЛОИ во Париз</span>
+                                </a>
+
+                                <div class="flex flex-col gap-1 py-3 px-3">
+                                    <a href="youtube-show-402-WkZ63YFjc-U.html"
+                                       class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">🎙️СПорткаст ЕП11 | Ефтимов: Со подготовки вредни само 1.600 евра Мила Рељиќ настапи на ЛОИ во Париз</a>
+                                    <p class="theme-text-secondary text-xs">May 05, 2025</p>
+                                </div>
+                            </div>
+                        
+                            <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                <a href="youtube-show-402-hiUPqOHPBz0.html"
+                                   class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                   style="background-image: url(&#39;https://i.ytimg.com/vi/hiUPqOHPBz0/maxresdefault.jpg&#39;)">
+                                    <span class="sr-only">🎙️СПорткаст ЕП10 | Ѓоргоноски: Должник сум му на ракометот за се што ми даде</span>
+                                </a>
+
+                                <div class="flex flex-col gap-1 py-3 px-3">
+                                    <a href="youtube-show-402-hiUPqOHPBz0.html"
+                                       class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">🎙️СПорткаст ЕП10 | Ѓоргоноски: Должник сум му на ракометот за се што ми даде</a>
+                                    <p class="theme-text-secondary text-xs">Apr 28, 2025</p>
+                                </div>
+                            </div>
+                        
+                            <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                <a href="youtube-show-402-YIAv13unvy0.html"
+                                   class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                   style="background-image: url(&#39;https://i.ytimg.com/vi/YIAv13unvy0/maxresdefault.jpg&#39;)">
+                                    <span class="sr-only">🎙️СПорткаст EП09 | Манојловски: Кондицијата е најважна во кикбоксот</span>
+                                </a>
+
+                                <div class="flex flex-col gap-1 py-3 px-3">
+                                    <a href="youtube-show-402-YIAv13unvy0.html"
+                                       class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">🎙️СПорткаст EП09 | Манојловски: Кондицијата е најважна во кикбоксот</a>
+                                    <p class="theme-text-secondary text-xs">Apr 17, 2025</p>
+                                </div>
+                            </div>
+                        
+                            <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                <a href="youtube-show-402-vdabJmp1UX8.html"
+                                   class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                   style="background-image: url(&#39;https://i.ytimg.com/vi/vdabJmp1UX8/maxresdefault.jpg&#39;)">
+                                    <span class="sr-only">🎙️СПорткаст EП08 | Македонија изобилува со талентирани снукер и билјард играчи</span>
+                                </a>
+
+                                <div class="flex flex-col gap-1 py-3 px-3">
+                                    <a href="youtube-show-402-vdabJmp1UX8.html"
+                                       class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">🎙️СПорткаст EП08 | Македонија изобилува со талентирани снукер и билјард играчи</a>
+                                    <p class="theme-text-secondary text-xs">Apr 14, 2025</p>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </section>
+
+                <div class="p-4 @container mt-8">
+                    <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
+                        <a href="marketing.html"
+                           class="w-full aspect-[16/1.125] bg-center bg-no-repeat bg-cover rounded-t-lg overflow-hidden"
+                           style="background-image: url(&#39;https://placehold.co/800x112/800000/ffffff?text=Your+Ad+Here&#39;)">
+                        </a>
+                        <div class="flex flex-col gap-1 py-4 px-4">
+                            <p class="theme-text-primary text-base font-bold leading-tight">Watch More!</p>
+                            <p class="theme-text-secondary text-sm leading-normal">Explore trending videos.</p>
+                            <a href="marketing.html"
+                               class="text-xs font-bold text-blue-600 hover:underline mt-2">Повеќе</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="theme-bg-secondary py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
+        <!-- Disclaimer Text -->
+        <p class="text-sm leading-relaxed mb-6">
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
+        </p>
+
+        <!-- Static Links with Thymeleaf relative URLs -->
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
+            <a href="sources.html" class="hover:underline theme-text-primary">Извори</a>
+            <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
+            <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
+            <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
+            <a href="blog.html" class="hover:underline theme-text-primary">Блог</a>
+            <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a>
+            <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
+            <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
+        </div>
+    </div>
+
+    <!-- NEW: Search Modal HTML Structure -->
+    <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-start justify-center min-h-screen pt-16">
+            <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2>
+                    <button id="close-search-modal" class="theme-text-primary" aria-label="Close search">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4">
+                <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto">
+                    <!-- Search results will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Lunr.js library and the search script -->
+
+
+
+</footer>
+</div>
+
+<div>
+    <script>
+    /*<![CDATA[*/
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement; // This refers to the <html> tag
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+
+    // Function to set the theme
+    function setTheme(theme) {
+        if (theme === 'dark') {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            if (moonIcon) moonIcon.style.display = 'block';
+            if (sunIcon) sunIcon.style.display = 'none';
+        } else {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            if (sunIcon) sunIcon.style.display = 'block';
+            if (moonIcon) moonIcon.style.display = 'none';
+        }
+    }
+
+    // Check for saved theme preference or system preference on load
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark'); // Default to dark if system prefers it
+    } else {
+        setTheme('light'); // Default to light
+    }
+
+    // Toggle theme on button click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        });
+    }
+
+
+    // Listen for system theme changes (if no preference is saved)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (!localStorage.getItem('theme')) { // Only react to system changes if no user preference is set
+            setTheme(event.matches ? 'dark' : 'light');
+        }
+    });
+    /*]]>*/
+</script>
+
+
+    <script src="js/mobile-nav.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.2/lunr.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js" defer></script>
+    <script src="js/search.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
+</script>
+    <script src="js/ad-rotation.js" defer></script>
+
+</div>
+</body>
+</html>

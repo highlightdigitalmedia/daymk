@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="315">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pre-paint theme (prevents flash/blink) -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('theme');
+                var theme = saved ? saved :
+                    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                if (theme === 'dark') document.documentElement.classList.add('dark');
+                else document.documentElement.classList.remove('dark');
+            } catch (e) {}
+        })();
+    </script>
+
+    <!-- Title + favicon -->
+    <title>Day.mk - Најнови Вести (Страница 17)</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <!-- Fonts (for consistent menu sizing everywhere) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap" />
+
+    <!-- Meta Description -->
+    <meta name="description"
+          content=" Прелистајте ги најновите вести, страница 17."/>
+
+    <!-- Canonical URL (optional) -->
+    
+
+    <!-- Robots directives -->
+    <meta name="robots"
+          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+
+    <!-- Hreflang -->
+    
+
+    <!-- Basic Open Graph for non-article pages -->
+    <meta property="og:site_name" content="Day.mk" />
+    <meta property="og:locale" content="mk_MK" />
+    <meta property="og:title" content="Day.mk - Најнови Вести (Страница 17)" />
+    <meta property="og:description"
+          content=" Прелистајте ги најновите вести, страница 17."/>
+    <meta property="og:type" content="website" />
+    
+    <meta property="og:image" content="https://day.mk/assets/logo.png" />
+
+    <!-- Twitter card for non-article pages -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Day.mk - Најнови Вести (Страница 17)" />
+    <meta name="twitter:description"
+          content=" Прелистајте ги најновите вести, страница 17."/>
+    <meta name="twitter:image" content="https://day.mk/assets/logo.png" />
+
+    <!-- Tailwind + your CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="theme-bg-primary">
+<div class="relative flex min-h-screen flex-col theme-bg-primary overflow-x-hidden"
+     style='font-family: Newsreader, "Noto Sans", sans-serif;'>
+
+    <!-- ======================= -->
+    <!-- DESKTOP HEADER (lg+)    -->
+    <!-- ======================= -->
+    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+        <div>
+    <!-- Header section containing title and icons -->
+    <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
+            <a href="index.html" class="hover:underline">DAY.MK</a>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">
+                обновено <span>11:09, 22.02.2026</span>
+            </p>
+        </h2>
+
+        <div class="flex w-24 items-center justify-end">
+            <!-- NEW: Search Icon (Desktop) -->
+            <button id="search-button-desktop" aria-label="Open search"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </button>
+
+            <!-- Weather Link Icon (Thermometer) -->
+            <a href="prognoza.html" aria-label="Weather Forecast"
+               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
+                </svg>
+            </a>
+            <!-- Day/Night Mode Toggle Button -->
+            <button id="theme-toggle"
+                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+                    aria-label="Toggle dark mode"
+            >
+                <!-- Sun Icon (Light Mode) -->
+                <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <!-- Moon Icon (Dark Mode) -->
+                <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- "обновено" time now correctly positioned below the header, within the main content wrapper -->
+
+
+    <div class="pb-3 pt-4">
+        <!-- Main Navigation Tabs (split into left and right) -->
+        <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <!-- Left Navigation Items -->
+            <div class="flex gap-8">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="index.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Вести</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="sports.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="magazine.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
+                </a>
+            </div>
+            <!-- Right Navigation Items -->
+            <div class="flex gap-8">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="latest-news.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">Најнови Вести</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="prognoza.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="radio.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="youtube.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">YouTube</p>
+                </a>
+            </div>
+        </div>
+        <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
+        
+        
+    </div>
+</div>
+    </div>
+
+    <!-- ======================= -->
+    <!-- MOBILE HEADER (< lg)    -->
+    <!-- ======================= -->
+    <div class="block lg:hidden max-w-3xl mx-auto w-full">
+        <div>
+    <!-- Mobile Header -->
+    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger-menu-button" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Centered Title/Logo -->
+        <div class="flex-1 text-center leading-tight">
+            <a href="index.html" class="inline-block hover:underline">
+                <h1 class="theme-text-primary text-2xl font-bold uppercase tracking-wider">
+                    DAY.MK
+                </h1>
+            </a>
+
+            <!-- Updated timestamp -->
+            <p class="theme-text-secondary text-xs font-normal mt-0.5">
+                обновено <span>11:09, 22.02.2026</span>
+            </p>
+        </div>
+
+        <!-- Search Icon -->
+        <button id="search-button-mobile" class="theme-text-primary p-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Slide-out Menu -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
+        <div class="p-4">
+            <h3 class="theme-text-primary text-lg font-bold mb-4">Навигација</h3>
+            <nav class="flex flex-col gap-2">
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="left-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="magazine-intimacy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Интима</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="radio.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    
+
+                    <!-- Expandable item -->
+                    <div class="flex flex-col">
+                        <div class="flex items-center justify-between">
+                            <a href="youtube.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">YouTube</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation" data-subnav-toggle="right-3">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="ml-4 mt-1 space-y-1 hidden" data-subnav-id="right-3">
+                            <a href="youtube-politics.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Политика</a><a href="youtube-podcast.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Подкаст</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-3 theme-border-color">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
+                </button>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- Hidden desktop theme toggle button to leverage existing script -->
+    <button id="theme-toggle" class="hidden"></button>
+</div>
+    </div>
+
+    <!-- ======================= -->
+    <!-- MAIN CONTENT            -->
+    <!-- ======================= -->
+    <main class="w-full">
+
+        <!-- ====================================================== -->
+        <!-- DESKTOP VERSION (from real latest-news.html)          -->
+        <!-- ====================================================== -->
+        <div class="hidden lg:block">
+            <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+                <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                    <!-- Main Column -->
+                    <div class="lg:col-span-2 flex flex-col gap-6">
+                        <h1 class="theme-text-primary text-2xl font-bold mb-6">Day.mk - Најнови Вести (Страница 17)</h1>
+
+                        <!-- Article List -->
+                        <div class="flex flex-col divide-y theme-border-color">
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="macedonia-видео-манасиевски-партиските-притисоци-предводени-од-сдс-и-summary-93438.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-93438.webp"
+                 alt="(Видео) Манасиевски: Партиските притисоци предводени од СДС и ДУИ разрешувале судии за еден ден, морало се да оди по насока на Заев" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="macedonia-видео-манасиевски-партиските-притисоци-предводени-од-сдс-и-summary-93438.html"
+               class="hover:underline">(Видео) Манасиевски: Партиските притисоци предводени од СДС и ДУИ разрешувале судии за еден ден, морало се да оди по насока на Заев</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> ристо катевеновски, поранешен судија врховниот суд тврди разрешен поради дал позитивно мислење судски случај барање тогашните власти сдс дуи, изјави денеска валентин манасиевск...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 23 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="macedonia-видео-манасиевски-партиските-притисоци-предводени-од-сдс-и-summary-93438.html"
+                       class="hover:underline">
+                       <span>3</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="macedonia-видео-манасиевски-партиските-притисоци-предводени-од-сдс-и-summary-93438.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+            <a class="px-2 py-0.5 text-white rounded-sm hover:opacity-90"
+               style="background-color: rgb(136, 85, 0);"
+               target="_blank"
+               rel="noopener noreferrer"
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20(%D0%92%D0%B8%D0%B4%D0%B5%D0%BE)%20%D0%9C%D0%B0%D0%BD%D0%B0%D1%81%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B8:%20%D0%9F%D0%B0%D1%80%D1%82%D0%B8%D1%81%D0%BA%D0%B8%D1%82%D0%B5%20%D0%BF%D1%80%D0%B8%D1%82%D0%B8%D1%81%D0%BE%D1%86%D0%B8%20%D0%BF%D1%80%D0%B5%D0%B4%D0%B2%D0%BE%D0%B4%D0%B5%D0%BD%D0%B8%20%D0%BE%D0%B4%20%D0%A1%D0%94%D0%A1%20%D0%B8%20%D0%94%D0%A3%D0%98%20%D1%80%D0%B0%D0%B7%D1%80%D0%B5%D1%88%D1%83%D0%B2%D0%B0%D0%BB%D0%B5%20%D1%81%D1%83%D0%B4%D0%B8%D0%B8%20%D0%B7%D0%B0%20%D0%B5%D0%B4%D0%B5%D0%BD%20%D0%B4%D0%B5%D0%BD,%20%D0%BC%D0%BE%D1%80%D0%B0%D0%BB%D0%BE%20%D1%81%D0%B5%20%D0%B4%D0%B0%20%D0%BE%D0%B4%D0%B8%20%D0%BF%D0%BE%20%D0%BD%D0%B0%D1%81%D0%BE%D0%BA%D0%B0%20%D0%BD%D0%B0%20%D0%97%D0%B0%D0%B5%D0%B2&amp;udm=50">
+                прашања
+            </a>
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="magazine-изненадувачка-препорака-од-експертите-кардиолог-тврди-дека-summary-93437.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-93437.webp"
+                 alt="ИЗНЕНАДУВАЧКА ПРЕПОРАКА ОД ЕКСПЕРТИТЕ: Кардиолог тврди дека оваа храна е ОДЛИЧНА за здравјето на срцето!" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="magazine-изненадувачка-препорака-од-експертите-кардиолог-тврди-дека-summary-93437.html"
+               class="hover:underline">ИЗНЕНАДУВАЧКА ПРЕПОРАКА ОД ЕКСПЕРТИТЕ: Кардиолог тврди дека оваа храна е ОДЛИЧНА за здравјето на срцето!</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> изненадувачка препорака експертите: кардиолог тврди храна одлична здравјето срцето!  истакна докторот , темното чоколадо богато овие антиоксиданси, американската асоцијација ср...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 19 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="magazine-најитриот-хороскопски-знак-тие-се-покриени-со-сите-бои-ќе-ве-summary-93436.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-93436.webp"
+                 alt="НАЈИТРИОТ ХОРОСКОПСКИ ЗНАК: Тие се покриени со сите бои, ќе ве измамат пред да трепнете" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="magazine-најитриот-хороскопски-знак-тие-се-покриени-со-сите-бои-ќе-ве-summary-93436.html"
+               class="hover:underline">НАЈИТРИОТ ХОРОСКОПСКИ ЗНАК: Тие се покриени со сите бои, ќе ве измамат пред да трепнете</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> најитриот хороскопски знак: покриени бои, ве измамат трепнете најитриот хороскопски знак: покриени бои, ве измамат трепнете хороскопски знак свои недостатоци лоши квалитети.  н...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 19 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="magazine-проф-д-р-кузмановска-трансплантацијата-е-врв-на-медицината-summary-93435.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-93435.webp"
+                 alt="Проф. д-р Кузмановска: Трансплантацијата е врв на медицината, но и врв на човечноста" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="magazine-проф-д-р-кузмановска-трансплантацијата-е-врв-на-медицината-summary-93435.html"
+               class="hover:underline">Проф. д-р Кузмановска: Трансплантацијата е врв на медицината, но и врв на човечноста</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> д р кузмановска: трансплантацијата врв медицината, врв човечноста проф.  подигнувањето свесноста донорството избор, општествена одговорност хуманост спаси подобри квалитетот жи...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 19 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="skopje-меџити-мастер-планот-за-чаир-се-преточува-во-реалност-преку-summary-93434.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9C%D0%B5%D1%9F%D0%B8%D1%82%D0%B8%3A+%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80+%D0%BF%D0%BB%D0%B0%D0%BD%D0%BE%D1%82+%D0%B7%D0%B0+%D0%A7%D0%B0%D0%B8%D1%80+%D1%81%D0%B5+%D0%BF%D1%80%D0%B5%D1%82%D0%BE%D1%87%D1%83%D0%B2%D0%B0+%D0%B2%D0%BE+%D1%80%D0%B5%D0%B0%D0%BB%D0%BD%D0%BE%D1%81%D1%82+%D0%BF%D1%80%D0%B5%D0%BA%D1%83+%D0%BD%D0%BE%D0%B2%D0%B8+%D0%B1%D1%83%D0%BB%D0%B5%D0%B2%D0%B0%D1%80%D0%B8+%D0%B8+%D0%BE%D0%BF%D1%88%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8+%D0%B1%D0%B0%D0%B7%D0%B5%D0%BD"
+                 alt="Меџити: Мастер планот за Чаир се преточува во реалност преку нови булевари и општински базен" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="skopje-меџити-мастер-планот-за-чаир-се-преточува-во-реалност-преку-summary-93434.html"
+               class="hover:underline">Меџити: Мастер планот за Чаир се преточува во реалност преку нови булевари и општински базен</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> мастер планот чаир стратешки документ, конкретен процес чекор чекор реализира терен, инвестиции директно подобруваат квалитетот животот граѓаните, истакна градоначалникот меџит...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 20 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="skopje-меџити-мастер-планот-за-чаир-се-преточува-во-реалност-преку-summary-93434.html"
+                       class="hover:underline">
+                       <span>2</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="skopje-меџити-мастер-планот-за-чаир-се-преточува-во-реалност-преку-summary-93434.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+            <a class="px-2 py-0.5 text-white rounded-sm hover:opacity-90"
+               style="background-color: rgb(136, 85, 0);"
+               target="_blank"
+               rel="noopener noreferrer"
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9C%D0%B5%D1%9F%D0%B8%D1%82%D0%B8:%20%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%BE%D1%82%20%D0%B7%D0%B0%20%D0%A7%D0%B0%D0%B8%D1%80%20%D1%81%D0%B5%20%D0%BF%D1%80%D0%B5%D1%82%D0%BE%D1%87%D1%83%D0%B2%D0%B0%20%D0%B2%D0%BE%20%D1%80%D0%B5%D0%B0%D0%BB%D0%BD%D0%BE%D1%81%D1%82%20%D0%BF%D1%80%D0%B5%D0%BA%D1%83%20%D0%BD%D0%BE%D0%B2%D0%B8%20%D0%B1%D1%83%D0%BB%D0%B5%D0%B2%D0%B0%D1%80%D0%B8%20%D0%B8%20%D0%BE%D0%BF%D1%88%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%20%D0%B1%D0%B0%D0%B7%D0%B5%D0%BD&amp;udm=50">
+                прашања
+            </a>
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="magazine-љубовен-хороскоп-до-28-февруари-summary-93432.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-93432.webp"
+                 alt="Љубовен хороскоп до 28 февруари" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="magazine-љубовен-хороскоп-до-28-февруари-summary-93432.html"
+               class="hover:underline">Љубовен хороскоп до 28 февруари</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> слободните бикови можат започнат врска пријател години поради венера риби близнаци ве очекува недела полна интересни средби флертувања.  слободните јарци можеле започнат врска ...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 19 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="world-снежно-невреме-во-словенија-околу-19-000-домаќинста-без-summary-93431.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-93431.webp"
+                 alt="Снежно невреме во Словенија, околу 19.000 домаќинста без струја" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="world-снежно-невреме-во-словенија-околу-19-000-домаќинста-без-summary-93431.html"
+               class="hover:underline">Снежно невреме во Словенија, околу 19.000 домаќинста без струја</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> 19.000 домаќинства словенија струја поради снежно невреме 19.000 домаќинства словенија струја поради снежно невреме домаќинства североисточна словенија електрична енергија пора...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 20 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="world-снежно-невреме-во-словенија-околу-19-000-домаќинста-без-summary-93431.html"
+                       class="hover:underline">
+                       <span>4</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="world-снежно-невреме-во-словенија-околу-19-000-домаќинста-без-summary-93431.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+            <a class="px-2 py-0.5 text-white rounded-sm hover:opacity-90"
+               style="background-color: rgb(136, 85, 0);"
+               target="_blank"
+               rel="noopener noreferrer"
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A1%D0%BD%D0%B5%D0%B6%D0%BD%D0%BE%20%D0%BD%D0%B5%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%20%D0%B2%D0%BE%20%D0%A1%D0%BB%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D1%98%D0%B0,%20%D0%BE%D0%BA%D0%BE%D0%BB%D1%83%2019.000%20%D0%B4%D0%BE%D0%BC%D0%B0%D1%9C%D0%B8%D0%BD%D1%81%D1%82%D0%B0%20%D0%B1%D0%B5%D0%B7%20%D1%81%D1%82%D1%80%D1%83%D1%98%D0%B0&amp;udm=50">
+                прашања
+            </a>
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="macedonia-мон-со-честитка-за-21-февруари-меѓународен-ден-на-мајчиниот-summary-93430.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-93430.webp"
+                 alt="МОН со честитка за 21 Февруари – Меѓународен ден на мајчиниот јазик" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="macedonia-мон-со-честитка-за-21-февруари-меѓународен-ден-на-мајчиниот-summary-93430.html"
+               class="hover:underline">МОН со честитка за 21 Февруари – Меѓународен ден на мајчиниот јазик</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> мон: честит 21 февруари – меѓународен ден мајчиниот јазик мон: честит 21 февруари – меѓународен ден мајчиниот јазик затоа, институционално индивидуално, имаме обврска негуваме ...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 22 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                <span>
+                    <a href="macedonia-мон-со-честитка-за-21-февруари-меѓународен-ден-на-мајчиниот-summary-93430.html"
+                       class="hover:underline">
+                       <span>4</span> вести
+                    </a>
+                </span>
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                <span>
+                    <a href="macedonia-мон-со-честитка-за-21-февруари-меѓународен-ден-на-мајчиниот-summary-93430.html"
+                       class="hover:underline">сумирано</a>
+                </span>
+            </div>
+            <a class="px-2 py-0.5 text-white rounded-sm hover:opacity-90"
+               style="background-color: rgb(136, 85, 0);"
+               target="_blank"
+               rel="noopener noreferrer"
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9C%D0%9E%D0%9D%20%D1%81%D0%BE%20%D1%87%D0%B5%D1%81%D1%82%D0%B8%D1%82%D0%BA%D0%B0%20%D0%B7%D0%B0%2021%20%D0%A4%D0%B5%D0%B2%D1%80%D1%83%D0%B0%D1%80%D0%B8%20%E2%80%93%20%D0%9C%D0%B5%D1%93%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%B5%D0%BD%20%D0%B4%D0%B5%D0%BD%20%D0%BD%D0%B0%20%D0%BC%D0%B0%D1%98%D1%87%D0%B8%D0%BD%D0%B8%D0%BE%D1%82%20%D1%98%D0%B0%D0%B7%D0%B8%D0%BA&amp;udm=50">
+                прашања
+            </a>
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="magazine-ги-запознаваме-ретките-болести-алкаптонурија-summary-93428.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%93%D0%B8+%D0%B7%D0%B0%D0%BF%D0%BE%D0%B7%D0%BD%D0%B0%D0%B2%D0%B0%D0%BC%D0%B5+%D1%80%D0%B5%D1%82%D0%BA%D0%B8%D1%82%D0%B5+%D0%B1%D0%BE%D0%BB%D0%B5%D1%81%D1%82%D0%B8%3A+%D0%90%D0%BB%D0%BA%D0%B0%D0%BF%D1%82%D0%BE%D0%BD%D1%83%D1%80%D0%B8%D1%98%D0%B0"
+                 alt="Ги запознаваме ретките болести: Алкаптонурија" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="magazine-ги-запознаваме-ретките-болести-алкаптонурија-summary-93428.html"
+               class="hover:underline">Ги запознаваме ретките болести: Алкаптонурија</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> пациентите немаат доволно функционални нивоа ензим потребен разградување хомогентизичната киселина, доаѓа појава темна (црна) урина.  рендгенското снимање мри можат користат пр...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 19 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="magazine-три-знаци-викендов-се-на-удар-на-судбината-дали-ве-чека-summary-93426.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%A2%D1%80%D0%B8+%D0%B7%D0%BD%D0%B0%D1%86%D0%B8+%D0%B2%D0%B8%D0%BA%D0%B5%D0%BD%D0%B4%D0%BE%D0%B2+%D1%81%D0%B5+%D0%BD%D0%B0+%D1%83%D0%B4%D0%B0%D1%80+%D0%BD%D0%B0+%D1%81%D1%83%D0%B4%D0%B1%D0%B8%D0%BD%D0%B0%D1%82%D0%B0%3A+%D0%94%D0%B0%D0%BB%D0%B8+%D0%B2%D0%B5+%D1%87%D0%B5%D0%BA%D0%B0+%D1%88%D0%BE%D0%BA%D0%B0%D0%BD%D1%82%D0%BD%D0%B0+%D0%B4%D0%BE%D0%B1%D0%B8%D0%B2%D0%BA%D0%B0%2C+%D0%BD%D0%B5%D0%BD%D0%B0%D0%B4%D0%B5%D1%98%D0%BD%D0%B0+%D1%81%D1%80%D0%B5%D0%B4%D0%B1%D0%B0+%D0%B8%D0%BB%D0%B8+%D0%BF%D1%80%D0%B5%D1%81%D0%B2%D1%80%D1%82"
+                 alt="Три знаци викендов се на удар на судбината: Дали ве чека шокантна добивка, ненадејна средба или пресврт" class="w-24 h-16 object-cover rounded-lg"/>
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="magazine-три-знаци-викендов-се-на-удар-на-судбината-дали-ве-чека-summary-93426.html"
+               class="hover:underline">Три знаци викендов се на удар на судбината: Дали ве чека шокантна добивка, ненадејна средба или пресврт</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden"> три знаци викендов удар судбината: ве чека шокантна добивка, ненадејна средба пресврт три знаци викендов удар судбината: ве чека шокантна добивка, ненадејна средба пресврт спре...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 19 часа</span>
+            </span>
+            <div class="px-2 py-0.5 bg-blue-800 text-white rounded-sm hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2 py-0.5 bg-red-800 text-white rounded-sm hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                        </div>
+
+                        
+
+                        <!-- Pagination -->
+                        <div class="flex justify-center mt-6">
+    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
+
+        <!-- Previous -->
+        <a href="latest-news-page-16.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Previous">&laquo;</a>
+
+        <!-- Page numbers (max 10) -->
+        
+            
+                <a href="latest-news-page-13.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">13</a>
+            
+                <a href="latest-news-page-14.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">14</a>
+            
+                <a href="latest-news-page-15.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">15</a>
+            
+                <a href="latest-news-page-16.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">16</a>
+            
+                <a href="latest-news-page-17.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">17</a>
+            
+                <a href="latest-news-page-18.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">18</a>
+            
+                <a href="latest-news-page-19.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">19</a>
+            
+                <a href="latest-news-page-20.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">20</a>
+            
+                <a href="latest-news-page-21.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">21</a>
+            
+                <a href="latest-news-page-22.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">22</a>
+            
+        
+
+        <!-- Next -->
+        <a href="latest-news-page-18.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Next">&raquo;</a>
+    </nav>
+</div>
+                    </div>
+
+                    <!-- Right Sidebar / Ads -->
+                    <div class="lg:col-span-1 flex flex-col gap-6">
+
+                        <!-- Spotlight Ad -->
+                        <div class="flex flex-col rounded-lg theme-bg-secondary border theme-border-color shadow-lg overflow-hidden">
+                            <a href="https://google.com"
+                               class="w-full aspect-[16/9] bg-center bg-no-repeat bg-cover rounded-t-lg"
+                               style="background-image: url(&#39;https://placehold.co/150x300/0000FF/FFFFFF?text=Your+Ad+Here&#39;)">
+                            </a>
+                            <div class="p-4 flex flex-col gap-1">
+                                <p class="theme-text-primary text-base font-bold">Special Offer for Readers!</p>
+                                <p class="theme-text-secondary text-sm">Check out our exclusive deals.</p>
+                                <a href="https://google.com"
+                                   class="text-xs font-bold text-blue-600 hover:underline mt-2">Повеќе</a>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Spotlight Ad -->
+                        <div class="flex flex-col rounded-lg theme-bg-secondary border theme-border-color shadow-lg overflow-hidden">
+                            <a href="marketing.html"
+                               class="w-full aspect-[16/4.5] bg-center bg-no-repeat bg-cover rounded-t-lg"
+                               style="background-image: url(&#39;https://placehold.co/150x300/FF4500/FFFFFF?text=Your+Ad+Here&#39;)">
+                            </a>
+                            </a>
+                            <div class="p-4 flex flex-col gap-1">
+                                <p class="theme-text-primary text-base font-bold">New Arrivals!</p>
+                                <p class="theme-text-secondary text-sm">Browse our fresh collection.</p>
+                                <a href="marketing.html"
+                                   class="text-xs font-bold text-blue-600 hover:underline mt-2">Повеќе</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- MOBILE VERSION (from real latest-news-mobile.html)     -->
+        <!-- ====================================================== -->
+        <div class="block lg:hidden">
+            <div class="max-w-3xl mx-auto w-full">
+                <main class="p-2 sm:p-4">
+
+                    <h1 class="theme-text-primary text-2xl font-bold mb-4 px-2">Најнови Вести</h1>
+
+                    <!-- Top Mobile Ad -->
+                    <div id="mobile-ad-container-top" class="mb-4">
+                        <a id="mobile-ad-link-top"
+                           class="block w-full aspect-[8/1] bg-center bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                    </div>
+
+                    <!-- Article Cards -->
+                    <div class="flex flex-col gap-4">
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="macedonia-видео-манасиевски-партиските-притисоци-предводени-од-сдс-и-summary-93438.html" class="flex gap-3">
+                                    <img src="images/cache/summary-93438.webp" alt="(Видео) Манасиевски: Партиските притисоци предводени од СДС и ДУИ разрешувале судии за еден ден, морало се да оди по насока на Заев"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">(Видео) Манасиевски: Партиските притисоци предводени од СДС и ДУИ разрешувале судии за еден ден, морало се да оди по насока на Заев</h3>
+                                        <p class="theme-text-secondary text-sm"> ристо катевеновски, поранешен судија врховниот суд тврди разрешен поради дал позитивно мислење судски случај барање тогашните власти сдс дуи, изја...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 23 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="magazine-изненадувачка-препорака-од-експертите-кардиолог-тврди-дека-summary-93437.html" class="flex gap-3">
+                                    <img src="images/cache/summary-93437.webp" alt="ИЗНЕНАДУВАЧКА ПРЕПОРАКА ОД ЕКСПЕРТИТЕ: Кардиолог тврди дека оваа храна е ОДЛИЧНА за здравјето на срцето!"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">ИЗНЕНАДУВАЧКА ПРЕПОРАКА ОД ЕКСПЕРТИТЕ: Кардиолог тврди дека оваа храна е ОДЛИЧНА за здравјето на срцето!</h3>
+                                        <p class="theme-text-secondary text-sm"> изненадувачка препорака експертите: кардиолог тврди храна одлична здравјето срцето!  истакна докторот , темното чоколадо богато овие антиоксиданси...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 19 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="magazine-најитриот-хороскопски-знак-тие-се-покриени-со-сите-бои-ќе-ве-summary-93436.html" class="flex gap-3">
+                                    <img src="images/cache/summary-93436.webp" alt="НАЈИТРИОТ ХОРОСКОПСКИ ЗНАК: Тие се покриени со сите бои, ќе ве измамат пред да трепнете"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">НАЈИТРИОТ ХОРОСКОПСКИ ЗНАК: Тие се покриени со сите бои, ќе ве измамат пред да трепнете</h3>
+                                        <p class="theme-text-secondary text-sm"> најитриот хороскопски знак: покриени бои, ве измамат трепнете најитриот хороскопски знак: покриени бои, ве измамат трепнете хороскопски знак свои ...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 19 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="magazine-проф-д-р-кузмановска-трансплантацијата-е-врв-на-медицината-summary-93435.html" class="flex gap-3">
+                                    <img src="images/cache/summary-93435.webp" alt="Проф. д-р Кузмановска: Трансплантацијата е врв на медицината, но и врв на човечноста"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Проф. д-р Кузмановска: Трансплантацијата е врв на медицината, но и врв на човечноста</h3>
+                                        <p class="theme-text-secondary text-sm"> д р кузмановска: трансплантацијата врв медицината, врв човечноста проф.  подигнувањето свесноста донорството избор, општествена одговорност хумано...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 19 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="skopje-меџити-мастер-планот-за-чаир-се-преточува-во-реалност-преку-summary-93434.html" class="flex gap-3">
+                                    <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9C%D0%B5%D1%9F%D0%B8%D1%82%D0%B8%3A+%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80+%D0%BF%D0%BB%D0%B0%D0%BD%D0%BE%D1%82+%D0%B7%D0%B0+%D0%A7%D0%B0%D0%B8%D1%80+%D1%81%D0%B5+%D0%BF%D1%80%D0%B5%D1%82%D0%BE%D1%87%D1%83%D0%B2%D0%B0+%D0%B2%D0%BE+%D1%80%D0%B5%D0%B0%D0%BB%D0%BD%D0%BE%D1%81%D1%82+%D0%BF%D1%80%D0%B5%D0%BA%D1%83+%D0%BD%D0%BE%D0%B2%D0%B8+%D0%B1%D1%83%D0%BB%D0%B5%D0%B2%D0%B0%D1%80%D0%B8+%D0%B8+%D0%BE%D0%BF%D1%88%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8+%D0%B1%D0%B0%D0%B7%D0%B5%D0%BD" alt="Меџити: Мастер планот за Чаир се преточува во реалност преку нови булевари и општински базен"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Меџити: Мастер планот за Чаир се преточува во реалност преку нови булевари и општински базен</h3>
+                                        <p class="theme-text-secondary text-sm"> мастер планот чаир стратешки документ, конкретен процес чекор чекор реализира терен, инвестиции директно подобруваат квалитетот животот граѓаните,...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 20 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            <div id="mobile-ad-container-mid" class="my-6">
+                                <a id="mobile-ad-link-mid"
+                                   class="block w-full aspect-[8/1] bg-center bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                            </div>
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="magazine-љубовен-хороскоп-до-28-февруари-summary-93432.html" class="flex gap-3">
+                                    <img src="images/cache/summary-93432.webp" alt="Љубовен хороскоп до 28 февруари"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Љубовен хороскоп до 28 февруари</h3>
+                                        <p class="theme-text-secondary text-sm"> слободните бикови можат започнат врска пријател години поради венера риби близнаци ве очекува недела полна интересни средби флертувања.  слободнит...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 19 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="world-снежно-невреме-во-словенија-околу-19-000-домаќинста-без-summary-93431.html" class="flex gap-3">
+                                    <img src="images/cache/summary-93431.webp" alt="Снежно невреме во Словенија, околу 19.000 домаќинста без струја"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Снежно невреме во Словенија, околу 19.000 домаќинста без струја</h3>
+                                        <p class="theme-text-secondary text-sm"> 19.000 домаќинства словенија струја поради снежно невреме 19.000 домаќинства словенија струја поради снежно невреме домаќинства североисточна слов...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 20 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="macedonia-мон-со-честитка-за-21-февруари-меѓународен-ден-на-мајчиниот-summary-93430.html" class="flex gap-3">
+                                    <img src="images/cache/summary-93430.webp" alt="МОН со честитка за 21 Февруари – Меѓународен ден на мајчиниот јазик"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">МОН со честитка за 21 Февруари – Меѓународен ден на мајчиниот јазик</h3>
+                                        <p class="theme-text-secondary text-sm"> мон: честит 21 февруари – меѓународен ден мајчиниот јазик мон: честит 21 февруари – меѓународен ден мајчиниот јазик затоа, институционално индивид...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 22 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="magazine-ги-запознаваме-ретките-болести-алкаптонурија-summary-93428.html" class="flex gap-3">
+                                    <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%93%D0%B8+%D0%B7%D0%B0%D0%BF%D0%BE%D0%B7%D0%BD%D0%B0%D0%B2%D0%B0%D0%BC%D0%B5+%D1%80%D0%B5%D1%82%D0%BA%D0%B8%D1%82%D0%B5+%D0%B1%D0%BE%D0%BB%D0%B5%D1%81%D1%82%D0%B8%3A+%D0%90%D0%BB%D0%BA%D0%B0%D0%BF%D1%82%D0%BE%D0%BD%D1%83%D1%80%D0%B8%D1%98%D0%B0" alt="Ги запознаваме ретките болести: Алкаптонурија"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Ги запознаваме ретките болести: Алкаптонурија</h3>
+                                        <p class="theme-text-secondary text-sm"> пациентите немаат доволно функционални нивоа ензим потребен разградување хомогентизичната киселина, доаѓа појава темна (црна) урина.  рендгенското...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 19 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="magazine-три-знаци-викендов-се-на-удар-на-судбината-дали-ве-чека-summary-93426.html" class="flex gap-3">
+                                    <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%A2%D1%80%D0%B8+%D0%B7%D0%BD%D0%B0%D1%86%D0%B8+%D0%B2%D0%B8%D0%BA%D0%B5%D0%BD%D0%B4%D0%BE%D0%B2+%D1%81%D0%B5+%D0%BD%D0%B0+%D1%83%D0%B4%D0%B0%D1%80+%D0%BD%D0%B0+%D1%81%D1%83%D0%B4%D0%B1%D0%B8%D0%BD%D0%B0%D1%82%D0%B0%3A+%D0%94%D0%B0%D0%BB%D0%B8+%D0%B2%D0%B5+%D1%87%D0%B5%D0%BA%D0%B0+%D1%88%D0%BE%D0%BA%D0%B0%D0%BD%D1%82%D0%BD%D0%B0+%D0%B4%D0%BE%D0%B1%D0%B8%D0%B2%D0%BA%D0%B0%2C+%D0%BD%D0%B5%D0%BD%D0%B0%D0%B4%D0%B5%D1%98%D0%BD%D0%B0+%D1%81%D1%80%D0%B5%D0%B4%D0%B1%D0%B0+%D0%B8%D0%BB%D0%B8+%D0%BF%D1%80%D0%B5%D1%81%D0%B2%D1%80%D1%82" alt="Три знаци викендов се на удар на судбината: Дали ве чека шокантна добивка, ненадејна средба или пресврт"
+                                         class="w-24 h-24 object-cover rounded-md"/>
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Три знаци викендов се на удар на судбината: Дали ве чека шокантна добивка, ненадејна средба или пресврт</h3>
+                                        <p class="theme-text-secondary text-sm"> три знаци викендов удар судбината: ве чека шокантна добивка, ненадејна средба пресврт три знаци викендов удар судбината: ве чека шокантна добивка,...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 19 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="flex justify-center mt-6">
+    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
+
+        <!-- Previous -->
+        <a href="latest-news-page-16.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Previous">&laquo;</a>
+
+        <!-- Page numbers (max 10) -->
+        
+            
+                <a href="latest-news-page-13.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">13</a>
+            
+                <a href="latest-news-page-14.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">14</a>
+            
+                <a href="latest-news-page-15.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">15</a>
+            
+                <a href="latest-news-page-16.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">16</a>
+            
+                <a href="latest-news-page-17.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">17</a>
+            
+                <a href="latest-news-page-18.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">18</a>
+            
+                <a href="latest-news-page-19.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">19</a>
+            
+                <a href="latest-news-page-20.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">20</a>
+            
+                <a href="latest-news-page-21.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">21</a>
+            
+                <a href="latest-news-page-22.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">22</a>
+            
+        
+
+        <!-- Next -->
+        <a href="latest-news-page-18.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Next">&raquo;</a>
+    </nav>
+</div>
+
+                </main>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="theme-bg-secondary py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
+        <!-- Disclaimer Text -->
+        <p class="text-sm leading-relaxed mb-6">
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
+        </p>
+
+        <!-- Static Links with Thymeleaf relative URLs -->
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
+            <a href="sources.html" class="hover:underline theme-text-primary">Извори</a>
+            <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
+            <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
+            <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
+            <a href="blog.html" class="hover:underline theme-text-primary">Блог</a>
+            <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a>
+            <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
+            <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
+        </div>
+    </div>
+
+    <!-- NEW: Search Modal HTML Structure -->
+    <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-start justify-center min-h-screen pt-16">
+            <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2>
+                    <button id="close-search-modal" class="theme-text-primary" aria-label="Close search">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4">
+                <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto">
+                    <!-- Search results will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Lunr.js library and the search script -->
+
+
+
+</footer>
+
+</div>
+
+<!-- Mobile ads data -->
+<script>
+    window.mobileTopAdsData = [{"id":"mobileTopAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Your+Mobile+Ad+Here+1","title":"Mobile Exclusive Offer","description":"Special deal for mobile users.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"},{"id":"mobileTopAd2","imageUrl":"https:\/\/placehold.co\/600x75\/DAF7A6\/000000?text=Your+Mobile+Ad+Here+2","title":"New Mobile Feature","description":"Check out our new mobile feature.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"}];
+    window.mobileMidAdsData = [{"id":"mobileMidAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Your+Mobile+Ad+Here+1","title":"Don't Miss This!","description":"Another great offer just for you.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"},{"id":"mobileMidAd2","imageUrl":"https:\/\/placehold.co\/600x75\/C70039\/FFFFFF?text=Your+Mobile+Ad+Here+2","title":"Scroll-Stopping Savings","description":"Great savings await.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"}];
+</script>
+
+<div>
+    <script>
+    /*<![CDATA[*/
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement; // This refers to the <html> tag
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+
+    // Function to set the theme
+    function setTheme(theme) {
+        if (theme === 'dark') {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            if (moonIcon) moonIcon.style.display = 'block';
+            if (sunIcon) sunIcon.style.display = 'none';
+        } else {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            if (sunIcon) sunIcon.style.display = 'block';
+            if (moonIcon) moonIcon.style.display = 'none';
+        }
+    }
+
+    // Check for saved theme preference or system preference on load
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark'); // Default to dark if system prefers it
+    } else {
+        setTheme('light'); // Default to light
+    }
+
+    // Toggle theme on button click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        });
+    }
+
+
+    // Listen for system theme changes (if no preference is saved)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (!localStorage.getItem('theme')) { // Only react to system changes if no user preference is set
+            setTheme(event.matches ? 'dark' : 'light');
+        }
+    });
+    /*]]>*/
+</script>
+
+
+    <script src="js/mobile-nav.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.2/lunr.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lunr-languages@1.9.0/lunr.stemmer.support.js" defer></script>
+    <script src="js/search.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
+</script>
+    <script src="js/ad-rotation.js" defer></script>
+
+</div>
+</body>
+</html>
