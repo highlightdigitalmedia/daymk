@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="315">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pre-paint theme (prevents flash/blink) -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('theme');
+                var theme = saved ? saved :
+                    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                if (theme === 'dark') document.documentElement.classList.add('dark');
+                else document.documentElement.classList.remove('dark');
+            } catch (e) {}
+        })();
+    </script>
+
+    <!-- Title + favicon -->
+    <title>Day.mk - Најнови Вести (Страница 209)</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <!-- PERF: Preconnect to remote origins early to reduce DNS/TLS latency for mobile LCP. -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- PERF: Inline tiny critical styles so first paint is stable before deferred CSS arrives. -->
+    <style>
+        html, body { font-family: Newsreader, "Noto Sans", sans-serif; margin: 0; }
+        .theme-bg-primary { background-color: #ffffff; }
+        .theme-text-primary { color: #1a1a1a; }
+        html.dark .theme-bg-primary { background-color: #101a23; }
+        html.dark .theme-text-primary { color: #ffffff; }
+    </style>
+
+    <!-- PERF: Preload font stylesheet and switch rel on load to reduce render-blocking CSS. -->
+    <link rel="preload" as="style"
+          href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap"
+          onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap" />
+    </noscript>
+
+    <!-- Meta Description -->
+    <meta name="description"
+          content=" Прелистајте ги најновите вести, страница 209."/>
+
+    <!-- Canonical URL (optional) -->
+    
+
+    <!-- Robots directives -->
+    <meta name="robots"
+          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+
+    <!-- Hreflang -->
+    
+
+    <!-- Basic Open Graph for non-article pages -->
+    <meta property="og:site_name" content="Day.mk" />
+    <meta property="og:locale" content="mk_MK" />
+    <meta property="og:title" content="Day.mk - Најнови Вести (Страница 209)" />
+    <meta property="og:description"
+          content=" Прелистајте ги најновите вести, страница 209."/>
+    <meta property="og:type" content="website" />
+    
+    <meta property="og:image" content="https://day.mk/assets/logo.png" />
+
+    <!-- Twitter card for non-article pages -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Day.mk - Најнови Вести (Страница 209)" />
+    <meta name="twitter:description"
+          content=" Прелистајте ги најновите вести, страница 209."/>
+    <meta name="twitter:image" content="https://day.mk/assets/logo.png" />
+
+    <!-- PERF: Keep Tailwind bootstrap in head because utility CSS is required for initial layout. -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- PERF: Defer non-critical stylesheet application to reduce initial render blocking time. -->
+    <link rel="preload" as="style" href="css/style.css" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="css/style.css" /></noscript>
+</head>
+
+<body class="theme-bg-primary">
+<div class="relative flex min-h-screen flex-col theme-bg-primary overflow-x-hidden"
+     style='font-family: Newsreader, "Noto Sans", sans-serif;'>
+
+    <!-- ======================= -->
+    <!-- DESKTOP HEADER (lg+)    -->
+    <!-- ======================= -->
+    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+        <div>
+    <!-- Header section containing title and icons -->
+    <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
+            <a href="index.html" class="hover:underline">DAY.MK</a>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">
+                обновено <span>04:30, 08.03.2026</span>
+            </p>
+        </h2>
+
+        <div class="flex w-24 items-center justify-end">
+            <!-- NEW: Search Icon (Desktop) -->
+            <button id="search-button-desktop" aria-label="Open search"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </button>
+
+            <!-- Weather Link Icon (Thermometer) -->
+            <a href="prognoza.html" aria-label="Weather Forecast"
+               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
+                </svg>
+            </a>
+            <!-- Day/Night Mode Toggle Button -->
+            <button id="theme-toggle"
+                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+                    aria-label="Toggle dark mode"
+            >
+                <!-- Sun Icon (Light Mode) -->
+                <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <!-- Moon Icon (Dark Mode) -->
+                <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- "обновено" time now correctly positioned below the header, within the main content wrapper -->
+
+
+    <div class="pb-3 pt-4">
+        <!-- Main Navigation Tabs (split into left and right) -->
+        <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <!-- Left Navigation Items -->
+            <div class="flex gap-8">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="index.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Вести</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="sports.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="magazine.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
+                </a>
+            </div>
+            <!-- Right Navigation Items -->
+            <div class="flex gap-8">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="latest-news.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">Најнови Вести</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="prognoza.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="radio.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="youtube.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">YouTube</p>
+                </a>
+            </div>
+        </div>
+        <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
+        
+        
+    </div>
+</div>
+    </div>
+
+    <!-- ======================= -->
+    <!-- MOBILE HEADER (< lg)    -->
+    <!-- ======================= -->
+    <div class="block lg:hidden max-w-3xl mx-auto w-full">
+        <div>
+    <!-- Mobile Header -->
+    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger-menu-button"
+                class="theme-text-primary p-2"
+                aria-label="Open navigation menu"
+                aria-controls="mobile-menu"
+                aria-expanded="false">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Centered Title/Logo -->
+        <div class="flex-1 text-center leading-tight">
+            <a href="index.html" class="inline-block hover:underline">
+                <h1 class="theme-text-primary text-2xl font-bold uppercase tracking-wider">
+                    DAY.MK
+                </h1>
+            </a>
+
+            <!-- Updated timestamp -->
+            <p class="theme-text-secondary text-xs font-normal mt-0.5">
+                обновено <span>04:30, 08.03.2026</span>
+            </p>
+        </div>
+
+        <!-- Search Icon -->
+        <button id="search-button-mobile" class="theme-text-primary p-2" aria-label="Open search dialog">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Slide-out Menu -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
+        <div class="p-4">
+            <h2 class="theme-text-primary text-lg font-bold mb-4">Навигација</h2>
+            <nav class="flex flex-col gap-2">
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation"
+                                    aria-expanded="false"
+                                    data-subnav-toggle="left-0" aria-controls="left-subnav-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden"
+                             id="left-subnav-0" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation"
+                                    aria-expanded="false"
+                                    data-subnav-toggle="left-1" aria-controls="left-subnav-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden"
+                             id="left-subnav-1" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation"
+                                    aria-expanded="false"
+                                    data-subnav-toggle="left-2" aria-controls="left-subnav-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden"
+                             id="left-subnav-2" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="magazine-intimacy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Интима</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="radio.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    
+
+                    <!-- Expandable item -->
+                    <div class="flex flex-col">
+                        <div class="flex items-center justify-between">
+                            <a href="youtube.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">YouTube</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation"
+                                    aria-expanded="false"
+                                    data-subnav-toggle="right-3" aria-controls="right-subnav-3">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="ml-4 mt-1 space-y-1 hidden"
+                             id="right-subnav-3" data-subnav-id="right-3">
+                            <a href="youtube-politics.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Политика</a><a href="youtube-podcast.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Подкаст</a><a href="youtube-za-deca.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">За Деца</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-3 theme-border-color">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
+                </button>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- Hidden desktop theme toggle button to leverage existing script -->
+    <button id="theme-toggle" class="hidden"></button>
+</div>
+    </div>
+
+    <!-- ======================= -->
+    <!-- MAIN CONTENT            -->
+    <!-- ======================= -->
+    <main class="w-full">
+
+        <!-- ====================================================== -->
+        <!-- DESKTOP VERSION (from real latest-news.html)          -->
+        <!-- ====================================================== -->
+        <div class="hidden lg:block">
+            <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+                <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                    <!-- Main Column -->
+                    <div class="lg:col-span-2 flex flex-col gap-6">
+                        <h1 class="theme-text-primary text-2xl font-bold mb-6">Day.mk - Најнови Вести (Страница 209)</h1>
+
+                        <!-- Article List -->
+                        <div class="flex flex-col divide-y theme-border-color">
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="scena-харисон-форд-доби-награда-за-животно-дело-одржа-емотивен-summary-98692.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-98692.webp"
+                 alt="Харисон Форд доби награда за животно дело, одржа емотивен говор"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="eager" fetchpriority="high"/>
+            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="scena-харисон-форд-доби-награда-за-животно-дело-одржа-емотивен-summary-98692.html"
+               class="hover:underline">Харисон Форд доби награда за животно дело, одржа емотивен говор</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Емотивен говор пред колегите 83-годишниот Форд, видливо трогнат, ја …</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 137 часа</span>
+            </span>
+            <div class="px-2.5 py-0.5 bg-blue-800 text-white rounded-full hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2.5 py-0.5 bg-red-800 text-white rounded-full hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="scena-белград-доби-хард-рок-кафе-наскоро-и-рок-музеј-со-предмети-summary-98691.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-98691.webp"
+                 alt="Белград доби „Хард Рок Кафе“, наскоро и рок-музеј со предмети на ѕвездите од светската музичка сцена"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
+            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="scena-белград-доби-хард-рок-кафе-наскоро-и-рок-музеј-со-предмети-summary-98691.html"
+               class="hover:underline">Белград доби „Хард Рок Кафе“, наскоро и рок-музеј со предмети на ѕвездите од светската музичка сцена</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Белград – Оригинални корсети на Мадона и Витни Хјустон, невообичаени сценски чизми на Елтон Џон и инструменти на „Блек Сабат“ и други познати музичари се изложени во таканаречен...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 135 часа</span>
+            </span>
+            <div class="px-2.5 py-0.5 bg-blue-800 text-white rounded-full hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2.5 py-0.5 bg-red-800 text-white rounded-full hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="scena-леонардо-дикаприо-снима-нов-филм-со-скорсезе-затоа-ги-summary-98690.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-98690.webp"
+                 alt="Леонардо Дикаприо снима нов филм со Скорсезе –  затоа ги пропушти наградите „САГ“"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
+            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="scena-леонардо-дикаприо-снима-нов-филм-со-скорсезе-затоа-ги-summary-98690.html"
+               class="hover:underline">Леонардо Дикаприо снима нов филм со Скорсезе –  затоа ги пропушти наградите „САГ“</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Лос Анџелес – Леонардо Дикаприо не присуствуваше на 32-то годишно доделување на наградите за актери (порано познати како награди на здружението на филмски актери „SAG“) синоќа, ...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 134 часа</span>
+            </span>
+            <div class="px-2.5 py-0.5 bg-blue-800 text-white rounded-full hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2.5 py-0.5 bg-red-800 text-white rounded-full hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="scena-оваа-актерка-наполни-50-години-а-изгледа-како-божица-summary-98689.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-98689.webp"
+                 alt="Оваа актерка наполни 50 години, а изгледа како божица"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
+            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="scena-оваа-актерка-наполни-50-години-а-изгледа-како-божица-summary-98689.html"
+               class="hover:underline">Оваа актерка наполни 50 години, а изгледа како божица</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Лос Анџелес – Али Лартер ги крена жештините на доделувањето на наградите за актери , синоќа, во салата „Шрајн“ со смел момент во стилот на фам-фатал.</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 133 часа</span>
+            </span>
+            <div class="px-2.5 py-0.5 bg-blue-800 text-white rounded-full hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2.5 py-0.5 bg-red-800 text-white rounded-full hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="scena-поимот-свифти-стана-дел-од-англискиот-речник-summary-98688.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-98688.webp"
+                 alt="Поимот Свифти стана дел од англискиот речник"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
+            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="scena-поимот-свифти-стана-дел-од-англискиот-речник-summary-98688.html"
+               class="hover:underline">Поимот Свифти стана дел од англискиот речник</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">официјално го додаде зборот Swiftie.</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 116 часа</span>
+            </span>
+            <div class="px-2.5 py-0.5 bg-blue-800 text-white rounded-full hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2.5 py-0.5 bg-red-800 text-white rounded-full hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="scena-зелена-и-одржлива-мода-нордиско-балтичка-приказна-како-summary-98687.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-98687.webp"
+                 alt="„Зелена и одржлива мода: Нордиско-балтичка приказна“ како најава за Моден викенд Скопје во март"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
+            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="scena-зелена-и-одржлива-мода-нордиско-балтичка-приказна-како-summary-98687.html"
+               class="hover:underline">„Зелена и одржлива мода: Нордиско-балтичка приказна“ како најава за Моден викенд Скопје во март</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Во периодот од 21-30 март 2026 година, Северна Македонија ќе биде домаќин на меѓународната дизајнерска резиденција „Зелена и одржлива мода: Нордиско-балтичка приказна“, која ќе ...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 114 часа</span>
+            </span>
+            <div class="px-2.5 py-0.5 bg-blue-800 text-white rounded-full hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2.5 py-0.5 bg-red-800 text-white rounded-full hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="scena-калиопи-се-враќа-со-нов-концерт-на-17-октомври-во-борис-summary-98686.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-98686.webp"
+                 alt="Калиопи се враќа со нов концерт на 17 октомври во „Борис Трајковски“"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
+            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="scena-калиопи-се-враќа-со-нов-концерт-на-17-октомври-во-борис-summary-98686.html"
+               class="hover:underline">Калиопи се враќа со нов концерт на 17 октомври во „Борис Трајковски“</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">По целосно распродадената арена „Борис Трајковски“ во 2024 година и четирите последователно распродадени концерти во 2025 година во „Македонска филхармонија“, интересот за …</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 114 часа</span>
+            </span>
+            <div class="px-2.5 py-0.5 bg-blue-800 text-white rounded-full hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2.5 py-0.5 bg-red-800 text-white rounded-full hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="scena-џастин-тимберлејк-тужи-отмен-град-за-да-не-го-објави-видеото-summary-98685.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-98685.webp"
+                 alt="Џастин Тимберлејк тужи отмен град за да не го објави видеото од апсењето"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
+            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="scena-џастин-тимберлејк-тужи-отмен-град-за-да-не-го-објави-видеото-summary-98685.html"
+               class="hover:underline">Џастин Тимберлејк тужи отмен град за да не го објави видеото од апсењето</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Џастин Тимберлејк го тужи луксузниот град Саг Харбор, Лонг Ајленд, за да го блокира објавувањето на снимката од неговата камера на телото од апсењето при возење под дејство на а...</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 112 часа</span>
+            </span>
+            <div class="px-2.5 py-0.5 bg-blue-800 text-white rounded-full hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2.5 py-0.5 bg-red-800 text-white rounded-full hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="scena-кои-славни-личности-имаат-имот-во-дубаи-summary-98684.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-98684.webp"
+                 alt="Кои славни личности имаат имот во Дубаи?"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
+            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="scena-кои-славни-личности-имаат-имот-во-дубаи-summary-98684.html"
+               class="hover:underline">Кои славни личности имаат имот во Дубаи?</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Дубаи е хипнотизирачко урбано игралиште со блескави облакодери, раскошни резиденции и блескави плажи; тоа е град кој израснал од пустината во просперитетен комерцијален центар.</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 111 часа</span>
+            </span>
+            <div class="px-2.5 py-0.5 bg-blue-800 text-white rounded-full hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2.5 py-0.5 bg-red-800 text-white rounded-full hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
+
+    <!-- Thumbnail -->
+    <a href="tehnologija-египет-ја-блокира-платформата-за-онлајн-игри-роблокс-поради-summary-98683.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
+        <picture>
+            <img src="images/cache/summary-98683.webp"
+                 alt="Египет ја блокира платформата за онлајн игри „Роблокс“ поради загриженост за безбедноста на децата"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
+            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
+        </picture>
+    </a>
+
+    <!-- Content -->
+    <div class="flex flex-col flex-grow">
+        <!-- Title -->
+        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
+            <a href="tehnologija-египет-ја-блокира-платформата-за-онлајн-игри-роблокс-поради-summary-98683.html"
+               class="hover:underline">Египет ја блокира платформата за онлајн игри „Роблокс“ поради загриженост за безбедноста на децата</a>
+        </h3>
+
+        <!-- Snippet -->
+        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Египет ја блокира платформата за игри „Роблокс“ (Roblox) поради загриженост за онлајн безбедноста на децата, објавија локалните медиуми.</p>
+
+        <!-- Meta info -->
+        <div class="theme-text-secondary text-xs flex items-center gap-2 mt-auto">
+            <span>
+                <span>пред 805 часа</span>
+            </span>
+            <div class="px-2.5 py-0.5 bg-blue-800 text-white rounded-full hover:bg-blue-700">
+                
+            </div>
+            <div class="px-2.5 py-0.5 bg-red-800 text-white rounded-full hover:bg-red-700">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+                            
+                        </div>
+
+                        
+
+                        <!-- Pagination -->
+                        <div class="flex justify-center mt-6">
+    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
+
+        <!-- Previous -->
+        <a href="latest-news-page-208.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Previous">&laquo;</a>
+
+        <!-- Page numbers (max 10) -->
+        
+            
+                <a href="latest-news-page-205.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">205</a>
+            
+                <a href="latest-news-page-206.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">206</a>
+            
+                <a href="latest-news-page-207.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">207</a>
+            
+                <a href="latest-news-page-208.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">208</a>
+            
+                <a href="latest-news-page-209.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">209</a>
+            
+                <a href="latest-news-page-210.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">210</a>
+            
+                <a href="latest-news-page-211.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">211</a>
+            
+                <a href="latest-news-page-212.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">212</a>
+            
+                <a href="latest-news-page-213.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">213</a>
+            
+                <a href="latest-news-page-214.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">214</a>
+            
+        
+
+        <!-- Next -->
+        <a href="latest-news-page-210.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Next">&raquo;</a>
+    </nav>
+</div>
+                    </div>
+
+                    <!-- Right Sidebar / Ads -->
+                    <div class="lg:col-span-1 flex flex-col gap-6">
+
+                        <!-- Spotlight Ad -->
+                        <div class="flex flex-col rounded-lg theme-bg-secondary border theme-border-color shadow-lg overflow-hidden">
+                            <a href="https://google.com"
+                               class="w-full aspect-[16/9] bg-center bg-no-repeat bg-cover rounded-t-lg"
+                               style="background-image: url(&#39;https://placehold.co/150x300/0000FF/FFFFFF?text=Your+Ad+Here&#39;)">
+                            </a>
+                            <div class="p-4 flex flex-col gap-1">
+                                <p class="theme-text-primary text-base font-bold">Special Offer for Readers!</p>
+                                <p class="theme-text-secondary text-sm">Check out our exclusive deals.</p>
+                                <a href="https://google.com"
+                                   class="text-xs font-bold text-blue-600 hover:underline mt-2">Повеќе</a>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Spotlight Ad -->
+                        <div class="flex flex-col rounded-lg theme-bg-secondary border theme-border-color shadow-lg overflow-hidden">
+                            <a href="marketing.html"
+                               class="w-full aspect-[16/4.5] bg-center bg-no-repeat bg-cover rounded-t-lg"
+                               style="background-image: url(&#39;https://placehold.co/150x300/FF4500/FFFFFF?text=Your+Ad+Here&#39;)">
+                            </a>
+                            </a>
+                            <div class="p-4 flex flex-col gap-1">
+                                <p class="theme-text-primary text-base font-bold">New Arrivals!</p>
+                                <p class="theme-text-secondary text-sm">Browse our fresh collection.</p>
+                                <a href="marketing.html"
+                                   class="text-xs font-bold text-blue-600 hover:underline mt-2">Повеќе</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- MOBILE VERSION (from real latest-news-mobile.html)     -->
+        <!-- ====================================================== -->
+        <div class="block lg:hidden">
+            <div class="max-w-3xl mx-auto w-full">
+                <main class="p-2 sm:p-4">
+
+                    <h1 class="theme-text-primary text-2xl font-bold mb-4 px-2">Најнови Вести</h1>
+
+                    <!-- Top Mobile Ad -->
+                    <div id="mobile-ad-container-top" class="mb-4">
+                        <a id="mobile-ad-link-top"
+                           class="block w-full aspect-[8/1] bg-center bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                    </div>
+
+                    <!-- Article Cards -->
+                    <div class="flex flex-col gap-4">
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="scena-харисон-форд-доби-награда-за-животно-дело-одржа-емотивен-summary-98692.html" class="flex gap-3">
+                                    <img src="images/cache/summary-98692.webp" alt="Харисон Форд доби награда за животно дело, одржа емотивен говор"
+                                         width="96"
+                                         height="96"
+                                         decoding="async"
+                                         class="w-24 h-24 object-cover rounded-md" loading="eager" fetchpriority="high"/>
+                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Харисон Форд доби награда за животно дело, одржа емотивен говор</h3>
+                                        <p class="theme-text-secondary text-sm">Емотивен говор пред колегите 83-годишниот Форд, видливо трогнат, ја …</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 137 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="scena-белград-доби-хард-рок-кафе-наскоро-и-рок-музеј-со-предмети-summary-98691.html" class="flex gap-3">
+                                    <img src="images/cache/summary-98691.webp" alt="Белград доби „Хард Рок Кафе“, наскоро и рок-музеј со предмети на ѕвездите од светската музичка сцена"
+                                         width="96"
+                                         height="96"
+                                         decoding="async"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
+                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Белград доби „Хард Рок Кафе“, наскоро и рок-музеј со предмети на ѕвездите од светската музичка сцена</h3>
+                                        <p class="theme-text-secondary text-sm">Белград – Оригинални корсети на Мадона и Витни Хјустон, невообичаени сценски чизми на Елтон Џон и инструменти на „Блек Сабат“ и други познати музич...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 135 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="scena-леонардо-дикаприо-снима-нов-филм-со-скорсезе-затоа-ги-summary-98690.html" class="flex gap-3">
+                                    <img src="images/cache/summary-98690.webp" alt="Леонардо Дикаприо снима нов филм со Скорсезе –  затоа ги пропушти наградите „САГ“"
+                                         width="96"
+                                         height="96"
+                                         decoding="async"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
+                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Леонардо Дикаприо снима нов филм со Скорсезе –  затоа ги пропушти наградите „САГ“</h3>
+                                        <p class="theme-text-secondary text-sm">Лос Анџелес – Леонардо Дикаприо не присуствуваше на 32-то годишно доделување на наградите за актери (порано познати како награди на здружението на ...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 134 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="scena-оваа-актерка-наполни-50-години-а-изгледа-како-божица-summary-98689.html" class="flex gap-3">
+                                    <img src="images/cache/summary-98689.webp" alt="Оваа актерка наполни 50 години, а изгледа како божица"
+                                         width="96"
+                                         height="96"
+                                         decoding="async"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
+                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Оваа актерка наполни 50 години, а изгледа како божица</h3>
+                                        <p class="theme-text-secondary text-sm">Лос Анџелес – Али Лартер ги крена жештините на доделувањето на наградите за актери , синоќа, во салата „Шрајн“ со смел момент во стилот на фам-фатал.</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 133 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="scena-поимот-свифти-стана-дел-од-англискиот-речник-summary-98688.html" class="flex gap-3">
+                                    <img src="images/cache/summary-98688.webp" alt="Поимот Свифти стана дел од англискиот речник"
+                                         width="96"
+                                         height="96"
+                                         decoding="async"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
+                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Поимот Свифти стана дел од англискиот речник</h3>
+                                        <p class="theme-text-secondary text-sm">официјално го додаде зборот Swiftie.</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 116 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            <div id="mobile-ad-container-mid" class="my-6">
+                                <a id="mobile-ad-link-mid"
+                                   class="block w-full aspect-[8/1] bg-center bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
+                            </div>
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="scena-зелена-и-одржлива-мода-нордиско-балтичка-приказна-како-summary-98687.html" class="flex gap-3">
+                                    <img src="images/cache/summary-98687.webp" alt="„Зелена и одржлива мода: Нордиско-балтичка приказна“ како најава за Моден викенд Скопје во март"
+                                         width="96"
+                                         height="96"
+                                         decoding="async"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
+                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">„Зелена и одржлива мода: Нордиско-балтичка приказна“ како најава за Моден викенд Скопје во март</h3>
+                                        <p class="theme-text-secondary text-sm">Во периодот од 21-30 март 2026 година, Северна Македонија ќе биде домаќин на меѓународната дизајнерска резиденција „Зелена и одржлива мода: Нордиск...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 114 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="scena-калиопи-се-враќа-со-нов-концерт-на-17-октомври-во-борис-summary-98686.html" class="flex gap-3">
+                                    <img src="images/cache/summary-98686.webp" alt="Калиопи се враќа со нов концерт на 17 октомври во „Борис Трајковски“"
+                                         width="96"
+                                         height="96"
+                                         decoding="async"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
+                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Калиопи се враќа со нов концерт на 17 октомври во „Борис Трајковски“</h3>
+                                        <p class="theme-text-secondary text-sm">По целосно распродадената арена „Борис Трајковски“ во 2024 година и четирите последователно распродадени концерти во 2025 година во „Македонска фил...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 114 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="scena-џастин-тимберлејк-тужи-отмен-град-за-да-не-го-објави-видеото-summary-98685.html" class="flex gap-3">
+                                    <img src="images/cache/summary-98685.webp" alt="Џастин Тимберлејк тужи отмен град за да не го објави видеото од апсењето"
+                                         width="96"
+                                         height="96"
+                                         decoding="async"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
+                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Џастин Тимберлејк тужи отмен град за да не го објави видеото од апсењето</h3>
+                                        <p class="theme-text-secondary text-sm">Џастин Тимберлејк го тужи луксузниот град Саг Харбор, Лонг Ајленд, за да го блокира објавувањето на снимката од неговата камера на телото од апсење...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 112 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="scena-кои-славни-личности-имаат-имот-во-дубаи-summary-98684.html" class="flex gap-3">
+                                    <img src="images/cache/summary-98684.webp" alt="Кои славни личности имаат имот во Дубаи?"
+                                         width="96"
+                                         height="96"
+                                         decoding="async"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
+                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Кои славни личности имаат имот во Дубаи?</h3>
+                                        <p class="theme-text-secondary text-sm">Дубаи е хипнотизирачко урбано игралиште со блескави облакодери, раскошни резиденции и блескави плажи; тоа е град кој израснал од пустината во просп...</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 111 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
+                                <a href="tehnologija-египет-ја-блокира-платформата-за-онлајн-игри-роблокс-поради-summary-98683.html" class="flex gap-3">
+                                    <img src="images/cache/summary-98683.webp" alt="Египет ја блокира платформата за онлајн игри „Роблокс“ поради загриженост за безбедноста на децата"
+                                         width="96"
+                                         height="96"
+                                         decoding="async"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
+                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
+                                    <div class="flex flex-col flex-1">
+                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Египет ја блокира платформата за онлајн игри „Роблокс“ поради загриженост за безбедноста на децата</h3>
+                                        <p class="theme-text-secondary text-sm">Египет ја блокира платформата за игри „Роблокс“ (Roblox) поради загриженост за онлајн безбедноста на децата, објавија локалните медиуми.</p>
+                                        <div class="theme-text-secondary text-xs mt-2">
+                                            <span>пред 805 часа</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Mid Ad -->
+                            
+                        
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="flex justify-center mt-6">
+    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
+
+        <!-- Previous -->
+        <a href="latest-news-page-208.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Previous">&laquo;</a>
+
+        <!-- Page numbers (max 10) -->
+        
+            
+                <a href="latest-news-page-205.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">205</a>
+            
+                <a href="latest-news-page-206.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">206</a>
+            
+                <a href="latest-news-page-207.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">207</a>
+            
+                <a href="latest-news-page-208.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">208</a>
+            
+                <a href="latest-news-page-209.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">209</a>
+            
+                <a href="latest-news-page-210.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">210</a>
+            
+                <a href="latest-news-page-211.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">211</a>
+            
+                <a href="latest-news-page-212.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">212</a>
+            
+                <a href="latest-news-page-213.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">213</a>
+            
+                <a href="latest-news-page-214.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">214</a>
+            
+        
+
+        <!-- Next -->
+        <a href="latest-news-page-210.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Next">&raquo;</a>
+    </nav>
+</div>
+
+                </main>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="theme-bg-secondary py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
+        <!-- Disclaimer Text -->
+        <p class="text-sm leading-relaxed mb-6">
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
+        </p>
+
+        <!-- Static Links with Thymeleaf relative URLs -->
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
+            <a href="sources.html" class="hover:underline theme-text-primary">Извори</a>
+            <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
+            <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
+            <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
+            <a href="blog.html" class="hover:underline theme-text-primary">Блог</a>
+            <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a>
+            <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
+            <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
+        </div>
+    </div>
+
+    <!-- NEW: Search Modal HTML Structure -->
+    <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-start justify-center min-h-screen pt-16">
+            <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2>
+                    <button id="close-search-modal" class="theme-text-primary" aria-label="Close search">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                <label for="search-input" class="sr-only">Search keywords</label>
+                <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4" autocomplete="off">
+                <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto" role="status" aria-live="polite" aria-busy="false">
+                    <!-- Search results will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Lunr.js library and the search script -->
+
+
+
+</footer>
+
+</div>
+
+<!-- Mobile ads data -->
+<script>
+    window.mobileTopAdsData = [{"id":"mobileTopAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Your+Mobile+Ad+Here+1","title":"Mobile Exclusive Offer","description":"Special deal for mobile users.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"},{"id":"mobileTopAd2","imageUrl":"https:\/\/placehold.co\/600x75\/DAF7A6\/000000?text=Your+Mobile+Ad+Here+2","title":"New Mobile Feature","description":"Check out our new mobile feature.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"}];
+    window.mobileMidAdsData = [{"id":"mobileMidAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Your+Mobile+Ad+Here+1","title":"Don't Miss This!","description":"Another great offer just for you.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"},{"id":"mobileMidAd2","imageUrl":"https:\/\/placehold.co\/600x75\/C70039\/FFFFFF?text=Your+Mobile+Ad+Here+2","title":"Scroll-Stopping Savings","description":"Great savings await.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"}];
+</script>
+
+<div>
+    <script>
+    /*<![CDATA[*/
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement; // This refers to the <html> tag
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+
+    // Function to set the theme
+    function setTheme(theme) {
+        if (theme === 'dark') {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            if (moonIcon) moonIcon.style.display = 'block';
+            if (sunIcon) sunIcon.style.display = 'none';
+        } else {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            if (sunIcon) sunIcon.style.display = 'block';
+            if (moonIcon) moonIcon.style.display = 'none';
+        }
+    }
+
+    // Check for saved theme preference or system preference on load
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark'); // Default to dark if system prefers it
+    } else {
+        setTheme('light'); // Default to light
+    }
+
+    // Toggle theme on button click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        });
+    }
+
+
+    // Listen for system theme changes (if no preference is saved)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (!localStorage.getItem('theme')) { // Only react to system changes if no user preference is set
+            setTheme(event.matches ? 'dark' : 'light');
+        }
+    });
+    /*]]>*/
+</script>
+
+
+    <script src="js/mobile-nav.js" defer></script>
+
+    <!-- PERF: Load search stack only on demand to reduce unused JS on first render. -->
+    <script src="js/search.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
+</script>
+    <!-- PERF: Keep ad rotation deferred to avoid blocking first content paint. -->
+    <script src="js/ad-rotation.js" defer></script>
+
+</div>
+</body>
+</html>
