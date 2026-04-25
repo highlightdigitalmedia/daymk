@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pre-paint theme (prevents flash/blink) -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('theme');
+                var theme = saved ? saved :
+                    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                if (theme === 'dark') document.documentElement.classList.add('dark');
+                else document.documentElement.classList.remove('dark');
+            } catch (e) {}
+        })();
+    </script>
+
+    <!-- Title + favicon -->
+    <title>Day.mk - YouTube - ЗА ИЛИ ПРОТИВ - ЗА ИЛИ ПРОТИВ (09.03.2026) ГОСТИ: ТОНИ МЕНКИНОВСКИ И ВЛАДО ЈОВАНОВСКИ</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <!-- PERF: Preconnect to remote origins early to reduce DNS/TLS latency for mobile LCP. -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- PERF: Inline tiny critical styles so first paint is stable before deferred CSS arrives. -->
+    <style>
+        html, body { font-family: Newsreader, "Noto Sans", sans-serif; margin: 0; }
+        .theme-bg-primary { background-color: #ffffff; }
+        .theme-text-primary { color: #1a1a1a; }
+        html.dark .theme-bg-primary { background-color: #101a23; }
+        html.dark .theme-text-primary { color: #ffffff; }
+    </style>
+
+    <!-- PERF: Preload font stylesheet and switch rel on load to reduce render-blocking CSS. -->
+    <link rel="preload" as="style"
+          href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap"
+          onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap" />
+    </noscript>
+
+    <!-- Meta Description -->
+    <meta name="description"
+          content="ЗА ИЛИ ПРОТИВ (09.03.2026) ГОСТИ: ТОНИ МЕНКИНОВСКИ И ВЛАДО ЈОВАНОВСКИ"/>
+
+    <!-- Canonical URL (optional) -->
+    <link rel="canonical" href="" />
+
+    <!-- Robots directives -->
+    <meta name="robots"
+          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="mk" href="https://day.mk/youtube-show-8-o_yrOLelhUc.html" />
+
+    <!-- Basic Open Graph for non-article pages -->
+    <meta property="og:site_name" content="Day.mk" />
+    <meta property="og:locale" content="mk_MK" />
+    <meta property="og:title" content="Day.mk - YouTube - ЗА ИЛИ ПРОТИВ - ЗА ИЛИ ПРОТИВ (09.03.2026) ГОСТИ: ТОНИ МЕНКИНОВСКИ И ВЛАДО ЈОВАНОВСКИ" />
+    <meta property="og:description"
+          content="ЗА ИЛИ ПРОТИВ (09.03.2026) ГОСТИ: ТОНИ МЕНКИНОВСКИ И ВЛАДО ЈОВАНОВСКИ"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://day.mk/youtube-show-8-o_yrOLelhUc.html" />
+    <meta property="og:image" content="https://day.mk/assets/logo.png" />
+
+    <!-- Twitter card for non-article pages -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Day.mk - YouTube - ЗА ИЛИ ПРОТИВ - ЗА ИЛИ ПРОТИВ (09.03.2026) ГОСТИ: ТОНИ МЕНКИНОВСКИ И ВЛАДО ЈОВАНОВСКИ" />
+    <meta name="twitter:description"
+          content="ЗА ИЛИ ПРОТИВ (09.03.2026) ГОСТИ: ТОНИ МЕНКИНОВСКИ И ВЛАДО ЈОВАНОВСКИ"/>
+    <meta name="twitter:image" content="https://day.mk/assets/logo.png" />
+
+    <!-- Primary video data for Google Video Indexing -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "\u0417\u0410 \u0418\u041B\u0418 \u041F\u0420\u041E\u0422\u0418\u0412 (09.03.2026) \u0413\u041E\u0421\u0422\u0418: \u0422\u041E\u041D\u0418 \u041C\u0415\u041D\u041A\u0418\u041D\u041E\u0412\u0421\u041A\u0418 \u0418 \u0412\u041B\u0410\u0414\u041E \u0408\u041E\u0412\u0410\u041D\u041E\u0412\u0421\u041A\u0418",
+            "description": "\u0413\u041E\u0421\u0422\u0418: \u0422\u041E\u041D\u0418 \u041C\u0415\u041D\u041A\u0418\u041D\u041E\u0412\u0421\u041A\u0418 - \u0410\u0414\u0412\u041E\u041A\u0410\u0422, \u0411\u041E\u0420\u0415\u0426 \u0417\u0410 \u0427\u041E\u0412\u0415\u041A\u041E\u0412\u0418 \u041F\u0420\u0410\u0412\u0410 \u0412\u041B\u0410\u0414\u041E \u0408\u041E\u0412\u0410\u041D\u041E\u0412\u0421\u041A\u0418 -\u0411\u0415\u0417\u0411\u0415\u0414\u041D\u041E\u0421\u0415\u041D \u0415\u041A\u0421\u041F\u0415\u0420\u0422",
+            "thumbnailUrl": [
+                "https:\/\/i4.ytimg.com\/vi\/o_yrOLelhUc\/hqdefault.jpg"
+            ],
+            "uploadDate": null,
+            "embedUrl": "https:\/\/www.youtube.com\/embed\/o_yrOLelhUc",
+            "contentUrl": "https:\/\/www.youtube.com\/watch?v=o_yrOLelhUc",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Day.mk"
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": null
+            }
+        }
+    </script>
+
+    <!-- PERF: Load generated Tailwind utilities as static CSS (no runtime CDN compiler). -->
+    <link rel="preload" as="style" href="css/tailwind.generated.css" />
+    <link rel="stylesheet" href="css/tailwind.generated.css" />
+    <!-- PERF: Keep explicit stylesheet link for reliability; preload remains as a fetch hint. -->
+    <link rel="preload" as="style" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="theme-bg-primary">
+<div
+        class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
+        style='font-family: Newsreader, "Noto Sans", sans-serif;'
+>
+    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+        <div>
+    <!-- Header section containing title and icons -->
+    <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
+        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
+            <a href="index.html" class="hover:underline">DAY.MK</a>
+            <p class="theme-text-secondary text-sm font-normal text-center pb-2">
+                обновено <span>22:35, 05.05.2026</span>
+            </p>
+        </h2>
+
+        <div class="flex w-24 items-center justify-end">
+            <!-- NEW: Search Icon (Desktop) -->
+            <button id="search-button-desktop" aria-label="Open search"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </button>
+
+            <!-- Weather Link Icon (Thermometer) -->
+            <a href="prognoza.html" aria-label="Weather Forecast"
+               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
+                </svg>
+            </a>
+            <!-- Day/Night Mode Toggle Button -->
+            <button id="theme-toggle"
+                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+                    aria-label="Toggle dark mode"
+            >
+                <!-- Sun Icon (Light Mode) -->
+                <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <!-- Moon Icon (Dark Mode) -->
+                <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- "обновено" time now correctly positioned below the header, within the main content wrapper -->
+
+
+    <div class="pb-3 pt-4">
+        <!-- Main Navigation Tabs (split into left and right) -->
+        <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <!-- Left Navigation Items -->
+            <div class="flex gap-8">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="index.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Вести</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="sports.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Спорт</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="magazine.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Магазин</p>
+                </a>
+            </div>
+            <!-- Right Navigation Items -->
+            <div class="flex gap-8">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="latest-news.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Најнови Вести</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="prognoza.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Прогноза</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-transparent theme-nav-text-inactive" href="radio.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-inactive">Радио</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 border-b-[3px] theme-active-border theme-nav-text-active" href="youtube.html">
+                    <p class="text-sm font-bold leading-normal tracking-[0.015em] theme-nav-text-active">YouTube</p>
+                </a>
+            </div>
+        </div>
+        <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
+        
+        
+            <div class="flex border-b theme-border-color px-4 gap-4 overflow-x-auto whitespace-nowrap scrollbar-hide pt-2">
+                <a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-[3px] theme-active-border theme-nav-text-active" href="youtube-politics.html">
+                    <p>Политика</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="youtube-podcast.html">
+                    <p>Подкаст</p>
+                </a><a class="flex flex-col items-center justify-center pb-[13px] pt-1 text-sm font-bold leading-normal tracking-[0.015em] border-b-transparent theme-nav-text-inactive" href="youtube-za-deca.html">
+                    <p>За Деца</p>
+                </a>
+            </div>
+        
+    </div>
+</div>
+    </div>
+
+    <div class="block lg:hidden max-w-3xl mx-auto w-full">
+        <div>
+    <!-- Mobile Header -->
+    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger-menu-button"
+                class="theme-text-primary p-2"
+                aria-label="Open navigation menu"
+                aria-controls="mobile-menu"
+                aria-expanded="false">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Centered Title/Logo -->
+        <div class="flex-1 text-center leading-tight">
+            <a href="index.html" class="inline-block hover:underline">
+                <div class="theme-text-primary text-2xl font-bold uppercase tracking-wider">
+                    DAY.MK
+                </div>
+            </a>
+
+            <!-- Updated timestamp -->
+            <p class="theme-text-secondary text-xs font-normal mt-0.5">
+                обновено <span>22:35, 05.05.2026</span>
+            </p>
+        </div>
+
+        <!-- Search Icon -->
+        <button id="search-button-mobile" class="theme-text-primary p-2" aria-label="Open search dialog">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Slide-out Menu -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
+        <div class="p-4">
+            <h2 class="theme-text-primary text-lg font-bold mb-4">Навигација</h2>
+            <nav class="flex flex-col gap-2">
+                <!-- LEFT NAV ITEMS -->
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="index.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Вести</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation"
+                                    aria-expanded="false"
+                                    data-subnav-toggle="left-0" aria-controls="left-subnav-0">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden"
+                             id="left-subnav-0" data-subnav-id="left-0">
+                            <a href="macedonia.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Македонија</a><a href="economy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Економија</a><a href="balkan.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Балкан</a><a href="world.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Свет</a><a href="skopje.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Скопје</a><a href="bitola.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Битола</a><a href="hronika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Хроника</a><a href="republika.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Република</a><a href="culture.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Култура</a><a href="technology.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Технологија</a><a href="scene.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Сцена</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="sports.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Спорт</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation"
+                                    aria-expanded="false"
+                                    data-subnav-toggle="left-1" aria-controls="left-subnav-1">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden"
+                             id="left-subnav-1" data-subnav-id="left-1">
+                            <a href="sport-football.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Кошарка</a><a href="sport-handball.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Тенис</a><a href="sport-automoto.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомото</a><a href="sport-othersports.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Останато</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <!-- Simple item (no subitems) -->
+                    
+
+                    <!-- Expandable item (with subitems) -->
+                    <div class="flex flex-col">
+                        <!-- Parent row: label + chevron -->
+                        <div class="flex items-center justify-between">
+                            <a href="magazine.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">Магазин</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation"
+                                    aria-expanded="false"
+                                    data-subnav-toggle="left-2" aria-controls="left-subnav-2">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Sub-items -->
+                        <div class="ml-4 mt-1 space-y-1 hidden"
+                             id="left-subnav-2" data-subnav-id="left-2">
+                            <a href="magazine-fun.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Забава</a><a href="magazine-cars.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Автомобил</a><a href="magazine-life.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Живот</a><a href="magazine-travel.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Патувања</a><a href="magazine-health.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Здравје</a><a href="magazine-food.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Храна</a><a href="magazine-style.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Стил</a><a href="magazine-intimacy.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Интима</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT NAV ITEMS -->
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="latest-news.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Најнови Вести</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="prognoza.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Прогноза</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    <a href="radio.html"
+                       class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2">Радио</a>
+
+                    <!-- Expandable item -->
+                    
+                </div>
+                <div class="flex flex-col mt-1">
+                    <!-- Simple item -->
+                    
+
+                    <!-- Expandable item -->
+                    <div class="flex flex-col">
+                        <div class="flex items-center justify-between">
+                            <a href="youtube.html"
+                               class="theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 flex-1 text-left">YouTube</a>
+                            <button type="button"
+                                    class="theme-text-primary p-2"
+                                    aria-label="Toggle subnavigation"
+                                    aria-expanded="false"
+                                    data-subnav-toggle="right-3" aria-controls="right-subnav-3">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="ml-4 mt-1 space-y-1 hidden"
+                             id="right-subnav-3" data-subnav-id="right-3">
+                            <a href="youtube-politics.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Политика</a><a href="youtube-podcast.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">Подкаст</a><a href="youtube-za-deca.html"
+                               class="block theme-text-secondary text-base py-1 hover:theme-bg-secondary rounded-md px-2">За Деца</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-3 theme-border-color">
+
+                <!-- Other Utility Links (unchanged) -->
+                <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
+                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
+                </button>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- Hidden desktop theme toggle button to leverage existing script -->
+    <button id="theme-toggle" class="hidden"></button>
+</div>
+    </div>
+
+    <main class="w-full">
+        <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+            <div class="p-4 @container">
+                <section class="flex flex-col gap-4">
+                    <h1 class="theme-text-primary text-xl lg:text-3xl font-bold leading-tight">ЗА ИЛИ ПРОТИВ (09.03.2026) ГОСТИ: ТОНИ МЕНКИНОВСКИ И ВЛАДО ЈОВАНОВСКИ</h1>
+
+                    <div class="video-container w-full aspect-video rounded-lg overflow-hidden border theme-border-color theme-bg-secondary shadow-sm">
+                        <iframe
+                                width="560"
+                                height="315"
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/o_yrOLelhUc"
+                                title="ЗА ИЛИ ПРОТИВ (09.03.2026) ГОСТИ: ТОНИ МЕНКИНОВСКИ И ВЛАДО ЈОВАНОВСКИ"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="youtube-show-header">
+                        <span class="kategorija_naslov kategorija_naslov--sm cat-green">ЗА ИЛИ ПРОТИВ</span>
+                    </div>
+                </section>
+
+                <section class="mt-10 flex flex-col gap-8">
+                    
+
+                    
+                        <div class="flex flex-col gap-4">
+                            <h2 class="theme-text-primary text-lg font-bold">2026</h2>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-z6qcW4_ulo8.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/z6qcW4_ulo8/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (01.05.2026) ГОСТИ:  ЈУЛИЈАНА ШУМКОВСКА, ДЕЈАН АТАНАСОВ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-z6qcW4_ulo8.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (01.05.2026) ГОСТИ:  ЈУЛИЈАНА ШУМКОВСКА, ДЕЈАН АТАНАСОВ</a>
+                                            <p class="theme-text-secondary text-xs">May 02, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-XEAn-S20iBU.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/XEAn-S20iBU/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (30.04.2026) ГОСТИ: САФЕТ БИШЕВАЦ, ИВО РАНГЕЛОВИЌ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-XEAn-S20iBU.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (30.04.2026) ГОСТИ: САФЕТ БИШЕВАЦ, ИВО РАНГЕЛОВИЌ</a>
+                                            <p class="theme-text-secondary text-xs">May 01, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-ZPykXh9U8Vw.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/ZPykXh9U8Vw/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (29.04.2026) ГОСТИН: ПРОФ. Д-Р ЗВОНИМИР ЈАНКУЛОСКИ – ПОРАНЕШЕН АМБАСАДОР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-ZPykXh9U8Vw.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (29.04.2026) ГОСТИН: ПРОФ. Д-Р ЗВОНИМИР ЈАНКУЛОСКИ – ПОРАНЕШЕН АМБАСАДОР</a>
+                                            <p class="theme-text-secondary text-xs">Apr 30, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-eNa0WM3kgEE.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/eNa0WM3kgEE/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (28.04.2026) ГОСТИН: ВОИСЛАВ ЗАФИРОВСКИ - БЕЗБЕДНОСЕН ЕКСПЕРТ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-eNa0WM3kgEE.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (28.04.2026) ГОСТИН: ВОИСЛАВ ЗАФИРОВСКИ - БЕЗБЕДНОСЕН ЕКСПЕРТ</a>
+                                            <p class="theme-text-secondary text-xs">Apr 29, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-eVI_q4lWYxM.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/eVI_q4lWYxM/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (27.04.2026) ГОСТИН: СОТИР КОСТОВ – поранешен јавен обвинител, аналитичар</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-eVI_q4lWYxM.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (27.04.2026) ГОСТИН: СОТИР КОСТОВ – поранешен јавен обвинител, аналитичар</a>
+                                            <p class="theme-text-secondary text-xs">Apr 28, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-zKczwZlZWag.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/zKczwZlZWag/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (24.04.2026) ГОСТИН: АНТОНИЈО МИЛОШОСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-zKczwZlZWag.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (24.04.2026) ГОСТИН: АНТОНИЈО МИЛОШОСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Apr 25, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-L6msiYw5apo.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/L6msiYw5apo/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (23.04.2026) ГОСТИН: ГОРДАНА ЈАНКУЛОВСКА - Поранешен министер за внатрешни работи</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-L6msiYw5apo.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (23.04.2026) ГОСТИН: ГОРДАНА ЈАНКУЛОВСКА - Поранешен министер за внатрешни работи</a>
+                                            <p class="theme-text-secondary text-xs">Apr 24, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-huLR37J4V-U.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/huLR37J4V-U/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (22.04.2026) ГОСТИН: МИЛЕ ЛЕФКОВ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-huLR37J4V-U.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (22.04.2026) ГОСТИН: МИЛЕ ЛЕФКОВ</a>
+                                            <p class="theme-text-secondary text-xs">Apr 23, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-jA6xQ1OeNsc.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/jA6xQ1OeNsc/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (21.04.2026) ГОСТИН: МАРЈАН ЃОРЧЕВ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-jA6xQ1OeNsc.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (21.04.2026) ГОСТИН: МАРЈАН ЃОРЧЕВ</a>
+                                            <p class="theme-text-secondary text-xs">Apr 22, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-JDt3Knii0t8.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/JDt3Knii0t8/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (20.04.2026) ГОСТИН: ИВОНА ТАЛЕВСКА  - НОВИНАР, ПРЕТСЕДАТЕЛ НА МАН</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-JDt3Knii0t8.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (20.04.2026) ГОСТИН: ИВОНА ТАЛЕВСКА  - НОВИНАР, ПРЕТСЕДАТЕЛ НА МАН</a>
+                                            <p class="theme-text-secondary text-xs">Apr 21, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-peoETpn2Kr0.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/peoETpn2Kr0/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (17.04.2026) ГОСТИ: ТАТЈАНА АЛЕКСИЌ, ЉУБОМИР ЃУРЧЕВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-peoETpn2Kr0.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (17.04.2026) ГОСТИ: ТАТЈАНА АЛЕКСИЌ, ЉУБОМИР ЃУРЧЕВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Apr 18, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-DTGxJC9ONnw.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/DTGxJC9ONnw/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (16.04.2026) ГОСТИ:  ЦВЕТИН ЧИЛИМАНОВ, ВЛАДИМИР БОЖИНОВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-DTGxJC9ONnw.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (16.04.2026) ГОСТИ:  ЦВЕТИН ЧИЛИМАНОВ, ВЛАДИМИР БОЖИНОВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Apr 17, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-nWSUPmaXwBg.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/nWSUPmaXwBg/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (15.04.2026) ГОСТИН: СТРАШО АНГЕЛОВСКИ - претседател на МААК</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-nWSUPmaXwBg.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (15.04.2026) ГОСТИН: СТРАШО АНГЕЛОВСКИ - претседател на МААК</a>
+                                            <p class="theme-text-secondary text-xs">Apr 16, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-dY74sHJhrrI.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/dY74sHJhrrI/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (14.04.2026) ГОСТИН: СОТИР КОСТОВ – ПОРАНЕШЕН ЈАВЕН ОБВИНИТЕЛ, АНАЛИТИЧАР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-dY74sHJhrrI.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (14.04.2026) ГОСТИН: СОТИР КОСТОВ – ПОРАНЕШЕН ЈАВЕН ОБВИНИТЕЛ, АНАЛИТИЧАР</a>
+                                            <p class="theme-text-secondary text-xs">Apr 15, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-1GdYkcSb4rU.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/1GdYkcSb4rU/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (13.04.2026) ГОСТИН: Г.ПЕТАР - МИТРОПОЛИТ ПРЕСПАНСКО-ПЕЛАГОНИСКИ, МПЦ-ОА</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-1GdYkcSb4rU.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (13.04.2026) ГОСТИН: Г.ПЕТАР - МИТРОПОЛИТ ПРЕСПАНСКО-ПЕЛАГОНИСКИ, МПЦ-ОА</a>
+                                            <p class="theme-text-secondary text-xs">Apr 14, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-FERJMk4Vlyo.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/FERJMk4Vlyo/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (09.04.2026) ГОСТИ: МИЛЕ ЛЕФКОВ, ИВАН АНАСТАСОВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-FERJMk4Vlyo.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (09.04.2026) ГОСТИ: МИЛЕ ЛЕФКОВ, ИВАН АНАСТАСОВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Apr 10, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-gXq49aZq4nk.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/gXq49aZq4nk/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (08.04.2026) ГОСТИ: ДЕЈАН АНДОНОВИЌ – НОВИНАР, ВЛАДО ЈОВАНОВСКИ – БЕЗБЕДНОСЕН ЕКСПЕРТ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-gXq49aZq4nk.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (08.04.2026) ГОСТИ: ДЕЈАН АНДОНОВИЌ – НОВИНАР, ВЛАДО ЈОВАНОВСКИ – БЕЗБЕДНОСЕН ЕКСПЕРТ</a>
+                                            <p class="theme-text-secondary text-xs">Apr 09, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8--kaknj6mAuw.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/-kaknj6mAuw/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (07.04.2026) ГОСТИН: РИСТО НИКОВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8--kaknj6mAuw.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (07.04.2026) ГОСТИН: РИСТО НИКОВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Apr 08, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-Ve9EWVT05Ts.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/Ve9EWVT05Ts/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (06.04.2026) ГОСТИН: МАРИЈА МИТЕВА – ПОРТПАРОЛ НА ВЛАДАТА НА РМ, ИК НА ВМРО-ДПМНЕ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-Ve9EWVT05Ts.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (06.04.2026) ГОСТИН: МАРИЈА МИТЕВА – ПОРТПАРОЛ НА ВЛАДАТА НА РМ, ИК НА ВМРО-ДПМНЕ</a>
+                                            <p class="theme-text-secondary text-xs">Apr 07, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-Bd1BSK4j5Yk.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/Bd1BSK4j5Yk/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (03.04.2026) ГОСТИН: Д-Р ПЕТАР МАРКОВ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-Bd1BSK4j5Yk.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (03.04.2026) ГОСТИН: Д-Р ПЕТАР МАРКОВ</a>
+                                            <p class="theme-text-secondary text-xs">Apr 04, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-B0eC1SCo7mE.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/B0eC1SCo7mE/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (02.04.2026) ГОСТИН: СЛОБОДАН ИВАНОВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-B0eC1SCo7mE.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (02.04.2026) ГОСТИН: СЛОБОДАН ИВАНОВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Apr 03, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-kiX483YBaQw.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/kiX483YBaQw/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (01.04.2026) ГОСТИН: ЦВЕТИН ЧИЛИМАНОВ - НОВИНАР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-kiX483YBaQw.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (01.04.2026) ГОСТИН: ЦВЕТИН ЧИЛИМАНОВ - НОВИНАР</a>
+                                            <p class="theme-text-secondary text-xs">Apr 02, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-maiK1ydBCfE.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/maiK1ydBCfE/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (31.03.2026) ГОСТИН: СОТИР КОСТОВ - ПОРАНЕШЕН ЈАВЕН ОБВИНИТЕЛ, АНАЛИТИЧАР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-maiK1ydBCfE.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (31.03.2026) ГОСТИН: СОТИР КОСТОВ - ПОРАНЕШЕН ЈАВЕН ОБВИНИТЕЛ, АНАЛИТИЧАР</a>
+                                            <p class="theme-text-secondary text-xs">Apr 01, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-gLKEEWlt4Xo.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/gLKEEWlt4Xo/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (30.03.2026) ГОСТИН: ПРОФ. Д-Р ВИОЛЕТА АЧКОВСКА -  ИСТОРИЧАР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-gLKEEWlt4Xo.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (30.03.2026) ГОСТИН: ПРОФ. Д-Р ВИОЛЕТА АЧКОВСКА -  ИСТОРИЧАР</a>
+                                            <p class="theme-text-secondary text-xs">Mar 31, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-36-VywoXCOw.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/36-VywoXCOw/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (27.03.2026) ГОСТИН: ПРОФ. Д-Р ВЕСНА ЈАНЕВСКА - МИНИСТЕР ЗА ОБРАЗОВАНИЕ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-36-VywoXCOw.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (27.03.2026) ГОСТИН: ПРОФ. Д-Р ВЕСНА ЈАНЕВСКА - МИНИСТЕР ЗА ОБРАЗОВАНИЕ</a>
+                                            <p class="theme-text-secondary text-xs">Mar 28, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-rJSr0yIA97M.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/rJSr0yIA97M/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (26.03.2026) ГОСТИ: БРАНЕ ПЕТРУШЕВСКИ, КОСТАДИН АЦЕВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-rJSr0yIA97M.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (26.03.2026) ГОСТИ: БРАНЕ ПЕТРУШЕВСКИ, КОСТАДИН АЦЕВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Mar 27, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-xXEgNNB99FM.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/xXEgNNB99FM/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (25.03.2026) ГОСТИН: ВИКТОРИЈА ТРАЈКОВ - ЗАМЕНИК-МИНИСТЕР ЗА ЕВРОПСКИ ПРАШАЊА</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-xXEgNNB99FM.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (25.03.2026) ГОСТИН: ВИКТОРИЈА ТРАЈКОВ - ЗАМЕНИК-МИНИСТЕР ЗА ЕВРОПСКИ ПРАШАЊА</a>
+                                            <p class="theme-text-secondary text-xs">Mar 26, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-1SyWC9LKOx4.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/1SyWC9LKOx4/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (24.03.2026) ГОСТИН: СТЕФАН АНДОНОВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-1SyWC9LKOx4.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (24.03.2026) ГОСТИН: СТЕФАН АНДОНОВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Mar 25, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-Vr4zHCtqqCY.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/Vr4zHCtqqCY/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (23.03.2026) ГОСТИН: АНТОНИО МИЛОШОСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-Vr4zHCtqqCY.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (23.03.2026) ГОСТИН: АНТОНИО МИЛОШОСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Mar 24, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-oUg3B_BDw5o.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/oUg3B_BDw5o/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (20.03.2026) ГОСТИН: БЕТИ СТАМЕНКОСКА ТРАЈКОСКА</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-oUg3B_BDw5o.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (20.03.2026) ГОСТИН: БЕТИ СТАМЕНКОСКА ТРАЈКОСКА</a>
+                                            <p class="theme-text-secondary text-xs">Mar 21, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-2yKmv39rOfI.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/2yKmv39rOfI/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (19.03.2026) ГОСТИ: РУЖИЦА НИКОЛОВСКА - АДВОКАТ, ПЕТАР ВАСИЛЕВ - АДВОКАТ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-2yKmv39rOfI.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (19.03.2026) ГОСТИ: РУЖИЦА НИКОЛОВСКА - АДВОКАТ, ПЕТАР ВАСИЛЕВ - АДВОКАТ</a>
+                                            <p class="theme-text-secondary text-xs">Mar 20, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-7cU-xkMFmHk.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/7cU-xkMFmHk/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (18.02.2026) ГОСТИН: ЉУБОМИР ЃУРЧЕВСКИ - БЕЗБЕДНОСЕН ЕКСПЕР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-7cU-xkMFmHk.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (18.02.2026) ГОСТИН: ЉУБОМИР ЃУРЧЕВСКИ - БЕЗБЕДНОСЕН ЕКСПЕР</a>
+                                            <p class="theme-text-secondary text-xs">Mar 19, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-pE-3NmoAW4g.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/pE-3NmoAW4g/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (17.03.2026) ГОСТИН: ДРАГАН ПАВЛОВИЌ ЛАТАС - НОВИНАР И УРЕДНИК</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-pE-3NmoAW4g.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (17.03.2026) ГОСТИН: ДРАГАН ПАВЛОВИЌ ЛАТАС - НОВИНАР И УРЕДНИК</a>
+                                            <p class="theme-text-secondary text-xs">Mar 17, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-U1F-8e0xemk.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/U1F-8e0xemk/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (16.03.2026) ГОСТИН: ВЛАДО МИСАЈЛОВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-U1F-8e0xemk.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (16.03.2026) ГОСТИН: ВЛАДО МИСАЈЛОВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Mar 16, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-3l5ks41kYWc.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/3l5ks41kYWc/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (13.03.2026) ГОСТИН: АЛЕКСАНДАР РИСТЕВСКИ - АНАЛИТИЧАР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-3l5ks41kYWc.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (13.03.2026) ГОСТИН: АЛЕКСАНДАР РИСТЕВСКИ - АНАЛИТИЧАР</a>
+                                            <p class="theme-text-secondary text-xs">Mar 13, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-5BApzeQAN_o.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/5BApzeQAN_o/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (12.03.2026) ГОСТИН: МАКСИМ ДИМИТРИЕВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-5BApzeQAN_o.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (12.03.2026) ГОСТИН: МАКСИМ ДИМИТРИЕВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Mar 12, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-mpiYYJIH81w.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/mpiYYJIH81w/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (11.03.2026) ГОСТИН: МИМОЗА РАЈЛ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-mpiYYJIH81w.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (11.03.2026) ГОСТИН: МИМОЗА РАЈЛ</a>
+                                            <p class="theme-text-secondary text-xs">Mar 11, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-epzSFCd5J88.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/epzSFCd5J88/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (10.03.2026) ГОСТИН: СОТИР КОСТОВ - АНАЛИТИЧАР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-epzSFCd5J88.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (10.03.2026) ГОСТИН: СОТИР КОСТОВ - АНАЛИТИЧАР</a>
+                                            <p class="theme-text-secondary text-xs">Mar 10, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-o_yrOLelhUc.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/o_yrOLelhUc/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (09.03.2026) ГОСТИ: ТОНИ МЕНКИНОВСКИ И ВЛАДО ЈОВАНОВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-o_yrOLelhUc.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (09.03.2026) ГОСТИ: ТОНИ МЕНКИНОВСКИ И ВЛАДО ЈОВАНОВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Mar 09, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-JcO9eNkVHs0.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/JcO9eNkVHs0/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (06.03.2026) ГОСТИН: КАТЕРИНА КОТЕСКА СТИСНИОСКА - АДВОКАТ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-JcO9eNkVHs0.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (06.03.2026) ГОСТИН: КАТЕРИНА КОТЕСКА СТИСНИОСКА - АДВОКАТ</a>
+                                            <p class="theme-text-secondary text-xs">Mar 06, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-jOmi14kHoe4.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/jOmi14kHoe4/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (05.03.2026) ГОСТИН: СТОЈАНЧЕ АНГЕЛОВ - ДИРЕКТОР НА ДИРЕКЦИЈАТА ЗА ЗАШТИТА И СПАСУВАЊЕ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-jOmi14kHoe4.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (05.03.2026) ГОСТИН: СТОЈАНЧЕ АНГЕЛОВ - ДИРЕКТОР НА ДИРЕКЦИЈАТА ЗА ЗАШТИТА И СПАСУВАЊЕ</a>
+                                            <p class="theme-text-secondary text-xs">Mar 05, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-gW9snNWx8Gs.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/gW9snNWx8Gs/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (04.03.2026) ГОСТИН: ПРОФ. Д-Р ЗВОНИМИР ЈАНКУЛОСКИ - ПОРАНЕШЕН АМБАСАДОР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-gW9snNWx8Gs.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (04.03.2026) ГОСТИН: ПРОФ. Д-Р ЗВОНИМИР ЈАНКУЛОСКИ - ПОРАНЕШЕН АМБАСАДОР</a>
+                                            <p class="theme-text-secondary text-xs">Mar 04, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-oLwvVZfhbfE.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/oLwvVZfhbfE/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (03.03.2026) ГОСТИН: МАРЈАН РИСТЕСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-oLwvVZfhbfE.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (03.03.2026) ГОСТИН: МАРЈАН РИСТЕСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Mar 03, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-PG0zC8pERxg.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/PG0zC8pERxg/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (02.03.2026) ГОСТИН: РИСТО НИКОВСКИ - ПОРАНЕШЕН АМБАСАДОР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-PG0zC8pERxg.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (02.03.2026) ГОСТИН: РИСТО НИКОВСКИ - ПОРАНЕШЕН АМБАСАДОР</a>
+                                            <p class="theme-text-secondary text-xs">Mar 02, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-Xag-jsPVAGk.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/Xag-jsPVAGk/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (27.02.2026) ГОСТИН: Д-Р НАДИЦА БОЖИНОВСКА ДИМОВА</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-Xag-jsPVAGk.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (27.02.2026) ГОСТИН: Д-Р НАДИЦА БОЖИНОВСКА ДИМОВА</a>
+                                            <p class="theme-text-secondary text-xs">Feb 27, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-55Sy4lwf-bk.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/55Sy4lwf-bk/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (26.02.2026) ГОСТИ: ЉУЉЗИМ ФАРИЗИ - АНАЛИТИЧАР, САША БОГДАНОВИЌ - ПОРАНЕШЕН ПРАТЕНИК</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-55Sy4lwf-bk.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (26.02.2026) ГОСТИ: ЉУЉЗИМ ФАРИЗИ - АНАЛИТИЧАР, САША БОГДАНОВИЌ - ПОРАНЕШЕН ПРАТЕНИК</a>
+                                            <p class="theme-text-secondary text-xs">Feb 26, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-gJuhBzBitSo.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/gJuhBzBitSo/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (25.02.2026) ГОСТИН: ОРЦЕ  ЃОРЃИЕВСКИ - ГРАДОНАЧАЛНИК НА ГРАД СКОПЈЕ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-gJuhBzBitSo.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (25.02.2026) ГОСТИН: ОРЦЕ  ЃОРЃИЕВСКИ - ГРАДОНАЧАЛНИК НА ГРАД СКОПЈЕ</a>
+                                            <p class="theme-text-secondary text-xs">Feb 25, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-cIzFxpjey6M.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/cIzFxpjey6M/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (24.02.2026) ГОСТИН: СЛАВЧО ДЕСПОДОВ - ИСТОРИЧАР, ПИСАТЕЛ, ИСТРАЖУВАЧ И ПУБЛИЦИСТ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-cIzFxpjey6M.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (24.02.2026) ГОСТИН: СЛАВЧО ДЕСПОДОВ - ИСТОРИЧАР, ПИСАТЕЛ, ИСТРАЖУВАЧ И ПУБЛИЦИСТ</a>
+                                            <p class="theme-text-secondary text-xs">Feb 24, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-HiknIfy_EQ8.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/HiknIfy_EQ8/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (23.02.2026) ГОСТИН: СОТИР КОСТОВ - АНАЛИТИЧАР, ПОРАНЕШЕН ЈАВЕН ОБВИНИТЕЛ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-HiknIfy_EQ8.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (23.02.2026) ГОСТИН: СОТИР КОСТОВ - АНАЛИТИЧАР, ПОРАНЕШЕН ЈАВЕН ОБВИНИТЕЛ</a>
+                                            <p class="theme-text-secondary text-xs">Feb 23, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-Wz_AIDGnSrA.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/Wz_AIDGnSrA/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (20.02.2026) ГОСТИН: АФРИМ ГАШИ - ПРЕТСЕДАТЕЛ НА СОБРАНИЕ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-Wz_AIDGnSrA.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (20.02.2026) ГОСТИН: АФРИМ ГАШИ - ПРЕТСЕДАТЕЛ НА СОБРАНИЕ</a>
+                                            <p class="theme-text-secondary text-xs">Feb 20, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-o-1NmYi1fnw.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/o-1NmYi1fnw/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (19.02.2026) ГОСТИН: МИЛЕ ПЕШОВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-o-1NmYi1fnw.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (19.02.2026) ГОСТИН: МИЛЕ ПЕШОВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Feb 19, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-KEp8iNl7tCw.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/KEp8iNl7tCw/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (18.02.2026) ГОСТИН: ЉУБОМИР ЃУРЧЕСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-KEp8iNl7tCw.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (18.02.2026) ГОСТИН: ЉУБОМИР ЃУРЧЕСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Feb 18, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-a3M4YBKuaqw.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/a3M4YBKuaqw/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (17.02.2026) ГОСТИН: ИВОНА ТАЛЕВСКА– НОВИНАР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-a3M4YBKuaqw.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (17.02.2026) ГОСТИН: ИВОНА ТАЛЕВСКА– НОВИНАР</a>
+                                            <p class="theme-text-secondary text-xs">Feb 17, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-pn1WF_QC3F0.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/pn1WF_QC3F0/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (16.02.2026) ГОСТИН: МАРЈАН ЃОРЧЕВ – ПОРАНЕШЕН АМБАСАДОР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-pn1WF_QC3F0.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (16.02.2026) ГОСТИН: МАРЈАН ЃОРЧЕВ – ПОРАНЕШЕН АМБАСАДОР</a>
+                                            <p class="theme-text-secondary text-xs">Feb 16, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-KLdvfaY_Xjk.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/KLdvfaY_Xjk/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (13.02.2026) ГОСТИН: БРАНЕ ПЕТРУШЕВСКИ - ПРАТЕНИК</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-KLdvfaY_Xjk.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (13.02.2026) ГОСТИН: БРАНЕ ПЕТРУШЕВСКИ - ПРАТЕНИК</a>
+                                            <p class="theme-text-secondary text-xs">Feb 13, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-vNnHQPTE3mE.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/vNnHQPTE3mE/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (12.02.2026) ГОСТИ: МЛАДЕН ЈАНЕВСКИ И ДРАГАНА БОЈКОВСКА</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-vNnHQPTE3mE.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (12.02.2026) ГОСТИ: МЛАДЕН ЈАНЕВСКИ И ДРАГАНА БОЈКОВСКА</a>
+                                            <p class="theme-text-secondary text-xs">Feb 12, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-7cwBpuKSmMI.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/7cwBpuKSmMI/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (11.02.2026) ГОСТИН: МИЛАН СТЕФАНОСКИ - БЕЗБЕДНОСЕН ЕКСПЕРТ, АНАЛИТИЧАР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-7cwBpuKSmMI.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (11.02.2026) ГОСТИН: МИЛАН СТЕФАНОСКИ - БЕЗБЕДНОСЕН ЕКСПЕРТ, АНАЛИТИЧАР</a>
+                                            <p class="theme-text-secondary text-xs">Feb 11, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-KfPEZwHnfnM.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/KfPEZwHnfnM/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (10.02.2026) ГОСТИН: СОТИР КОСТОВ - ПОРАНЕШЕН ЈАВЕН ОБВИНИТЕЛ, ИСТРАЖИТЕЛ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-KfPEZwHnfnM.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (10.02.2026) ГОСТИН: СОТИР КОСТОВ - ПОРАНЕШЕН ЈАВЕН ОБВИНИТЕЛ, ИСТРАЖИТЕЛ</a>
+                                            <p class="theme-text-secondary text-xs">Feb 10, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-P5Lz3Ll7aRg.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/P5Lz3Ll7aRg/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (09.02.2026) ГОСТИН: ВОИСЛАВ ЗАФИРОВСКИ - ПОРАНЕШЕН АНТИКОРУПЦИОНЕР, АНАЛИТИЧАР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-P5Lz3Ll7aRg.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (09.02.2026) ГОСТИН: ВОИСЛАВ ЗАФИРОВСКИ - ПОРАНЕШЕН АНТИКОРУПЦИОНЕР, АНАЛИТИЧАР</a>
+                                            <p class="theme-text-secondary text-xs">Feb 09, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-lrt4At6UmJw.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/lrt4At6UmJw/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (06.02.2026) ГОСТИН: БОЈАН СТОЈАНОСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-lrt4At6UmJw.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (06.02.2026) ГОСТИН: БОЈАН СТОЈАНОСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Feb 06, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-efv3_yEfmrE.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/efv3_yEfmrE/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (05.02.2026) ГОСТИН: ЛИДИЈА РАИЧЕВИЌ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-efv3_yEfmrE.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (05.02.2026) ГОСТИН: ЛИДИЈА РАИЧЕВИЌ</a>
+                                            <p class="theme-text-secondary text-xs">Feb 05, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-CfqQAp8TF2U.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/CfqQAp8TF2U/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (04.02.2025) ГОСТИН: ПРОФ. Д-Р КАТЕРИНА ТОДОРОСКА - историчар</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-CfqQAp8TF2U.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (04.02.2025) ГОСТИН: ПРОФ. Д-Р КАТЕРИНА ТОДОРОСКА - историчар</a>
+                                            <p class="theme-text-secondary text-xs">Feb 04, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-P-snyVjGFoQ.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/P-snyVjGFoQ/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (03.02.2025) ГОСТИН: СОТИР КОСТОВ - АНАЛИТИЧАР, ПОРАНЕШЕН ЈАВЕН ОБВИНИТЕЛ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-P-snyVjGFoQ.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (03.02.2025) ГОСТИН: СОТИР КОСТОВ - АНАЛИТИЧАР, ПОРАНЕШЕН ЈАВЕН ОБВИНИТЕЛ</a>
+                                            <p class="theme-text-secondary text-xs">Feb 03, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-oJUOSYABY2A.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/oJUOSYABY2A/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (02.02.2026) ГОСТИН: БЛАГОЈА РАЛПОВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-oJUOSYABY2A.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (02.02.2026) ГОСТИН: БЛАГОЈА РАЛПОВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Feb 02, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-Xd6QLeCUYCw.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/Xd6QLeCUYCw/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (30.01.2026) ГОСТИН: АЛЕКСАНДАР РИСТЕВСКИ - аналитичар</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-Xd6QLeCUYCw.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (30.01.2026) ГОСТИН: АЛЕКСАНДАР РИСТЕВСКИ - аналитичар</a>
+                                            <p class="theme-text-secondary text-xs">Jan 30, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-fWK-696dL_k.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/fWK-696dL_k/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (29.01.2026) ГОСТИН: ИВИЦА ТОМОВСКИ - ДИРЕКТОР НА СОЗР</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-fWK-696dL_k.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (29.01.2026) ГОСТИН: ИВИЦА ТОМОВСКИ - ДИРЕКТОР НА СОЗР</a>
+                                            <p class="theme-text-secondary text-xs">Jan 29, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-RiDRDBGFdW8.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/RiDRDBGFdW8/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (28.01.2026) ГОСТИН: БРАНЕ ПЕТРУШЕВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-RiDRDBGFdW8.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (28.01.2026) ГОСТИН: БРАНЕ ПЕТРУШЕВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Jan 28, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-i1Vv9RGcMQg.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/i1Vv9RGcMQg/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (27.01.2026) ГОСТИН: СТЕФАН АНДОНОВСКИ – МИНИСТЕР ЗА ДИГИТАЛНА ТРАНСФОРМАЦИЈА</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-i1Vv9RGcMQg.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (27.01.2026) ГОСТИН: СТЕФАН АНДОНОВСКИ – МИНИСТЕР ЗА ДИГИТАЛНА ТРАНСФОРМАЦИЈА</a>
+                                            <p class="theme-text-secondary text-xs">Jan 27, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-ZLahgk8EHPg.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/ZLahgk8EHPg/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (26.01.2026) ГОСТИН: РИСТО НИКОВСКИ – ПОРАНЕШЕН АМБАСАДОР, КОЛУМНИСТ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-ZLahgk8EHPg.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (26.01.2026) ГОСТИН: РИСТО НИКОВСКИ – ПОРАНЕШЕН АМБАСАДОР, КОЛУМНИСТ</a>
+                                            <p class="theme-text-secondary text-xs">Jan 26, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-DYhU9CNIab4.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/DYhU9CNIab4/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (22.01.2026) ГОСТИ: БЛАГОЈА ПАНДОВСКИ, САШКО ДУКОВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-DYhU9CNIab4.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (22.01.2026) ГОСТИ: БЛАГОЈА ПАНДОВСКИ, САШКО ДУКОВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Jan 22, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-pIuJBNGuE3c.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/pIuJBNGuE3c/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (21.01.2026) ГОСТИН: СТРАШО АНГЕЛОВСКИ – ПРЕТСЕДАТЕЛ НА МААК</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-pIuJBNGuE3c.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (21.01.2026) ГОСТИН: СТРАШО АНГЕЛОВСКИ – ПРЕТСЕДАТЕЛ НА МААК</a>
+                                            <p class="theme-text-secondary text-xs">Jan 21, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-lUOSbj8iw2U.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/lUOSbj8iw2U/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (20.01.2025) ГОСТИН: ЉУБОМИР ЃУРЧЕСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-lUOSbj8iw2U.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (20.01.2025) ГОСТИН: ЉУБОМИР ЃУРЧЕСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Jan 20, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-K6xbnNwejN0.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/K6xbnNwejN0/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (16.01.2025) ГОСТИ: Д-Р КАМЕЛИЈА СИМЕОНОВА</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-K6xbnNwejN0.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (16.01.2025) ГОСТИ: Д-Р КАМЕЛИЈА СИМЕОНОВА</a>
+                                            <p class="theme-text-secondary text-xs">Jan 16, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-oNsYpLnqxJM.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/oNsYpLnqxJM/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (15.01.2025) ГОСТИ: АЛЕКСАНДАР САЈКОВСКИ, САША ШОТАРОВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-oNsYpLnqxJM.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (15.01.2025) ГОСТИ: АЛЕКСАНДАР САЈКОВСКИ, САША ШОТАРОВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Jan 15, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-0qnb5lyGY1A.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/0qnb5lyGY1A/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (14.01.2025) ГОСТИН: МУСТАФА ХАЈРУЛАХИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-0qnb5lyGY1A.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (14.01.2025) ГОСТИН: МУСТАФА ХАЈРУЛАХИ</a>
+                                            <p class="theme-text-secondary text-xs">Jan 14, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-5mOxmc5__CE.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/5mOxmc5__CE/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (13.01.2025) ГОСТИН: МИЛАН СТЕФАНОВСКИ - АНАЛИТИЧАР, БЕЗБЕДНОСЕН ЕКСПЕРТ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-5mOxmc5__CE.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (13.01.2025) ГОСТИН: МИЛАН СТЕФАНОВСКИ - АНАЛИТИЧАР, БЕЗБЕДНОСЕН ЕКСПЕРТ</a>
+                                            <p class="theme-text-secondary text-xs">Jan 13, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-8lo-WUGcWnQ.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i1.ytimg.com/vi/8lo-WUGcWnQ/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (12.01.2026) ГОСТИН: ВОИСЛАВ ЗАФИРОВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-8lo-WUGcWnQ.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (12.01.2026) ГОСТИН: ВОИСЛАВ ЗАФИРОВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Jan 12, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-QiGDGhrmnVc.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/QiGDGhrmnVc/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (09.01.2026) ГОСТИН: ПРОФ. Д-Р АСПАЗИЈА СОФИЈАНОВА</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-QiGDGhrmnVc.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (09.01.2026) ГОСТИН: ПРОФ. Д-Р АСПАЗИЈА СОФИЈАНОВА</a>
+                                            <p class="theme-text-secondary text-xs">Jan 09, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-_IY-uAPIjNg.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/_IY-uAPIjNg/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (08.01.2025) ГОСТИН: ОТЕЦ ГОРАН</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-_IY-uAPIjNg.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (08.01.2025) ГОСТИН: ОТЕЦ ГОРАН</a>
+                                            <p class="theme-text-secondary text-xs">Jan 09, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-jFiohbZvWRc.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/jFiohbZvWRc/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">Божиќно интервју со Премиерот Христијан Мицкоски</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-jFiohbZvWRc.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">Божиќно интервју со Премиерот Христијан Мицкоски</a>
+                                            <p class="theme-text-secondary text-xs">Jan 07, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-62RQOy1mj1U.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i3.ytimg.com/vi/62RQOy1mj1U/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">НОВОГОДИШНО ИНТЕРВЈУ СО ПРЕТСЕДАТЕЛКАТА НА МАКЕДОНИЈА ГОРДАНА СИЛЈАНОВСКА ДАВКОВА</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-62RQOy1mj1U.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">НОВОГОДИШНО ИНТЕРВЈУ СО ПРЕТСЕДАТЕЛКАТА НА МАКЕДОНИЈА ГОРДАНА СИЛЈАНОВСКА ДАВКОВА</a>
+                                            <p class="theme-text-secondary text-xs">Jan 01, 2026</p>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="flex flex-col gap-4">
+                            <h2 class="theme-text-primary text-lg font-bold">2025</h2>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-uJttzQxo0UU.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/uJttzQxo0UU/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">НОВОГОДИШНО ИНТЕРВЈУ СО ВИЦЕПРЕМИЕРОТ И МИНИСТЕР ЗА ТРАНСПОРТ АЛЕКСАНДАР НИКОЛОСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-uJttzQxo0UU.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">НОВОГОДИШНО ИНТЕРВЈУ СО ВИЦЕПРЕМИЕРОТ И МИНИСТЕР ЗА ТРАНСПОРТ АЛЕКСАНДАР НИКОЛОСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Dec 31, 2025</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-ckh9naOMzFU.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i4.ytimg.com/vi/ckh9naOMzFU/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (30.12.2025) ГОСТИ: СОТИР КОСТОВ, ЉУБОМИР ЃУРЧЕВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-ckh9naOMzFU.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (30.12.2025) ГОСТИ: СОТИР КОСТОВ, ЉУБОМИР ЃУРЧЕВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Dec 30, 2025</p>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex flex-col rounded-lg border theme-border-color theme-bg-secondary shadow-sm overflow-hidden">
+                                        <a href="youtube-show-8-auZxRoGvc_s.html"
+                                           class="w-full aspect-video bg-center bg-no-repeat bg-cover"
+                                           style="background-image: url(&#39;https://i2.ytimg.com/vi/auZxRoGvc_s/hqdefault.jpg&#39;)">
+                                            <span class="sr-only">ЗА ИЛИ ПРОТИВ (29.12.2025) ГОСТИН: КОЦЕ ТРАЈАНОВСКИ</span>
+                                        </a>
+
+                                        <div class="flex flex-col gap-1 py-3 px-3">
+                                            <a href="youtube-show-8-auZxRoGvc_s.html"
+                                               class="theme-text-primary text-sm font-semibold leading-snug hover:underline line-clamp-2">ЗА ИЛИ ПРОТИВ (29.12.2025) ГОСТИН: КОЦЕ ТРАЈАНОВСКИ</a>
+                                            <p class="theme-text-secondary text-xs">Dec 29, 2025</p>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    
+                </section>
+
+                <div class="p-4 @container mt-8">
+                    <div class="flex flex-col items-stretch justify-start rounded-lg theme-bg-secondary border theme-border-color shadow-lg">
+                        <a href="marketing.html"
+                           class="w-full aspect-[16/1.125] bg-center bg-no-repeat bg-cover rounded-t-lg overflow-hidden"
+                           style="background-image: url(&#39;https://placehold.co/800x112/800000/ffffff?text=Your+Ad+Here&#39;)">
+                        </a>
+                        <div class="flex flex-col gap-1 py-4 px-4">
+                            <p class="theme-text-primary text-base font-bold leading-tight">Watch More!</p>
+                            <p class="theme-text-secondary text-sm leading-normal">Explore trending videos.</p>
+                            <a href="marketing.html"
+                               class="text-xs font-bold text-blue-600 hover:underline mt-2">Повеќе</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="theme-bg-secondary py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
+        <!-- Disclaimer Text -->
+        <p class="text-sm leading-relaxed mb-6">
+            Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
+            Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
+            <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
+        </p>
+
+        <!-- Static Links with Thymeleaf relative URLs -->
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
+            <a href="sources.html" class="hover:underline theme-text-primary">Извори</a>
+            <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
+            <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
+            <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
+            <a href="blog.html" class="hover:underline theme-text-primary">Блог</a>
+            <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a>
+            <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
+            <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
+        </div>
+    </div>
+
+    <!-- NEW: Search Modal HTML Structure -->
+    <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-start justify-center min-h-screen pt-16">
+            <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2>
+                    <button id="close-search-modal" class="theme-text-primary" aria-label="Close search">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                <label for="search-input" class="sr-only">Search keywords</label>
+                <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4" autocomplete="off">
+                <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto" role="status" aria-live="polite" aria-busy="false">
+                    <!-- Search results will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Lunr.js library and the search script -->
+
+
+
+</footer>
+</div>
+<div>
+    <script>
+    /*<![CDATA[*/
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement; // This refers to the <html> tag
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+
+    // Function to set the theme
+    function setTheme(theme) {
+        if (theme === 'dark') {
+            htmlElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            if (moonIcon) moonIcon.style.display = 'block';
+            if (sunIcon) sunIcon.style.display = 'none';
+        } else {
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            if (sunIcon) sunIcon.style.display = 'block';
+            if (moonIcon) moonIcon.style.display = 'none';
+        }
+    }
+
+    // Check for saved theme preference or system preference on load
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark'); // Default to dark if system prefers it
+    } else {
+        setTheme('light'); // Default to light
+    }
+
+    // Toggle theme on button click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        });
+    }
+
+
+    // Listen for system theme changes (if no preference is saved)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (!localStorage.getItem('theme')) { // Only react to system changes if no user preference is set
+            setTheme(event.matches ? 'dark' : 'light');
+        }
+    });
+    /*]]>*/
+</script>
+
+
+    <script src="js/mobile-nav.js" defer></script>
+
+    <!-- PERF: Load search stack only on demand to reduce unused JS on first render. -->
+    <script src="js/search.js" defer></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
+</script>
+    <!-- PERF: Keep ad rotation deferred to avoid blocking first content paint. -->
+    <script src="js/ad-rotation.js" defer></script>
+
+</div>
+</body>
+</html>

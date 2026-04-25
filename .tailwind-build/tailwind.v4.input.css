@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Tailwind v4: keep class-based dark mode behavior used by templates */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Match previous CDN plugins usage */
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/container-queries";
+
+@source "/Users/minimaus/Projects/Static-Site-News-Creator/generated-html/**/*.html";
