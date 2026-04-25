@@ -1,0 +1,33 @@
+name: Delete Old Files with Exclusions
+
+on:
+  # Schedule to run automatically every day at 3:15 AM UTC
+  #schedule:
+   # - cron: '15 3 * * *'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  cleanup_files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Delete files older than 8 days
+        run: |
+          echo "Searching for files older than 8 days to delete..."
+          
+          # This command finds files (-type f) in the current directory (.)
+          # that were modified more than 8 days ago (-mtime +8).
+          # It excludes paths you specify.
+          # The -delete flag performs the deletion.
+          # Use -print instead of -delete to test what would be deleted.
+          find . -type f -mtime +8 \
+            -not -path "./.github/*" \
+            -not -path "./CNAME" \
+            -not -path "./css/*" \
+            -not -path "./js/*" \
+            -print
+            
+          echo "Cleanup complete."
