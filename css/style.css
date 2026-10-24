@@ -809,3 +809,120 @@ html.dark .radio-language-tab-btn.active {
 .radio-language-tab-content.active {
     display: block;
 }
+
+/* Official hourly PM10 / PM2.5 station widget. */
+.air-quality-widget {
+    --air-widget-track: var(--border-color);
+    position: relative;
+    background: var(--bg-secondary);
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 5px 0 8px 22px;
+}
+
+.air-quality-widget__source {
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    display: inline-grid;
+    width: 14px;
+    height: 14px;
+    place-items: center;
+    border: 1px solid var(--text-secondary);
+    border-radius: 50%;
+    color: var(--text-secondary);
+    font-size: 9px;
+    font-weight: 800;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.air-quality-widget__stations {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(112px, 1fr));
+    gap: 10px;
+}
+
+.air-quality-station {
+    min-width: 0;
+    text-align: center;
+}
+
+.air-quality-station h3 {
+    min-height: 16px;
+    margin: 0 0 2px;
+    overflow: hidden;
+    color: var(--text-primary);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.35;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.air-quality-gauge {
+    position: relative;
+    width: 74px;
+    height: 74px;
+    margin: 0 auto;
+}
+
+.air-quality-gauge svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.air-quality-gauge circle {
+    fill: none;
+    stroke-width: 8;
+}
+
+.air-quality-gauge__track { stroke: var(--air-widget-track); }
+
+.air-quality-gauge__arc {
+    stroke-linecap: butt;
+    stroke-dasharray: 82 113;
+}
+
+.air-quality-gauge__arc--pm10 { stroke-dashoffset: 1; }
+.air-quality-gauge__arc--pm25 { stroke-dashoffset: -97; }
+
+.air-quality-level--tier-1 { color: #30b873; stroke: #30b873; }
+.air-quality-level--tier-2 { color: #f6b73c; stroke: #f6b73c; }
+.air-quality-level--tier-3 { color: #f08b28; stroke: #f08b28; }
+.air-quality-level--tier-4 { color: #ea4335; stroke: #ea4335; }
+.air-quality-level--missing { stroke: transparent; }
+
+.air-quality-gauge__value {
+    position: absolute;
+    font-size: 11px;
+    font-weight: 900;
+    line-height: 1;
+    transform: translate(-50%, -50%);
+}
+
+.air-quality-gauge__value--pm10 { top: 38%; left: 38%; }
+.air-quality-gauge__value--pm25 { top: 62%; left: 62%; }
+
+@media (max-width: 767px) {
+    .air-quality-widget { padding: 4px 0 7px 20px; }
+    .air-quality-widget__stations {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2px;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+    .air-quality-station {
+        min-width: 0;
+    }
+    .air-quality-station:nth-child(n + 4) { display: none; }
+    .air-quality-station h3 { font-size: 10px; }
+    .air-quality-gauge { width: 68px; height: 68px; }
+}
