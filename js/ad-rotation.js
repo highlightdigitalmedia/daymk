@@ -86,6 +86,35 @@ document.addEventListener('DOMContentLoaded', function() {
         const selectedAd = eligibleAds[randomIndex];
         console.log("Selected ad for display:", selectedAd);
 
+        if (selectedAd.provider === 'GOOGLE') {
+            if (!selectedAd.googleClient || !selectedAd.googleSlot) {
+                adLink.parentElement.style.display = 'none';
+                return;
+            }
+            if (!document.querySelector('script[data-day-adsense]')) {
+                const script = document.createElement('script');
+                script.async = true;
+                script.dataset.dayAdsense = 'true';
+                script.crossOrigin = 'anonymous';
+                script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(selectedAd.googleClient)}`;
+                document.head.appendChild(script);
+            }
+            adLink.removeAttribute('href');
+            adLink.style.backgroundImage = '';
+            adLink.style.height = 'auto';
+            adLink.innerHTML = '';
+            const unit = document.createElement('ins');
+            unit.className = 'adsbygoogle';
+            unit.style.display = 'block';
+            unit.dataset.adClient = selectedAd.googleClient;
+            unit.dataset.adSlot = selectedAd.googleSlot;
+            unit.dataset.adFormat = 'auto';
+            unit.dataset.fullWidthResponsive = 'true';
+            adLink.appendChild(unit);
+            try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (err) { console.error(err); }
+            return;
+        }
+
         // Helper function to process the URL safely
         function processAdUrl(url) {
             if (!url || url.trim() === '' || url.startsWith('#')) {
@@ -111,6 +140,16 @@ document.addEventListener('DOMContentLoaded', function() {
         adLink.href = processAdUrl(selectedAd.url);
         adLink.setAttribute('aria-label', selectedAd.title ? `Sponsored ad: ${selectedAd.title}` : 'Sponsored ad');
         adLink.title = selectedAd.title || 'Sponsored ad';
+        adLink.addEventListener('click', function () {
+            if (typeof gtag === 'function') {
+                gtag('event', 'ad_click', {
+                    'ad_unit_name': adLinkElementId,
+                    'ad_creative_name': selectedAd.title,
+                    'ad_creative_id': selectedAd.id,
+                    'ad_placement': selectedAd.placement
+                });
+            }
+        }, {once: true});
 
         console.log(`Set background-image to: ${selectedAd.imageUrl} for ${adLinkElementId}`);
         console.log(`Set href to: ${adLink.href} for ${adLinkElementId}`);
