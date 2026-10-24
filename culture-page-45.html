@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="315">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Pre-paint theme (prevents flash/blink) -->
-    <script>
+<!DOCTYPE html> <html> <head> <meta charset="UTF-8"> <meta http-equiv="refresh" content="315"> <meta name="viewport" content="width=device-width, initial-scale=1">  <script>
         (function () {
             try {
                 var saved = localStorage.getItem('theme');
@@ -16,260 +8,43 @@
                 else document.documentElement.classList.remove('dark');
             } catch (e) {}
         })();
-    </script>
-
-    <!-- Title + favicon -->
-    <title>Day.mk - Култура (Страница 45)</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <!-- PERF: Preconnect to remote origins early to reduce DNS/TLS latency for mobile LCP. -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- PERF: Inline tiny critical styles so first paint is stable before deferred CSS arrives. -->
-    <style>
+    </script>  <title>Day.mk - Култура (Страница 45)</title> <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />  <link rel="dns-prefetch" href="//fonts.googleapis.com"> <link rel="dns-prefetch" href="//fonts.gstatic.com"> <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin /> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />  <style>
         html, body { font-family: Newsreader, "Noto Sans", sans-serif; margin: 0; }
         .theme-bg-primary { background-color: #ffffff; }
         .theme-text-primary { color: #1a1a1a; }
         html.dark .theme-bg-primary { background-color: #101a23; }
         html.dark .theme-text-primary { color: #ffffff; }
-    </style>
-
-    <!-- PERF: Preload font stylesheet and switch rel on load to reduce render-blocking CSS. -->
-    <link rel="preload" as="style"
+    </style>  <link rel="preload" as="style"
           href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript>
-        <link rel="stylesheet"
-              href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap" />
-    </noscript>
-
-    <!-- Meta Description -->
-    <meta name="description"
-          content="Прочитајте ги најновите статии во Култура категорија."/>
-
-    <!-- Canonical URL (optional) -->
-    
-
-    <!-- Robots directives -->
-    <meta name="robots"
-          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
-
-    <!-- Hreflang -->
-    
-
-    <!-- Basic Open Graph for non-article pages -->
-    <meta property="og:site_name" content="Day.mk" />
-    <meta property="og:locale" content="mk_MK" />
-    <meta property="og:title" content="Day.mk - Култура (Страница 45)" />
-    <meta property="og:description"
-          content="Прочитајте ги најновите статии во Култура категорија."/>
-    <meta property="og:type" content="website" />
-    
-    <meta property="og:image" content="https://day.mk/assets/logo.png" />
-
-    <!-- Twitter card for non-article pages -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Day.mk - Култура (Страница 45)" />
-    <meta name="twitter:description"
-          content="Прочитајте ги најновите статии во Култура категорија."/>
-    <meta name="twitter:image" content="https://day.mk/assets/logo.png" />
-
-    <!-- PERF: Load generated Tailwind utilities as static CSS (no runtime CDN compiler). -->
-    <link rel="preload" as="style" href="css/tailwind.generated.css" />
-    <link rel="stylesheet" href="css/tailwind.generated.css" />
-    <!-- PERF: Keep explicit stylesheet link for reliability; preload remains as a fetch hint. -->
-    <link rel="preload" as="style" href="css/style.css" />
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body class="theme-bg-primary">
-<div
+          onload="this.onload=null;this.rel='stylesheet'" /> <noscript> <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap" /> </noscript>  <meta name="description"
+          content="Прочитајте ги најновите статии во Култура категорија."/>   <meta name="robots"
+          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />   <meta property="og:site_name" content="Day.mk" /> <meta property="og:locale" content="mk_MK" /> <meta property="og:title" content="Day.mk - Култура (Страница 45)" /> <meta property="og:description"
+          content="Прочитајте ги најновите статии во Култура категорија."/> <meta property="og:type" content="website" /> <meta property="og:image" content="https://day.mk/assets/logo.png" />  <meta name="twitter:card" content="summary" /> <meta name="twitter:title" content="Day.mk - Култура (Страница 45)" /> <meta name="twitter:description"
+          content="Прочитајте ги најновите статии во Култура категорија."/> <meta name="twitter:image" content="https://day.mk/assets/logo.png" />  <link rel="preload" as="style" href="css/tailwind.generated.css" /> <link rel="stylesheet" href="css/tailwind.generated.css" />  <link rel="preload" as="style" href="css/style.css" /> <link rel="stylesheet" href="css/style.css" /> </head> <body class="theme-bg-primary"> <div
         class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
         style='font-family: Newsreader, "Noto Sans", sans-serif;'
->
-    <!-- ======================= -->
-    <!-- DESKTOP HEADER (lg+)    -->
-    <!-- ======================= -->
-    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-        <div>
-    <!-- Header section containing title and icons -->
-    <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
-        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
-            <a href="index.html" class="hover:underline">DAY.MK</a>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">
-                обновено <span>12:24, 24.10.2026</span>
-            </p>
-        </h2>
-
-        <div class="flex w-24 items-center justify-end">
-            <!-- NEW: Search Icon (Desktop) -->
-            <button id="search-button-desktop" aria-label="Open search"
-                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                </svg>
-            </button>
-
-            <!-- Weather Link Icon (Thermometer) -->
-            <a href="prognoza.html" aria-label="Weather Forecast"
-               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
-                </svg>
-            </a>
-            <!-- Day/Night Mode Toggle Button -->
-            <button id="theme-toggle"
+>    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8"> <div>  <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color"> <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24"> <a href="index.html" class="hover:underline">DAY.MK</a> <p class="theme-text-secondary text-sm font-normal text-center pb-2">
+                обновено <span>22:15, 31.10.2026</span> </p> </h2> <div class="flex w-24 items-center justify-end">  <button id="search-button-desktop" aria-label="Open search"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2"> <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </button>  <a href="prognoza.html" aria-label="Weather Forecast"
+               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2"> <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"> <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/> </svg> </a>  <button id="theme-toggle"
                     class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
                     aria-label="Toggle dark mode"
-            >
-                <!-- Sun Icon (Light Mode) -->
-                <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-                <!-- Moon Icon (Dark Mode) -->
-                <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" />
-                </svg>
-            </button>
-        </div>
-    </div>
-    <!-- "обновено" time now correctly positioned below the header, within the main content wrapper -->
-
-
-    <div class="pb-3 pt-4">
-        <!-- Main Navigation Tabs (split into left and right) -->
-        <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
-            <!-- Left Navigation Items -->
-            <div class="primary-nav-group primary-nav-group--left flex gap-1">
-                <a class="primary-nav-item flex flex-col items-center justify-center  primary-nav-item--active" href="index.html" aria-current="page">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Вести</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="sports.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Спорт</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="magazine.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Магазин</p>
-                </a>
-            </div>
-            <!-- Right Navigation Items -->
-            <div class="primary-nav-group primary-nav-group--right flex gap-1">
-                <a class="primary-nav-item flex flex-col items-center justify-center" href="latest-news.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Најнови Вести</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="prognoza.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Прогноза</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="radio.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Радио</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="youtube.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">YouTube</p>
-                </a>
-            </div>
-        </div>
-        <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
-        
-            <div class="subnav-panel flex border-b px-4 gap-1 overflow-x-auto whitespace-nowrap scrollbar-hide  subnav-panel--left-0">
-                <a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="macedonia.html">
-                    <p>Македонија</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="economy.html">
-                    <p>Економија</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="balkan.html">
-                    <p>Балкан</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="world.html">
-                    <p>Свет</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="skopje.html">
-                    <p>Скопје</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="bitola.html">
-                    <p>Битола</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="hronika.html">
-                    <p>Хроника</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="republika.html">
-                    <p>Република</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]  subnav-item--active" href="culture.html" aria-current="page">
-                    <p>Култура</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="technology.html">
-                    <p>Технологија</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="scene.html">
-                    <p>Сцена</p>
-                </a>
-            </div>
-        
-        
-    </div>
-</div>
-    </div>
-
-    <!-- ======================= -->
-    <!-- MOBILE HEADER (< lg)    -->
-    <!-- ======================= -->
-    <div class="block lg:hidden max-w-3xl mx-auto w-full">
-        <div>
-    <!-- Mobile Header -->
-    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
-        <!-- Hamburger Menu Button -->
-        <button id="hamburger-menu-button"
+            >  <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /> </svg>  <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" /> </svg> </button> </div> </div>  <div class="pb-3 pt-4">  <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">  <div class="primary-nav-group primary-nav-group--left flex gap-1"> <a class="primary-nav-item flex flex-col items-center justify-center  primary-nav-item--active" href="index.html" aria-current="page"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Вести</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="sports.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Спорт</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="magazine.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Магазин</p> </a> </div>  <div class="primary-nav-group primary-nav-group--right flex gap-1"> <a class="primary-nav-item flex flex-col items-center justify-center" href="latest-news.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Најнови Вести</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="prognoza.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Прогноза</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="radio.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Радио</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="youtube.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">YouTube</p> </a> </div> </div>  <div class="subnav-panel flex border-b px-4 gap-1 overflow-x-auto whitespace-nowrap scrollbar-hide  subnav-panel--left-0"> <a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="macedonia.html"> <p>Македонија</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="economy.html"> <p>Економија</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="balkan.html"> <p>Балкан</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="world.html"> <p>Свет</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="skopje.html"> <p>Скопје</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="bitola.html"> <p>Битола</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="hronika.html"> <p>Хроника</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="republika.html"> <p>Република</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]  subnav-item--active" href="culture.html" aria-current="page"> <p>Култура</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="technology.html"> <p>Технологија</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="scene.html"> <p>Сцена</p> </a> </div> </div> </div> </div>    <div class="block lg:hidden max-w-3xl mx-auto w-full"> <div>  <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">  <button id="hamburger-menu-button"
                 class="theme-text-primary p-2"
                 aria-label="Open navigation menu"
                 aria-controls="mobile-menu"
-                aria-expanded="false">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
-
-        <!-- Centered Title/Logo -->
-        <div class="flex-1 text-center leading-tight">
-            <a href="index.html" class="inline-block hover:underline">
-                <div class="theme-text-primary text-2xl font-bold uppercase tracking-wider">
+                aria-expanded="false"> <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> </button>  <div class="flex-1 text-center leading-tight"> <a href="index.html" class="inline-block hover:underline"> <div class="theme-text-primary text-2xl font-bold uppercase tracking-wider">
                     DAY.MK
-                </div>
-            </a>
-
-            <!-- Updated timestamp -->
-            <p class="theme-text-secondary text-xs font-normal mt-0.5">
-                обновено <span>12:24, 24.10.2026</span>
-            </p>
-        </div>
-
-        <!-- Search Icon -->
-        <button id="search-button-mobile" class="theme-text-primary p-2" aria-label="Open search dialog">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-            </svg>
-        </button>
-    </header>
-
-    <!-- Mobile Slide-out Menu -->
-    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
-    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
-        <div class="p-4">
-            <h2 class="theme-text-primary text-lg font-bold mb-4">Навигација</h2>
-            <nav class="flex flex-col gap-2">
-                <!-- LEFT NAV ITEMS -->
-                <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-0">
-                    <!-- Simple item (no subitems) -->
-                    
-
-                    <!-- Expandable item (with subitems) -->
-                    <div class="flex flex-col">
-                        <!-- Parent row: label + chevron -->
-                        <div class="flex items-center justify-between">
-                            <a href="index.html"
+                </div> </a>  <p class="theme-text-secondary text-xs font-normal mt-0.5">
+                обновено <span>22:15, 31.10.2026</span> </p> </div>  <button id="search-button-mobile" class="theme-text-primary p-2" aria-label="Open search dialog"> <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </button> </header>  <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div> <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full"> <div class="p-4"> <h2 class="theme-text-primary text-lg font-bold mb-4">Навигација</h2> <nav class="flex flex-col gap-2">  <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-0">   <div class="flex flex-col">  <div class="flex items-center justify-between"> <a href="index.html"
                                class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left  mobile-nav-parent--active"
-                               aria-current="page">Вести</a>
-                            <button type="button"
+                               aria-current="page">Вести</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="true" data-subnav-toggle="left-0" aria-controls="left-subnav-0">
-                                <svg class="h-5 w-5  rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Sub-items -->
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1"
-                             id="left-subnav-0" data-subnav-id="left-0">
-                            <a href="macedonia.html"
+                                    aria-expanded="true" data-subnav-toggle="left-0" aria-controls="left-subnav-0"> <svg class="h-5 w-5  rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div>  <div class="mobile-subnav ml-4 mt-1 space-y-1"
+                             id="left-subnav-0" data-subnav-id="left-0"> <a href="macedonia.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Македонија</a><a href="economy.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Економија</a><a href="balkan.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Балкан</a><a href="world.html"
@@ -281,69 +56,25 @@
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2  subnav-item--active"
                                aria-current="page">Култура</a><a href="technology.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Технологија</a><a href="scene.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Сцена</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-1">
-                    <!-- Simple item (no subitems) -->
-                    
-
-                    <!-- Expandable item (with subitems) -->
-                    <div class="flex flex-col">
-                        <!-- Parent row: label + chevron -->
-                        <div class="flex items-center justify-between">
-                            <a href="sports.html"
-                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Спорт</a>
-                            <button type="button"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Сцена</a> </div> </div> </div> <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-1">   <div class="flex flex-col">  <div class="flex items-center justify-between"> <a href="sports.html"
+                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Спорт</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="false" data-subnav-toggle="left-1" aria-controls="left-subnav-1">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Sub-items -->
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
-                             id="left-subnav-1" data-subnav-id="left-1">
-                            <a href="sport-football.html"
+                                    aria-expanded="false" data-subnav-toggle="left-1" aria-controls="left-subnav-1"> <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div>  <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
+                             id="left-subnav-1" data-subnav-id="left-1"> <a href="sport-football.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Кошарка</a><a href="sport-handball.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Тенис</a><a href="sport-automoto.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Автомото</a><a href="sport-othersports.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Останато</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-2">
-                    <!-- Simple item (no subitems) -->
-                    
-
-                    <!-- Expandable item (with subitems) -->
-                    <div class="flex flex-col">
-                        <!-- Parent row: label + chevron -->
-                        <div class="flex items-center justify-between">
-                            <a href="magazine.html"
-                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Магазин</a>
-                            <button type="button"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Останато</a> </div> </div> </div> <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-2">   <div class="flex flex-col">  <div class="flex items-center justify-between"> <a href="magazine.html"
+                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Магазин</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="false" data-subnav-toggle="left-2" aria-controls="left-subnav-2">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Sub-items -->
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
-                             id="left-subnav-2" data-subnav-id="left-2">
-                            <a href="magazine-fun.html"
+                                    aria-expanded="false" data-subnav-toggle="left-2" aria-controls="left-subnav-2"> <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div>  <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
+                             id="left-subnav-2" data-subnav-id="left-2"> <a href="magazine-fun.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Забава</a><a href="magazine-cars.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Автомобил</a><a href="magazine-life.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Живот</a><a href="magazine-travel.html"
@@ -351,1085 +82,268 @@
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Здравје</a><a href="magazine-food.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Храна</a><a href="magazine-style.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Стил</a><a href="magazine-intimacy.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Интима</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RIGHT NAV ITEMS -->
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-0">
-                    <!-- Simple item -->
-                    <a href="latest-news.html"
-                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Најнови Вести</a>
-
-                    <!-- Expandable item -->
-                    
-                </div>
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-1">
-                    <!-- Simple item -->
-                    <a href="prognoza.html"
-                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Прогноза</a>
-
-                    <!-- Expandable item -->
-                    
-                </div>
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-2">
-                    <!-- Simple item -->
-                    <a href="radio.html"
-                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Радио</a>
-
-                    <!-- Expandable item -->
-                    
-                </div>
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-3">
-                    <!-- Simple item -->
-                    
-
-                    <!-- Expandable item -->
-                    <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                            <a href="youtube.html"
-                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">YouTube</a>
-                            <button type="button"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Интима</a> </div> </div> </div>  <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-0">  <a href="latest-news.html"
+                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Најнови Вести</a>  </div> <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-1">  <a href="prognoza.html"
+                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Прогноза</a>  </div> <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-2">  <a href="radio.html"
+                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Радио</a>  </div> <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-3">   <div class="flex flex-col"> <div class="flex items-center justify-between"> <a href="youtube.html"
+                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">YouTube</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="false" data-subnav-toggle="right-3" aria-controls="right-subnav-3">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
-                             id="right-subnav-3" data-subnav-id="right-3">
-                            <a href="youtube-politics.html"
+                                    aria-expanded="false" data-subnav-toggle="right-3" aria-controls="right-subnav-3"> <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div> <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
+                             id="right-subnav-3" data-subnav-id="right-3"> <a href="youtube-politics.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Политика</a><a href="youtube-podcast.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Подкаст</a><a href="youtube-za-deca.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">За Деца</a>
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="my-3 theme-border-color" />
-
-                <!-- Other Utility Links (unchanged) -->
-                <button id="theme-toggle-mobile"
-                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
-                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
-                </button>
-            </nav>
-
-        </div>
-    </div>
-
-    <!-- Hidden desktop theme toggle button to leverage existing script -->
-    <button id="theme-toggle" class="hidden"></button>
-</div>
-    </div>
-
-    <!-- ======================= -->
-    <!-- MAIN CONTENT            -->
-    <!-- ======================= -->
-    <main class="w-full">
-
-        <!-- ======================= -->
-        <!-- DESKTOP LAYOUT (lg+)    -->
-        <!-- ======================= -->
-        <div class="hidden lg:block">
-            <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-                <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
-                    <!-- MAIN CONTENT -->
-                    <div class="lg:col-span-2 flex flex-col gap-8">
-                        <h1 class="theme-text-primary text-2xl font-bold mb-6">Култура</h1>
-
-                        <div class="flex flex-col divide-y theme-border-color">
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="kultura-3-хороскопски-знаци-влегуваат-во-9-години-благосостојба-summary-199779.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=3+%D1%85%D0%BE%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D1%81%D0%BA%D0%B8+%D0%B7%D0%BD%D0%B0%D1%86%D0%B8+%D0%B2%D0%BB%D0%B5%D0%B3%D1%83%D0%B2%D0%B0%D0%B0%D1%82+%D0%B2%D0%BE+9+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B8+%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%98%D0%B1%D0%B0%3A+%D0%A1%D1%80%D0%B5%D1%9C%D0%B0%D1%82%D0%B0+%D0%B8+%D1%83%D1%81%D0%BF%D0%B5%D1%85%D0%BE%D1%82+%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D0%BA%D0%B8%D0%BD%D0%B0%D1%82%D0%BE+%D1%9C%D0%B5+%D0%B3%D0%B8+%D1%81%D0%BB%D0%B5%D0%B4%D0%B0%D1%82+%D0%B4%D0%BE+2035+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0"
-                 alt="3 хороскопски знаци влегуваат во 9 години благосостојба: Среќата и успехот непрекинато ќе ги следат до 2035 година"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">За деца</a> </div> </div> </div> <hr class="my-3 theme-border-color" />  <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left"> <span id="theme-toggle-mobile-text">Toggle Theme</span> </button> </nav> </div> </div>  <button id="theme-toggle" class="hidden"></button> </div> </div>    <main class="w-full">    <div class="hidden lg:block"> <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8"> <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">  <div class="lg:col-span-2 flex flex-col gap-8"> <h1 class="theme-text-primary text-2xl font-bold mb-6">Култура</h1> <div class="flex flex-col divide-y theme-border-color"> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="kultura-друштвото-на-писатели-на-македонија-организира-поетско-summary-201740.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%94%D1%80%D1%83%D1%88%D1%82%D0%B2%D0%BE%D1%82%D0%BE+%D0%BD%D0%B0+%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D0%B8+%D0%BD%D0%B0+%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D0%B8%D1%98%D0%B0+%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B8%D1%80%D0%B0+%E2%80%9E%D0%9F%D0%BE%D0%B5%D1%82%D1%81%D0%BA%D0%BE+%D0%BC%D0%B0%D1%82%D0%B8%D0%BD%D0%B5%E2%80%9C+%D0%BD%D0%B0+24+%D0%BE%D0%BA%D1%82%D0%BE%D0%BC%D0%B2%D1%80%D0%B8+%D0%BD%D0%B0+%D0%BF%D0%BB%D0%B0%D0%B4%D0%BD%D0%B5"
+                 alt="Друштвото на писатели на Македонија организира „Поетско матине“ на 24 октомври на пладне"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="eager" fetchpriority="high"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="kultura-3-хороскопски-знаци-влегуваат-во-9-години-благосостојба-summary-199779.html"
-               class="hover:underline">3 хороскопски знаци влегуваат во 9 години благосостојба: Среќата и успехот непрекинато ќе ги следат до 2035 година</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Вага Вагите влегуваат во период на внатрешен мир и стабилност што трае девет години.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 6452 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="kultura-доаѓа-месецот-на-страста-астролозите-откриваат-кој-summary-199776.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%94%D0%BE%D0%B0%D1%93%D0%B0+%D0%BC%D0%B5%D1%81%D0%B5%D1%86%D0%BE%D1%82+%D0%BD%D0%B0+%D1%81%D1%82%D1%80%D0%B0%D1%81%D1%82%D0%B0%3A+%D0%90%D1%81%D1%82%D1%80%D0%BE%D0%BB%D0%BE%D0%B7%D0%B8%D1%82%D0%B5+%D0%BE%D1%82%D0%BA%D1%80%D0%B8%D0%B2%D0%B0%D0%B0%D1%82+%D0%BA%D0%BE%D1%98+%D1%85%D0%BE%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D1%81%D0%BA%D0%B8+%D0%B7%D0%BD%D0%B0%D0%BA+%D0%B3%D0%BE+%D1%87%D0%B5%D0%BA%D0%B0+%D1%81%D0%B2%D1%80%D1%88%D1%83%D0%B2%D0%B0%D1%87%D0%BA%D0%B0%2C+%D0%BA%D0%BE%D1%98+%D1%81%D0%B5%D0%BB%D0%B8%D0%B4%D0%B1%D0%B0%2C+%D0%B0+%D0%BA%D0%BE%D1%98+%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%B5%D0%BD+%D0%BA%D1%80%D0%B0%D1%98+%D0%B2%D0%BE+%D1%84%D0%B5%D0%B2%D1%80%D1%83%D0%B0%D1%80%D0%B8"
-                 alt="Доаѓа месецот на страста: Астролозите откриваат кој хороскопски знак го чека свршувачка, кој селидба, а кој конечен крај во февруари"
+                 class="w-24 h-16 object-cover rounded-lg" loading="eager" fetchpriority="high"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="kultura-друштвото-на-писатели-на-македонија-организира-поетско-summary-201740.html"
+               class="hover:underline">Друштвото на писатели на Македонија организира „Поетско матине“ на 24 октомври на пладне</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Настанот е замислен како прва во низата идни книжевни средби на кои треба да им се даде простор и глас на авторите од различните национални заедници и на повеќејазичните автори ...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 252 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="kultura-мнт-награда-за-режија-за-нела-витошевиќ-и-три-признанија-за-summary-201675.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9C%D0%9D%D0%A2%3A+%D0%9D%D0%B0%D0%B3%D1%80%D0%B0%D0%B4%D0%B0+%D0%B7%D0%B0+%D1%80%D0%B5%D0%B6%D0%B8%D1%98%D0%B0+%D0%B7%D0%B0+%D0%9D%D0%B5%D0%BB%D0%B0+%D0%92%D0%B8%D1%82%D0%BE%D1%88%D0%B5%D0%B2%D0%B8%D1%9C+%D0%B8+%D1%82%D1%80%D0%B8+%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D1%98%D0%B0+%D0%B7%D0%B0+%E2%80%9E%D0%97%D0%BC%D0%B5%D1%98%E2%80%9C+%D0%BD%D0%B0+%D0%BC%D0%B5%D1%93%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%82%D0%B0+%D1%81%D1%86%D0%B5%D0%BD%D0%B0"
+                 alt="МНТ: Награда за режија за Нела Витошевиќ и три признанија за „Змеј“ на меѓународната сцена"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="kultura-доаѓа-месецот-на-страста-астролозите-откриваат-кој-summary-199776.html"
-               class="hover:underline">Доаѓа месецот на страста: Астролозите откриваат кој хороскопски знак го чека свршувачка, кој селидба, а кој конечен крај во февруари</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Љубовниот хороскоп за февруари е вашиот водич кон среќата.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 6448 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="kultura-никогаш-нема-да-ви-признаат-мажите-ги-мразат-овие-3-работи-summary-199777.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9D%D0%B8%D0%BA%D0%BE%D0%B3%D0%B0%D1%88+%D0%BD%D0%B5%D0%BC%D0%B0+%D0%B4%D0%B0+%D0%B2%D0%B8+%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%B0%D1%82%3A+%D0%9C%D0%B0%D0%B6%D0%B8%D1%82%D0%B5+%D0%B3%D0%B8+%D0%BC%D1%80%D0%B0%D0%B7%D0%B0%D1%82+%D0%BE%D0%B2%D0%B8%D0%B5+3+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B8+%D0%B2%D0%BE+%D0%BA%D1%80%D0%B5%D0%B2%D0%B5%D1%82%2C+%D0%B0+%D0%B1%D1%80%D0%BE%D1%98%D0%BE%D1%82+3+%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BE+%D0%BD%D0%B5+%D0%B8%D0%BC+%D1%81%D0%B5+%D0%B4%D0%BE%D0%BF%D0%B0%D1%93%D0%B0"
-                 alt="Никогаш нема да ви признаат: Мажите ги мразат овие 3 работи во кревет, а бројот 3 особено не им се допаѓа"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="kultura-мнт-награда-за-режија-за-нела-витошевиќ-и-три-признанија-за-summary-201675.html"
+               class="hover:underline">МНТ: Награда за режија за Нела Витошевиќ и три признанија за „Змеј“ на меѓународната сцена</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Жирито, предводено од Ирфан Менсур, ѝ ја додели наградата за најдобра режија на Нела Витошевиќ.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 252 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="kultura-артур-рембо-поетот-кој-ја-напушти-поезијата-summary-202272.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%90%D1%80%D1%82%D1%83%D1%80+%D0%A0%D0%B5%D0%BC%D0%B1%D0%BE+%E2%80%93+%D0%BF%D0%BE%D0%B5%D1%82%D0%BE%D1%82+%D0%BA%D0%BE%D1%98+%D1%98%D0%B0+%D0%BD%D0%B0%D0%BF%D1%83%D1%88%D1%82%D0%B8+%D0%BF%D0%BE%D0%B5%D0%B7%D0%B8%D1%98%D0%B0%D1%82%D0%B0"
+                 alt="Артур Рембо – поетот кој ја напушти поезијата"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="kultura-никогаш-нема-да-ви-признаат-мажите-ги-мразат-овие-3-работи-summary-199777.html"
-               class="hover:underline">Никогаш нема да ви признаат: Мажите ги мразат овие 3 работи во кревет, а бројот 3 особено не им се допаѓа</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Колку и да мислите дека сè што правите во креветот му годи на вашиот партнер, постојат одредени работи со кои тој баш и не се согласува.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 6450 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="kultura-хороскоп-за-февруари-кој-ќе-заработува-повеќе-а-кој-мора-да-summary-199774.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%A5%D0%BE%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF+%D0%B7%D0%B0+%D1%84%D0%B5%D0%B2%D1%80%D1%83%D0%B0%D1%80%D0%B8%3A+%D0%9A%D0%BE%D1%98+%D1%9C%D0%B5+%D0%B7%D0%B0%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83%D0%B2%D0%B0+%D0%BF%D0%BE%D0%B2%D0%B5%D1%9C%D0%B5%2C+%D0%B0+%D0%BA%D0%BE%D1%98+%D0%BC%D0%BE%D1%80%D0%B0+%D0%B4%D0%B0+%D0%B3%D0%B8+%D0%BF%D1%80%D0%BE%D0%BC%D0%B5%D0%BD%D0%B8+%D1%81%D0%B2%D0%BE%D0%B8%D1%82%D0%B5+%D0%BD%D0%B0%D0%B2%D0%B8%D0%BA%D0%B8"
-                 alt="Хороскоп за февруари: Кој ќе заработува повеќе, а кој мора да ги промени своите навики"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="kultura-артур-рембо-поетот-кој-ја-напушти-поезијата-summary-202272.html"
+               class="hover:underline">Артур Рембо – поетот кој ја напушти поезијата</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Рембо и Верлен – книжевност, страст и самоуништување Во 1871. година Рембо му испраќа свои песни на Пол Верлен, веќе познат поет во Париз.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 247 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="kultura-златна-лира-2026-сабота-24-октомври-20-часот-музеј-на-summary-201728.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%97%D0%BB%D0%B0%D1%82%D0%BD%D0%B0+%D0%BB%D0%B8%D1%80%D0%B0+2026-%D0%A1%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%2C+24+%D0%BE%D0%BA%D1%82%D0%BE%D0%BC%D0%B2%D1%80%D0%B8%2C+20+%D1%87%D0%B0%D1%81%D0%BE%D1%82%2C+%D0%9C%D1%83%D0%B7%D0%B5%D1%98+%D0%BD%D0%B0+%D0%BC%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B0%D1%82%D0%B0+%D0%B1%D0%BE%D1%80%D0%B1%D0%B0"
+                 alt="Златна лира 2026-Сабота, 24 октомври, 20 часот, Музеј на македонската борба"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="kultura-хороскоп-за-февруари-кој-ќе-заработува-повеќе-а-кој-мора-да-summary-199774.html"
-               class="hover:underline">Хороскоп за февруари: Кој ќе заработува повеќе, а кој мора да ги промени своите навики</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Ретроградниот Меркур на крајот од месецот во Риби бара дополнително внимание при проверка на договорите, особено оние поврзани со работата, кариерата или долгорочните финансиски...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 6446 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="kultura-почина-алексис-ортега-актерот-што-го-синхронизираше-summary-199775.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9F%D0%BE%D1%87%D0%B8%D0%BD%D0%B0+%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B8%D1%81+%D0%9E%D1%80%D1%82%D0%B5%D0%B3%D0%B0%2C+%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%BE%D1%82+%D1%88%D1%82%D0%BE+%D0%B3%D0%BE+%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B8%D1%80%D0%B0%D1%88%D0%B5+%D0%A1%D0%BF%D0%B0%D1%98%D0%B4%D0%B5%D1%80%D0%BC%D0%B5%D0%BD"
-                 alt="Почина Алексис Ортега, актерот што го синхронизираше Спајдермен"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="kultura-златна-лира-2026-сабота-24-октомври-20-часот-музеј-на-summary-201728.html"
+               class="hover:underline">Златна лира 2026-Сабота, 24 октомври, 20 часот, Музеј на македонската борба</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Концерт на Момчило Куфојанакис - виолина, Весна Ангелова Христов - пијано.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 252 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="kultura-објавен-романот-бура-од-веле-смилевски-summary-202913.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9E%D0%B1%D1%98%D0%B0%D0%B2%D0%B5%D0%BD+%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%D0%BE%D1%82+%E2%80%9E%D0%91%D1%83%D1%80%D0%B0%E2%80%9C+%D0%BE%D0%B4+%D0%92%D0%B5%D0%BB%D0%B5+%D0%A1%D0%BC%D0%B8%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%B8"
+                 alt="Објавен романот „Бура“ од Веле Смилевски"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="kultura-почина-алексис-ортега-актерот-што-го-синхронизираше-summary-199775.html"
-               class="hover:underline">Почина Алексис Ортега, актерот што го синхронизираше Спајдермен</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Во официјалното соопштение објавено на Инстаграм-страница посветена на светот на синхронизацијата се наведува: „Со жалење објавуваме дека почина актерот Алексис Ортега.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 6447 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="kultura-дали-свини-ќе-биде-казнета-за-градницитена-знакот-на-холивуд-summary-199772.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%94%D0%B0%D0%BB%D0%B8+%D0%A1%D0%B2%D0%B8%D0%BD%D0%B8+%D1%9C%D0%B5+%D0%B1%D0%B8%D0%B4%D0%B5+%D0%BA%D0%B0%D0%B7%D0%BD%D0%B5%D1%82%D0%B0+%D0%B7%D0%B0+%D0%B3%D1%80%D0%B0%D0%B4%D0%BD%D0%B8%D1%86%D0%B8%D1%82%D0%B5%D0%BD%D0%B0+%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D1%82+%D0%BD%D0%B0+%D0%A5%D0%BE%D0%BB%D0%B8%D0%B2%D1%83%D0%B4%3F"
-                 alt="Дали Свини ќе биде казнета за градницитена знакот на Холивуд?"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="kultura-објавен-романот-бура-од-веле-смилевски-summary-202913.html"
+               class="hover:underline">Објавен романот „Бура“ од Веле Смилевски</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Во издание на Здружението за уметност и култура „Дијалог“ од Скопје, деновиве излезе од печат романот „Бура“, со подналов „Московски години“, од Веле Смилевски.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 253 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="kultura-романот-три-марии-од-писателката-оливера-ќорвезироска-summary-201821.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD%D0%BE%D1%82+%E2%80%9E%D0%A2%D1%80%D0%B8+%D0%9C%D0%B0%D1%80%D0%B8%D0%B8%E2%80%9C+%D0%BE%D0%B4+%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D0%BA%D0%B0%D1%82%D0%B0+%D0%9E%D0%BB%D0%B8%D0%B2%D0%B5%D1%80%D0%B0+%D0%8C%D0%BE%D1%80%D0%B2%D0%B5%D0%B7%D0%B8%D1%80%D0%BE%D1%81%D0%BA%D0%B0%2C+%D0%B4%D0%BE%D0%B1%D0%B8%D1%82%D0%BD%D0%B8%D0%BA+%D0%BD%D0%B0+%D1%82%D1%80%D0%B8+%D0%BF%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%B6%D0%BD%D0%B8+%D0%BA%D0%BD%D0%B8%D0%B6%D0%B5%D0%B2%D0%BD%D0%B8+%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B4%D0%B8+%D0%B4%D0%B5%D0%BD%D0%B5%D1%81%D0%BA%D0%B0+%D1%9C%D0%B5+%D1%81%D0%B5+%D0%BF%D1%80%D0%BE%D0%BC%D0%BE%D0%B2%D0%B8%D1%80%D0%B0+%D0%B2%D0%BE+%D0%9A%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE"
+                 alt="Романот „Три Марии“ од писателката Оливера Ќорвезироска, добитник на три престижни книжевни награди денеска ќе се промовира во Куманово"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="kultura-дали-свини-ќе-биде-казнета-за-градницитена-знакот-на-холивуд-summary-199772.html"
-               class="hover:underline">Дали Свини ќе биде казнета за градницитена знакот на Холивуд?</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Пред лансирањето на нејзината линија долна облека „Syrn“, 28-годишната актерка сподели видео од себе како оди кон знакот на Холивуд, облечена во црна дуксерка и карго панталони,...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 6443 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="kultura-осум-работи-кои-негативно-влијаат-на-врската-еве-зошто-summary-199773.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9E%D1%81%D1%83%D0%BC+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B8+%D0%BA%D0%BE%D0%B8+%D0%BD%D0%B5%D0%B3%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE+%D0%B2%D0%BB%D0%B8%D1%98%D0%B0%D0%B0%D1%82+%D0%BD%D0%B0+%D0%B2%D1%80%D1%81%D0%BA%D0%B0%D1%82%D0%B0%3A+%D0%95%D0%B2%D0%B5+%D0%B7%D0%BE%D1%88%D1%82%D0%BE+%D0%BF%D0%B0%D1%80%D0%BE%D0%B2%D0%B8%D1%82%D0%B5+%D1%81%D0%B5+%D0%BD%D0%B5%D1%81%D1%80%D0%B5%D1%9C%D0%BD%D0%B8+%D0%B8+%D0%BF%D0%BE%D0%BA%D1%80%D0%B0%D1%98+%D0%BD%D0%B0%D0%B2%D0%B8%D0%B4%D1%83%D0%BC+%D1%81%D0%BE%D0%B2%D1%80%D1%88%D0%B5%D0%BD%D0%B8%D0%BE%D1%82+%D0%BE%D0%B4%D0%BD%D0%BE%D1%81"
-                 alt="Осум работи кои негативно влијаат на врската: Еве зошто паровите се несреќни и покрај навидум совршениот однос"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="kultura-романот-три-марии-од-писателката-оливера-ќорвезироска-summary-201821.html"
+               class="hover:underline">Романот „Три Марии“ од писателката Оливера Ќорвезироска, добитник на три престижни книжевни награди денеска ќе се промовира во Куманово</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Романот „Три Марии“ од писателката Оливера Ќорвезироска, добитник на три престижни книжевни награди, утре, 21 октомври, ќе биде промовиран во фоајето на Центарот за култура „Тра...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 253 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="kultura-објавена-нова-книга-на-марина-мијаковска-на-српски-јазик-во-summary-201930.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9E%D0%B1%D1%98%D0%B0%D0%B2%D0%B5%D0%BD%D0%B0+%D0%BD%D0%BE%D0%B2%D0%B0+%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0+%D0%BD%D0%B0+%D0%9C%D0%B0%D1%80%D0%B8%D0%BD%D0%B0+%D0%9C%D0%B8%D1%98%D0%B0%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0+%D0%BD%D0%B0+%D1%81%D1%80%D0%BF%D1%81%D0%BA%D0%B8+%D1%98%D0%B0%D0%B7%D0%B8%D0%BA+%D0%B2%D0%BE+%D0%91%D0%B5%D0%BB%D0%B3%D1%80%D0%B0%D0%B4"
+                 alt="Објавена нова книга на Марина Мијаковска на српски јазик во Белград"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="kultura-осум-работи-кои-негативно-влијаат-на-врската-еве-зошто-summary-199773.html"
-               class="hover:underline">Осум работи кои негативно влијаат на врската: Еве зошто паровите се несреќни и покрај навидум совршениот однос</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Дури и ако некој изгледа ист како од вашите соништа и ги има сите квалитети што сакате да ги има вашиот партнер, ако не сте 100% среќни во врската, тоа може да значи дека сте не...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 6444 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="kultura-бикот-да-не-ја-злоупотребува-довербата-лавот-да-не-наоѓа-summary-199781.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%91%D0%B8%D0%BA%D0%BE%D1%82+%D0%B4%D0%B0+%D0%BD%D0%B5+%D1%98%D0%B0+%D0%B7%D0%BB%D0%BE%D1%83%D0%BF%D0%BE%D1%82%D1%80%D0%B5%D0%B1%D1%83%D0%B2%D0%B0+%D0%B4%D0%BE%D0%B2%D0%B5%D1%80%D0%B1%D0%B0%D1%82%D0%B0%2C+%D0%9B%D0%B0%D0%B2%D0%BE%D1%82+%D0%B4%D0%B0+%D0%BD%D0%B5+%D0%BD%D0%B0%D0%BE%D1%93%D0%B0+%D0%B8%D0%B7%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8"
-                 alt="Бикот да не ја злоупотребува довербата, Лавот да не наоѓа изговори"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="kultura-објавена-нова-книга-на-марина-мијаковска-на-српски-јазик-во-summary-201930.html"
+               class="hover:underline">Објавена нова книга на Марина Мијаковска на српски јазик во Белград</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Стихозбирката „Млечни прозори / Млечни прозорци“ е објавена двојазично, на македонски јазик и во препев на српски јазик.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 253 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="kultura-матица-македонска-го-објави-патописот-крај-бреговите-на-summary-201670.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%E2%80%9E%D0%9C%D0%B0%D1%82%D0%B8%D1%86%D0%B0+%D0%BC%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B0%E2%80%9C+%D0%B3%D0%BE+%D0%BE%D0%B1%D1%98%D0%B0%D0%B2%D0%B8+%D0%BF%D0%B0%D1%82%D0%BE%D0%BF%D0%B8%D1%81%D0%BE%D1%82+%E2%80%9E%D0%9A%D1%80%D0%B0%D1%98+%D0%B1%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%B8%D1%82%D0%B5+%D0%BD%D0%B0+%D0%9E%D1%85%D1%80%D0%B8%D0%B4%D1%81%D0%BA%D0%BE%D1%82%D0%BE+%D0%95%D0%B7%D0%B5%D1%80%D0%BE%E2%80%9C+%D0%BE%D0%B4+%D0%91%D1%80%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2+%D0%9D%D1%83%D1%88%D0%B8%D1%9C"
+                 alt="„Матица македонска“ го објави патописот „Крај бреговите на Охридското Езеро“ од Бранислав Нушиќ"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="kultura-бикот-да-не-ја-злоупотребува-довербата-лавот-да-не-наоѓа-summary-199781.html"
-               class="hover:underline">Бикот да не ја злоупотребува довербата, Лавот да не наоѓа изговори</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">РАК Ќе биде добро за вас доколку денеска бидете поумерени во сè што правите, вклучувајќи јадење, консумирање алкохол и шопинг.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 6458 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="kultura-конечно-ги-пронајдовме-секогаш-поволните-производи-од-dm-кои-summary-199780.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-199780.webp"
-                 alt="Конечно ги пронајдовме секогаш поволните производи од dm кои го прават чистењето полесно!"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="kultura-матица-македонска-го-објави-патописот-крај-бреговите-на-summary-201670.html"
+               class="hover:underline">„Матица македонска“ го објави патописот „Крај бреговите на Охридското Езеро“ од Бранислав Нушиќ</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Патописот го доближува охридското крајбрежје од XIX век во нов превод на Иван Антоновски, со илустрациите од првото издание.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 254 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="kultura-одбележување-на-155-години-од-раѓањето-и-120-години-од-summary-201208.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9E%D0%B4%D0%B1%D0%B5%D0%BB%D0%B5%D0%B6%D1%83%D0%B2%D0%B0%D1%9A%D0%B5+%D0%BD%D0%B0+155+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B8+%D0%BE%D0%B4+%D1%80%D0%B0%D1%93%D0%B0%D1%9A%D0%B5%D1%82%D0%BE+%D0%B8+120+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B8+%D0%BE%D0%B4+%D1%81%D0%BC%D1%80%D1%82%D1%82%D0%B0+%D0%BD%D0%B0+%D0%BC%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%BE%D1%82+%D1%80%D0%B5%D0%B2%D0%BE%D0%BB%D1%83%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80+%D0%94%D0%B0%D0%BC%D0%B5+%D0%93%D1%80%D1%83%D0%B5%D0%B2+%D0%B4%D0%B5%D0%BD%D0%B5%D1%81%D0%BA%D0%B0+%D0%B2%D0%BE+%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%BE%D1%82+%D0%9A%D0%98%D0%A6+%D0%B2%D0%BE+%D0%A1%D0%BE%D1%84%D0%B8%D1%98%D0%B0"
+                 alt="Одбележување на 155 години од раѓањето и 120 години од смртта на македонскиот револуционер Даме Груев денеска во Македонскиот КИЦ во Софија"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="kultura-конечно-ги-пронајдовме-секогаш-поволните-производи-од-dm-кои-summary-199780.html"
-               class="hover:underline">Конечно ги пронајдовме секогаш поволните производи од dm кои го прават чистењето полесно!</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Мал план, голема разлика Не секогаш имаме време за темелно чистење, но и тоа е во ред.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 6455 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                        </div>
-                        
-
-                        <!-- PAGINATION (only at bottom) -->
-                        <div class="flex justify-center mt-6">
-    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
-
-        <!-- Previous -->
-        <a href="culture-page-44.html"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="kultura-одбележување-на-155-години-од-раѓањето-и-120-години-од-summary-201208.html"
+               class="hover:underline">Одбележување на 155 години од раѓањето и 120 години од смртта на македонскиот револуционер Даме Груев денеска во Македонскиот КИЦ во Софија</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">По повод 155 години од неговото раѓање и 120 години од неговата смрт, настанот: „Во светлината на слободата – за историското значење на Даме Груев“ претставува можност да се нав...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 254 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="kultura-мултимедијален-проект-келнер-дај-полнач-на-актерката-матеа-summary-201676.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9C%D1%83%D0%BB%D1%82%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%98%D0%B0%D0%BB%D0%B5%D0%BD+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82+%E2%80%9E%D0%9A%D0%B5%D0%BB%D0%BD%D0%B5%D1%80%2C+%D0%B4%D0%B0%D1%98+%D0%BF%D0%BE%D0%BB%D0%BD%D0%B0%D1%87%E2%80%9C+%D0%BD%D0%B0+%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%BA%D0%B0%D1%82%D0%B0+%D0%9C%D0%B0%D1%82%D0%B5%D0%B0+%D0%88%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0+%D0%B2%D0%BE+%D0%9C%D0%9A%D0%A6"
+                 alt="Мултимедијален проект „Келнер, дај полнач“ на актерката Матеа Јанковска во МКЦ"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="kultura-мултимедијален-проект-келнер-дај-полнач-на-актерката-матеа-summary-201676.html"
+               class="hover:underline">Мултимедијален проект „Келнер, дај полнач“ на актерката Матеа Јанковска во МКЦ</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Преку кратки танка-песни и илустрации, проектот го следи патот од 99% до 1% — од страста, љубовта и желбата да почувствуваме сè, до моментот кога душата ќе побара полнач.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 254 часа</span> </span> </div> </div> </div> </div>  <div class="flex justify-center mt-6"> <nav class="inline-flex items-center space-x-1" aria-label="Pagination">  <a href="culture-page-44.html"
            class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
-           aria-label="Previous">&laquo;</a>
-
-        <!-- Page numbers (max 10) -->
-        
-            
-                <a href="culture-page-41.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">41</a>
-            
-                <a href="culture-page-42.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">42</a>
-            
-                <a href="culture-page-43.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">43</a>
-            
-                <a href="culture-page-44.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">44</a>
-            
-                <a href="culture-page-45.html"
-                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">45</a>
-            
-        
-
-        <!-- Next -->
-        
-    </nav>
-</div>
-                    </div>
-
-                    <!-- SIDEBAR -->
-                    <div class="lg:col-span-1 flex flex-col gap-6">
-
-                        <!-- Desktop Small Ad #1 -->
-                        <div class="rounded-lg theme-bg-secondary border theme-border-color shadow-lg p-3">
-                            <a id="rotating-ad-link-small-1"
+           aria-label="Previous">&laquo;</a>  <a href="culture-page-41.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">41</a> <a href="culture-page-42.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">42</a> <a href="culture-page-43.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">43</a> <a href="culture-page-44.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">44</a> <a href="culture-page-45.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">45</a> <a href="culture-page-46.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">46</a> <a href="culture-page-47.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">47</a> <a href="culture-page-48.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">48</a> <a href="culture-page-49.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">49</a> <a href="culture-page-50.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">50</a>  <a href="culture-page-46.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Next">&raquo;</a> </nav> </div> </div>  <div class="lg:col-span-1 flex flex-col gap-6">  <div class="rounded-lg theme-bg-secondary border theme-border-color shadow-lg p-3"> <a id="rotating-ad-link-small-1"
                                href="#"
                                class="block w-full rounded-lg overflow-hidden"
                                aria-label="Sponsored ad"
-                               style="height: 260px; background-size: cover; background-position: center center;">
-                            </a>
-                        </div>
-
-                        <!-- Desktop Small Ad #2 -->
-                        <div class="rounded-lg theme-bg-secondary border theme-border-color shadow-lg p-3">
-                            <a id="rotating-ad-link-small-2"
+                               style="height: 260px; background-size: cover; background-position: center center;"> </a> </div>  <div class="rounded-lg theme-bg-secondary border theme-border-color shadow-lg p-3"> <a id="rotating-ad-link-small-2"
                                href="#"
                                class="block w-full rounded-lg overflow-hidden"
                                aria-label="Sponsored ad"
-                               style="height: 260px; background-size: cover; background-position: center center;">
-                            </a>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-
-        <!-- ======================= -->
-        <!-- MOBILE LAYOUT (< lg)    -->
-        <!-- ======================= -->
-        <div class="block lg:hidden">
-            <div class="max-w-3xl mx-auto w-full">
-                <div class="p-2 sm:p-4 flex flex-col gap-6">
-                    <!-- Top Ad Banner -->
-                    <div id="mobile-ad-container-top" class="mb-4">
-                        <a id="mobile-ad-link-top" href="#"
-                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                    </div>
-
-                    <!-- Category header -->
-                    <div class="flex items-center justify-between border-b pb-1 theme-border-color">
-                        <div class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl">
-                            <span>Култура</span>
-                        </div>
-                    </div>
-
-                    <!-- Articles list -->
-                    <div class="flex flex-col divide-y theme-border-color mt-2">
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="kultura-3-хороскопски-знаци-влегуваат-во-9-години-благосостојба-summary-199779.html" class="flex-shrink-0">
-                                        <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=3+%D1%85%D0%BE%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D1%81%D0%BA%D0%B8+%D0%B7%D0%BD%D0%B0%D1%86%D0%B8+%D0%B2%D0%BB%D0%B5%D0%B3%D1%83%D0%B2%D0%B0%D0%B0%D1%82+%D0%B2%D0%BE+9+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B8+%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%98%D0%B1%D0%B0%3A+%D0%A1%D1%80%D0%B5%D1%9C%D0%B0%D1%82%D0%B0+%D0%B8+%D1%83%D1%81%D0%BF%D0%B5%D1%85%D0%BE%D1%82+%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D0%BA%D0%B8%D0%BD%D0%B0%D1%82%D0%BE+%D1%9C%D0%B5+%D0%B3%D0%B8+%D1%81%D0%BB%D0%B5%D0%B4%D0%B0%D1%82+%D0%B4%D0%BE+2035+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0"
-                                             alt="3 хороскопски знаци влегуваат во 9 години благосостојба: Среќата и успехот непрекинато ќе ги следат до 2035 година"
+                               style="height: 260px; background-size: cover; background-position: center center;"> </a> </div> </div> </div> </div> </div>    <div class="block lg:hidden"> <div class="max-w-3xl mx-auto w-full"> <div class="p-2 sm:p-4 flex flex-col gap-6">  <div id="mobile-ad-container-top" class="mb-4"> <a id="mobile-ad-link-top" href="#"
+                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a> </div>  <div class="flex items-center justify-between border-b pb-1 theme-border-color"> <div class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl"> <span>Култура</span> </div> </div>  <div class="flex flex-col divide-y theme-border-color mt-2"> <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="kultura-друштвото-на-писатели-на-македонија-организира-поетско-summary-201740.html" class="flex-shrink-0"> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%94%D1%80%D1%83%D1%88%D1%82%D0%B2%D0%BE%D1%82%D0%BE+%D0%BD%D0%B0+%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D0%B8+%D0%BD%D0%B0+%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D0%B8%D1%98%D0%B0+%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B8%D1%80%D0%B0+%E2%80%9E%D0%9F%D0%BE%D0%B5%D1%82%D1%81%D0%BA%D0%BE+%D0%BC%D0%B0%D1%82%D0%B8%D0%BD%D0%B5%E2%80%9C+%D0%BD%D0%B0+24+%D0%BE%D0%BA%D1%82%D0%BE%D0%BC%D0%B2%D1%80%D0%B8+%D0%BD%D0%B0+%D0%BF%D0%BB%D0%B0%D0%B4%D0%BD%D0%B5"
+                                             alt="Друштвото на писатели на Македонија организира „Поетско матине“ на 24 октомври на пладне"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="eager" fetchpriority="high"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="kultura-3-хороскопски-знаци-влегуваат-во-9-години-благосостојба-summary-199779.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">3 хороскопски знаци влегуваат во 9 години благосостојба: Среќата и успехот непрекинато ќе ги следат до 2035 година</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Вага Вагите влегуваат во период на внатрешен мир и стабилност што трае девет години.</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 6452 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="kultura-3-хороскопски-знаци-влегуваат-во-9-години-благосостојба-summary-199779.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="kultura-3-хороскопски-знаци-влегуваат-во-9-години-благосостојба-summary-199779.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="eager" fetchpriority="high"/>  </a>  <div class="flex flex-col flex-1"> <a href="kultura-друштвото-на-писатели-на-македонија-организира-поетско-summary-201740.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Друштвото на писатели на Македонија организира „Поетско матине“ на 24 октомври на пладне</h3>  <p class="theme-text-secondary text-xs">Настанот е замислен како прва во низата идни книжевни средби на кои треба да им се даде простор и...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 252 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="kultura-друштвото-на-писатели-на-македонија-организира-поетско-summary-201740.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="kultura-друштвото-на-писатели-на-македонија-организира-поетско-summary-201740.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%203%20%D1%85%D0%BE%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D1%81%D0%BA%D0%B8%20%D0%B7%D0%BD%D0%B0%D1%86%D0%B8%20%D0%B2%D0%BB%D0%B5%D0%B3%D1%83%D0%B2%D0%B0%D0%B0%D1%82%20%D0%B2%D0%BE%209%20%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B8%20%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%98%D0%B1%D0%B0:%20%D0%A1%D1%80%D0%B5%D1%9C%D0%B0%D1%82%D0%B0%20%D0%B8%20%D1%83%D1%81%D0%BF%D0%B5%D1%85%D0%BE%D1%82%20%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D0%BA%D0%B8%D0%BD%D0%B0%D1%82%D0%BE%20%D1%9C%D0%B5%20%D0%B3%D0%B8%20%D1%81%D0%BB%D0%B5%D0%B4%D0%B0%D1%82%20%D0%B4%D0%BE%202035%20%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%94%D1%80%D1%83%D1%88%D1%82%D0%B2%D0%BE%D1%82%D0%BE%20%D0%BD%D0%B0%20%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D0%B8%20%D0%BD%D0%B0%20%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D0%B8%D1%98%D0%B0%20%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B8%D1%80%D0%B0%20%E2%80%9E%D0%9F%D0%BE%D0%B5%D1%82%D1%81%D0%BA%D0%BE%20%D0%BC%D0%B0%D1%82%D0%B8%D0%BD%D0%B5%E2%80%9C%20%D0%BD%D0%B0%2024%20%D0%BE%D0%BA%D1%82%D0%BE%D0%BC%D0%B2%D1%80%D0%B8%20%D0%BD%D0%B0%20%D0%BF%D0%BB%D0%B0%D0%B4%D0%BD%D0%B5&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="kultura-доаѓа-месецот-на-страста-астролозите-откриваат-кој-summary-199776.html" class="flex-shrink-0">
-                                        <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%94%D0%BE%D0%B0%D1%93%D0%B0+%D0%BC%D0%B5%D1%81%D0%B5%D1%86%D0%BE%D1%82+%D0%BD%D0%B0+%D1%81%D1%82%D1%80%D0%B0%D1%81%D1%82%D0%B0%3A+%D0%90%D1%81%D1%82%D1%80%D0%BE%D0%BB%D0%BE%D0%B7%D0%B8%D1%82%D0%B5+%D0%BE%D1%82%D0%BA%D1%80%D0%B8%D0%B2%D0%B0%D0%B0%D1%82+%D0%BA%D0%BE%D1%98+%D1%85%D0%BE%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D1%81%D0%BA%D0%B8+%D0%B7%D0%BD%D0%B0%D0%BA+%D0%B3%D0%BE+%D1%87%D0%B5%D0%BA%D0%B0+%D1%81%D0%B2%D1%80%D1%88%D1%83%D0%B2%D0%B0%D1%87%D0%BA%D0%B0%2C+%D0%BA%D0%BE%D1%98+%D1%81%D0%B5%D0%BB%D0%B8%D0%B4%D0%B1%D0%B0%2C+%D0%B0+%D0%BA%D0%BE%D1%98+%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%B5%D0%BD+%D0%BA%D1%80%D0%B0%D1%98+%D0%B2%D0%BE+%D1%84%D0%B5%D0%B2%D1%80%D1%83%D0%B0%D1%80%D0%B8"
-                                             alt="Доаѓа месецот на страста: Астролозите откриваат кој хороскопски знак го чека свршувачка, кој селидба, а кој конечен крај во февруари"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="kultura-мнт-награда-за-режија-за-нела-витошевиќ-и-три-признанија-за-summary-201675.html" class="flex-shrink-0"> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9C%D0%9D%D0%A2%3A+%D0%9D%D0%B0%D0%B3%D1%80%D0%B0%D0%B4%D0%B0+%D0%B7%D0%B0+%D1%80%D0%B5%D0%B6%D0%B8%D1%98%D0%B0+%D0%B7%D0%B0+%D0%9D%D0%B5%D0%BB%D0%B0+%D0%92%D0%B8%D1%82%D0%BE%D1%88%D0%B5%D0%B2%D0%B8%D1%9C+%D0%B8+%D1%82%D1%80%D0%B8+%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D1%98%D0%B0+%D0%B7%D0%B0+%E2%80%9E%D0%97%D0%BC%D0%B5%D1%98%E2%80%9C+%D0%BD%D0%B0+%D0%BC%D0%B5%D1%93%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%82%D0%B0+%D1%81%D1%86%D0%B5%D0%BD%D0%B0"
+                                             alt="МНТ: Награда за режија за Нела Витошевиќ и три признанија за „Змеј“ на меѓународната сцена"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="kultura-доаѓа-месецот-на-страста-астролозите-откриваат-кој-summary-199776.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Доаѓа месецот на страста: Астролозите откриваат кој хороскопски знак го чека свршувачка, кој селидба, а кој конечен крај во февруари</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Љубовниот хороскоп за февруари е вашиот водич кон среќата.</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 6448 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="kultura-доаѓа-месецот-на-страста-астролозите-откриваат-кој-summary-199776.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="kultura-доаѓа-месецот-на-страста-астролозите-откриваат-кој-summary-199776.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="kultura-мнт-награда-за-режија-за-нела-витошевиќ-и-три-признанија-за-summary-201675.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">МНТ: Награда за режија за Нела Витошевиќ и три признанија за „Змеј“ на меѓународната сцена</h3>  <p class="theme-text-secondary text-xs">Жирито, предводено од Ирфан Менсур, ѝ ја додели наградата за најдобра режија на Нела Витошевиќ.</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 252 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="kultura-мнт-награда-за-режија-за-нела-витошевиќ-и-три-признанија-за-summary-201675.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="kultura-мнт-награда-за-режија-за-нела-витошевиќ-и-три-признанија-за-summary-201675.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%94%D0%BE%D0%B0%D1%93%D0%B0%20%D0%BC%D0%B5%D1%81%D0%B5%D1%86%D0%BE%D1%82%20%D0%BD%D0%B0%20%D1%81%D1%82%D1%80%D0%B0%D1%81%D1%82%D0%B0:%20%D0%90%D1%81%D1%82%D1%80%D0%BE%D0%BB%D0%BE%D0%B7%D0%B8%D1%82%D0%B5%20%D0%BE%D1%82%D0%BA%D1%80%D0%B8%D0%B2%D0%B0%D0%B0%D1%82%20%D0%BA%D0%BE%D1%98%20%D1%85%D0%BE%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D1%81%D0%BA%D0%B8%20%D0%B7%D0%BD%D0%B0%D0%BA%20%D0%B3%D0%BE%20%D1%87%D0%B5%D0%BA%D0%B0%20%D1%81%D0%B2%D1%80%D1%88%D1%83%D0%B2%D0%B0%D1%87%D0%BA%D0%B0,%20%D0%BA%D0%BE%D1%98%20%D1%81%D0%B5%D0%BB%D0%B8%D0%B4%D0%B1%D0%B0,%20%D0%B0%20%D0%BA%D0%BE%D1%98%20%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%B5%D0%BD%20%D0%BA%D1%80%D0%B0%D1%98%20%D0%B2%D0%BE%20%D1%84%D0%B5%D0%B2%D1%80%D1%83%D0%B0%D1%80%D0%B8&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9C%D0%9D%D0%A2:%20%D0%9D%D0%B0%D0%B3%D1%80%D0%B0%D0%B4%D0%B0%20%D0%B7%D0%B0%20%D1%80%D0%B5%D0%B6%D0%B8%D1%98%D0%B0%20%D0%B7%D0%B0%20%D0%9D%D0%B5%D0%BB%D0%B0%20%D0%92%D0%B8%D1%82%D0%BE%D1%88%D0%B5%D0%B2%D0%B8%D1%9C%20%D0%B8%20%D1%82%D1%80%D0%B8%20%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D1%98%D0%B0%20%D0%B7%D0%B0%20%E2%80%9E%D0%97%D0%BC%D0%B5%D1%98%E2%80%9C%20%D0%BD%D0%B0%20%D0%BC%D0%B5%D1%93%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%82%D0%B0%20%D1%81%D1%86%D0%B5%D0%BD%D0%B0&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="kultura-никогаш-нема-да-ви-признаат-мажите-ги-мразат-овие-3-работи-summary-199777.html" class="flex-shrink-0">
-                                        <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9D%D0%B8%D0%BA%D0%BE%D0%B3%D0%B0%D1%88+%D0%BD%D0%B5%D0%BC%D0%B0+%D0%B4%D0%B0+%D0%B2%D0%B8+%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%B0%D1%82%3A+%D0%9C%D0%B0%D0%B6%D0%B8%D1%82%D0%B5+%D0%B3%D0%B8+%D0%BC%D1%80%D0%B0%D0%B7%D0%B0%D1%82+%D0%BE%D0%B2%D0%B8%D0%B5+3+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B8+%D0%B2%D0%BE+%D0%BA%D1%80%D0%B5%D0%B2%D0%B5%D1%82%2C+%D0%B0+%D0%B1%D1%80%D0%BE%D1%98%D0%BE%D1%82+3+%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BE+%D0%BD%D0%B5+%D0%B8%D0%BC+%D1%81%D0%B5+%D0%B4%D0%BE%D0%BF%D0%B0%D1%93%D0%B0"
-                                             alt="Никогаш нема да ви признаат: Мажите ги мразат овие 3 работи во кревет, а бројот 3 особено не им се допаѓа"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="kultura-артур-рембо-поетот-кој-ја-напушти-поезијата-summary-202272.html" class="flex-shrink-0"> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%90%D1%80%D1%82%D1%83%D1%80+%D0%A0%D0%B5%D0%BC%D0%B1%D0%BE+%E2%80%93+%D0%BF%D0%BE%D0%B5%D1%82%D0%BE%D1%82+%D0%BA%D0%BE%D1%98+%D1%98%D0%B0+%D0%BD%D0%B0%D0%BF%D1%83%D1%88%D1%82%D0%B8+%D0%BF%D0%BE%D0%B5%D0%B7%D0%B8%D1%98%D0%B0%D1%82%D0%B0"
+                                             alt="Артур Рембо – поетот кој ја напушти поезијата"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="kultura-никогаш-нема-да-ви-признаат-мажите-ги-мразат-овие-3-работи-summary-199777.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Никогаш нема да ви признаат: Мажите ги мразат овие 3 работи во кревет, а бројот 3 особено не им се допаѓа</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Колку и да мислите дека сè што правите во креветот му годи на вашиот партнер, постојат одредени р...</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 6450 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="kultura-никогаш-нема-да-ви-признаат-мажите-ги-мразат-овие-3-работи-summary-199777.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="kultura-никогаш-нема-да-ви-признаат-мажите-ги-мразат-овие-3-работи-summary-199777.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="kultura-артур-рембо-поетот-кој-ја-напушти-поезијата-summary-202272.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Артур Рембо – поетот кој ја напушти поезијата</h3>  <p class="theme-text-secondary text-xs">Рембо и Верлен – книжевност, страст и самоуништување Во 1871. година Рембо му испраќа свои песни ...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 247 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="kultura-артур-рембо-поетот-кој-ја-напушти-поезијата-summary-202272.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="kultura-артур-рембо-поетот-кој-ја-напушти-поезијата-summary-202272.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9D%D0%B8%D0%BA%D0%BE%D0%B3%D0%B0%D1%88%20%D0%BD%D0%B5%D0%BC%D0%B0%20%D0%B4%D0%B0%20%D0%B2%D0%B8%20%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%B0%D1%82:%20%D0%9C%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D0%B3%D0%B8%20%D0%BC%D1%80%D0%B0%D0%B7%D0%B0%D1%82%20%D0%BE%D0%B2%D0%B8%D0%B5%203%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B8%20%D0%B2%D0%BE%20%D0%BA%D1%80%D0%B5%D0%B2%D0%B5%D1%82,%20%D0%B0%20%D0%B1%D1%80%D0%BE%D1%98%D0%BE%D1%82%203%20%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BE%20%D0%BD%D0%B5%20%D0%B8%D0%BC%20%D1%81%D0%B5%20%D0%B4%D0%BE%D0%BF%D0%B0%D1%93%D0%B0&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%90%D1%80%D1%82%D1%83%D1%80%20%D0%A0%D0%B5%D0%BC%D0%B1%D0%BE%20%E2%80%93%20%D0%BF%D0%BE%D0%B5%D1%82%D0%BE%D1%82%20%D0%BA%D0%BE%D1%98%20%D1%98%D0%B0%20%D0%BD%D0%B0%D0%BF%D1%83%D1%88%D1%82%D0%B8%20%D0%BF%D0%BE%D0%B5%D0%B7%D0%B8%D1%98%D0%B0%D1%82%D0%B0&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="kultura-хороскоп-за-февруари-кој-ќе-заработува-повеќе-а-кој-мора-да-summary-199774.html" class="flex-shrink-0">
-                                        <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%A5%D0%BE%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF+%D0%B7%D0%B0+%D1%84%D0%B5%D0%B2%D1%80%D1%83%D0%B0%D1%80%D0%B8%3A+%D0%9A%D0%BE%D1%98+%D1%9C%D0%B5+%D0%B7%D0%B0%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83%D0%B2%D0%B0+%D0%BF%D0%BE%D0%B2%D0%B5%D1%9C%D0%B5%2C+%D0%B0+%D0%BA%D0%BE%D1%98+%D0%BC%D0%BE%D1%80%D0%B0+%D0%B4%D0%B0+%D0%B3%D0%B8+%D0%BF%D1%80%D0%BE%D0%BC%D0%B5%D0%BD%D0%B8+%D1%81%D0%B2%D0%BE%D0%B8%D1%82%D0%B5+%D0%BD%D0%B0%D0%B2%D0%B8%D0%BA%D0%B8"
-                                             alt="Хороскоп за февруари: Кој ќе заработува повеќе, а кој мора да ги промени своите навики"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="kultura-златна-лира-2026-сабота-24-октомври-20-часот-музеј-на-summary-201728.html" class="flex-shrink-0"> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%97%D0%BB%D0%B0%D1%82%D0%BD%D0%B0+%D0%BB%D0%B8%D1%80%D0%B0+2026-%D0%A1%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%2C+24+%D0%BE%D0%BA%D1%82%D0%BE%D0%BC%D0%B2%D1%80%D0%B8%2C+20+%D1%87%D0%B0%D1%81%D0%BE%D1%82%2C+%D0%9C%D1%83%D0%B7%D0%B5%D1%98+%D0%BD%D0%B0+%D0%BC%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B0%D1%82%D0%B0+%D0%B1%D0%BE%D1%80%D0%B1%D0%B0"
+                                             alt="Златна лира 2026-Сабота, 24 октомври, 20 часот, Музеј на македонската борба"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="kultura-хороскоп-за-февруари-кој-ќе-заработува-повеќе-а-кој-мора-да-summary-199774.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Хороскоп за февруари: Кој ќе заработува повеќе, а кој мора да ги промени своите навики</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Ретроградниот Меркур на крајот од месецот во Риби бара дополнително внимание при проверка на дого...</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 6446 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="kultura-хороскоп-за-февруари-кој-ќе-заработува-повеќе-а-кој-мора-да-summary-199774.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="kultura-хороскоп-за-февруари-кој-ќе-заработува-повеќе-а-кој-мора-да-summary-199774.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="kultura-златна-лира-2026-сабота-24-октомври-20-часот-музеј-на-summary-201728.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Златна лира 2026-Сабота, 24 октомври, 20 часот, Музеј на македонската борба</h3>  <p class="theme-text-secondary text-xs">Концерт на Момчило Куфојанакис - виолина, Весна Ангелова Христов - пијано.</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 252 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="kultura-златна-лира-2026-сабота-24-октомври-20-часот-музеј-на-summary-201728.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="kultura-златна-лира-2026-сабота-24-октомври-20-часот-музеј-на-summary-201728.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A5%D0%BE%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%20%D0%B7%D0%B0%20%D1%84%D0%B5%D0%B2%D1%80%D1%83%D0%B0%D1%80%D0%B8:%20%D0%9A%D0%BE%D1%98%20%D1%9C%D0%B5%20%D0%B7%D0%B0%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83%D0%B2%D0%B0%20%D0%BF%D0%BE%D0%B2%D0%B5%D1%9C%D0%B5,%20%D0%B0%20%D0%BA%D0%BE%D1%98%20%D0%BC%D0%BE%D1%80%D0%B0%20%D0%B4%D0%B0%20%D0%B3%D0%B8%20%D0%BF%D1%80%D0%BE%D0%BC%D0%B5%D0%BD%D0%B8%20%D1%81%D0%B2%D0%BE%D0%B8%D1%82%D0%B5%20%D0%BD%D0%B0%D0%B2%D0%B8%D0%BA%D0%B8&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%97%D0%BB%D0%B0%D1%82%D0%BD%D0%B0%20%D0%BB%D0%B8%D1%80%D0%B0%202026-%D0%A1%D0%B0%D0%B1%D0%BE%D1%82%D0%B0,%2024%20%D0%BE%D0%BA%D1%82%D0%BE%D0%BC%D0%B2%D1%80%D0%B8,%2020%20%D1%87%D0%B0%D1%81%D0%BE%D1%82,%20%D0%9C%D1%83%D0%B7%D0%B5%D1%98%20%D0%BD%D0%B0%20%D0%BC%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B0%D1%82%D0%B0%20%D0%B1%D0%BE%D1%80%D0%B1%D0%B0&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="kultura-почина-алексис-ортега-актерот-што-го-синхронизираше-summary-199775.html" class="flex-shrink-0">
-                                        <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9F%D0%BE%D1%87%D0%B8%D0%BD%D0%B0+%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B8%D1%81+%D0%9E%D1%80%D1%82%D0%B5%D0%B3%D0%B0%2C+%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%BE%D1%82+%D1%88%D1%82%D0%BE+%D0%B3%D0%BE+%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B8%D1%80%D0%B0%D1%88%D0%B5+%D0%A1%D0%BF%D0%B0%D1%98%D0%B4%D0%B5%D1%80%D0%BC%D0%B5%D0%BD"
-                                             alt="Почина Алексис Ортега, актерот што го синхронизираше Спајдермен"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="kultura-објавен-романот-бура-од-веле-смилевски-summary-202913.html" class="flex-shrink-0"> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9E%D0%B1%D1%98%D0%B0%D0%B2%D0%B5%D0%BD+%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%D0%BE%D1%82+%E2%80%9E%D0%91%D1%83%D1%80%D0%B0%E2%80%9C+%D0%BE%D0%B4+%D0%92%D0%B5%D0%BB%D0%B5+%D0%A1%D0%BC%D0%B8%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%B8"
+                                             alt="Објавен романот „Бура“ од Веле Смилевски"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="kultura-почина-алексис-ортега-актерот-што-го-синхронизираше-summary-199775.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Почина Алексис Ортега, актерот што го синхронизираше Спајдермен</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Во официјалното соопштение објавено на Инстаграм-страница посветена на светот на синхронизацијата...</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 6447 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="kultura-почина-алексис-ортега-актерот-што-го-синхронизираше-summary-199775.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="kultura-почина-алексис-ортега-актерот-што-го-синхронизираше-summary-199775.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="kultura-објавен-романот-бура-од-веле-смилевски-summary-202913.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Објавен романот „Бура“ од Веле Смилевски</h3>  <p class="theme-text-secondary text-xs">Во издание на Здружението за уметност и култура „Дијалог“ од Скопје, деновиве излезе од печат ром...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 253 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="kultura-објавен-романот-бура-од-веле-смилевски-summary-202913.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="kultura-објавен-романот-бура-од-веле-смилевски-summary-202913.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9F%D0%BE%D1%87%D0%B8%D0%BD%D0%B0%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B8%D1%81%20%D0%9E%D1%80%D1%82%D0%B5%D0%B3%D0%B0,%20%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%BE%D1%82%20%D1%88%D1%82%D0%BE%20%D0%B3%D0%BE%20%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B8%D1%80%D0%B0%D1%88%D0%B5%20%D0%A1%D0%BF%D0%B0%D1%98%D0%B4%D0%B5%D1%80%D0%BC%D0%B5%D0%BD&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9E%D0%B1%D1%98%D0%B0%D0%B2%D0%B5%D0%BD%20%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%D0%BE%D1%82%20%E2%80%9E%D0%91%D1%83%D1%80%D0%B0%E2%80%9C%20%D0%BE%D0%B4%20%D0%92%D0%B5%D0%BB%D0%B5%20%D0%A1%D0%BC%D0%B8%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%B8&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            <div id="mobile-ad-container-mid" class="mt-8">
-                                <a id="mobile-ad-link-mid" href="#"
-                                   class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                            </div>
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="kultura-дали-свини-ќе-биде-казнета-за-градницитена-знакот-на-холивуд-summary-199772.html" class="flex-shrink-0">
-                                        <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%94%D0%B0%D0%BB%D0%B8+%D0%A1%D0%B2%D0%B8%D0%BD%D0%B8+%D1%9C%D0%B5+%D0%B1%D0%B8%D0%B4%D0%B5+%D0%BA%D0%B0%D0%B7%D0%BD%D0%B5%D1%82%D0%B0+%D0%B7%D0%B0+%D0%B3%D1%80%D0%B0%D0%B4%D0%BD%D0%B8%D1%86%D0%B8%D1%82%D0%B5%D0%BD%D0%B0+%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D1%82+%D0%BD%D0%B0+%D0%A5%D0%BE%D0%BB%D0%B8%D0%B2%D1%83%D0%B4%3F"
-                                             alt="Дали Свини ќе биде казнета за градницитена знакот на Холивуд?"
+                                            </a> </div> </div> </div> </div>  <div id="mobile-ad-container-mid" class="mt-8"> <a id="mobile-ad-link-mid" href="#"
+                                   class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a> </div> <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="kultura-романот-три-марии-од-писателката-оливера-ќорвезироска-summary-201821.html" class="flex-shrink-0"> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD%D0%BE%D1%82+%E2%80%9E%D0%A2%D1%80%D0%B8+%D0%9C%D0%B0%D1%80%D0%B8%D0%B8%E2%80%9C+%D0%BE%D0%B4+%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D0%BA%D0%B0%D1%82%D0%B0+%D0%9E%D0%BB%D0%B8%D0%B2%D0%B5%D1%80%D0%B0+%D0%8C%D0%BE%D1%80%D0%B2%D0%B5%D0%B7%D0%B8%D1%80%D0%BE%D1%81%D0%BA%D0%B0%2C+%D0%B4%D0%BE%D0%B1%D0%B8%D1%82%D0%BD%D0%B8%D0%BA+%D0%BD%D0%B0+%D1%82%D1%80%D0%B8+%D0%BF%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%B6%D0%BD%D0%B8+%D0%BA%D0%BD%D0%B8%D0%B6%D0%B5%D0%B2%D0%BD%D0%B8+%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B4%D0%B8+%D0%B4%D0%B5%D0%BD%D0%B5%D1%81%D0%BA%D0%B0+%D1%9C%D0%B5+%D1%81%D0%B5+%D0%BF%D1%80%D0%BE%D0%BC%D0%BE%D0%B2%D0%B8%D1%80%D0%B0+%D0%B2%D0%BE+%D0%9A%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE"
+                                             alt="Романот „Три Марии“ од писателката Оливера Ќорвезироска, добитник на три престижни книжевни награди денеска ќе се промовира во Куманово"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="kultura-дали-свини-ќе-биде-казнета-за-градницитена-знакот-на-холивуд-summary-199772.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Дали Свини ќе биде казнета за градницитена знакот на Холивуд?</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Пред лансирањето на нејзината линија долна облека „Syrn“, 28-годишната актерка сподели видео од с...</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 6443 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="kultura-дали-свини-ќе-биде-казнета-за-градницитена-знакот-на-холивуд-summary-199772.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="kultura-дали-свини-ќе-биде-казнета-за-градницитена-знакот-на-холивуд-summary-199772.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="kultura-романот-три-марии-од-писателката-оливера-ќорвезироска-summary-201821.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Романот „Три Марии“ од писателката Оливера Ќорвезироска, добитник на три престижни книжевни награди денеска ќе се промовира во Куманово</h3>  <p class="theme-text-secondary text-xs">Романот „Три Марии“ од писателката Оливера Ќорвезироска, добитник на три престижни книжевни награ...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 253 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="kultura-романот-три-марии-од-писателката-оливера-ќорвезироска-summary-201821.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="kultura-романот-три-марии-од-писателката-оливера-ќорвезироска-summary-201821.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%94%D0%B0%D0%BB%D0%B8%20%D0%A1%D0%B2%D0%B8%D0%BD%D0%B8%20%D1%9C%D0%B5%20%D0%B1%D0%B8%D0%B4%D0%B5%20%D0%BA%D0%B0%D0%B7%D0%BD%D0%B5%D1%82%D0%B0%20%D0%B7%D0%B0%20%D0%B3%D1%80%D0%B0%D0%B4%D0%BD%D0%B8%D1%86%D0%B8%D1%82%D0%B5%D0%BD%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D1%82%20%D0%BD%D0%B0%20%D0%A5%D0%BE%D0%BB%D0%B8%D0%B2%D1%83%D0%B4?&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD%D0%BE%D1%82%20%E2%80%9E%D0%A2%D1%80%D0%B8%20%D0%9C%D0%B0%D1%80%D0%B8%D0%B8%E2%80%9C%20%D0%BE%D0%B4%20%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D0%BA%D0%B0%D1%82%D0%B0%20%D0%9E%D0%BB%D0%B8%D0%B2%D0%B5%D1%80%D0%B0%20%D0%8C%D0%BE%D1%80%D0%B2%D0%B5%D0%B7%D0%B8%D1%80%D0%BE%D1%81%D0%BA%D0%B0,%20%D0%B4%D0%BE%D0%B1%D0%B8%D1%82%D0%BD%D0%B8%D0%BA%20%D0%BD%D0%B0%20%D1%82%D1%80%D0%B8%20%D0%BF%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%B6%D0%BD%D0%B8%20%D0%BA%D0%BD%D0%B8%D0%B6%D0%B5%D0%B2%D0%BD%D0%B8%20%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%20%D0%B4%D0%B5%D0%BD%D0%B5%D1%81%D0%BA%D0%B0%20%D1%9C%D0%B5%20%D1%81%D0%B5%20%D0%BF%D1%80%D0%BE%D0%BC%D0%BE%D0%B2%D0%B8%D1%80%D0%B0%20%D0%B2%D0%BE%20%D0%9A%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="kultura-осум-работи-кои-негативно-влијаат-на-врската-еве-зошто-summary-199773.html" class="flex-shrink-0">
-                                        <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9E%D1%81%D1%83%D0%BC+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B8+%D0%BA%D0%BE%D0%B8+%D0%BD%D0%B5%D0%B3%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE+%D0%B2%D0%BB%D0%B8%D1%98%D0%B0%D0%B0%D1%82+%D0%BD%D0%B0+%D0%B2%D1%80%D1%81%D0%BA%D0%B0%D1%82%D0%B0%3A+%D0%95%D0%B2%D0%B5+%D0%B7%D0%BE%D1%88%D1%82%D0%BE+%D0%BF%D0%B0%D1%80%D0%BE%D0%B2%D0%B8%D1%82%D0%B5+%D1%81%D0%B5+%D0%BD%D0%B5%D1%81%D1%80%D0%B5%D1%9C%D0%BD%D0%B8+%D0%B8+%D0%BF%D0%BE%D0%BA%D1%80%D0%B0%D1%98+%D0%BD%D0%B0%D0%B2%D0%B8%D0%B4%D1%83%D0%BC+%D1%81%D0%BE%D0%B2%D1%80%D1%88%D0%B5%D0%BD%D0%B8%D0%BE%D1%82+%D0%BE%D0%B4%D0%BD%D0%BE%D1%81"
-                                             alt="Осум работи кои негативно влијаат на врската: Еве зошто паровите се несреќни и покрај навидум совршениот однос"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="kultura-објавена-нова-книга-на-марина-мијаковска-на-српски-јазик-во-summary-201930.html" class="flex-shrink-0"> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9E%D0%B1%D1%98%D0%B0%D0%B2%D0%B5%D0%BD%D0%B0+%D0%BD%D0%BE%D0%B2%D0%B0+%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0+%D0%BD%D0%B0+%D0%9C%D0%B0%D1%80%D0%B8%D0%BD%D0%B0+%D0%9C%D0%B8%D1%98%D0%B0%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0+%D0%BD%D0%B0+%D1%81%D1%80%D0%BF%D1%81%D0%BA%D0%B8+%D1%98%D0%B0%D0%B7%D0%B8%D0%BA+%D0%B2%D0%BE+%D0%91%D0%B5%D0%BB%D0%B3%D1%80%D0%B0%D0%B4"
+                                             alt="Објавена нова книга на Марина Мијаковска на српски јазик во Белград"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="kultura-осум-работи-кои-негативно-влијаат-на-врската-еве-зошто-summary-199773.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Осум работи кои негативно влијаат на врската: Еве зошто паровите се несреќни и покрај навидум совршениот однос</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Дури и ако некој изгледа ист како од вашите соништа и ги има сите квалитети што сакате да ги има ...</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 6444 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="kultura-осум-работи-кои-негативно-влијаат-на-врската-еве-зошто-summary-199773.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="kultura-осум-работи-кои-негативно-влијаат-на-врската-еве-зошто-summary-199773.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="kultura-објавена-нова-книга-на-марина-мијаковска-на-српски-јазик-во-summary-201930.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Објавена нова книга на Марина Мијаковска на српски јазик во Белград</h3>  <p class="theme-text-secondary text-xs">Стихозбирката „Млечни прозори / Млечни прозорци“ е објавена двојазично, на македонски јазик и во ...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 253 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="kultura-објавена-нова-книга-на-марина-мијаковска-на-српски-јазик-во-summary-201930.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="kultura-објавена-нова-книга-на-марина-мијаковска-на-српски-јазик-во-summary-201930.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9E%D1%81%D1%83%D0%BC%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B8%20%D0%BA%D0%BE%D0%B8%20%D0%BD%D0%B5%D0%B3%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%20%D0%B2%D0%BB%D0%B8%D1%98%D0%B0%D0%B0%D1%82%20%D0%BD%D0%B0%20%D0%B2%D1%80%D1%81%D0%BA%D0%B0%D1%82%D0%B0:%20%D0%95%D0%B2%D0%B5%20%D0%B7%D0%BE%D1%88%D1%82%D0%BE%20%D0%BF%D0%B0%D1%80%D0%BE%D0%B2%D0%B8%D1%82%D0%B5%20%D1%81%D0%B5%20%D0%BD%D0%B5%D1%81%D1%80%D0%B5%D1%9C%D0%BD%D0%B8%20%D0%B8%20%D0%BF%D0%BE%D0%BA%D1%80%D0%B0%D1%98%20%D0%BD%D0%B0%D0%B2%D0%B8%D0%B4%D1%83%D0%BC%20%D1%81%D0%BE%D0%B2%D1%80%D1%88%D0%B5%D0%BD%D0%B8%D0%BE%D1%82%20%D0%BE%D0%B4%D0%BD%D0%BE%D1%81&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9E%D0%B1%D1%98%D0%B0%D0%B2%D0%B5%D0%BD%D0%B0%20%D0%BD%D0%BE%D0%B2%D0%B0%20%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BD%D0%B0%20%D0%9C%D0%B0%D1%80%D0%B8%D0%BD%D0%B0%20%D0%9C%D0%B8%D1%98%D0%B0%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%20%D0%BD%D0%B0%20%D1%81%D1%80%D0%BF%D1%81%D0%BA%D0%B8%20%D1%98%D0%B0%D0%B7%D0%B8%D0%BA%20%D0%B2%D0%BE%20%D0%91%D0%B5%D0%BB%D0%B3%D1%80%D0%B0%D0%B4&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="kultura-бикот-да-не-ја-злоупотребува-довербата-лавот-да-не-наоѓа-summary-199781.html" class="flex-shrink-0">
-                                        <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%91%D0%B8%D0%BA%D0%BE%D1%82+%D0%B4%D0%B0+%D0%BD%D0%B5+%D1%98%D0%B0+%D0%B7%D0%BB%D0%BE%D1%83%D0%BF%D0%BE%D1%82%D1%80%D0%B5%D0%B1%D1%83%D0%B2%D0%B0+%D0%B4%D0%BE%D0%B2%D0%B5%D1%80%D0%B1%D0%B0%D1%82%D0%B0%2C+%D0%9B%D0%B0%D0%B2%D0%BE%D1%82+%D0%B4%D0%B0+%D0%BD%D0%B5+%D0%BD%D0%B0%D0%BE%D1%93%D0%B0+%D0%B8%D0%B7%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8"
-                                             alt="Бикот да не ја злоупотребува довербата, Лавот да не наоѓа изговори"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="kultura-матица-македонска-го-објави-патописот-крај-бреговите-на-summary-201670.html" class="flex-shrink-0"> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%E2%80%9E%D0%9C%D0%B0%D1%82%D0%B8%D1%86%D0%B0+%D0%BC%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B0%E2%80%9C+%D0%B3%D0%BE+%D0%BE%D0%B1%D1%98%D0%B0%D0%B2%D0%B8+%D0%BF%D0%B0%D1%82%D0%BE%D0%BF%D0%B8%D1%81%D0%BE%D1%82+%E2%80%9E%D0%9A%D1%80%D0%B0%D1%98+%D0%B1%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%B8%D1%82%D0%B5+%D0%BD%D0%B0+%D0%9E%D1%85%D1%80%D0%B8%D0%B4%D1%81%D0%BA%D0%BE%D1%82%D0%BE+%D0%95%D0%B7%D0%B5%D1%80%D0%BE%E2%80%9C+%D0%BE%D0%B4+%D0%91%D1%80%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2+%D0%9D%D1%83%D1%88%D0%B8%D1%9C"
+                                             alt="„Матица македонска“ го објави патописот „Крај бреговите на Охридското Езеро“ од Бранислав Нушиќ"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="kultura-бикот-да-не-ја-злоупотребува-довербата-лавот-да-не-наоѓа-summary-199781.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Бикот да не ја злоупотребува довербата, Лавот да не наоѓа изговори</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">РАК Ќе биде добро за вас доколку денеска бидете поумерени во сè што правите, вклучувајќи јадење, ...</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 6458 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="kultura-бикот-да-не-ја-злоупотребува-довербата-лавот-да-не-наоѓа-summary-199781.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="kultura-бикот-да-не-ја-злоупотребува-довербата-лавот-да-не-наоѓа-summary-199781.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="kultura-матица-македонска-го-објави-патописот-крај-бреговите-на-summary-201670.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">„Матица македонска“ го објави патописот „Крај бреговите на Охридското Езеро“ од Бранислав Нушиќ</h3>  <p class="theme-text-secondary text-xs">Патописот го доближува охридското крајбрежје од XIX век во нов превод на Иван Антоновски, со илус...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 254 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="kultura-матица-македонска-го-објави-патописот-крај-бреговите-на-summary-201670.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="kultura-матица-македонска-го-објави-патописот-крај-бреговите-на-summary-201670.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%91%D0%B8%D0%BA%D0%BE%D1%82%20%D0%B4%D0%B0%20%D0%BD%D0%B5%20%D1%98%D0%B0%20%D0%B7%D0%BB%D0%BE%D1%83%D0%BF%D0%BE%D1%82%D1%80%D0%B5%D0%B1%D1%83%D0%B2%D0%B0%20%D0%B4%D0%BE%D0%B2%D0%B5%D1%80%D0%B1%D0%B0%D1%82%D0%B0,%20%D0%9B%D0%B0%D0%B2%D0%BE%D1%82%20%D0%B4%D0%B0%20%D0%BD%D0%B5%20%D0%BD%D0%B0%D0%BE%D1%93%D0%B0%20%D0%B8%D0%B7%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%E2%80%9E%D0%9C%D0%B0%D1%82%D0%B8%D1%86%D0%B0%20%D0%BC%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B0%E2%80%9C%20%D0%B3%D0%BE%20%D0%BE%D0%B1%D1%98%D0%B0%D0%B2%D0%B8%20%D0%BF%D0%B0%D1%82%D0%BE%D0%BF%D0%B8%D1%81%D0%BE%D1%82%20%E2%80%9E%D0%9A%D1%80%D0%B0%D1%98%20%D0%B1%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%B8%D1%82%D0%B5%20%D0%BD%D0%B0%20%D0%9E%D1%85%D1%80%D0%B8%D0%B4%D1%81%D0%BA%D0%BE%D1%82%D0%BE%20%D0%95%D0%B7%D0%B5%D1%80%D0%BE%E2%80%9C%20%D0%BE%D0%B4%20%D0%91%D1%80%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2%20%D0%9D%D1%83%D1%88%D0%B8%D1%9C&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="kultura-конечно-ги-пронајдовме-секогаш-поволните-производи-од-dm-кои-summary-199780.html" class="flex-shrink-0">
-                                        <img src="images/cache/summary-199780.webp"
-                                             alt="Конечно ги пронајдовме секогаш поволните производи од dm кои го прават чистењето полесно!"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="kultura-одбележување-на-155-години-од-раѓањето-и-120-години-од-summary-201208.html" class="flex-shrink-0"> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9E%D0%B4%D0%B1%D0%B5%D0%BB%D0%B5%D0%B6%D1%83%D0%B2%D0%B0%D1%9A%D0%B5+%D0%BD%D0%B0+155+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B8+%D0%BE%D0%B4+%D1%80%D0%B0%D1%93%D0%B0%D1%9A%D0%B5%D1%82%D0%BE+%D0%B8+120+%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B8+%D0%BE%D0%B4+%D1%81%D0%BC%D1%80%D1%82%D1%82%D0%B0+%D0%BD%D0%B0+%D0%BC%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%BE%D1%82+%D1%80%D0%B5%D0%B2%D0%BE%D0%BB%D1%83%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80+%D0%94%D0%B0%D0%BC%D0%B5+%D0%93%D1%80%D1%83%D0%B5%D0%B2+%D0%B4%D0%B5%D0%BD%D0%B5%D1%81%D0%BA%D0%B0+%D0%B2%D0%BE+%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%BE%D1%82+%D0%9A%D0%98%D0%A6+%D0%B2%D0%BE+%D0%A1%D0%BE%D1%84%D0%B8%D1%98%D0%B0"
+                                             alt="Одбележување на 155 години од раѓањето и 120 години од смртта на македонскиот револуционер Даме Груев денеска во Македонскиот КИЦ во Софија"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="kultura-конечно-ги-пронајдовме-секогаш-поволните-производи-од-dm-кои-summary-199780.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Конечно ги пронајдовме секогаш поволните производи од dm кои го прават чистењето полесно!</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Мал план, голема разлика Не секогаш имаме време за темелно чистење, но и тоа е во ред.</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 6455 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="kultura-конечно-ги-пронајдовме-секогаш-поволните-производи-од-dm-кои-summary-199780.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="kultura-конечно-ги-пронајдовме-секогаш-поволните-производи-од-dm-кои-summary-199780.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="kultura-одбележување-на-155-години-од-раѓањето-и-120-години-од-summary-201208.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Одбележување на 155 години од раѓањето и 120 години од смртта на македонскиот револуционер Даме Груев денеска во Македонскиот КИЦ во Софија</h3>  <p class="theme-text-secondary text-xs">По повод 155 години од неговото раѓање и 120 години од неговата смрт, настанот: „Во светлината на...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 254 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="kultura-одбележување-на-155-години-од-раѓањето-и-120-години-од-summary-201208.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="kultura-одбележување-на-155-години-од-раѓањето-и-120-години-од-summary-201208.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9A%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%20%D0%B3%D0%B8%20%D0%BF%D1%80%D0%BE%D0%BD%D0%B0%D1%98%D0%B4%D0%BE%D0%B2%D0%BC%D0%B5%20%D1%81%D0%B5%D0%BA%D0%BE%D0%B3%D0%B0%D1%88%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%20%D0%BE%D0%B4%20dm%20%D0%BA%D0%BE%D0%B8%20%D0%B3%D0%BE%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B0%D1%82%20%D1%87%D0%B8%D1%81%D1%82%D0%B5%D1%9A%D0%B5%D1%82%D0%BE%20%D0%BF%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D0%BE!&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9E%D0%B4%D0%B1%D0%B5%D0%BB%D0%B5%D0%B6%D1%83%D0%B2%D0%B0%D1%9A%D0%B5%20%D0%BD%D0%B0%20155%20%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B8%20%D0%BE%D0%B4%20%D1%80%D0%B0%D1%93%D0%B0%D1%9A%D0%B5%D1%82%D0%BE%20%D0%B8%20120%20%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B8%20%D0%BE%D0%B4%20%D1%81%D0%BC%D1%80%D1%82%D1%82%D0%B0%20%D0%BD%D0%B0%20%D0%BC%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%BE%D1%82%20%D1%80%D0%B5%D0%B2%D0%BE%D0%BB%D1%83%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%20%D0%94%D0%B0%D0%BC%D0%B5%20%D0%93%D1%80%D1%83%D0%B5%D0%B2%20%D0%B4%D0%B5%D0%BD%D0%B5%D1%81%D0%BA%D0%B0%20%D0%B2%D0%BE%20%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%BE%D1%82%20%D0%9A%D0%98%D0%A6%20%D0%B2%D0%BE%20%D0%A1%D0%BE%D1%84%D0%B8%D1%98%D0%B0&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                    </div>
-
-                    <!-- Pagination -->
-                    <div class="flex justify-center mt-6">
-    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
-
-        <!-- Previous -->
-        <a href="culture-page-44.html"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="kultura-мултимедијален-проект-келнер-дај-полнач-на-актерката-матеа-summary-201676.html" class="flex-shrink-0"> <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9C%D1%83%D0%BB%D1%82%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%98%D0%B0%D0%BB%D0%B5%D0%BD+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82+%E2%80%9E%D0%9A%D0%B5%D0%BB%D0%BD%D0%B5%D1%80%2C+%D0%B4%D0%B0%D1%98+%D0%BF%D0%BE%D0%BB%D0%BD%D0%B0%D1%87%E2%80%9C+%D0%BD%D0%B0+%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%BA%D0%B0%D1%82%D0%B0+%D0%9C%D0%B0%D1%82%D0%B5%D0%B0+%D0%88%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0+%D0%B2%D0%BE+%D0%9C%D0%9A%D0%A6"
+                                             alt="Мултимедијален проект „Келнер, дај полнач“ на актерката Матеа Јанковска во МКЦ"
+                                             width="80"
+                                                 height="80"
+                                                 decoding="async"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="kultura-мултимедијален-проект-келнер-дај-полнач-на-актерката-матеа-summary-201676.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Мултимедијален проект „Келнер, дај полнач“ на актерката Матеа Јанковска во МКЦ</h3>  <p class="theme-text-secondary text-xs">Преку кратки танка-песни и илустрации, проектот го следи патот од 99% до 1% — од страста, љубовта...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 254 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="kultura-мултимедијален-проект-келнер-дај-полнач-на-актерката-матеа-summary-201676.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="kultura-мултимедијален-проект-келнер-дај-полнач-на-актерката-матеа-summary-201676.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
+                                               target="_blank"
+                                               rel="noopener noreferrer"
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9C%D1%83%D0%BB%D1%82%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D1%98%D0%B0%D0%BB%D0%B5%D0%BD%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%E2%80%9E%D0%9A%D0%B5%D0%BB%D0%BD%D0%B5%D1%80,%20%D0%B4%D0%B0%D1%98%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%B0%D1%87%E2%80%9C%20%D0%BD%D0%B0%20%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%BA%D0%B0%D1%82%D0%B0%20%D0%9C%D0%B0%D1%82%D0%B5%D0%B0%20%D0%88%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%20%D0%B2%D0%BE%20%D0%9C%D0%9A%D0%A6&amp;udm=50">
+                                                прашања&nbsp;&raquo;
+                                            </a> </div> </div> </div> </div>  </div>  <div class="flex justify-center mt-6"> <nav class="inline-flex items-center space-x-1" aria-label="Pagination">  <a href="culture-page-44.html"
            class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
-           aria-label="Previous">&laquo;</a>
-
-        <!-- Page numbers (max 10) -->
-        
-            
-                <a href="culture-page-41.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">41</a>
-            
-                <a href="culture-page-42.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">42</a>
-            
-                <a href="culture-page-43.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">43</a>
-            
-                <a href="culture-page-44.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">44</a>
-            
-                <a href="culture-page-45.html"
-                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">45</a>
-            
-        
-
-        <!-- Next -->
-        
-    </nav>
-</div>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="theme-bg-secondary py-8 mt-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
-        <!-- Disclaimer Text -->
-        <p class="text-sm leading-relaxed mb-6">
+           aria-label="Previous">&laquo;</a>  <a href="culture-page-41.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">41</a> <a href="culture-page-42.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">42</a> <a href="culture-page-43.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">43</a> <a href="culture-page-44.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">44</a> <a href="culture-page-45.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">45</a> <a href="culture-page-46.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">46</a> <a href="culture-page-47.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">47</a> <a href="culture-page-48.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">48</a> <a href="culture-page-49.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">49</a> <a href="culture-page-50.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">50</a>  <a href="culture-page-46.html"
+           class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
+           aria-label="Next">&raquo;</a> </nav> </div> </div> </div> </div> </main>  <footer class="theme-bg-secondary py-8 mt-12"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">  <p class="text-sm leading-relaxed mb-6">
             Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
             Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
             <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
-        </p>
-
-        <!-- Static Links with Thymeleaf relative URLs -->
-        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
-            <a href="sources.html" class="hover:underline theme-text-primary">Извори</a>
-            <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
-            <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
-            <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
-            <a href="blog.html" class="hover:underline theme-text-primary">Блог</a>
-            <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a>
-            <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
-            <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
-        </div>
-    </div>
-
-    <!-- NEW: Search Modal HTML Structure -->
-    <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true">
-        <div class="flex items-start justify-center min-h-screen pt-16">
-            <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2>
-                    <button id="close-search-modal" class="theme-text-primary" aria-label="Close search">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    </button>
-                </div>
-                <label for="search-input" class="sr-only">Search keywords</label>
-                <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4" autocomplete="off">
-                <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto" role="status" aria-live="polite" aria-busy="false">
-                    <!-- Search results will be dynamically inserted here -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add Lunr.js library and the search script -->
-
-
-
-</footer>
-</div>
-
-<script>
+        </p>  <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold"> <a href="sources.html" class="hover:underline theme-text-primary">Извори</a> <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a> <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a> <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a> <a href="blog.html" class="hover:underline theme-text-primary">Блог</a> <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a> <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a> <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a> </div> </div>  <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true"> <div class="flex items-start justify-center min-h-screen pt-16"> <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6"> <div class="flex justify-between items-center mb-4"> <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2> <button id="close-search-modal" class="theme-text-primary" aria-label="Close search"> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> </button> </div> <label for="search-input" class="sr-only">Search keywords</label> <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4" autocomplete="off"> <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto" role="status" aria-live="polite" aria-busy="false">  </div> </div> </div> </div>  </footer> </div> <script>
     /*<![CDATA[*/
-    window.desktopSmallAdsData = [{"id":"sidebarSmallRotatingAd1_A","imageUrl":"https:\/\/placehold.co\/150x300\/FF0000\/FFFFFF?text=Your+Ad+Here+1A","title":"Special Offer A1","description":"Don't miss out on this amazing deal!","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":5000,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"sidebarSmallRotatingAd1_B","imageUrl":"https:\/\/placehold.co\/150x300\/00FF00\/000000?text=Your+Ad+Here+1","title":"New Arrivals A2","description":"Check out our latest products!","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":7500,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"sidebarSmallRotatingAd2_A","imageUrl":"https:\/\/placehold.co\/150x300\/0000FF\/FFFFFF?text=Your+Ad+Here+2A","title":"Exclusive Deal B1","description":"Limited time offer, act now!","url":"marketing.html","startDate":"2025-02-01","endDate":"2026-10-31","viewLimit":6000,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"sidebarSmallRotatingAd2_B","imageUrl":"https:\/\/placehold.co\/150x300\/FFFF00\/000000?text=Your+Ad+Here+2BC","title":"Summer Sale B2","description":"Big discounts on summer essentials!","url":"marketing.html","startDate":"2025-03-01","endDate":"2026-12-31","viewLimit":8000,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"sidebarLargeAd1","imageUrl":"https:\/\/placehold.co\/300x600\/FF00FF\/FFFFFF?text=Your+Ad+Here!","title":"Great Deals Await!","description":"Find products you'll love.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"categorySpotlightAd1","imageUrl":"https:\/\/placehold.co\/800x450\/4B0082\/ffffff?text=Your+Ad+Here+1","title":"Explore More!","description":"Find in-depth analysis.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"categorySpotlightAd2","imageUrl":"https:\/\/placehold.co\/800x450\/8A2BE2\/FFFFFF?text=Your+Ad+Here+2","title":"Deep Dive!","description":"Comprehensive coverage.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"categorySpotlightAd3","imageUrl":"https:\/\/placehold.co\/800x450\/DA70D6\/000000?text=Your+Ad+Here+3","title":"Latest Updates!","description":"Stay informed.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"categorySecondaryAd","imageUrl":"https:\/\/placehold.co\/150x300\/800000\/ffffff?text=Your+Ad+Here","title":"New Insights","description":"Stay updated.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"desktop_small","processedUrl":"marketing.html"}];
-    window.mobileTopAdsData = [{"id":"mobileTopAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Your+Mobile+Ad+Here+1","title":"Mobile Exclusive Offer","description":"Special deal for mobile users.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"},{"id":"mobileTopAd2","imageUrl":"https:\/\/placehold.co\/600x75\/DAF7A6\/000000?text=Your+Mobile+Ad+Here+2","title":"New Mobile Feature","description":"Check out our new mobile feature.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"}];
-    window.mobileMidAdsData = [{"id":"mobileMidAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Your+Mobile+Ad+Here+1","title":"Don't Miss This!","description":"Another great offer just for you.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"},{"id":"mobileMidAd2","imageUrl":"https:\/\/placehold.co\/600x75\/C70039\/FFFFFF?text=Your+Mobile+Ad+Here+2","title":"Scroll-Stopping Savings","description":"Great savings await.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"}];
+    window.desktopSmallAdsData = [{"id":"desktop_ad_001","imageUrl":"https:\/\/placehold.co\/150x300\/FF0000\/FFFFFF?text=Your+Ad+Here","title":"Desktop Ad Example","description":"A sample desktop advertisement","url":"https:\/\/day.mk\/marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"desktop_small","provider":"LOCAL","active":true,"sortOrder":0,"width":null,"height":null,"googleClient":null,"googleSlot":null,"processedUrl":"https:\/\/day.mk\/marketing.html"},{"id":"desktop_ad_002","imageUrl":"https:\/\/placehold.co\/150x300\/FF0000\/FFFFFF?text=Your+Ad2+Here","title":"Desktop Ad Example","description":"A sample desktop advertisement","url":"https:\/\/day.mk\/marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"desktop_small","provider":"LOCAL","active":true,"sortOrder":0,"width":null,"height":null,"googleClient":null,"googleSlot":null,"processedUrl":"https:\/\/day.mk\/marketing.html"}];
+    window.mobileTopAdsData = [{"id":"mobile_top_001","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Mobile+Top","title":"Mobile Top Banner","description":"A mobile top banner ad","url":"https:\/\/day.mk\/marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","provider":"LOCAL","active":true,"sortOrder":0,"width":null,"height":null,"googleClient":null,"googleSlot":null,"processedUrl":"https:\/\/day.mk\/marketing.html"}];
+    window.mobileMidAdsData = [{"id":"mobile_mid_001","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Mobile+Mid","title":"Mobile Mid Banner","description":"A mobile mid screen ad","url":"https:\/\/day.mk\/marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","provider":"LOCAL","active":true,"sortOrder":0,"width":null,"height":null,"googleClient":null,"googleSlot":null,"processedUrl":"https:\/\/day.mk\/marketing.html"}];
     /*]]>*/
-</script>
-
-<div>
-    <script>
+</script> <div> <script>
     /*<![CDATA[*/
     const themeToggle = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement; // This refers to the <html> tag
@@ -1480,24 +394,9 @@
         }
     });
     /*]]>*/
-</script>
-
-
-    <script src="js/mobile-nav.js" defer></script>
-
-    <!-- PERF: Load search stack only on demand to reduce unused JS on first render. -->
-    <script src="js/search.js" defer></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
-    <script>
+</script> <script src="js/mobile-nav.js" defer></script>  <script src="js/search.js" defer></script> <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script> <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
-</script>
-    <!-- PERF: Keep ad rotation deferred to avoid blocking first content paint. -->
-    <script src="js/ad-rotation.js" defer></script>
-
-</div>
-</body>
-</html>
+</script>  <script src="js/ad-rotation.js" defer></script> </div> </body> </html>

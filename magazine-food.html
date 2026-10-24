@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="315">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Pre-paint theme (prevents flash/blink) -->
-    <script>
+<!DOCTYPE html> <html> <head> <meta charset="UTF-8"> <meta http-equiv="refresh" content="315"> <meta name="viewport" content="width=device-width, initial-scale=1">  <script>
         (function () {
             try {
                 var saved = localStorage.getItem('theme');
@@ -16,253 +8,42 @@
                 else document.documentElement.classList.remove('dark');
             } catch (e) {}
         })();
-    </script>
-
-    <!-- Title + favicon -->
-    <title>Day.mk - Храна (Страница 1)</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <!-- PERF: Preconnect to remote origins early to reduce DNS/TLS latency for mobile LCP. -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- PERF: Inline tiny critical styles so first paint is stable before deferred CSS arrives. -->
-    <style>
+    </script>  <title>Day.mk - Храна (Страница 1)</title> <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />  <link rel="dns-prefetch" href="//fonts.googleapis.com"> <link rel="dns-prefetch" href="//fonts.gstatic.com"> <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin /> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />  <style>
         html, body { font-family: Newsreader, "Noto Sans", sans-serif; margin: 0; }
         .theme-bg-primary { background-color: #ffffff; }
         .theme-text-primary { color: #1a1a1a; }
         html.dark .theme-bg-primary { background-color: #101a23; }
         html.dark .theme-text-primary { color: #ffffff; }
-    </style>
-
-    <!-- PERF: Preload font stylesheet and switch rel on load to reduce render-blocking CSS. -->
-    <link rel="preload" as="style"
+    </style>  <link rel="preload" as="style"
           href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript>
-        <link rel="stylesheet"
-              href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap" />
-    </noscript>
-
-    <!-- Meta Description -->
-    <meta name="description"
-          content="Прочитајте ги најновите статии во Храна категорија."/>
-
-    <!-- Canonical URL (optional) -->
-    
-
-    <!-- Robots directives -->
-    <meta name="robots"
-          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
-
-    <!-- Hreflang -->
-    
-
-    <!-- Basic Open Graph for non-article pages -->
-    <meta property="og:site_name" content="Day.mk" />
-    <meta property="og:locale" content="mk_MK" />
-    <meta property="og:title" content="Day.mk - Храна (Страница 1)" />
-    <meta property="og:description"
-          content="Прочитајте ги најновите статии во Храна категорија."/>
-    <meta property="og:type" content="website" />
-    
-    <meta property="og:image" content="https://day.mk/assets/logo.png" />
-
-    <!-- Twitter card for non-article pages -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Day.mk - Храна (Страница 1)" />
-    <meta name="twitter:description"
-          content="Прочитајте ги најновите статии во Храна категорија."/>
-    <meta name="twitter:image" content="https://day.mk/assets/logo.png" />
-
-    <!-- PERF: Load generated Tailwind utilities as static CSS (no runtime CDN compiler). -->
-    <link rel="preload" as="style" href="css/tailwind.generated.css" />
-    <link rel="stylesheet" href="css/tailwind.generated.css" />
-    <!-- PERF: Keep explicit stylesheet link for reliability; preload remains as a fetch hint. -->
-    <link rel="preload" as="style" href="css/style.css" />
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body class="theme-bg-primary">
-<div
+          onload="this.onload=null;this.rel='stylesheet'" /> <noscript> <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap" /> </noscript>  <meta name="description"
+          content="Прочитајте ги најновите статии во Храна категорија."/>   <meta name="robots"
+          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />   <meta property="og:site_name" content="Day.mk" /> <meta property="og:locale" content="mk_MK" /> <meta property="og:title" content="Day.mk - Храна (Страница 1)" /> <meta property="og:description"
+          content="Прочитајте ги најновите статии во Храна категорија."/> <meta property="og:type" content="website" /> <meta property="og:image" content="https://day.mk/assets/logo.png" />  <meta name="twitter:card" content="summary" /> <meta name="twitter:title" content="Day.mk - Храна (Страница 1)" /> <meta name="twitter:description"
+          content="Прочитајте ги најновите статии во Храна категорија."/> <meta name="twitter:image" content="https://day.mk/assets/logo.png" />  <link rel="preload" as="style" href="css/tailwind.generated.css" /> <link rel="stylesheet" href="css/tailwind.generated.css" />  <link rel="preload" as="style" href="css/style.css" /> <link rel="stylesheet" href="css/style.css" /> </head> <body class="theme-bg-primary"> <div
         class="relative flex size-full min-h-screen flex-col theme-bg-primary justify-between group/design-root overflow-x-hidden"
         style='font-family: Newsreader, "Noto Sans", sans-serif;'
->
-    <!-- ======================= -->
-    <!-- DESKTOP HEADER (lg+)    -->
-    <!-- ======================= -->
-    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-        <div>
-    <!-- Header section containing title and icons -->
-    <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
-        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
-            <a href="index.html" class="hover:underline">DAY.MK</a>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">
-                обновено <span>12:24, 24.10.2026</span>
-            </p>
-        </h2>
-
-        <div class="flex w-24 items-center justify-end">
-            <!-- NEW: Search Icon (Desktop) -->
-            <button id="search-button-desktop" aria-label="Open search"
-                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                </svg>
-            </button>
-
-            <!-- Weather Link Icon (Thermometer) -->
-            <a href="prognoza.html" aria-label="Weather Forecast"
-               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
-                </svg>
-            </a>
-            <!-- Day/Night Mode Toggle Button -->
-            <button id="theme-toggle"
+>    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8"> <div>  <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color"> <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24"> <a href="index.html" class="hover:underline">DAY.MK</a> <p class="theme-text-secondary text-sm font-normal text-center pb-2">
+                обновено <span>22:15, 31.10.2026</span> </p> </h2> <div class="flex w-24 items-center justify-end">  <button id="search-button-desktop" aria-label="Open search"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2"> <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </button>  <a href="prognoza.html" aria-label="Weather Forecast"
+               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2"> <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"> <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/> </svg> </a>  <button id="theme-toggle"
                     class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
                     aria-label="Toggle dark mode"
-            >
-                <!-- Sun Icon (Light Mode) -->
-                <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-                <!-- Moon Icon (Dark Mode) -->
-                <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" />
-                </svg>
-            </button>
-        </div>
-    </div>
-    <!-- "обновено" time now correctly positioned below the header, within the main content wrapper -->
-
-
-    <div class="pb-3 pt-4">
-        <!-- Main Navigation Tabs (split into left and right) -->
-        <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
-            <!-- Left Navigation Items -->
-            <div class="primary-nav-group primary-nav-group--left flex gap-1">
-                <a class="primary-nav-item flex flex-col items-center justify-center" href="index.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Вести</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="sports.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Спорт</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center  primary-nav-item--active" href="magazine.html" aria-current="page">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Магазин</p>
-                </a>
-            </div>
-            <!-- Right Navigation Items -->
-            <div class="primary-nav-group primary-nav-group--right flex gap-1">
-                <a class="primary-nav-item flex flex-col items-center justify-center" href="latest-news.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Најнови Вести</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="prognoza.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Прогноза</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="radio.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Радио</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="youtube.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">YouTube</p>
-                </a>
-            </div>
-        </div>
-        <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
-        
-            <div class="subnav-panel flex border-b px-4 gap-1 overflow-x-auto whitespace-nowrap scrollbar-hide  subnav-panel--left-2">
-                <a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="magazine-fun.html">
-                    <p>Забава</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="magazine-cars.html">
-                    <p>Автомобил</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="magazine-life.html">
-                    <p>Живот</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="magazine-travel.html">
-                    <p>Патувања</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="magazine-health.html">
-                    <p>Здравје</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]  subnav-item--active" href="magazine-food.html" aria-current="page">
-                    <p>Храна</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="magazine-style.html">
-                    <p>Стил</p>
-                </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="magazine-intimacy.html">
-                    <p>Интима</p>
-                </a>
-            </div>
-        
-        
-    </div>
-</div>
-    </div>
-
-    <!-- ======================= -->
-    <!-- MOBILE HEADER (< lg)    -->
-    <!-- ======================= -->
-    <div class="block lg:hidden max-w-3xl mx-auto w-full">
-        <div>
-    <!-- Mobile Header -->
-    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
-        <!-- Hamburger Menu Button -->
-        <button id="hamburger-menu-button"
+            >  <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /> </svg>  <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" /> </svg> </button> </div> </div>  <div class="pb-3 pt-4">  <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">  <div class="primary-nav-group primary-nav-group--left flex gap-1"> <a class="primary-nav-item flex flex-col items-center justify-center" href="index.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Вести</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="sports.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Спорт</p> </a><a class="primary-nav-item flex flex-col items-center justify-center  primary-nav-item--active" href="magazine.html" aria-current="page"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Магазин</p> </a> </div>  <div class="primary-nav-group primary-nav-group--right flex gap-1"> <a class="primary-nav-item flex flex-col items-center justify-center" href="latest-news.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Најнови Вести</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="prognoza.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Прогноза</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="radio.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Радио</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="youtube.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">YouTube</p> </a> </div> </div>  <div class="subnav-panel flex border-b px-4 gap-1 overflow-x-auto whitespace-nowrap scrollbar-hide  subnav-panel--left-2"> <a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="magazine-fun.html"> <p>Забава</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="magazine-cars.html"> <p>Автомобил</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="magazine-life.html"> <p>Живот</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="magazine-travel.html"> <p>Патувања</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="magazine-health.html"> <p>Здравје</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]  subnav-item--active" href="magazine-food.html" aria-current="page"> <p>Храна</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="magazine-style.html"> <p>Стил</p> </a><a class="subnav-item flex flex-col items-center justify-center text-sm font-bold leading-normal tracking-[0.015em]" href="magazine-intimacy.html"> <p>Интима</p> </a> </div> </div> </div> </div>    <div class="block lg:hidden max-w-3xl mx-auto w-full"> <div>  <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">  <button id="hamburger-menu-button"
                 class="theme-text-primary p-2"
                 aria-label="Open navigation menu"
                 aria-controls="mobile-menu"
-                aria-expanded="false">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
-
-        <!-- Centered Title/Logo -->
-        <div class="flex-1 text-center leading-tight">
-            <a href="index.html" class="inline-block hover:underline">
-                <div class="theme-text-primary text-2xl font-bold uppercase tracking-wider">
+                aria-expanded="false"> <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> </button>  <div class="flex-1 text-center leading-tight"> <a href="index.html" class="inline-block hover:underline"> <div class="theme-text-primary text-2xl font-bold uppercase tracking-wider">
                     DAY.MK
-                </div>
-            </a>
-
-            <!-- Updated timestamp -->
-            <p class="theme-text-secondary text-xs font-normal mt-0.5">
-                обновено <span>12:24, 24.10.2026</span>
-            </p>
-        </div>
-
-        <!-- Search Icon -->
-        <button id="search-button-mobile" class="theme-text-primary p-2" aria-label="Open search dialog">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-            </svg>
-        </button>
-    </header>
-
-    <!-- Mobile Slide-out Menu -->
-    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
-    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
-        <div class="p-4">
-            <h2 class="theme-text-primary text-lg font-bold mb-4">Навигација</h2>
-            <nav class="flex flex-col gap-2">
-                <!-- LEFT NAV ITEMS -->
-                <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-0">
-                    <!-- Simple item (no subitems) -->
-                    
-
-                    <!-- Expandable item (with subitems) -->
-                    <div class="flex flex-col">
-                        <!-- Parent row: label + chevron -->
-                        <div class="flex items-center justify-between">
-                            <a href="index.html"
-                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Вести</a>
-                            <button type="button"
+                </div> </a>  <p class="theme-text-secondary text-xs font-normal mt-0.5">
+                обновено <span>22:15, 31.10.2026</span> </p> </div>  <button id="search-button-mobile" class="theme-text-primary p-2" aria-label="Open search dialog"> <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </button> </header>  <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div> <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full"> <div class="p-4"> <h2 class="theme-text-primary text-lg font-bold mb-4">Навигација</h2> <nav class="flex flex-col gap-2">  <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-0">   <div class="flex flex-col">  <div class="flex items-center justify-between"> <a href="index.html"
+                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Вести</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="false" data-subnav-toggle="left-0" aria-controls="left-subnav-0">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Sub-items -->
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
-                             id="left-subnav-0" data-subnav-id="left-0">
-                            <a href="macedonia.html"
+                                    aria-expanded="false" data-subnav-toggle="left-0" aria-controls="left-subnav-0"> <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div>  <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
+                             id="left-subnav-0" data-subnav-id="left-0"> <a href="macedonia.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Македонија</a><a href="economy.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Економија</a><a href="balkan.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Балкан</a><a href="world.html"
@@ -273,70 +54,26 @@
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Република</a><a href="culture.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Култура</a><a href="technology.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Технологија</a><a href="scene.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Сцена</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-1">
-                    <!-- Simple item (no subitems) -->
-                    
-
-                    <!-- Expandable item (with subitems) -->
-                    <div class="flex flex-col">
-                        <!-- Parent row: label + chevron -->
-                        <div class="flex items-center justify-between">
-                            <a href="sports.html"
-                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Спорт</a>
-                            <button type="button"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Сцена</a> </div> </div> </div> <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-1">   <div class="flex flex-col">  <div class="flex items-center justify-between"> <a href="sports.html"
+                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Спорт</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="false" data-subnav-toggle="left-1" aria-controls="left-subnav-1">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Sub-items -->
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
-                             id="left-subnav-1" data-subnav-id="left-1">
-                            <a href="sport-football.html"
+                                    aria-expanded="false" data-subnav-toggle="left-1" aria-controls="left-subnav-1"> <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div>  <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
+                             id="left-subnav-1" data-subnav-id="left-1"> <a href="sport-football.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Кошарка</a><a href="sport-handball.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Тенис</a><a href="sport-automoto.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Автомото</a><a href="sport-othersports.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Останато</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-2">
-                    <!-- Simple item (no subitems) -->
-                    
-
-                    <!-- Expandable item (with subitems) -->
-                    <div class="flex flex-col">
-                        <!-- Parent row: label + chevron -->
-                        <div class="flex items-center justify-between">
-                            <a href="magazine.html"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Останато</a> </div> </div> </div> <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-2">   <div class="flex flex-col">  <div class="flex items-center justify-between"> <a href="magazine.html"
                                class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left  mobile-nav-parent--active"
-                               aria-current="page">Магазин</a>
-                            <button type="button"
+                               aria-current="page">Магазин</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="true" data-subnav-toggle="left-2" aria-controls="left-subnav-2">
-                                <svg class="h-5 w-5  rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Sub-items -->
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1"
-                             id="left-subnav-2" data-subnav-id="left-2">
-                            <a href="magazine-fun.html"
+                                    aria-expanded="true" data-subnav-toggle="left-2" aria-controls="left-subnav-2"> <svg class="h-5 w-5  rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div>  <div class="mobile-subnav ml-4 mt-1 space-y-1"
+                             id="left-subnav-2" data-subnav-id="left-2"> <a href="magazine-fun.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Забава</a><a href="magazine-cars.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Автомобил</a><a href="magazine-life.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Живот</a><a href="magazine-travel.html"
@@ -345,1203 +82,280 @@
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2  subnav-item--active"
                                aria-current="page">Храна</a><a href="magazine-style.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Стил</a><a href="magazine-intimacy.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Интима</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RIGHT NAV ITEMS -->
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-0">
-                    <!-- Simple item -->
-                    <a href="latest-news.html"
-                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Најнови Вести</a>
-
-                    <!-- Expandable item -->
-                    
-                </div>
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-1">
-                    <!-- Simple item -->
-                    <a href="prognoza.html"
-                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Прогноза</a>
-
-                    <!-- Expandable item -->
-                    
-                </div>
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-2">
-                    <!-- Simple item -->
-                    <a href="radio.html"
-                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Радио</a>
-
-                    <!-- Expandable item -->
-                    
-                </div>
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-3">
-                    <!-- Simple item -->
-                    
-
-                    <!-- Expandable item -->
-                    <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                            <a href="youtube.html"
-                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">YouTube</a>
-                            <button type="button"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Интима</a> </div> </div> </div>  <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-0">  <a href="latest-news.html"
+                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Најнови Вести</a>  </div> <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-1">  <a href="prognoza.html"
+                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Прогноза</a>  </div> <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-2">  <a href="radio.html"
+                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Радио</a>  </div> <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-3">   <div class="flex flex-col"> <div class="flex items-center justify-between"> <a href="youtube.html"
+                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">YouTube</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="false" data-subnav-toggle="right-3" aria-controls="right-subnav-3">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
-                             id="right-subnav-3" data-subnav-id="right-3">
-                            <a href="youtube-politics.html"
+                                    aria-expanded="false" data-subnav-toggle="right-3" aria-controls="right-subnav-3"> <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div> <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
+                             id="right-subnav-3" data-subnav-id="right-3"> <a href="youtube-politics.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Политика</a><a href="youtube-podcast.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Подкаст</a><a href="youtube-za-deca.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">За Деца</a>
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="my-3 theme-border-color" />
-
-                <!-- Other Utility Links (unchanged) -->
-                <button id="theme-toggle-mobile"
-                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
-                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
-                </button>
-            </nav>
-
-        </div>
-    </div>
-
-    <!-- Hidden desktop theme toggle button to leverage existing script -->
-    <button id="theme-toggle" class="hidden"></button>
-</div>
-    </div>
-
-    <!-- ======================= -->
-    <!-- MAIN CONTENT            -->
-    <!-- ======================= -->
-    <main class="w-full">
-
-        <!-- ======================= -->
-        <!-- DESKTOP LAYOUT (lg+)    -->
-        <!-- ======================= -->
-        <div class="hidden lg:block">
-            <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-                <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
-                    <!-- MAIN CONTENT -->
-                    <div class="lg:col-span-2 flex flex-col gap-8">
-                        <h1 class="theme-text-primary text-2xl font-bold mb-6">Храна</h1>
-
-                        <div class="flex flex-col divide-y theme-border-color">
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-колку-парчиња-леб-можете-да-јадете-дневно-многумина-се-summary-203621.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9A%D0%9E%D0%9B%D0%9A%D0%A3+%D0%9F%D0%90%D0%A0%D0%A7%D0%98%D0%8A%D0%90+%D0%9B%D0%95%D0%91+%D0%9C%D0%9E%D0%96%D0%95%D0%A2%D0%95+%D0%94%D0%90+%D0%88%D0%90%D0%94%D0%95%D0%A2%D0%95+%D0%94%D0%9D%D0%95%D0%92%D0%9D%D0%9E%3F+%D0%9C%D0%BD%D0%BE%D0%B3%D1%83%D0%BC%D0%B8%D0%BD%D0%B0+%D1%81%D0%B5+%D0%B8%D0%B7%D0%BD%D0%B5%D0%BD%D0%B0%D0%B4%D0%B5%D0%BD%D0%B8+%D0%BA%D0%BE%D0%B3%D0%B0+%D1%9C%D0%B5+%D0%B3%D0%BE+%D1%81%D0%BB%D1%83%D1%88%D0%BD%D0%B0%D1%82+%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%82+%D0%BE%D0%B4+%D0%BD%D1%83%D1%82%D1%80%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B8%D1%81%D1%82%21"
-                 alt="КОЛКУ ПАРЧИЊА ЛЕБ МОЖЕТЕ ДА ЈАДЕТЕ ДНЕВНО? Многумина се изненадени кога ќе го слушнат одговорот од нутриционист!"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">За деца</a> </div> </div> </div> <hr class="my-3 theme-border-color" />  <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left"> <span id="theme-toggle-mobile-text">Toggle Theme</span> </button> </nav> </div> </div>  <button id="theme-toggle" class="hidden"></button> </div> </div>    <main class="w-full">    <div class="hidden lg:block"> <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8"> <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">  <div class="lg:col-span-2 flex flex-col gap-8"> <h1 class="theme-text-primary text-2xl font-bold mb-6">Храна</h1> <div class="flex flex-col divide-y theme-border-color"> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-убава-и-брза-бајадера-со-вкус-на-бадеми-и-бело-чоколадо-summary-207896.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-207896.webp"
+                 alt="Убава и брза бајадера со вкус на бадеми и бело чоколадо"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="eager" fetchpriority="high"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-колку-парчиња-леб-можете-да-јадете-дневно-многумина-се-summary-203621.html"
-               class="hover:underline">КОЛКУ ПАРЧИЊА ЛЕБ МОЖЕТЕ ДА ЈАДЕТЕ ДНЕВНО? Многумина се изненадени кога ќе го слушнат одговорот од нутриционист!</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Едно подебело парче домашен леб или леб од пекарница лесно може да достигне тежина од 50 до 60 грама – што значи дека со само едно парче, сте изеле две порции!</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 16 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-кардиолог-открива-кој-вид-зеленчук-може-да-помогне-во-summary-203481.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203481.webp"
-                 alt="Кардиолог открива кој вид зеленчук може да помогне во намалувањето на крвниот притисок! Лековите ќе ги исфрлите од употреба"
+                 class="w-24 h-16 object-cover rounded-lg" loading="eager" fetchpriority="high"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-убава-и-брза-бајадера-со-вкус-на-бадеми-и-бело-чоколадо-summary-207896.html"
+               class="hover:underline">Убава и брза бајадера со вкус на бадеми и бело чоколадо</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Состојки 50 грама мелени ореви 2 големи лажици мелени бисквити 50 грама шеќер 50 грама шеќер во прав 2-3 големи лажици вода 1 пакетче ванилин шеќер по вкус ароматичен ликер 100 ...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 36 часа</span> </span> <a class="news-pill news-pill--stories"
+               href="magazine-убава-и-брза-бајадера-со-вкус-на-бадеми-и-бело-чоколадо-summary-207896.html"> <span>2</span>&nbsp;вести&nbsp;&raquo;
+            </a> <a class="news-pill news-pill--summary"
+               href="magazine-убава-и-брза-бајадера-со-вкус-на-бадеми-и-бело-чоколадо-summary-207896.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
+               target="_blank"
+               rel="noopener noreferrer"
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A3%D0%B1%D0%B0%D0%B2%D0%B0%20%D0%B8%20%D0%B1%D1%80%D0%B7%D0%B0%20%D0%B1%D0%B0%D1%98%D0%B0%D0%B4%D0%B5%D1%80%D0%B0%20%D1%81%D0%BE%20%D0%B2%D0%BA%D1%83%D1%81%20%D0%BD%D0%B0%20%D0%B1%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%20%D0%B8%20%D0%B1%D0%B5%D0%BB%D0%BE%20%D1%87%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4%D0%BE&amp;udm=50">
+                прашања&nbsp;&raquo;
+            </a> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-леб-со-лук-summary-208739.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208739.webp"
+                 alt="Леб со лук"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-кардиолог-открива-кој-вид-зеленчук-може-да-помогне-во-summary-203481.html"
-               class="hover:underline">Кардиолог открива кој вид зеленчук може да помогне во намалувањето на крвниот притисок! Лековите ќе ги исфрлите од употреба</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Цвеклото содржи нитрати што организмот ги претвора во азотен оксид, супстанција која помага во ширењето на крвните садови.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 21 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-сок-од-јаболко-или-портокал-кој-е-подобар-избор-за-нивото-на-summary-203487.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203487.webp"
-                 alt="Сок од јаболко или портокал: Кој е подобар избор за нивото на шеќер во крвта?"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-леб-со-лук-summary-208739.html"
+               class="hover:underline">Леб со лук</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">ПОТРЕБНИ СОСТОЈКИ: 70 мл топла вода 70 мл топло млеко 1 лажичка сув квасец 1 лажичка шеќер 1 јајце 2 лажици стопен путер 320 г брашно 1/2 лажичка сол 3 чешниња лук, магдонос 60 ...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 7 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-печена-тиква-со-мед-и-ореви-во-air-fryer-summary-205728.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-205728.webp"
+                 alt="Печена тиква со мед и ореви во air fryer"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-сок-од-јаболко-или-портокал-кој-е-подобар-избор-за-нивото-на-summary-203487.html"
-               class="hover:underline">Сок од јаболко или портокал: Кој е подобар избор за нивото на шеќер во крвта?</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">И двата овошни сока содржат витамини и минерали, но и значителни количества природни шеќери.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 21 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-почна-сезоната-на-калинките-еве-зошто-ова-овошје-не-треба-да-summary-203381.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9F%D0%BE%D1%87%D0%BD%D0%B0+%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%D0%B0%D1%82%D0%B0+%D0%BD%D0%B0+%D0%BA%D0%B0%D0%BB%D0%B8%D0%BD%D0%BA%D0%B8%D1%82%D0%B5%3A+%D0%95%D0%B2%D0%B5+%D0%B7%D0%BE%D1%88%D1%82%D0%BE+%D0%BE%D0%B2%D0%B0+%D0%BE%D0%B2%D0%BE%D1%88%D1%98%D0%B5+%D0%BD%D0%B5+%D1%82%D1%80%D0%B5%D0%B1%D0%B0+%D0%B4%D0%B0+%D0%B3%D0%BE+%D0%BF%D1%80%D0%B5%D1%81%D0%BA%D0%BE%D0%BA%D0%BD%D1%83%D0%B2%D0%B0%D1%82%D0%B5"
-                 alt="Почна сезоната на калинките: Еве зошто ова овошје не треба да го прескокнувате"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-печена-тиква-со-мед-и-ореви-во-air-fryer-summary-205728.html"
+               class="hover:underline">Печена тиква со мед и ореви во air fryer</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Печената тиква ја редиме во чинија, ја посипуваме со ореви и ја прелеваме со мед. Потребни состојки: 300 г тиква мед по вкус кафеав шеќер по вкус сечкани ореви Начин на подготов...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 108 часа</span> </span> <a class="news-pill news-pill--stories"
+               href="magazine-печена-тиква-со-мед-и-ореви-во-air-fryer-summary-205728.html"> <span>2</span>&nbsp;вести&nbsp;&raquo;
+            </a> <a class="news-pill news-pill--summary"
+               href="magazine-печена-тиква-со-мед-и-ореви-во-air-fryer-summary-205728.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
+               target="_blank"
+               rel="noopener noreferrer"
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9F%D0%B5%D1%87%D0%B5%D0%BD%D0%B0%20%D1%82%D0%B8%D0%BA%D0%B2%D0%B0%20%D1%81%D0%BE%20%D0%BC%D0%B5%D0%B4%20%D0%B8%20%D0%BE%D1%80%D0%B5%D0%B2%D0%B8%20%D0%B2%D0%BE%20air%20fryer&amp;udm=50">
+                прашања&nbsp;&raquo;
+            </a> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-не-е-само-лукот-овие-намирници-можат-да-помогнат-во-summary-208777.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208777.webp"
+                 alt="Не е само лукот: Овие намирници можат да помогнат во зајакнувањето на имунитетот"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-почна-сезоната-на-калинките-еве-зошто-ова-овошје-не-треба-да-summary-203381.html"
-               class="hover:underline">Почна сезоната на калинките: Еве зошто ова овошје не треба да го прескокнувате</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Зрната лесно се вадат со прстите, при што тие тонат на дното, а белите делови од кората испливуваат на површината.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 23 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-ајвар-како-кај-баба-тајните-за-совршен-домашен-ајвар-што-ќе-summary-203442.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%90%D1%98%D0%B2%D0%B0%D1%80+%D0%BA%D0%B0%D0%BA%D0%BE+%D0%BA%D0%B0%D1%98+%D0%B1%D0%B0%D0%B1%D0%B0%3A+%D0%A2%D0%B0%D1%98%D0%BD%D0%B8%D1%82%D0%B5+%D0%B7%D0%B0+%D1%81%D0%BE%D0%B2%D1%80%D1%88%D0%B5%D0%BD+%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%B5%D0%BD+%D0%B0%D1%98%D0%B2%D0%B0%D1%80+%D1%88%D1%82%D0%BE+%D1%9C%D0%B5+%D1%82%D1%80%D0%B0%D0%B5+%D1%86%D0%B5%D0%BB%D0%B0+%D0%B7%D0%B8%D0%BC%D0%B0"
-                 alt="Ајвар како кај баба: Тајните за совршен домашен ајвар што ќе трае цела зима"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-не-е-само-лукот-овие-намирници-можат-да-помогнат-во-summary-208777.html"
+               class="hover:underline">Не е само лукот: Овие намирници можат да помогнат во зајакнувањето на имунитетот</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Овие хранливи материи придонесуваат за нормалното функционирање на организмот и го поддржуваат здравјето на дигестивниот систем.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 6 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-претерувањето-со-додатоци-во-исхраната-може-да-биде-опасно-summary-208928.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208928.webp"
+                 alt="ПРЕТЕРУВАЊЕТО СО ДОДАТОЦИ ВО ИСХРАНАТА МОЖЕ ДА БИДЕ ОПАСНО: Еве како влијае врз црниот дроб, бубрезите и лековите"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-ајвар-како-кај-баба-тајните-за-совршен-домашен-ајвар-што-ќе-summary-203442.html"
-               class="hover:underline">Ајвар како кај баба: Тајните за совршен домашен ајвар што ќе трае цела зима</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Ајварот се полни уште топол, одозгора се става малку масло, а теглите се затвораат и се оставаат да се изладат завиткани во ќебе.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 22 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-маринирање-пилешко-месо-преку-ноќ-кога-е-добра-идеја-а-кога-summary-203479.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203479.webp"
-                 alt="Маринирање пилешко месо преку ноќ: Кога е добра идеја, а кога може да ја расипе текстурата?"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-претерувањето-со-додатоци-во-исхраната-може-да-биде-опасно-summary-208928.html"
+               class="hover:underline">ПРЕТЕРУВАЊЕТО СО ДОДАТОЦИ ВО ИСХРАНАТА МОЖЕ ДА БИДЕ ОПАСНО: Еве како влијае врз црниот дроб, бубрезите и лековите</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Иако се рекламираат како помош за подобро здравје, витамините и минералите во прекумерни количества можат да предизвикаат сериозни проблеми – од оштетување на црниот дроб до нар...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 6 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-правилото-мораш-да-ја-испразниш-чинијата-може-да-остави-summary-208808.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208808.webp"
+                 alt="Правилото „Мораш да ја испразниш чинијата“ може да остави последици: Седум навики во исхраната што ги носиме од детството"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-маринирање-пилешко-месо-преку-ноќ-кога-е-добра-идеја-а-кога-summary-203479.html"
-               class="hover:underline">Маринирање пилешко месо преку ноќ: Кога е добра идеја, а кога може да ја расипе текстурата?</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Јогуртот и маслото се погодни за подолго маринирање, додека лимонот, оцетот и виното можат да го направат месото кашесто ако се остават предолго.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 23 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-што-да-јадете-доцна-навечер-нутриционистите-издвојуваат-три-summary-203488.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203488.webp"
-                 alt="Што да јадете доцна навечер? Нутриционистите издвојуваат три едноставни оброци, ќе бидете сити и навистина лесно ќе потонете во сон"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-правилото-мораш-да-ја-испразниш-чинијата-може-да-остави-summary-208808.html"
+               class="hover:underline">Правилото „Мораш да ја испразниш чинијата“ може да остави последици: Седум навики во исхраната што ги носиме од детството</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Правилото дека чинијата мора да биде испразнета, кое многумина го слушале во детството, може да создаде долгорочни и проблематични навики во исхраната.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 5 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-недостигот-на-витамин-д-може-да-го-надоместите-и-со-овие-summary-208662.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208662.webp"
+                 alt="НЕДОСТИГОТ НА ВИТАМИН Д МОЖЕ ДА ГО НАДОМЕСТИТЕ И СО ОВИЕ НАПИТОЦИ: Проверете што пишува на декларацијата"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-што-да-јадете-доцна-навечер-нутриционистите-издвојуваат-три-summary-203488.html"
-               class="hover:underline">Што да јадете доцна навечер? Нутриционистите издвојуваат три едноставни оброци, ќе бидете сити и навистина лесно ќе потонете во сон</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Ако почувствувате глад пред спиење, не мора да си легнете со празен стомак.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 23 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-калинка-есенското-овошје-со-рубински-зрна-што-заслужува-summary-203351.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%BA%D0%B0%3A+%D0%95%D1%81%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D1%82%D0%BE+%D0%BE%D0%B2%D0%BE%D1%88%D1%98%D0%B5+%D1%81%D0%BE+%D1%80%D1%83%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%D0%B8+%D0%B7%D1%80%D0%BD%D0%B0+%D1%88%D1%82%D0%BE+%D0%B7%D0%B0%D1%81%D0%BB%D1%83%D0%B6%D1%83%D0%B2%D0%B0+%D0%BC%D0%B5%D1%81%D1%82%D0%BE+%D0%BD%D0%B0+%D1%81%D0%B5%D0%BA%D0%BE%D1%98%D0%B0+%D1%82%D1%80%D0%BF%D0%B5%D0%B7%D0%B0"
-                 alt="Калинка: Есенското овошје со рубински зрна што заслужува место на секоја трпеза"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-недостигот-на-витамин-д-може-да-го-надоместите-и-со-овие-summary-208662.html"
+               class="hover:underline">НЕДОСТИГОТ НА ВИТАМИН Д МОЖЕ ДА ГО НАДОМЕСТИТЕ И СО ОВИЕ НАПИТОЦИ: Проверете што пишува на декларацијата</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Освен преку храната и сончевата светлина, дел од дневните потреби за овој важен витамин може да ги внесете и со одредени видови млеко, растителни напитоци и сокови.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 9 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-враќање-кон-огнот-зошто-готвењето-на-жар-повторно-ги-summary-208464.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208464.webp"
+                 alt="Враќање кон огнот: зошто готвењето на жар повторно ги освојува ресторанските менија"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-калинка-есенското-овошје-со-рубински-зрна-што-заслужува-summary-203351.html"
-               class="hover:underline">Калинка: Есенското овошје со рубински зрна што заслужува место на секоја трпеза</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Ако по пазарите сте забележале тешки, темноцрвени плодови со круна на врвот – сезоната на калинката почна.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 24 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-врвна-гастрономија-без-мишлен-како-да-ги-спарите-балканските-summary-203187.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203187.webp"
-                 alt="Врвна гастрономија без „Мишлен“: како да ги спарите балканските деликатеси и локалните вина?"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-враќање-кон-огнот-зошто-готвењето-на-жар-повторно-ги-summary-208464.html"
+               class="hover:underline">Враќање кон огнот: зошто готвењето на жар повторно ги освојува ресторанските менија</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Огнот, сепак, бара повеќе од висока температура.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 13 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-го-јадете-ли-овој-зеленчук-кардиолог-издвојува-четири-со-summary-208452.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208452.webp"
+                 alt="Го јадете ли овој зеленчук? Кардиолог издвојува четири со особено корисно дејство"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-врвна-гастрономија-без-мишлен-како-да-ги-спарите-балканските-summary-203187.html"
-               class="hover:underline">Врвна гастрономија без „Мишлен“: како да ги спарите балканските деликатеси и локалните вина?</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Работите во секторот Хорека, но и на домашната трпеза, речиси никогаш не се математички едноставни, особено кога станува збор за комбинирање храна и вино.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 27 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-сармата-е-повкусна-вториот-ден-но-колку-долго-е-безбедна-за-summary-203079.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203079.webp"
-                 alt="Сармата е повкусна вториот ден, но колку долго е безбедна за јадење? Познато зошто оризот во сармата бара посебно внимание"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-го-јадете-ли-овој-зеленчук-кардиолог-издвојува-четири-со-summary-208452.html"
+               class="hover:underline">Го јадете ли овој зеленчук? Кардиолог издвојува четири со особено корисно дејство</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Редовното внесување зеленчук може да помогне во намалувањето на холестеролот, одржувањето на нормален крвен притисок и заштитата на крвните садови.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 13 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-луто-слатко-и-крцкаво-во-еден-залак-сосовите-што-го-менуваат-summary-208445.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208445.webp"
+                 alt="Луто, слатко и крцкаво во еден залак: сосовите што го менуваат вкусот на омилените јадења"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-сармата-е-повкусна-вториот-ден-но-колку-долго-е-безбедна-за-summary-203079.html"
-               class="hover:underline">Сармата е повкусна вториот ден, но колку долго е безбедна за јадење? Познато зошто оризот во сармата бара посебно внимание</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Правилното ладење и чување се клучни за да се избегне размножување на бактерии, особено затоа што сармата најчесто содржи мелено месо и ориз.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 37 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                        </div>
-                        
-
-                        <!-- PAGINATION (only at bottom) -->
-                        <div class="flex justify-center mt-6">
-    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
-
-        <!-- Previous -->
-        
-
-        <!-- Page numbers (max 10) -->
-        
-            
-                <a href="magazine-food.html"
-                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">1</a>
-            
-                <a href="magazine-food-page-2.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">2</a>
-            
-                <a href="magazine-food-page-3.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">3</a>
-            
-                <a href="magazine-food-page-4.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">4</a>
-            
-                <a href="magazine-food-page-5.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">5</a>
-            
-                <a href="magazine-food-page-6.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">6</a>
-            
-                <a href="magazine-food-page-7.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">7</a>
-            
-                <a href="magazine-food-page-8.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">8</a>
-            
-                <a href="magazine-food-page-9.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">9</a>
-            
-                <a href="magazine-food-page-10.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">10</a>
-            
-        
-
-        <!-- Next -->
-        <a href="magazine-food-page-2.html"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-луто-слатко-и-крцкаво-во-еден-залак-сосовите-што-го-менуваат-summary-208445.html"
+               class="hover:underline">Луто, слатко и крцкаво во еден залак: сосовите што го менуваат вкусот на омилените јадења</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Комбинациите на слатко и луто, како медот со чили, но и сосовите со крцкави парчиња зачини, лук или кромид, внесуваат нова текстура и посилен вкус во јадења што на гостите веќе ...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 14 часа</span> </span> </div> </div> </div> </div>  <div class="flex justify-center mt-6"> <nav class="inline-flex items-center space-x-1" aria-label="Pagination">   <a href="magazine-food.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">1</a> <a href="magazine-food-page-2.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">2</a> <a href="magazine-food-page-3.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">3</a> <a href="magazine-food-page-4.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">4</a> <a href="magazine-food-page-5.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">5</a> <a href="magazine-food-page-6.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">6</a> <a href="magazine-food-page-7.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">7</a> <a href="magazine-food-page-8.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">8</a> <a href="magazine-food-page-9.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">9</a> <a href="magazine-food-page-10.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">10</a>  <a href="magazine-food-page-2.html"
            class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
-           aria-label="Next">&raquo;</a>
-    </nav>
-</div>
-                    </div>
-
-                    <!-- SIDEBAR -->
-                    <div class="lg:col-span-1 flex flex-col gap-6">
-
-                        <!-- Desktop Small Ad #1 -->
-                        <div class="rounded-lg theme-bg-secondary border theme-border-color shadow-lg p-3">
-                            <a id="rotating-ad-link-small-1"
+           aria-label="Next">&raquo;</a> </nav> </div> </div>  <div class="lg:col-span-1 flex flex-col gap-6">  <div class="rounded-lg theme-bg-secondary border theme-border-color shadow-lg p-3"> <a id="rotating-ad-link-small-1"
                                href="#"
                                class="block w-full rounded-lg overflow-hidden"
                                aria-label="Sponsored ad"
-                               style="height: 260px; background-size: cover; background-position: center center;">
-                            </a>
-                        </div>
-
-                        <!-- Desktop Small Ad #2 -->
-                        <div class="rounded-lg theme-bg-secondary border theme-border-color shadow-lg p-3">
-                            <a id="rotating-ad-link-small-2"
+                               style="height: 260px; background-size: cover; background-position: center center;"> </a> </div>  <div class="rounded-lg theme-bg-secondary border theme-border-color shadow-lg p-3"> <a id="rotating-ad-link-small-2"
                                href="#"
                                class="block w-full rounded-lg overflow-hidden"
                                aria-label="Sponsored ad"
-                               style="height: 260px; background-size: cover; background-position: center center;">
-                            </a>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-
-        <!-- ======================= -->
-        <!-- MOBILE LAYOUT (< lg)    -->
-        <!-- ======================= -->
-        <div class="block lg:hidden">
-            <div class="max-w-3xl mx-auto w-full">
-                <div class="p-2 sm:p-4 flex flex-col gap-6">
-                    <!-- Top Ad Banner -->
-                    <div id="mobile-ad-container-top" class="mb-4">
-                        <a id="mobile-ad-link-top" href="#"
-                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                    </div>
-
-                    <!-- Category header -->
-                    <div class="flex items-center justify-between border-b pb-1 theme-border-color">
-                        <div class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl">
-                            <span>Храна</span>
-                        </div>
-                    </div>
-
-                    <!-- Articles list -->
-                    <div class="flex flex-col divide-y theme-border-color mt-2">
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="magazine-колку-парчиња-леб-можете-да-јадете-дневно-многумина-се-summary-203621.html" class="flex-shrink-0">
-                                        <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9A%D0%9E%D0%9B%D0%9A%D0%A3+%D0%9F%D0%90%D0%A0%D0%A7%D0%98%D0%8A%D0%90+%D0%9B%D0%95%D0%91+%D0%9C%D0%9E%D0%96%D0%95%D0%A2%D0%95+%D0%94%D0%90+%D0%88%D0%90%D0%94%D0%95%D0%A2%D0%95+%D0%94%D0%9D%D0%95%D0%92%D0%9D%D0%9E%3F+%D0%9C%D0%BD%D0%BE%D0%B3%D1%83%D0%BC%D0%B8%D0%BD%D0%B0+%D1%81%D0%B5+%D0%B8%D0%B7%D0%BD%D0%B5%D0%BD%D0%B0%D0%B4%D0%B5%D0%BD%D0%B8+%D0%BA%D0%BE%D0%B3%D0%B0+%D1%9C%D0%B5+%D0%B3%D0%BE+%D1%81%D0%BB%D1%83%D1%88%D0%BD%D0%B0%D1%82+%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%82+%D0%BE%D0%B4+%D0%BD%D1%83%D1%82%D1%80%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B8%D1%81%D1%82%21"
-                                             alt="КОЛКУ ПАРЧИЊА ЛЕБ МОЖЕТЕ ДА ЈАДЕТЕ ДНЕВНО? Многумина се изненадени кога ќе го слушнат одговорот од нутриционист!"
+                               style="height: 260px; background-size: cover; background-position: center center;"> </a> </div> </div> </div> </div> </div>    <div class="block lg:hidden"> <div class="max-w-3xl mx-auto w-full"> <div class="p-2 sm:p-4 flex flex-col gap-6">  <div id="mobile-ad-container-top" class="mb-4"> <a id="mobile-ad-link-top" href="#"
+                           class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a> </div>  <div class="flex items-center justify-between border-b pb-1 theme-border-color"> <div class="flex items-center gap-2 px-2 py-1 rounded theme-text-primary font-bold text-xl"> <span>Храна</span> </div> </div>  <div class="flex flex-col divide-y theme-border-color mt-2"> <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="magazine-убава-и-брза-бајадера-со-вкус-на-бадеми-и-бело-чоколадо-summary-207896.html" class="flex-shrink-0"> <img src="images/cache/summary-207896.webp"
+                                             alt="Убава и брза бајадера со вкус на бадеми и бело чоколадо"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="eager" fetchpriority="high"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="magazine-колку-парчиња-леб-можете-да-јадете-дневно-многумина-се-summary-203621.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">КОЛКУ ПАРЧИЊА ЛЕБ МОЖЕТЕ ДА ЈАДЕТЕ ДНЕВНО? Многумина се изненадени кога ќе го слушнат одговорот од нутриционист!</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Едно подебело парче домашен леб или леб од пекарница лесно може да достигне тежина од 50 до 60 гр...</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 16 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="magazine-колку-парчиња-леб-можете-да-јадете-дневно-многумина-се-summary-203621.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="magazine-колку-парчиња-леб-можете-да-јадете-дневно-многумина-се-summary-203621.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="eager" fetchpriority="high"/>  </a>  <div class="flex flex-col flex-1"> <a href="magazine-убава-и-брза-бајадера-со-вкус-на-бадеми-и-бело-чоколадо-summary-207896.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Убава и брза бајадера со вкус на бадеми и бело чоколадо</h3>  <p class="theme-text-secondary text-xs">Состојки 50 грама мелени ореви 2 големи лажици мелени бисквити 50 грама шеќер 50 грама шеќер во п...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 36 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="magazine-убава-и-брза-бајадера-со-вкус-на-бадеми-и-бело-чоколадо-summary-207896.html"> <span>2</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="magazine-убава-и-брза-бајадера-со-вкус-на-бадеми-и-бело-чоколадо-summary-207896.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9A%D0%9E%D0%9B%D0%9A%D0%A3%20%D0%9F%D0%90%D0%A0%D0%A7%D0%98%D0%8A%D0%90%20%D0%9B%D0%95%D0%91%20%D0%9C%D0%9E%D0%96%D0%95%D0%A2%D0%95%20%D0%94%D0%90%20%D0%88%D0%90%D0%94%D0%95%D0%A2%D0%95%20%D0%94%D0%9D%D0%95%D0%92%D0%9D%D0%9E?%20%D0%9C%D0%BD%D0%BE%D0%B3%D1%83%D0%BC%D0%B8%D0%BD%D0%B0%20%D1%81%D0%B5%20%D0%B8%D0%B7%D0%BD%D0%B5%D0%BD%D0%B0%D0%B4%D0%B5%D0%BD%D0%B8%20%D0%BA%D0%BE%D0%B3%D0%B0%20%D1%9C%D0%B5%20%D0%B3%D0%BE%20%D1%81%D0%BB%D1%83%D1%88%D0%BD%D0%B0%D1%82%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%82%20%D0%BE%D0%B4%20%D0%BD%D1%83%D1%82%D1%80%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B8%D1%81%D1%82!&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A3%D0%B1%D0%B0%D0%B2%D0%B0%20%D0%B8%20%D0%B1%D1%80%D0%B7%D0%B0%20%D0%B1%D0%B0%D1%98%D0%B0%D0%B4%D0%B5%D1%80%D0%B0%20%D1%81%D0%BE%20%D0%B2%D0%BA%D1%83%D1%81%20%D0%BD%D0%B0%20%D0%B1%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%20%D0%B8%20%D0%B1%D0%B5%D0%BB%D0%BE%20%D1%87%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4%D0%BE&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="magazine-кардиолог-открива-кој-вид-зеленчук-може-да-помогне-во-summary-203481.html" class="flex-shrink-0">
-                                        <img src="images/cache/summary-203481.webp"
-                                             alt="Кардиолог открива кој вид зеленчук може да помогне во намалувањето на крвниот притисок! Лековите ќе ги исфрлите од употреба"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="magazine-леб-со-лук-summary-208739.html" class="flex-shrink-0"> <img src="images/cache/summary-208739.webp"
+                                             alt="Леб со лук"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="magazine-кардиолог-открива-кој-вид-зеленчук-може-да-помогне-во-summary-203481.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Кардиолог открива кој вид зеленчук може да помогне во намалувањето на крвниот притисок! Лековите ќе ги исфрлите од употреба</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Цвеклото содржи нитрати што организмот ги претвора во азотен оксид, супстанција која помага во ши...</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 21 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="magazine-кардиолог-открива-кој-вид-зеленчук-може-да-помогне-во-summary-203481.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="magazine-кардиолог-открива-кој-вид-зеленчук-може-да-помогне-во-summary-203481.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="magazine-леб-со-лук-summary-208739.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Леб со лук</h3>  <p class="theme-text-secondary text-xs">ПОТРЕБНИ СОСТОЈКИ: 70 мл топла вода 70 мл топло млеко 1 лажичка сув квасец 1 лажичка шеќер 1 јајц...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 7 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="magazine-леб-со-лук-summary-208739.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="magazine-леб-со-лук-summary-208739.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9A%D0%B0%D1%80%D0%B4%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%20%D0%BE%D1%82%D0%BA%D1%80%D0%B8%D0%B2%D0%B0%20%D0%BA%D0%BE%D1%98%20%D0%B2%D0%B8%D0%B4%20%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%87%D1%83%D0%BA%20%D0%BC%D0%BE%D0%B6%D0%B5%20%D0%B4%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%BD%D0%B5%20%D0%B2%D0%BE%20%D0%BD%D0%B0%D0%BC%D0%B0%D0%BB%D1%83%D0%B2%D0%B0%D1%9A%D0%B5%D1%82%D0%BE%20%D0%BD%D0%B0%20%D0%BA%D1%80%D0%B2%D0%BD%D0%B8%D0%BE%D1%82%20%D0%BF%D1%80%D0%B8%D1%82%D0%B8%D1%81%D0%BE%D0%BA!%20%D0%9B%D0%B5%D0%BA%D0%BE%D0%B2%D0%B8%D1%82%D0%B5%20%D1%9C%D0%B5%20%D0%B3%D0%B8%20%D0%B8%D1%81%D1%84%D1%80%D0%BB%D0%B8%D1%82%D0%B5%20%D0%BE%D0%B4%20%D1%83%D0%BF%D0%BE%D1%82%D1%80%D0%B5%D0%B1%D0%B0&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9B%D0%B5%D0%B1%20%D1%81%D0%BE%20%D0%BB%D1%83%D0%BA&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="magazine-сок-од-јаболко-или-портокал-кој-е-подобар-избор-за-нивото-на-summary-203487.html" class="flex-shrink-0">
-                                        <img src="images/cache/summary-203487.webp"
-                                             alt="Сок од јаболко или портокал: Кој е подобар избор за нивото на шеќер во крвта?"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="magazine-печена-тиква-со-мед-и-ореви-во-air-fryer-summary-205728.html" class="flex-shrink-0"> <img src="images/cache/summary-205728.webp"
+                                             alt="Печена тиква со мед и ореви во air fryer"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="magazine-сок-од-јаболко-или-портокал-кој-е-подобар-избор-за-нивото-на-summary-203487.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Сок од јаболко или портокал: Кој е подобар избор за нивото на шеќер во крвта?</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">И двата овошни сока содржат витамини и минерали, но и значителни количества природни шеќери.</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 21 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="magazine-сок-од-јаболко-или-портокал-кој-е-подобар-избор-за-нивото-на-summary-203487.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="magazine-сок-од-јаболко-или-портокал-кој-е-подобар-избор-за-нивото-на-summary-203487.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="magazine-печена-тиква-со-мед-и-ореви-во-air-fryer-summary-205728.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Печена тиква со мед и ореви во air fryer</h3>  <p class="theme-text-secondary text-xs">Печената тиква ја редиме во чинија, ја посипуваме со ореви и ја прелеваме со мед. Потребни состој...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 108 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="magazine-печена-тиква-со-мед-и-ореви-во-air-fryer-summary-205728.html"> <span>2</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="magazine-печена-тиква-со-мед-и-ореви-во-air-fryer-summary-205728.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A1%D0%BE%D0%BA%20%D0%BE%D0%B4%20%D1%98%D0%B0%D0%B1%D0%BE%D0%BB%D0%BA%D0%BE%20%D0%B8%D0%BB%D0%B8%20%D0%BF%D0%BE%D1%80%D1%82%D0%BE%D0%BA%D0%B0%D0%BB:%20%D0%9A%D0%BE%D1%98%20%D0%B5%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%B0%D1%80%20%D0%B8%D0%B7%D0%B1%D0%BE%D1%80%20%D0%B7%D0%B0%20%D0%BD%D0%B8%D0%B2%D0%BE%D1%82%D0%BE%20%D0%BD%D0%B0%20%D1%88%D0%B5%D1%9C%D0%B5%D1%80%20%D0%B2%D0%BE%20%D0%BA%D1%80%D0%B2%D1%82%D0%B0?&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9F%D0%B5%D1%87%D0%B5%D0%BD%D0%B0%20%D1%82%D0%B8%D0%BA%D0%B2%D0%B0%20%D1%81%D0%BE%20%D0%BC%D0%B5%D0%B4%20%D0%B8%20%D0%BE%D1%80%D0%B5%D0%B2%D0%B8%20%D0%B2%D0%BE%20air%20fryer&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="magazine-почна-сезоната-на-калинките-еве-зошто-ова-овошје-не-треба-да-summary-203381.html" class="flex-shrink-0">
-                                        <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9F%D0%BE%D1%87%D0%BD%D0%B0+%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%D0%B0%D1%82%D0%B0+%D0%BD%D0%B0+%D0%BA%D0%B0%D0%BB%D0%B8%D0%BD%D0%BA%D0%B8%D1%82%D0%B5%3A+%D0%95%D0%B2%D0%B5+%D0%B7%D0%BE%D1%88%D1%82%D0%BE+%D0%BE%D0%B2%D0%B0+%D0%BE%D0%B2%D0%BE%D1%88%D1%98%D0%B5+%D0%BD%D0%B5+%D1%82%D1%80%D0%B5%D0%B1%D0%B0+%D0%B4%D0%B0+%D0%B3%D0%BE+%D0%BF%D1%80%D0%B5%D1%81%D0%BA%D0%BE%D0%BA%D0%BD%D1%83%D0%B2%D0%B0%D1%82%D0%B5"
-                                             alt="Почна сезоната на калинките: Еве зошто ова овошје не треба да го прескокнувате"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="magazine-не-е-само-лукот-овие-намирници-можат-да-помогнат-во-summary-208777.html" class="flex-shrink-0"> <img src="images/cache/summary-208777.webp"
+                                             alt="Не е само лукот: Овие намирници можат да помогнат во зајакнувањето на имунитетот"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="magazine-почна-сезоната-на-калинките-еве-зошто-ова-овошје-не-треба-да-summary-203381.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Почна сезоната на калинките: Еве зошто ова овошје не треба да го прескокнувате</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Зрната лесно се вадат со прстите, при што тие тонат на дното, а белите делови од кората испливува...</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 23 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="magazine-почна-сезоната-на-калинките-еве-зошто-ова-овошје-не-треба-да-summary-203381.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="magazine-почна-сезоната-на-калинките-еве-зошто-ова-овошје-не-треба-да-summary-203381.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="magazine-не-е-само-лукот-овие-намирници-можат-да-помогнат-во-summary-208777.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Не е само лукот: Овие намирници можат да помогнат во зајакнувањето на имунитетот</h3>  <p class="theme-text-secondary text-xs">Овие хранливи материи придонесуваат за нормалното функционирање на организмот и го поддржуваат зд...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 6 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="magazine-не-е-само-лукот-овие-намирници-можат-да-помогнат-во-summary-208777.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="magazine-не-е-само-лукот-овие-намирници-можат-да-помогнат-во-summary-208777.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9F%D0%BE%D1%87%D0%BD%D0%B0%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%D0%B0%D1%82%D0%B0%20%D0%BD%D0%B0%20%D0%BA%D0%B0%D0%BB%D0%B8%D0%BD%D0%BA%D0%B8%D1%82%D0%B5:%20%D0%95%D0%B2%D0%B5%20%D0%B7%D0%BE%D1%88%D1%82%D0%BE%20%D0%BE%D0%B2%D0%B0%20%D0%BE%D0%B2%D0%BE%D1%88%D1%98%D0%B5%20%D0%BD%D0%B5%20%D1%82%D1%80%D0%B5%D0%B1%D0%B0%20%D0%B4%D0%B0%20%D0%B3%D0%BE%20%D0%BF%D1%80%D0%B5%D1%81%D0%BA%D0%BE%D0%BA%D0%BD%D1%83%D0%B2%D0%B0%D1%82%D0%B5&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9D%D0%B5%20%D0%B5%20%D1%81%D0%B0%D0%BC%D0%BE%20%D0%BB%D1%83%D0%BA%D0%BE%D1%82:%20%D0%9E%D0%B2%D0%B8%D0%B5%20%D0%BD%D0%B0%D0%BC%D0%B8%D1%80%D0%BD%D0%B8%D1%86%D0%B8%20%D0%BC%D0%BE%D0%B6%D0%B0%D1%82%20%D0%B4%D0%B0%20%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%BD%D0%B0%D1%82%20%D0%B2%D0%BE%20%D0%B7%D0%B0%D1%98%D0%B0%D0%BA%D0%BD%D1%83%D0%B2%D0%B0%D1%9A%D0%B5%D1%82%D0%BE%20%D0%BD%D0%B0%20%D0%B8%D0%BC%D1%83%D0%BD%D0%B8%D1%82%D0%B5%D1%82%D0%BE%D1%82&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="magazine-ајвар-како-кај-баба-тајните-за-совршен-домашен-ајвар-што-ќе-summary-203442.html" class="flex-shrink-0">
-                                        <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%90%D1%98%D0%B2%D0%B0%D1%80+%D0%BA%D0%B0%D0%BA%D0%BE+%D0%BA%D0%B0%D1%98+%D0%B1%D0%B0%D0%B1%D0%B0%3A+%D0%A2%D0%B0%D1%98%D0%BD%D0%B8%D1%82%D0%B5+%D0%B7%D0%B0+%D1%81%D0%BE%D0%B2%D1%80%D1%88%D0%B5%D0%BD+%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%B5%D0%BD+%D0%B0%D1%98%D0%B2%D0%B0%D1%80+%D1%88%D1%82%D0%BE+%D1%9C%D0%B5+%D1%82%D1%80%D0%B0%D0%B5+%D1%86%D0%B5%D0%BB%D0%B0+%D0%B7%D0%B8%D0%BC%D0%B0"
-                                             alt="Ајвар како кај баба: Тајните за совршен домашен ајвар што ќе трае цела зима"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="magazine-претерувањето-со-додатоци-во-исхраната-може-да-биде-опасно-summary-208928.html" class="flex-shrink-0"> <img src="images/cache/summary-208928.webp"
+                                             alt="ПРЕТЕРУВАЊЕТО СО ДОДАТОЦИ ВО ИСХРАНАТА МОЖЕ ДА БИДЕ ОПАСНО: Еве како влијае врз црниот дроб, бубрезите и лековите"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="magazine-ајвар-како-кај-баба-тајните-за-совршен-домашен-ајвар-што-ќе-summary-203442.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Ајвар како кај баба: Тајните за совршен домашен ајвар што ќе трае цела зима</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Ајварот се полни уште топол, одозгора се става малку масло, а теглите се затвораат и се оставаат ...</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 22 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="magazine-ајвар-како-кај-баба-тајните-за-совршен-домашен-ајвар-што-ќе-summary-203442.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="magazine-ајвар-како-кај-баба-тајните-за-совршен-домашен-ајвар-што-ќе-summary-203442.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="magazine-претерувањето-со-додатоци-во-исхраната-може-да-биде-опасно-summary-208928.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">ПРЕТЕРУВАЊЕТО СО ДОДАТОЦИ ВО ИСХРАНАТА МОЖЕ ДА БИДЕ ОПАСНО: Еве како влијае врз црниот дроб, бубрезите и лековите</h3>  <p class="theme-text-secondary text-xs">Иако се рекламираат како помош за подобро здравје, витамините и минералите во прекумерни количест...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 6 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="magazine-претерувањето-со-додатоци-во-исхраната-може-да-биде-опасно-summary-208928.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="magazine-претерувањето-со-додатоци-во-исхраната-може-да-биде-опасно-summary-208928.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%90%D1%98%D0%B2%D0%B0%D1%80%20%D0%BA%D0%B0%D0%BA%D0%BE%20%D0%BA%D0%B0%D1%98%20%D0%B1%D0%B0%D0%B1%D0%B0:%20%D0%A2%D0%B0%D1%98%D0%BD%D0%B8%D1%82%D0%B5%20%D0%B7%D0%B0%20%D1%81%D0%BE%D0%B2%D1%80%D1%88%D0%B5%D0%BD%20%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%B5%D0%BD%20%D0%B0%D1%98%D0%B2%D0%B0%D1%80%20%D1%88%D1%82%D0%BE%20%D1%9C%D0%B5%20%D1%82%D1%80%D0%B0%D0%B5%20%D1%86%D0%B5%D0%BB%D0%B0%20%D0%B7%D0%B8%D0%BC%D0%B0&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9F%D0%A0%D0%95%D0%A2%D0%95%D0%A0%D0%A3%D0%92%D0%90%D0%8A%D0%95%D0%A2%D0%9E%20%D0%A1%D0%9E%20%D0%94%D0%9E%D0%94%D0%90%D0%A2%D0%9E%D0%A6%D0%98%20%D0%92%D0%9E%20%D0%98%D0%A1%D0%A5%D0%A0%D0%90%D0%9D%D0%90%D0%A2%D0%90%20%D0%9C%D0%9E%D0%96%D0%95%20%D0%94%D0%90%20%D0%91%D0%98%D0%94%D0%95%20%D0%9E%D0%9F%D0%90%D0%A1%D0%9D%D0%9E:%20%D0%95%D0%B2%D0%B5%20%D0%BA%D0%B0%D0%BA%D0%BE%20%D0%B2%D0%BB%D0%B8%D1%98%D0%B0%D0%B5%20%D0%B2%D1%80%D0%B7%20%D1%86%D1%80%D0%BD%D0%B8%D0%BE%D1%82%20%D0%B4%D1%80%D0%BE%D0%B1,%20%D0%B1%D1%83%D0%B1%D1%80%D0%B5%D0%B7%D0%B8%D1%82%D0%B5%20%D0%B8%20%D0%BB%D0%B5%D0%BA%D0%BE%D0%B2%D0%B8%D1%82%D0%B5&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            <div id="mobile-ad-container-mid" class="mt-8">
-                                <a id="mobile-ad-link-mid" href="#"
-                                   class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                            </div>
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="magazine-маринирање-пилешко-месо-преку-ноќ-кога-е-добра-идеја-а-кога-summary-203479.html" class="flex-shrink-0">
-                                        <img src="images/cache/summary-203479.webp"
-                                             alt="Маринирање пилешко месо преку ноќ: Кога е добра идеја, а кога може да ја расипе текстурата?"
+                                            </a> </div> </div> </div> </div>  <div id="mobile-ad-container-mid" class="mt-8"> <a id="mobile-ad-link-mid" href="#"
+                                   class="block w-full aspect-[8/1] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a> </div> <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="magazine-правилото-мораш-да-ја-испразниш-чинијата-може-да-остави-summary-208808.html" class="flex-shrink-0"> <img src="images/cache/summary-208808.webp"
+                                             alt="Правилото „Мораш да ја испразниш чинијата“ може да остави последици: Седум навики во исхраната што ги носиме од детството"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="magazine-маринирање-пилешко-месо-преку-ноќ-кога-е-добра-идеја-а-кога-summary-203479.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Маринирање пилешко месо преку ноќ: Кога е добра идеја, а кога може да ја расипе текстурата?</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Јогуртот и маслото се погодни за подолго маринирање, додека лимонот, оцетот и виното можат да го ...</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 23 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="magazine-маринирање-пилешко-месо-преку-ноќ-кога-е-добра-идеја-а-кога-summary-203479.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="magazine-маринирање-пилешко-месо-преку-ноќ-кога-е-добра-идеја-а-кога-summary-203479.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="magazine-правилото-мораш-да-ја-испразниш-чинијата-може-да-остави-summary-208808.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Правилото „Мораш да ја испразниш чинијата“ може да остави последици: Седум навики во исхраната што ги носиме од детството</h3>  <p class="theme-text-secondary text-xs">Правилото дека чинијата мора да биде испразнета, кое многумина го слушале во детството, може да с...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 5 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="magazine-правилото-мораш-да-ја-испразниш-чинијата-може-да-остави-summary-208808.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="magazine-правилото-мораш-да-ја-испразниш-чинијата-може-да-остави-summary-208808.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9C%D0%B0%D1%80%D0%B8%D0%BD%D0%B8%D1%80%D0%B0%D1%9A%D0%B5%20%D0%BF%D0%B8%D0%BB%D0%B5%D1%88%D0%BA%D0%BE%20%D0%BC%D0%B5%D1%81%D0%BE%20%D0%BF%D1%80%D0%B5%D0%BA%D1%83%20%D0%BD%D0%BE%D1%9C:%20%D0%9A%D0%BE%D0%B3%D0%B0%20%D0%B5%20%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%20%D0%B8%D0%B4%D0%B5%D1%98%D0%B0,%20%D0%B0%20%D0%BA%D0%BE%D0%B3%D0%B0%20%D0%BC%D0%BE%D0%B6%D0%B5%20%D0%B4%D0%B0%20%D1%98%D0%B0%20%D1%80%D0%B0%D1%81%D0%B8%D0%BF%D0%B5%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%D1%83%D1%80%D0%B0%D1%82%D0%B0?&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%D1%82%D0%BE%20%E2%80%9E%D0%9C%D0%BE%D1%80%D0%B0%D1%88%20%D0%B4%D0%B0%20%D1%98%D0%B0%20%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B7%D0%BD%D0%B8%D1%88%20%D1%87%D0%B8%D0%BD%D0%B8%D1%98%D0%B0%D1%82%D0%B0%E2%80%9C%20%D0%BC%D0%BE%D0%B6%D0%B5%20%D0%B4%D0%B0%20%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%B8%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%B8%D1%86%D0%B8:%20%D0%A1%D0%B5%D0%B4%D1%83%D0%BC%20%D0%BD%D0%B0%D0%B2%D0%B8%D0%BA%D0%B8%20%D0%B2%D0%BE%20%D0%B8%D1%81%D1%85%D1%80%D0%B0%D0%BD%D0%B0%D1%82%D0%B0%20%D1%88%D1%82%D0%BE%20%D0%B3%D0%B8%20%D0%BD%D0%BE%D1%81%D0%B8%D0%BC%D0%B5%20%D0%BE%D0%B4%20%D0%B4%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%BE%D1%82%D0%BE&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="magazine-што-да-јадете-доцна-навечер-нутриционистите-издвојуваат-три-summary-203488.html" class="flex-shrink-0">
-                                        <img src="images/cache/summary-203488.webp"
-                                             alt="Што да јадете доцна навечер? Нутриционистите издвојуваат три едноставни оброци, ќе бидете сити и навистина лесно ќе потонете во сон"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="magazine-недостигот-на-витамин-д-може-да-го-надоместите-и-со-овие-summary-208662.html" class="flex-shrink-0"> <img src="images/cache/summary-208662.webp"
+                                             alt="НЕДОСТИГОТ НА ВИТАМИН Д МОЖЕ ДА ГО НАДОМЕСТИТЕ И СО ОВИЕ НАПИТОЦИ: Проверете што пишува на декларацијата"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="magazine-што-да-јадете-доцна-навечер-нутриционистите-издвојуваат-три-summary-203488.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Што да јадете доцна навечер? Нутриционистите издвојуваат три едноставни оброци, ќе бидете сити и навистина лесно ќе потонете во сон</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Ако почувствувате глад пред спиење, не мора да си легнете со празен стомак.</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 23 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="magazine-што-да-јадете-доцна-навечер-нутриционистите-издвојуваат-три-summary-203488.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="magazine-што-да-јадете-доцна-навечер-нутриционистите-издвојуваат-три-summary-203488.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="magazine-недостигот-на-витамин-д-може-да-го-надоместите-и-со-овие-summary-208662.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">НЕДОСТИГОТ НА ВИТАМИН Д МОЖЕ ДА ГО НАДОМЕСТИТЕ И СО ОВИЕ НАПИТОЦИ: Проверете што пишува на декларацијата</h3>  <p class="theme-text-secondary text-xs">Освен преку храната и сончевата светлина, дел од дневните потреби за овој важен витамин може да г...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 9 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="magazine-недостигот-на-витамин-д-може-да-го-надоместите-и-со-овие-summary-208662.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="magazine-недостигот-на-витамин-д-може-да-го-надоместите-и-со-овие-summary-208662.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A8%D1%82%D0%BE%20%D0%B4%D0%B0%20%D1%98%D0%B0%D0%B4%D0%B5%D1%82%D0%B5%20%D0%B4%D0%BE%D1%86%D0%BD%D0%B0%20%D0%BD%D0%B0%D0%B2%D0%B5%D1%87%D0%B5%D1%80?%20%D0%9D%D1%83%D1%82%D1%80%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B8%D1%81%D1%82%D0%B8%D1%82%D0%B5%20%D0%B8%D0%B7%D0%B4%D0%B2%D0%BE%D1%98%D1%83%D0%B2%D0%B0%D0%B0%D1%82%20%D1%82%D1%80%D0%B8%20%D0%B5%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BD%D0%B8%20%D0%BE%D0%B1%D1%80%D0%BE%D1%86%D0%B8,%20%D1%9C%D0%B5%20%D0%B1%D0%B8%D0%B4%D0%B5%D1%82%D0%B5%20%D1%81%D0%B8%D1%82%D0%B8%20%D0%B8%20%D0%BD%D0%B0%D0%B2%D0%B8%D1%81%D1%82%D0%B8%D0%BD%D0%B0%20%D0%BB%D0%B5%D1%81%D0%BD%D0%BE%20%D1%9C%D0%B5%20%D0%BF%D0%BE%D1%82%D0%BE%D0%BD%D0%B5%D1%82%D0%B5%20%D0%B2%D0%BE%20%D1%81%D0%BE%D0%BD&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9D%D0%95%D0%94%D0%9E%D0%A1%D0%A2%D0%98%D0%93%D0%9E%D0%A2%20%D0%9D%D0%90%20%D0%92%D0%98%D0%A2%D0%90%D0%9C%D0%98%D0%9D%20%D0%94%20%D0%9C%D0%9E%D0%96%D0%95%20%D0%94%D0%90%20%D0%93%D0%9E%20%D0%9D%D0%90%D0%94%D0%9E%D0%9C%D0%95%D0%A1%D0%A2%D0%98%D0%A2%D0%95%20%D0%98%20%D0%A1%D0%9E%20%D0%9E%D0%92%D0%98%D0%95%20%D0%9D%D0%90%D0%9F%D0%98%D0%A2%D0%9E%D0%A6%D0%98:%20%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B5%D1%82%D0%B5%20%D1%88%D1%82%D0%BE%20%D0%BF%D0%B8%D1%88%D1%83%D0%B2%D0%B0%20%D0%BD%D0%B0%20%D0%B4%D0%B5%D0%BA%D0%BB%D0%B0%D1%80%D0%B0%D1%86%D0%B8%D1%98%D0%B0%D1%82%D0%B0&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="magazine-калинка-есенското-овошје-со-рубински-зрна-што-заслужува-summary-203351.html" class="flex-shrink-0">
-                                        <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%BA%D0%B0%3A+%D0%95%D1%81%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D1%82%D0%BE+%D0%BE%D0%B2%D0%BE%D1%88%D1%98%D0%B5+%D1%81%D0%BE+%D1%80%D1%83%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%D0%B8+%D0%B7%D1%80%D0%BD%D0%B0+%D1%88%D1%82%D0%BE+%D0%B7%D0%B0%D1%81%D0%BB%D1%83%D0%B6%D1%83%D0%B2%D0%B0+%D0%BC%D0%B5%D1%81%D1%82%D0%BE+%D0%BD%D0%B0+%D1%81%D0%B5%D0%BA%D0%BE%D1%98%D0%B0+%D1%82%D1%80%D0%BF%D0%B5%D0%B7%D0%B0"
-                                             alt="Калинка: Есенското овошје со рубински зрна што заслужува место на секоја трпеза"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="magazine-враќање-кон-огнот-зошто-готвењето-на-жар-повторно-ги-summary-208464.html" class="flex-shrink-0"> <img src="images/cache/summary-208464.webp"
+                                             alt="Враќање кон огнот: зошто готвењето на жар повторно ги освојува ресторанските менија"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="magazine-калинка-есенското-овошје-со-рубински-зрна-што-заслужува-summary-203351.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Калинка: Есенското овошје со рубински зрна што заслужува место на секоја трпеза</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Ако по пазарите сте забележале тешки, темноцрвени плодови со круна на врвот – сезоната на калинка...</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 24 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="magazine-калинка-есенското-овошје-со-рубински-зрна-што-заслужува-summary-203351.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="magazine-калинка-есенското-овошје-со-рубински-зрна-што-заслужува-summary-203351.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="magazine-враќање-кон-огнот-зошто-готвењето-на-жар-повторно-ги-summary-208464.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Враќање кон огнот: зошто готвењето на жар повторно ги освојува ресторанските менија</h3>  <p class="theme-text-secondary text-xs">Огнот, сепак, бара повеќе од висока температура.</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 13 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="magazine-враќање-кон-огнот-зошто-готвењето-на-жар-повторно-ги-summary-208464.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="magazine-враќање-кон-огнот-зошто-готвењето-на-жар-повторно-ги-summary-208464.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%BA%D0%B0:%20%D0%95%D1%81%D0%B5%D0%BD%D1%81%D0%BA%D0%BE%D1%82%D0%BE%20%D0%BE%D0%B2%D0%BE%D1%88%D1%98%D0%B5%20%D1%81%D0%BE%20%D1%80%D1%83%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%20%D0%B7%D1%80%D0%BD%D0%B0%20%D1%88%D1%82%D0%BE%20%D0%B7%D0%B0%D1%81%D0%BB%D1%83%D0%B6%D1%83%D0%B2%D0%B0%20%D0%BC%D0%B5%D1%81%D1%82%D0%BE%20%D0%BD%D0%B0%20%D1%81%D0%B5%D0%BA%D0%BE%D1%98%D0%B0%20%D1%82%D1%80%D0%BF%D0%B5%D0%B7%D0%B0&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%92%D1%80%D0%B0%D1%9C%D0%B0%D1%9A%D0%B5%20%D0%BA%D0%BE%D0%BD%20%D0%BE%D0%B3%D0%BD%D0%BE%D1%82:%20%D0%B7%D0%BE%D1%88%D1%82%D0%BE%20%D0%B3%D0%BE%D1%82%D0%B2%D0%B5%D1%9A%D0%B5%D1%82%D0%BE%20%D0%BD%D0%B0%20%D0%B6%D0%B0%D1%80%20%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D0%BD%D0%BE%20%D0%B3%D0%B8%20%D0%BE%D1%81%D0%B2%D0%BE%D1%98%D1%83%D0%B2%D0%B0%20%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D1%82%D0%B5%20%D0%BC%D0%B5%D0%BD%D0%B8%D1%98%D0%B0&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="magazine-врвна-гастрономија-без-мишлен-како-да-ги-спарите-балканските-summary-203187.html" class="flex-shrink-0">
-                                        <img src="images/cache/summary-203187.webp"
-                                             alt="Врвна гастрономија без „Мишлен“: како да ги спарите балканските деликатеси и локалните вина?"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="magazine-го-јадете-ли-овој-зеленчук-кардиолог-издвојува-четири-со-summary-208452.html" class="flex-shrink-0"> <img src="images/cache/summary-208452.webp"
+                                             alt="Го јадете ли овој зеленчук? Кардиолог издвојува четири со особено корисно дејство"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="magazine-врвна-гастрономија-без-мишлен-како-да-ги-спарите-балканските-summary-203187.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Врвна гастрономија без „Мишлен“: како да ги спарите балканските деликатеси и локалните вина?</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Работите во секторот Хорека, но и на домашната трпеза, речиси никогаш не се математички едноставн...</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 27 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="magazine-врвна-гастрономија-без-мишлен-како-да-ги-спарите-балканските-summary-203187.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="magazine-врвна-гастрономија-без-мишлен-како-да-ги-спарите-балканските-summary-203187.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="magazine-го-јадете-ли-овој-зеленчук-кардиолог-издвојува-четири-со-summary-208452.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Го јадете ли овој зеленчук? Кардиолог издвојува четири со особено корисно дејство</h3>  <p class="theme-text-secondary text-xs">Редовното внесување зеленчук може да помогне во намалувањето на холестеролот, одржувањето на норм...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 13 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="magazine-го-јадете-ли-овој-зеленчук-кардиолог-издвојува-четири-со-summary-208452.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="magazine-го-јадете-ли-овој-зеленчук-кардиолог-издвојува-четири-со-summary-208452.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%92%D1%80%D0%B2%D0%BD%D0%B0%20%D0%B3%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D1%98%D0%B0%20%D0%B1%D0%B5%D0%B7%20%E2%80%9E%D0%9C%D0%B8%D1%88%D0%BB%D0%B5%D0%BD%E2%80%9C:%20%D0%BA%D0%B0%D0%BA%D0%BE%20%D0%B4%D0%B0%20%D0%B3%D0%B8%20%D1%81%D0%BF%D0%B0%D1%80%D0%B8%D1%82%D0%B5%20%D0%B1%D0%B0%D0%BB%D0%BA%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D1%82%D0%B5%20%D0%B4%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0%D1%82%D0%B5%D1%81%D0%B8%20%D0%B8%20%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%20%D0%B2%D0%B8%D0%BD%D0%B0?&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%93%D0%BE%20%D1%98%D0%B0%D0%B4%D0%B5%D1%82%D0%B5%20%D0%BB%D0%B8%20%D0%BE%D0%B2%D0%BE%D1%98%20%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%87%D1%83%D0%BA?%20%D0%9A%D0%B0%D1%80%D0%B4%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%20%D0%B8%D0%B7%D0%B4%D0%B2%D0%BE%D1%98%D1%83%D0%B2%D0%B0%20%D1%87%D0%B5%D1%82%D0%B8%D1%80%D0%B8%20%D1%81%D0%BE%20%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BE%20%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D0%BD%D0%BE%20%D0%B4%D0%B5%D1%98%D1%81%D1%82%D0%B2%D0%BE&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3">
-                                <div class="flex gap-3">
-                                    <!-- Thumbnail -->
-                                    <a href="magazine-сармата-е-повкусна-вториот-ден-но-колку-долго-е-безбедна-за-summary-203079.html" class="flex-shrink-0">
-                                        <img src="images/cache/summary-203079.webp"
-                                             alt="Сармата е повкусна вториот ден, но колку долго е безбедна за јадење? Познато зошто оризот во сармата бара посебно внимание"
+                                            </a> </div> </div> </div> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-3"> <div class="flex gap-3">  <a href="magazine-луто-слатко-и-крцкаво-во-еден-залак-сосовите-што-го-менуваат-summary-208445.html" class="flex-shrink-0"> <img src="images/cache/summary-208445.webp"
+                                             alt="Луто, слатко и крцкаво во еден залак: сосовите што го менуваат вкусот на омилените јадења"
                                              width="80"
                                                  height="80"
                                                  decoding="async"
-                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>
-                                            <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    </a>
-
-                                    <!-- Content -->
-                                    <div class="flex flex-col flex-1">
-                                        <a href="magazine-сармата-е-повкусна-вториот-ден-но-колку-долго-е-безбедна-за-summary-203079.html" class="block">
-                                            <!-- Title -->
-                                            <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Сармата е повкусна вториот ден, но колку долго е безбедна за јадење? Познато зошто оризот во сармата бара посебно внимание</h3>
-
-                                            <!-- Snippet -->
-                                            <p class="theme-text-secondary text-xs">Правилното ладење и чување се клучни за да се избегне размножување на бактерии, особено затоа што...</p>
-                                        </a>
-
-                                        <!-- Meta -->
-                                        <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap">
-                                            <span>
-                                                <span>пред 37 часа</span>
-                                            </span>
-                                            <a class="news-pill news-pill--stories"
-                                               href="magazine-сармата-е-повкусна-вториот-ден-но-колку-долго-е-безбедна-за-summary-203079.html">
-                                                <span>1</span>&nbsp;вести&nbsp;&raquo;
-                                            </a>
-                                            <a class="news-pill news-pill--summary"
-                                               href="magazine-сармата-е-повкусна-вториот-ден-но-колку-долго-е-безбедна-за-summary-203079.html">сумирано&nbsp;&raquo;</a>
-
-                                            <a class="news-pill news-pill--questions"
+                                                 class="w-20 h-20 object-cover rounded-md" loading="lazy"/>  </a>  <div class="flex flex-col flex-1"> <a href="magazine-луто-слатко-и-крцкаво-во-еден-залак-сосовите-што-го-менуваат-summary-208445.html" class="block">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">Луто, слатко и крцкаво во еден залак: сосовите што го менуваат вкусот на омилените јадења</h3>  <p class="theme-text-secondary text-xs">Комбинациите на слатко и луто, како медот со чили, но и сосовите со крцкави парчиња зачини, лук и...</p> </a>  <div class="news-pill-row theme-text-secondary text-xs mt-2 flex items-center flex-wrap"> <span> <span>пред 14 часа</span> </span> <a class="news-pill news-pill--stories"
+                                               href="magazine-луто-слатко-и-крцкаво-во-еден-залак-сосовите-што-го-менуваат-summary-208445.html"> <span>1</span>&nbsp;вести&nbsp;&raquo;
+                                            </a> <a class="news-pill news-pill--summary"
+                                               href="magazine-луто-слатко-и-крцкаво-во-еден-залак-сосовите-што-го-менуваат-summary-208445.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                                                target="_blank"
                                                rel="noopener noreferrer"
-                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A1%D0%B0%D1%80%D0%BC%D0%B0%D1%82%D0%B0%20%D0%B5%20%D0%BF%D0%BE%D0%B2%D0%BA%D1%83%D1%81%D0%BD%D0%B0%20%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%BE%D1%82%20%D0%B4%D0%B5%D0%BD,%20%D0%BD%D0%BE%20%D0%BA%D0%BE%D0%BB%D0%BA%D1%83%20%D0%B4%D0%BE%D0%BB%D0%B3%D0%BE%20%D0%B5%20%D0%B1%D0%B5%D0%B7%D0%B1%D0%B5%D0%B4%D0%BD%D0%B0%20%D0%B7%D0%B0%20%D1%98%D0%B0%D0%B4%D0%B5%D1%9A%D0%B5?%20%D0%9F%D0%BE%D0%B7%D0%BD%D0%B0%D1%82%D0%BE%20%D0%B7%D0%BE%D1%88%D1%82%D0%BE%20%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D1%82%20%D0%B2%D0%BE%20%D1%81%D0%B0%D1%80%D0%BC%D0%B0%D1%82%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%20%D0%BF%D0%BE%D1%81%D0%B5%D0%B1%D0%BD%D0%BE%20%D0%B2%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5&amp;udm=50">
+                                               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9B%D1%83%D1%82%D0%BE,%20%D1%81%D0%BB%D0%B0%D1%82%D0%BA%D0%BE%20%D0%B8%20%D0%BA%D1%80%D1%86%D0%BA%D0%B0%D0%B2%D0%BE%20%D0%B2%D0%BE%20%D0%B5%D0%B4%D0%B5%D0%BD%20%D0%B7%D0%B0%D0%BB%D0%B0%D0%BA:%20%D1%81%D0%BE%D1%81%D0%BE%D0%B2%D0%B8%D1%82%D0%B5%20%D1%88%D1%82%D0%BE%20%D0%B3%D0%BE%20%D0%BC%D0%B5%D0%BD%D1%83%D0%B2%D0%B0%D0%B0%D1%82%20%D0%B2%D0%BA%D1%83%D1%81%D0%BE%D1%82%20%D0%BD%D0%B0%20%D0%BE%D0%BC%D0%B8%D0%BB%D0%B5%D0%BD%D0%B8%D1%82%D0%B5%20%D1%98%D0%B0%D0%B4%D0%B5%D1%9A%D0%B0&amp;udm=50">
                                                 прашања&nbsp;&raquo;
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mid Ad Banner after 5th item -->
-                            
-                        
-                    </div>
-
-                    <!-- Pagination -->
-                    <div class="flex justify-center mt-6">
-    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
-
-        <!-- Previous -->
-        
-
-        <!-- Page numbers (max 10) -->
-        
-            
-                <a href="magazine-food.html"
-                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">1</a>
-            
-                <a href="magazine-food-page-2.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">2</a>
-            
-                <a href="magazine-food-page-3.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">3</a>
-            
-                <a href="magazine-food-page-4.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">4</a>
-            
-                <a href="magazine-food-page-5.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">5</a>
-            
-                <a href="magazine-food-page-6.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">6</a>
-            
-                <a href="magazine-food-page-7.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">7</a>
-            
-                <a href="magazine-food-page-8.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">8</a>
-            
-                <a href="magazine-food-page-9.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">9</a>
-            
-                <a href="magazine-food-page-10.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">10</a>
-            
-        
-
-        <!-- Next -->
-        <a href="magazine-food-page-2.html"
+                                            </a> </div> </div> </div> </div>  </div>  <div class="flex justify-center mt-6"> <nav class="inline-flex items-center space-x-1" aria-label="Pagination">   <a href="magazine-food.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">1</a> <a href="magazine-food-page-2.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">2</a> <a href="magazine-food-page-3.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">3</a> <a href="magazine-food-page-4.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">4</a> <a href="magazine-food-page-5.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">5</a> <a href="magazine-food-page-6.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">6</a> <a href="magazine-food-page-7.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">7</a> <a href="magazine-food-page-8.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">8</a> <a href="magazine-food-page-9.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">9</a> <a href="magazine-food-page-10.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">10</a>  <a href="magazine-food-page-2.html"
            class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
-           aria-label="Next">&raquo;</a>
-    </nav>
-</div>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="theme-bg-secondary py-8 mt-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
-        <!-- Disclaimer Text -->
-        <p class="text-sm leading-relaxed mb-6">
+           aria-label="Next">&raquo;</a> </nav> </div> </div> </div> </div> </main>  <footer class="theme-bg-secondary py-8 mt-12"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">  <p class="text-sm leading-relaxed mb-6">
             Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
             Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
             <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
-        </p>
-
-        <!-- Static Links with Thymeleaf relative URLs -->
-        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
-            <a href="sources.html" class="hover:underline theme-text-primary">Извори</a>
-            <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
-            <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
-            <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
-            <a href="blog.html" class="hover:underline theme-text-primary">Блог</a>
-            <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a>
-            <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
-            <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
-        </div>
-    </div>
-
-    <!-- NEW: Search Modal HTML Structure -->
-    <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true">
-        <div class="flex items-start justify-center min-h-screen pt-16">
-            <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2>
-                    <button id="close-search-modal" class="theme-text-primary" aria-label="Close search">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    </button>
-                </div>
-                <label for="search-input" class="sr-only">Search keywords</label>
-                <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4" autocomplete="off">
-                <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto" role="status" aria-live="polite" aria-busy="false">
-                    <!-- Search results will be dynamically inserted here -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add Lunr.js library and the search script -->
-
-
-
-</footer>
-</div>
-
-<script>
+        </p>  <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold"> <a href="sources.html" class="hover:underline theme-text-primary">Извори</a> <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a> <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a> <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a> <a href="blog.html" class="hover:underline theme-text-primary">Блог</a> <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a> <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a> <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a> </div> </div>  <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true"> <div class="flex items-start justify-center min-h-screen pt-16"> <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6"> <div class="flex justify-between items-center mb-4"> <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2> <button id="close-search-modal" class="theme-text-primary" aria-label="Close search"> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> </button> </div> <label for="search-input" class="sr-only">Search keywords</label> <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4" autocomplete="off"> <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto" role="status" aria-live="polite" aria-busy="false">  </div> </div> </div> </div>  </footer> </div> <script>
     /*<![CDATA[*/
-    window.desktopSmallAdsData = [{"id":"sidebarSmallRotatingAd1_A","imageUrl":"https:\/\/placehold.co\/150x300\/FF0000\/FFFFFF?text=Your+Ad+Here+1A","title":"Special Offer A1","description":"Don't miss out on this amazing deal!","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":5000,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"sidebarSmallRotatingAd1_B","imageUrl":"https:\/\/placehold.co\/150x300\/00FF00\/000000?text=Your+Ad+Here+1","title":"New Arrivals A2","description":"Check out our latest products!","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":7500,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"sidebarSmallRotatingAd2_A","imageUrl":"https:\/\/placehold.co\/150x300\/0000FF\/FFFFFF?text=Your+Ad+Here+2A","title":"Exclusive Deal B1","description":"Limited time offer, act now!","url":"marketing.html","startDate":"2025-02-01","endDate":"2026-10-31","viewLimit":6000,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"sidebarSmallRotatingAd2_B","imageUrl":"https:\/\/placehold.co\/150x300\/FFFF00\/000000?text=Your+Ad+Here+2BC","title":"Summer Sale B2","description":"Big discounts on summer essentials!","url":"marketing.html","startDate":"2025-03-01","endDate":"2026-12-31","viewLimit":8000,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"sidebarLargeAd1","imageUrl":"https:\/\/placehold.co\/300x600\/FF00FF\/FFFFFF?text=Your+Ad+Here!","title":"Great Deals Await!","description":"Find products you'll love.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"categorySpotlightAd1","imageUrl":"https:\/\/placehold.co\/800x450\/4B0082\/ffffff?text=Your+Ad+Here+1","title":"Explore More!","description":"Find in-depth analysis.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"categorySpotlightAd2","imageUrl":"https:\/\/placehold.co\/800x450\/8A2BE2\/FFFFFF?text=Your+Ad+Here+2","title":"Deep Dive!","description":"Comprehensive coverage.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"categorySpotlightAd3","imageUrl":"https:\/\/placehold.co\/800x450\/DA70D6\/000000?text=Your+Ad+Here+3","title":"Latest Updates!","description":"Stay informed.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"desktop_small","processedUrl":"marketing.html"},{"id":"categorySecondaryAd","imageUrl":"https:\/\/placehold.co\/150x300\/800000\/ffffff?text=Your+Ad+Here","title":"New Insights","description":"Stay updated.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"desktop_small","processedUrl":"marketing.html"}];
-    window.mobileTopAdsData = [{"id":"mobileTopAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Your+Mobile+Ad+Here+1","title":"Mobile Exclusive Offer","description":"Special deal for mobile users.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"},{"id":"mobileTopAd2","imageUrl":"https:\/\/placehold.co\/600x75\/DAF7A6\/000000?text=Your+Mobile+Ad+Here+2","title":"New Mobile Feature","description":"Check out our new mobile feature.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"}];
-    window.mobileMidAdsData = [{"id":"mobileMidAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Your+Mobile+Ad+Here+1","title":"Don't Miss This!","description":"Another great offer just for you.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"},{"id":"mobileMidAd2","imageUrl":"https:\/\/placehold.co\/600x75\/C70039\/FFFFFF?text=Your+Mobile+Ad+Here+2","title":"Scroll-Stopping Savings","description":"Great savings await.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"}];
+    window.desktopSmallAdsData = [{"id":"desktop_ad_001","imageUrl":"https:\/\/placehold.co\/150x300\/FF0000\/FFFFFF?text=Your+Ad+Here","title":"Desktop Ad Example","description":"A sample desktop advertisement","url":"https:\/\/day.mk\/marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"desktop_small","provider":"LOCAL","active":true,"sortOrder":0,"width":null,"height":null,"googleClient":null,"googleSlot":null,"processedUrl":"https:\/\/day.mk\/marketing.html"},{"id":"desktop_ad_002","imageUrl":"https:\/\/placehold.co\/150x300\/FF0000\/FFFFFF?text=Your+Ad2+Here","title":"Desktop Ad Example","description":"A sample desktop advertisement","url":"https:\/\/day.mk\/marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"desktop_small","provider":"LOCAL","active":true,"sortOrder":0,"width":null,"height":null,"googleClient":null,"googleSlot":null,"processedUrl":"https:\/\/day.mk\/marketing.html"}];
+    window.mobileTopAdsData = [{"id":"mobile_top_001","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Mobile+Top","title":"Mobile Top Banner","description":"A mobile top banner ad","url":"https:\/\/day.mk\/marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","provider":"LOCAL","active":true,"sortOrder":0,"width":null,"height":null,"googleClient":null,"googleSlot":null,"processedUrl":"https:\/\/day.mk\/marketing.html"}];
+    window.mobileMidAdsData = [{"id":"mobile_mid_001","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Mobile+Mid","title":"Mobile Mid Banner","description":"A mobile mid screen ad","url":"https:\/\/day.mk\/marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","provider":"LOCAL","active":true,"sortOrder":0,"width":null,"height":null,"googleClient":null,"googleSlot":null,"processedUrl":"https:\/\/day.mk\/marketing.html"}];
     /*]]>*/
-</script>
-
-<div>
-    <script>
+</script> <div> <script>
     /*<![CDATA[*/
     const themeToggle = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement; // This refers to the <html> tag
@@ -1592,24 +406,9 @@
         }
     });
     /*]]>*/
-</script>
-
-
-    <script src="js/mobile-nav.js" defer></script>
-
-    <!-- PERF: Load search stack only on demand to reduce unused JS on first render. -->
-    <script src="js/search.js" defer></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
-    <script>
+</script> <script src="js/mobile-nav.js" defer></script>  <script src="js/search.js" defer></script> <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script> <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
-</script>
-    <!-- PERF: Keep ad rotation deferred to avoid blocking first content paint. -->
-    <script src="js/ad-rotation.js" defer></script>
-
-</div>
-</body>
-</html>
+</script>  <script src="js/ad-rotation.js" defer></script> </div> </body> </html>

@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="315">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Pre-paint theme (prevents flash/blink) -->
-    <script>
+<!DOCTYPE html> <html> <head> <meta charset="UTF-8"> <meta http-equiv="refresh" content="315"> <meta name="viewport" content="width=device-width, initial-scale=1">  <script>
         (function () {
             try {
                 var saved = localStorage.getItem('theme');
@@ -16,233 +8,40 @@
                 else document.documentElement.classList.remove('dark');
             } catch (e) {}
         })();
-    </script>
-
-    <!-- Title + favicon -->
-    <title>Day.mk - Најнови Вести (Страница 191)</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <!-- PERF: Preconnect to remote origins early to reduce DNS/TLS latency for mobile LCP. -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- PERF: Inline tiny critical styles so first paint is stable before deferred CSS arrives. -->
-    <style>
+    </script>  <title>Day.mk - Најнови Вести (Страница 191)</title> <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />  <link rel="dns-prefetch" href="//fonts.googleapis.com"> <link rel="dns-prefetch" href="//fonts.gstatic.com"> <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin /> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />  <style>
         html, body { font-family: Newsreader, "Noto Sans", sans-serif; margin: 0; }
         .theme-bg-primary { background-color: #ffffff; }
         .theme-text-primary { color: #1a1a1a; }
         html.dark .theme-bg-primary { background-color: #101a23; }
         html.dark .theme-text-primary { color: #ffffff; }
-    </style>
-
-    <!-- PERF: Preload font stylesheet and switch rel on load to reduce render-blocking CSS. -->
-    <link rel="preload" as="style"
+    </style>  <link rel="preload" as="style"
           href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript>
-        <link rel="stylesheet"
-              href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap" />
-    </noscript>
-
-    <!-- Meta Description -->
-    <meta name="description"
-          content=" Прелистајте ги најновите вести, страница 191."/>
-
-    <!-- Canonical URL (optional) -->
-    
-
-    <!-- Robots directives -->
-    <meta name="robots"
-          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
-
-    <!-- Hreflang -->
-    
-
-    <!-- Basic Open Graph for non-article pages -->
-    <meta property="og:site_name" content="Day.mk" />
-    <meta property="og:locale" content="mk_MK" />
-    <meta property="og:title" content="Day.mk - Најнови Вести (Страница 191)" />
-    <meta property="og:description"
-          content=" Прелистајте ги најновите вести, страница 191."/>
-    <meta property="og:type" content="website" />
-    
-    <meta property="og:image" content="https://day.mk/assets/logo.png" />
-
-    <!-- Twitter card for non-article pages -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Day.mk - Најнови Вести (Страница 191)" />
-    <meta name="twitter:description"
-          content=" Прелистајте ги најновите вести, страница 191."/>
-    <meta name="twitter:image" content="https://day.mk/assets/logo.png" />
-
-    <!-- PERF: Load generated Tailwind utilities as static CSS (no runtime CDN compiler). -->
-    <link rel="preload" as="style" href="css/tailwind.generated.css" />
-    <link rel="stylesheet" href="css/tailwind.generated.css" />
-    <!-- PERF: Keep explicit stylesheet link for reliability; preload remains as a fetch hint. -->
-    <link rel="preload" as="style" href="css/style.css" />
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body class="theme-bg-primary">
-<div class="relative flex min-h-screen flex-col theme-bg-primary overflow-x-hidden"
-     style='font-family: Newsreader, "Noto Sans", sans-serif;'>
-
-    <!-- ======================= -->
-    <!-- DESKTOP HEADER (lg+)    -->
-    <!-- ======================= -->
-    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-        <div>
-    <!-- Header section containing title and icons -->
-    <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
-        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
-            <a href="index.html" class="hover:underline">DAY.MK</a>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">
-                обновено <span>12:24, 24.10.2026</span>
-            </p>
-        </h2>
-
-        <div class="flex w-24 items-center justify-end">
-            <!-- NEW: Search Icon (Desktop) -->
-            <button id="search-button-desktop" aria-label="Open search"
-                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                </svg>
-            </button>
-
-            <!-- Weather Link Icon (Thermometer) -->
-            <a href="prognoza.html" aria-label="Weather Forecast"
-               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
-                </svg>
-            </a>
-            <!-- Day/Night Mode Toggle Button -->
-            <button id="theme-toggle"
+          onload="this.onload=null;this.rel='stylesheet'" /> <noscript> <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap" /> </noscript>  <meta name="description"
+          content=" Прелистајте ги најновите вести, страница 191."/>   <meta name="robots"
+          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />   <meta property="og:site_name" content="Day.mk" /> <meta property="og:locale" content="mk_MK" /> <meta property="og:title" content="Day.mk - Најнови Вести (Страница 191)" /> <meta property="og:description"
+          content=" Прелистајте ги најновите вести, страница 191."/> <meta property="og:type" content="website" /> <meta property="og:image" content="https://day.mk/assets/logo.png" />  <meta name="twitter:card" content="summary" /> <meta name="twitter:title" content="Day.mk - Најнови Вести (Страница 191)" /> <meta name="twitter:description"
+          content=" Прелистајте ги најновите вести, страница 191."/> <meta name="twitter:image" content="https://day.mk/assets/logo.png" />  <link rel="preload" as="style" href="css/tailwind.generated.css" /> <link rel="stylesheet" href="css/tailwind.generated.css" />  <link rel="preload" as="style" href="css/style.css" /> <link rel="stylesheet" href="css/style.css" /> </head> <body class="theme-bg-primary"> <div class="relative flex min-h-screen flex-col theme-bg-primary overflow-x-hidden"
+     style='font-family: Newsreader, "Noto Sans", sans-serif;'>    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8"> <div>  <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color"> <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24"> <a href="index.html" class="hover:underline">DAY.MK</a> <p class="theme-text-secondary text-sm font-normal text-center pb-2">
+                обновено <span>22:15, 31.10.2026</span> </p> </h2> <div class="flex w-24 items-center justify-end">  <button id="search-button-desktop" aria-label="Open search"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2"> <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </button>  <a href="prognoza.html" aria-label="Weather Forecast"
+               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2"> <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"> <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/> </svg> </a>  <button id="theme-toggle"
                     class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
                     aria-label="Toggle dark mode"
-            >
-                <!-- Sun Icon (Light Mode) -->
-                <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-                <!-- Moon Icon (Dark Mode) -->
-                <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" />
-                </svg>
-            </button>
-        </div>
-    </div>
-    <!-- "обновено" time now correctly positioned below the header, within the main content wrapper -->
-
-
-    <div class="pb-3 pt-4">
-        <!-- Main Navigation Tabs (split into left and right) -->
-        <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
-            <!-- Left Navigation Items -->
-            <div class="primary-nav-group primary-nav-group--left flex gap-1">
-                <a class="primary-nav-item flex flex-col items-center justify-center" href="index.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Вести</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="sports.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Спорт</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="magazine.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Магазин</p>
-                </a>
-            </div>
-            <!-- Right Navigation Items -->
-            <div class="primary-nav-group primary-nav-group--right flex gap-1">
-                <a class="primary-nav-item flex flex-col items-center justify-center  primary-nav-item--active" href="latest-news.html" aria-current="page">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Најнови Вести</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="prognoza.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Прогноза</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="radio.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Радио</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="youtube.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">YouTube</p>
-                </a>
-            </div>
-        </div>
-        <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
-        
-        
-    </div>
-</div>
-    </div>
-
-    <!-- ======================= -->
-    <!-- MOBILE HEADER (< lg)    -->
-    <!-- ======================= -->
-    <div class="block lg:hidden max-w-3xl mx-auto w-full">
-        <div>
-    <!-- Mobile Header -->
-    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
-        <!-- Hamburger Menu Button -->
-        <button id="hamburger-menu-button"
+            >  <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /> </svg>  <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" /> </svg> </button> </div> </div>  <div class="pb-3 pt-4">  <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">  <div class="primary-nav-group primary-nav-group--left flex gap-1"> <a class="primary-nav-item flex flex-col items-center justify-center" href="index.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Вести</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="sports.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Спорт</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="magazine.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Магазин</p> </a> </div>  <div class="primary-nav-group primary-nav-group--right flex gap-1"> <a class="primary-nav-item flex flex-col items-center justify-center  primary-nav-item--active" href="latest-news.html" aria-current="page"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Најнови Вести</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="prognoza.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Прогноза</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="radio.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Радио</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="youtube.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">YouTube</p> </a> </div> </div>  </div> </div> </div>    <div class="block lg:hidden max-w-3xl mx-auto w-full"> <div>  <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">  <button id="hamburger-menu-button"
                 class="theme-text-primary p-2"
                 aria-label="Open navigation menu"
                 aria-controls="mobile-menu"
-                aria-expanded="false">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
-
-        <!-- Centered Title/Logo -->
-        <div class="flex-1 text-center leading-tight">
-            <a href="index.html" class="inline-block hover:underline">
-                <div class="theme-text-primary text-2xl font-bold uppercase tracking-wider">
+                aria-expanded="false"> <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> </button>  <div class="flex-1 text-center leading-tight"> <a href="index.html" class="inline-block hover:underline"> <div class="theme-text-primary text-2xl font-bold uppercase tracking-wider">
                     DAY.MK
-                </div>
-            </a>
-
-            <!-- Updated timestamp -->
-            <p class="theme-text-secondary text-xs font-normal mt-0.5">
-                обновено <span>12:24, 24.10.2026</span>
-            </p>
-        </div>
-
-        <!-- Search Icon -->
-        <button id="search-button-mobile" class="theme-text-primary p-2" aria-label="Open search dialog">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-            </svg>
-        </button>
-    </header>
-
-    <!-- Mobile Slide-out Menu -->
-    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
-    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
-        <div class="p-4">
-            <h2 class="theme-text-primary text-lg font-bold mb-4">Навигација</h2>
-            <nav class="flex flex-col gap-2">
-                <!-- LEFT NAV ITEMS -->
-                <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-0">
-                    <!-- Simple item (no subitems) -->
-                    
-
-                    <!-- Expandable item (with subitems) -->
-                    <div class="flex flex-col">
-                        <!-- Parent row: label + chevron -->
-                        <div class="flex items-center justify-between">
-                            <a href="index.html"
-                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Вести</a>
-                            <button type="button"
+                </div> </a>  <p class="theme-text-secondary text-xs font-normal mt-0.5">
+                обновено <span>22:15, 31.10.2026</span> </p> </div>  <button id="search-button-mobile" class="theme-text-primary p-2" aria-label="Open search dialog"> <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </button> </header>  <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div> <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full"> <div class="p-4"> <h2 class="theme-text-primary text-lg font-bold mb-4">Навигација</h2> <nav class="flex flex-col gap-2">  <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-0">   <div class="flex flex-col">  <div class="flex items-center justify-between"> <a href="index.html"
+                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Вести</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="false" data-subnav-toggle="left-0" aria-controls="left-subnav-0">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Sub-items -->
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
-                             id="left-subnav-0" data-subnav-id="left-0">
-                            <a href="macedonia.html"
+                                    aria-expanded="false" data-subnav-toggle="left-0" aria-controls="left-subnav-0"> <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div>  <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
+                             id="left-subnav-0" data-subnav-id="left-0"> <a href="macedonia.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Македонија</a><a href="economy.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Економија</a><a href="balkan.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Балкан</a><a href="world.html"
@@ -253,69 +52,25 @@
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Република</a><a href="culture.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Култура</a><a href="technology.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Технологија</a><a href="scene.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Сцена</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-1">
-                    <!-- Simple item (no subitems) -->
-                    
-
-                    <!-- Expandable item (with subitems) -->
-                    <div class="flex flex-col">
-                        <!-- Parent row: label + chevron -->
-                        <div class="flex items-center justify-between">
-                            <a href="sports.html"
-                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Спорт</a>
-                            <button type="button"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Сцена</a> </div> </div> </div> <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-1">   <div class="flex flex-col">  <div class="flex items-center justify-between"> <a href="sports.html"
+                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Спорт</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="false" data-subnav-toggle="left-1" aria-controls="left-subnav-1">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Sub-items -->
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
-                             id="left-subnav-1" data-subnav-id="left-1">
-                            <a href="sport-football.html"
+                                    aria-expanded="false" data-subnav-toggle="left-1" aria-controls="left-subnav-1"> <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div>  <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
+                             id="left-subnav-1" data-subnav-id="left-1"> <a href="sport-football.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Кошарка</a><a href="sport-handball.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Тенис</a><a href="sport-automoto.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Автомото</a><a href="sport-othersports.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Останато</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-2">
-                    <!-- Simple item (no subitems) -->
-                    
-
-                    <!-- Expandable item (with subitems) -->
-                    <div class="flex flex-col">
-                        <!-- Parent row: label + chevron -->
-                        <div class="flex items-center justify-between">
-                            <a href="magazine.html"
-                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Магазин</a>
-                            <button type="button"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Останато</a> </div> </div> </div> <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-2">   <div class="flex flex-col">  <div class="flex items-center justify-between"> <a href="magazine.html"
+                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Магазин</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="false" data-subnav-toggle="left-2" aria-controls="left-subnav-2">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Sub-items -->
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
-                             id="left-subnav-2" data-subnav-id="left-2">
-                            <a href="magazine-fun.html"
+                                    aria-expanded="false" data-subnav-toggle="left-2" aria-controls="left-subnav-2"> <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div>  <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
+                             id="left-subnav-2" data-subnav-id="left-2"> <a href="magazine-fun.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Забава</a><a href="magazine-cars.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Автомобил</a><a href="magazine-life.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Живот</a><a href="magazine-travel.html"
@@ -323,970 +78,224 @@
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Здравје</a><a href="magazine-food.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Храна</a><a href="magazine-style.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Стил</a><a href="magazine-intimacy.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Интима</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RIGHT NAV ITEMS -->
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-0">
-                    <!-- Simple item -->
-                    <a href="latest-news.html"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Интима</a> </div> </div> </div>  <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-0">  <a href="latest-news.html"
                        class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2  mobile-nav-parent--active"
-                       aria-current="page">Најнови Вести</a>
-
-                    <!-- Expandable item -->
-                    
-                </div>
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-1">
-                    <!-- Simple item -->
-                    <a href="prognoza.html"
-                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Прогноза</a>
-
-                    <!-- Expandable item -->
-                    
-                </div>
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-2">
-                    <!-- Simple item -->
-                    <a href="radio.html"
-                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Радио</a>
-
-                    <!-- Expandable item -->
-                    
-                </div>
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-3">
-                    <!-- Simple item -->
-                    
-
-                    <!-- Expandable item -->
-                    <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                            <a href="youtube.html"
-                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">YouTube</a>
-                            <button type="button"
+                       aria-current="page">Најнови Вести</a>  </div> <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-1">  <a href="prognoza.html"
+                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Прогноза</a>  </div> <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-2">  <a href="radio.html"
+                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Радио</a>  </div> <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-3">   <div class="flex flex-col"> <div class="flex items-center justify-between"> <a href="youtube.html"
+                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">YouTube</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="false" data-subnav-toggle="right-3" aria-controls="right-subnav-3">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
-                             id="right-subnav-3" data-subnav-id="right-3">
-                            <a href="youtube-politics.html"
+                                    aria-expanded="false" data-subnav-toggle="right-3" aria-controls="right-subnav-3"> <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div> <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
+                             id="right-subnav-3" data-subnav-id="right-3"> <a href="youtube-politics.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Политика</a><a href="youtube-podcast.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Подкаст</a><a href="youtube-za-deca.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">За Деца</a>
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="my-3 theme-border-color" />
-
-                <!-- Other Utility Links (unchanged) -->
-                <button id="theme-toggle-mobile"
-                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
-                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
-                </button>
-            </nav>
-
-        </div>
-    </div>
-
-    <!-- Hidden desktop theme toggle button to leverage existing script -->
-    <button id="theme-toggle" class="hidden"></button>
-</div>
-    </div>
-
-    <!-- ======================= -->
-    <!-- MAIN CONTENT            -->
-    <!-- ======================= -->
-    <main class="w-full">
-
-        <!-- ====================================================== -->
-        <!-- DESKTOP VERSION (from real latest-news.html)          -->
-        <!-- ====================================================== -->
-        <div class="hidden lg:block">
-            <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-                <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
-
-                    <!-- Main Column -->
-                    <div class="lg:col-span-2 flex flex-col gap-6">
-                        <h1 class="theme-text-primary text-2xl font-bold mb-6">Day.mk - Најнови Вести (Страница 191)</h1>
-
-                        <!-- Article List -->
-                        <div class="flex flex-col divide-y theme-border-color">
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="hronika-три-лица-се-повредени-во-сообраќајката-на-мостот-беласица-summary-201724.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-201724.webp"
-                 alt="Три лица се повредени во сообраќајката на мостот „Беласица“"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">За деца</a> </div> </div> </div> <hr class="my-3 theme-border-color" />  <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left"> <span id="theme-toggle-mobile-text">Toggle Theme</span> </button> </nav> </div> </div>  <button id="theme-toggle" class="hidden"></button> </div> </div>    <main class="w-full">    <div class="hidden lg:block"> <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8"> <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">  <div class="lg:col-span-2 flex flex-col gap-6"> <h1 class="theme-text-primary text-2xl font-bold mb-6">Day.mk - Најнови Вести (Страница 191)</h1>  <div class="flex flex-col divide-y theme-border-color"> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="economy-германските-инвеститори-на-средба-со-вицепремиерот-summary-206844.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-206844.webp"
+                 alt="Германските инвеститори на средба со вицепремиерот Николовски – во фокус транспортната инфраструктура и деловните услови"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="eager" fetchpriority="high"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="hronika-три-лица-се-повредени-во-сообраќајката-на-мостот-беласица-summary-201724.html"
-               class="hover:underline">Три лица се повредени во сообраќајката на мостот „Беласица“</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Ѓуро Ѓоновиќ” кон трговскиот центар случена е сообраќајна незгода помеѓу патничко возило “мерцедес” со скопски регистарски ознаки управувано од М. П. од Скопје и патничко возило...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 74 часа</span>
-            </span>
-            <a class="news-pill news-pill--stories"
-               href="hronika-три-лица-се-повредени-во-сообраќајката-на-мостот-беласица-summary-201724.html">
-                <span>2</span>&nbsp;вести&nbsp;&raquo;
-            </a>
-            <a class="news-pill news-pill--summary"
-               href="hronika-три-лица-се-повредени-во-сообраќајката-на-мостот-беласица-summary-201724.html">сумирано&nbsp;&raquo;</a>
-            <a class="news-pill news-pill--questions"
+                 class="w-24 h-16 object-cover rounded-lg" loading="eager" fetchpriority="high"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="economy-германските-инвеститори-на-средба-со-вицепремиерот-summary-206844.html"
+               class="hover:underline">Германските инвеститори на средба со вицепремиерот Николовски – во фокус транспортната инфраструктура и деловните услови</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Вицепремиерот и министер за транспорт и врски, Александар Николоски, одржа средба со компаниите членки на Македонско-германското стопанско здружение и германските инвеститори во...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 79 часа</span> </span> <a class="news-pill news-pill--stories"
+               href="economy-германските-инвеститори-на-средба-со-вицепремиерот-summary-206844.html"> <span>2</span>&nbsp;вести&nbsp;&raquo;
+            </a> <a class="news-pill news-pill--summary"
+               href="economy-германските-инвеститори-на-средба-со-вицепремиерот-summary-206844.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                target="_blank"
                rel="noopener noreferrer"
-               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A2%D1%80%D0%B8%20%D0%BB%D0%B8%D1%86%D0%B0%20%D1%81%D0%B5%20%D0%BF%D0%BE%D0%B2%D1%80%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%20%D0%B2%D0%BE%20%D1%81%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D1%9C%D0%B0%D1%98%D0%BA%D0%B0%D1%82%D0%B0%20%D0%BD%D0%B0%20%D0%BC%D0%BE%D1%81%D1%82%D0%BE%D1%82%20%E2%80%9E%D0%91%D0%B5%D0%BB%D0%B0%D1%81%D0%B8%D1%86%D0%B0%E2%80%9C&amp;udm=50">
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D1%82%D0%B5%20%D0%B8%D0%BD%D0%B2%D0%B5%D1%81%D1%82%D0%B8%D1%82%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%81%D1%80%D0%B5%D0%B4%D0%B1%D0%B0%20%D1%81%D0%BE%20%D0%B2%D0%B8%D1%86%D0%B5%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D0%B5%D1%80%D0%BE%D1%82%20%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%20%E2%80%93%20%D0%B2%D0%BE%20%D1%84%D0%BE%D0%BA%D1%83%D1%81%20%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%BD%D0%B0%D1%82%D0%B0%20%D0%B8%D0%BD%D1%84%D1%80%D0%B0%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0%20%D0%B8%20%D0%B4%D0%B5%D0%BB%D0%BE%D0%B2%D0%BD%D0%B8%D1%82%D0%B5%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8&amp;udm=50">
                 прашања&nbsp;&raquo;
-            </a>
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="world-спејс-икс-и-тесла-размислуваат-за-спојување-маск-вели-дека-summary-201723.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-201723.webp"
-                 alt="Спејс Икс и Тесла размислуваат за спојување, Маск вели дека тоа е добра идеја"
+            </a> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="world-видео-расте-бројот-на-загинати-во-железничката-несреќа-во-summary-206843.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-206843.webp"
+                 alt="ВИДЕО: Расте бројот на загинати во железничката несреќа во Шпанија – Најмалку 64 жртви, ангажирана војската"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="world-спејс-икс-и-тесла-размислуваат-за-спојување-маск-вели-дека-summary-201723.html"
-               class="hover:underline">Спејс Икс и Тесла размислуваат за спојување, Маск вели дека тоа е добра идеја</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Приходите од вештачката интелигенција ја поттикнуваат трансформацијата на „Спејс икс“ Инаку, како што наведува новинската агенција, приходите на „Спејс икс“ во третиот квартал с...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 76 часа</span>
-            </span>
-            <a class="news-pill news-pill--stories"
-               href="world-спејс-икс-и-тесла-размислуваат-за-спојување-маск-вели-дека-summary-201723.html">
-                <span>2</span>&nbsp;вести&nbsp;&raquo;
-            </a>
-            <a class="news-pill news-pill--summary"
-               href="world-спејс-икс-и-тесла-размислуваат-за-спојување-маск-вели-дека-summary-201723.html">сумирано&nbsp;&raquo;</a>
-            <a class="news-pill news-pill--questions"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="world-видео-расте-бројот-на-загинати-во-железничката-несреќа-во-summary-206843.html"
+               class="hover:underline">ВИДЕО: Расте бројот на загинати во железничката несреќа во Шпанија – Најмалку 64 жртви, ангажирана војската</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Речиси 100 припадници на шпанската воена единица за итен одговор (УМЕ) беа распоредени на местото на тешката железничка несреќа. Најмалку 64 лица загинаа во железничка несреќа ш...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 77 часа</span> </span> <a class="news-pill news-pill--stories"
+               href="world-видео-расте-бројот-на-загинати-во-железничката-несреќа-во-summary-206843.html"> <span>2</span>&nbsp;вести&nbsp;&raquo;
+            </a> <a class="news-pill news-pill--summary"
+               href="world-видео-расте-бројот-на-загинати-во-железничката-несреќа-во-summary-206843.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                target="_blank"
                rel="noopener noreferrer"
-               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A1%D0%BF%D0%B5%D1%98%D1%81%20%D0%98%D0%BA%D1%81%20%D0%B8%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B8%D1%81%D0%BB%D1%83%D0%B2%D0%B0%D0%B0%D1%82%20%D0%B7%D0%B0%20%D1%81%D0%BF%D0%BE%D1%98%D1%83%D0%B2%D0%B0%D1%9A%D0%B5,%20%D0%9C%D0%B0%D1%81%D0%BA%20%D0%B2%D0%B5%D0%BB%D0%B8%20%D0%B4%D0%B5%D0%BA%D0%B0%20%D1%82%D0%BE%D0%B0%20%D0%B5%20%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%20%D0%B8%D0%B4%D0%B5%D1%98%D0%B0&amp;udm=50">
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%92%D0%98%D0%94%D0%95%D0%9E:%20%D0%A0%D0%B0%D1%81%D1%82%D0%B5%20%D0%B1%D1%80%D0%BE%D1%98%D0%BE%D1%82%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%B8%D0%BD%D0%B0%D1%82%D0%B8%20%D0%B2%D0%BE%20%D0%B6%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8%D1%87%D0%BA%D0%B0%D1%82%D0%B0%20%D0%BD%D0%B5%D1%81%D1%80%D0%B5%D1%9C%D0%B0%20%D0%B2%D0%BE%20%D0%A8%D0%BF%D0%B0%D0%BD%D0%B8%D1%98%D0%B0%20%E2%80%93%20%D0%9D%D0%B0%D1%98%D0%BC%D0%B0%D0%BB%D0%BA%D1%83%2064%20%D0%B6%D1%80%D1%82%D0%B2%D0%B8,%20%D0%B0%D0%BD%D0%B3%D0%B0%D0%B6%D0%B8%D1%80%D0%B0%D0%BD%D0%B0%20%D0%B2%D0%BE%D1%98%D1%81%D0%BA%D0%B0%D1%82%D0%B0&amp;udm=50">
                 прашања&nbsp;&raquo;
-            </a>
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="tehnologija-моделот-на-openai-оставил-тајни-упатства-како-идните-верзии-summary-201722.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%BE%D1%82+%D0%BD%D0%B0+OpenAI+%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%BB+%D1%82%D0%B0%D1%98%D0%BD%D0%B8+%D1%83%D0%BF%D0%B0%D1%82%D1%81%D1%82%D0%B2%D0%B0+%D0%BA%D0%B0%D0%BA%D0%BE+%D0%B8%D0%B4%D0%BD%D0%B8%D1%82%D0%B5+%D0%B2%D0%B5%D1%80%D0%B7%D0%B8%D0%B8+%D0%B4%D0%B0+%D0%BD%D0%B5+%D0%B3%D0%B8+%D1%81%D0%BB%D1%83%D1%88%D0%B0+%D0%BB%D1%83%D1%93%D0%B5%D1%82%D0%BE"
-                 alt="Моделот на OpenAI оставил тајни упатства како идните верзии да не ги слуша луѓето"
+            </a> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="republika-повреден-22-годишник-пренесен-во-болницата-во-гостивар-summary-206842.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-206842.webp"
+                 alt="Повреден 22 годишник пренесен во болницата во Гостивар, паднал од мопед што го возел без дозвола"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="tehnologija-моделот-на-openai-оставил-тајни-упатства-како-идните-верзии-summary-201722.html"
-               class="hover:underline">Моделот на OpenAI оставил тајни упатства како идните верзии да не ги слуша луѓето</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Во вториот забележан случај, вештачкиот разум покажал дека е подготвен да влезе во туѓ систем за да заврши задача.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 74 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="tehnologija-galaxy-z-flip8-како-мал-компјутер-напредни-good-lock-рутини-summary-201721.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-201721.webp"
-                 alt="Galaxy Z Flip8 како мал компјутер: Напредни Good Lock рутини, приспособени виџети и FlexWindow трикови"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="republika-повреден-22-годишник-пренесен-во-болницата-во-гостивар-summary-206842.html"
+               class="hover:underline">Повреден 22 годишник пренесен во болницата во Гостивар, паднал од мопед што го возел без дозвола</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">СВР Тетово соопшти дека вчера (27. во 17:25 часот во СВР Тетово, од Медицинскиот центар Гостивар било пријавено дека кај нив со повреди бил донесен Љ. Ф. од Чегране, гостиварско.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 77 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-сајси-мс-за-бракот-и-мајчинството-без-разбирање-нема-врска-summary-206841.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-206841.webp"
+                 alt="Сајси МС за бракот и мајчинството: „Без разбирање нема врска“"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="tehnologija-galaxy-z-flip8-како-мал-компјутер-напредни-good-lock-рутини-summary-201721.html"
-               class="hover:underline">Galaxy Z Flip8 како мал компјутер: Напредни Good Lock рутини, приспособени виџети и FlexWindow трикови</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Носењето преклоплив телефон одамна не е само прашање на стил или носталгија за „flip“ ерата – за секој вистински tech ентузијаст, тоа е целосно нов начин на интеракција со техно...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 74 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-казнет-со-2-000-евра-поради-прегласни-партизански-песни-summary-201720.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-201720.webp"
-                 alt="Казнет со 2.000 евра поради прегласни партизански песни: Наводно ги бркал соседите со звучник"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-сајси-мс-за-бракот-и-мајчинството-без-разбирање-нема-врска-summary-206841.html"
+               class="hover:underline">Сајси МС за бракот и мајчинството: „Без разбирање нема врска“</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Без разбирање нема врска“, истакна Сајси МС.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 77 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="world-шпанскиот-премиер-санчез-потресен-сум-од-сериозната-summary-206840.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-206840.webp"
+                 alt="ШПАНСКИОТ ПРЕМИЕР САНЧЕЗ: Потресен сум од сериозната железничка несреќа во Толедо"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-казнет-со-2-000-евра-поради-прегласни-партизански-песни-summary-201720.html"
-               class="hover:underline">Казнет со 2.000 евра поради прегласни партизански песни: Наводно ги бркал соседите со звучник</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">годишен маж од околината на Огулин во Хрватска е неправосилно казнет со 2. евра поради прегласно пуштање партизански песни и друга музика во дворот од куќата на неговите родители.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 74 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="world-грција-на-нозе-штрајкови-и-протести-против-скапотиот-живот-summary-201719.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-201719.webp"
-                 alt="ГРЦИЈА НА НОЗЕ, ШТРАЈКОВИ И ПРОТЕСТИ ПРОТИВ СКАПОТИОТ ЖИВОТ Студентите бараат поевтини кирии и повеќе пари за образованието"
-                 width="96"
-                 height="64"
-                 decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="world-грција-на-нозе-штрајкови-и-протести-против-скапотиот-живот-summary-201719.html"
-               class="hover:underline">ГРЦИЈА НА НОЗЕ, ШТРАЈКОВИ И ПРОТЕСТИ ПРОТИВ СКАПОТИОТ ЖИВОТ Студентите бараат поевтини кирии и повеќе пари за образованието</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Синдикатите и студентските организации во Грција денеска организираат национални штрајкови и протести во знак на протест против зголемените трошоци за живот и барањата за поголе...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 74 часа</span>
-            </span>
-            <a class="news-pill news-pill--stories"
-               href="world-грција-на-нозе-штрајкови-и-протести-против-скапотиот-живот-summary-201719.html">
-                <span>2</span>&nbsp;вести&nbsp;&raquo;
-            </a>
-            <a class="news-pill news-pill--summary"
-               href="world-грција-на-нозе-штрајкови-и-протести-против-скапотиот-живот-summary-201719.html">сумирано&nbsp;&raquo;</a>
-            <a class="news-pill news-pill--questions"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="world-шпанскиот-премиер-санчез-потресен-сум-од-сериозната-summary-206840.html"
+               class="hover:underline">ШПАНСКИОТ ПРЕМИЕР САНЧЕЗ: Потресен сум од сериозната железничка несреќа во Толедо</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Претседателот на (шпанската) влада, Педро Санчез, патува во Урду за да им пружи поддршка на тимовите на службите за итни случаи кои работат на местото на несреќата и да им испра...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 77 часа</span> </span> <a class="news-pill news-pill--stories"
+               href="world-шпанскиот-премиер-санчез-потресен-сум-од-сериозната-summary-206840.html"> <span>2</span>&nbsp;вести&nbsp;&raquo;
+            </a> <a class="news-pill news-pill--summary"
+               href="world-шпанскиот-премиер-санчез-потресен-сум-од-сериозната-summary-206840.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                target="_blank"
                rel="noopener noreferrer"
-               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%93%D0%A0%D0%A6%D0%98%D0%88%D0%90%20%D0%9D%D0%90%20%D0%9D%D0%9E%D0%97%D0%95,%20%D0%A8%D0%A2%D0%A0%D0%90%D0%88%D0%9A%D0%9E%D0%92%D0%98%20%D0%98%20%D0%9F%D0%A0%D0%9E%D0%A2%D0%95%D0%A1%D0%A2%D0%98%20%D0%9F%D0%A0%D0%9E%D0%A2%D0%98%D0%92%20%D0%A1%D0%9A%D0%90%D0%9F%D0%9E%D0%A2%D0%98%D0%9E%D0%A2%20%D0%96%D0%98%D0%92%D0%9E%D0%A2%20%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%82%D0%B5%20%D0%B1%D0%B0%D1%80%D0%B0%D0%B0%D1%82%20%D0%BF%D0%BE%D0%B5%D0%B2%D1%82%D0%B8%D0%BD%D0%B8%20%D0%BA%D0%B8%D1%80%D0%B8%D0%B8%20%D0%B8%20%D0%BF%D0%BE%D0%B2%D0%B5%D1%9C%D0%B5%20%D0%BF%D0%B0%D1%80%D0%B8%20%D0%B7%D0%B0%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D1%82%D0%BE&amp;udm=50">
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A8%D0%9F%D0%90%D0%9D%D0%A1%D0%9A%D0%98%D0%9E%D0%A2%20%D0%9F%D0%A0%D0%95%D0%9C%D0%98%D0%95%D0%A0%20%D0%A1%D0%90%D0%9D%D0%A7%D0%95%D0%97:%20%D0%9F%D0%BE%D1%82%D1%80%D0%B5%D1%81%D0%B5%D0%BD%20%D1%81%D1%83%D0%BC%20%D0%BE%D0%B4%20%D1%81%D0%B5%D1%80%D0%B8%D0%BE%D0%B7%D0%BD%D0%B0%D1%82%D0%B0%20%D0%B6%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8%D1%87%D0%BA%D0%B0%20%D0%BD%D0%B5%D1%81%D1%80%D0%B5%D1%9C%D0%B0%20%D0%B2%D0%BE%20%D0%A2%D0%BE%D0%BB%D0%B5%D0%B4%D0%BE&amp;udm=50">
                 прашања&nbsp;&raquo;
-            </a>
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-резервните-делови-поскапеле-над-80-зошто-и-помал-судир-summary-201718.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-201718.webp"
-                 alt="Резервните делови поскапеле над 80% – зошто и помал судир станува голем трошок?"
+            </a> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="world-волк-нападна-осумгодишно-девојче-во-зоолошка-градина-во-summary-206839.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-206839.webp"
+                 alt="Волк нападна осумгодишно девојче во зоолошка градина во Германија"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-резервните-делови-поскапеле-над-80-зошто-и-помал-судир-summary-201718.html"
-               class="hover:underline">Резервните делови поскапеле над 80% – зошто и помал судир станува голем трошок?</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Во Германија цените на автомобилските резервни делови се зголемиле за повеќе од 80% од 2016 година.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 74 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-откриени-7-6-тони-кокаин-во-пратка-со-шеќер-дрогата-од-summary-201717.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-201717.webp"
-                 alt="Откриени 7,6 тони кокаин во пратка со шеќер: Дрогата од Колумбија била наменета за Европа "
-                 width="96"
-                 height="64"
-                 decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-откриени-7-6-тони-кокаин-во-пратка-со-шеќер-дрогата-од-summary-201717.html"
-               class="hover:underline">Откриени 7,6 тони кокаин во пратка со шеќер: Дрогата од Колумбија била наменета за Европа </a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Според него, дрогата била наменета за купувачи во Холандија.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 74 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="balkan-национални-штрајкови-и-протести-во-грција-поради-зголемените-summary-201715.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-201715.webp"
-                 alt="Национални штрајкови и протести во Грција поради зголемените трошоци"
-                 width="96"
-                 height="64"
-                 decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="balkan-национални-штрајкови-и-протести-во-грција-поради-зголемените-summary-201715.html"
-               class="hover:underline">Национални штрајкови и протести во Грција поради зголемените трошоци</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Синдикатите и студентските организации во Грција денеска организираат национални штрајкови и протести во знак на протест против зголемените трошоци за живот и барањата за поголе...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 74 часа</span>
-            </span>
-            <a class="news-pill news-pill--stories"
-               href="balkan-национални-штрајкови-и-протести-во-грција-поради-зголемените-summary-201715.html">
-                <span>3</span>&nbsp;вести&nbsp;&raquo;
-            </a>
-            <a class="news-pill news-pill--summary"
-               href="balkan-национални-штрајкови-и-протести-во-грција-поради-зголемените-summary-201715.html">сумирано&nbsp;&raquo;</a>
-            <a class="news-pill news-pill--questions"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="world-волк-нападна-осумгодишно-девојче-во-зоолошка-градина-во-summary-206839.html"
+               class="hover:underline">Волк нападна осумгодишно девојче во зоолошка градина во Германија</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Девојчето е пренесено во болница со хеликоптер на итната помош, а во моментот на нападот, покрај неа се наоѓаа уште две деца и вработен во зоолошката градина, пренесе „Шпигел“. ...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 77 часа</span> </span> <a class="news-pill news-pill--stories"
+               href="world-волк-нападна-осумгодишно-девојче-во-зоолошка-градина-во-summary-206839.html"> <span>2</span>&nbsp;вести&nbsp;&raquo;
+            </a> <a class="news-pill news-pill--summary"
+               href="world-волк-нападна-осумгодишно-девојче-во-зоолошка-градина-во-summary-206839.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                target="_blank"
                rel="noopener noreferrer"
-               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%B8%20%D1%88%D1%82%D1%80%D0%B0%D1%98%D0%BA%D0%BE%D0%B2%D0%B8%20%D0%B8%20%D0%BF%D1%80%D0%BE%D1%82%D0%B5%D1%81%D1%82%D0%B8%20%D0%B2%D0%BE%20%D0%93%D1%80%D1%86%D0%B8%D1%98%D0%B0%20%D0%BF%D0%BE%D1%80%D0%B0%D0%B4%D0%B8%20%D0%B7%D0%B3%D0%BE%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D0%B5%20%D1%82%D1%80%D0%BE%D1%88%D0%BE%D1%86%D0%B8&amp;udm=50">
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%92%D0%BE%D0%BB%D0%BA%20%D0%BD%D0%B0%D0%BF%D0%B0%D0%B4%D0%BD%D0%B0%20%D0%BE%D1%81%D1%83%D0%BC%D0%B3%D0%BE%D0%B4%D0%B8%D1%88%D0%BD%D0%BE%20%D0%B4%D0%B5%D0%B2%D0%BE%D1%98%D1%87%D0%B5%20%D0%B2%D0%BE%20%D0%B7%D0%BE%D0%BE%D0%BB%D0%BE%D1%88%D0%BA%D0%B0%20%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%BD%D0%B0%20%D0%B2%D0%BE%20%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%98%D0%B0&amp;udm=50">
                 прашања&nbsp;&raquo;
-            </a>
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="scena-видео-наташа-малинкова-позираше-со-ќерката-султана-ние-сме-summary-201714.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-201714.webp"
-                 alt="(Видео) Наташа Малинкова позираше со ќерката Султана: „Ние сме близначки“"
+            </a> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="macedonia-стојна-од-кратово-повторно-приведена-скопјани-ја-пријавиле-summary-206838.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-206838.webp"
+                 alt="Стојна од Кратово повторно приведена: скопјани ја пријавиле дека се обидела да им наплати влезници на „Куклица“ и им се заканувала"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="scena-видео-наташа-малинкова-позираше-со-ќерката-султана-ние-сме-summary-201714.html"
-               class="hover:underline">(Видео) Наташа Малинкова позираше со ќерката Султана: „Ние сме близначки“</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Македонската пејачка Наташа Малинкова привлече внимание на социјалните мрежи со нова објава на Инстаграм, на која позира заедно со својата постара ќерка Султана .</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 74 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                        </div>
-
-                        
-
-                        <!-- Pagination -->
-                        <div class="flex justify-center mt-6">
-    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
-
-        <!-- Previous -->
-        <a href="latest-news-page-190.html"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="macedonia-стојна-од-кратово-повторно-приведена-скопјани-ја-пријавиле-summary-206838.html"
+               class="hover:underline">Стојна од Кратово повторно приведена: скопјани ја пријавиле дека се обидела да им наплати влезници на „Куклица“ и им се заканувала</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Полицијата повторно ја приведе 41-годишната Стојна Димитровска од Кратово, откако двајца посетители пријавиле дека се обидела да им наплати влезници за туристичкиот локалитет „К...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 77 часа</span> </span> <a class="news-pill news-pill--stories"
+               href="macedonia-стојна-од-кратово-повторно-приведена-скопјани-ја-пријавиле-summary-206838.html"> <span>3</span>&nbsp;вести&nbsp;&raquo;
+            </a> <a class="news-pill news-pill--summary"
+               href="macedonia-стојна-од-кратово-повторно-приведена-скопјани-ја-пријавиле-summary-206838.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
+               target="_blank"
+               rel="noopener noreferrer"
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A1%D1%82%D0%BE%D1%98%D0%BD%D0%B0%20%D0%BE%D0%B4%20%D0%9A%D1%80%D0%B0%D1%82%D0%BE%D0%B2%D0%BE%20%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D0%BD%D0%BE%20%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B0:%20%D1%81%D0%BA%D0%BE%D0%BF%D1%98%D0%B0%D0%BD%D0%B8%20%D1%98%D0%B0%20%D0%BF%D1%80%D0%B8%D1%98%D0%B0%D0%B2%D0%B8%D0%BB%D0%B5%20%D0%B4%D0%B5%D0%BA%D0%B0%20%D1%81%D0%B5%20%D0%BE%D0%B1%D0%B8%D0%B4%D0%B5%D0%BB%D0%B0%20%D0%B4%D0%B0%20%D0%B8%D0%BC%20%D0%BD%D0%B0%D0%BF%D0%BB%D0%B0%D1%82%D0%B8%20%D0%B2%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8%D1%86%D0%B8%20%D0%BD%D0%B0%20%E2%80%9E%D0%9A%D1%83%D0%BA%D0%BB%D0%B8%D1%86%D0%B0%E2%80%9C%20%D0%B8%20%D0%B8%D0%BC%20%D1%81%D0%B5%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%BD%D1%83%D0%B2%D0%B0%D0%BB%D0%B0&amp;udm=50">
+                прашања&nbsp;&raquo;
+            </a> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="world-трамп-потврди-путин-и-зеленски-ќе-се-сретнат-summary-206837.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-206837.webp"
+                 alt="Трамп потврди: Путин и Зеленски ќе се сретнат"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="world-трамп-потврди-путин-и-зеленски-ќе-се-сретнат-summary-206837.html"
+               class="hover:underline">Трамп потврди: Путин и Зеленски ќе се сретнат</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Американскиот претседател Доналд Трамп изјави денес дека очекува наскоро да се одржи средба меѓу рускиот претседател Владимир Путин и украинскиот претседател Володимир Зеленски,...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 85 часа</span> </span> <a class="news-pill news-pill--stories"
+               href="world-трамп-потврди-путин-и-зеленски-ќе-се-сретнат-summary-206837.html"> <span>3</span>&nbsp;вести&nbsp;&raquo;
+            </a> <a class="news-pill news-pill--summary"
+               href="world-трамп-потврди-путин-и-зеленски-ќе-се-сретнат-summary-206837.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
+               target="_blank"
+               rel="noopener noreferrer"
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A2%D1%80%D0%B0%D0%BC%D0%BF%20%D0%BF%D0%BE%D1%82%D0%B2%D1%80%D0%B4%D0%B8:%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%20%D0%B8%20%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%20%D1%9C%D0%B5%20%D1%81%D0%B5%20%D1%81%D1%80%D0%B5%D1%82%D0%BD%D0%B0%D1%82&amp;udm=50">
+                прашања&nbsp;&raquo;
+            </a> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="balkan-напаѓачот-претходно-бил-депортиран-од-германија-нови-детали-summary-206836.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-206836.webp"
+                 alt="Напаѓачот претходно бил депортиран од Германија – Нови детали за терористичкиот напад во Белград"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="balkan-напаѓачот-претходно-бил-депортиран-од-германија-нови-детали-summary-206836.html"
+               class="hover:underline">Напаѓачот претходно бил депортиран од Германија – Нови детали за терористичкиот напад во Белград</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Тој додаде дека припадник на жандармеријата го убил напаѓачот во самоодбрана, но дека во таа прилика самиот бил полесно повреден, односно добил посекотина на лицето од ножот со ...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 85 часа</span> </span> <a class="news-pill news-pill--stories"
+               href="balkan-напаѓачот-претходно-бил-депортиран-од-германија-нови-детали-summary-206836.html"> <span>3</span>&nbsp;вести&nbsp;&raquo;
+            </a> <a class="news-pill news-pill--summary"
+               href="balkan-напаѓачот-претходно-бил-депортиран-од-германија-нови-детали-summary-206836.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
+               target="_blank"
+               rel="noopener noreferrer"
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9D%D0%B0%D0%BF%D0%B0%D1%93%D0%B0%D1%87%D0%BE%D1%82%20%D0%BF%D1%80%D0%B5%D1%82%D1%85%D0%BE%D0%B4%D0%BD%D0%BE%20%D0%B1%D0%B8%D0%BB%20%D0%B4%D0%B5%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%B0%D0%BD%20%D0%BE%D0%B4%20%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%98%D0%B0%20%E2%80%93%20%D0%9D%D0%BE%D0%B2%D0%B8%20%D0%B4%D0%B5%D1%82%D0%B0%D0%BB%D0%B8%20%D0%B7%D0%B0%20%D1%82%D0%B5%D1%80%D0%BE%D1%80%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%BA%D0%B8%D0%BE%D1%82%20%D0%BD%D0%B0%D0%BF%D0%B0%D0%B4%20%D0%B2%D0%BE%20%D0%91%D0%B5%D0%BB%D0%B3%D1%80%D0%B0%D0%B4&amp;udm=50">
+                прашања&nbsp;&raquo;
+            </a> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-есенска-декорација-без-пари-како-со-тикви-шишарки-и-суви-summary-206835.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-206835.webp"
+                 alt="Есенска декорација без пари: Како со тикви, шишарки и суви портокали да го направите домот топол"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-есенска-декорација-без-пари-како-со-тикви-шишарки-и-суви-summary-206835.html"
+               class="hover:underline">Есенска декорација без пари: Како со тикви, шишарки и суви портокали да го направите домот топол</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Продавниците веќе се полни со есенска декорација: вештачки лисја, керамички тикви и мирисни гранчиња.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 77 часа</span> </span> </div> </div> </div> </div>  <div class="flex justify-center mt-6"> <nav class="inline-flex items-center space-x-1" aria-label="Pagination">  <a href="latest-news-page-190.html"
            class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
-           aria-label="Previous">&laquo;</a>
-
-        <!-- Page numbers (max 10) -->
-        
-            
-                <a href="latest-news-page-187.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">187</a>
-            
-                <a href="latest-news-page-188.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">188</a>
-            
-                <a href="latest-news-page-189.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">189</a>
-            
-                <a href="latest-news-page-190.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">190</a>
-            
-                <a href="latest-news-page-191.html"
-                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">191</a>
-            
-                <a href="latest-news-page-192.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">192</a>
-            
-                <a href="latest-news-page-193.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">193</a>
-            
-                <a href="latest-news-page-194.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">194</a>
-            
-                <a href="latest-news-page-195.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">195</a>
-            
-                <a href="latest-news-page-196.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">196</a>
-            
-        
-
-        <!-- Next -->
-        <a href="latest-news-page-192.html"
+           aria-label="Previous">&laquo;</a>  <a href="latest-news-page-187.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">187</a> <a href="latest-news-page-188.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">188</a> <a href="latest-news-page-189.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">189</a> <a href="latest-news-page-190.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">190</a> <a href="latest-news-page-191.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">191</a> <a href="latest-news-page-192.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">192</a> <a href="latest-news-page-193.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">193</a> <a href="latest-news-page-194.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">194</a> <a href="latest-news-page-195.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">195</a> <a href="latest-news-page-196.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">196</a>  <a href="latest-news-page-192.html"
            class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
-           aria-label="Next">&raquo;</a>
-    </nav>
-</div>
-                    </div>
-
-                    <!-- Right Sidebar / Ads -->
-                    <div class="lg:col-span-1 flex flex-col gap-6">
-
-                        <!-- Spotlight Ad -->
-                        <div class="flex flex-col rounded-lg theme-bg-secondary border theme-border-color shadow-lg overflow-hidden">
-                            <a href="https://google.com"
-                               class="w-full aspect-[16/9] bg-center bg-no-repeat bg-cover rounded-t-lg"
-                               style="background-image: url(&#39;https://placehold.co/150x300/0000FF/FFFFFF?text=Your+Ad+Here&#39;)">
-                            </a>
-                            <div class="p-4 flex flex-col gap-1">
-                                <p class="theme-text-primary text-base font-bold">Special Offer for Readers!</p>
-                                <p class="theme-text-secondary text-sm">Check out our exclusive deals.</p>
-                                <a href="https://google.com"
-                                   class="text-xs font-bold text-blue-600 hover:underline mt-2">Повеќе</a>
-                            </div>
-                        </div>
-
-                        <!-- Secondary Spotlight Ad -->
-                        <div class="flex flex-col rounded-lg theme-bg-secondary border theme-border-color shadow-lg overflow-hidden">
-                            <a href="marketing.html"
-                               class="w-full aspect-[16/4.5] bg-center bg-no-repeat bg-cover rounded-t-lg"
-                               style="background-image: url(&#39;https://placehold.co/150x300/FF4500/FFFFFF?text=Your+Ad+Here&#39;)">
-                            </a>
-                            </a>
-                            <div class="p-4 flex flex-col gap-1">
-                                <p class="theme-text-primary text-base font-bold">New Arrivals!</p>
-                                <p class="theme-text-secondary text-sm">Browse our fresh collection.</p>
-                                <a href="marketing.html"
-                                   class="text-xs font-bold text-blue-600 hover:underline mt-2">Повеќе</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ====================================================== -->
-        <!-- MOBILE VERSION (from real latest-news-mobile.html)     -->
-        <!-- ====================================================== -->
-        <div class="block lg:hidden">
-            <div class="max-w-3xl mx-auto w-full">
-                <div class="p-2 sm:p-4">
-
-                    <p class="theme-text-primary text-2xl font-bold mb-4 px-2">Најнови Вести</p>
-
-                    <!-- Top Mobile Ad -->
-                    <div id="mobile-ad-container-top" class="mb-4">
-                        <a id="mobile-ad-link-top"
-                           class="block w-full aspect-[8/1] bg-center bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                    </div>
-
-                    <!-- Article Cards -->
-                    <div class="flex flex-col gap-4">
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="hronika-три-лица-се-повредени-во-сообраќајката-на-мостот-беласица-summary-201724.html" class="flex gap-3">
-                                    <img src="images/cache/summary-201724.webp" alt="Три лица се повредени во сообраќајката на мостот „Беласица“"
+           aria-label="Next">&raquo;</a> </nav> </div> </div>  <div class="lg:col-span-1 flex flex-col gap-6">   </div> </div> </div> </div>    <div class="block lg:hidden"> <div class="max-w-3xl mx-auto w-full"> <div class="p-2 sm:p-4"> <p class="theme-text-primary text-2xl font-bold mb-4 px-2">Најнови Вести</p>  <div id="mobile-ad-container-top" class="mb-4"> <a id="mobile-ad-link-top"
+                           class="block w-full aspect-[8/1] bg-center bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a> </div>  <div class="flex flex-col gap-4"> <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="economy-германските-инвеститори-на-средба-со-вицепремиерот-summary-206844.html" class="flex gap-3"> <img src="images/cache/summary-206844.webp" alt="Германските инвеститори на средба со вицепремиерот Николовски – во фокус транспортната инфраструктура и деловните услови"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="eager" fetchpriority="high"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Три лица се повредени во сообраќајката на мостот „Беласица“</h3>
-                                        <p class="theme-text-secondary text-sm">Ѓуро Ѓоновиќ” кон трговскиот центар случена е сообраќајна незгода помеѓу патничко возило “мерцедес” со скопски регистарски ознаки управувано од М. ...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 74 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="world-спејс-икс-и-тесла-размислуваат-за-спојување-маск-вели-дека-summary-201723.html" class="flex gap-3">
-                                    <img src="images/cache/summary-201723.webp" alt="Спејс Икс и Тесла размислуваат за спојување, Маск вели дека тоа е добра идеја"
+                                         class="w-24 h-24 object-cover rounded-md" loading="eager" fetchpriority="high"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">Германските инвеститори на средба со вицепремиерот Николовски – во фокус транспортната инфраструктура и деловните услови</h3> <p class="theme-text-secondary text-sm">Вицепремиерот и министер за транспорт и врски, Александар Николоски, одржа средба со компаниите членки на Македонско-германското стопанско здружени...</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 79 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="world-видео-расте-бројот-на-загинати-во-железничката-несреќа-во-summary-206843.html" class="flex gap-3"> <img src="images/cache/summary-206843.webp" alt="ВИДЕО: Расте бројот на загинати во железничката несреќа во Шпанија – Најмалку 64 жртви, ангажирана војската"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Спејс Икс и Тесла размислуваат за спојување, Маск вели дека тоа е добра идеја</h3>
-                                        <p class="theme-text-secondary text-sm">Приходите од вештачката интелигенција ја поттикнуваат трансформацијата на „Спејс икс“ Инаку, како што наведува новинската агенција, приходите на „С...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 76 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="tehnologija-моделот-на-openai-оставил-тајни-упатства-како-идните-верзии-summary-201722.html" class="flex gap-3">
-                                    <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%BE%D1%82+%D0%BD%D0%B0+OpenAI+%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%BB+%D1%82%D0%B0%D1%98%D0%BD%D0%B8+%D1%83%D0%BF%D0%B0%D1%82%D1%81%D1%82%D0%B2%D0%B0+%D0%BA%D0%B0%D0%BA%D0%BE+%D0%B8%D0%B4%D0%BD%D0%B8%D1%82%D0%B5+%D0%B2%D0%B5%D1%80%D0%B7%D0%B8%D0%B8+%D0%B4%D0%B0+%D0%BD%D0%B5+%D0%B3%D0%B8+%D1%81%D0%BB%D1%83%D1%88%D0%B0+%D0%BB%D1%83%D1%93%D0%B5%D1%82%D0%BE" alt="Моделот на OpenAI оставил тајни упатства како идните верзии да не ги слуша луѓето"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">ВИДЕО: Расте бројот на загинати во железничката несреќа во Шпанија – Најмалку 64 жртви, ангажирана војската</h3> <p class="theme-text-secondary text-sm">Речиси 100 припадници на шпанската воена единица за итен одговор (УМЕ) беа распоредени на местото на тешката железничка несреќа. Најмалку 64 лица з...</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 77 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="republika-повреден-22-годишник-пренесен-во-болницата-во-гостивар-summary-206842.html" class="flex gap-3"> <img src="images/cache/summary-206842.webp" alt="Повреден 22 годишник пренесен во болницата во Гостивар, паднал од мопед што го возел без дозвола"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Моделот на OpenAI оставил тајни упатства како идните верзии да не ги слуша луѓето</h3>
-                                        <p class="theme-text-secondary text-sm">Во вториот забележан случај, вештачкиот разум покажал дека е подготвен да влезе во туѓ систем за да заврши задача.</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 74 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="tehnologija-galaxy-z-flip8-како-мал-компјутер-напредни-good-lock-рутини-summary-201721.html" class="flex gap-3">
-                                    <img src="images/cache/summary-201721.webp" alt="Galaxy Z Flip8 како мал компјутер: Напредни Good Lock рутини, приспособени виџети и FlexWindow трикови"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">Повреден 22 годишник пренесен во болницата во Гостивар, паднал од мопед што го возел без дозвола</h3> <p class="theme-text-secondary text-sm">СВР Тетово соопшти дека вчера (27. во 17:25 часот во СВР Тетово, од Медицинскиот центар Гостивар било пријавено дека кај нив со повреди бил донесен...</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 77 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="magazine-сајси-мс-за-бракот-и-мајчинството-без-разбирање-нема-врска-summary-206841.html" class="flex gap-3"> <img src="images/cache/summary-206841.webp" alt="Сајси МС за бракот и мајчинството: „Без разбирање нема врска“"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Galaxy Z Flip8 како мал компјутер: Напредни Good Lock рутини, приспособени виџети и FlexWindow трикови</h3>
-                                        <p class="theme-text-secondary text-sm">Носењето преклоплив телефон одамна не е само прашање на стил или носталгија за „flip“ ерата – за секој вистински tech ентузијаст, тоа е целосно нов...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 74 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="magazine-казнет-со-2-000-евра-поради-прегласни-партизански-песни-summary-201720.html" class="flex gap-3">
-                                    <img src="images/cache/summary-201720.webp" alt="Казнет со 2.000 евра поради прегласни партизански песни: Наводно ги бркал соседите со звучник"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">Сајси МС за бракот и мајчинството: „Без разбирање нема врска“</h3> <p class="theme-text-secondary text-sm">Без разбирање нема врска“, истакна Сајси МС.</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 77 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="world-шпанскиот-премиер-санчез-потресен-сум-од-сериозната-summary-206840.html" class="flex gap-3"> <img src="images/cache/summary-206840.webp" alt="ШПАНСКИОТ ПРЕМИЕР САНЧЕЗ: Потресен сум од сериозната железничка несреќа во Толедо"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Казнет со 2.000 евра поради прегласни партизански песни: Наводно ги бркал соседите со звучник</h3>
-                                        <p class="theme-text-secondary text-sm">годишен маж од околината на Огулин во Хрватска е неправосилно казнет со 2. евра поради прегласно пуштање партизански песни и друга музика во дворот...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 74 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            <div id="mobile-ad-container-mid" class="my-6">
-                                <a id="mobile-ad-link-mid"
-                                   class="block w-full aspect-[8/1] bg-center bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                            </div>
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="world-грција-на-нозе-штрајкови-и-протести-против-скапотиот-живот-summary-201719.html" class="flex gap-3">
-                                    <img src="images/cache/summary-201719.webp" alt="ГРЦИЈА НА НОЗЕ, ШТРАЈКОВИ И ПРОТЕСТИ ПРОТИВ СКАПОТИОТ ЖИВОТ Студентите бараат поевтини кирии и повеќе пари за образованието"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">ШПАНСКИОТ ПРЕМИЕР САНЧЕЗ: Потресен сум од сериозната железничка несреќа во Толедо</h3> <p class="theme-text-secondary text-sm">Претседателот на (шпанската) влада, Педро Санчез, патува во Урду за да им пружи поддршка на тимовите на службите за итни случаи кои работат на мест...</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 77 часа</span> </div> </div> </a> </div>  <div id="mobile-ad-container-mid" class="my-6"> <a id="mobile-ad-link-mid"
+                                   class="block w-full aspect-[8/1] bg-center bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a> </div> <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="world-волк-нападна-осумгодишно-девојче-во-зоолошка-градина-во-summary-206839.html" class="flex gap-3"> <img src="images/cache/summary-206839.webp" alt="Волк нападна осумгодишно девојче во зоолошка градина во Германија"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">ГРЦИЈА НА НОЗЕ, ШТРАЈКОВИ И ПРОТЕСТИ ПРОТИВ СКАПОТИОТ ЖИВОТ Студентите бараат поевтини кирии и повеќе пари за образованието</h3>
-                                        <p class="theme-text-secondary text-sm">Синдикатите и студентските организации во Грција денеска организираат национални штрајкови и протести во знак на протест против зголемените трошоци...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 74 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="magazine-резервните-делови-поскапеле-над-80-зошто-и-помал-судир-summary-201718.html" class="flex gap-3">
-                                    <img src="images/cache/summary-201718.webp" alt="Резервните делови поскапеле над 80% – зошто и помал судир станува голем трошок?"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">Волк нападна осумгодишно девојче во зоолошка градина во Германија</h3> <p class="theme-text-secondary text-sm">Девојчето е пренесено во болница со хеликоптер на итната помош, а во моментот на нападот, покрај неа се наоѓаа уште две деца и вработен во зоолошка...</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 77 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="macedonia-стојна-од-кратово-повторно-приведена-скопјани-ја-пријавиле-summary-206838.html" class="flex gap-3"> <img src="images/cache/summary-206838.webp" alt="Стојна од Кратово повторно приведена: скопјани ја пријавиле дека се обидела да им наплати влезници на „Куклица“ и им се заканувала"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Резервните делови поскапеле над 80% – зошто и помал судир станува голем трошок?</h3>
-                                        <p class="theme-text-secondary text-sm">Во Германија цените на автомобилските резервни делови се зголемиле за повеќе од 80% од 2016 година.</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 74 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="magazine-откриени-7-6-тони-кокаин-во-пратка-со-шеќер-дрогата-од-summary-201717.html" class="flex gap-3">
-                                    <img src="images/cache/summary-201717.webp" alt="Откриени 7,6 тони кокаин во пратка со шеќер: Дрогата од Колумбија била наменета за Европа "
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">Стојна од Кратово повторно приведена: скопјани ја пријавиле дека се обидела да им наплати влезници на „Куклица“ и им се заканувала</h3> <p class="theme-text-secondary text-sm">Полицијата повторно ја приведе 41-годишната Стојна Димитровска од Кратово, откако двајца посетители пријавиле дека се обидела да им наплати влезниц...</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 77 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="world-трамп-потврди-путин-и-зеленски-ќе-се-сретнат-summary-206837.html" class="flex gap-3"> <img src="images/cache/summary-206837.webp" alt="Трамп потврди: Путин и Зеленски ќе се сретнат"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Откриени 7,6 тони кокаин во пратка со шеќер: Дрогата од Колумбија била наменета за Европа </h3>
-                                        <p class="theme-text-secondary text-sm">Според него, дрогата била наменета за купувачи во Холандија.</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 74 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="balkan-национални-штрајкови-и-протести-во-грција-поради-зголемените-summary-201715.html" class="flex gap-3">
-                                    <img src="images/cache/summary-201715.webp" alt="Национални штрајкови и протести во Грција поради зголемените трошоци"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">Трамп потврди: Путин и Зеленски ќе се сретнат</h3> <p class="theme-text-secondary text-sm">Американскиот претседател Доналд Трамп изјави денес дека очекува наскоро да се одржи средба меѓу рускиот претседател Владимир Путин и украинскиот п...</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 85 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="balkan-напаѓачот-претходно-бил-депортиран-од-германија-нови-детали-summary-206836.html" class="flex gap-3"> <img src="images/cache/summary-206836.webp" alt="Напаѓачот претходно бил депортиран од Германија – Нови детали за терористичкиот напад во Белград"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Национални штрајкови и протести во Грција поради зголемените трошоци</h3>
-                                        <p class="theme-text-secondary text-sm">Синдикатите и студентските организации во Грција денеска организираат национални штрајкови и протести во знак на протест против зголемените трошоци...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 74 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="scena-видео-наташа-малинкова-позираше-со-ќерката-султана-ние-сме-summary-201714.html" class="flex gap-3">
-                                    <img src="images/cache/summary-201714.webp" alt="(Видео) Наташа Малинкова позираше со ќерката Султана: „Ние сме близначки“"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">Напаѓачот претходно бил депортиран од Германија – Нови детали за терористичкиот напад во Белград</h3> <p class="theme-text-secondary text-sm">Тој додаде дека припадник на жандармеријата го убил напаѓачот во самоодбрана, но дека во таа прилика самиот бил полесно повреден, односно добил пос...</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 85 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="magazine-есенска-декорација-без-пари-како-со-тикви-шишарки-и-суви-summary-206835.html" class="flex gap-3"> <img src="images/cache/summary-206835.webp" alt="Есенска декорација без пари: Како со тикви, шишарки и суви портокали да го направите домот топол"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">(Видео) Наташа Малинкова позираше со ќерката Султана: „Ние сме близначки“</h3>
-                                        <p class="theme-text-secondary text-sm">Македонската пејачка Наташа Малинкова привлече внимание на социјалните мрежи со нова објава на Инстаграм, на која позира заедно со својата постара ...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 74 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                    </div>
-
-                    <!-- Pagination -->
-                    <div class="flex justify-center mt-6">
-    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
-
-        <!-- Previous -->
-        <a href="latest-news-page-190.html"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">Есенска декорација без пари: Како со тикви, шишарки и суви портокали да го направите домот топол</h3> <p class="theme-text-secondary text-sm">Продавниците веќе се полни со есенска декорација: вештачки лисја, керамички тикви и мирисни гранчиња.</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 77 часа</span> </div> </div> </a> </div>  </div>  <div class="flex justify-center mt-6"> <nav class="inline-flex items-center space-x-1" aria-label="Pagination">  <a href="latest-news-page-190.html"
            class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
-           aria-label="Previous">&laquo;</a>
-
-        <!-- Page numbers (max 10) -->
-        
-            
-                <a href="latest-news-page-187.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">187</a>
-            
-                <a href="latest-news-page-188.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">188</a>
-            
-                <a href="latest-news-page-189.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">189</a>
-            
-                <a href="latest-news-page-190.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">190</a>
-            
-                <a href="latest-news-page-191.html"
-                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">191</a>
-            
-                <a href="latest-news-page-192.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">192</a>
-            
-                <a href="latest-news-page-193.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">193</a>
-            
-                <a href="latest-news-page-194.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">194</a>
-            
-                <a href="latest-news-page-195.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">195</a>
-            
-                <a href="latest-news-page-196.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">196</a>
-            
-        
-
-        <!-- Next -->
-        <a href="latest-news-page-192.html"
+           aria-label="Previous">&laquo;</a>  <a href="latest-news-page-187.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">187</a> <a href="latest-news-page-188.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">188</a> <a href="latest-news-page-189.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">189</a> <a href="latest-news-page-190.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">190</a> <a href="latest-news-page-191.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">191</a> <a href="latest-news-page-192.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">192</a> <a href="latest-news-page-193.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">193</a> <a href="latest-news-page-194.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">194</a> <a href="latest-news-page-195.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">195</a> <a href="latest-news-page-196.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">196</a>  <a href="latest-news-page-192.html"
            class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
-           aria-label="Next">&raquo;</a>
-    </nav>
-</div>
-
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="theme-bg-secondary py-8 mt-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
-        <!-- Disclaimer Text -->
-        <p class="text-sm leading-relaxed mb-6">
+           aria-label="Next">&raquo;</a> </nav> </div> </div> </div> </div> </main>  <footer class="theme-bg-secondary py-8 mt-12"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">  <p class="text-sm leading-relaxed mb-6">
             Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
             Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
             <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
-        </p>
-
-        <!-- Static Links with Thymeleaf relative URLs -->
-        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
-            <a href="sources.html" class="hover:underline theme-text-primary">Извори</a>
-            <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
-            <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
-            <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
-            <a href="blog.html" class="hover:underline theme-text-primary">Блог</a>
-            <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a>
-            <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
-            <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
-        </div>
-    </div>
-
-    <!-- NEW: Search Modal HTML Structure -->
-    <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true">
-        <div class="flex items-start justify-center min-h-screen pt-16">
-            <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2>
-                    <button id="close-search-modal" class="theme-text-primary" aria-label="Close search">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    </button>
-                </div>
-                <label for="search-input" class="sr-only">Search keywords</label>
-                <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4" autocomplete="off">
-                <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto" role="status" aria-live="polite" aria-busy="false">
-                    <!-- Search results will be dynamically inserted here -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add Lunr.js library and the search script -->
-
-
-
-</footer>
-
-</div>
-
-<!-- Mobile ads data -->
-<script>
-    window.mobileTopAdsData = [{"id":"mobileTopAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Your+Mobile+Ad+Here+1","title":"Mobile Exclusive Offer","description":"Special deal for mobile users.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"},{"id":"mobileTopAd2","imageUrl":"https:\/\/placehold.co\/600x75\/DAF7A6\/000000?text=Your+Mobile+Ad+Here+2","title":"New Mobile Feature","description":"Check out our new mobile feature.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"}];
-    window.mobileMidAdsData = [{"id":"mobileMidAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Your+Mobile+Ad+Here+1","title":"Don't Miss This!","description":"Another great offer just for you.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"},{"id":"mobileMidAd2","imageUrl":"https:\/\/placehold.co\/600x75\/C70039\/FFFFFF?text=Your+Mobile+Ad+Here+2","title":"Scroll-Stopping Savings","description":"Great savings await.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"}];
-</script>
-
-<div>
-    <script>
+        </p>  <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold"> <a href="sources.html" class="hover:underline theme-text-primary">Извори</a> <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a> <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a> <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a> <a href="blog.html" class="hover:underline theme-text-primary">Блог</a> <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a> <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a> <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a> </div> </div>  <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true"> <div class="flex items-start justify-center min-h-screen pt-16"> <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6"> <div class="flex justify-between items-center mb-4"> <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2> <button id="close-search-modal" class="theme-text-primary" aria-label="Close search"> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> </button> </div> <label for="search-input" class="sr-only">Search keywords</label> <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4" autocomplete="off"> <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto" role="status" aria-live="polite" aria-busy="false">  </div> </div> </div> </div>  </footer> </div>  <script>
+    window.mobileTopAdsData = [{"id":"mobile_top_001","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Mobile+Top","title":"Mobile Top Banner","description":"A mobile top banner ad","url":"https:\/\/day.mk\/marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","provider":"LOCAL","active":true,"sortOrder":0,"width":null,"height":null,"googleClient":null,"googleSlot":null,"processedUrl":"https:\/\/day.mk\/marketing.html"}];
+    window.mobileMidAdsData = [{"id":"mobile_mid_001","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Mobile+Mid","title":"Mobile Mid Banner","description":"A mobile mid screen ad","url":"https:\/\/day.mk\/marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","provider":"LOCAL","active":true,"sortOrder":0,"width":null,"height":null,"googleClient":null,"googleSlot":null,"processedUrl":"https:\/\/day.mk\/marketing.html"}];
+</script> <div> <script>
     /*<![CDATA[*/
     const themeToggle = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement; // This refers to the <html> tag
@@ -1337,24 +346,9 @@
         }
     });
     /*]]>*/
-</script>
-
-
-    <script src="js/mobile-nav.js" defer></script>
-
-    <!-- PERF: Load search stack only on demand to reduce unused JS on first render. -->
-    <script src="js/search.js" defer></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
-    <script>
+</script> <script src="js/mobile-nav.js" defer></script>  <script src="js/search.js" defer></script> <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script> <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
-</script>
-    <!-- PERF: Keep ad rotation deferred to avoid blocking first content paint. -->
-    <script src="js/ad-rotation.js" defer></script>
-
-</div>
-</body>
-</html>
+</script>  <script src="js/ad-rotation.js" defer></script> </div> </body> </html>

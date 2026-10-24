@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="315">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Pre-paint theme (prevents flash/blink) -->
-    <script>
+<!DOCTYPE html> <html> <head> <meta charset="UTF-8"> <meta http-equiv="refresh" content="315"> <meta name="viewport" content="width=device-width, initial-scale=1">  <script>
         (function () {
             try {
                 var saved = localStorage.getItem('theme');
@@ -16,233 +8,40 @@
                 else document.documentElement.classList.remove('dark');
             } catch (e) {}
         })();
-    </script>
-
-    <!-- Title + favicon -->
-    <title>Day.mk - Најнови Вести (Страница 29)</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <!-- PERF: Preconnect to remote origins early to reduce DNS/TLS latency for mobile LCP. -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- PERF: Inline tiny critical styles so first paint is stable before deferred CSS arrives. -->
-    <style>
+    </script>  <title>Day.mk - Најнови Вести (Страница 29)</title> <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />  <link rel="dns-prefetch" href="//fonts.googleapis.com"> <link rel="dns-prefetch" href="//fonts.gstatic.com"> <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin /> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />  <style>
         html, body { font-family: Newsreader, "Noto Sans", sans-serif; margin: 0; }
         .theme-bg-primary { background-color: #ffffff; }
         .theme-text-primary { color: #1a1a1a; }
         html.dark .theme-bg-primary { background-color: #101a23; }
         html.dark .theme-text-primary { color: #ffffff; }
-    </style>
-
-    <!-- PERF: Preload font stylesheet and switch rel on load to reduce render-blocking CSS. -->
-    <link rel="preload" as="style"
+    </style>  <link rel="preload" as="style"
           href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript>
-        <link rel="stylesheet"
-              href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap" />
-    </noscript>
-
-    <!-- Meta Description -->
-    <meta name="description"
-          content=" Прелистајте ги најновите вести, страница 29."/>
-
-    <!-- Canonical URL (optional) -->
-    
-
-    <!-- Robots directives -->
-    <meta name="robots"
-          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
-
-    <!-- Hreflang -->
-    
-
-    <!-- Basic Open Graph for non-article pages -->
-    <meta property="og:site_name" content="Day.mk" />
-    <meta property="og:locale" content="mk_MK" />
-    <meta property="og:title" content="Day.mk - Најнови Вести (Страница 29)" />
-    <meta property="og:description"
-          content=" Прелистајте ги најновите вести, страница 29."/>
-    <meta property="og:type" content="website" />
-    
-    <meta property="og:image" content="https://day.mk/assets/logo.png" />
-
-    <!-- Twitter card for non-article pages -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Day.mk - Најнови Вести (Страница 29)" />
-    <meta name="twitter:description"
-          content=" Прелистајте ги најновите вести, страница 29."/>
-    <meta name="twitter:image" content="https://day.mk/assets/logo.png" />
-
-    <!-- PERF: Load generated Tailwind utilities as static CSS (no runtime CDN compiler). -->
-    <link rel="preload" as="style" href="css/tailwind.generated.css" />
-    <link rel="stylesheet" href="css/tailwind.generated.css" />
-    <!-- PERF: Keep explicit stylesheet link for reliability; preload remains as a fetch hint. -->
-    <link rel="preload" as="style" href="css/style.css" />
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body class="theme-bg-primary">
-<div class="relative flex min-h-screen flex-col theme-bg-primary overflow-x-hidden"
-     style='font-family: Newsreader, "Noto Sans", sans-serif;'>
-
-    <!-- ======================= -->
-    <!-- DESKTOP HEADER (lg+)    -->
-    <!-- ======================= -->
-    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-        <div>
-    <!-- Header section containing title and icons -->
-    <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color">
-        <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24">
-            <a href="index.html" class="hover:underline">DAY.MK</a>
-            <p class="theme-text-secondary text-sm font-normal text-center pb-2">
-                обновено <span>12:24, 24.10.2026</span>
-            </p>
-        </h2>
-
-        <div class="flex w-24 items-center justify-end">
-            <!-- NEW: Search Icon (Desktop) -->
-            <button id="search-button-desktop" aria-label="Open search"
-                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                </svg>
-            </button>
-
-            <!-- Weather Link Icon (Thermometer) -->
-            <a href="prognoza.html" aria-label="Weather Forecast"
-               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/>
-                </svg>
-            </a>
-            <!-- Day/Night Mode Toggle Button -->
-            <button id="theme-toggle"
+          onload="this.onload=null;this.rel='stylesheet'" /> <noscript> <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap" /> </noscript>  <meta name="description"
+          content=" Прелистајте ги најновите вести, страница 29."/>   <meta name="robots"
+          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />   <meta property="og:site_name" content="Day.mk" /> <meta property="og:locale" content="mk_MK" /> <meta property="og:title" content="Day.mk - Најнови Вести (Страница 29)" /> <meta property="og:description"
+          content=" Прелистајте ги најновите вести, страница 29."/> <meta property="og:type" content="website" /> <meta property="og:image" content="https://day.mk/assets/logo.png" />  <meta name="twitter:card" content="summary" /> <meta name="twitter:title" content="Day.mk - Најнови Вести (Страница 29)" /> <meta name="twitter:description"
+          content=" Прелистајте ги најновите вести, страница 29."/> <meta name="twitter:image" content="https://day.mk/assets/logo.png" />  <link rel="preload" as="style" href="css/tailwind.generated.css" /> <link rel="stylesheet" href="css/tailwind.generated.css" />  <link rel="preload" as="style" href="css/style.css" /> <link rel="stylesheet" href="css/style.css" /> </head> <body class="theme-bg-primary"> <div class="relative flex min-h-screen flex-col theme-bg-primary overflow-x-hidden"
+     style='font-family: Newsreader, "Noto Sans", sans-serif;'>    <div class="hidden lg:block max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8"> <div>  <div class="flex items-center theme-bg-primary p-4 pb-2 justify-between border-b theme-border-color"> <h2 class="theme-text-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-24"> <a href="index.html" class="hover:underline">DAY.MK</a> <p class="theme-text-secondary text-sm font-normal text-center pb-2">
+                обновено <span>22:15, 31.10.2026</span> </p> </h2> <div class="flex w-24 items-center justify-end">  <button id="search-button-desktop" aria-label="Open search"
+                    class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2"> <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </button>  <a href="prognoza.html" aria-label="Weather Forecast"
+               class="flex h-12 items-center justify-center overflow-hidden rounded-lg bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 mr-2"> <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"> <path d="M13 15.071v-5.571c0-.275-.225-.5-.5-.5s-.5.225-.5.5v5.571c-.86.224-1.5 1-1.5 1.929 0 1.103.896 2 2 2s2-.897 2-2c0-.929-.64-1.705-1.5-1.929zM16 13.459v-7.959c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5v7.959c-.922.902-1.5 2.151-1.5 3.541 0 2.757 2.243 5 5 5s5-2.243 5-5c0-1.39-.578-2.639-1.5-3.541zm-3.5 6.541c-1.654 0-3-1.346-3-3 0-1.105.607-2.062 1.5-2.583v-8.917c0-.827.673-1.5 1.5-1.5s1.5.673 1.5 1.5v8.917c.893.521 1.5 1.478 1.5 2.583 0 1.654-1.346 3-3 3z"/> </svg> </a>  <button id="theme-toggle"
                     class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent theme-text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
                     aria-label="Toggle dark mode"
-            >
-                <!-- Sun Icon (Light Mode) -->
-                <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-                <!-- Moon Icon (Dark Mode) -->
-                <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" />
-                </svg>
-            </button>
-        </div>
-    </div>
-    <!-- "обновено" time now correctly positioned below the header, within the main content wrapper -->
-
-
-    <div class="pb-3 pt-4">
-        <!-- Main Navigation Tabs (split into left and right) -->
-        <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
-            <!-- Left Navigation Items -->
-            <div class="primary-nav-group primary-nav-group--left flex gap-1">
-                <a class="primary-nav-item flex flex-col items-center justify-center" href="index.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Вести</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="sports.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Спорт</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="magazine.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Магазин</p>
-                </a>
-            </div>
-            <!-- Right Navigation Items -->
-            <div class="primary-nav-group primary-nav-group--right flex gap-1">
-                <a class="primary-nav-item flex flex-col items-center justify-center  primary-nav-item--active" href="latest-news.html" aria-current="page">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Најнови Вести</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="prognoza.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Прогноза</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="radio.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Радио</p>
-                </a><a class="primary-nav-item flex flex-col items-center justify-center" href="youtube.html">
-                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">YouTube</p>
-                </a>
-            </div>
-        </div>
-        <!-- Conditional Sub-Navigation Tabs (for any active parent nav item that has sub-items) -->
-        
-        
-    </div>
-</div>
-    </div>
-
-    <!-- ======================= -->
-    <!-- MOBILE HEADER (< lg)    -->
-    <!-- ======================= -->
-    <div class="block lg:hidden max-w-3xl mx-auto w-full">
-        <div>
-    <!-- Mobile Header -->
-    <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">
-        <!-- Hamburger Menu Button -->
-        <button id="hamburger-menu-button"
+            >  <svg id="sun-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M2 12h1m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /> </svg>  <svg id="moon-icon" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z" /> </svg> </button> </div> </div>  <div class="pb-3 pt-4">  <div class="flex justify-between border-b theme-border-color px-4 overflow-x-auto whitespace-nowrap scrollbar-hide">  <div class="primary-nav-group primary-nav-group--left flex gap-1"> <a class="primary-nav-item flex flex-col items-center justify-center" href="index.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Вести</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="sports.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Спорт</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="magazine.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Магазин</p> </a> </div>  <div class="primary-nav-group primary-nav-group--right flex gap-1"> <a class="primary-nav-item flex flex-col items-center justify-center  primary-nav-item--active" href="latest-news.html" aria-current="page"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Најнови Вести</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="prognoza.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Прогноза</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="radio.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">Радио</p> </a><a class="primary-nav-item flex flex-col items-center justify-center" href="youtube.html"> <p class="text-sm font-bold leading-normal tracking-[0.015em]">YouTube</p> </a> </div> </div>  </div> </div> </div>    <div class="block lg:hidden max-w-3xl mx-auto w-full"> <div>  <header class="flex items-center theme-bg-primary p-2 justify-between border-b theme-border-color sticky top-0 z-30">  <button id="hamburger-menu-button"
                 class="theme-text-primary p-2"
                 aria-label="Open navigation menu"
                 aria-controls="mobile-menu"
-                aria-expanded="false">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
-
-        <!-- Centered Title/Logo -->
-        <div class="flex-1 text-center leading-tight">
-            <a href="index.html" class="inline-block hover:underline">
-                <div class="theme-text-primary text-2xl font-bold uppercase tracking-wider">
+                aria-expanded="false"> <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> </button>  <div class="flex-1 text-center leading-tight"> <a href="index.html" class="inline-block hover:underline"> <div class="theme-text-primary text-2xl font-bold uppercase tracking-wider">
                     DAY.MK
-                </div>
-            </a>
-
-            <!-- Updated timestamp -->
-            <p class="theme-text-secondary text-xs font-normal mt-0.5">
-                обновено <span>12:24, 24.10.2026</span>
-            </p>
-        </div>
-
-        <!-- Search Icon -->
-        <button id="search-button-mobile" class="theme-text-primary p-2" aria-label="Open search dialog">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-            </svg>
-        </button>
-    </header>
-
-    <!-- Mobile Slide-out Menu -->
-    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
-    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full">
-        <div class="p-4">
-            <h2 class="theme-text-primary text-lg font-bold mb-4">Навигација</h2>
-            <nav class="flex flex-col gap-2">
-                <!-- LEFT NAV ITEMS -->
-                <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-0">
-                    <!-- Simple item (no subitems) -->
-                    
-
-                    <!-- Expandable item (with subitems) -->
-                    <div class="flex flex-col">
-                        <!-- Parent row: label + chevron -->
-                        <div class="flex items-center justify-between">
-                            <a href="index.html"
-                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Вести</a>
-                            <button type="button"
+                </div> </a>  <p class="theme-text-secondary text-xs font-normal mt-0.5">
+                обновено <span>22:15, 31.10.2026</span> </p> </div>  <button id="search-button-mobile" class="theme-text-primary p-2" aria-label="Open search dialog"> <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </button> </header>  <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div> <div id="mobile-menu" class="fixed top-0 left-0 h-full w-64 theme-bg-primary shadow-lg z-50 transform -translate-x-full"> <div class="p-4"> <h2 class="theme-text-primary text-lg font-bold mb-4">Навигација</h2> <nav class="flex flex-col gap-2">  <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-0">   <div class="flex flex-col">  <div class="flex items-center justify-between"> <a href="index.html"
+                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Вести</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="false" data-subnav-toggle="left-0" aria-controls="left-subnav-0">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Sub-items -->
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
-                             id="left-subnav-0" data-subnav-id="left-0">
-                            <a href="macedonia.html"
+                                    aria-expanded="false" data-subnav-toggle="left-0" aria-controls="left-subnav-0"> <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div>  <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
+                             id="left-subnav-0" data-subnav-id="left-0"> <a href="macedonia.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Македонија</a><a href="economy.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Економија</a><a href="balkan.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Балкан</a><a href="world.html"
@@ -253,69 +52,25 @@
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Република</a><a href="culture.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Култура</a><a href="technology.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Технологија</a><a href="scene.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Сцена</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-1">
-                    <!-- Simple item (no subitems) -->
-                    
-
-                    <!-- Expandable item (with subitems) -->
-                    <div class="flex flex-col">
-                        <!-- Parent row: label + chevron -->
-                        <div class="flex items-center justify-between">
-                            <a href="sports.html"
-                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Спорт</a>
-                            <button type="button"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Сцена</a> </div> </div> </div> <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-1">   <div class="flex flex-col">  <div class="flex items-center justify-between"> <a href="sports.html"
+                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Спорт</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="false" data-subnav-toggle="left-1" aria-controls="left-subnav-1">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Sub-items -->
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
-                             id="left-subnav-1" data-subnav-id="left-1">
-                            <a href="sport-football.html"
+                                    aria-expanded="false" data-subnav-toggle="left-1" aria-controls="left-subnav-1"> <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div>  <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
+                             id="left-subnav-1" data-subnav-id="left-1"> <a href="sport-football.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Фудбал</a><a href="sport-basketball.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Кошарка</a><a href="sport-handball.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Ракомет</a><a href="sport-tennis.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Тенис</a><a href="sport-automoto.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Автомото</a><a href="sport-othersports.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Останато</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-2">
-                    <!-- Simple item (no subitems) -->
-                    
-
-                    <!-- Expandable item (with subitems) -->
-                    <div class="flex flex-col">
-                        <!-- Parent row: label + chevron -->
-                        <div class="flex items-center justify-between">
-                            <a href="magazine.html"
-                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Магазин</a>
-                            <button type="button"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Останато</a> </div> </div> </div> <div class="mobile-nav-group flex flex-col  mobile-nav-group--left-2">   <div class="flex flex-col">  <div class="flex items-center justify-between"> <a href="magazine.html"
+                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">Магазин</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="false" data-subnav-toggle="left-2" aria-controls="left-subnav-2">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Sub-items -->
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
-                             id="left-subnav-2" data-subnav-id="left-2">
-                            <a href="magazine-fun.html"
+                                    aria-expanded="false" data-subnav-toggle="left-2" aria-controls="left-subnav-2"> <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div>  <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
+                             id="left-subnav-2" data-subnav-id="left-2"> <a href="magazine-fun.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Забава</a><a href="magazine-cars.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Автомобил</a><a href="magazine-life.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Живот</a><a href="magazine-travel.html"
@@ -323,979 +78,192 @@
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Здравје</a><a href="magazine-food.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Храна</a><a href="magazine-style.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Стил</a><a href="magazine-intimacy.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Интима</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RIGHT NAV ITEMS -->
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-0">
-                    <!-- Simple item -->
-                    <a href="latest-news.html"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Интима</a> </div> </div> </div>  <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-0">  <a href="latest-news.html"
                        class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2  mobile-nav-parent--active"
-                       aria-current="page">Најнови Вести</a>
-
-                    <!-- Expandable item -->
-                    
-                </div>
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-1">
-                    <!-- Simple item -->
-                    <a href="prognoza.html"
-                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Прогноза</a>
-
-                    <!-- Expandable item -->
-                    
-                </div>
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-2">
-                    <!-- Simple item -->
-                    <a href="radio.html"
-                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Радио</a>
-
-                    <!-- Expandable item -->
-                    
-                </div>
-                <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-3">
-                    <!-- Simple item -->
-                    
-
-                    <!-- Expandable item -->
-                    <div class="flex flex-col">
-                        <div class="flex items-center justify-between">
-                            <a href="youtube.html"
-                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">YouTube</a>
-                            <button type="button"
+                       aria-current="page">Најнови Вести</a>  </div> <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-1">  <a href="prognoza.html"
+                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Прогноза</a>  </div> <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-2">  <a href="radio.html"
+                       class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2">Радио</a>  </div> <div class="mobile-nav-group flex flex-col mt-1  mobile-nav-group--right-3">   <div class="flex flex-col"> <div class="flex items-center justify-between"> <a href="youtube.html"
+                               class="mobile-nav-parent theme-text-primary text-lg py-2 rounded-md px-2 flex-1 text-left">YouTube</a> <button type="button"
                                     class="theme-text-primary p-2"
                                     aria-label="Toggle subnavigation"
-                                    aria-expanded="false" data-subnav-toggle="right-3" aria-controls="right-subnav-3">
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
-                             id="right-subnav-3" data-subnav-id="right-3">
-                            <a href="youtube-politics.html"
+                                    aria-expanded="false" data-subnav-toggle="right-3" aria-controls="right-subnav-3"> <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M19 9l-7 7-7-7"/> </svg> </button> </div> <div class="mobile-subnav ml-4 mt-1 space-y-1  hidden"
+                             id="right-subnav-3" data-subnav-id="right-3"> <a href="youtube-politics.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Политика</a><a href="youtube-podcast.html"
                                class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">Подкаст</a><a href="youtube-za-deca.html"
-                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">За Деца</a>
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="my-3 theme-border-color" />
-
-                <!-- Other Utility Links (unchanged) -->
-                <button id="theme-toggle-mobile"
-                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left">
-                    <span id="theme-toggle-mobile-text">Toggle Theme</span>
-                </button>
-            </nav>
-
-        </div>
-    </div>
-
-    <!-- Hidden desktop theme toggle button to leverage existing script -->
-    <button id="theme-toggle" class="hidden"></button>
-</div>
-    </div>
-
-    <!-- ======================= -->
-    <!-- MAIN CONTENT            -->
-    <!-- ======================= -->
-    <main class="w-full">
-
-        <!-- ====================================================== -->
-        <!-- DESKTOP VERSION (from real latest-news.html)          -->
-        <!-- ====================================================== -->
-        <div class="hidden lg:block">
-            <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-                <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">
-
-                    <!-- Main Column -->
-                    <div class="lg:col-span-2 flex flex-col gap-6">
-                        <h1 class="theme-text-primary text-2xl font-bold mb-6">Day.mk - Најнови Вести (Страница 29)</h1>
-
-                        <!-- Article List -->
-                        <div class="flex flex-col divide-y theme-border-color">
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="world-трамп-се-закани-доколку-сакаме-можеме-да-ја-преземеме-целата-summary-203602.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203602.webp"
-                 alt="Трамп се закани: Доколку сакаме можеме да ја преземеме целата иранска нафта па и контролата над државата"
+                               class="subnav-item block theme-text-secondary text-base py-1 rounded-md px-2">За деца</a> </div> </div> </div> <hr class="my-3 theme-border-color" />  <button id="theme-toggle-mobile"
+                        class="flex items-center theme-text-primary text-lg py-2 hover:theme-bg-secondary rounded-md px-2 w-full text-left"> <span id="theme-toggle-mobile-text">Toggle Theme</span> </button> </nav> </div> </div>  <button id="theme-toggle" class="hidden"></button> </div> </div>    <main class="w-full">    <div class="hidden lg:block"> <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8"> <div class="p-4 @container grid grid-cols-1 lg:grid-cols-3 gap-6">  <div class="lg:col-span-2 flex flex-col gap-6"> <h1 class="theme-text-primary text-2xl font-bold mb-6">Day.mk - Најнови Вести (Страница 29)</h1>  <div class="flex flex-col divide-y theme-border-color"> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-дневен-хороскоп-за-31-октомври-2026-еден-знак-ќе-добие-важен-summary-208619.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208619.webp"
+                 alt="ДНЕВЕН ХОРОСКОП ЗА 31 ОКТОМВРИ 2026: Еден знак ќе добие важен сигнал, а друг треба да внимава на парите"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="eager" fetchpriority="high"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="world-трамп-се-закани-доколку-сакаме-можеме-да-ја-преземеме-целата-summary-203602.html"
-               class="hover:underline">Трамп се закани: Доколку сакаме можеме да ја преземеме целата иранска нафта па и контролата над државата</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Американскиот претседател Доналд Трамп изјави дека САД, доколку сакаат, можат да ја преземат целата иранска нафта, па дури и контролата врз целата земја. Целата нивна нафта може...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 16 часа</span>
-            </span>
-            <a class="news-pill news-pill--stories"
-               href="world-трамп-се-закани-доколку-сакаме-можеме-да-ја-преземеме-целата-summary-203602.html">
-                <span>4</span>&nbsp;вести&nbsp;&raquo;
-            </a>
-            <a class="news-pill news-pill--summary"
-               href="world-трамп-се-закани-доколку-сакаме-можеме-да-ја-преземеме-целата-summary-203602.html">сумирано&nbsp;&raquo;</a>
-            <a class="news-pill news-pill--questions"
+                 class="w-24 h-16 object-cover rounded-lg" loading="eager" fetchpriority="high"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-дневен-хороскоп-за-31-октомври-2026-еден-знак-ќе-добие-важен-summary-208619.html"
+               class="hover:underline">ДНЕВЕН ХОРОСКОП ЗА 31 ОКТОМВРИ 2026: Еден знак ќе добие важен сигнал, а друг треба да внимава на парите</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Ѕвездите носат ден за искрени разговори, средување на недовршените обврски и нови можности.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 10 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="world-прво-орбан-потоа-макрон-вучиќ-кажа-со-кои-странци-разговарал-summary-208618.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208618.webp"
+                 alt="Прво Орбан, потоа Макрон: Вучиќ кажа со кои странци разговарал во изборната ноќ"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="world-прво-орбан-потоа-макрон-вучиќ-кажа-со-кои-странци-разговарал-summary-208618.html"
+               class="hover:underline">Прво Орбан, потоа Макрон: Вучиќ кажа со кои странци разговарал во изборната ноќ</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Вучиќ на конференцијата на Српската напредна партија изјави дека, како лидер на листата на Единствена Србија, имал состанок со сите шефови на полицијата и им рекол дека – ако ги...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 11 часа</span> </span> <a class="news-pill news-pill--stories"
+               href="world-прво-орбан-потоа-макрон-вучиќ-кажа-со-кои-странци-разговарал-summary-208618.html"> <span>2</span>&nbsp;вести&nbsp;&raquo;
+            </a> <a class="news-pill news-pill--summary"
+               href="world-прво-орбан-потоа-макрон-вучиќ-кажа-со-кои-странци-разговарал-summary-208618.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                target="_blank"
                rel="noopener noreferrer"
-               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A2%D1%80%D0%B0%D0%BC%D0%BF%20%D1%81%D0%B5%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%BD%D0%B8:%20%D0%94%D0%BE%D0%BA%D0%BE%D0%BB%D0%BA%D1%83%20%D1%81%D0%B0%D0%BA%D0%B0%D0%BC%D0%B5%20%D0%BC%D0%BE%D0%B6%D0%B5%D0%BC%D0%B5%20%D0%B4%D0%B0%20%D1%98%D0%B0%20%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BC%D0%B5%D0%BC%D0%B5%20%D1%86%D0%B5%D0%BB%D0%B0%D1%82%D0%B0%20%D0%B8%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%20%D0%BD%D0%B0%D1%84%D1%82%D0%B0%20%D0%BF%D0%B0%20%D0%B8%20%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%B0%D1%82%D0%B0%20%D0%BD%D0%B0%D0%B4%20%D0%B4%D1%80%D0%B6%D0%B0%D0%B2%D0%B0%D1%82%D0%B0&amp;udm=50">
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9F%D1%80%D0%B2%D0%BE%20%D0%9E%D1%80%D0%B1%D0%B0%D0%BD,%20%D0%BF%D0%BE%D1%82%D0%BE%D0%B0%20%D0%9C%D0%B0%D0%BA%D1%80%D0%BE%D0%BD:%20%D0%92%D1%83%D1%87%D0%B8%D1%9C%20%D0%BA%D0%B0%D0%B6%D0%B0%20%D1%81%D0%BE%20%D0%BA%D0%BE%D0%B8%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%86%D0%B8%20%D1%80%D0%B0%D0%B7%D0%B3%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%D0%BB%20%D0%B2%D0%BE%20%D0%B8%D0%B7%D0%B1%D0%BE%D1%80%D0%BD%D0%B0%D1%82%D0%B0%20%D0%BD%D0%BE%D1%9C&amp;udm=50">
                 прашања&nbsp;&raquo;
-            </a>
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="world-јас-сум-жртвата-а-се-обидуваат-да-ме-направат-виновна-summary-203601.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203601.webp"
-                 alt="„Јас сум жртвата, а се обидуваат да ме направат виновна“ – бугарската новинарка по инцидентот со обезбедувањето"
+            </a> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="scena-ислам-махачев-призна-дека-е-близу-крајот-на-неговата-кариера-summary-208617.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208617.webp"
+                 alt="Ислам Махачев призна дека е близу крајот на неговата кариера"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="world-јас-сум-жртвата-а-се-обидуваат-да-ме-направат-виновна-summary-203601.html"
-               class="hover:underline">„Јас сум жртвата, а се обидуваат да ме направат виновна“ – бугарската новинарка по инцидентот со обезбедувањето</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Бугарската претседателка Илијана Јотова најави дека ќе побара оставка од началникот на Националната служба за обезбедување (НСО), генерал-мајор Емил Тонев, по инцидентот во кој ...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 22 часа</span>
-            </span>
-            <a class="news-pill news-pill--stories"
-               href="world-јас-сум-жртвата-а-се-обидуваат-да-ме-направат-виновна-summary-203601.html">
-                <span>3</span>&nbsp;вести&nbsp;&raquo;
-            </a>
-            <a class="news-pill news-pill--summary"
-               href="world-јас-сум-жртвата-а-се-обидуваат-да-ме-направат-виновна-summary-203601.html">сумирано&nbsp;&raquo;</a>
-            <a class="news-pill news-pill--questions"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="scena-ислам-махачев-призна-дека-е-близу-крајот-на-неговата-кариера-summary-208617.html"
+               class="hover:underline">Ислам Махачев призна дека е близу крајот на неговата кариера</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Сепак, Махачев се откажа од планираната борба, а УФЦ потоа закажа борба меѓу Пратес и Еквадорецот Мајкл Моралес за привремената титула во дивизијата.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 10 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="kultura-11-дена-културна-програма-по-повод-денот-на-ослободувањето-summary-208616.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208616.webp"
+                 alt="11 дена културна програма по повод Денот на ослободувањето на Битола"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="kultura-11-дена-културна-програма-по-повод-денот-на-ослободувањето-summary-208616.html"
+               class="hover:underline">11 дена културна програма по повод Денот на ослободувањето на Битола</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">На 2 ноември ќе биде прикажан документарен филм за Ајри Демировски а на 3 ноември ќе биде отворена спомен соба на Александар Стерјовски во КИЦ Битола.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 10 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="macedonia-нема-вина-за-пожарот-во-модуларните-врховниот-суд-на-африм-summary-208615.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208615.webp"
+                 alt="НЕМА ВИНА ЗА ПОЖАРОТ ВО МОДУЛАРНИТЕ: Врховниот суд на Африм Фидани диригиран од Филипче и Ахмети ги ослободи директорите"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="macedonia-нема-вина-за-пожарот-во-модуларните-врховниот-суд-на-африм-summary-208615.html"
+               class="hover:underline">НЕМА ВИНА ЗА ПОЖАРОТ ВО МОДУЛАРНИТЕ: Врховниот суд на Африм Фидани диригиран од Филипче и Ахмети ги ослободи директорите</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Луѓето кои беа најодговорни за пожарот во небезбедната болница и без минимум технички услови за работа, сега поради претседателот на Врховниот суд Африм Фидани ќе шетаат слободн...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 10 часа</span> </span> <a class="news-pill news-pill--stories"
+               href="macedonia-нема-вина-за-пожарот-во-модуларните-врховниот-суд-на-африм-summary-208615.html"> <span>4</span>&nbsp;вести&nbsp;&raquo;
+            </a> <a class="news-pill news-pill--summary"
+               href="macedonia-нема-вина-за-пожарот-во-модуларните-врховниот-суд-на-африм-summary-208615.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                target="_blank"
                rel="noopener noreferrer"
-               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%E2%80%9E%D0%88%D0%B0%D1%81%20%D1%81%D1%83%D0%BC%20%D0%B6%D1%80%D1%82%D0%B2%D0%B0%D1%82%D0%B0,%20%D0%B0%20%D1%81%D0%B5%20%D0%BE%D0%B1%D0%B8%D0%B4%D1%83%D0%B2%D0%B0%D0%B0%D1%82%20%D0%B4%D0%B0%20%D0%BC%D0%B5%20%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%B0%D1%82%20%D0%B2%D0%B8%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0%E2%80%9C%20%E2%80%93%20%D0%B1%D1%83%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%82%D0%B0%20%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B0%D1%80%D0%BA%D0%B0%20%D0%BF%D0%BE%20%D0%B8%D0%BD%D1%86%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%BE%D1%82%20%D1%81%D0%BE%20%D0%BE%D0%B1%D0%B5%D0%B7%D0%B1%D0%B5%D0%B4%D1%83%D0%B2%D0%B0%D1%9A%D0%B5%D1%82%D0%BE&amp;udm=50">
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9D%D0%95%D0%9C%D0%90%20%D0%92%D0%98%D0%9D%D0%90%20%D0%97%D0%90%20%D0%9F%D0%9E%D0%96%D0%90%D0%A0%D0%9E%D0%A2%20%D0%92%D0%9E%20%D0%9C%D0%9E%D0%94%D0%A3%D0%9B%D0%90%D0%A0%D0%9D%D0%98%D0%A2%D0%95:%20%D0%92%D1%80%D1%85%D0%BE%D0%B2%D0%BD%D0%B8%D0%BE%D1%82%20%D1%81%D1%83%D0%B4%20%D0%BD%D0%B0%20%D0%90%D1%84%D1%80%D0%B8%D0%BC%20%D0%A4%D0%B8%D0%B4%D0%B0%D0%BD%D0%B8%20%D0%B4%D0%B8%D1%80%D0%B8%D0%B3%D0%B8%D1%80%D0%B0%D0%BD%20%D0%BE%D0%B4%20%D0%A4%D0%B8%D0%BB%D0%B8%D0%BF%D1%87%D0%B5%20%D0%B8%20%D0%90%D1%85%D0%BC%D0%B5%D1%82%D0%B8%20%D0%B3%D0%B8%20%D0%BE%D1%81%D0%BB%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8%20%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%82%D0%B5&amp;udm=50">
                 прашања&nbsp;&raquo;
-            </a>
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="sport-псж-замената-за-кварацхелија-ја-најде-во-баскија-summary-203600.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203600.webp"
-                 alt="ПСЖ замената за Кварацхелија ја најде во Баскија"
+            </a> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-викенд-на-пари-и-големи-одлуки-некои-хороскопски-знаци-ќе-summary-208614.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208614.webp"
+                 alt="Викенд на пари и големи одлуки: Некои хороскопски знаци ќе уживаат во изобилство, други ќе добијат идеја за заработка"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-псж-замената-за-кварацхелија-ја-најде-во-баскија-summary-203600.html"
-               class="hover:underline">ПСЖ замената за Кварацхелија ја најде во Баскија</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">ПСЖ е принуден да донесе замена за Кваратцкелија и поради фактот дека токму Енрике го сака Вилијамс, се чини дека ќе платат 100 милиони евра. Тој има договор со Атлетик до летот...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 16 часа</span>
-            </span>
-            <a class="news-pill news-pill--stories"
-               href="sport-псж-замената-за-кварацхелија-ја-најде-во-баскија-summary-203600.html">
-                <span>3</span>&nbsp;вести&nbsp;&raquo;
-            </a>
-            <a class="news-pill news-pill--summary"
-               href="sport-псж-замената-за-кварацхелија-ја-најде-во-баскија-summary-203600.html">сумирано&nbsp;&raquo;</a>
-            <a class="news-pill news-pill--questions"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-викенд-на-пари-и-големи-одлуки-некои-хороскопски-знаци-ќе-summary-208614.html"
+               class="hover:underline">Викенд на пари и големи одлуки: Некои хороскопски знаци ќе уживаат во изобилство, други ќе добијат идеја за заработка</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Некој од луѓето кои ќе ги запознаете овој викенд понатаму ќе стане многу важна личност во вашиот живот.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 22 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-денеска-се-празнува-свети-лука-светец-кој-ги-штити-и-лекува-summary-208613.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208613.webp"
+                 alt="Денеска се празнува Свети Лука: Светец кој ги штити и лекува болните"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-денеска-се-празнува-свети-лука-светец-кој-ги-штити-и-лекува-summary-208613.html"
+               class="hover:underline">Денеска се празнува Свети Лука: Светец кој ги штити и лекува болните</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Без разлика дали овците се пнатегале или не, нашите предци верувале дека зимата ќе биде долга, сурова и тешка.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 15 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="magazine-помладите-немаат-поим-што-е-ова-но-многу-домови-во-summary-208612.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208612.webp"
+                 alt="Помладите немаат поим што е ова, но многу домови во Југославија го имале овој уред: „Сè уште работи!“"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="magazine-помладите-немаат-поим-што-е-ова-но-многу-домови-во-summary-208612.html"
+               class="hover:underline">Помладите немаат поим што е ова, но многу домови во Југославија го имале овој уред: „Сè уште работи!“</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Сè уште работи кај нас“, гласи еден од коментарите што предизвика бројни реакции.</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 10 часа</span> </span> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="world-фото-поранешна-мисица-меѓу-загинатите-во-падот-на-воениот-summary-208611.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208611.webp"
+                 alt="ФОТО| Поранешна мисица меѓу загинатите во падот на воениот хеликоптер во близина на Брчко, Италија во тага"
+                 width="96"
+                 height="64"
+                 decoding="async"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="world-фото-поранешна-мисица-меѓу-загинатите-во-падот-на-воениот-summary-208611.html"
+               class="hover:underline">ФОТО| Поранешна мисица меѓу загинатите во падот на воениот хеликоптер во близина на Брчко, Италија во тага</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Организаторите на изборот за Мис Италија се збогуваа со Лаура Прокачи, поранешна финалистка на овој избор и италијански наредник кој загина во падот на воен хеликоптер во близин...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 11 часа</span> </span> <a class="news-pill news-pill--stories"
+               href="world-фото-поранешна-мисица-меѓу-загинатите-во-падот-на-воениот-summary-208611.html"> <span>2</span>&nbsp;вести&nbsp;&raquo;
+            </a> <a class="news-pill news-pill--summary"
+               href="world-фото-поранешна-мисица-меѓу-загинатите-во-падот-на-воениот-summary-208611.html">сумирано&nbsp;&raquo;</a> <a class="news-pill news-pill--questions"
                target="_blank"
                rel="noopener noreferrer"
-               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9F%D0%A1%D0%96%20%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0%D1%82%D0%B0%20%D0%B7%D0%B0%20%D0%9A%D0%B2%D0%B0%D1%80%D0%B0%D1%86%D1%85%D0%B5%D0%BB%D0%B8%D1%98%D0%B0%20%D1%98%D0%B0%20%D0%BD%D0%B0%D1%98%D0%B4%D0%B5%20%D0%B2%D0%BE%20%D0%91%D0%B0%D1%81%D0%BA%D0%B8%D1%98%D0%B0&amp;udm=50">
+               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%A4%D0%9E%D0%A2%D0%9E%7C%20%D0%9F%D0%BE%D1%80%D0%B0%D0%BD%D0%B5%D1%88%D0%BD%D0%B0%20%D0%BC%D0%B8%D1%81%D0%B8%D1%86%D0%B0%20%D0%BC%D0%B5%D1%93%D1%83%20%D0%B7%D0%B0%D0%B3%D0%B8%D0%BD%D0%B0%D1%82%D0%B8%D1%82%D0%B5%20%D0%B2%D0%BE%20%D0%BF%D0%B0%D0%B4%D0%BE%D1%82%20%D0%BD%D0%B0%20%D0%B2%D0%BE%D0%B5%D0%BD%D0%B8%D0%BE%D1%82%20%D1%85%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%BF%D1%82%D0%B5%D1%80%20%D0%B2%D0%BE%20%D0%B1%D0%BB%D0%B8%D0%B7%D0%B8%D0%BD%D0%B0%20%D0%BD%D0%B0%20%D0%91%D1%80%D1%87%D0%BA%D0%BE,%20%D0%98%D1%82%D0%B0%D0%BB%D0%B8%D1%98%D0%B0%20%D0%B2%D0%BE%20%D1%82%D0%B0%D0%B3%D0%B0&amp;udm=50">
                 прашања&nbsp;&raquo;
-            </a>
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="sport-мурињо-пречкртал-тројца-играчи-во-реал-мадрид-summary-203598.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203598.webp"
-                 alt="Мурињо пречкртал тројца играчи во Реал Мадрид"
+            </a> </div> </div> </div> <div class="py-3 flex items-start gap-3 theme-border-color border-b">  <a href="scena-пијанистката-даница-стојанова-добитничка-на-наградата-златна-summary-208610.html"
+       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block"> <picture> <img src="images/cache/summary-208610.webp"
+                 alt="Пијанистката Даница Стојанова добитничка на наградата „Златна лира“ за исклучителни уметнички достигнувања"
                  width="96"
                  height="64"
                  decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="sport-мурињо-пречкртал-тројца-играчи-во-реал-мадрид-summary-203598.html"
-               class="hover:underline">Мурињо пречкртал тројца играчи во Реал Мадрид</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Жозе Мурињо веќе почна да го обликува Реал Мадрид според сопствените идеи, а неговите последни одлуки покренаа сериозни прашања за иднината на тројцата фудбалери. Особено е инте...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 17 часа</span>
-            </span>
-            <a class="news-pill news-pill--stories"
-               href="sport-мурињо-пречкртал-тројца-играчи-во-реал-мадрид-summary-203598.html">
-                <span>2</span>&nbsp;вести&nbsp;&raquo;
-            </a>
-            <a class="news-pill news-pill--summary"
-               href="sport-мурињо-пречкртал-тројца-играчи-во-реал-мадрид-summary-203598.html">сумирано&nbsp;&raquo;</a>
-            <a class="news-pill news-pill--questions"
-               target="_blank"
-               rel="noopener noreferrer"
-               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%9C%D1%83%D1%80%D0%B8%D1%9A%D0%BE%20%D0%BF%D1%80%D0%B5%D1%87%D0%BA%D1%80%D1%82%D0%B0%D0%BB%20%D1%82%D1%80%D0%BE%D1%98%D1%86%D0%B0%20%D0%B8%D0%B3%D1%80%D0%B0%D1%87%D0%B8%20%D0%B2%D0%BE%20%D0%A0%D0%B5%D0%B0%D0%BB%20%D0%9C%D0%B0%D0%B4%D1%80%D0%B8%D0%B4&amp;udm=50">
-                прашања&nbsp;&raquo;
-            </a>
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="macedonia-зајкова-да-не-ја-обвинуваме-еу-што-границите-ни-се-summary-203597.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203597.webp"
-                 alt="Зајкова: Да не ја обвинуваме ЕУ што границите ни се швајцарско сирење"
-                 width="96"
-                 height="64"
-                 decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="macedonia-зајкова-да-не-ја-обвинуваме-еу-што-границите-ни-се-summary-203597.html"
-               class="hover:underline">Зајкова: Да не ја обвинуваме ЕУ што границите ни се швајцарско сирење</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Претседателката на ЛДП, Моника Зајкова, ја предупреди јавноста дека најголемата закана за македонското општество не доаѓа само од надворешните блокади, туку од катастрофалните п...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 22 часа</span>
-            </span>
-            <a class="news-pill news-pill--stories"
-               href="macedonia-зајкова-да-не-ја-обвинуваме-еу-што-границите-ни-се-summary-203597.html">
-                <span>3</span>&nbsp;вести&nbsp;&raquo;
-            </a>
-            <a class="news-pill news-pill--summary"
-               href="macedonia-зајкова-да-не-ја-обвинуваме-еу-што-границите-ни-се-summary-203597.html">сумирано&nbsp;&raquo;</a>
-            <a class="news-pill news-pill--questions"
-               target="_blank"
-               rel="noopener noreferrer"
-               href="https://www.google.com/search?q=%D0%9A%D0%BB%D1%83%D1%87%D0%BD%D0%B8%20%D1%84%D0%B0%D0%BA%D1%82%D0%B8,%20%D0%BF%D1%80%D0%B0%D1%88%D0%B0%D1%9A%D0%B0%20%D0%B8%20%D0%BE%D0%B4%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D0%BC%D0%B0:%20%D0%97%D0%B0%D1%98%D0%BA%D0%BE%D0%B2%D0%B0:%20%D0%94%D0%B0%20%D0%BD%D0%B5%20%D1%98%D0%B0%20%D0%BE%D0%B1%D0%B2%D0%B8%D0%BD%D1%83%D0%B2%D0%B0%D0%BC%D0%B5%20%D0%95%D0%A3%20%D1%88%D1%82%D0%BE%20%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B8%D1%82%D0%B5%20%D0%BD%D0%B8%20%D1%81%D0%B5%20%D1%88%D0%B2%D0%B0%D1%98%D1%86%D0%B0%D1%80%D1%81%D0%BA%D0%BE%20%D1%81%D0%B8%D1%80%D0%B5%D1%9A%D0%B5&amp;udm=50">
-                прашања&nbsp;&raquo;
-            </a>
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="kultura-конкурс-на-литера-за-авторски-текстови-за-сликовници-на-тема-summary-203596.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203596.webp"
-                 alt="Конкурс на „Литера“ за авторски текстови за сликовници на тема „Градови полни приказни“"
-                 width="96"
-                 height="64"
-                 decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="kultura-конкурс-на-литера-за-авторски-текстови-за-сликовници-на-тема-summary-203596.html"
-               class="hover:underline">Конкурс на „Литера“ за авторски текстови за сликовници на тема „Градови полни приказни“</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Издавачката куќа „Литера“ отвора конкурс за авторски текстови за сликовници под мотото „Градови полни приказни“, повикувајќи ги сите автори да ја искористат својата имагинација ...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 114 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-петковден-ги-отвора-портите-за-големите-зимски-празници-summary-203595.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203595.webp"
-                 alt="Петковден ги отвора портите за големите зимски празници: Колку куќни слави нѐ очекуваат до крајот на годината?"
-                 width="96"
-                 height="64"
-                 decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-петковден-ги-отвора-портите-за-големите-зимски-празници-summary-203595.html"
-               class="hover:underline">Петковден ги отвора портите за големите зимски празници: Колку куќни слави нѐ очекуваат до крајот на годината?</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Иако духовното празнување зема залет уште со крајот на октомври, во народното предание и обичаи постојат две традиционални толкувања за тоа кој точно празник ја поставува границ...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 25 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-пред-свадбата-реков-дека-не-можам-да-се-омажам-за-чарлс-summary-203594.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203594.webp"
-                 alt="„Пред свадбата, реков дека НЕ МОЖАМ ДА СЕ ОМАЖАМ ЗА ЧАРЛС“: Принцезата Дајана му ја отвори душата на еден маж 6 години пред смртта"
-                 width="96"
-                 height="64"
-                 decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-пред-свадбата-реков-дека-не-можам-да-се-омажам-за-чарлс-summary-203594.html"
-               class="hover:underline">„Пред свадбата, реков дека НЕ МОЖАМ ДА СЕ ОМАЖАМ ЗА ЧАРЛС“: Принцезата Дајана му ја отвори душата на еден маж 6 години пред смртта</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Бев во целосен очај кога се случи тоа, мислев дека сум премногу возбудена и дека тоа беше ослободување од притисок“, открила принцезата Дијана.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 24 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-терапевтите-предупредуваат-презирот-молчењето-и-префрлањето-summary-203593.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="images/cache/summary-203593.webp"
-                 alt="Терапевтите предупредуваат – Презирот, молчењето и префрлањето на вината ја уништуваат врската: Обрнете внимание на овие однесувања"
-                 width="96"
-                 height="64"
-                 decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-терапевтите-предупредуваат-презирот-молчењето-и-префрлањето-summary-203593.html"
-               class="hover:underline">Терапевтите предупредуваат – Презирот, молчењето и префрлањето на вината ја уништуваат врската: Обрнете внимание на овие однесувања</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Вејд, исто така, го наведува отфрлањето на влијанието на партнерот како штетно , што е посериозно од едноставната тврдоглавост бидејќи партнерот добива впечаток дека неговото ми...</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 17 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                                <div class="py-3 flex items-start gap-3 theme-border-color border-b">
-
-    <!-- Thumbnail -->
-    <a href="magazine-првиот-снег-во-скопје-е-можен-во-ноември-summary-203592.html"
-       class="w-24 h-16 flex-shrink-0 rounded-lg overflow-hidden block">
-        <picture>
-            <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9F%D1%80%D0%B2%D0%B8%D0%BE%D1%82+%D1%81%D0%BD%D0%B5%D0%B3+%D0%B2%D0%BE+%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5+%D0%B5+%D0%BC%D0%BE%D0%B6%D0%B5%D0%BD+%D0%B2%D0%BE+%D0%BD%D0%BE%D0%B5%D0%BC%D0%B2%D1%80%D0%B8"
-                 alt="Првиот снег во Скопје е можен во ноември"
-                 width="96"
-                 height="64"
-                 decoding="async"
-                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>
-            <!-- PERF: Width/height + lazy/async decoding reduce CLS and offscreen image cost. -->
-        </picture>
-    </a>
-
-    <!-- Content -->
-    <div class="flex flex-col flex-grow">
-        <!-- Title -->
-        <h3 class="theme-text-primary text-base font-bold leading-snug mb-1">
-            <a href="magazine-првиот-снег-во-скопје-е-можен-во-ноември-summary-203592.html"
-               class="hover:underline">Првиот снег во Скопје е можен во ноември</a>
-        </h3>
-
-        <!-- Snippet -->
-        <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Можноста за снег е следниот чекор во процената и зависи од тоа дали во истиот период ќе има врнежи и дали температурите во атмосферата ќе бидат погодни тие да преминат во снег.</p>
-
-        <!-- Meta info -->
-        <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto">
-            <span>
-                <span>пред 17 часа</span>
-            </span>
-            
-            
-            
-        </div>
-    </div>
-</div>
-                            
-                        </div>
-
-                        
-
-                        <!-- Pagination -->
-                        <div class="flex justify-center mt-6">
-    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
-
-        <!-- Previous -->
-        <a href="latest-news-page-28.html"
+                 class="w-24 h-16 object-cover rounded-lg" loading="lazy"/>  </picture> </a>  <div class="flex flex-col flex-grow">  <h3 class="theme-text-primary text-base font-bold leading-snug mb-1"> <a href="scena-пијанистката-даница-стојанова-добитничка-на-наградата-златна-summary-208610.html"
+               class="hover:underline">Пијанистката Даница Стојанова добитничка на наградата „Златна лира“ за исклучителни уметнички достигнувања</a> </h3>  <p class="theme-text-secondary text-sm mb-2 overflow-hidden">Пијанистката и професорка по пијано од Струмица, Даница Стојанова, е овогодишна добитничка на престижната награда „Златна лира“, признание што го доделува Сојузот на музичките у...</p>  <div class="news-pill-row theme-text-secondary text-xs flex items-center flex-wrap mt-auto"> <span> <span>пред 10 часа</span> </span> </div> </div> </div> </div>  <div class="flex justify-center mt-6"> <nav class="inline-flex items-center space-x-1" aria-label="Pagination">  <a href="latest-news-page-28.html"
            class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
-           aria-label="Previous">&laquo;</a>
-
-        <!-- Page numbers (max 10) -->
-        
-            
-                <a href="latest-news-page-25.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">25</a>
-            
-                <a href="latest-news-page-26.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">26</a>
-            
-                <a href="latest-news-page-27.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">27</a>
-            
-                <a href="latest-news-page-28.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">28</a>
-            
-                <a href="latest-news-page-29.html"
-                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">29</a>
-            
-                <a href="latest-news-page-30.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">30</a>
-            
-                <a href="latest-news-page-31.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">31</a>
-            
-                <a href="latest-news-page-32.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">32</a>
-            
-                <a href="latest-news-page-33.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">33</a>
-            
-                <a href="latest-news-page-34.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">34</a>
-            
-        
-
-        <!-- Next -->
-        <a href="latest-news-page-30.html"
+           aria-label="Previous">&laquo;</a>  <a href="latest-news-page-25.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">25</a> <a href="latest-news-page-26.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">26</a> <a href="latest-news-page-27.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">27</a> <a href="latest-news-page-28.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">28</a> <a href="latest-news-page-29.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">29</a> <a href="latest-news-page-30.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">30</a> <a href="latest-news-page-31.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">31</a> <a href="latest-news-page-32.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">32</a> <a href="latest-news-page-33.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">33</a> <a href="latest-news-page-34.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">34</a>  <a href="latest-news-page-30.html"
            class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
-           aria-label="Next">&raquo;</a>
-    </nav>
-</div>
-                    </div>
-
-                    <!-- Right Sidebar / Ads -->
-                    <div class="lg:col-span-1 flex flex-col gap-6">
-
-                        <!-- Spotlight Ad -->
-                        <div class="flex flex-col rounded-lg theme-bg-secondary border theme-border-color shadow-lg overflow-hidden">
-                            <a href="https://google.com"
-                               class="w-full aspect-[16/9] bg-center bg-no-repeat bg-cover rounded-t-lg"
-                               style="background-image: url(&#39;https://placehold.co/150x300/0000FF/FFFFFF?text=Your+Ad+Here&#39;)">
-                            </a>
-                            <div class="p-4 flex flex-col gap-1">
-                                <p class="theme-text-primary text-base font-bold">Special Offer for Readers!</p>
-                                <p class="theme-text-secondary text-sm">Check out our exclusive deals.</p>
-                                <a href="https://google.com"
-                                   class="text-xs font-bold text-blue-600 hover:underline mt-2">Повеќе</a>
-                            </div>
-                        </div>
-
-                        <!-- Secondary Spotlight Ad -->
-                        <div class="flex flex-col rounded-lg theme-bg-secondary border theme-border-color shadow-lg overflow-hidden">
-                            <a href="marketing.html"
-                               class="w-full aspect-[16/4.5] bg-center bg-no-repeat bg-cover rounded-t-lg"
-                               style="background-image: url(&#39;https://placehold.co/150x300/FF4500/FFFFFF?text=Your+Ad+Here&#39;)">
-                            </a>
-                            </a>
-                            <div class="p-4 flex flex-col gap-1">
-                                <p class="theme-text-primary text-base font-bold">New Arrivals!</p>
-                                <p class="theme-text-secondary text-sm">Browse our fresh collection.</p>
-                                <a href="marketing.html"
-                                   class="text-xs font-bold text-blue-600 hover:underline mt-2">Повеќе</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ====================================================== -->
-        <!-- MOBILE VERSION (from real latest-news-mobile.html)     -->
-        <!-- ====================================================== -->
-        <div class="block lg:hidden">
-            <div class="max-w-3xl mx-auto w-full">
-                <div class="p-2 sm:p-4">
-
-                    <p class="theme-text-primary text-2xl font-bold mb-4 px-2">Најнови Вести</p>
-
-                    <!-- Top Mobile Ad -->
-                    <div id="mobile-ad-container-top" class="mb-4">
-                        <a id="mobile-ad-link-top"
-                           class="block w-full aspect-[8/1] bg-center bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                    </div>
-
-                    <!-- Article Cards -->
-                    <div class="flex flex-col gap-4">
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="world-трамп-се-закани-доколку-сакаме-можеме-да-ја-преземеме-целата-summary-203602.html" class="flex gap-3">
-                                    <img src="images/cache/summary-203602.webp" alt="Трамп се закани: Доколку сакаме можеме да ја преземеме целата иранска нафта па и контролата над државата"
+           aria-label="Next">&raquo;</a> </nav> </div> </div>  <div class="lg:col-span-1 flex flex-col gap-6">   </div> </div> </div> </div>    <div class="block lg:hidden"> <div class="max-w-3xl mx-auto w-full"> <div class="p-2 sm:p-4"> <p class="theme-text-primary text-2xl font-bold mb-4 px-2">Најнови Вести</p>  <div id="mobile-ad-container-top" class="mb-4"> <a id="mobile-ad-link-top"
+                           class="block w-full aspect-[8/1] bg-center bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a> </div>  <div class="flex flex-col gap-4"> <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="magazine-дневен-хороскоп-за-31-октомври-2026-еден-знак-ќе-добие-важен-summary-208619.html" class="flex gap-3"> <img src="images/cache/summary-208619.webp" alt="ДНЕВЕН ХОРОСКОП ЗА 31 ОКТОМВРИ 2026: Еден знак ќе добие важен сигнал, а друг треба да внимава на парите"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="eager" fetchpriority="high"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Трамп се закани: Доколку сакаме можеме да ја преземеме целата иранска нафта па и контролата над државата</h3>
-                                        <p class="theme-text-secondary text-sm">Американскиот претседател Доналд Трамп изјави дека САД, доколку сакаат, можат да ја преземат целата иранска нафта, па дури и контролата врз целата ...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 16 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="world-јас-сум-жртвата-а-се-обидуваат-да-ме-направат-виновна-summary-203601.html" class="flex gap-3">
-                                    <img src="images/cache/summary-203601.webp" alt="„Јас сум жртвата, а се обидуваат да ме направат виновна“ – бугарската новинарка по инцидентот со обезбедувањето"
+                                         class="w-24 h-24 object-cover rounded-md" loading="eager" fetchpriority="high"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">ДНЕВЕН ХОРОСКОП ЗА 31 ОКТОМВРИ 2026: Еден знак ќе добие важен сигнал, а друг треба да внимава на парите</h3> <p class="theme-text-secondary text-sm">Ѕвездите носат ден за искрени разговори, средување на недовршените обврски и нови можности.</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 10 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="world-прво-орбан-потоа-макрон-вучиќ-кажа-со-кои-странци-разговарал-summary-208618.html" class="flex gap-3"> <img src="images/cache/summary-208618.webp" alt="Прво Орбан, потоа Макрон: Вучиќ кажа со кои странци разговарал во изборната ноќ"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">„Јас сум жртвата, а се обидуваат да ме направат виновна“ – бугарската новинарка по инцидентот со обезбедувањето</h3>
-                                        <p class="theme-text-secondary text-sm">Бугарската претседателка Илијана Јотова најави дека ќе побара оставка од началникот на Националната служба за обезбедување (НСО), генерал-мајор Еми...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 22 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="sport-псж-замената-за-кварацхелија-ја-најде-во-баскија-summary-203600.html" class="flex gap-3">
-                                    <img src="images/cache/summary-203600.webp" alt="ПСЖ замената за Кварацхелија ја најде во Баскија"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">Прво Орбан, потоа Макрон: Вучиќ кажа со кои странци разговарал во изборната ноќ</h3> <p class="theme-text-secondary text-sm">Вучиќ на конференцијата на Српската напредна партија изјави дека, како лидер на листата на Единствена Србија, имал состанок со сите шефови на полиц...</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 11 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="scena-ислам-махачев-призна-дека-е-близу-крајот-на-неговата-кариера-summary-208617.html" class="flex gap-3"> <img src="images/cache/summary-208617.webp" alt="Ислам Махачев призна дека е близу крајот на неговата кариера"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">ПСЖ замената за Кварацхелија ја најде во Баскија</h3>
-                                        <p class="theme-text-secondary text-sm">ПСЖ е принуден да донесе замена за Кваратцкелија и поради фактот дека токму Енрике го сака Вилијамс, се чини дека ќе платат 100 милиони евра. Тој и...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 16 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="sport-мурињо-пречкртал-тројца-играчи-во-реал-мадрид-summary-203598.html" class="flex gap-3">
-                                    <img src="images/cache/summary-203598.webp" alt="Мурињо пречкртал тројца играчи во Реал Мадрид"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">Ислам Махачев призна дека е близу крајот на неговата кариера</h3> <p class="theme-text-secondary text-sm">Сепак, Махачев се откажа од планираната борба, а УФЦ потоа закажа борба меѓу Пратес и Еквадорецот Мајкл Моралес за привремената титула во дивизијата.</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 10 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="kultura-11-дена-културна-програма-по-повод-денот-на-ослободувањето-summary-208616.html" class="flex gap-3"> <img src="images/cache/summary-208616.webp" alt="11 дена културна програма по повод Денот на ослободувањето на Битола"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Мурињо пречкртал тројца играчи во Реал Мадрид</h3>
-                                        <p class="theme-text-secondary text-sm">Жозе Мурињо веќе почна да го обликува Реал Мадрид според сопствените идеи, а неговите последни одлуки покренаа сериозни прашања за иднината на трој...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 17 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="macedonia-зајкова-да-не-ја-обвинуваме-еу-што-границите-ни-се-summary-203597.html" class="flex gap-3">
-                                    <img src="images/cache/summary-203597.webp" alt="Зајкова: Да не ја обвинуваме ЕУ што границите ни се швајцарско сирење"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">11 дена културна програма по повод Денот на ослободувањето на Битола</h3> <p class="theme-text-secondary text-sm">На 2 ноември ќе биде прикажан документарен филм за Ајри Демировски а на 3 ноември ќе биде отворена спомен соба на Александар Стерјовски во КИЦ Битола.</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 10 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="macedonia-нема-вина-за-пожарот-во-модуларните-врховниот-суд-на-африм-summary-208615.html" class="flex gap-3"> <img src="images/cache/summary-208615.webp" alt="НЕМА ВИНА ЗА ПОЖАРОТ ВО МОДУЛАРНИТЕ: Врховниот суд на Африм Фидани диригиран од Филипче и Ахмети ги ослободи директорите"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Зајкова: Да не ја обвинуваме ЕУ што границите ни се швајцарско сирење</h3>
-                                        <p class="theme-text-secondary text-sm">Претседателката на ЛДП, Моника Зајкова, ја предупреди јавноста дека најголемата закана за македонското општество не доаѓа само од надворешните блок...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 22 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            <div id="mobile-ad-container-mid" class="my-6">
-                                <a id="mobile-ad-link-mid"
-                                   class="block w-full aspect-[8/1] bg-center bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a>
-                            </div>
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="kultura-конкурс-на-литера-за-авторски-текстови-за-сликовници-на-тема-summary-203596.html" class="flex gap-3">
-                                    <img src="images/cache/summary-203596.webp" alt="Конкурс на „Литера“ за авторски текстови за сликовници на тема „Градови полни приказни“"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">НЕМА ВИНА ЗА ПОЖАРОТ ВО МОДУЛАРНИТЕ: Врховниот суд на Африм Фидани диригиран од Филипче и Ахмети ги ослободи директорите</h3> <p class="theme-text-secondary text-sm">Луѓето кои беа најодговорни за пожарот во небезбедната болница и без минимум технички услови за работа, сега поради претседателот на Врховниот суд ...</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 10 часа</span> </div> </div> </a> </div>  <div id="mobile-ad-container-mid" class="my-6"> <a id="mobile-ad-link-mid"
+                                   class="block w-full aspect-[8/1] bg-center bg-cover rounded-lg overflow-hidden theme-bg-secondary border theme-border-color"></a> </div> <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="magazine-викенд-на-пари-и-големи-одлуки-некои-хороскопски-знаци-ќе-summary-208614.html" class="flex gap-3"> <img src="images/cache/summary-208614.webp" alt="Викенд на пари и големи одлуки: Некои хороскопски знаци ќе уживаат во изобилство, други ќе добијат идеја за заработка"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Конкурс на „Литера“ за авторски текстови за сликовници на тема „Градови полни приказни“</h3>
-                                        <p class="theme-text-secondary text-sm">Издавачката куќа „Литера“ отвора конкурс за авторски текстови за сликовници под мотото „Градови полни приказни“, повикувајќи ги сите автори да ја и...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 114 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="magazine-петковден-ги-отвора-портите-за-големите-зимски-празници-summary-203595.html" class="flex gap-3">
-                                    <img src="images/cache/summary-203595.webp" alt="Петковден ги отвора портите за големите зимски празници: Колку куќни слави нѐ очекуваат до крајот на годината?"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">Викенд на пари и големи одлуки: Некои хороскопски знаци ќе уживаат во изобилство, други ќе добијат идеја за заработка</h3> <p class="theme-text-secondary text-sm">Некој од луѓето кои ќе ги запознаете овој викенд понатаму ќе стане многу важна личност во вашиот живот.</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 22 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="magazine-денеска-се-празнува-свети-лука-светец-кој-ги-штити-и-лекува-summary-208613.html" class="flex gap-3"> <img src="images/cache/summary-208613.webp" alt="Денеска се празнува Свети Лука: Светец кој ги штити и лекува болните"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Петковден ги отвора портите за големите зимски празници: Колку куќни слави нѐ очекуваат до крајот на годината?</h3>
-                                        <p class="theme-text-secondary text-sm">Иако духовното празнување зема залет уште со крајот на октомври, во народното предание и обичаи постојат две традиционални толкувања за тоа кој точ...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 25 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="magazine-пред-свадбата-реков-дека-не-можам-да-се-омажам-за-чарлс-summary-203594.html" class="flex gap-3">
-                                    <img src="images/cache/summary-203594.webp" alt="„Пред свадбата, реков дека НЕ МОЖАМ ДА СЕ ОМАЖАМ ЗА ЧАРЛС“: Принцезата Дајана му ја отвори душата на еден маж 6 години пред смртта"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">Денеска се празнува Свети Лука: Светец кој ги штити и лекува болните</h3> <p class="theme-text-secondary text-sm">Без разлика дали овците се пнатегале или не, нашите предци верувале дека зимата ќе биде долга, сурова и тешка.</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 15 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="magazine-помладите-немаат-поим-што-е-ова-но-многу-домови-во-summary-208612.html" class="flex gap-3"> <img src="images/cache/summary-208612.webp" alt="Помладите немаат поим што е ова, но многу домови во Југославија го имале овој уред: „Сè уште работи!“"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">„Пред свадбата, реков дека НЕ МОЖАМ ДА СЕ ОМАЖАМ ЗА ЧАРЛС“: Принцезата Дајана му ја отвори душата на еден маж 6 години пред смртта</h3>
-                                        <p class="theme-text-secondary text-sm">Бев во целосен очај кога се случи тоа, мислев дека сум премногу возбудена и дека тоа беше ослободување од притисок“, открила принцезата Дијана.</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 24 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="magazine-терапевтите-предупредуваат-презирот-молчењето-и-префрлањето-summary-203593.html" class="flex gap-3">
-                                    <img src="images/cache/summary-203593.webp" alt="Терапевтите предупредуваат – Презирот, молчењето и префрлањето на вината ја уништуваат врската: Обрнете внимание на овие однесувања"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">Помладите немаат поим што е ова, но многу домови во Југославија го имале овој уред: „Сè уште работи!“</h3> <p class="theme-text-secondary text-sm">Сè уште работи кај нас“, гласи еден од коментарите што предизвика бројни реакции.</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 10 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="world-фото-поранешна-мисица-меѓу-загинатите-во-падот-на-воениот-summary-208611.html" class="flex gap-3"> <img src="images/cache/summary-208611.webp" alt="ФОТО| Поранешна мисица меѓу загинатите во падот на воениот хеликоптер во близина на Брчко, Италија во тага"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Терапевтите предупредуваат – Презирот, молчењето и префрлањето на вината ја уништуваат врската: Обрнете внимание на овие однесувања</h3>
-                                        <p class="theme-text-secondary text-sm">Вејд, исто така, го наведува отфрлањето на влијанието на партнерот како штетно , што е посериозно од едноставната тврдоглавост бидејќи партнерот до...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 17 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                            <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4">
-                                <a href="magazine-првиот-снег-во-скопје-е-можен-во-ноември-summary-203592.html" class="flex gap-3">
-                                    <img src="https://placehold.co/600x400/5c5c5c/ffffff?text=%D0%9F%D1%80%D0%B2%D0%B8%D0%BE%D1%82+%D1%81%D0%BD%D0%B5%D0%B3+%D0%B2%D0%BE+%D0%A1%D0%BA%D0%BE%D0%BF%D1%98%D0%B5+%D0%B5+%D0%BC%D0%BE%D0%B6%D0%B5%D0%BD+%D0%B2%D0%BE+%D0%BD%D0%BE%D0%B5%D0%BC%D0%B2%D1%80%D0%B8" alt="Првиот снег во Скопје е можен во ноември"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">ФОТО| Поранешна мисица меѓу загинатите во падот на воениот хеликоптер во близина на Брчко, Италија во тага</h3> <p class="theme-text-secondary text-sm">Организаторите на изборот за Мис Италија се збогуваа со Лаура Прокачи, поранешна финалистка на овој избор и италијански наредник кој загина во падо...</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 11 часа</span> </div> </div> </a> </div>  <div class="theme-bg-secondary border theme-border-color rounded-lg p-3 mb-4"> <a href="scena-пијанистката-даница-стојанова-добитничка-на-наградата-златна-summary-208610.html" class="flex gap-3"> <img src="images/cache/summary-208610.webp" alt="Пијанистката Даница Стојанова добитничка на наградата „Златна лира“ за исклучителни уметнички достигнувања"
                                          width="96"
                                          height="96"
                                          decoding="async"
-                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>
-                                    <!-- PERF: Reserve thumbnail space and lazy-load offscreen cards to reduce CLS/LCP pressure. -->
-                                    <div class="flex flex-col flex-1">
-                                        <h3 class="theme-text-primary text-lg font-bold mb-1">Првиот снег во Скопје е можен во ноември</h3>
-                                        <p class="theme-text-secondary text-sm">Можноста за снег е следниот чекор во процената и зависи од тоа дали во истиот период ќе има врнежи и дали температурите во атмосферата ќе бидат пог...</p>
-                                        <div class="theme-text-secondary text-xs mt-2">
-                                            <span>пред 17 часа</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Mid Ad -->
-                            
-                        
-                    </div>
-
-                    <!-- Pagination -->
-                    <div class="flex justify-center mt-6">
-    <nav class="inline-flex items-center space-x-1" aria-label="Pagination">
-
-        <!-- Previous -->
-        <a href="latest-news-page-28.html"
+                                         class="w-24 h-24 object-cover rounded-md" loading="lazy"/>  <div class="flex flex-col flex-1"> <h3 class="theme-text-primary text-lg font-bold mb-1">Пијанистката Даница Стојанова добитничка на наградата „Златна лира“ за исклучителни уметнички достигнувања</h3> <p class="theme-text-secondary text-sm">Пијанистката и професорка по пијано од Струмица, Даница Стојанова, е овогодишна добитничка на престижната награда „Златна лира“, признание што го д...</p> <div class="theme-text-secondary text-xs mt-2"> <span>пред 10 часа</span> </div> </div> </a> </div>  </div>  <div class="flex justify-center mt-6"> <nav class="inline-flex items-center space-x-1" aria-label="Pagination">  <a href="latest-news-page-28.html"
            class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
-           aria-label="Previous">&laquo;</a>
-
-        <!-- Page numbers (max 10) -->
-        
-            
-                <a href="latest-news-page-25.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">25</a>
-            
-                <a href="latest-news-page-26.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">26</a>
-            
-                <a href="latest-news-page-27.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">27</a>
-            
-                <a href="latest-news-page-28.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">28</a>
-            
-                <a href="latest-news-page-29.html"
-                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">29</a>
-            
-                <a href="latest-news-page-30.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">30</a>
-            
-                <a href="latest-news-page-31.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">31</a>
-            
-                <a href="latest-news-page-32.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">32</a>
-            
-                <a href="latest-news-page-33.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">33</a>
-            
-                <a href="latest-news-page-34.html"
-                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">34</a>
-            
-        
-
-        <!-- Next -->
-        <a href="latest-news-page-30.html"
+           aria-label="Previous">&laquo;</a>  <a href="latest-news-page-25.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">25</a> <a href="latest-news-page-26.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">26</a> <a href="latest-news-page-27.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">27</a> <a href="latest-news-page-28.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">28</a> <a href="latest-news-page-29.html"
+                   class="px-3 py-1 border rounded theme-border-color bg-blue-600 text-white">29</a> <a href="latest-news-page-30.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">30</a> <a href="latest-news-page-31.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">31</a> <a href="latest-news-page-32.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">32</a> <a href="latest-news-page-33.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">33</a> <a href="latest-news-page-34.html"
+                   class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary">34</a>  <a href="latest-news-page-30.html"
            class="px-3 py-1 border rounded theme-border-color theme-text-primary hover:theme-bg-secondary"
-           aria-label="Next">&raquo;</a>
-    </nav>
-</div>
-
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="theme-bg-secondary py-8 mt-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">
-        <!-- Disclaimer Text -->
-        <p class="text-sm leading-relaxed mb-6">
+           aria-label="Next">&raquo;</a> </nav> </div> </div> </div> </div> </main>  <footer class="theme-bg-secondary py-8 mt-12"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center theme-text-secondary">  <p class="text-sm leading-relaxed mb-6">
             Изборот и позициите на вестите на <span class="font-bold">Day.mk</span> се одредуваат автоматски со компјутерска програма.
             Прикажаното време, или датум, се однесува на моментот кога веста била внесена или освежена во <span class="font-bold">Day.mk</span>.
             <span class="font-bold">Day.mk</span> не презема никаква одговорност за веродостојноста на преземените информации.
-        </p>
-
-        <!-- Static Links with Thymeleaf relative URLs -->
-        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
-            <a href="sources.html" class="hover:underline theme-text-primary">Извори</a>
-            <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a>
-            <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a>
-            <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a>
-            <a href="blog.html" class="hover:underline theme-text-primary">Блог</a>
-            <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a>
-            <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a>
-            <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a>
-        </div>
-    </div>
-
-    <!-- NEW: Search Modal HTML Structure -->
-    <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true">
-        <div class="flex items-start justify-center min-h-screen pt-16">
-            <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2>
-                    <button id="close-search-modal" class="theme-text-primary" aria-label="Close search">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    </button>
-                </div>
-                <label for="search-input" class="sr-only">Search keywords</label>
-                <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4" autocomplete="off">
-                <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto" role="status" aria-live="polite" aria-busy="false">
-                    <!-- Search results will be dynamically inserted here -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add Lunr.js library and the search script -->
-
-
-
-</footer>
-
-</div>
-
-<!-- Mobile ads data -->
-<script>
-    window.mobileTopAdsData = [{"id":"mobileTopAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Your+Mobile+Ad+Here+1","title":"Mobile Exclusive Offer","description":"Special deal for mobile users.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"},{"id":"mobileTopAd2","imageUrl":"https:\/\/placehold.co\/600x75\/DAF7A6\/000000?text=Your+Mobile+Ad+Here+2","title":"New Mobile Feature","description":"Check out our new mobile feature.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","processedUrl":"marketing.html"}];
-    window.mobileMidAdsData = [{"id":"mobileMidAd1","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Your+Mobile+Ad+Here+1","title":"Don't Miss This!","description":"Another great offer just for you.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"},{"id":"mobileMidAd2","imageUrl":"https:\/\/placehold.co\/600x75\/C70039\/FFFFFF?text=Your+Mobile+Ad+Here+2","title":"Scroll-Stopping Savings","description":"Great savings await.","url":"marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","processedUrl":"marketing.html"}];
-</script>
-
-<div>
-    <script>
+        </p>  <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold"> <a href="sources.html" class="hover:underline theme-text-primary">Извори</a> <a href="indexing-terms.html" class="hover:underline theme-text-primary">Услови за индексирање</a> <a href="how-it-works.html" class="hover:underline theme-text-primary">Како работи?</a> <a href="marketing.html" class="hover:underline theme-text-primary">Маркетинг</a> <a href="blog.html" class="hover:underline theme-text-primary">Блог</a> <a href="contact.html" class="hover:underline theme-text-primary">Контакт</a> <a href="privacy-policy.html" class="hover:underline theme-text-primary">Политика за приватност</a> <a href="terms-of-service.html" class="hover:underline theme-text-primary">Услови за користење</a> </div> </div>  <div id="search-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50" aria-labelledby="search-modal-title" role="dialog" aria-modal="true"> <div class="flex items-start justify-center min-h-screen pt-16"> <div class="theme-bg-primary rounded-lg shadow-xl w-11/12 max-w-2xl p-4 md:p-6"> <div class="flex justify-between items-center mb-4"> <h2 id="search-modal-title" class="theme-text-primary text-xl font-bold">Search Articles</h2> <button id="close-search-modal" class="theme-text-primary" aria-label="Close search"> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> </button> </div> <label for="search-input" class="sr-only">Search keywords</label> <input type="text" id="search-input" placeholder="Enter keywords..." class="w-full theme-bg-secondary theme-text-primary border theme-border-color rounded-md p-2 mb-4" autocomplete="off"> <div id="search-results" class="space-y-2 max-h-96 overflow-y-auto" role="status" aria-live="polite" aria-busy="false">  </div> </div> </div> </div>  </footer> </div>  <script>
+    window.mobileTopAdsData = [{"id":"mobile_top_001","imageUrl":"https:\/\/placehold.co\/600x75\/FFC300\/000000?text=Mobile+Top","title":"Mobile Top Banner","description":"A mobile top banner ad","url":"https:\/\/day.mk\/marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_top_banner","provider":"LOCAL","active":true,"sortOrder":0,"width":null,"height":null,"googleClient":null,"googleSlot":null,"processedUrl":"https:\/\/day.mk\/marketing.html"}];
+    window.mobileMidAdsData = [{"id":"mobile_mid_001","imageUrl":"https:\/\/placehold.co\/600x75\/FF5733\/FFFFFF?text=Mobile+Mid","title":"Mobile Mid Banner","description":"A mobile mid screen ad","url":"https:\/\/day.mk\/marketing.html","startDate":"2025-01-01","endDate":"2026-12-31","viewLimit":0,"placement":"mobile_mid_banner","provider":"LOCAL","active":true,"sortOrder":0,"width":null,"height":null,"googleClient":null,"googleSlot":null,"processedUrl":"https:\/\/day.mk\/marketing.html"}];
+</script> <div> <script>
     /*<![CDATA[*/
     const themeToggle = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement; // This refers to the <html> tag
@@ -1346,24 +314,9 @@
         }
     });
     /*]]>*/
-</script>
-
-
-    <script src="js/mobile-nav.js" defer></script>
-
-    <!-- PERF: Load search stack only on demand to reduce unused JS on first render. -->
-    <script src="js/search.js" defer></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script>
-    <script>
+</script> <script src="js/mobile-nav.js" defer></script>  <script src="js/search.js" defer></script> <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJBTJNYPVV"></script> <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-HJBTJNYPVV'); // Replace G-YOUR_GA4_MEASUREMENT_ID with your actual GA4 Measurement ID
-</script>
-    <!-- PERF: Keep ad rotation deferred to avoid blocking first content paint. -->
-    <script src="js/ad-rotation.js" defer></script>
-
-</div>
-</body>
-</html>
+</script>  <script src="js/ad-rotation.js" defer></script> </div> </body> </html>
